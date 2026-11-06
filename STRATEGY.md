@@ -18,6 +18,22 @@ Collect historical global and local news plus daily S&P 500 prices, learn which 
 - Prices: daily S&P 500 history from Yahoo Finance or similar free source, stored locally.
 - Models: small, cheap model for filtering and summarizing news; stronger model only for the prediction step.
 
+## End goal and phases (decided 2026-11-06)
+End goal: a live trading agent (scheduled routines, like a daily pre-market / open / midday / close cycle) that uses the handbook and what we learned from history to make profitable trades. The goal is profit, not "beat the S&P". We still measure against buy and hold and cash, because that is how we know whether the handbook adds anything (in a rising market buy and hold also profits).
+1. **Historical research:** see how the market moved after different news (2008-2019), build and test the handbook.
+2. **Simulation:** run the agent on 2020 (test), then 2021-2024 (holdout), news-driven, past-only information. Score after costs.
+3. **Paper trading:** live schedule, paper money only, every run reviewed by the user.
+4. **Live trading:** only if paper results justify it, with the user's explicit go-ahead, small size first.
+Not decided yet: broker, scheduler, research source for live use (the video setup used Alpaca, Claude Code routines, Perplexity; not adopted).
+
+## Borrowed practices (from the analyzed trading-agent video, adopted selectively)
+- **File memory loop:** every agent run is stateless; it reads the state files first and writes lessons and decisions back at the end. State files for the agent: strategy/rules, trade log, research/event log, open storylines, weekly review.
+- **Guardrails** written into the agent's rules: max share of the portfolio per position, loss stop per position and a daily loss cap, a limit on new positions per period, no options or leverage, and "no trade" is a valid decision. Exact numbers to be chosen and tested in simulation.
+- **Periodic self-review:** weekly, the agent logs what worked, what failed and which handbook entries or rules to change. Changes to the handbook are made from 2008-2019 evidence, never from the 2020 test.
+- **Decision log:** every decision records inputs, reasoning, prediction and later the outcome, so scoring is auditable.
+- **Test before trusting:** run each routine several times and read the full run history before relying on it. Keep secrets in environment variables, never in committed files.
+- Not adopted: his strategy (generic, 30-day claim unproven) and the live tools.
+
 ## Handbook (decided 2026-11-06)
 Goal: a handbook of how event types affect the market (mechanism, magnitude, horizon, amplifying and dampening conditions, affected sectors, confidence, "no meaningful effect" as a valid call). It is used by the simulation agent and for day trading. Agents act as expert financial analysts using the handbook, ongoing storylines (multi-day/multi-week events) and past-only market context (trend, volatility).
 - Built from several years of data plus general finance knowledge, NOT from 2020 outcomes. 2020 is the held-out test year (circular otherwise).

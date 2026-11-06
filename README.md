@@ -3,7 +3,7 @@
 Research and simulation only. Not financial advice. No real money.
 
 ## What this project does
-Goes back in time, collects news plus daily S&P 500 prices, learns which kinds of news move the market, and eventually runs closed-loop day-trading agents that reason from events and are scored against what really happened.
+Goes back in time, collects news plus daily S&P 500 prices, learns which kinds of news move the market, and runs closed-loop trading agents that reason from events and are scored against what really happened. End goal: a live trading agent that uses the handbook to make profitable trades (phases: research, simulation, paper, live).
 
 ## Folder layout
 See `ROADMAP.md` for the full file map. Summary:

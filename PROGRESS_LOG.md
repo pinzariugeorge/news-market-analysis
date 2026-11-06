@@ -45,4 +45,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 - FINDING: many headlines in the dataset are market recaps ("Dow plunges..."), not causes, so the news layer is thin on explicit causes. The handbook tells agents to ignore recap-only headlines.
 - DONE: ROADMAP.md updated with the handbook folder.
 
+- DECISION: end goal is a live trading agent using the handbook to make profitable trades (not "beat the S&P"; baselines still used to judge it). Phases: research -> simulation (2020, then 2021-2024) -> paper -> live. Selectively adopted file-memory loop, guardrails, weekly self-review, decision log, test-before-trust from the analyzed video; recorded in STRATEGY.md.
+
 **Next step:** (1) user reviews handbook v0; (2) test it on 2008-2019: for each |move|>=2% day (247), do the handbook plus past-only headlines name the right event type and size? Record hit rates per event type in `handbook/` (never use 2020); (3) design the daily record format (new events, open storylines, past-only market context). Also check why 2020-09-23 has 55 headlines.
