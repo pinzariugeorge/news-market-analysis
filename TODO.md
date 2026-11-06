@@ -50,13 +50,12 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] User still to give: account size to design for and allowed instruments (US single stocks assumed); add a market value screen and a revenue-purity screen when a reliable data source is chosen; verify tradability of the selected names at IBKR Ireland.
 - [x] Phase 1 part 1 (2026-11-06): `src/costs.py` written and `PHASE1_FACTS.md` (official US stock fees verified; tax from Romanian press).
 - [x] Baselines on the universe for a 500 USD account (`results/UNIVERSE_BASELINES.md`): noise dominates with two positions; no strategy consistent; 5-day holds cost up to 17% of the account in fees.
-- [ ] Next: judge strategies on many decisions (all 20 names in parallel as a paper portfolio, each decision scored separately), add event windows and calendar data, then the agent with the same costs.
+- [x] Wide test done (`results/WIDE_TEST.md`): no selection rule consistently beats the equal-weight basket; trend slightly positive but weak.
+- [x] Judge strategies on many decisions (all 20 names in parallel as a paper portfolio, each decision scored separately), add event windows and calendar data, then the agent with the same costs.
 - [x] eToro fees and API researched (`PHASE1_FACTS.md`): 1 USD per stock open and close, ETFs free, API free for eligible users; eligibility for Romania, conversion fee and rate limits still open; some stock buys can be executed as CFDs.
 - [x] Indicator and candlestick tests (`results/INDICATOR_TESTS.md`): no reliable edge; only oversold buying (RSI below 30) was positive in all periods and it fades once market-wide days are removed. Candidate for a later out-of-sample test with a market-selloff filter.
 - [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
 - [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
-
-- [ ] Borrow from the second trading video (user pasted 2026-11-06): (1) record every order in a journal at the moment it happens so an interrupted run can be recovered without repeating a trade (idempotent order log); (2) write a failure-behavior checklist for the agent routine: no previous handoff on first run, next run has no chat history, previous run crashed after sending an order, two runs overlap, corrupt or missing state file, machine or app offline; (3) one handoff note at the end of every run (what changed, outcomes, risks, exact next job). Not borrowed: the same-day-flat day-trading schedule (see PLAN.md: fees) and the paid real-time data plan.
 
 ## 3b. Universe and company-level work (new direction, 2026-11-06)
 - [x] First research list: solar value chain with current metrics (`universe/UNIVERSE.md`).

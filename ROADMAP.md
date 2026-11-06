@@ -17,6 +17,7 @@ Last updated: 2026-11-06
 | `PROGRESS_LOG.md` | Dated session entries, newest at the bottom, each ends with "Next step" |
 | `JOURNAL.md` | Plain-language notes, surprises, open questions |
 | `ROADMAP.md` | This file map |
+| `todo_suggestions.md` | Ideas that came up but were NOT adopted (user decision); move to `TODO.md` only when decided |
 | `TODO.md` | Open items: pre-2008 news source options, handbook work, other tasks |
 | `PLAN.md` | Plan v2: what we learned, theme families, phases 1-6 with gates, open decisions (trade current companies and commodities via Interactive Brokers Ireland) |
 | `PHASE1_FACTS.md` | Phase 1 facts: IBKR Ireland fees (verified vs reported vs open), access and onboarding, Romanian tax, what they mean for the cost model |
@@ -61,6 +62,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/WIDE_TEST.md` | Wide test: momentum, reversal, low volatility, trend, oversold and random rules scored on the whole 20-name basket per decision date, by period and holding period; findings |
+| `results/wide_test.csv` | Same numbers as CSV |
 | `results/INDICATOR_TESTS.md` | Test of 10 standard indicator and candlestick signals on 45 stocks by period and holding period; no reliable edge; findings |
 | `results/indicator_tests.csv` | Same numbers as CSV |
 | `results/UNIVERSE_BASELINES.md` | Baselines on the rule-selected single-stock universe for a 500 USD account (whole shares, 2 positions, real costs), by period and holding period; findings |
@@ -84,6 +87,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `run_wide_test.py` | Scores selection rules on the whole point-in-time basket per decision date (many decisions, costs, periods); writes `results/wide_test.csv` |
 | `run_indicator_tests.py` | Tests RSI, MACD, golden cross, Bollinger, breakout and candlestick patterns as long signals with costs and period splits; writes `results/indicator_tests.csv` |
 | `run_universe_baselines.py` | Baselines on the rule-selected universe for a small account: cash, hold two, random rotation, momentum, low volatility, trend; writes `results/universe_baselines.csv` |
 | `costs.py` | Cost model for IBKR Ireland US stocks (commission, pass-through assumptions, spread, FX, tax); `python -I src\costs.py` prints round-trip cost tables; import it in every backtest |
