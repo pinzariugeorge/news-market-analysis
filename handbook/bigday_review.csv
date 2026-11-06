@@ -1,0 +1,248 @@
+date,ret_pct,event_type,same_day_headlines,headline_names_cause
+2008-01-04,-2.46,credit/banking/sovereign stress (3.3),0,0
+2008-01-15,-2.49,credit/banking/sovereign stress (3.3),0,0
+2008-01-17,-2.91,credit/banking/sovereign stress (3.3),0,0
+2008-01-23,2.14,central bank action (3.1),0,0
+2008-02-05,-3.2,economic data/growth (3.2),3,1
+2008-02-29,-2.71,credit/banking/sovereign stress (3.3),1,1
+2008-03-06,-2.2,credit/banking/sovereign stress (3.3),0,0
+2008-03-11,3.71,central bank action (3.1),1,1
+2008-03-14,-2.08,credit/banking/sovereign stress (3.3),0,0
+2008-03-18,4.24,central bank action (3.1),1,1
+2008-03-19,-2.43,credit/banking/sovereign stress (3.3),0,0
+2008-03-20,2.39,credit/banking/sovereign stress (3.3),0,0
+2008-04-01,3.59,credit/banking/sovereign stress (3.3),0,0
+2008-04-11,-2.04,credit/banking/sovereign stress (3.3),0,0
+2008-04-16,2.27,earnings/company (3.9),2,0
+2008-06-06,-3.09,economic data/growth (3.2),0,0
+2008-06-26,-2.94,oil/commodity (3.5),0,0
+2008-07-09,-2.28,credit/banking/sovereign stress (3.3),1,0
+2008-07-16,2.51,credit/banking/sovereign stress (3.3),0,0
+2008-07-24,-2.31,credit/banking/sovereign stress (3.3),0,0
+2008-07-29,2.34,oil/commodity (3.5),1,1
+2008-08-05,2.87,oil/commodity (3.5),0,0
+2008-08-08,2.39,credit/banking/sovereign stress (3.3),1,0
+2008-09-04,-2.99,credit/banking/sovereign stress (3.3),0,0
+2008-09-08,2.05,credit/banking/sovereign stress (3.3),0,0
+2008-09-09,-3.41,credit/banking/sovereign stress (3.3),1,0
+2008-09-15,-4.71,credit/banking/sovereign stress (3.3),1,1
+2008-09-17,-4.71,credit/banking/sovereign stress (3.3),1,0
+2008-09-18,4.33,credit/banking/sovereign stress (3.3),0,0
+2008-09-19,4.03,credit/banking/sovereign stress (3.3),1,0
+2008-09-22,-3.82,credit/banking/sovereign stress (3.3),0,0
+2008-09-29,-8.81,credit/banking/sovereign stress (3.3),3,1
+2008-09-30,5.42,credit/banking/sovereign stress (3.3),0,0
+2008-10-02,-4.03,credit/banking/sovereign stress (3.3),0,0
+2008-10-06,-3.85,credit/banking/sovereign stress (3.3),1,0
+2008-10-07,-5.74,credit/banking/sovereign stress (3.3),1,0
+2008-10-09,-7.62,credit/banking/sovereign stress (3.3),0,0
+2008-10-13,11.58,credit/banking/sovereign stress (3.3),1,0
+2008-10-15,-9.03,credit/banking/sovereign stress (3.3),2,1
+2008-10-16,4.25,credit/banking/sovereign stress (3.3),0,0
+2008-10-20,4.77,credit/banking/sovereign stress (3.3),1,0
+2008-10-21,-3.08,credit/banking/sovereign stress (3.3),1,0
+2008-10-22,-6.1,credit/banking/sovereign stress (3.3),0,0
+2008-10-24,-3.45,credit/banking/sovereign stress (3.3),2,1
+2008-10-27,-3.18,credit/banking/sovereign stress (3.3),0,0
+2008-10-28,10.79,credit/banking/sovereign stress (3.3),0,0
+2008-10-30,2.58,central bank action (3.1),2,1
+2008-11-04,4.08,election (3.6b),1,0
+2008-11-05,-5.27,economic data/growth (3.2),1,0
+2008-11-06,-5.03,economic data/growth (3.2),0,0
+2008-11-07,2.89,credit/banking/sovereign stress (3.3),1,1
+2008-11-11,-2.2,credit/banking/sovereign stress (3.3),2,1
+2008-11-12,-5.19,credit/banking/sovereign stress (3.3),0,0
+2008-11-13,6.92,credit/banking/sovereign stress (3.3),0,0
+2008-11-14,-4.17,credit/banking/sovereign stress (3.3),0,0
+2008-11-17,-2.58,credit/banking/sovereign stress (3.3),2,1
+2008-11-19,-6.12,credit/banking/sovereign stress (3.3),0,0
+2008-11-20,-6.71,credit/banking/sovereign stress (3.3),0,0
+2008-11-21,6.32,credit/banking/sovereign stress (3.3),1,0
+2008-11-24,6.47,credit/banking/sovereign stress (3.3),1,1
+2008-11-26,3.53,credit/banking/sovereign stress (3.3),1,1
+2008-12-01,-8.93,economic data/growth (3.2),1,1
+2008-12-02,3.99,credit/banking/sovereign stress (3.3),1,0
+2008-12-03,2.58,credit/banking/sovereign stress (3.3),1,0
+2008-12-04,-2.93,economic data/growth (3.2),1,0
+2008-12-05,3.65,credit/banking/sovereign stress (3.3),0,0
+2008-12-08,3.84,credit/banking/sovereign stress (3.3),0,0
+2008-12-09,-2.31,credit/banking/sovereign stress (3.3),1,1
+2008-12-11,-2.85,credit/banking/sovereign stress (3.3),2,1
+2008-12-16,5.14,central bank action (3.1),0,0
+2008-12-18,-2.12,credit/banking/sovereign stress (3.3),1,0
+2008-12-30,2.44,credit/banking/sovereign stress (3.3),2,0
+2009-01-02,3.16,credit/banking/sovereign stress (3.3),0,0
+2009-01-07,-3.0,credit/banking/sovereign stress (3.3),1,1
+2009-01-09,-2.13,credit/banking/sovereign stress (3.3),0,0
+2009-01-12,-2.26,credit/banking/sovereign stress (3.3),1,0
+2009-01-14,-3.35,credit/banking/sovereign stress (3.3),0,0
+2009-01-20,-5.28,credit/banking/sovereign stress (3.3),1,0
+2009-01-21,4.35,credit/banking/sovereign stress (3.3),2,1
+2009-01-28,3.36,credit/banking/sovereign stress (3.3),2,0
+2009-01-29,-3.31,credit/banking/sovereign stress (3.3),0,0
+2009-01-30,-2.28,credit/banking/sovereign stress (3.3),1,0
+2009-02-06,2.69,credit/banking/sovereign stress (3.3),0,0
+2009-02-10,-4.91,credit/banking/sovereign stress (3.3),0,0
+2009-02-17,-4.56,credit/banking/sovereign stress (3.3),1,1
+2009-02-23,-3.47,credit/banking/sovereign stress (3.3),1,1
+2009-02-24,4.01,credit/banking/sovereign stress (3.3),0,0
+2009-02-27,-2.36,credit/banking/sovereign stress (3.3),0,0
+2009-03-02,-4.66,credit/banking/sovereign stress (3.3),1,1
+2009-03-04,2.38,credit/banking/sovereign stress (3.3),1,1
+2009-03-05,-4.25,credit/banking/sovereign stress (3.3),1,0
+2009-03-10,6.37,credit/banking/sovereign stress (3.3),0,0
+2009-03-12,4.07,credit/banking/sovereign stress (3.3),0,0
+2009-03-17,3.21,credit/banking/sovereign stress (3.3),0,0
+2009-03-18,2.09,central bank action (3.1),1,0
+2009-03-23,7.08,credit/banking/sovereign stress (3.3),0,0
+2009-03-24,-2.04,credit/banking/sovereign stress (3.3),0,0
+2009-03-26,2.33,credit/banking/sovereign stress (3.3),1,0
+2009-03-27,-2.03,credit/banking/sovereign stress (3.3),0,0
+2009-03-30,-3.48,credit/banking/sovereign stress (3.3),0,0
+2009-04-02,2.87,economic data/growth (3.2),0,0
+2009-04-07,-2.39,economic data/growth (3.2),0,0
+2009-04-09,3.81,economic data/growth (3.2),0,0
+2009-04-14,-2.01,economic data/growth (3.2),0,0
+2009-04-20,-4.28,economic data/growth (3.2),0,0
+2009-04-21,2.13,economic data/growth (3.2),0,0
+2009-04-29,2.16,economic data/growth (3.2),0,0
+2009-05-04,3.39,economic data/growth (3.2),0,0
+2009-05-08,2.41,economic data/growth (3.2),0,0
+2009-05-11,-2.15,economic data/growth (3.2),2,0
+2009-05-13,-2.69,economic data/growth (3.2),0,0
+2009-05-18,3.04,economic data/growth (3.2),0,0
+2009-05-26,2.63,economic data/growth (3.2),0,0
+2009-06-01,2.58,economic data/growth (3.2),2,0
+2009-06-15,-2.38,economic data/growth (3.2),0,0
+2009-06-22,-3.06,economic data/growth (3.2),0,0
+2009-06-25,2.14,economic data/growth (3.2),0,0
+2009-07-02,-2.91,economic data/growth (3.2),1,0
+2009-07-13,2.49,economic data/growth (3.2),1,0
+2009-07-15,2.96,economic data/growth (3.2),0,0
+2009-07-23,2.33,economic data/growth (3.2),0,0
+2009-08-17,-2.43,economic data/growth (3.2),0,0
+2009-09-01,-2.21,economic data/growth (3.2),1,0
+2009-10-01,-2.58,economic data/growth (3.2),1,0
+2009-10-29,2.25,economic data/growth (3.2),0,0
+2009-10-30,-2.81,economic data/growth (3.2),1,0
+2009-11-09,2.22,economic data/growth (3.2),1,0
+2010-01-22,-2.21,sector rotation (3.12),0,0
+2010-02-04,-3.11,credit/banking/sovereign stress (3.3),1,0
+2010-04-27,-2.34,credit/banking/sovereign stress (3.3),0,0
+2010-05-04,-2.38,credit/banking/sovereign stress (3.3),1,0
+2010-05-06,-3.24,market structure/vol spike (3.13),1,0
+2010-05-10,4.4,central bank action (3.1),0,0
+2010-05-20,-3.9,credit/banking/sovereign stress (3.3),1,0
+2010-05-27,3.29,economic data/growth (3.2),0,0
+2010-06-02,2.58,economic data/growth (3.2),0,0
+2010-06-04,-3.44,economic data/growth (3.2),0,0
+2010-06-10,2.95,economic data/growth (3.2),0,0
+2010-06-15,2.35,economic data/growth (3.2),2,0
+2010-06-29,-3.1,economic data/growth (3.2),1,0
+2010-07-07,3.13,economic data/growth (3.2),1,0
+2010-07-16,-2.88,economic data/growth (3.2),0,0
+2010-07-22,2.25,economic data/growth (3.2),0,0
+2010-08-02,2.2,economic data/growth (3.2),2,0
+2010-08-11,-2.82,central bank action (3.1),1,0
+2010-09-01,2.95,economic data/growth (3.2),0,0
+2010-09-24,2.12,economic data/growth (3.2),4,1
+2010-10-05,2.09,central bank action (3.1),0,0
+2010-12-01,2.16,economic data/growth (3.2),0,0
+2011-02-22,-2.05,geopolitical/accident (3.4),0,0
+2011-06-01,-2.28,economic data/growth (3.2),4,0
+2011-07-27,-2.03,credit/banking/sovereign stress (3.3),2,1
+2011-08-02,-2.56,credit/banking/sovereign stress (3.3),3,0
+2011-08-04,-4.78,credit/banking/sovereign stress (3.3),3,1
+2011-08-08,-6.66,credit/banking/sovereign stress (3.3),6,1
+2011-08-09,4.74,credit/banking/sovereign stress (3.3),4,1
+2011-08-10,-4.42,credit/banking/sovereign stress (3.3),3,0
+2011-08-11,4.63,credit/banking/sovereign stress (3.3),4,1
+2011-08-15,2.18,credit/banking/sovereign stress (3.3),1,0
+2011-08-18,-4.46,credit/banking/sovereign stress (3.3),3,1
+2011-08-23,3.43,credit/banking/sovereign stress (3.3),4,1
+2011-08-29,2.83,credit/banking/sovereign stress (3.3),1,0
+2011-09-02,-2.53,credit/banking/sovereign stress (3.3),2,0
+2011-09-07,2.86,credit/banking/sovereign stress (3.3),3,0
+2011-09-09,-2.67,credit/banking/sovereign stress (3.3),2,0
+2011-09-21,-2.94,central bank action (3.1),2,0
+2011-09-22,-3.19,credit/banking/sovereign stress (3.3),5,0
+2011-09-26,2.33,credit/banking/sovereign stress (3.3),3,0
+2011-09-28,-2.07,credit/banking/sovereign stress (3.3),3,0
+2011-09-30,-2.5,credit/banking/sovereign stress (3.3),5,1
+2011-10-03,-2.85,credit/banking/sovereign stress (3.3),5,0
+2011-10-04,2.25,credit/banking/sovereign stress (3.3),4,0
+2011-10-10,3.41,credit/banking/sovereign stress (3.3),4,1
+2011-10-18,2.04,credit/banking/sovereign stress (3.3),3,1
+2011-10-25,-2.0,credit/banking/sovereign stress (3.3),1,0
+2011-10-27,3.43,credit/banking/sovereign stress (3.3),2,0
+2011-10-31,-2.47,credit/banking/sovereign stress (3.3),2,0
+2011-11-01,-2.79,credit/banking/sovereign stress (3.3),2,0
+2011-11-09,-3.67,credit/banking/sovereign stress (3.3),5,1
+2011-11-23,-2.21,credit/banking/sovereign stress (3.3),4,0
+2011-11-28,2.92,credit/banking/sovereign stress (3.3),3,1
+2011-11-30,4.33,central bank action (3.1),2,0
+2011-12-08,-2.11,credit/banking/sovereign stress (3.3),5,0
+2011-12-20,2.98,credit/banking/sovereign stress (3.3),4,0
+2012-06-01,-2.46,economic data/growth (3.2),3,1
+2012-06-06,2.3,credit/banking/sovereign stress (3.3),2,0
+2012-06-21,-2.23,central bank action (3.1),3,1
+2012-06-29,2.49,credit/banking/sovereign stress (3.3),1,0
+2012-09-06,2.04,central bank action (3.1),0,0
+2012-11-07,-2.37,election (3.6b),6,0
+2013-01-02,2.54,fiscal/political (3.6-3.7),4,1
+2013-04-15,-2.3,geopolitical/accident (3.4),4,0
+2013-06-20,-2.5,central bank action (3.1),4,1
+2013-10-10,2.18,fiscal/political (3.6-3.7),5,1
+2014-01-24,-2.09,foreign shock (3.14),6,0
+2014-02-03,-2.28,economic data/growth (3.2),5,1
+2014-04-10,-2.09,sector rotation (3.12),1,0
+2014-07-31,-2.0,foreign shock (3.14),4,1
+2014-10-09,-2.07,foreign shock (3.14),5,0
+2014-12-17,2.04,central bank action (3.1),3,0
+2014-12-18,2.4,central bank action (3.1),5,1
+2015-06-29,-2.09,credit/banking/sovereign stress (3.3),3,0
+2015-08-20,-2.11,foreign shock (3.14),2,0
+2015-08-21,-3.19,foreign shock (3.14),3,0
+2015-08-24,-3.94,foreign shock (3.14),8,0
+2015-08-26,3.9,foreign shock (3.14),5,0
+2015-08-27,2.43,foreign shock (3.14),0,0
+2015-09-01,-2.96,foreign shock (3.14),3,1
+2015-09-08,2.51,foreign shock (3.14),4,0
+2015-09-28,-2.57,sector rotation (3.12),0,0
+2015-12-04,2.05,economic data/growth (3.2),3,0
+2016-01-07,-2.37,foreign shock (3.14),4,1
+2016-01-13,-2.5,oil/commodity (3.5),5,0
+2016-01-15,-2.16,oil/commodity (3.5),3,0
+2016-01-22,2.03,oil/commodity (3.5),4,1
+2016-01-29,2.48,central bank action (3.1),6,0
+2016-03-01,2.39,oil/commodity (3.5),5,1
+2016-06-24,-3.59,Brexit/referendum (3.7),6,1
+2016-09-09,-2.45,central bank action (3.1),3,1
+2016-11-07,2.22,election (3.6b),3,0
+2018-02-02,-2.12,economic data/growth (3.2),7,0
+2018-02-05,-4.1,market structure/vol spike (3.13),4,0
+2018-02-08,-3.75,market structure/vol spike (3.13),4,0
+2018-03-22,-2.52,trade policy (3.8),2,0
+2018-03-23,-2.1,trade policy (3.8),1,0
+2018-03-26,2.72,trade policy (3.8),3,1
+2018-04-02,-2.23,trade policy (3.8),4,0
+2018-04-06,-2.19,trade policy (3.8),2,1
+2018-10-10,-3.29,central bank action (3.1),6,0
+2018-10-11,-2.06,central bank action (3.1),4,1
+2018-10-16,2.15,economic data/growth (3.2),2,0
+2018-10-24,-3.09,earnings/company (3.9),7,0
+2018-11-07,2.12,election (3.6b),5,1
+2018-11-28,2.3,central bank action (3.1),2,0
+2018-12-04,-3.24,trade policy (3.8),5,1
+2018-12-07,-2.33,economic data/growth (3.2),1,0
+2018-12-17,-2.08,central bank action (3.1),5,0
+2018-12-21,-2.06,central bank action (3.1),6,1
+2018-12-24,-2.71,central bank action (3.1),4,1
+2018-12-26,4.96,market structure/vol spike (3.13),9,0
+2019-01-03,-2.48,earnings/company (3.9),5,0
+2019-01-04,3.43,central bank action (3.1),5,1
+2019-05-13,-2.41,trade policy (3.8),3,0
+2019-06-04,2.14,central bank action (3.1),1,0
+2019-08-05,-2.98,trade policy (3.8),4,0
+2019-08-14,-2.93,economic data/growth (3.2),4,1
+2019-08-23,-2.59,trade policy (3.8),3,0

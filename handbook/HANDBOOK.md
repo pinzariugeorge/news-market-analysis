@@ -17,6 +17,8 @@ Used by: simulation agents (as part of their expert-analyst context) and live da
 10. **"No meaningful effect" is a first-class prediction** and usually the most likely one. Only call a move when the channel, scale and surprise all line up.
 11. **Headlines describe the market too.** Many headlines report the market's own move ("Dow plunges 700 points"). That is past information for the next decision, not a new cause. Look for the cause (policy, data, credit, geopolitics) and for how much of it is already in the price.
 
+12. **Big days come in clusters.** 74% of 2%+ days in 2008-2019 fell in four years and 79% were within a week of another one. After the first 2%+ day, expect more large moves in both directions (a -9% day followed by a +11% day within two weeks happened). Size down or stay out; do not guess direction.
+
 ## 2. Base rates (S&P 500 daily closes; `data/processed/market_days.csv`; handbook period only, to 2019)
 | Stat | 1950-2019 (17,612 days) | 1950-1989 | 1990-2019 | 2008-2019 |
 |---|---|---|---|---|
@@ -50,7 +52,7 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 
 ### 3.2 Economic data surprise (jobs, inflation, GDP, PMI)
 - Mechanism: changes growth and rate expectations; in weak-economy regimes good data can lift stocks, in inflation regimes strong data can hurt (rate fears).
-- Reaction: in-line ~0; large miss/beat: +/-0.5% to 1.5%. Rarely more than 2%.
+- Reaction: in-line ~0; large miss/beat: +/-0.5% to 1.5%. Rarely more than 2% in normal times. In a recession or stress regime the same data can move the index -3% to -9% (observed: 54 big days, -8.9% to +3.8%).
 - Horizon: day; the trend of several readings matters more than one.
 - Amplifiers: data is the key input the Fed watches, thin liquidity. Dampeners: one noisy reading, revisions.
 - Sectors: cyclicals (industrials, banks) vs. defensives; homebuilders on housing data.
@@ -58,7 +60,7 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 
 ### 3.3 Credit or banking stress (bank failure, funding market freeze, sovereign debt crisis)
 - Mechanism: threatens the payment system and lending; hits earnings of everything via funding costs and fear of contagion.
-- Reaction: large and persistent. Index -3% to -9% in single days when the system itself is in doubt; relief rallies of the same size on rescue plans.
+- Reaction: large and persistent. Index -3% to -9% in single days when the system itself is in doubt; relief rallies of the same size or larger on rescue plans (observed 2008-2019: -9.0% to +11.6%, median absolute 3.2% over 121 big days).
 - Horizon: weeks to months, in waves, until authorities backstop.
 - Amplifiers: hidden leverage, interbank freeze, failure of a rescue plan or surprise legislative rejection. Dampeners: credible backstop already announced.
 - Sectors: financials first (-), then everything cyclical; defensives, gold, treasuries gain.
@@ -84,7 +86,7 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 
 ### 3.6 Elections and political outcomes
 - Mechanism: expected policy changes (tax, regulation, trade, spending) re-rated by sector; the uncertainty premium resolves.
-- Reaction: the surprise matters; resolution of uncertainty often lifts the market regardless of winner. Index move typically within +/-2% on the day; sector rotations larger.
+- Reaction: the surprise matters; resolution of uncertainty often lifts the market regardless of winner. Index move typically within +/-2% on the day (up to +/-4% in a crisis, e.g. 2008-11-04 +4.1%); sector rotations larger.
 - Horizon: day to weeks; policy implementation later.
 - Amplifiers: unexpected winner, pledge of a sharp policy break (trade, tax, regulation). Dampeners: divided government, expectation of gridlock.
 - Sectors: depend on the platform (energy, healthcare, financials, defense, infrastructure).
@@ -183,7 +185,10 @@ Use as small tilts only. Effects are small, partly arbitraged away, and were fou
 4. Apply the entry: pick the horizon, the affected sectors and the index effect. Compare with base rates.
 5. Output: direction, horizon, confidence, and an explicit "no edge" when channel, scale or surprise is missing.
 
-## 5. Known limits of this draft
+## 5. Review of big-move days
+See `handbook/BIGDAY_REVIEW.md` (247 days labeled by event type, observed ranges per type, findings). Main result: most big days are inside stress clusters, and the news dataset names a cause on fewer than 1 in 4 of them.
+
+## 6. Known limits of this draft
 - Written mostly from general knowledge; not yet fitted to data. Magnitudes are rough.
 - Headline data is thin in 2008-2010 and lists few causes; the news source holds many market-recap headlines.
 - Next-day index direction is close to a coin flip; the edge, if any, is likely in sector calls, volatility and knowing when not to act.

@@ -38,6 +38,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Handbook (`handbook/`)
 | File | Content |
 |---|---|
+| `handbook/BIGDAY_REVIEW.md` | Review of the 247 big-move days of 2008-2019 by event type: findings and observed ranges |
+| `handbook/bigday_review.csv` | One row per big day: date, return, event type (hand-labeled with hindsight), headline counts |
 | `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
 | `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 16 event-type entries (incl. 3.6b US midterms, 3.6c presidential elections), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
 
@@ -47,6 +49,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `review_big_days.py` | Labels 2008-2019 days with a move of 2% or more by event type, writes `handbook/bigday_review.csv`, prints per-type stats |
 | `build_news_corpus.py` | Raw headlines + prices -> `data/processed/news_all.csv` and `market_days.csv` (drops CP, fixes encoding, de-duplicates, adds decision_date and split) |
 
 Run with `python -I src\<script>.py` on Windows.

@@ -32,7 +32,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 ## 2. Handbook work
 - [x] Base-rate table recomputed on 1950-2019 and by volatility regime (2026-11-06); calendar patterns added as 3.15, volatility regime as 3.16.
 - [ ] More calendar entries still open: Fed meeting days (needs the FOMC date list), earnings seasons, quarter-end and options expiration, holidays, 2008/2012/2016 election detail, crisis episodes (1987, 2000-2002).
-- [ ] Test the handbook on the 247 big-move days of 2008-2019 and record hit rates per event type (never on 2020).
+- [x] Reviewed the 247 big-move days of 2008-2019 by event type (`handbook/BIGDAY_REVIEW.md`); ranges updated. Still open: a true predictive test (news before day D vs move on D).
+- [ ] Better causal news source: the S&P headlines name a cause on fewer than 1 in 4 big days. Candidates are in section 1, plus event calendars (FOMC, jobs report, CPI dates).
 - [ ] Design the daily record format (new events, open storylines, past-only market context).
 
 ## 3. Other
