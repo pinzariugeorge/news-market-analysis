@@ -79,4 +79,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DONE: holding-horizon test (universe/BROAD_SCREEN.md): over 1, 3, 5, 10, 20 days a trailing-momentum rule did not beat always holding; costs make 1-5 day holds unprofitable net of fees on small orders; bigger movement did not mean more profit (solar moves most, earned nothing; chips earned most, but names were chosen with hindsight). Supports making the holding horizon a tested parameter and favoring days-to-weeks holds and event windows.
 
+- DONE: AI theme check (universe/BROAD_SCREEN.md): chips fell 22-40% in a month, correlated 0.61 among themselves, basket max drawdown -50% over 5 years; longer holds (10-20 days) beat 1-5 day holds on average, momentum helped for platforms but not for chips; strong hindsight caveat.
+
 **Next step:** user decisions listed at the end of `PLAN.md` (theme families, account size, allowed instruments, API budget). Then Phase 1: `src/costs.py` and verification of IBKR facts (fees, account opening for Romania, paper account, API, US single-stock availability, tax).

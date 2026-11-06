@@ -61,3 +61,10 @@ Reading:
 - The momentum rule did no better than always holding at any horizon (it trails it at 3, 5, 10 and 20 days). The positive net figures at 10 and 20 days come from the names' own uptrend, not from timing.
 - Costs: at 1 day the fee eats the whole average gain; at 20 days it is small. The EU fixed fee is only covered at 20 days.
 - Strong caveat: the 20 names were chosen because they have done well recently (hindsight selection), so the always-long returns are biased upward. Nothing here is a forecast or a recommendation.
+
+## AI as a theme (11 names: chips NVDA, AMD, AVGO, MU, TSM, ASML; platforms MSFT, GOOGL, META, AMZN, PLTR; 2026-11-06)
+- Last month: almost every AI chip name fell 22-40% (Micron -40%, AMD -37%, TSMC -25%, ASML -25%, Nvidia -24%, Broadcom -23%); semiconductor ETF -28%. Platforms were mixed: Microsoft +1%, Amazon flat, Meta -16%, Alphabet -19%, Palantir -20%. Over one year Micron is +175% and AMD +70%, while Nvidia is -3% and Broadcom -18%.
+- Equal-weight basket of the 11 names over 5 years: +261% in total with a maximum drawdown of -50%.
+- Correlation: average pairwise daily correlation over the last year is 0.61 among AI chips, 0.32 among platforms, 0.34 across all 11, against 0.79 among oil majors. Chips move together, so holding several of them is less diversification than it looks.
+- Horizon test (5 years, pooled): chips average absolute move 2.3% (1 day), 5.2% (5 days), 7.2% (10 days), 10.9% (20 days); always-long return per entry 0.16%, 0.83%, 1.66%, 3.53%; the trailing-20-day momentum rule did not beat always holding for chips (3.18% vs 3.53% at 20 days) but did for platforms at 10 and 20 days (1.72% vs 1.10%, 2.94% vs 2.38%), win rate 52% at 5 days rising to 59-60% at 20 days. Same hindsight caveat: these names were chosen because they did well.
+- Cost inputs and catalysts for AI: electricity and data-center power, memory prices (DRAM and HBM), advanced chip supply (TSMC capacity), export rules, and customers' capital spending guidance. Scheduled: earnings of Nvidia and the large cloud companies, TSMC monthly sales, memory price reports.
