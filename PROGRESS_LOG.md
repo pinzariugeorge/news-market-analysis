@@ -90,4 +90,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DONE: Phase 1 part 1. Read the official IBKR Ireland commissions page in the built-in browser (the fetch tool got 403): US tiered 0.0035 USD per share, min 0.35 USD, max 1%; fixed 0.005 per share, min 1.00 USD; API directed orders cannot use Tiered; FINRA fee holiday to 2026-12-31. Wrote `src/costs.py` and `PHASE1_FACTS.md`. Cost findings: round trip on US stocks about 0.6% on 125 USD, 0.18% on 500 USD, 0.06% on 5,000 USD (whole shares, assumptions flagged); a currency conversion costs about 0.4% each way at a 500 USD size, so hold USD. Romanian tax per press: 16% on net annual gains declared by May 25, dividends 16%. Account size consequence: 500 EUR should be concentrated in one or two names; 5,000 EUR can hold four or five.
 
+- DONE: outcome ranges for a 500 USD account in PHASE1_FACTS.md: two names held 1 month: median +1.5%, 5th to 95th percentile -11% to +17%, 42% chance of a loss; 2 months: median +3.1%, -14.5% to +26.5%, 39% chance of a loss (buy-and-hold, survivor bias, no edge claimed).
+
 **Next step:** user states account size and allowed instruments (modelled both 500 and 5,000 EUR meanwhile). Then Phase 2: price history for the rule-selected names, calendars (earnings, EIA, OPEC, FOMC), company-level news source; Phase 1 part 2 in the IBKR application flow.

@@ -33,3 +33,13 @@ Status of each fact: VERIFIED = read on the official page or document; REPORTED 
 - Converting EUR to USD and back adds about 0.8% on a 500 USD trade (2 USD minimum each time): hold USD cash.
 - 16% tax on net gains is applied after costs: 5% gross keeps about 4.2% before costs.
 - Consequence for account size: with 500 EUR spread over several names, each order is about 100 USD and costs about 0.6% round trip, so concentrate in one or two positions; with 5,000 EUR and four to five names (about 1,000 USD each) costs are about 0.1% round trip.
+
+## Outcome ranges for a 500 USD account (historical simulation, not a forecast; 2026-11-06)
+Two names from different families of the rule-selected universe, equal weight, held 21 or 42 trading days, net of 0.30% round-trip costs, before tax, 10 years of data (2016-11 to 2026-11), all pairs and start dates pooled. Today's names, so survivor and bull-market bias; no timing rule, no stop loss.
+
+| Holding | Mean | Median | 25th to 75th percentile | 5th percentile | 95th percentile | Chance of a loss | Chance of losing over 10% |
+|---|---|---|---|---|---|---|---|
+| 1 month | +2.0% | +1.5% | -3.3% to +6.8% | -11.3% | +16.9% | 42% | 6.6% |
+| 2 months | +4.1% | +3.1% | -4.1% to +10.9% | -14.5% | +26.5% | 39% | 10.8% |
+
+In dollars on 500 USD: 1 month median +8, typical range -16 to +34, bad month (5th percentile) -56, good month (95th) +85; 2 months median +15, typical -21 to +55, bad -72, good +132. Since 2024 the numbers are higher (1 month median +2.2%, 2 months +4.7%), which reflects the recent bull run. After 16% tax on gains the mean falls to about +1.3% (1 month) and +3.0% (2 months). The agent has shown no edge yet, so these are buy-and-hold ranges, not a promised result.
