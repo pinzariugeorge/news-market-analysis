@@ -49,6 +49,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [x] Families: five (solar removed); single stocks only; names chosen by a point-in-time rule (`universe/UNIVERSE_RULE.md`); holding period capped at 20 days.
 - [ ] User still to give: account size to design for and allowed instruments (US single stocks assumed); add a market value screen and a revenue-purity screen when a reliable data source is chosen; verify tradability of the selected names at IBKR Ireland.
 - [x] Phase 1 part 1 (2026-11-06): `src/costs.py` written and `PHASE1_FACTS.md` (official US stock fees verified; tax from Romanian press).
+- [x] Baselines on the universe for a 500 USD account (`results/UNIVERSE_BASELINES.md`): noise dominates with two positions; no strategy consistent; 5-day holds cost up to 17% of the account in fees.
+- [ ] Next: judge strategies on many decisions (all 20 names in parallel as a paper portfolio, each decision scored separately), add event windows and calendar data, then the agent with the same costs.
 - [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
 - [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
 

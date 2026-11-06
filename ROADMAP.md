@@ -61,6 +61,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/UNIVERSE_BASELINES.md` | Baselines on the rule-selected single-stock universe for a 500 USD account (whole shares, 2 positions, real costs), by period and holding period; findings |
+| `results/universe_baselines.csv` | Same numbers as CSV |
 | `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
 | `results/baselines_2008_2019.csv` | Same numbers as CSV |
 | `results/dashboard.html` | Dashboard: where the agent acted on the S&P chart, cumulative return vs baselines, expected range vs outcome, and a table with the agent's reasoning per day. Open it in a browser |
@@ -80,6 +82,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `run_universe_baselines.py` | Baselines on the rule-selected universe for a small account: cash, hold two, random rotation, momentum, low volatility, trend; writes `results/universe_baselines.csv` |
 | `costs.py` | Cost model for IBKR Ireland US stocks (commission, pass-through assumptions, spread, FX, tax); `python -I src\costs.py` prints round-trip cost tables; import it in every backtest |
 | `select_universe.py` | Point-in-time universe rule: top 4 names per family by 250-day median dollar volume using only data before each as-of date; writes `universe/rule_selections.csv` |
 | `build_universe.py` | For a ticker CSV (`universe/*.csv`), downloads the last year of daily bars from Yahoo and writes `<name>_metrics.csv` (volatility, liquidity, drawdown): `python -I src\build_universe.py universe/solar_chain.csv` |
