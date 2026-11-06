@@ -39,3 +39,10 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 - DONE: git repo set up and pushed to origin/main (remote's stub README merged, ours kept). Added `ROADMAP.md` (file map) and `CLAUDE.md` (standing rule: keep context files current in the same change). Parent-folder `context\` notes are from an older GDELT/correlation framing and are not authoritative.
 
 **Next step:** draft handbook v0 in `handbook/` (one entry per event type, fields: mechanism, magnitude, horizon, amplifiers, dampeners, sectors, index effect, confidence, no-effect base rate), from general finance knowledge, then check and refine it against the 2008-2019 big-move days and their headlines (never 2020). Also check why 2020-09-23 has 55 headlines.
+
+## 2026-11-06 - Session 2 (continued): handbook v0
+- DONE: `handbook/HANDBOOK.md` v0 (principles, base rates from 3,020 handbook-period days, 14 event-type entries, agent usage steps). Checked against 2008-2019 big-move days only. Base rates: daily sd 1.23%, up days 53.9%, |move|>=2% on 8.2% of days; volatility clusters (mean |move| 1.49% after a 2%+ day vs 0.78%); after a 2%+ drop next day up 58%, after a 2%+ rise 49%.
+- FINDING: many headlines in the dataset are market recaps ("Dow plunges..."), not causes, so the news layer is thin on explicit causes. The handbook tells agents to ignore recap-only headlines.
+- DONE: ROADMAP.md updated with the handbook folder.
+
+**Next step:** (1) user reviews handbook v0; (2) test it on 2008-2019: for each |move|>=2% day (247), do the handbook plus past-only headlines name the right event type and size? Record hit rates per event type in `handbook/` (never use 2020); (3) design the daily record format (new events, open storylines, past-only market context). Also check why 2020-09-23 has 55 headlines.

@@ -33,6 +33,11 @@ Last updated: 2026-11-06
 Splits: `handbook` = 2008-2019 (used to build the handbook), `test` = 2020 (never used to write the handbook), `holdout` = 2021 onward (second test).
 Timing rule: a headline dated D is only usable from `decision_date` (next trading day after D).
 
+## Handbook (`handbook/`)
+| File | Content |
+|---|---|
+| `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 14 event-type entries, agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
+
 ## Code (`src/`)
 | Script | Purpose |
 |---|---|
@@ -44,7 +49,6 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 Run with `python -I src\<script>.py` on Windows.
 
 ## Planned, not created yet
-- `handbook/`: event-type to market-effect entries (mechanism, magnitude, horizon, amplifiers, dampeners, sectors, confidence). Built from 2008-2019 only.
 - `results/`: scores and reports.
 - `cache/`: cached model outputs (git-ignored).
 
