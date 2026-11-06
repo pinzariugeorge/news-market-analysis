@@ -20,7 +20,7 @@ Today's liquid names, 5-10 years of survivors: all buy-and-hold numbers are bias
 
 ## Findings
 1. No strategy is consistent. Trend gained +139% in 2023-24 and lost 35% in 2022 and gained 4% in 2025-now; momentum lost 28% in 2022 and gained 209% in the final test. The same rule swings between the worst and best of the random range.
-2. Random pairs show how much is luck: with two positions, the 5th to 95th percentile spans about 100 to 200 points of return per period. One result from one pair means almost nothing. Comparing strategies needs many more independent decisions than a two-name account produces.
+2. Random pairs show how much is luck: with two positions, the 5th to 95th percentile spans about 60 to 150 points of return per period. One result from one pair means almost nothing. Comparing strategies needs many more independent decisions than a two-name account produces.
 3. Short holds are expensive on 500 USD: 5-day rotation paid 13 to 84 USD in fees (3% to 17% of the account, up to 146 USD or 29% for random rotation) for 30 to 200 orders. 20-day holds paid 7 to 39 USD. Fees are the clearest result: longer holds lose less to costs.
 4. Buy-and-hold of two names was +24% / -20% / +49%: dependent on which two names.
 5. In the final test momentum with H=10 (+209%) and H=5 (+141%) beat the random 95th percentile, but the same rule lost 28% in 2022 and was only +84% and +31% in validation; this is not evidence of an edge.
@@ -43,5 +43,5 @@ Same method, three names from different families at about 333 USD each. Return i
 | Random, average (5th to 95th) | 20 | -2% (-22 to +21) | +25% (-16 to +69) | +67% (+17 to +119) |
 
 - Fees: 5-day rotation paid 19 to 114 USD (2% to 11% of the account), 20-day rotation 13 to 56 USD (1% to 6%).
-- Compared with 500 USD and 2 positions the luck spread narrows (random 5th to 95th percentile about 40 to 100 points instead of 60 to 200), but no strategy is consistent across periods: trend ranges from -17% to +149%, momentum from -11% to +119%, and all of them lag or beat the random average depending on the period. Same survivor and hindsight caveats.
+- Compared with 500 USD and 2 positions the luck spread narrows (random 5th to 95th percentile about 40 to 100 points instead of 60 to 150), but no strategy is consistent across periods: trend ranges from -17% to +149%, momentum from -11% to +119%, and all of them lag or beat the random average depending on the period. Same survivor and hindsight caveats.
 - Costs by order size (IBKR, `src/costs.py`): about 0.3% round trip at 333 USD and 0.18% at 500 USD; eToro 0.6% and 0.4%.
