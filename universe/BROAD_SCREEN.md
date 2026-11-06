@@ -42,3 +42,22 @@ How much of an asset's daily moves is explained by its cost or price driver on t
 ## What the data says
 - Commodity-linked equities follow their driver strongly on the same day (gold -> miners R-squared 0.53-0.61, oil -> energy 0.31-0.40), weaker for cost-side links (jet fuel -> airlines R-squared 0.07; silver -> solar 0.06). The cost-input idea works best for producers of the commodity, not for its users.
 - Yesterday's driver move does not predict today's stock move (lead correlations between -0.06 and +0.06, about zero). The market prices the input on the same day. So an edge cannot come from reacting to a driver after the fact; it would have to come from anticipating the driver (scheduled reports, positioning, forecasts) or from the pair itself (hedging, spread).
+
+## Holding horizon test (5 years of daily data, 20 names in 6 families plus SPY; 2026-11-06)
+Rule: long if the previous 20 days were up, else flat; one entry every h days. Costs: 0.24% per round trip for a small US stock order (commission plus spread allowance) and 1.2% for a 3 EUR fixed fee on a 500 EUR order. Pooled over all names.
+
+| Hold h days | Entries | Average abs move | Always-long return | Momentum-rule return | Win rate | Net of US cost | Net of EU cost |
+|---|---|---|---|---|---|---|---|
+| 1 | 11,965 | 2.17% | 0.09% | 0.10% | 50.8% | -0.14% | -1.10% |
+| 3 | 3,956 | 3.96% | 0.27% | 0.23% | 52.4% | -0.01% | -0.97% |
+| 5 | 2,376 | 5.09% | 0.45% | 0.26% | 52.2% | +0.02% | -0.94% |
+| 10 | 1,203 | 7.20% | 0.88% | 0.81% | 53.4% | +0.57% | -0.39% |
+| 20 | 596 | 10.56% | 1.82% | 1.66% | 54.5% | +1.42% | +0.46% |
+
+Average absolute move over a 5-day window by family: solar 7.8%, chips 5.5%, copper and uranium 5.2%, gold 4.5%, pharma 3.8%, oil and gas 3.2%, index 1.7%. Average always-long return over 20 days: chips +4.0%, copper and uranium +2.3%, gold +2.1%, oil and gas +1.7%, pharma +1.6%, index +0.9%, solar -0.2%.
+
+Reading:
+- A bigger move does not mean more money: solar moves most and earned nothing, chips earned most.
+- The momentum rule did no better than always holding at any horizon (it trails it at 3, 5, 10 and 20 days). The positive net figures at 10 and 20 days come from the names' own uptrend, not from timing.
+- Costs: at 1 day the fee eats the whole average gain; at 20 days it is small. The EU fixed fee is only covered at 20 days.
+- Strong caveat: the 20 names were chosen because they have done well recently (hindsight selection), so the always-long returns are biased upward. Nothing here is a forecast or a recommendation.
