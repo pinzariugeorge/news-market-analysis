@@ -2,7 +2,7 @@
 
 Usage: python -I src/build_news_corpus.py
 Reads  data/raw/candidates/sp500_headlines/sp500_headlines_2008_2024.csv
-       data/raw/sp500_2008_2024_daily.csv
+       data/raw/sp500_1950_2024_daily.csv
 Writes data/processed/news_all.csv  : date, decision_date, split, title
        data/processed/market_days.csv: date, close, ret_pct, split   (ret_pct = close-to-close vs previous day)
 Drops CP (S&P close = outcome leak), fixes mojibake, removes exact duplicates (same date + normalized title).
@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "raw" / "candidates" / "sp500_headlines" / "sp500_headlines_2008_2024.csv"
-PRICES = ROOT / "data" / "raw" / "sp500_2008_2024_daily.csv"
+PRICES = ROOT / "data" / "raw" / "sp500_1950_2024_daily.csv"
 OUT_NEWS = ROOT / "data" / "processed" / "news_all.csv"
 OUT_DAYS = ROOT / "data" / "processed" / "market_days.csv"
 

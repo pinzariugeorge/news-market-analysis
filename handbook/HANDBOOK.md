@@ -89,15 +89,25 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 ### 3.6b US midterm elections (calendar event, every 4 years in November)
 - Mechanism: not a surprise-driven event in most cases. Uncertainty about the balance of Congress (and so about tax, spending, regulation) weighs on the market before the vote and resolves after it. Divided government (gridlock) is usually read as "less policy risk".
 - Typical pattern (published research, mostly pre-2019 data; some quoted averages may include later years, so treat them as context and do not tune to them): the midterm year is the weakest year of the four-year presidential cycle, with the market often weak or choppy until the vote and then rising. The 12 months after a midterm are positive in the large majority of cases since 1950, with averages in the low-to-mid teens in percent; Q4 plus the next two quarters were positive far more often than average quarters. Sources are listed in `handbook/SOURCES.md`.
-- Our own check on the handbook period (S&P 500 closes, election day to later; from `data/processed/market_days.csv`):
-  | Election day | Prior 3 months | Day after | +1 week | +1 month | +3 months | +6 months | +1 year |
-  |---|---|---|---|---|---|---|---|
-  | 2010-11-02 | +5.9% | +0.37% | +1.7% | +2.3% | +9.3% | +12.9% | +2.1% |
-  | 2014-11-04 | +4.8% | +0.57% | +1.4% | +3.0% | +2.5% | +3.8% | +4.5% |
-  | 2018-11-06 | -3.6% | +2.12% | -1.2% | -4.4% | -1.7% | +4.6% | +12.0% |
-- Reading: the day after the vote was positive all three times (+0.4%, +0.6%, +2.1%): uncertainty resolving, not a big fall. The pattern is "rise" far more than "fall". The 2018 day-after rally (best post-midterm day in decades) was followed by a Fed-driven slide into the 2018-12-24 low, so the post-election bounce is not a trend by itself; rates and other drivers can override it. Only 3 cases in our data, so low statistical weight.
+- Our own check, all 13 midterms with data 1970-2018 (S&P 500 closes from election day; `data/raw/sp500_1950_2024_daily.csv`; earlier midterms fall on days the market was closed, so they are missing):
+  | Measure | Mean | Median | Share positive |
+  |---|---|---|---|
+  | Prior 3 months | +3.1% | +4.0% | 69% |
+  | Day after the vote | +0.57% | +0.37% | 77% |
+  | +1 month | +0.6% | +2.3% | 69% |
+  | +6 months | +13.1% | +12.9% | 100% |
+  | +1 year | +13.1% | +12.0% | 100% |
+  - Day after, per year: 1970 +0.20, 1974 -0.48, 1978 +0.64, 1982 +3.91, 1986 +0.15, 1990 -1.80, 1994 -0.05, 1998 +0.70, 2002 +0.91, 2006 +0.21, 2010 +0.37, 2014 +0.57, 2018 +2.12 (%).
+  - Weakest 1-year follow-ups: 1986 +1.9%, 2010 +2.1%, 2014 +4.5%. No negative 1-year result in 13 cases.
+  - 2018 detail: prior 3 months -3.6%, day after +2.12%, but -4.4% over the next month (Fed-driven slide into the 2018-12-24 low) before recovering; a bounce can fail for a few weeks if a stronger driver is at work.
+- Reading: it is not a coin flip between "rise or fall": the vote itself is a small positive on the day in about 3 of 4 cases (big swings are rare and have specific causes: 1982 recession-end/rate-cut rally +3.9%, 1990 recession/Gulf War -1.8%), and the 6 to 12 months after were positive in all 13. Only 13 cases and not independent of the general upward drift of stocks (base rate for any 12 months is about +9 to 10%), so the edge over a random year is modest (+13% vs ~+9%).
 - Practical rules: (1) before the vote: reduced conviction, expect choppiness, do not add risk just because "midterm rally" is coming; (2) the day after: modest positive bias (+), strongest if the market was down into the vote and the outcome is divided government; (3) next months: bullish bias unless a stronger driver (Fed tightening, credit stress) contradicts it; (4) if an unexpected outcome changes tax/regulation expectations, reason by sector (see 3.6).
 - Index effect: low to medium. Confidence: medium for a positive drift over 6-12 months, low for any single day.
+
+### 3.6c US presidential election (every 4 years)
+- Our check (S&P closes from election day, 9 elections 1972-2016 with data; earlier ones fall on market holidays): day after mean -0.84% (median -0.67%, positive in 3 of 9); +1 month mean -1.1% (median +0.5%); +6 months mean +5.0%; +1 year mean +12.6% (positive 8 of 9). Prior 3 months mean -0.4%.
+- Reading: more uncertainty around the vote than at midterms (the executive changes), with a weak day or month around it in many cases and a positive 6 to 12 months afterward. Surprise outcomes matter more (see 3.6, 2016-11-09: overnight futures fell, the S&P closed +1.1%).
+- Confidence: low for the day, medium for a positive drift over 6 to 12 months.
 
 ### 3.7 Referendums and political shocks with unclear mechanics (e.g., Brexit)
 - Mechanism: uncertainty about trade, currency, the banking system and policy; flight to safety.

@@ -36,6 +36,9 @@ Not decided yet: broker, scheduler, research source for live use (the video setu
 - **Test before trusting:** run each routine several times and read the full run history before relying on it. Keep secrets in environment variables, never in committed files.
 - Not adopted: his strategy (generic, 30-day claim unproven) and the live tools.
 
+## Data horizon (decided 2026-11-06)
+2008 as the start was only because the headlines dataset begins in 2008. Prices now go back to 1950 (`data/raw/sp500_1950_2024_daily.csv`), so base rates and calendar-event studies (elections, Fed days, seasons, crises) use 1950-2019. Wanted: more news and an event calendar before 2008 (dot-com crash, 2001 attacks, 2002 lows, 2003 war, 2006 midterms) for the agent; source still to be chosen. 2020 stays the test year and 2021+ the holdout for everything.
+
 ## Handbook (decided 2026-11-06)
 Goal: a handbook of how event types affect the market (mechanism, magnitude, horizon, amplifying and dampening conditions, affected sectors, confidence, "no meaningful effect" as a valid call). It is used by the simulation agent and for day trading. Agents act as expert financial analysts using the handbook, ongoing storylines (multi-day/multi-week events) and past-only market context (trend, volatility).
 - Built from several years of data plus general finance knowledge, NOT from 2020 outcomes. 2020 is the held-out test year (circular otherwise).
