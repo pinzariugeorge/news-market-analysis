@@ -68,3 +68,20 @@ Reading:
 - Correlation: average pairwise daily correlation over the last year is 0.61 among AI chips, 0.32 among platforms, 0.34 across all 11, against 0.79 among oil majors. Chips move together, so holding several of them is less diversification than it looks.
 - Horizon test (5 years, pooled): chips average absolute move 2.3% (1 day), 5.2% (5 days), 7.2% (10 days), 10.9% (20 days); always-long return per entry 0.16%, 0.83%, 1.66%, 3.53%; the trailing-20-day momentum rule did not beat always holding for chips (3.18% vs 3.53% at 20 days) but did for platforms at 10 and 20 days (1.72% vs 1.10%, 2.94% vs 2.38%), win rate 52% at 5 days rising to 59-60% at 20 days. Same hindsight caveat: these names were chosen because they did well.
 - Cost inputs and catalysts for AI: electricity and data-center power, memory prices (DRAM and HBM), advanced chip supply (TSMC capacity), export rules, and customers' capital spending guidance. Scheduled: earnings of Nvidia and the large cloud companies, TSMC monthly sales, memory price reports.
+
+## Holding period test, single stocks only (decision 2026-11-06: no indexes or ETFs in the traded universe)
+20 single stocks in the six families (oil and gas, gold miners, chips, pharma, copper and uranium, solar), 5 years of daily data, pooled; one entry every h days; cost 0.24% per round trip for a small US order.
+
+| Hold h days | Entries | Avg abs move | Always-long return | Net of cost | Net per day held | Momentum-rule return | Win rate |
+|---|---|---|---|---|---|---|---|
+| 5 | 4,920 | 5.2% | 0.48% | 0.24% | 0.049% | 0.27% | 52.1% |
+| 10 | 2,460 | 7.4% | 0.95% | 0.71% | 0.071% | 0.83% | 53.0% |
+| 20 | 1,220 | 10.8% | 1.96% | 1.72% | 0.086% | 1.69% | 53.9% |
+| 40 | 600 | 16.4% | 4.42% | 4.18% | 0.104% | 2.26% | 52.3% |
+| 60 | 400 | 18.7% | 6.18% | 5.94% | 0.099% | 5.10% | 57.2% |
+
+- Net return per day held rises with the holding period and flattens at 40-60 days (about 0.10% a day); 5-day holds barely cover costs.
+- The ranking holds in both halves of the sample (first half to 2024-05-08, second half after): longer is better in each, so the result is not from one lucky period; but both halves are inside a rising market for these names.
+- The momentum rule never beat simply holding. Win rates stay at 52-57%: the gain comes from the average size of winners, not from calling direction.
+- By family, average 20-day return: chips +3.5%, copper and uranium +2.3%, gold +2.0%, oil and gas +1.7%, pharma +1.6%, solar -0.2% (solar lost at every horizon, win rate 40-47%).
+- Caveat: the names were chosen because they did well lately (hindsight selection), so these numbers overstate what to expect. They show cost behavior and horizon shape, not forecasts. The test goes only to 60 days.

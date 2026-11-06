@@ -9,15 +9,18 @@ Research and simulation only until the gates below are passed. Not financial adv
 4. **The regime is stressed.** Last month: Nasdaq 100 -14.6%, semiconductors -28%. Handbook principle 12 says big moves cluster: expect large moves both ways, size small.
 5. **Volatility is not an edge and most movers are down.** Solar names moved 3-7% a day and most fell 47-84% from a peak within a year. Loss control comes first.
 6. **News coverage is thin.** The index headline set named a cause on fewer than one in four big-move days; we have no company-level news or earnings dates yet.
-7. **Screening many names and keeping the winners fools you.** Anything chosen because it did well in the same data used to judge it is overfit. Selection and testing must use different periods.
+7. **Longer holds pay for themselves.** On single stocks, 5-day holds barely cover costs while 20-60 day holds earned about 0.09-0.10% per day held net of cost, in both halves of five years of data; a momentum rule never beat holding. The test is biased by hindsight selection and stops at 60 days (`universe/BROAD_SCREEN.md`).
+8. **Screening many names and keeping the winners fools you.** Anything chosen because it did well in the same data used to judge it is overfit. Selection and testing must use different periods.
 
 ## Candidate theme families (research list, not recommendations)
+Single stocks and commodity drivers only: no indexes and no ETFs in the traded universe (user decision 2026-11-06; index and ETF numbers in the screens are measurement references).
+
 | Family | Why it is testable | Scheduled catalysts | Names to measure first |
 |---|---|---|---|
-| Oil and gas producers | Same-day link to crude (R-squared 0.3-0.4) and liquid | Weekly US inventories, OPEC meetings, gas storage, earnings | Exxon, Chevron, Occidental, energy ETF; crude and natural gas as drivers |
-| Gold miners | Strong link to gold (R-squared 0.5-0.6) | Fed meetings, inflation and jobs data, earnings | Newmont, gold miners ETF |
+| Oil and gas producers | Same-day link to crude (R-squared 0.3-0.4) and liquid | Weekly US inventories, OPEC meetings, gas storage, earnings | Exxon, Chevron, Occidental; crude and natural gas as drivers |
+| Gold miners | Strong link to gold (R-squared 0.5-0.6) | Fed meetings, inflation and jobs data, earnings | Newmont, Barrick, Agnico Eagle |
 | Memory and chip makers | Very liquid, very volatile, strong link to a sector ETF | Earnings, memory price reports, export rules | Micron, Nvidia, AMD, TSMC |
-| Pharma and biotech | Leader over 6 months; event-driven | Earnings, trial results, regulatory decisions | Eli Lilly, Novo Nordisk, biotech ETF |
+| Pharma and biotech | Leader over 6 months; event-driven | Earnings, trial results, regulatory decisions | Eli Lilly, Novo Nordisk |
 | Copper and uranium producers | Commodity-linked, but both down hard in a month | Inventory data, policy, earnings | Freeport-McMoRan, Cameco |
 | Solar (kept as one theme) | Distressed, policy-driven, extremely volatile | Tariff and policy decisions, earnings | `universe/UNIVERSE.md` |
 

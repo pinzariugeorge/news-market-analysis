@@ -81,4 +81,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DONE: AI theme check (universe/BROAD_SCREEN.md): chips fell 22-40% in a month, correlated 0.61 among themselves, basket max drawdown -50% over 5 years; longer holds (10-20 days) beat 1-5 day holds on average, momentum helped for platforms but not for chips; strong hindsight caveat.
 
+- DECISION (user): continue with the six theme families, single stocks only (no indexes or ETFs). DONE: holding period test on 20 single stocks (5, 10, 20, 40, 60 days, net of 0.24% per round trip): net return per day held rises from 0.049% at 5 days to about 0.10% at 40-60 days, stable across both halves of the sample; momentum never beat holding; solar lost at every horizon. Hindsight selection caveat; horizon capped at 60 days.
+
 **Next step:** user decisions listed at the end of `PLAN.md` (theme families, account size, allowed instruments, API budget). Then Phase 1: `src/costs.py` and verification of IBKR facts (fees, account opening for Romania, paper account, API, US single-stock availability, tax).
