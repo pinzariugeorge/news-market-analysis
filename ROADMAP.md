@@ -65,6 +65,9 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/FAMILY_RUN.md` | Family agent run fam_v0 (validation 2023-2024): setup, result (all calls flat, portfolio stayed cash), counterfactuals, options |
+| `results/dashboard_family.html` | Dashboard of the family run: every stock, commodity and driver price with the agent's calls, portfolio vs leaders basket, decision table with reasoning. Open in a browser |
+| `results/fam_v0/` | Records (inputs), decisions_raw (agent JSON), decisions.csv, summary.json, dashboard_data.json |
 | `results/WIDE_TEST.md` | Wide test: momentum, reversal, low volatility, trend, oversold and random rules scored on the whole 20-name basket per decision date, by period and holding period; findings |
 | `results/wide_test.csv` | Same numbers as CSV |
 | `results/INDICATOR_TESTS.md` | Test of 10 standard indicator and candlestick signals on 45 stocks by period and holding period; no reliable edge; findings |
@@ -79,6 +82,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Agent design (`agent/`)
 | File | Content |
 |---|---|
+| `agent/FAMILY_AGENT_PROMPT.md` | Prompt for the family run: long or flat per family with horizon and confidence; leader chosen by rule; JSON output |
 | `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
 | `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
 | `agent/DECISION_LOG.md` | Decision log columns, baselines, metrics, run phases, weekly review |
@@ -90,6 +94,10 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `familydata.py` | Shared data access for the family run (stocks cache, commodity CSVs, point-in-time names and leaders) |
+| `family_prepare.py` | Picks decision days and writes past-only family records into `results/<run>/records/` |
+| `score_family_run.py` | Scores family calls (counterfactual for flat) and a 1,000 USD whole-share portfolio vs benchmarks; writes decisions.csv, summary.json, dashboard_data.json |
+| `build_dashboard_family.py` | Builds `results/dashboard_family.html` |
 | `download_commodities.py` | Downloads free daily commodity and driver series from Yahoo (2000 on) into `data/raw/commodities/` (git-ignored) |
 | `build_family_stats.py` | Computes the per-family handbook statistics from history to 2024 (build and validation); writes `handbook/family_stats.csv` |
 | `run_wide_test.py` | Scores selection rules on the whole point-in-time basket per decision date (many decisions, costs, periods); writes `results/wide_test.csv` |

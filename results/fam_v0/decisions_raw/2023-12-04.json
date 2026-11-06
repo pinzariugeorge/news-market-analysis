@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-12-04",
+  "market_view": "Calm, risk-on regime: VIX 12.6 near lows, 10-year yield falling sharply, dollar soft. Supportive backdrop but no stock-specific timing edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "reasoning": "Crude fell about 10% in 20 days; that move is already priced. XOM is below its 200d average and no catalyst gives a concrete reason to be long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Gold jumped 2.5% on a falling yield and NEM rose 9.6% in 5 days. Driver moves already happened and do not predict the next days. Jobs report adds variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Supportive calm regime, but NVDA is at the base rate with no scheduled catalyst. Trend and momentum have shown no edge. Not clear enough for 0.55."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is just up 2.4% in a day and sits below its 200d average. Pharma moves on its own news and no catalyst is known. No reason to prefer long."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX rose 5% in a day with copper +2%. That is the same-day driver reaction, already in the price. High volatility and costs, no edge."}
+  },
+  "would_change_my_mind": "A concrete scheduled catalyst or a clear surprise not yet priced in for a specific leader, or a marked rise in VIX that creates a fresh dislocation."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-03-06",
+  "market_view": "VIX has fallen to 18.5 after a bounce, yields rose sharply over the past 20 days and the dollar is firm; a calm-ish but rate-sensitive regime with a jobs report ahead. No clear directional edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "XOM already moved with crude and nat gas jump (priced in). Crude below its 200d average. No scheduled catalyst that favors long; base rate is a coin flip."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "NEM down 15% in 20 days and far below its high, but oversold is not an edge per the handbook. Rates and dollar are headwinds, and jobs/inflation data add variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "NVDA is the most volatile name (4.1% daily) after a strong 60-day run. Momentum has shown no edge, and costs plus variance argue for staying out."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is defensive and low volatility but in a downtrend. Sector link is weak and no concrete catalyst identified; expected edge is about zero after costs."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "FCX jumped about 10% in 5 days with copper up; that move is already in the price. China data is a coin flip. No specific reason beats flat."}
+  },
+  "would_change_my_mind": "A clearly scheduled, well-understood catalyst inside the window with a known direction, or a stress-driven selloff that lifts expected rebound odds well above the base rate."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-04-05",
+  "market_view": "VIX jumped to 16.35 (+14% in a day, +28% in 5 days) with semis and health care selling off: a rising-volatility, mildly risk-off tape, but still a low absolute level. No clear scheduled edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Crude rally (+9% in 20d) and XOM near its high are already in the price; driver moves do not predict next-day stock moves. Earnings and a jobs report add variance without direction. No concrete edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Gold at record highs after a +5% week; the move is priced in. NEM is below its 200-day average and 28% off its high, so the stock lags gold. No stable timing edge in the handbook."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA fell 3.4% with the sector ETF down 2.7% and VIX rising; most volatile family (3% daily). Oversold bounce rules show no edge. Earnings season inside the window adds variance."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Sector drifted lower; LLY is up 23% over 60 days. Pharma moves on its own news and the sector link is weak. Nothing concrete makes long better than flat."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "FCX is up 29% in 20 days and near its high with copper at a 252-day high; the rally is priced in. High volatility (2.3-3.5%) and coin-flip direction; no edge."}
+  },
+  "would_change_my_mind": "A scheduled catalyst with a clear sign, or a sharp volatility-driven selloff in a family leader without a change in its fundamental driver."
+}

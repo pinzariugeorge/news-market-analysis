@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-10-04",
+  "market_view": "Risk-off tone: VIX jumped 12% to 19.8 (up 41% in 20 days) while the 10-year yield hit a 52-week high of 4.80% and the dollar is firm. Higher rates and rising volatility argue for caution, but direction is not predictable.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "XOM is near its high and crude is flat over 5 days. Yesterday's driver moves are already priced in. Earnings season lands inside the window and adds variance. No concrete reason to be long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "reasoning": "Gold is falling under a rising dollar and yields, and NEM is -10.6% over 5 days and below its 200d average. Oversold bounces have shown no edge in our tests, and the rate pressure is still active."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA fell 2.8% with the sector on the rate and VIX spike. No catalyst identified. Chips are the most volatile family, and high rates hurt growth names. Dip-buying has no tested edge."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is a low-volatility defensive below its 200d average, with the sector weak. Earnings fall inside the window. Costs of about 0.3% are large relative to expected moves; no clear edge."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "reasoning": "FCX is down 11% over 20 days with copper below its 200d average and a rising dollar. China data is a risk. No concrete catalyst for a rebound, so flat."}
+  },
+  "would_change_my_mind": "A clear scheduled catalyst or a sharp easing of yields and VIX with a driver trend I could tie to a specific, not-yet-priced event."
+}

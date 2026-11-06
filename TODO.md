@@ -62,6 +62,7 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] Confirm themes besides solar with the user (lithium, copper, semiconductors, uranium, oil services, ...).
 - [ ] Check each candidate: tradable and fee schedule at the chosen broker, status of the company (bankruptcies, delistings), earnings dates.
 - [x] Free commodity and driver prices downloaded (`universe/COMMODITY_DATA.md`); FRED and EIA (free key) still to retry for spot prices and storage reports.
+- [x] Agent run on the family harness (validation 2023-2024): all 115 calls flat, portfolio stayed cash (`results/FAMILY_RUN.md`, dashboard `results/dashboard_family.html`). Open: choose among the options at the end of FAMILY_RUN.md (accept, change prompt, run final test once, stop).
 - [ ] Source company-level news and earnings dates (Benzinga stock-news Kaggle dataset, `fnspid_news` subset, or a current news source) and component price series (polysilicon index, silver, etc.).
 - [x] Handbook v1 for the five families written (`handbook/HANDBOOK_COMPANIES.md`); still open: earnings calendar and scheduled-event data, and testing the general-knowledge parts.
 - [x] Extend the handbook with company-level entries (earnings reaction, guidance, tariff and policy news, component price moves) using history only.

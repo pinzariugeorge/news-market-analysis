@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-05-04",
+  "market_view": "Calm regime: VIX 18.3, below its 200-day average and far under its 252-day high. Crude fell sharply (WTI -4.3% in one day, -15% in 20 days), and earnings season adds variance. No clear macro catalyst favours a directional call.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude's drop is already in XOM's price and yesterday's driver move does not predict the next day. The holding window includes earnings and a jobs report. No concrete reason to prefer long over flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "Gold is near its high, but NEM lags gold and fell 7.5% over 20 days. Already-moved drivers are priced in, and no timing edge exists. Earnings and Fed-sensitive jobs data raise variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is up 32% over 60 days with an earnings report due in the window, so variance is high with no directional edge. Base rate is about 52% up before costs. Flat."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "JNJ is a low-volatility defensive name with a weak sector link and no identified catalyst. Expected gain is small relative to the 0.3% cost. No concrete reason to be long."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX is down 10% over 20 days with copper weak, but that is a trend or oversold signal, which has shown no edge. China data and earnings add variance. Flat."}
+  },
+  "would_change_my_mind": "A scheduled, clearly favourable catalyst for a specific leader with a documented base-rate tilt, or an unpriced driver surprise."
+}

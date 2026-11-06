@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-08-06",
+  "market_view": "Volatility shock: VIX 38.6 (+65% in a day, +212% in 20 days), semis -22% in 20 days, yields and dollar falling. Handbook says big days cluster in both directions and gives no reliable direction signal, so size down and stay selective.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude is -11% in 20 days and below its 200d average; XOM is the strongest oil name but no concrete catalyst. Weekly inventories add variance only. Base rate about 50%."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Gold is near highs with falling real-rate pressure and safe-haven demand, but NEM already fell 3% yesterday and the move is priced in. Same-day driver moves do not predict next days. No clear edge."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA -22% in 20 days at 4.8% daily vol, in a VIX spike regime. Oversold or trend rules have shown no edge; no scheduled catalyst identified by the record. Rebound is possible but not supportable above 0.55."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "LLY fell 15.6% in 20 days; pharma moves on its own news and the sector link is weak. Defensive, but no concrete reason to prefer long over flat; earnings-season variance."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "reasoning": "Copper -13.8% in 20 days, below 200d average, FCX -25% from its high. China demand worries and the risk-off tone; no edge from the oversold state."}
+  },
+  "would_change_my_mind": "A concrete scheduled catalyst or policy backstop (for example a clear Fed easing signal) with a calming VIX, or a clear idiosyncratic earnings setup for a leader."
+}

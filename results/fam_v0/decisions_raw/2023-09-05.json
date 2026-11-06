@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-09-05",
+  "market_view": "Calm regime: VIX 13, falling fast; rates and dollar firm. September is the weakest month historically, and low volatility gives no directional edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "XOM and crude already rallied (+2% yesterday, crude +7% in 5 days); that is priced in and the driver lead is about zero. No scheduled catalyst favors a long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "NEM is below its 200-day average and 28% under its high; rising yields and a firm dollar are headwinds. No clear reason to be long."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "NVDA is near its high after a strong 60-day run, most volatile family (3% daily). Momentum is not an edge and September is fragile. Flat."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is below its 200-day average and weak over 5 and 20 days, but the handbook shows no mean-reversion edge. Low volatility means little to gain after costs."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "FCX jumped 4% on the last day and 8% in 5 days; the driver move is priced in. Uranium strength belongs to CCJ, not the leader. No concrete edge."}
+  },
+  "would_change_my_mind": "A scheduled catalyst or driver surprise clearly not yet priced in, or a volatility-driven selloff that is not a stress event."
+}

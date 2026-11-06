@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-06-05",
+  "market_view": "Calm, low-volatility regime (VIX 13, far below its 252-day high); commodities are sold off in the last week (crude, copper, silver, gold miners) while rates have eased. No clear scheduled catalyst favouring longs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude fell 8% in 5 days, but a move that already happened is priced in and has no next-day predictive value. No concrete catalyst; OPEC and inventory events add variance only."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM fell 3% on the day with gold only -0.9%; no stable next-day signal after a driver or stock move. No edge from oversold reasoning; jobs report adds variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is at a 52-week high after +26% in 20 days, but momentum has shown no edge and volatility is high at 3%. Earnings-season events are not in the window. No concrete reason beyond the base rate."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "LLY is at a high after a solid run; pharma moves on its own news and the sector link is weak. Base rate roughly 52% up; costs eat the small edge."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX dropped 4.5% with copper -2.8%; the driver move is already priced in. High volatility and no scheduled catalyst; no concrete reason for a long."}
+  },
+  "would_change_my_mind": "A scheduled catalyst or driver event with clear surprise and size inside the holding window, which the record does not show."
+}

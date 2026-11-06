@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-03-06",
+  "market_view": "Calm regime (VIX 14.5, low versus the past year, small uptick), yields falling, dollar flat. No concrete scheduled catalyst favouring any leader; base rates dominate.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "XOM rose on a day crude fell; the driver move is already priced. Weekly inventories add variance but no direction. No concrete reason beyond the ~50% base rate."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Gold at a 252-day high and NEM bounced 11.7% in 5 days; that is a past driver move. Miners lag gold, but no selection rule has shown an edge. Jobs report adds variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is at its high after +89% in 60 days, with 4% daily volatility. Momentum is not an edge per the handbook, and costs and variance are high. No clear catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "LLY is near its high with a weak sector link. It moves on its own news (readouts, FDA), which I cannot forecast from the record. Base rate only."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX fell 3% on the day while copper was flat. A past move, no predictive link. Uranium is weak, but no tested edge. No concrete reason for a long."}
+  },
+  "would_change_my_mind": "A clear scheduled or surprise catalyst in the record with a concrete channel and a still-unpriced outcome for a leader."
+}

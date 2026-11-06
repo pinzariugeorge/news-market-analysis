@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-11-02",
+  "market_view": "VIX has dropped to 16.9 (-16% in 5 days), a calm relief regime with the 10-year yield easing from 4.8%+. No clear edge at index level; earnings season and a jobs report fall in the window.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "XOM follows crude same day; crude fell 5.8% in 5 days, already priced in. Next-day driver lead is about zero. Earnings and weekly inventories add variance without a directional reason."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM is below its 200-day average while gold rose 8% in 20 days; that move is already in the price. Falling yields help but are priced. No concrete catalyst, and the Fed and jobs data add variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA rose 3.8% with the sector ETF on the last day; same-day moves do not predict the next. Base rate is about 52% up with 3% daily vol, so costs eat any edge. No clear catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is weak (-14% over 60 days) but trend and oversold rules showed no edge. The sector link is weak and moves come from own news. Low volatility means little to gain after costs."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "reasoning": "FCX is down 21% over 60 days with copper below its 200-day average; there is no edge from oversold or trend rules. China data and earnings add variance with no known direction."}
+  },
+  "would_change_my_mind": "A scheduled, concrete positive catalyst for a leader (for example a clear earnings or guidance beat versus consensus) that is not yet in the price."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-05-06",
+  "market_view": "Calm regime: VIX 13.5 and falling, yields easing, dollar flat. Base rates apply; no clear stock-specific edge across the families.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude fell about 7% in 5 days, but that move is already priced in and the driver lead is near zero. XOM sits near its trend. No concrete catalyst; the inventory report adds variance only."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Gold is flat to slightly down and NEM is volatile (3.2% a day) and 18% below its high. Earnings and the jobs report add variance. No edge beyond the coin-flip base rate after costs."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA bounced 3.5% on the last day, which is already in the price. Daily volatility is 3.8%. Earnings and macro events fall inside the window. No concrete reason to beat the base rate."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY fell 2.8% on the last day and 6% over 20 days. The sector link is weak and the stock moves on its own news. Dips have shown no edge in tests."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Copper is up 22% in 60 days and FCX rose 3.4% on the last day, which is already priced in. No tested momentum edge, and volatility is high. Flat is the cautious default."}
+  },
+  "would_change_my_mind": "A clearly scheduled, concrete catalyst with a known positive expectation for one name, or a driver move not yet reflected in the stock."
+}

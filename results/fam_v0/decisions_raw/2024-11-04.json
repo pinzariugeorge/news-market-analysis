@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-11-04",
+  "market_view": "VIX elevated at 21.9 (down 5.5% on the day, up 14% over 20 days) and 10-year yield rising into the US presidential election; uncertainty resolves this week, with historically a modest positive drift afterwards but a weak day or month around the vote in many cases.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Crude below its 200-day average and falling; no scheduled catalyst favours longs. Yesterday's driver moves do not predict the stock. XOM has no concrete edge over flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM fell 15% in 20 days while gold is near highs, but oversold is not a tested edge. Election, rising yields and a strong dollar are two-sided risks for gold. Flat."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.53, "reasoning": "NVDA is up strongly over 60 days with earnings season and election variance in the window. The November seasonal tilt is small and trend is not an edge. Below the 0.55 bar."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY dropped 8% in five days and is below its 200-day average; pharma moves on its own news and policy risk after the election is two-sided. No concrete reason to be long."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX is below its 200-day average after a 10% 20-day drop. Copper is moderately linked to the stock, with China data and election outcome as unknowns. No edge."}
+  },
+  "would_change_my_mind": "A clear, scheduled, company-specific catalyst inside the window with a known direction, which the record does not contain."
+}

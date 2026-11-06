@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-07-08",
+  "market_view": "Very calm regime (VIX 12.5, far below its 252d high), semis and gold strong over the last week, earnings season starting. No clear catalyst gives a stock-level edge over the ~52% base rate.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude rose 12% in 20 days but that move is already priced; XOM is below its high with no concrete catalyst. Earnings and inventory reports add variance only."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NEM already rose 6% in 5 days following gold; driver moves that happened are priced in and lead correlation is near zero. No scheduled catalyst favoring longs."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is up 47% in 60 days with 3% daily volatility; momentum is not a tested edge. Earnings season and jobs report add variance without a directional reason."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "LLY at a 52-week high after a 10% 20-day gain; no known catalyst. Pharma moves on its own news and the sector link is weak; base rate only."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX rose 6.6% in 5 days on a copper jump, already priced in. High volatility and no concrete scheduled reason to be long."}
+  },
+  "would_change_my_mind": "A clear scheduled or concrete catalyst with a favorable expected surprise for a specific name, or a sharp volatility spike followed by stabilization."
+}

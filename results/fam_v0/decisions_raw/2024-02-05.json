@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-02-05",
+  "market_view": "Calm, risk-on regime: VIX 13.85 and about 48% below its 252-day high, with the dollar and yields bouncing on the last close. Single-stock direction is close to a coin flip, so most families get no clear edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude fell 7% in 5 days and gas fell 23%, but a driver move that already happened is priced in. XOM sits below its 200-day average. Earnings fall in the window and nothing gives a concrete reason to be long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "NEM fell 14% in 20 days and is far below its high. The handbook finds no edge in oversold bounces. Gold is flat and yields and the dollar rose, which gives no clear directional channel."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is up 38% in 20 days at its high. Momentum has no tested edge and earnings add variance. Costs and coin-flip odds argue against a long without a concrete catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.53, "reasoning": "LLY is strong at its high with low volatility, but momentum is not a validated edge. Pharma moves on its own news (weak sector link). Earnings are in the window and no specific positive catalyst is known."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX is flat to mildly negative over 20 days. Copper is flat and shows no clear driver signal. Uranium strength sits in CCJ, which is not the leader, and a driver move that already happened is priced in."}
+  },
+  "would_change_my_mind": "A scheduled, concrete catalyst for the leader (such as a clear earnings or guidance read-through) or a sharp VIX spike followed by stabilisation."
+}

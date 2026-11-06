@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-01-03",
+  "market_view": "VIX about 21.7, down 24% over 60 days but up over 20 days, so stress is easing but not calm. Year-start seasonality is a small positive tilt only; no clear driver or scheduled surprise.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude's +2.4% (WTI) and +4.4% (Brent) on the last day is already in the price and has no next-day signal. XOM is near its high; earnings season adds variance. No concrete edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM is below its 200-day average and the gold driver is quiet. The weaker dollar and real rates are priced in. Fed and jobs data fall in the window, but direction is unknown."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA is highly volatile (3.4% a day) and fell 15% in 20 days. Oversold or trend rules have shown no edge, and earnings season adds variance. No catalyst identified."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "JNJ is defensive and low volatility, but expected drift of about 0.5% over 10 days barely covers 0.3% costs. The sector link is weak, so there is no specific reason to prefer long."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX moves with copper (R-squared about 0.3), which is flat. China data and the dollar are unknown. High volatility with no edge; the handbook sees a coin flip."}
+  },
+  "would_change_my_mind": "A scheduled catalyst with a clear skew, or a driver surprise that is not yet priced into the stock, would change my view."
+}

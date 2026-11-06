@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-04-04",
+  "market_view": "VIX 18.55, falling and well below its 252-day high; calm-to-easing regime with yields and the dollar drifting lower. No clear index-level edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude jumped over 6% on the last close and XOM rose 5.9%; that move is already in the price and yesterday's driver move does not predict the next day. No concrete edge, so flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "Gold at a 252-day high with falling yields is a supportive backdrop, but it is already priced and trend rules have shown no edge. NEM is a coin flip net of costs."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA is at its high after a +96% 60-day run. Momentum has shown no edge, and earnings-season variance is high. No concrete reason beats the base rate."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is a low-volatility defensive name, below its 200-day average, with its sector link weak. Earnings fall in the window and there is no identified catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX is a coin flip. Copper is flat to down and the driver link is only moderate. Earnings and a jobs report add variance without direction."}
+  },
+  "would_change_my_mind": "A concrete scheduled catalyst with a clear surprise against expectations for a specific leader, which the record does not contain."
+}

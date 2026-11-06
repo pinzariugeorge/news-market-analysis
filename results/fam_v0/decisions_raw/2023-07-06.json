@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-07-06",
+  "market_view": "Calm regime: VIX 14, down 23% over 60 days, but the 10-year yield jumped to 3.95% (+6.8% in 20 days) and the dollar is firm, a mild headwind for gold and long-duration assets. No stress signal, no clear edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude rose 2.9% yesterday but XOM did not follow; the driver move is already priced and carries no next-day signal. XOM is below its 200-day average. Earnings in the window add variance, not edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Rising yields and a firmer dollar weigh on gold; NEM is 30% below its high and below its 200-day average. The jobs report is a coin-flip catalyst. No concrete reason to be long."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.53, "reasoning": "NVDA is strong, but momentum has shown no edge in our tests. Volatility is high, the base rate is about 52% up, and costs eat most of that. No scheduled NVDA catalyst in the window."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "JNJ is a low-volatility defensive name, about 10% below its high, with weak sector linkage. Earnings fall in the window but direction is unknowable. Base rate only."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX fell 3.9% yesterday while copper dropped 0.7%. Next-day reaction is not predictive. China data and earnings add variance but no directional edge."}
+  },
+  "would_change_my_mind": "A scheduled catalyst with a clear surprise-vs-consensus setup for a leader, or a driver move that has not yet reached the stock."
+}

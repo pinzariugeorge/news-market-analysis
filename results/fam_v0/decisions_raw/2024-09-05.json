@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-09-05",
+  "market_view": "VIX is elevated at 21 after a 38% jump in five days, so risk is high and direction unclear. Yields and the dollar are drifting lower, and September is a seasonally weak month.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "reasoning": "Crude fell 8% in five days and is below its 200-day average. That move is already priced and does not predict the next one. No concrete catalyst makes a long better than flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Gold is near its high and yields are falling, which is supportive. But NEM is already up 28% in 60 days and September is weak. Driver moves are priced in, so there is no clear edge."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA fell 17% in five days, but oversold and momentum rules have shown no edge. Volatility is 4.2% a day and the VIX is high. Nothing concrete favors a long."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "LLY is up 19% in 20 days near its high, and the sector link is weak. Moves come from its own news and none is scheduled. There is no concrete reason to prefer long over flat."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Copper is weak and below its 200-day average, and FCX fell 8% in five days. China demand is uncertain. Short-term reversal is not a tested edge, so stay flat."}
+  },
+  "would_change_my_mind": "A clear scheduled catalyst or a fall in VIX with a stabilizing driver would justify a long."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-02-02",
+  "market_view": "Risk-on regime: VIX 17.9 and falling, yields and dollar down, semis sharply up. Fed and earnings events inside the window raise variance; no single-stock edge from the record.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude and gas falling and below 200d averages. XOM near highs but momentum is not an edge. Earnings and inventory reports add variance, no concrete reason to be long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Falling yields and dollar support gold, but NEM already up 43% in 60 days; that is priced in. Yesterday's driver move does not predict tomorrow. No scheduled catalyst tilt."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA +7% in a day and +46% in 20 days, highest volatility family. Move already in price; no evidence that momentum or reversal gives an edge. Earnings in window raise variance."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ weak but low volatility defensive; sector link is weak and no catalyst identified. Oversold is not a tested edge."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "reasoning": "FCX strong run, copper down 2.8% yesterday. Driver move already happened. China data and earnings add variance without a direction reason."}
+  },
+  "would_change_my_mind": "A concrete scheduled catalyst with a clear expected-surprise direction for a specific leader, which the record does not show."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-01-04",
+  "market_view": "Calm regime (VIX 14, far below its 252-day high) with falling yields; the VIX ticked up and chips pulled back, but nothing here gives a clear directional edge.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude's +3% jump is already in the price and yesterday's driver move does not predict the stock. XOM is below its 200-day average. Earnings season adds variance without direction. No concrete reason to be long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Gold and silver fell and NEM dropped 2.2%, but that is already priced and there is no next-day lead. NEM is below its 200-day average. No scheduled edge, so flat."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA fell with the sector ETF and sits above its 200-day average, but pullback and trend rules have shown no edge. Very high family volatility with earnings season ahead. No concrete catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY is up 4.3% in a day and 8% in 5 days near its high. The sector link is weak, and momentum has shown no edge. Chasing a move that already happened is not justified."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Copper is flat to slightly down and FCX is a coin flip at 2.5% daily volatility. The China data and jobs report are variance, not direction. No clear reason to hold."}
+  },
+  "would_change_my_mind": "A scheduled catalyst with a clear surprise versus consensus for a specific family, or a large sell-off in a calm regime with no fundamental cause."
+}
