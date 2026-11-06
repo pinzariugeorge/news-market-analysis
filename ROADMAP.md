@@ -19,6 +19,7 @@ Last updated: 2026-11-06
 | `ROADMAP.md` | This file map |
 | `TODO.md` | Open items: pre-2008 news source options, handbook work, other tasks |
 | `PLAN.md` | Plan v2: what we learned, theme families, phases 1-6 with gates, open decisions (trade current companies and commodities via Interactive Brokers Ireland) |
+| `PHASE1_FACTS.md` | Phase 1 facts: IBKR Ireland fees (verified vs reported vs open), access and onboarding, Romanian tax, what they mean for the cost model |
 | `CLAUDE.md` | Standing instructions for Claude sessions in this repo |
 | `.env.example` | Names of the secrets needed; the real `.env` is git-ignored and never printed |
 
@@ -79,6 +80,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `costs.py` | Cost model for IBKR Ireland US stocks (commission, pass-through assumptions, spread, FX, tax); `python -I src\costs.py` prints round-trip cost tables; import it in every backtest |
 | `select_universe.py` | Point-in-time universe rule: top 4 names per family by 250-day median dollar volume using only data before each as-of date; writes `universe/rule_selections.csv` |
 | `build_universe.py` | For a ticker CSV (`universe/*.csv`), downloads the last year of daily bars from Yahoo and writes `<name>_metrics.csv` (volatility, liquidity, drawdown): `python -I src\build_universe.py universe/solar_chain.csv` |
 | `pilot_prepare.py` | Picks pilot decision days (2008-2019 only, by category) and writes their past-only records to `results/<run>/records/` |

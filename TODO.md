@@ -48,7 +48,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 ## 3a. Plan v2 next actions (see `PLAN.md`)
 - [x] Families: five (solar removed); single stocks only; names chosen by a point-in-time rule (`universe/UNIVERSE_RULE.md`); holding period capped at 20 days.
 - [ ] User still to give: account size to design for and allowed instruments (US single stocks assumed); add a market value screen and a revenue-purity screen when a reliable data source is chosen; verify tradability of the selected names at IBKR Ireland.
-- [ ] Phase 1: write `src/costs.py`; verify the official IBKR Ireland fee schedule, account opening time for Romania, paper account, API, availability of US single stocks for Romanian retail clients, Romanian tax and withholding rules.
+- [x] Phase 1 part 1 (2026-11-06): `src/costs.py` written and `PHASE1_FACTS.md` (official US stock fees verified; tax from Romanian press).
+- [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
 - [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
 
 ## 3b. Universe and company-level work (new direction, 2026-11-06)
