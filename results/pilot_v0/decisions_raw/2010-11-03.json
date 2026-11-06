@@ -1,0 +1,13 @@
+{
+  "decision_day": "2010-11-03",
+  "events": [
+    {"headline": "Ratio Charts - Gold vs. Other Assets", "type": "none", "new_or_continuing": "new", "scheduled": false, "scale": "small", "surprise": "none", "relevant": false}
+  ],
+  "storyline_updates": [],
+  "regime": "calm",
+  "view": {"direction": "up", "expected_move_pct_low": -0.8, "expected_move_pct_high": 1.2, "horizon": "1d", "confidence": 0.6},
+  "action": {"position": "long", "size_pct": 60},
+  "handbook_entries_used": ["3.6b", "3.15", "3.16", "principle 10", "principle 5"],
+  "reasoning": "The only headline is a chart-ratio piece with no cause, so it is noise. The decision day is the day after the US midterm vote. The handbook shows a modest positive bias on that day (77% positive, mean +0.57%, 13 cases), strongest with a divided-government outcome. Calendar tilts also lean positive: November, and the turn-of-month window. Volatility is in the calmest regime (0.54% daily), so the expected move is small and a 100% cap is allowed. The market is already up 2.8% over 20 days and 6% above its 200-day average, so I take less than full size. Edge is modest, around a 0.6 up probability.",
+  "would_change_my_mind": "A visible surprise cause overnight (a hawkish central bank shock, credit stress, or a geopolitical event) or a sharp drop in futures would move me to flat."
+}

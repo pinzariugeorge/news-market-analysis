@@ -1,0 +1,36 @@
+{
+  "decision_day": "2013-02-26",
+  "weekday": "Tuesday",
+  "information_cutoff": "close of 2013-02-25 (previous trading day); headlines published before 2013-02-26",
+  "market_state": {
+    "last_trading_day": "2013-02-25",
+    "last_close": 1487.85,
+    "return_last_day_pct": -1.83,
+    "return_5d_pct": -2.1,
+    "return_20d_pct": -1.01,
+    "return_60d_pct": 6.36,
+    "realized_vol_20d_daily_pct": 0.74,
+    "vol_regime_1calm_to_4stormy": 2,
+    "drawdown_from_252d_high_pct": -2.81,
+    "distance_from_200d_avg_pct": 5.58,
+    "consecutive_up_or_down_days": -1,
+    "big_moves_2pct_last_10_days": []
+  },
+  "calendar": {
+    "month": "February",
+    "trading_day_of_month": 17,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "post-presidential",
+    "next_us_election": "2014-11-04",
+    "days_to_next_us_election": 616
+  },
+  "headlines": [
+    {
+      "published": "2013-02-25",
+      "title": "Dow and S&P 500 post worst day of 2013"
+    }
+  ],
+  "headlines_total": 1,
+  "headlines_truncated": false
+}

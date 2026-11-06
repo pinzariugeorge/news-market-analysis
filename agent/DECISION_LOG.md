@@ -19,6 +19,9 @@ Every agent decision is stored before its outcome is known, then scored. Results
 | `correct` | 1 if direction was up/down and matched the sign of the outcome, blank for no_edge |
 | `in_range` | 1 if the outcome fell within the expected range |
 
+## Scoring convention for sparse pilot days
+When days are sampled (not consecutive), each decision is independent: the agent starts flat each day, pays cost x size on the position taken, and results are sums of daily returns (not compounded). Full consecutive runs use the position-change cost and compounded equity curves (see `src/run_baselines.py`).
+
 ## Baselines to beat (same days, same costs)
 1. Buy and hold the index.
 2. Always flat (cash).

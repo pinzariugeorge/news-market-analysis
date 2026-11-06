@@ -1,0 +1,45 @@
+{
+  "decision_day": "2018-04-20",
+  "weekday": "Friday",
+  "information_cutoff": "close of 2018-04-19 (previous trading day); headlines published before 2018-04-20",
+  "market_state": {
+    "last_trading_day": "2018-04-19",
+    "last_close": 2693.13,
+    "return_last_day_pct": -0.57,
+    "return_5d_pct": 1.09,
+    "return_20d_pct": -0.69,
+    "return_60d_pct": -5.14,
+    "realized_vol_20d_daily_pct": 1.46,
+    "vol_regime_1calm_to_4stormy": 4,
+    "drawdown_from_252d_high_pct": -6.26,
+    "distance_from_200d_avg_pct": 3.41,
+    "consecutive_up_or_down_days": -1,
+    "big_moves_2pct_last_10_days": [
+      {
+        "date": "2018-04-06",
+        "ret_pct": -2.19
+      }
+    ]
+  },
+  "calendar": {
+    "month": "April",
+    "trading_day_of_month": 15,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "midterm",
+    "next_us_election": "2018-11-06",
+    "days_to_next_us_election": 200
+  },
+  "headlines": [
+    {
+      "published": "2018-04-19",
+      "title": "Why you should think twice about following this common piece of investing advice"
+    },
+    {
+      "published": "2018-04-19",
+      "title": "Most Volatile Market In History? Not Really, When Using The Proper Measuring Stick"
+    }
+  ],
+  "headlines_total": 2,
+  "headlines_truncated": false
+}

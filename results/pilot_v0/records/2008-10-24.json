@@ -1,0 +1,65 @@
+{
+  "decision_day": "2008-10-24",
+  "weekday": "Friday",
+  "information_cutoff": "close of 2008-10-23 (previous trading day); headlines published before 2008-10-24",
+  "market_state": {
+    "last_trading_day": "2008-10-23",
+    "last_close": 908.11,
+    "return_last_day_pct": 1.26,
+    "return_5d_pct": -4.05,
+    "return_20d_pct": -24.9,
+    "return_60d_pct": -29.29,
+    "realized_vol_20d_daily_pct": 5.03,
+    "vol_regime_1calm_to_4stormy": 4,
+    "drawdown_from_252d_high_pct": -41.39,
+    "distance_from_200d_avg_pct": -29.75,
+    "consecutive_up_or_down_days": 1,
+    "big_moves_2pct_last_10_days": [
+      {
+        "date": "2008-10-13",
+        "ret_pct": 11.58
+      },
+      {
+        "date": "2008-10-15",
+        "ret_pct": -9.03
+      },
+      {
+        "date": "2008-10-16",
+        "ret_pct": 4.25
+      },
+      {
+        "date": "2008-10-20",
+        "ret_pct": 4.77
+      },
+      {
+        "date": "2008-10-21",
+        "ret_pct": -3.08
+      },
+      {
+        "date": "2008-10-22",
+        "ret_pct": -6.1
+      }
+    ]
+  },
+  "calendar": {
+    "month": "October",
+    "trading_day_of_month": 18,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "presidential",
+    "next_us_election": "2008-11-04",
+    "days_to_next_us_election": 11
+  },
+  "headlines": [
+    {
+      "published": "2008-10-23",
+      "title": "S&P500 Stock Market Crash Compared to Nikkei Index"
+    },
+    {
+      "published": "2008-10-23",
+      "title": "U.S. Stocks Lose Opening Bid Up As Dow Forecasts Recession"
+    }
+  ],
+  "headlines_total": 2,
+  "headlines_truncated": false
+}

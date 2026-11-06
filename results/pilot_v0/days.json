@@ -1,0 +1,74 @@
+[
+  {
+    "day": "2008-10-24",
+    "category": "big",
+    "vol_regime": 4,
+    "n_headlines": 2
+  },
+  {
+    "day": "2009-04-21",
+    "category": "big",
+    "vol_regime": 4,
+    "n_headlines": 0
+  },
+  {
+    "day": "2009-04-30",
+    "category": "stormy",
+    "vol_regime": 4,
+    "n_headlines": 0
+  },
+  {
+    "day": "2010-11-03",
+    "category": "event",
+    "vol_regime": 1,
+    "n_headlines": 1
+  },
+  {
+    "day": "2011-09-26",
+    "category": "big",
+    "vol_regime": 4,
+    "n_headlines": 4
+  },
+  {
+    "day": "2012-11-01",
+    "category": "normal",
+    "vol_regime": 2,
+    "n_headlines": 1
+  },
+  {
+    "day": "2012-12-12",
+    "category": "calm",
+    "vol_regime": 2,
+    "n_headlines": 5
+  },
+  {
+    "day": "2013-02-26",
+    "category": "calm",
+    "vol_regime": 2,
+    "n_headlines": 1
+  },
+  {
+    "day": "2014-01-24",
+    "category": "big",
+    "vol_regime": 1,
+    "n_headlines": 4
+  },
+  {
+    "day": "2015-08-28",
+    "category": "stormy",
+    "vol_regime": 4,
+    "n_headlines": 0
+  },
+  {
+    "day": "2016-12-21",
+    "category": "calm",
+    "vol_regime": 1,
+    "n_headlines": 1
+  },
+  {
+    "day": "2018-04-20",
+    "category": "stormy",
+    "vol_regime": 4,
+    "n_headlines": 2
+  }
+]

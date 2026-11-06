@@ -1,0 +1,16 @@
+{
+  "decision_day": "2008-10-24",
+  "events": [
+    {"headline": "S&P500 Stock Market Crash Compared to Nikkei Index", "type": "3.3", "new_or_continuing": "continuing", "scheduled": false, "scale": "large", "surprise": "none", "relevant": false},
+    {"headline": "U.S. Stocks Lose Opening Bid Up As Dow Forecasts Recession", "type": "3.2", "new_or_continuing": "continuing", "scheduled": false, "scale": "medium", "surprise": "some", "relevant": false}
+  ],
+  "storyline_updates": [
+    {"id": "S001", "title": "2008 credit/banking crisis and recession fears", "status": "escalating", "note": "Market down 41% from its high, 20d return -24.9%, six 2%+ days in the last 10. Headlines are market recaps or commentary with no new cause."}
+  ],
+  "regime": "crisis",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -5.0, "expected_move_pct_high": 5.0, "horizon": "1d", "confidence": 0.5},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["3.3", "3.16", "principle 9", "principle 10", "principle 11", "principle 12", "3.15"],
+  "reasoning": "Both headlines are recaps or commentary and name no new cause. The regime is the most extreme one: daily realized vol is 5%, six 2%+ days in the last 10, and the market is 41% below its high. Handbook says volatility sizes the move but gives no direction, and direction after big days is a coin flip. The base rate is about 53% up, and the 0.55 confidence threshold is not met. The possible range is wide (about +/-5%) with no edge, so stay flat.",
+  "would_change_my_mind": "A credible new backstop or policy action (rescue plan, coordinated rate cut) announced before the open, or a clear sign of capitulation, would raise upside confidence above 0.55."
+}

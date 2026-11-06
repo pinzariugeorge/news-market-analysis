@@ -1,0 +1,11 @@
+{
+  "decision_day": "2015-08-28",
+  "events": [],
+  "storyline_updates": [],
+  "regime": "stressed",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -2.0, "expected_move_pct_high": 2.0, "horizon": "1d", "confidence": 0.52},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["principle 9", "principle 10", "principle 12", "3.14", "3.16", "3.15"],
+  "reasoning": "No headlines, so no visible new cause. Regime 4 (20d vol 1.68%), five 2%+ days in the last 10, two straight big rises after a China-driven rout (3.14 type, already past). Handbook: clustering means large moves in both directions, direction after a 2%+ rise is about 56% up, close to a coin flip. Mild seasonal drag in late August. Confidence in an up day is about 0.52, below the 0.55 guardrail, and regime 4 caps size at 50%. Stay flat.",
+  "would_change_my_mind": "A clear new cause such as a credible policy backstop or a data surprise, plus calmer volatility, would raise up-day confidence to 0.55 or more."
+}

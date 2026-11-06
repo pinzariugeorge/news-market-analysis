@@ -1,0 +1,36 @@
+{
+  "decision_day": "2012-11-01",
+  "weekday": "Thursday",
+  "information_cutoff": "close of 2012-10-31 (previous trading day); headlines published before 2012-11-01",
+  "market_state": {
+    "last_trading_day": "2012-10-31",
+    "last_close": 1412.16,
+    "return_last_day_pct": 0.02,
+    "return_5d_pct": -1.51,
+    "return_20d_pct": -2.24,
+    "return_60d_pct": 1.52,
+    "realized_vol_20d_daily_pct": 0.67,
+    "vol_regime_1calm_to_4stormy": 2,
+    "drawdown_from_252d_high_pct": -3.66,
+    "distance_from_200d_avg_pct": 2.5,
+    "consecutive_up_or_down_days": 1,
+    "big_moves_2pct_last_10_days": []
+  },
+  "calendar": {
+    "month": "November",
+    "trading_day_of_month": 1,
+    "turn_of_month_window": true,
+    "year_end_window": false,
+    "cycle_year_type": "presidential",
+    "next_us_election": "2012-11-06",
+    "days_to_next_us_election": 5
+  },
+  "headlines": [
+    {
+      "published": "2012-10-31",
+      "title": "Forecasting the S&P 500 from GDP Data and What It's Telling Us Now"
+    }
+  ],
+  "headlines_total": 1,
+  "headlines_truncated": false
+}

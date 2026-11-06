@@ -48,7 +48,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 |---|---|
 | `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
 | `results/baselines_2008_2019.csv` | Same numbers as CSV |
-| (planned) `results/<run_name>/` | Decisions and scores per simulation run |
+| `results/dashboard.html` | Dashboard: where the agent acted on the S&P chart, cumulative return vs baselines, expected range vs outcome, and a table with the agent's reasoning per day. Open it in a browser |
+| `results/pilot_v0/` | First pilot run: `days.json`, `records/` (inputs), `decisions_raw/` (agent JSON), `decisions.csv`, `summary.json`, `dashboard_data.json` |
 
 ## Agent design (`agent/`)
 | File | Content |
@@ -64,6 +65,9 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `pilot_prepare.py` | Picks pilot decision days (2008-2019 only, by category) and writes their past-only records to `results/<run>/records/` |
+| `score_decisions.py` | Joins stored agent decisions (`results/<run>/decisions_raw/`) with outcomes; writes `decisions.csv`, `summary.json`, `dashboard_data.json` |
+| `build_dashboard.py` | Builds `results/dashboard.html` (self-contained, no network): `python -I src\build_dashboard.py --run pilot_v0` |
 | `run_baselines.py` | Computes the no-model baselines (buy and hold, cash, volatility rule, capped long, 200-day trend, random) for a period; writes `results/baselines_<years>.csv` |
 | `build_daily_context.py` | Builds the past-only daily record JSON for one day: `python -I src\build_daily_context.py 2018-12-26` |
 | `review_big_days.py` | Labels 2008-2019 days with a move of 2% or more by event type, writes `handbook/bigday_review.csv`, prints per-type stats |

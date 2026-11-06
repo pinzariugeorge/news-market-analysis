@@ -1,0 +1,44 @@
+{
+  "decision_day": "2009-04-30",
+  "weekday": "Thursday",
+  "information_cutoff": "close of 2009-04-29 (previous trading day); headlines published before 2009-04-30",
+  "market_state": {
+    "last_trading_day": "2009-04-29",
+    "last_close": 873.64,
+    "return_last_day_pct": 2.16,
+    "return_5d_pct": 3.57,
+    "return_20d_pct": 9.5,
+    "return_60d_pct": 5.84,
+    "realized_vol_20d_daily_pct": 1.89,
+    "vol_regime_1calm_to_4stormy": 4,
+    "drawdown_from_252d_high_pct": -38.76,
+    "distance_from_200d_avg_pct": -9.66,
+    "consecutive_up_or_down_days": 1,
+    "big_moves_2pct_last_10_days": [
+      {
+        "date": "2009-04-20",
+        "ret_pct": -4.28
+      },
+      {
+        "date": "2009-04-21",
+        "ret_pct": 2.13
+      },
+      {
+        "date": "2009-04-29",
+        "ret_pct": 2.16
+      }
+    ]
+  },
+  "calendar": {
+    "month": "April",
+    "trading_day_of_month": 21,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "post-presidential",
+    "next_us_election": "2010-11-02",
+    "days_to_next_us_election": 551
+  },
+  "headlines": [],
+  "headlines_total": 0,
+  "headlines_truncated": false
+}

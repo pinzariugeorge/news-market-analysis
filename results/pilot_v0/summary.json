@@ -1,0 +1,29 @@
+{
+  "run": "pilot_v0",
+  "n_days": 12,
+  "n_scored": 12,
+  "missing": [],
+  "n_committed": 4,
+  "hit_rate_committed": 0.5,
+  "up_calls": 4,
+  "down_calls": 0,
+  "no_edge": 8,
+  "long_days": 4,
+  "avg_daily_ret_pct": {
+    "strategy_ret_pct": -0.051625,
+    "buy_hold_ret_pct": -0.009166666666666667,
+    "vol_rule_ret_pct": -0.029166666666666657,
+    "capped_long_ret_pct": -0.029166666666666667
+  },
+  "sum_ret_pct": {
+    "strategy_ret_pct": -0.6194999999999999,
+    "buy_hold_ret_pct": -0.10999999999999976,
+    "vol_rule_ret_pct": -0.3500000000000001,
+    "capped_long_ret_pct": -0.35000000000000003
+  },
+  "in_range_share": 0.8333333333333334,
+  "avg_confidence": 0.5375,
+  "base_rate_up_pct_all_days": 52.8,
+  "cost_pct_per_100pct_position": 0.02,
+  "note": "Pilot days are sparse and independent; sums of daily returns, not compounded. Tiny sample: indicative only."
+}

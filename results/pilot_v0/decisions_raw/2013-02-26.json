@@ -1,0 +1,13 @@
+{
+  "decision_day": "2013-02-26",
+  "events": [
+    {"headline": "Dow and S&P 500 post worst day of 2013", "type": "principle 11", "new_or_continuing": "new", "scheduled": false, "scale": "medium", "surprise": "none", "relevant": false}
+  ],
+  "storyline_updates": [],
+  "regime": "normal",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -1.0, "expected_move_pct_high": 1.0, "horizon": "1d", "confidence": 0.52},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["principle 9", "principle 10", "principle 11", "principle 12", "2", "3.16"],
+  "reasoning": "The only headline recaps the market's own -1.83% drop, so it names no cause and adds no new information. Regime is calm to normal (vol regime 2, 20-day vol 0.74%), with no 2%+ days in the last 10, so there is no cluster signal. The market is 5.6% above its 200-day average and 2.8% below its 252-day high, so the drop is a modest pullback. After a drop of about 2% the next day is up roughly 55%, but the handbook says this is not a reliable direction signal. My confidence in an up day is about 0.52, below the 0.55 threshold, so I stay flat.",
+  "would_change_my_mind": "A named, new cause (policy, credit or geopolitical shock) or a second large down day with rising volatility would justify reassessing; a clear dovish surprise would justify a long."
+}

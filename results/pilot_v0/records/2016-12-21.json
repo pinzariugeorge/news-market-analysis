@@ -1,0 +1,36 @@
+{
+  "decision_day": "2016-12-21",
+  "weekday": "Wednesday",
+  "information_cutoff": "close of 2016-12-20 (previous trading day); headlines published before 2016-12-21",
+  "market_state": {
+    "last_trading_day": "2016-12-20",
+    "last_close": 2270.76,
+    "return_last_day_pct": 0.36,
+    "return_5d_pct": -0.04,
+    "return_20d_pct": 3.3,
+    "return_60d_pct": 5.81,
+    "realized_vol_20d_daily_pct": 0.46,
+    "vol_regime_1calm_to_4stormy": 1,
+    "drawdown_from_252d_high_pct": -0.04,
+    "distance_from_200d_avg_pct": 6.72,
+    "consecutive_up_or_down_days": 2,
+    "big_moves_2pct_last_10_days": []
+  },
+  "calendar": {
+    "month": "December",
+    "trading_day_of_month": 15,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "presidential",
+    "next_us_election": "2018-11-06",
+    "days_to_next_us_election": 685
+  },
+  "headlines": [
+    {
+      "published": "2016-12-20",
+      "title": "Dividend Per Share Growth Slows for Fourth Consecutive Period"
+    }
+  ],
+  "headlines_total": 1,
+  "headlines_truncated": false
+}

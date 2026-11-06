@@ -1,0 +1,11 @@
+{
+  "decision_day": "2009-04-30",
+  "events": [],
+  "storyline_updates": [],
+  "regime": "stressed",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -1.9, "expected_move_pct_high": 1.9, "horizon": "1d", "confidence": 0.54},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["principle 9", "principle 10", "principle 12", "2", "3.15", "3.16"],
+  "reasoning": "No headlines, so no identifiable cause; the +2.16% last day is not explained. Volatility regime 4 (20d daily vol 1.89%) means a wide next-day range, about +/-1.9%, but direction is a coin flip. Base rate is 53% up; after a 2%+ rise it is about 56%, and April has a mild positive tilt, which gives roughly 0.54-0.56 at best. Index is still 39% below its 252-day high and below the 200d average, so the regime is fragile. Confidence is under the 0.55 guardrail and there is no catalyst, so stay flat.",
+  "would_change_my_mind": "A clear, credible positive catalyst (bank stress-test relief, strong data surprise, policy backstop) or a drop in volatility regime to 3 or lower with a stable uptrend."
+}

@@ -1,0 +1,16 @@
+{
+  "decision_day": "2011-09-26",
+  "events": [
+    {"headline": "Mosaic Announces Pricing of Secondary Offering of Common Stock for S&P 500 Index Inclusion Trade", "type": "3.9", "new_or_continuing": "new", "scheduled": true, "scale": "small", "surprise": "none", "relevant": false},
+    {"headline": "Market Report - Sep. 23, 2011 - CNNMoney", "type": "none", "new_or_continuing": "new", "scheduled": false, "scale": "small", "surprise": "none", "relevant": false},
+    {"headline": "Haptic device gives blind a helping hand", "type": "none", "new_or_continuing": "new", "scheduled": false, "scale": "small", "surprise": "none", "relevant": false},
+    {"headline": "Google honors Jim Henson with Muppets doodle", "type": "none", "new_or_continuing": "new", "scheduled": false, "scale": "small", "surprise": "none", "relevant": false}
+  ],
+  "storyline_updates": [],
+  "regime": "stressed",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -2.5, "expected_move_pct_high": 2.5, "horizon": "1d", "confidence": 0.5},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["principle 9", "principle 10", "principle 11", "principle 12", "3.16", "3.15"],
+  "reasoning": "Headlines contain no new cause: an index-inclusion offering, a market recap and two trivia items. The market is in a stormy regime (vol quartile 4, 20d realized vol 1.76%, -16.7% drawdown, two 2%+ down days within the last three sessions). Big days cluster, so a large move tomorrow is likely, but direction is a coin flip (about 53-56% up base rate). September is a weak month. Confidence in an up day stays below the 0.55 threshold, so flat.",
+  "would_change_my_mind": "A visible credible policy backstop or a clear stabilising signal (not just a market recap) pushing up-day confidence to 0.55 or more."
+}

@@ -1,0 +1,57 @@
+{
+  "decision_day": "2011-09-26",
+  "weekday": "Monday",
+  "information_cutoff": "close of 2011-09-23 (previous trading day); headlines published before 2011-09-26",
+  "market_state": {
+    "last_trading_day": "2011-09-23",
+    "last_close": 1136.43,
+    "return_last_day_pct": 0.61,
+    "return_5d_pct": -6.54,
+    "return_20d_pct": -1.97,
+    "return_60d_pct": -13.08,
+    "realized_vol_20d_daily_pct": 1.76,
+    "vol_regime_1calm_to_4stormy": 4,
+    "drawdown_from_252d_high_pct": -16.66,
+    "distance_from_200d_avg_pct": -11.37,
+    "consecutive_up_or_down_days": 1,
+    "big_moves_2pct_last_10_days": [
+      {
+        "date": "2011-09-21",
+        "ret_pct": -2.94
+      },
+      {
+        "date": "2011-09-22",
+        "ret_pct": -3.19
+      }
+    ]
+  },
+  "calendar": {
+    "month": "September",
+    "trading_day_of_month": 17,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "pre-election",
+    "next_us_election": "2012-11-06",
+    "days_to_next_us_election": 407
+  },
+  "headlines": [
+    {
+      "published": "2011-09-23",
+      "title": "Mosaic Announces Pricing of Secondary Offering of Common Stock for S&P 500 Index Inclusion Trade"
+    },
+    {
+      "published": "2011-09-23",
+      "title": "Market Report - Sep. 23, 2011 - CNNMoney"
+    },
+    {
+      "published": "2011-09-23",
+      "title": "Haptic device gives blind a helping hand"
+    },
+    {
+      "published": "2011-09-23",
+      "title": "Google honors Jim Henson with Muppets doodle"
+    }
+  ],
+  "headlines_total": 4,
+  "headlines_truncated": false
+}

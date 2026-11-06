@@ -1,0 +1,15 @@
+{
+  "decision_day": "2012-11-01",
+  "events": [
+    {"headline": "Forecasting the S&P 500 from GDP Data and What It's Telling Us Now", "type": "3.2", "new_or_continuing": "new", "scheduled": false, "scale": "small", "surprise": "none", "relevant": false}
+  ],
+  "storyline_updates": [
+    {"id": "S001", "title": "US presidential election 2012-11-06", "status": "open", "note": "Calendar event 5 days out; pre-vote uncertainty, no surprise known."}
+  ],
+  "regime": "normal",
+  "view": {"direction": "up", "expected_move_pct_low": -0.8, "expected_move_pct_high": 0.9, "horizon": "1d", "confidence": 0.55},
+  "action": {"position": "long", "size_pct": 40},
+  "handbook_entries_used": ["3.15", "3.6c", "3.16", "principle 10", "principle 11"],
+  "reasoning": "The only headline is a generic forecast piece with no new cause, so it is noise. Regime is normal (vol regime 2, 20d vol 0.67%), with no big days recently. Base rate is about 53% up. Small tilts: turn-of-month window (first trading day) and November strength add a little. Offsetting this, the presidential election is 5 days away and pre-vote choppiness is likely, with a weak recent 5d trend. Net confidence is just at the 0.55 threshold, so take a modest long.",
+  "would_change_my_mind": "A large negative surprise before the open (credit, geopolitical or Fed shock) or a spike in volatility would send me flat."
+}

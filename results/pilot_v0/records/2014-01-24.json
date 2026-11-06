@@ -1,0 +1,48 @@
+{
+  "decision_day": "2014-01-24",
+  "weekday": "Friday",
+  "information_cutoff": "close of 2014-01-23 (previous trading day); headlines published before 2014-01-24",
+  "market_state": {
+    "last_trading_day": "2014-01-23",
+    "last_close": 1828.46,
+    "return_last_day_pct": -0.89,
+    "return_5d_pct": -1.08,
+    "return_20d_pct": 0.03,
+    "return_60d_pct": 3.9,
+    "realized_vol_20d_daily_pct": 0.54,
+    "vol_regime_1calm_to_4stormy": 1,
+    "drawdown_from_252d_high_pct": -1.08,
+    "distance_from_200d_avg_pct": 7.55,
+    "consecutive_up_or_down_days": -1,
+    "big_moves_2pct_last_10_days": []
+  },
+  "calendar": {
+    "month": "January",
+    "trading_day_of_month": 16,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "midterm",
+    "next_us_election": "2014-11-04",
+    "days_to_next_us_election": 284
+  },
+  "headlines": [
+    {
+      "published": "2014-01-23",
+      "title": "Are We Repeating The Secular Bear Market Of The 70's?"
+    },
+    {
+      "published": "2014-01-23",
+      "title": "Goldman's Hatzius On 2014 Corporate Profits"
+    },
+    {
+      "published": "2014-01-23",
+      "title": "Some CNN social media accounts hacked"
+    },
+    {
+      "published": "2014-01-23",
+      "title": "Apple: We’re fixing the ‘white screen of death’"
+    }
+  ],
+  "headlines_total": 4,
+  "headlines_truncated": false
+}

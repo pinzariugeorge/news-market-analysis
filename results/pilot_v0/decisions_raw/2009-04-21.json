@@ -1,0 +1,11 @@
+{
+  "decision_day": "2009-04-21",
+  "events": [],
+  "storyline_updates": [],
+  "regime": "stressed",
+  "view": {"direction": "no_edge", "expected_move_pct_low": -3.0, "expected_move_pct_high": 3.0, "horizon": "1d", "confidence": 0.54},
+  "action": {"position": "flat", "size_pct": 0},
+  "handbook_entries_used": ["principle 9", "principle 10", "principle 11", "principle 12", "2 base rates", "3.16"],
+  "reasoning": "No headlines, so no visible cause for the -4.28% drop on 2009-04-20; it is a market-move recap, not new information. Regime is stressed (20d vol 2.6%, regime 4, 41.65% below the 252d high, 15% below the 200d average), with four 2%+ days in 10 days, so large moves in either direction are likely. After a 2%+ drop the next day was up about 55% of the time, barely above the 53% base rate, and the handbook gives no usable directional signal. Confidence is below the 0.55 guardrail, so stay flat.",
+  "would_change_my_mind": "A identifiable cause such as a credit-stress relief or a backstop announcement, or a clearly dovish surprise, would justify a small long."
+}

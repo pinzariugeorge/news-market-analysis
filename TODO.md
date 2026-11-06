@@ -38,7 +38,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] Build the simulation harness: loop over days, call the agent (subagents or API, decide later), store decisions, reveal outcomes, score vs baselines. Baselines on 2008-2019 are done (`results/BASELINES.md`).
 
 ## 3. Simulation harness and model use (no extra API cost planned)
-- [ ] Run a 20-30 day pilot of the agent as subagents inside Claude Code (uses the Pro subscription, not the API) to measure how much usage one decision takes.
+- [x] Pilot v0 done: 12 decisions via Sonnet subagents; about 67k tokens per decision (about 0.8M tokens for 12), so 3,000 days (about 200M) is not feasible on the subscription and even 300 days is about 20M. See PROGRESS_LOG.
+- [ ] Cut the cost per decision: a smaller handbook extract per day, chronological multi-day runs in one session (the agent keeps the handbook in context and learns day by day, like live), and fewer days. Pick one and re-measure.
 - [ ] Decide the test design from that: sampled days (all big-move days plus a few hundred random days) over several sessions, and/or a rule-based Python version of the handbook for all days with the model only reading headlines on sampled days.
 - [ ] Live phase: one decision a day as a scheduled Claude Code routine on the subscription (no API); check plan limits first.
 

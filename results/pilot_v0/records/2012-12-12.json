@@ -1,0 +1,52 @@
+{
+  "decision_day": "2012-12-12",
+  "weekday": "Wednesday",
+  "information_cutoff": "close of 2012-12-11 (previous trading day); headlines published before 2012-12-12",
+  "market_state": {
+    "last_trading_day": "2012-12-11",
+    "last_close": 1427.84,
+    "return_last_day_pct": 0.65,
+    "return_5d_pct": 1.48,
+    "return_20d_pct": 3.46,
+    "return_60d_pct": -2.2,
+    "realized_vol_20d_daily_pct": 0.69,
+    "vol_regime_1calm_to_4stormy": 2,
+    "drawdown_from_252d_high_pct": -2.59,
+    "distance_from_200d_avg_pct": 2.97,
+    "consecutive_up_or_down_days": 5,
+    "big_moves_2pct_last_10_days": []
+  },
+  "calendar": {
+    "month": "December",
+    "trading_day_of_month": 8,
+    "turn_of_month_window": false,
+    "year_end_window": false,
+    "cycle_year_type": "presidential",
+    "next_us_election": "2014-11-04",
+    "days_to_next_us_election": 692
+  },
+  "headlines": [
+    {
+      "published": "2012-12-11",
+      "title": "Stocks for the Long Run: GATX vs. the S&P 500"
+    },
+    {
+      "published": "2012-12-11",
+      "title": "CommVault Systems Larger Than S&P 500 Component Teradyne"
+    },
+    {
+      "published": "2012-12-11",
+      "title": "Can women drive the future of the car industry?"
+    },
+    {
+      "published": "2012-12-11",
+      "title": "How to see your 2012 highlights on Twitter"
+    },
+    {
+      "published": "2012-12-11",
+      "title": "Apple Maps flaw could be deadly, warn Australian police"
+    }
+  ],
+  "headlines_total": 5,
+  "headlines_truncated": false
+}
