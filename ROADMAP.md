@@ -36,7 +36,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Handbook (`handbook/`)
 | File | Content |
 |---|---|
-| `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 14 event-type entries, agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
+| `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
+| `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 15 event-type entries (incl. 3.6b US midterms), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
 
 ## Code (`src/`)
 | Script | Purpose |

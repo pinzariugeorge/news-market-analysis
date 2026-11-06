@@ -24,6 +24,8 @@ End goal: a live trading agent (scheduled routines, like a daily pre-market / op
 2. **Simulation:** run the agent on 2020 (test), then 2021-2024 (holdout), news-driven, past-only information. Score after costs.
 3. **Paper trading:** live schedule, paper money only, every run reviewed by the user.
 4. **Live trading:** only if paper results justify it, with the user's explicit go-ahead, small size first.
+Time horizon: the aim is a long-running system (years, not a 30-day challenge): as many trading days as possible and as profitable as possible. So judge results over many months and market regimes (calm, crash, recovery, election cycles), never on one short stretch; the 2008-2024 data lets us check this.
+Calendar events matter: for example US midterm elections (see handbook 3.6b), Fed meetings and earnings seasons get their own handbook entries.
 Not decided yet: broker, scheduler, research source for live use (the video setup used Alpaca, Claude Code routines, Perplexity; not adopted).
 
 ## Borrowed practices (from the analyzed trading-agent video, adopted selectively)

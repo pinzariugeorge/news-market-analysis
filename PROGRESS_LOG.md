@@ -47,4 +47,8 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DECISION: end goal is a live trading agent using the handbook to make profitable trades (not "beat the S&P"; baselines still used to judge it). Phases: research -> simulation (2020, then 2021-2024) -> paper -> live. Selectively adopted file-memory loop, guardrails, weekly self-review, decision log, test-before-trust from the analyzed video; recorded in STRATEGY.md.
 
+- DECISION: long-run goal (years of trading days, as profitable as possible), judged over many months and regimes, not 30 days. Calendar events (midterms, Fed meetings, earnings seasons) get handbook entries.
+- DONE: handbook entry 3.6b (US midterms) with web research (`handbook/SOURCES.md`) and our own check on 2010/2014/2018: day after the vote +0.37%, +0.57%, +2.12%; 1 year later +2.1%, +4.5%, +12.0%. Finding: after midterms the market has mostly risen, not fallen; 2018 shows a Fed-driven slide can override the post-election bounce. Only 3 cases in the handbook period; 2022 midterm is in the holdout and was not used.
+- TODO: more calendar entries (Fed meeting days, earnings seasons, presidential elections 2008/2012/2016, year-end and January patterns).
+
 **Next step:** (1) user reviews handbook v0; (2) test it on 2008-2019: for each |move|>=2% day (247), do the handbook plus past-only headlines name the right event type and size? Record hit rates per event type in `handbook/` (never use 2020); (3) design the daily record format (new events, open storylines, past-only market context). Also check why 2020-09-23 has 55 headlines.

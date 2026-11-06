@@ -86,6 +86,19 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 - Sectors: depend on the platform (energy, healthcare, financials, defense, infrastructure).
 - Evidence: 2016-11-09: overnight futures fell sharply on a surprise result, yet the S&P closed +1.11% that day, led by financials, as policy expectations (tax cuts, deregulation) re-rated sectors. Lesson: the first reaction can reverse within hours; predict sectors, and be wary of calling the index from overnight moves.
 
+### 3.6b US midterm elections (calendar event, every 4 years in November)
+- Mechanism: not a surprise-driven event in most cases. Uncertainty about the balance of Congress (and so about tax, spending, regulation) weighs on the market before the vote and resolves after it. Divided government (gridlock) is usually read as "less policy risk".
+- Typical pattern (published research, mostly pre-2019 data; some quoted averages may include later years, so treat them as context and do not tune to them): the midterm year is the weakest year of the four-year presidential cycle, with the market often weak or choppy until the vote and then rising. The 12 months after a midterm are positive in the large majority of cases since 1950, with averages in the low-to-mid teens in percent; Q4 plus the next two quarters were positive far more often than average quarters. Sources are listed in `handbook/SOURCES.md`.
+- Our own check on the handbook period (S&P 500 closes, election day to later; from `data/processed/market_days.csv`):
+  | Election day | Prior 3 months | Day after | +1 week | +1 month | +3 months | +6 months | +1 year |
+  |---|---|---|---|---|---|---|---|
+  | 2010-11-02 | +5.9% | +0.37% | +1.7% | +2.3% | +9.3% | +12.9% | +2.1% |
+  | 2014-11-04 | +4.8% | +0.57% | +1.4% | +3.0% | +2.5% | +3.8% | +4.5% |
+  | 2018-11-06 | -3.6% | +2.12% | -1.2% | -4.4% | -1.7% | +4.6% | +12.0% |
+- Reading: the day after the vote was positive all three times (+0.4%, +0.6%, +2.1%): uncertainty resolving, not a big fall. The pattern is "rise" far more than "fall". The 2018 day-after rally (best post-midterm day in decades) was followed by a Fed-driven slide into the 2018-12-24 low, so the post-election bounce is not a trend by itself; rates and other drivers can override it. Only 3 cases in our data, so low statistical weight.
+- Practical rules: (1) before the vote: reduced conviction, expect choppiness, do not add risk just because "midterm rally" is coming; (2) the day after: modest positive bias (+), strongest if the market was down into the vote and the outcome is divided government; (3) next months: bullish bias unless a stronger driver (Fed tightening, credit stress) contradicts it; (4) if an unexpected outcome changes tax/regulation expectations, reason by sector (see 3.6).
+- Index effect: low to medium. Confidence: medium for a positive drift over 6-12 months, low for any single day.
+
 ### 3.7 Referendums and political shocks with unclear mechanics (e.g., Brexit)
 - Mechanism: uncertainty about trade, currency, the banking system and policy; flight to safety.
 - Reaction: sharp drop on the surprise, then recovery in days to weeks if there is no contagion; the local currency and local banks suffer most.
