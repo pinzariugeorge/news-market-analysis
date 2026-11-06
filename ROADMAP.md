@@ -61,6 +61,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/INDICATOR_TESTS.md` | Test of 10 standard indicator and candlestick signals on 45 stocks by period and holding period; no reliable edge; findings |
+| `results/indicator_tests.csv` | Same numbers as CSV |
 | `results/UNIVERSE_BASELINES.md` | Baselines on the rule-selected single-stock universe for a 500 USD account (whole shares, 2 positions, real costs), by period and holding period; findings |
 | `results/universe_baselines.csv` | Same numbers as CSV (500 USD, 2 positions); `results/universe_baselines_1000_3pos.csv` for 1,000 USD with 3 positions |
 | `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
@@ -82,6 +84,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `run_indicator_tests.py` | Tests RSI, MACD, golden cross, Bollinger, breakout and candlestick patterns as long signals with costs and period splits; writes `results/indicator_tests.csv` |
 | `run_universe_baselines.py` | Baselines on the rule-selected universe for a small account: cash, hold two, random rotation, momentum, low volatility, trend; writes `results/universe_baselines.csv` |
 | `costs.py` | Cost model for IBKR Ireland US stocks (commission, pass-through assumptions, spread, FX, tax); `python -I src\costs.py` prints round-trip cost tables; import it in every backtest |
 | `select_universe.py` | Point-in-time universe rule: top 4 names per family by 250-day median dollar volume using only data before each as-of date; writes `universe/rule_selections.csv` |

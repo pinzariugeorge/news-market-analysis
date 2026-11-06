@@ -52,6 +52,7 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [x] Baselines on the universe for a 500 USD account (`results/UNIVERSE_BASELINES.md`): noise dominates with two positions; no strategy consistent; 5-day holds cost up to 17% of the account in fees.
 - [ ] Next: judge strategies on many decisions (all 20 names in parallel as a paper portfolio, each decision scored separately), add event windows and calendar data, then the agent with the same costs.
 - [x] eToro fees and API researched (`PHASE1_FACTS.md`): 1 USD per stock open and close, ETFs free, API free for eligible users; eligibility for Romania, conversion fee and rate limits still open; some stock buys can be executed as CFDs.
+- [x] Indicator and candlestick tests (`results/INDICATOR_TESTS.md`): no reliable edge; only oversold buying (RSI below 30) was positive in all periods and it fades once market-wide days are removed. Candidate for a later out-of-sample test with a market-selloff filter.
 - [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
 - [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
 
