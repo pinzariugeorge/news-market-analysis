@@ -5,7 +5,6 @@ Ideas that came up and were NOT adopted. Move one to `TODO.md` only when you dec
 ## From the second trading video (pasted 2026-11-06)
 - Order journal: write every order down the moment it is sent, so an interrupted run can be recovered without repeating a trade (idempotent order log).
 - Failure-behavior checklist for the agent routine: no previous handoff on the first run; the next run has no chat history; the previous run crashed after sending an order; two runs overlap; corrupt or missing state file; machine or app offline.
-- One handoff note at the end of every run: what changed, outcomes, remaining risks, the exact next job.
 - Two update notifications a day (midday and after the close) sent to a chat tool.
 - Not suggested: his same-day-flat day-trading schedule (fees make it lose on a small account) and the paid real-time data plan.
 
