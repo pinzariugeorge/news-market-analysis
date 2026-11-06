@@ -17,6 +17,7 @@ Last updated: 2026-11-06
 | `PROGRESS_LOG.md` | Dated session entries, newest at the bottom, each ends with "Next step" |
 | `JOURNAL.md` | Plain-language notes, surprises, open questions |
 | `ROADMAP.md` | This file map |
+| `TODO.md` | Open items: pre-2008 news source options, handbook work, other tasks |
 | `CLAUDE.md` | Standing instructions for Claude sessions in this repo |
 | `.env.example` | Names of the secrets needed; the real `.env` is git-ignored and never printed |
 
