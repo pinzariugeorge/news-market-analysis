@@ -44,7 +44,8 @@ See `PLAN.md`: broker Interactive Brokers Ireland; trade current companies and c
 
 ## Universe and holding period (decided 2026-11-06)
 - No indexes and no ETFs in the traded universe: single stocks (and commodity drivers as inputs) in the six theme families of `PLAN.md`.
-- Holding period is a tested parameter. First evidence: 20-60 trading days beat 1-5 days after costs on small orders; test 5, 10, 20, 40, 60 days and event windows out of sample before choosing.
+- Holding period is a tested parameter, capped at 20 trading days (user decision 2026-11-06): test 5, 10 and 20 days and event windows out of sample. First evidence: 20-day holds beat 1-5 day holds after costs on small orders. The 40 and 60 day holds are out of scope.
+- Fixed universe v1 (frozen 2026-11-06): six families, four single stocks each, selected by liquidity rule only (`universe/FIXED_UNIVERSE.md`).
 
 ## Trading targets (decided 2026-11-06)
 - The S&P 500 was the learning dataset. The aim is to trade currently listed companies and commodities, not the index.

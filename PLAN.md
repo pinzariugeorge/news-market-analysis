@@ -9,7 +9,7 @@ Research and simulation only until the gates below are passed. Not financial adv
 4. **The regime is stressed.** Last month: Nasdaq 100 -14.6%, semiconductors -28%. Handbook principle 12 says big moves cluster: expect large moves both ways, size small.
 5. **Volatility is not an edge and most movers are down.** Solar names moved 3-7% a day and most fell 47-84% from a peak within a year. Loss control comes first.
 6. **News coverage is thin.** The index headline set named a cause on fewer than one in four big-move days; we have no company-level news or earnings dates yet.
-7. **Longer holds pay for themselves.** On single stocks, 5-day holds barely cover costs while 20-60 day holds earned about 0.09-0.10% per day held net of cost, in both halves of five years of data; a momentum rule never beat holding. The test is biased by hindsight selection and stops at 60 days (`universe/BROAD_SCREEN.md`).
+7. **Longer holds pay for themselves.** On single stocks, 5-day holds barely cover costs while 20-60 day holds earned about 0.09-0.10% per day held net of cost, in both halves of five years of data; a momentum rule never beat holding. The test is biased by hindsight selection (`universe/BROAD_SCREEN.md`). Decision 2026-11-06: holding period capped at 20 trading days, so we test 5, 10 and 20 days plus event windows.
 8. **Screening many names and keeping the winners fools you.** Anything chosen because it did well in the same data used to judge it is overfit. Selection and testing must use different periods.
 
 ## Candidate theme families (research list, not recommendations)
@@ -24,7 +24,7 @@ Single stocks and commodity drivers only: no indexes and no ETFs in the traded u
 | Copper and uranium producers | Commodity-linked, but both down hard in a month | Inventory data, policy, earnings | Freeport-McMoRan, Cameco |
 | Solar (kept as one theme) | Distressed, policy-driven, extremely volatile | Tariff and policy decisions, earnings | `universe/UNIVERSE.md` |
 
-Pick two or three families, not all, to keep data and testing manageable.
+Start with all six families, four fixed names each (`universe/FIXED_UNIVERSE.md`, frozen 2026-11-06, user decision); narrow later by validation results.
 
 ## Phases and gates
 **Phase 1: costs and access (before any more modelling).**
@@ -44,6 +44,7 @@ Pick two or three families, not all, to keep data and testing manageable.
 - Time split for single names (new, replaces the index split): build up to 2022, validate 2023-2024, final test 2025 to now. The 2020 test year stays reserved for the index work.
 
 **Phase 4: baselines then agent, both with real costs.**
+- Holding horizons tested: 5, 10 and 20 trading days (maximum 20, user decision) plus event windows.
 - Baselines per name: buy and hold, trend rule, volatility rule, event-window rules (hold only around scheduled catalysts), random with equal exposure.
 - Agent runs only on event days (earnings, reports) and in regime changes, not every day. This lowers both fees and model usage.
 - Gate: net-of-cost return and drawdown better than the best baseline, on validation and then the final test, with enough trades for the result to mean something (at least about 100 independent decisions) and a maximum loss limit respected.

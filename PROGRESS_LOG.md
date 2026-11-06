@@ -83,4 +83,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DECISION (user): continue with the six theme families, single stocks only (no indexes or ETFs). DONE: holding period test on 20 single stocks (5, 10, 20, 40, 60 days, net of 0.24% per round trip): net return per day held rises from 0.049% at 5 days to about 0.10% at 40-60 days, stable across both halves of the sample; momentum never beat holding; solar lost at every horizon. Hindsight selection caveat; horizon capped at 60 days.
 
-**Next step:** user decisions listed at the end of `PLAN.md` (theme families, account size, allowed instruments, API budget). Then Phase 1: `src/costs.py` and verification of IBKR facts (fees, account opening for Romania, paper account, API, US single-stock availability, tax).
+- DECISION (user): fix the names first; holding period capped at 20 trading days (no 40-60). DONE: fixed universe v1 (24 single stocks, 4 per family, top by 30-day dollar volume among eligible candidates), frozen 2026-11-06 in `universe/FIXED_UNIVERSE.md` and `universe/fixed_universe.csv`.
+
+**Next step:** user confirms or changes the selection rule (it puts Intel in chips and leaves out TSMC and Broadcom), the account size and allowed instruments. Then Phase 1: `src/costs.py`, IBKR fact checks; Phase 2: history, calendars, company news; out-of-sample test of 5, 10, 20 day holds and event windows on the fixed names.

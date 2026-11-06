@@ -47,6 +47,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Trading universe (`universe/`)
 | File | Content |
 |---|---|
+| `universe/FIXED_UNIVERSE.md` | Fixed universe v1: 6 families x 4 single stocks chosen by a liquidity rule, frozen 2026-11-06; selection rule, caveats, test design |
+| `universe/fixed_universe.csv` | Candidates, liquidity ranks, eligibility and selection flags behind the fixed universe |
 | `universe/BROAD_SCREEN.md` | Broad screen of what has traded well (sectors, themes, commodities, single stocks, to 2026-11-06) plus driver-to-asset correlations |
 | `universe/broad_screen.csv`, `universe/broad_screen_metrics.csv` | Input list and metrics (returns 1m/3m/6m/1y, volatility, liquidity, drawdown, 200-day flag) |
 | `universe/UNIVERSE.md` | Method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
