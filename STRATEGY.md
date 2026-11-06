@@ -43,9 +43,9 @@ Not decided yet: broker, scheduler, research source for live use (the video setu
 See `PLAN.md`: broker Interactive Brokers Ireland; trade current companies and commodities in two or three theme families (not fixed; solar is only one example); costs inside every test; event-driven decisions rather than daily trading; new time split for single names (build to 2022, validate 2023-2024, final test 2025 on); gates before paper and live.
 
 ## Universe and holding period (decided 2026-11-06)
-- No indexes and no ETFs in the traded universe: single stocks (and commodity drivers as inputs) in the six theme families of `PLAN.md`.
+- No indexes and no ETFs in the traded universe: single stocks (and commodity drivers as inputs) in the five theme families of `PLAN.md`.
 - Holding period is a tested parameter, capped at 20 trading days (user decision 2026-11-06): test 5, 10 and 20 days and event windows out of sample. First evidence: 20-day holds beat 1-5 day holds after costs on small orders. The 40 and 60 day holds are out of scope.
-- Fixed universe v1 (frozen 2026-11-06): six families, four single stocks each, selected by liquidity rule only (`universe/FIXED_UNIVERSE.md`).
+- Universe rule v2 (2026-11-06): five families (oil and gas, gold miners, chips, pharma, copper and uranium), four single stocks each, chosen by a point-in-time liquidity rule (250-day median dollar volume, quarterly rebalance with a buffer); we freeze the rule, not the list (`universe/UNIVERSE_RULE.md`). Solar removed (user decision).
 
 ## Trading targets (decided 2026-11-06)
 - The S&P 500 was the learning dataset. The aim is to trade currently listed companies and commodities, not the index.

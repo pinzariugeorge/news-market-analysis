@@ -47,11 +47,13 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Trading universe (`universe/`)
 | File | Content |
 |---|---|
-| `universe/FIXED_UNIVERSE.md` | Fixed universe v1: 6 families x 4 single stocks chosen by a liquidity rule, frozen 2026-11-06; selection rule, caveats, test design |
-| `universe/fixed_universe.csv` | Candidates, liquidity ranks, eligibility and selection flags behind the fixed universe |
+| `universe/UNIVERSE_RULE.md` | Universe rule v2: research behind it, the point-in-time rule, selections by date, limits, change log (five families x four single stocks; solar removed 2026-11-06) |
+| `universe/candidates.csv` | Candidate companies per family (input of the rule) |
+| `universe/rule_selections.csv` | Output of `src/select_universe.py`: top names per family at each as-of date |
+| `universe/fixed_universe.csv` | Earlier v1 liquidity table (30-day average); kept for reference |
 | `universe/BROAD_SCREEN.md` | Broad screen of what has traded well (sectors, themes, commodities, single stocks, to 2026-11-06) plus driver-to-asset correlations |
 | `universe/broad_screen.csv`, `universe/broad_screen_metrics.csv` | Input list and metrics (returns 1m/3m/6m/1y, volatility, liquidity, drawdown, 200-day flag) |
-| `universe/UNIVERSE.md` | Method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
+| `universe/UNIVERSE.md` | Archived (solar removed 2026-11-06): method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
 | `universe/solar_chain.csv` | Input list: ticker, name, role in the chain, notes |
 | `universe/solar_chain_metrics.csv` | Output of `src/build_universe.py` (current market metrics per ticker) |
 
@@ -77,6 +79,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `select_universe.py` | Point-in-time universe rule: top 4 names per family by 250-day median dollar volume using only data before each as-of date; writes `universe/rule_selections.csv` |
 | `build_universe.py` | For a ticker CSV (`universe/*.csv`), downloads the last year of daily bars from Yahoo and writes `<name>_metrics.csv` (volatility, liquidity, drawdown): `python -I src\build_universe.py universe/solar_chain.csv` |
 | `pilot_prepare.py` | Picks pilot decision days (2008-2019 only, by category) and writes their past-only records to `results/<run>/records/` |
 | `score_decisions.py` | Joins stored agent decisions (`results/<run>/decisions_raw/`) with outcomes; writes `decisions.csv`, `summary.json`, `dashboard_data.json` |

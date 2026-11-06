@@ -22,9 +22,8 @@ Single stocks and commodity drivers only: no indexes and no ETFs in the traded u
 | Memory and chip makers | Very liquid, very volatile, strong link to a sector ETF | Earnings, memory price reports, export rules | Micron, Nvidia, AMD, TSMC |
 | Pharma and biotech | Leader over 6 months; event-driven | Earnings, trial results, regulatory decisions | Eli Lilly, Novo Nordisk |
 | Copper and uranium producers | Commodity-linked, but both down hard in a month | Inventory data, policy, earnings | Freeport-McMoRan, Cameco |
-| Solar (kept as one theme) | Distressed, policy-driven, extremely volatile | Tariff and policy decisions, earnings | `universe/UNIVERSE.md` |
 
-Start with all six families, four fixed names each (`universe/FIXED_UNIVERSE.md`, frozen 2026-11-06, user decision); narrow later by validation results.
+Start with all five families (solar removed 2026-11-06), four names each chosen by the point-in-time rule in `universe/UNIVERSE_RULE.md` (rerun quarterly); narrow later by validation results.
 
 ## Phases and gates
 **Phase 1: costs and access (before any more modelling).**

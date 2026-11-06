@@ -1,4 +1,4 @@
-# Trading universe (research list, not recommendations)
+# Trading universe: solar value chain (ARCHIVED 2026-11-06, solar removed from the plan; kept as an example of the supply-chain method)
 
 Date of data: 2026-11-05/06 (Yahoo daily bars, last 1 year). Built by `src/build_universe.py`; input `universe/solar_chain.csv`, output `universe/solar_chain_metrics.csv`. Research and simulation only. Nothing here says a name will make money: volatility, size and liquidity describe the past year only.
 
