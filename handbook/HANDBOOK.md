@@ -17,20 +17,24 @@ Used by: simulation agents (as part of their expert-analyst context) and live da
 10. **"No meaningful effect" is a first-class prediction** and usually the most likely one. Only call a move when the channel, scale and surprise all line up.
 11. **Headlines describe the market too.** Many headlines report the market's own move ("Dow plunges 700 points"). That is past information for the next decision, not a new cause. Look for the cause (policy, data, credit, geopolitics) and for how much of it is already in the price.
 
-## 2. Base rates (S&P 500 daily, 2008-2019, 3,020 days; from `data/processed/market_days.csv`)
-| Stat | Value |
-|---|---|
-| Daily standard deviation | 1.23% (mean +0.03%) |
-| Up days | 53.9% |
-| \|move\| >= 1% | 25.8% of days |
-| \|move\| >= 2% | 8.2% |
-| \|move\| >= 3% | 3.2% |
-| \|move\| >= 5% | 0.7% |
-| Day after a drop of 2% or more (n=141) | next day up 58%, mean +0.21% |
-| Day after a rise of 2% or more (n=106) | next day up 49%, mean -0.19% |
-| Mean \|move\| the day after a 2%+ day | 1.49% vs 0.78% overall (volatility clusters) |
+## 2. Base rates (S&P 500 daily closes; `data/processed/market_days.csv`; handbook period only, to 2019)
+| Stat | 1950-2019 (17,612 days) | 1950-1989 | 1990-2019 | 2008-2019 |
+|---|---|---|---|---|
+| Daily standard deviation | 0.96% | 0.84% | 1.10% | 1.24% |
+| Up days | 52.8% | 52.6% | 53.0% | 53.9% |
+| \|move\| >= 1% | 20.2% | 16.7% | 24.9% | 25.9% |
+| \|move\| >= 2% | 4.3% | 2.7% | 6.4% | 8.2% |
+| \|move\| >= 3% | 1.2% | 0.6% | 2.1% | 3.2% |
+| \|move\| >= 5% | 0.23% | 0.11% | 0.40% | 0.73% |
 
-Caveat: 2008-2009 dominates the large-move counts. Direction after big days is only weakly predictable; the size of the next move is much more predictable than the sign. Any single-day direction call starts from roughly 54% up.
+Mean daily move is about +0.035% in every period (about 9% a year). A typical day is a small move; size depends on the regime, direction barely does.
+
+**Volatility clusters, direction does not follow.**
+- After a day of 2% or more (either sign), the next day's average absolute move is 1.25% vs 0.65% overall (1950-2019).
+- Direction after a big day: after a drop of 2%+ (n=380) the next day was up 55% (mean +0.15%); after a rise of 2%+ (n=372) up 56% (mean +0.16%). So there is no reliable direction signal from a big day. (The 2008-2019 only figures, 58% up after drops and 49% after rises, did not hold over the longer sample: do not use them.)
+- By the previous 20-day realized volatility (quartiles low to high): next-day standard deviation 0.56%, 0.69%, 0.86%, 1.47%, while the share of up days stays 52-53% in all four. Use volatility to size the possible move, not to pick the direction.
+
+Any single-day direction call starts from roughly 53% up. The edge, if any, must come from magnitude, sector, horizon and knowing when to stay out.
 
 ## 3. Event-type entries
 Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sectors | index effect | confidence | evidence (2008-2019).
@@ -158,6 +162,19 @@ Fields: mechanism | typical reaction | horizon | amplifiers | dampeners | sector
 - Reaction: spillover to the S&P depends on exposure; Chinese-growth scares hit materials, industrials and multinationals; euro-area funding stress hits banks.
 - Evidence: 2015-08-24 China devaluation/rout worldwide, S&P -3.94%.
 - Horizon: days to weeks; fades if the home market stabilizes.
+
+### 3.15 Calendar and seasonal patterns (S&P 500, 1950-2019)
+Use as small tilts only. Effects are small, partly arbitraged away, and were found by testing many slices (risk of data-mining), so they never override a stronger driver such as a crisis, a Fed surprise or a regime change.
+- **Month of the year** (mean / up share): January +1.1% / 61%, February +0.1% / 56%, March +1.2% / 64%, April +1.5% / 71%, May +0.2% / 59%, June +0.1% / 53%, July +1.1% / 57%, August -0.1% / 54%, September -0.4% / 46%, October +0.8% / 60% (largest volatility, sd 5.5%), November +1.6% / 69%, December +1.5% / 74%. September is the only clearly negative month; November to April is the strong stretch; August to October is the fragile stretch.
+- **Year-end ("Santa") window** (last 5 trading days of December plus the first 2 of January): average +1.35%, positive in 78% of 69 years.
+- **Turn of the month** (last trading day plus the first 3 of the next month): average +0.113% a day vs +0.016% on other days, about seven times the normal daily drift.
+- **Day of week:** 1950-2019 Monday averaged -0.06% (up 48%), Wednesday +0.08% and Friday +0.07% (up 55-56%). Since 1990 the weekday differences are tiny (all +0.015% to +0.06%, up 52-54%): treat the old "weak Monday" as gone.
+- **Midterm and presidential election cycle:** see 3.6b and 3.6c.
+- Not yet studied: FOMC meeting days, earnings seasons (mid-January, April, July, October), quarter-end rebalancing, options expiration, holidays. See `TODO.md`.
+
+### 3.16 Volatility regime (a modifier, not an event)
+- Mechanism: when recent volatility is high, every shock moves prices more and news is amplified; when it is low, moves are small and bad news is often shrugged off.
+- Use: the 20-day realized volatility sets how big a move to expect (next-day sd 0.56% in the calmest quartile vs 1.47% in the most volatile). It does not predict direction. Size positions and stops by it, and require more evidence before acting in a high-volatility regime.
 
 ## 4. How an agent should use this
 1. Classify each new item as an event type; ignore headlines that only report the market's own move or contain no new cause.

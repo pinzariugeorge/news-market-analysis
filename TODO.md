@@ -30,8 +30,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] Also write a small event calendar for 2000-2007 from general knowledge if news coverage stays thin.
 
 ## 2. Handbook work
-- [ ] Recompute the base-rate table (section 2 of `handbook/HANDBOOK.md`) on 1950-2019 and by regime (still 2008-2019).
-- [ ] More calendar entries: Fed meeting days, earnings seasons, year-end and January patterns, 2008/2012/2016 election detail, crisis episodes (1987, 2000-2002).
+- [x] Base-rate table recomputed on 1950-2019 and by volatility regime (2026-11-06); calendar patterns added as 3.15, volatility regime as 3.16.
+- [ ] More calendar entries still open: Fed meeting days (needs the FOMC date list), earnings seasons, quarter-end and options expiration, holidays, 2008/2012/2016 election detail, crisis episodes (1987, 2000-2002).
 - [ ] Test the handbook on the 247 big-move days of 2008-2019 and record hit rates per event type (never on 2020).
 - [ ] Design the daily record format (new events, open storylines, past-only market context).
 
