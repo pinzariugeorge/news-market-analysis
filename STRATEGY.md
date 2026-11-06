@@ -71,5 +71,5 @@ A headline dated D may have been published after the close, so it is used only f
 ## Housekeeping
 - Project stays in its own folder with only project-relevant context.
 - API keys go in `.env` only, never in chat.
-- Ask before spending money on paid data or paid API usage.
+- Ask before spending money on paid data or paid API usage. Decided 2026-11-06: do not use the Anthropic API; model work runs inside Claude Code on the user's Pro subscription (subagents for simulation, a routine for the live phase).
 - Research and simulation only. No real money, no financial advice.

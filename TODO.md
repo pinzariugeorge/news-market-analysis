@@ -35,9 +35,14 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [x] Reviewed the 247 big-move days of 2008-2019 by event type (`handbook/BIGDAY_REVIEW.md`); ranges updated. Still open: a true predictive test (news before day D vs move on D).
 - [ ] Better causal news source: the S&P headlines name a cause on fewer than 1 in 4 big days. Candidates are in section 1, plus event calendars (FOMC, jobs report, CPI dates).
 - [x] Daily record format, agent prompt v0, decision log and storylines template written (`agent/`); `src/build_daily_context.py` builds the past-only record (leak check passed).
-- [ ] Build the simulation harness: loop over days, call the agent (subagents or API, decide later), store decisions, reveal outcomes, score vs baselines. Start with the baselines (no model needed) on 2008-2019.
+- [ ] Build the simulation harness: loop over days, call the agent (subagents or API, decide later), store decisions, reveal outcomes, score vs baselines. Baselines on 2008-2019 are done (`results/BASELINES.md`).
 
-## 3. Other
+## 3. Simulation harness and model use (no extra API cost planned)
+- [ ] Run a 20-30 day pilot of the agent as subagents inside Claude Code (uses the Pro subscription, not the API) to measure how much usage one decision takes.
+- [ ] Decide the test design from that: sampled days (all big-move days plus a few hundred random days) over several sessions, and/or a rule-based Python version of the handbook for all days with the model only reading headlines on sampled days.
+- [ ] Live phase: one decision a day as a scheduled Claude Code routine on the subscription (no API); check plan limits first.
+
+## 4. Other
 - [ ] Check why 2020-09-23 has 55 headlines.
 - [ ] Push local commits to `origin/main` when the user says so.
 - [ ] Choose broker, scheduler and live research source only when we reach paper trading (see `STRATEGY.md`).

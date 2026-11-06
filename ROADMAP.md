@@ -43,6 +43,13 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
 | `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 16 event-type entries (incl. 3.6b US midterms, 3.6c presidential elections), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
 
+## Results (`results/`)
+| File | Content |
+|---|---|
+| `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
+| `results/baselines_2008_2019.csv` | Same numbers as CSV |
+| (planned) `results/<run_name>/` | Decisions and scores per simulation run |
+
 ## Agent design (`agent/`)
 | File | Content |
 |---|---|
@@ -57,6 +64,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `run_baselines.py` | Computes the no-model baselines (buy and hold, cash, volatility rule, capped long, 200-day trend, random) for a period; writes `results/baselines_<years>.csv` |
 | `build_daily_context.py` | Builds the past-only daily record JSON for one day: `python -I src\build_daily_context.py 2018-12-26` |
 | `review_big_days.py` | Labels 2008-2019 days with a move of 2% or more by event type, writes `handbook/bigday_review.csv`, prints per-type stats |
 | `build_news_corpus.py` | Raw headlines + prices -> `data/processed/news_all.csv` and `market_days.csv` (drops CP, fixes encoding, de-duplicates, adds decision_date and split) |
@@ -64,7 +72,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 Run with `python -I src\<script>.py` on Windows.
 
 ## Planned, not created yet
-- `results/`: simulation decisions and scores (one folder per run).
+
 - `cache/`: cached model outputs (git-ignored).
 
 ## Outside this repo
