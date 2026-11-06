@@ -1,0 +1,12 @@
+{
+  "decision_day": "2023-03-06",
+  "market_view": "VIX has eased to 18.5 (down 15% in 5 days), a calm regime with rising rates over 20 days (10-year yield up 17%) and a firm dollar. A jobs report falls inside the window and adds variance, not direction.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "XOM is near a coin flip. Crude's recent rise is already priced in and the stock moves only about half as much as crude. No named catalyst makes a long better than flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM is down 15% over 20 days, but oversold and trend are not edges. Rising yields and a firm dollar are headwinds, and the jobs report adds variance. No concrete reason for a long."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "NVDA has run up 44% in 60 days at 4% daily volatility. Momentum is not an edge and the move is already priced in. The family is the most volatile, with no scheduled catalyst I can name."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "JNJ is a defensive, low-volatility name with a weak driver link. It has fallen 14% in 60 days, but that is not a usable edge. No identified news."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.53, "reasoning": "FCX is up 9.6% in 5 days, so the copper move is priced in. The handbook shows a positive tilt in this family, but that is a sample feature, not a forecast. No named catalyst."}
+  },
+  "would_change_my_mind": "A specific dated catalyst for one leader, or a VIX spike creating a clear mispricing, would justify a long."
+}

@@ -1,0 +1,12 @@
+{
+  "decision_day": "2024-08-06",
+  "market_view": "Stress regime: VIX at 38.6 after a +65% one-day jump, with sharp falls in chips, copper and uranium. Volatility predicts move size, not direction, so large swings both ways are likely.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Crude is down 11% in 20 days and below its 200-day average. XOM is the strongest name, but I cannot name a concrete catalyst. Earnings season and stress add variance without direction."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "Yields are falling and gold is near its high, which supports miners, but that move is already priced in. NEM fell 3% in one day amid the stress. No named catalyst beyond a coin flip."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA is down 22% in 20 days with 4.8% daily volatility in a VIX spike. A rebound is a guess; the handbook says not to guess one in a stress regime. Earnings season adds variance."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY is down 15% in 20 days with weak sector linkage. Pharma moves on its own news and I see no concrete catalyst. Defensive, but no edge."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Copper is down 14% and FCX 20% in 20 days, below its 200-day average. The oversold bounce is a selection rule with no tested edge. No catalyst is visible in the record."}
+  },
+  "would_change_my_mind": "A VIX that settles back below about 25, or a named scheduled catalyst with a clear direction for one leader."
+}

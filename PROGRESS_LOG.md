@@ -113,4 +113,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - Q and A (user): the family run used 23 independent Sonnet agents (one per decision day, five family calls each = 115 calls), about 75k tokens per day (about 15k per family call; API-equivalent at Sonnet prices roughly 0.15 USD per day, about 3.5 USD for the run, not billed on the subscription). No handoff between agents in simulation (days are independent); a handoff note is wanted for the live phase only (TODO.md).
 
+- DONE: lean agent handbook (`handbook/AGENT_HANDBOOK.md`, about 1,400 tokens versus about 7,500 for the two full handbooks) with `src/verify_handbook.py` (size, keywords, all numbers traced to the sources, family numbers in the matching family text: all pass) and a functional check on two days (2023-03-06, 2024-08-06) in `results/fam_lean_check/`: same JSON format, all 10 calls flat with the same horizon and confidence within 0.03 of the full-handbook run; subagent tokens 65,150 versus 75,500 (-14%). The rest of the cost is subagent overhead.
+
 **Next step:** user chooses: accept (no edge, stay in cash), adjust the prompt on validation only, run the unchanged agent once on 2025-now (about 1.7M tokens), or stop agent runs. Phase 1 part 2 (IBKR application checks) and earnings dates remain.

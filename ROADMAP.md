@@ -41,6 +41,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Handbook (`handbook/`)
 | File | Content |
 |---|---|
+| `handbook/AGENT_HANDBOOK.md` | Lean handbook for agent runs (about 1,400 tokens): rules of thumb and the five families; every number traced to the two full handbooks by `src/verify_handbook.py` |
 | `handbook/HANDBOOK_COMPANIES.md` | Handbook v1 for single stocks: how to use, driver links, entries for the five families (base rates, drivers, catalysts, event reactions), limits. Numbers from history to 2022, checked on 2023-24; 2025+ not used |
 | `handbook/family_stats.csv` | Statistics behind it (driver R-squared and beta, base rates, volume-shock events, weekday ratios, correlations) |
 | `handbook/BIGDAY_REVIEW.md` | Review of the 247 big-move days of 2008-2019 by event type: findings and observed ranges |
@@ -67,6 +68,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 |---|---|
 | `results/FAMILY_RUN.md` | Family agent run fam_v0 (validation 2023-2024): setup, result (all calls flat, portfolio stayed cash), counterfactuals, options |
 | `results/dashboard_family.html` | Dashboard of the family run: every stock, commodity and driver price with the agent's calls, portfolio vs leaders basket, decision table with reasoning. Open in a browser |
+| `results/fam_lean_check/` | Two decision days rerun with the lean handbook for comparison with `fam_v0` |
 | `results/fam_v0/` | Records (inputs), decisions_raw (agent JSON), decisions.csv, summary.json, dashboard_data.json |
 | `results/WIDE_TEST.md` | Wide test: momentum, reversal, low volatility, trend, oversold and random rules scored on the whole 20-name basket per decision date, by period and holding period; findings |
 | `results/wide_test.csv` | Same numbers as CSV |
@@ -82,6 +84,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Agent design (`agent/`)
 | File | Content |
 |---|---|
+| `agent/FAMILY_AGENT_PROMPT_LEAN.md` | Same rules as the family prompt, pointing at the lean handbook only |
 | `agent/FAMILY_AGENT_PROMPT.md` | Prompt for the family run: long or flat per family with horizon and confidence; leader chosen by rule; JSON output |
 | `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
 | `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
@@ -94,6 +97,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `verify_handbook.py` | Checks a lean handbook against its sources: size, required keywords, every number found in the sources, and family numbers in the matching family text |
 | `familydata.py` | Shared data access for the family run (stocks cache, commodity CSVs, point-in-time names and leaders) |
 | `family_prepare.py` | Picks decision days and writes past-only family records into `results/<run>/records/` |
 | `score_family_run.py` | Scores family calls (counterfactual for flat) and a 1,000 USD whole-share portfolio vs benchmarks; writes decisions.csv, summary.json, dashboard_data.json |
