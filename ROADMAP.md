@@ -51,6 +51,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Trading universe (`universe/`)
 | File | Content |
 |---|---|
+| `universe/COMMODITY_DATA.md` | Free commodity and driver price series (symbols, coverage from 2000, sources that failed, caveats) |
 | `universe/UNIVERSE_RULE.md` | Universe rule v2: research behind it, the point-in-time rule, selections by date, limits, change log (five families x four single stocks; solar removed 2026-11-06) |
 | `universe/candidates.csv` | Candidate companies per family (input of the rule) |
 | `universe/rule_selections.csv` | Output of `src/select_universe.py`: top names per family at each as-of date |
@@ -89,6 +90,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `download_commodities.py` | Downloads free daily commodity and driver series from Yahoo (2000 on) into `data/raw/commodities/` (git-ignored) |
 | `build_family_stats.py` | Computes the per-family handbook statistics from history to 2024 (build and validation); writes `handbook/family_stats.csv` |
 | `run_wide_test.py` | Scores selection rules on the whole point-in-time basket per decision date (many decisions, costs, periods); writes `results/wide_test.csv` |
 | `run_indicator_tests.py` | Tests RSI, MACD, golden cross, Bollinger, breakout and candlestick patterns as long signals with costs and period splits; writes `results/indicator_tests.csv` |

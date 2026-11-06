@@ -58,6 +58,9 @@ Start with all five families (solar removed 2026-11-06), four names each chosen 
 - Decisions use only information before the decision time. 2020 is not used to write the handbook. Costs are inside every result. The old-news source stays parked in `TODO.md`.
 - Keep the model on the Pro subscription (subagents, chronological multi-day sessions); the API remains optional and needs approval (estimates in `TODO.md`).
 
+## How the agent picks the company (proposed, not decided)
+The agent works with the 20 rule-selected names (4 per family), not one company. Proposed staged design: (1) the agent decides the family and the direction (long or flat) using the family driver and scheduled events; the name inside the family is chosen by a fixed rule, for example the highest-liquidity name first in `universe/rule_selections.csv` (gold: Newmont), at most one name per family, sized by volatility; (2) only after the agent shows skill at family level, let it choose among the four names of a family (for gold: Agnico Eagle or AngloGold for more leverage to gold, Wheaton for lower cost risk), with its reasoning logged. Reason: choosing a name inside a family has shown no edge in our tests, and free choice multiplies the number of ways to be lucky.
+
 ## Open decisions for the user
 1. Which two or three theme families to start with.
 2. Account size to design for (500 EUR, 5,000 EUR, other).
