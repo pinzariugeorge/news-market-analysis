@@ -43,19 +43,28 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
 | `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 16 event-type entries (incl. 3.6b US midterms, 3.6c presidential elections), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
 
+## Agent design (`agent/`)
+| File | Content |
+|---|---|
+| `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
+| `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
+| `agent/DECISION_LOG.md` | Decision log columns, baselines, metrics, run phases, weekly review |
+| `agent/state/storylines.md` | Template for the open-storylines state file the agent updates |
+
 ## Code (`src/`)
 | Script | Purpose |
 |---|---|
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `build_daily_context.py` | Builds the past-only daily record JSON for one day: `python -I src\build_daily_context.py 2018-12-26` |
 | `review_big_days.py` | Labels 2008-2019 days with a move of 2% or more by event type, writes `handbook/bigday_review.csv`, prints per-type stats |
 | `build_news_corpus.py` | Raw headlines + prices -> `data/processed/news_all.csv` and `market_days.csv` (drops CP, fixes encoding, de-duplicates, adds decision_date and split) |
 
 Run with `python -I src\<script>.py` on Windows.
 
 ## Planned, not created yet
-- `results/`: scores and reports.
+- `results/`: simulation decisions and scores (one folder per run).
 - `cache/`: cached model outputs (git-ignored).
 
 ## Outside this repo

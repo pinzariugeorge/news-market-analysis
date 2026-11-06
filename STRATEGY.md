@@ -45,6 +45,12 @@ Goal: a handbook of how event types affect the market (mechanism, magnitude, hor
 - No anonymization runs (user decision): real names and dates only. Consequence: model memory of real history cannot be measured, so treat 2020 backtest results as optimistic. This relaxes core rule 3.
 - Expect next-day index direction to be close to a coin flip; compare against buy and hold, and value "no edge" calls.
 
+## Agent design v0 (decided 2026-11-06, see `agent/`)
+- Daily decision before the open of day D from a past-only record (`agent/DAILY_RECORD.md`), the handbook, open storylines and recent decisions. Output is a structured JSON decision (`agent/AGENT_PROMPT.md`).
+- Index only, long or flat, no leverage, no options, no shorts in v0. Provisional guardrails live in the prompt and are tuned on 2008-2019 only.
+- Scored on D's close-to-close return against five baselines (buy and hold, cash, a volatility-regime rule, capped always-long, random with the same exposure) with costs and an ablation without headlines (`agent/DECISION_LOG.md`).
+- Phases: develop on 2008-2019, freeze, test once on 2020, then 2021-2024, then paper, then live.
+
 ## Timing rule (decided 2026-11-06)
 A headline dated D may have been published after the close, so it is used only for the decision on the next trading day after D (`decision_date` column in `data/processed/news_2020.csv`). Friday/weekend news goes to Monday. Headlines after the last 2020 trading day have no decision day.
 
