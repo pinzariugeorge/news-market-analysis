@@ -62,7 +62,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | File | Content |
 |---|---|
 | `results/UNIVERSE_BASELINES.md` | Baselines on the rule-selected single-stock universe for a 500 USD account (whole shares, 2 positions, real costs), by period and holding period; findings |
-| `results/universe_baselines.csv` | Same numbers as CSV |
+| `results/universe_baselines.csv` | Same numbers as CSV (500 USD, 2 positions); `results/universe_baselines_1000_3pos.csv` for 1,000 USD with 3 positions |
 | `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
 | `results/baselines_2008_2019.csv` | Same numbers as CSV |
 | `results/dashboard.html` | Dashboard: where the agent acted on the S&P chart, cumulative return vs baselines, expected range vs outcome, and a table with the agent's reasoning per day. Open it in a browser |

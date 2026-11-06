@@ -50,9 +50,9 @@ def universe_at(sel, d):
     return sel[max(ok)] if ok else sel[min(sel)]
 
 
-def run(strategy, H, cal, i0, i1, fam, close, sel, capital, rng=None, fixed=None):
+def run(strategy, H, cal, i0, i1, fam, close, sel, capital, rng=None, fixed=None, P=2):
     cash, pos, orders, fees = capital, {}, 0, 0.0
-    peak, mdd, state = capital, 0.0, {"fixed": fixed}
+    peak, mdd, state = capital, 0.0, {"fixed": fixed, "P": P}
     p = cs.CostParams()
 
     def px(t, d):
@@ -65,7 +65,7 @@ def run(strategy, H, cal, i0, i1, fam, close, sel, capital, rng=None, fixed=None
         d = cal[j]
         if (j - i0) % H == 0 and j >= 1:
             eq = equity(d)
-            slot = eq / 2
+            slot = eq / P
             prev = cal[j - 1]
             names = [t for t in universe_at(sel, prev) if t in close and prev in close[t] and px(t, d) is not None]
             names = [t for t in names if close[t][prev] <= slot]
@@ -96,10 +96,10 @@ def run(strategy, H, cal, i0, i1, fam, close, sel, capital, rng=None, fixed=None
             "final_after_tax": capital + gain - TAX * max(0.0, gain)}
 
 
-def pick_two(ranked, fam):
+def pick_two(ranked, fam, n=2):
     out = []
     for t in ranked:
-        if len(out) == 2:
+        if len(out) == n:
             break
         if all(fam[t] != fam[o] for o in out):
             out.append(t)
@@ -115,7 +115,7 @@ def s_hold(j, cal, close, fam, names, rng, state):
         by = {}
         for t in names:
             by.setdefault(fam[t], t)
-        order = [by[f] for f in ("oil_gas", "pharma") if f in by]
+        order = [by[f] for f in ("oil_gas", "pharma", "gold_miners", "chips", "copper_uranium") if f in by][:state["P"]]
         state["fixed"] = order
     return state["fixed"]
 
@@ -123,7 +123,7 @@ def s_hold(j, cal, close, fam, names, rng, state):
 def s_random(j, cal, close, fam, names, rng, state):
     pool = names[:]
     rng.shuffle(pool)
-    return pick_two(pool, fam)
+    return pick_two(pool, fam, state["P"])
 
 
 def ret_n(close, t, cal, j, n):
@@ -134,7 +134,7 @@ def ret_n(close, t, cal, j, n):
 def s_momentum(j, cal, close, fam, names, rng, state):
     sc = [(ret_n(close, t, cal, j, 20), t) for t in names]
     sc = sorted([x for x in sc if x[0] is not None], reverse=True)
-    return pick_two([t for _, t in sc], fam)
+    return pick_two([t for _, t in sc], fam, state["P"])
 
 
 def s_lowvol(j, cal, close, fam, names, rng, state):
@@ -145,7 +145,7 @@ def s_lowvol(j, cal, close, fam, names, rng, state):
             continue
         r = [c[k] / c[k - 1] - 1 for k in range(1, len(c))]
         sc.append((st.pstdev(r), t))
-    return pick_two([t for _, t in sorted(sc)], fam)
+    return pick_two([t for _, t in sorted(sc)], fam, state["P"])
 
 
 def s_trend(j, cal, close, fam, names, rng, state):
@@ -157,14 +157,16 @@ def s_trend(j, cal, close, fam, names, rng, state):
         r = ret_n(close, t, cal, j, 60)
         if r is not None:
             sc.append((r, t))
-    return pick_two([t for _, t in sorted(sc, reverse=True)], fam)
+    return pick_two([t for _, t in sorted(sc, reverse=True)], fam, state["P"])
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=500.0)
     ap.add_argument("--sims", type=int, default=300)
+    ap.add_argument("--positions", type=int, default=2, help="number of positions (names from different families)")
     a = ap.parse_args()
+    P = a.positions
     fam, close, sel = load()
     cal = sorted(close["XOM"])
     rows = []
@@ -178,11 +180,11 @@ def main():
             for name, s in strategies:
                 if name in ("cash", "hold_two") and H != 5:
                     continue
-                r = run(s, 10**6 if name == "hold_two" else H, cal, i0, i1, fam, close, sel, a.capital)
+                r = run(s, 10**6 if name == "hold_two" else H, cal, i0, i1, fam, close, sel, a.capital, P=P)
                 rows.append({"period": pname, "strategy": name, "H": H if name not in ("cash", "hold_two") else "-", **{k: round(v, 2) for k, v in r.items()}})
                 print("{:12s} {:>3} {:8.1f} {:8.1f} {:8.1f} {:7d} {:7.2f} {:10.1f}".format(name, H if name not in ("cash", "hold_two") else "-", r["final"], r["ret_pct"], r["max_dd_pct"], r["orders"], r["fees"], r["final_after_tax"]))
             rnd = random.Random(7)
-            res = [run(s_random, H, cal, i0, i1, fam, close, sel, a.capital, rng=rnd) for _ in range(a.sims)]
+            res = [run(s_random, H, cal, i0, i1, fam, close, sel, a.capital, rng=rnd, P=P) for _ in range(a.sims)]
             v = sorted(x["ret_pct"] for x in res)
             rows.append({"period": pname, "strategy": "random_rotate_mean", "H": H, "final": round(st.mean(x["final"] for x in res), 2),
                          "ret_pct": round(st.mean(v), 2), "max_dd_pct": round(st.mean(x["max_dd_pct"] for x in res), 2),
@@ -191,7 +193,7 @@ def main():
             print("{:12s} {:>3} {:8.1f} {:8.1f} {:8.1f} {:7.0f} {:7.2f} {:10.1f}   ret% 5th-95th: {:.1f} to {:.1f}".format(
                 "random(mean)", H, st.mean(x["final"] for x in res), st.mean(v), st.mean(x["max_dd_pct"] for x in res),
                 st.mean(x["orders"] for x in res), st.mean(x["fees"] for x in res), st.mean(x["final_after_tax"] for x in res), v[int(.05 * (len(v) - 1))], v[int(.95 * (len(v) - 1))]))
-    out = ROOT / "results" / "universe_baselines.csv"
+    out = ROOT / "results" / ("universe_baselines.csv" if (int(a.capital), P) == (500, 2) else "universe_baselines_{}_{}pos.csv".format(int(a.capital), P))
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["period", "strategy", "H", "final", "ret_pct", "max_dd_pct", "orders", "fees", "final_after_tax"])
         w.writeheader(); w.writerows(rows)

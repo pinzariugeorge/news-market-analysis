@@ -30,3 +30,18 @@ Today's liquid names, 5-10 years of survivors: all buy-and-hold numbers are bias
 - The baselines are noise-dominated at this size. The plan must judge strategies on many names and many decisions (for example all 20 names in parallel as a paper portfolio, or each decision scored on its own, without the two-position limit) before concluding anything.
 - Keep holding periods at 10 to 20 days: fees are 3 to 5 times lower than at 5 days.
 - Any agent has to beat random with the same exposure and low-volatility on risk, across periods, not in one period.
+
+## 1,000 USD account, 3 positions (2026-11-06; `python -I src/run_universe_baselines.py --capital 1000 --positions 3`; data `results/universe_baselines_1000_3pos.csv`)
+Same method, three names from different families at about 333 USD each. Return in percent, by period:
+
+| Strategy | H | 2022 | 2023-24 | 2025-now |
+|---|---|---|---|---|
+| Hold three names (oil and gas, pharma, gold miners) | - | +14% | -22% | +108% |
+| Momentum | 5 / 10 / 20 | -11% / +1% / +11% | +17% / +20% / +20% | +79% / +119% / +114% |
+| Low volatility | 5 / 10 / 20 | -10% / -7% / -8% | -3% / +7% / +8% | +54% / +51% / +40% |
+| Trend (200-day) | 5 / 10 / 20 | -20% / -17% / -17% | +149% / +120% / +83% | +55% / +91% / +79% |
+| Random, average (5th to 95th) | 20 | -2% (-22 to +21) | +25% (-16 to +69) | +67% (+17 to +119) |
+
+- Fees: 5-day rotation paid 19 to 114 USD (2% to 11% of the account), 20-day rotation 13 to 56 USD (1% to 6%).
+- Compared with 500 USD and 2 positions the luck spread narrows (random 5th to 95th percentile about 40 to 100 points instead of 60 to 200), but no strategy is consistent across periods: trend ranges from -17% to +149%, momentum from -11% to +119%, and all of them lag or beat the random average depending on the period. Same survivor and hindsight caveats.
+- Costs by order size (IBKR, `src/costs.py`): about 0.3% round trip at 333 USD and 0.18% at 500 USD; eToro 0.6% and 0.4%.
