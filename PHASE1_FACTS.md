@@ -43,3 +43,27 @@ Two names from different families of the rule-selected universe, equal weight, h
 | 2 months | +4.1% | +3.1% | -4.1% to +10.9% | -14.5% | +26.5% | 39% | 10.8% |
 
 In dollars on 500 USD: 1 month median +8, typical range -16 to +34, bad month (5th percentile) -56, good month (95th) +85; 2 months median +15, typical -21 to +55, bad -72, good +132. Since 2024 the numbers are higher (1 month median +2.2%, 2 months +4.7%), which reflects the recent bull run. After 16% tax on gains the mean falls to about +1.3% (1 month) and +3.0% (2 months). The agent has shown no edge yet, so these are buy-and-hold ranges, not a promised result.
+
+## eToro fees and API (official pages read 2026-11-06: etoro.com/trading/fees and builders.etoro.com/faq)
+Fees, stocks and ETFs (VERIFIED on eToro's fee page; the page has a country selector and Romania is in the list, but the table I read did not show which country it was for, so confirm the Romanian row on the page):
+- Real stocks: commission of 1 USD on opening and 1 USD on closing for most exchanges (2 USD for the Australian, Hong Kong, Dubai, Abu Dhabi and Tokyo exchanges), "depending on your country of residence and the stock exchange"; implementation date shown 2025-03-02. Calculated in USD. Does not apply to CFDs, copy trading, smart portfolios; ETFs are commission-free.
+- No eToro spread markup on real stocks (only the market spread); no overnight or custody fee on real stocks; no inactivity fee; no account opening or management fee.
+- Withdrawal: free from a local currency account (EUR account provided by eToro Money Malta); 5 USD from a USD account, minimum 30 USD.
+- Currency conversion: "may vary depending on location, payment method and Club level"; amount not stated on this page (OPEN; a separate Conversion Fees page exists). A EUR account trading US stocks needs conversion; a USD account needs conversion on deposit.
+- Catch: short selling, leveraged positions and, "due to product restrictions", some non-leveraged BUY positions in stocks are executed as CFDs, which carry a CFD spread (0.15% per trade for stock CFDs) and overnight fees and give no ownership. Any CFD trade is marked "CFD" on the trade ticket. Check each order is a real stock.
+- Crypto: 1% per position at the base tiers; futures only in beta for a limited audience.
+- UK stocks carry 0.5% stamp duty reserve tax (not relevant for US names).
+
+API (VERIFIED on the builders FAQ): free for eligible users, no separate fee; keys (x-api-key and x-user-key) from the API portal; real-money trading is possible "when your account and app are enabled for live trading"; demo and real environments are separate (demo order endpoint under /execution/demo/orders); public REST base public-api.etoro.com. Eligibility by country and the rate limits are not stated on the FAQ page: OPEN (ask eToro or check api-portal.etoro.com after opening an account).
+
+Round-trip cost comparison on a single US stock order (eToro 1 USD open + 1 USD close, no FX; IBKR from `src/costs.py`, tiered, whole shares, assumptions flagged):
+| Order | eToro | IBKR Ireland |
+|---|---|---|
+| 125 USD | 1.6% | 0.6% |
+| 250 USD | 0.8% | 0.3% |
+| 500 USD | 0.4% | 0.18% |
+| 1,250 USD | 0.16% | 0.10% |
+| 2,500 USD | 0.08% | 0.07% |
+| 5,000 USD | 0.04% | 0.06% |
+- eToro's flat fee is worse for small orders and slightly better above about 3,000 USD per order; both exclude currency conversion (eToro's amount is not stated) and tax. For the 250-500 USD positions of a 500 USD account IBKR is cheaper by half.
+- eToro's API access depends on eligibility; IBKR's API is documented and mature. Decision input only; not a recommendation.
