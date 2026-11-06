@@ -39,6 +39,9 @@ Not decided yet: broker, scheduler, research source for live use (the video setu
 ## Data horizon (decided 2026-11-06)
 2008 as the start was only because the headlines dataset begins in 2008. Prices now go back to 1950 (`data/raw/sp500_1950_2024_daily.csv`), so base rates and calendar-event studies (elections, Fed days, seasons, crises) use 1950-2019. Wanted: more news and an event calendar before 2008 (dot-com crash, 2001 attacks, 2002 lows, 2003 war, 2006 midterms) for the agent; source still to be chosen. 2020 stays the test year and 2021+ the holdout for everything.
 
+## Plan v2 (2026-11-06)
+See `PLAN.md`: broker Interactive Brokers Ireland; trade current companies and commodities in two or three theme families (not fixed; solar is only one example); costs inside every test; event-driven decisions rather than daily trading; new time split for single names (build to 2022, validate 2023-2024, final test 2025 on); gates before paper and live.
+
 ## Trading targets (decided 2026-11-06)
 - The S&P 500 was the learning dataset. The aim is to trade currently listed companies and commodities, not the index.
 - Theme and supply-chain approach: pick a theme (example: solar), map its cost components and demand drivers to the listed companies on each link, and use the handbook to reason about how component, policy and earnings news moves them (`universe/UNIVERSE.md`).

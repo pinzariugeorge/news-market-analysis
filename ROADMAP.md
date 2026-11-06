@@ -18,6 +18,7 @@ Last updated: 2026-11-06
 | `JOURNAL.md` | Plain-language notes, surprises, open questions |
 | `ROADMAP.md` | This file map |
 | `TODO.md` | Open items: pre-2008 news source options, handbook work, other tasks |
+| `PLAN.md` | Plan v2: what we learned, theme families, phases 1-6 with gates, open decisions (trade current companies and commodities via Interactive Brokers Ireland) |
 | `CLAUDE.md` | Standing instructions for Claude sessions in this repo |
 | `.env.example` | Names of the secrets needed; the real `.env` is git-ignored and never printed |
 
@@ -46,6 +47,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Trading universe (`universe/`)
 | File | Content |
 |---|---|
+| `universe/BROAD_SCREEN.md` | Broad screen of what has traded well (sectors, themes, commodities, single stocks, to 2026-11-06) plus driver-to-asset correlations |
+| `universe/broad_screen.csv`, `universe/broad_screen_metrics.csv` | Input list and metrics (returns 1m/3m/6m/1y, volatility, liquidity, drawdown, 200-day flag) |
 | `universe/UNIVERSE.md` | Method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
 | `universe/solar_chain.csv` | Input list: ticker, name, role in the chain, notes |
 | `universe/solar_chain_metrics.csv` | Output of `src/build_universe.py` (current market metrics per ticker) |

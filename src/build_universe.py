@@ -44,7 +44,15 @@ def metrics(bars):
         peak = max(peak, c)
         mdd = min(mdd, c / peak - 1)
     last30 = bars[-30:]
+    n = len(closes)
+
+    def ret(k):
+        return round((closes[-1] / closes[-1 - k] - 1) * 100, 1) if n > k else None
+    ma200 = sum(closes[-200:]) / 200 if n >= 200 else None
     return {
+        "ret_1m_pct": ret(21), "ret_3m_pct": ret(63), "ret_6m_pct": ret(126),
+        "above_200d_avg": (int(closes[-1] > ma200) if ma200 else None),
+        "off_52w_high_pct": round((closes[-1] / max(closes) - 1) * 100, 1),
         "last_close": round(closes[-1], 2), "bars": len(bars),
         "avg_dollar_volume_30d": round(st.mean(b[1] * b[2] for b in last30)),
         "daily_vol_pct": round(st.pstdev(rets), 2), "avg_abs_move_pct": round(st.mean(abs(r) for r in rets), 2),
@@ -72,7 +80,8 @@ def main():
         out.append({**r, **m})
         print(r["ticker"], {k: v for k, v in m.items() if k in ("last_close", "currency", "daily_vol_pct", "avg_dollar_volume_30d", "error", "data_end")})
     cols = ["ticker", "name", "role", "currency", "last_close", "bars", "avg_dollar_volume_30d", "daily_vol_pct", "avg_abs_move_pct",
-            "days_ge_5pct", "max_drawdown_pct", "return_range_pct", "data_end", "notes", "error"]
+            "days_ge_5pct", "max_drawdown_pct", "ret_1m_pct", "ret_3m_pct", "ret_6m_pct", "return_range_pct", "above_200d_avg",
+            "off_52w_high_pct", "data_end", "notes", "error"]
     dest = src.with_name(src.stem + "_metrics.csv")
     with open(dest, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")

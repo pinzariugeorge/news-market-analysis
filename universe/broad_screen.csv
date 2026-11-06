@@ -1,0 +1,63 @@
+ticker,name,role,notes
+SPY,S&P 500 ETF,benchmark,US large caps
+QQQ,Nasdaq 100 ETF,benchmark,US tech heavy
+IWM,Russell 2000 ETF,benchmark,US small caps
+EFA,Developed ex-US ETF,benchmark,
+EEM,Emerging markets ETF,benchmark,
+XLK,Technology sector ETF,sector,
+XLE,Energy sector ETF,sector,
+XLF,Financials sector ETF,sector,
+XLV,Health care sector ETF,sector,
+XLI,Industrials sector ETF,sector,
+XLU,Utilities sector ETF,sector,
+XLP,Consumer staples ETF,sector,
+XLY,Consumer discretionary ETF,sector,
+XLB,Materials sector ETF,sector,
+SMH,Semiconductors ETF,theme,
+URA,Uranium ETF,theme,
+COPX,Copper miners ETF,theme,
+GDX,Gold miners ETF,theme,
+LIT,Lithium and batteries ETF,theme,
+ITA,Aerospace and defense ETF,theme,
+XBI,Biotech ETF,theme,
+TAN,Solar ETF,theme,
+ICLN,Clean energy ETF,theme,
+ARKK,Innovation ETF,theme,
+GC=F,Gold futures,commodity,
+SI=F,Silver futures,commodity,
+PL=F,Platinum futures,commodity,
+HG=F,Copper futures,commodity,
+CL=F,WTI crude oil futures,commodity,
+BZ=F,Brent crude futures,commodity,
+NG=F,Natural gas futures,commodity,
+ZW=F,Wheat futures,commodity,
+ZC=F,Corn futures,commodity,
+KC=F,Coffee futures,commodity,
+CC=F,Cocoa futures,commodity,
+NVDA,Nvidia,single stock,AI chips
+AMD,AMD,single stock,chips
+AVGO,Broadcom,single stock,chips and software
+MU,Micron,single stock,memory chips
+TSM,TSMC,single stock,foundry
+ASML,ASML,single stock,chip equipment (Netherlands listing too)
+MSFT,Microsoft,single stock,
+AAPL,Apple,single stock,
+AMZN,Amazon,single stock,
+GOOGL,Alphabet,single stock,
+META,Meta,single stock,
+TSLA,Tesla,single stock,
+PLTR,Palantir,single stock,
+LLY,Eli Lilly,single stock,
+NVO,Novo Nordisk,single stock,
+JPM,JPMorgan,single stock,
+XOM,Exxon Mobil,single stock,
+CVX,Chevron,single stock,
+OXY,Occidental Petroleum,single stock,
+FCX,Freeport-McMoRan,single stock,copper
+NEM,Newmont,single stock,gold
+CCJ,Cameco,single stock,uranium
+ALB,Albemarle,single stock,lithium
+LMT,Lockheed Martin,single stock,defense
+RTX,RTX,single stock,defense
+DAL,Delta Air Lines,single stock,jet fuel cost
+CAT,Caterpillar,single stock,industrial cycle
