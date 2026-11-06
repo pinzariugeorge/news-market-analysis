@@ -41,6 +41,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Handbook (`handbook/`)
 | File | Content |
 |---|---|
+| `handbook/HANDBOOK_COMPANIES.md` | Handbook v1 for single stocks: how to use, driver links, entries for the five families (base rates, drivers, catalysts, event reactions), limits. Numbers from history to 2022, checked on 2023-24; 2025+ not used |
+| `handbook/family_stats.csv` | Statistics behind it (driver R-squared and beta, base rates, volume-shock events, weekday ratios, correlations) |
 | `handbook/BIGDAY_REVIEW.md` | Review of the 247 big-move days of 2008-2019 by event type: findings and observed ranges |
 | `handbook/bigday_review.csv` | One row per big day: date, return, event type (hand-labeled with hindsight), headline counts |
 | `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
@@ -87,6 +89,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `build_family_stats.py` | Computes the per-family handbook statistics from history to 2024 (build and validation); writes `handbook/family_stats.csv` |
 | `run_wide_test.py` | Scores selection rules on the whole point-in-time basket per decision date (many decisions, costs, periods); writes `results/wide_test.csv` |
 | `run_indicator_tests.py` | Tests RSI, MACD, golden cross, Bollinger, breakout and candlestick patterns as long signals with costs and period splits; writes `results/indicator_tests.csv` |
 | `run_universe_baselines.py` | Baselines on the rule-selected universe for a small account: cash, hold two, random rotation, momentum, low volatility, trend; writes `results/universe_baselines.csv` |

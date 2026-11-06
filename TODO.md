@@ -62,7 +62,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] Confirm themes besides solar with the user (lithium, copper, semiconductors, uranium, oil services, ...).
 - [ ] Check each candidate: tradable and fee schedule at the chosen broker, status of the company (bankruptcies, delistings), earnings dates.
 - [ ] Source company-level news and earnings dates (Benzinga stock-news Kaggle dataset, `fnspid_news` subset, or a current news source) and component price series (polysilicon index, silver, etc.).
-- [ ] Extend the handbook with company-level entries (earnings reaction, guidance, tariff and policy news, component price moves) using history only.
+- [x] Handbook v1 for the five families written (`handbook/HANDBOOK_COMPANIES.md`); still open: earnings calendar and scheduled-event data, and testing the general-knowledge parts.
+- [x] Extend the handbook with company-level entries (earnings reaction, guidance, tariff and policy news, component price moves) using history only.
 - [ ] Rerun baselines on the new universe with realistic fixed fees for 500 EUR and 5,000 EUR accounts; redo the agent pilot on single names.
 
 ## 4. Other

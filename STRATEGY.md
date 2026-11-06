@@ -47,6 +47,9 @@ See `PLAN.md`: broker Interactive Brokers Ireland; trade current companies and c
 - Holding period is a tested parameter, capped at 20 trading days (user decision 2026-11-06): test 5, 10 and 20 days and event windows out of sample. First evidence: 20-day holds beat 1-5 day holds after costs on small orders. The 40 and 60 day holds are out of scope.
 - Universe rule v2 (2026-11-06): five families (oil and gas, gold miners, chips, pharma, copper and uranium), four single stocks each, chosen by a point-in-time liquidity rule (250-day median dollar volume, quarterly rebalance with a buffer); we freeze the rule, not the list (`universe/UNIVERSE_RULE.md`). Solar removed (user decision).
 
+## Handbook v1 for single stocks (2026-11-06)
+`handbook/HANDBOOK_COMPANIES.md` covers the five families (driver links, base rates, catalysts, event reactions). Written from data up to 2022, checked on 2023-2024; the final test period (2025 onward) is not used. The index handbook (`HANDBOOK.md`) stays for general principles.
+
 ## Trading targets (decided 2026-11-06)
 - The S&P 500 was the learning dataset. The aim is to trade currently listed companies and commodities, not the index.
 - Theme and supply-chain approach: pick a theme (example: solar), map its cost components and demand drivers to the listed companies on each link, and use the handbook to reason about how component, policy and earnings news moves them (`universe/UNIVERSE.md`).
