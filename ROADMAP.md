@@ -43,6 +43,13 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
 | `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 16 event-type entries (incl. 3.6b US midterms, 3.6c presidential elections), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
 
+## Trading universe (`universe/`)
+| File | Content |
+|---|---|
+| `universe/UNIVERSE.md` | Method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
+| `universe/solar_chain.csv` | Input list: ticker, name, role in the chain, notes |
+| `universe/solar_chain_metrics.csv` | Output of `src/build_universe.py` (current market metrics per ticker) |
+
 ## Results (`results/`)
 | File | Content |
 |---|---|
@@ -65,6 +72,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices.py` | Yahoo prices, 2020 only (old) |
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
+| `build_universe.py` | For a ticker CSV (`universe/*.csv`), downloads the last year of daily bars from Yahoo and writes `<name>_metrics.csv` (volatility, liquidity, drawdown): `python -I src\build_universe.py universe/solar_chain.csv` |
 | `pilot_prepare.py` | Picks pilot decision days (2008-2019 only, by category) and writes their past-only records to `results/<run>/records/` |
 | `score_decisions.py` | Joins stored agent decisions (`results/<run>/decisions_raw/`) with outcomes; writes `decisions.csv`, `summary.json`, `dashboard_data.json` |
 | `build_dashboard.py` | Builds `results/dashboard.html` (self-contained, no network): `python -I src\build_dashboard.py --run pilot_v0` |

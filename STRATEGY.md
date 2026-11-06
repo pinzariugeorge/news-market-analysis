@@ -39,6 +39,13 @@ Not decided yet: broker, scheduler, research source for live use (the video setu
 ## Data horizon (decided 2026-11-06)
 2008 as the start was only because the headlines dataset begins in 2008. Prices now go back to 1950 (`data/raw/sp500_1950_2024_daily.csv`), so base rates and calendar-event studies (elections, Fed days, seasons, crises) use 1950-2019. Wanted: more news and an event calendar before 2008 (dot-com crash, 2001 attacks, 2002 lows, 2003 war, 2006 midterms) for the agent; source still to be chosen. 2020 stays the test year and 2021+ the holdout for everything.
 
+## Trading targets (decided 2026-11-06)
+- The S&P 500 was the learning dataset. The aim is to trade currently listed companies and commodities, not the index.
+- Theme and supply-chain approach: pick a theme (example: solar), map its cost components and demand drivers to the listed companies on each link, and use the handbook to reason about how component, policy and earnings news moves them (`universe/UNIVERSE.md`).
+- A name enters the universe only through measurable criteria: tradable now by a Romanian retail client, liquid, volatile enough to cover costs, with a trackable driver and available history and news. The lists are research lists, never recommendations or advice.
+- History (including 2020) is used only to build and test the handbook; the traded names are current. Real per-trade costs for the account size must be inside every simulation (a fixed fee such as 3 EUR is 0.6% of a 500 EUR order).
+- Volatility is not an edge: the solar names moved 3-7% a day and most fell 47-84% from a peak within a year. Loss control comes before return.
+
 ## Handbook (decided 2026-11-06)
 Goal: a handbook of how event types affect the market (mechanism, magnitude, horizon, amplifying and dampening conditions, affected sectors, confidence, "no meaningful effect" as a valid call). It is used by the simulation agent and for day trading. Agents act as expert financial analysts using the handbook, ongoing storylines (multi-day/multi-week events) and past-only market context (trend, volatility).
 - Built from several years of data plus general finance knowledge, NOT from 2020 outcomes. 2020 is the held-out test year (circular otherwise).

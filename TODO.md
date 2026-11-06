@@ -45,6 +45,14 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 
 - [ ] API cost estimate (asked 2026-11-06, not adopted; prices from the Claude API skill cache dated 2026-10-06, check the pricing page before relying on them): about 9k input and 3k output tokens per decision called directly. Per decision about $0.002 Haiku 5.5, $0.05 Sonnet 5.5, $0.10 Opus 5.5, $0.24 Fable 5.1; batch API is half. Examples with Sonnet 5.5: 300 days about $14 (about $7 batch), all 3,020 dev days about $145 (about $72 batch), a year of live daily decisions about $12. The usage numbers are assumptions, not measured.
 
+## 3b. Universe and company-level work (new direction, 2026-11-06)
+- [x] First research list: solar value chain with current metrics (`universe/UNIVERSE.md`).
+- [ ] Confirm themes besides solar with the user (lithium, copper, semiconductors, uranium, oil services, ...).
+- [ ] Check each candidate: tradable and fee schedule at the chosen broker, status of the company (bankruptcies, delistings), earnings dates.
+- [ ] Source company-level news and earnings dates (Benzinga stock-news Kaggle dataset, `fnspid_news` subset, or a current news source) and component price series (polysilicon index, silver, etc.).
+- [ ] Extend the handbook with company-level entries (earnings reaction, guidance, tariff and policy news, component price moves) using history only.
+- [ ] Rerun baselines on the new universe with realistic fixed fees for 500 EUR and 5,000 EUR accounts; redo the agent pilot on single names.
+
 ## 4. Other
 - [ ] Check why 2020-09-23 has 55 headlines.
 - [ ] Push local commits to `origin/main` when the user says so.

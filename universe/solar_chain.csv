@@ -1,0 +1,18 @@
+ticker,name,role,notes
+DQ,Daqo New Energy,polysilicon producer (upstream),NYSE ADR; China polysilicon price is its main driver
+WCH.DE,Wacker Chemie,polysilicon and chemicals (upstream),Xetra; solar is one part of the business
+SI=F,Silver futures,input cost (cell paste),commodity price reference not a stock
+FSLR,First Solar,modules (thin film US),NASDAQ; US tariffs and policy sensitive
+CSIQ,Canadian Solar,modules and storage,NASDAQ
+JKS,JinkoSolar,modules (China),NYSE ADR
+ENPH,Enphase Energy,microinverters,NASDAQ
+SEDG,SolarEdge Technologies,inverters and optimizers,NASDAQ
+S92.DE,SMA Solar,inverters (Germany),Xetra
+NXT,Nextracker,trackers (balance of system),NASDAQ
+ARRY,Array Technologies,trackers (balance of system),NASDAQ
+SHLS,Shoals Technologies,electrical balance of system,NASDAQ
+RUN,Sunrun,residential installer and financer,NASDAQ; interest-rate sensitive
+FLNC,Fluence Energy,battery storage,NASDAQ
+AMAT,Applied Materials,equipment supplier (cross-industry),NASDAQ
+TAN,Invesco Solar ETF,theme benchmark,NYSE Arca ETF (US-listed: not available to EU retail)
+SPY,SPDR S&P 500 ETF,market benchmark,US-listed ETF (reference only)
