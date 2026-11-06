@@ -36,4 +36,6 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 - DECISION: handbook years = 2008-2019; 2020 = test; 2021-2024 = holdout.
 - DONE: `build_news_corpus.py` now covers all years -> `data/processed/news_all.csv` (18,149 headlines: handbook 7,445 / test 1,514 / holdout 9,190; columns date, decision_date, split, title) and `data/processed/market_days.csv` (4,110 days with close and daily % return). `news_2020.csv` is superseded by `news_all.csv`. Handbook split has 247 days with |move| >= 2%; biggest are Oct-Dec 2008 and 2011-08-08.
 
+- DONE: git repo set up and pushed to origin/main (remote's stub README merged, ours kept). Added `ROADMAP.md` (file map) and `CLAUDE.md` (standing rule: keep context files current in the same change). Parent-folder `context\` notes are from an older GDELT/correlation framing and are not authoritative.
+
 **Next step:** draft handbook v0 in `handbook/` (one entry per event type, fields: mechanism, magnitude, horizon, amplifiers, dampeners, sectors, index effect, confidence, no-effect base rate), from general finance knowledge, then check and refine it against the 2008-2019 big-move days and their headlines (never 2020). Also check why 2020-09-23 has 55 headlines.

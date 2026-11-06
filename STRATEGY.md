@@ -37,6 +37,7 @@ A headline dated D may have been published after the close, so it is used only f
 7. Short report: what worked, what did not, what to do next.
 
 ## Continuity rules
+- Keep `ROADMAP.md` (file map) and all context files current in the same change as the work (see `CLAUDE.md`).
 - Every run is stateless. Start of session: read this file and `PROGRESS_LOG.md`. End of session: update the log with what was done and the exact next step.
 - Record critical actions as they happen so an interrupted run can recover without repeating work.
 

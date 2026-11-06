@@ -6,6 +6,9 @@ Research and simulation only. Not financial advice. No real money.
 Goes back in time, collects news plus daily S&P 500 prices, learns which kinds of news move the market, and eventually runs closed-loop day-trading agents that reason from events and are scored against what really happened.
 
 ## Folder layout
+See `ROADMAP.md` for the full file map. Summary:
+- `ROADMAP.md`: where everything is (check first).
+- `CLAUDE.md`: standing instructions for Claude sessions.
 - `STRATEGY.md`: the rules and design. Read at the start of every session.
 - `PROGRESS_LOG.md`: what was done and the exact next step. Read at the start of every session, update at the end.
 - `JOURNAL.md`: plain-language notes, surprises, open questions.
