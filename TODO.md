@@ -56,6 +56,8 @@ Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We wa
 - [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
 - [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
 
+- [ ] Borrow from the second trading video (user pasted 2026-11-06): (1) record every order in a journal at the moment it happens so an interrupted run can be recovered without repeating a trade (idempotent order log); (2) write a failure-behavior checklist for the agent routine: no previous handoff on first run, next run has no chat history, previous run crashed after sending an order, two runs overlap, corrupt or missing state file, machine or app offline; (3) one handoff note at the end of every run (what changed, outcomes, risks, exact next job). Not borrowed: the same-day-flat day-trading schedule (see PLAN.md: fees) and the paid real-time data plan.
+
 ## 3b. Universe and company-level work (new direction, 2026-11-06)
 - [x] First research list: solar value chain with current metrics (`universe/UNIVERSE.md`).
 - [ ] Confirm themes besides solar with the user (lithium, copper, semiconductors, uranium, oil services, ...).
