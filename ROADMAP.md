@@ -33,6 +33,7 @@ Last updated: 2026-11-06
 | `data/raw/candidates/sp500_headlines/sp500_headlines_2008_2024.csv` | Kaggle headlines (Title, Date, CP). `CP` = S&P close = outcome leak, never show to agents | ignored |
 | `data/processed/news_all.csv` | Cleaned headlines: date, decision_date, split, title. Use this one | tracked |
 | `data/processed/market_days.csv` | Per trading day 1950-2024: date, close, ret_pct, split (handbook = up to 2019, test = 2020, holdout = 2021+) | tracked |
+| `data/processed/earnings_events.csv` | Earnings release times (SEC 8-K Item 2.02) for 29 US filers: ticker, filing date, accepted time UTC and New York, session | tracked |
 | `data/processed/news_2020.csv` | Superseded by `news_all.csv` | tracked |
 
 Note: headlines only exist from 2008; prices from 1950. Splits: `handbook` = up to 2019 (news 2008-2019) (used to build the handbook), `test` = 2020 (never used to write the handbook), `holdout` = 2021 onward (second test).
@@ -66,6 +67,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/EARNINGS_TEST.md` | Earnings dates from SEC EDGAR (2,631 events) and the post-earnings drift test: no edge; findings |
+| `results/earnings_test.csv` | Same numbers as CSV |
 | `results/FAMILY_RUN.md` | Family agent run fam_v0 (validation 2023-2024): setup, result (all calls flat, portfolio stayed cash), counterfactuals, options |
 | `results/dashboard_family.html` | Dashboard of the family run: every stock, commodity and driver price with the agent's calls, portfolio vs leaders basket, decision table with reasoning. Open in a browser |
 | `results/fam_lean_check/` | Two decision days rerun with the lean handbook for comparison with `fam_v0` |
@@ -98,6 +101,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
 | `verify_handbook.py` | Checks a lean handbook against its sources: size, required keywords, every number found in the sources, and family numbers in the matching family text |
+| `download_earnings.py` | Earnings release dates and times from SEC EDGAR (free, no key) into `data/processed/earnings_events.csv` |
+| `run_earnings_test.py` | Post-earnings reaction and drift test with costs and period split; writes `results/earnings_test.csv` |
 | `familydata.py` | Shared data access for the family run (stocks cache, commodity CSVs, point-in-time names and leaders) |
 | `family_prepare.py` | Picks decision days and writes past-only family records into `results/<run>/records/` |
 | `score_family_run.py` | Scores family calls (counterfactual for flat) and a 1,000 USD whole-share portfolio vs benchmarks; writes decisions.csv, summary.json, dashboard_data.json |
