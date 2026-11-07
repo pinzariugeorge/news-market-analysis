@@ -53,6 +53,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Trading universe (`universe/`)
 | File | Content |
 |---|---|
+| `universe/EARNINGS_DATA_SOURCES.md` | Free consensus and guidance sources checked (Alpha Vantage is the best free history; guidance has no free structured source) and what to do next |
 | `universe/COMMODITY_DATA.md` | Free commodity and driver price series (symbols, coverage from 2000, sources that failed, caveats) |
 | `universe/UNIVERSE_RULE.md` | Universe rule v2: research behind it, the point-in-time rule, selections by date, limits, change log (five families x four single stocks; solar removed 2026-11-06) |
 | `universe/candidates.csv` | Candidate companies per family (input of the rule) |
@@ -101,6 +102,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
 | `verify_handbook.py` | Checks a lean handbook against its sources: size, required keywords, every number found in the sources, and family numbers in the matching family text |
+| `download_consensus.py` | Earnings history with consensus, actual and surprise from Alpha Vantage (needs a free key in `.env`; `--demo` tests with IBM) into `data/raw/consensus/` |
+| `run_surprise_test.py` | Tests reaction and drift by surprise bucket, beat persistence, and holding through earnings by previous surprise; writes `results/surprise_test.csv` |
 | `download_earnings.py` | Earnings release dates and times from SEC EDGAR (free, no key) into `data/processed/earnings_events.csv` |
 | `run_earnings_test.py` | Post-earnings reaction and drift test with costs and period split; writes `results/earnings_test.csv` |
 | `familydata.py` | Shared data access for the family run (stocks cache, commodity CSVs, point-in-time names and leaders) |
