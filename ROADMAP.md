@@ -105,6 +105,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
 | `verify_handbook.py` | Checks a lean handbook against its sources: size, required keywords, every number found in the sources, and family numbers in the matching family text |
 | `download_consensus.py` | Earnings history with consensus, actual and surprise from Alpha Vantage (needs a free key in `.env`; `--demo` tests with IBM) into `data/raw/consensus/` |
+| `snapshot_estimates.py` | Saves a dated snapshot of analyst estimates (EPS/revenue average, high/low, analyst count, revisions up/down, averages 7/30/60/90 days ago) per name into `data/raw/estimates/<TICKER>/<date>.json` (git-ignored); run daily by the scheduled task `snapshot-estimates-daily` |
 | `run_surprise_test.py` | Tests reaction and drift by surprise bucket, beat persistence, and holding through earnings by previous surprise; writes `results/surprise_test.csv` |
 | `download_earnings.py` | Earnings release dates and times from SEC EDGAR (free, no key) into `data/processed/earnings_events.csv` |
 | `run_earnings_test.py` | Post-earnings reaction and drift test with costs and period split; writes `results/earnings_test.csv` |
