@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-07-16",
+  "market_view": "Calm regime (VIX 15.7, falling) with yields near highs at 4.55% and renewed US-Iran tension; soft inflation data lifted stocks. Earnings season has started.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI rose 8% in 5 days to 79.6 on Iran tension, but XOM only +2.4%. Driver move is already priced and headlines are about inventories only. Earnings in late July add variance; no named edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Gold -7% in 20 days with yields near highs and the dollar firm. NEM headlines (Cadia restart, analyst notes) are minor and not a concrete catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.52, "reasoning": "TSMC profit +77% and a $100B Arizona investment are positive but already public and priced; NVDA headlines (Japan AI) are not new. Sector -8.7% in 20 days is not a rule I trust."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "No LLY-specific news; headlines are generic policy and law-firm items. Q2 earnings approach, which add variance only."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "FCX -13% in 20 days, copper mixed, uranium ETF weak. The only headline is Cameco resolving a Cigar Lake disruption, which does not bear on FCX."}
+  },
+  "would_change_my_mind": "A named, unpriced catalyst for a leader (for example an earnings surprise or guidance for NVDA, XOM, NEM, LLY or FCX) or a stress spike with a clear reversal reason.",
+  "handoff": {
+    "run_id": "fam-2026-07-16-a",
+    "written_at": "2026-07-16T08:00:00Z",
+    "decision_day": "2026-07-16",
+    "data_cutoff": "2026-07-16",
+    "what_changed": "WTI rose to 79.6 (+8% in 5 days) amid US-Iran tension and yields rose again, while soft US inflation helped stocks. TSMC reported Q2 profit +77% and pledged another $100B in Arizona. VIX fell to 15.7. All families stay flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude jumped on Iran headlines but XOM lags and no durable edge is visible."},
+      "gold_miners": {"position": "flat", "why": "Gold is in a downtrend with high yields; NEM news is minor."},
+      "chips": {"position": "flat", "why": "TSMC results and investment are public and priced; no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY news; earnings season adds variance only."},
+      "copper_uranium": {"position": "flat", "why": "Copper is mixed and the Cameco news does not help FCX."}
+    },
+    "open_storylines": [
+      {"name": "US-Iran conflict and oil", "status": "escalating", "note": "WTI 79.6, +8% in 5 days; yields and mortgage rates rising on the tension; watch whether XOM follows and the Q2 earnings from late July.", "first_seen": "2026-07-09"},
+      {"name": "Semiconductor strength and TSMC", "status": "open", "note": "TSMC Q2 profit +77% and a $100B Arizona pledge; sector ETF -8.7% in 20 days; watch NVDA and chip earnings.", "first_seen": "2026-07-09"},
+      {"name": "Fed and yields for gold", "status": "open", "note": "10-year 4.55%, gold -24% from peak, miners deeply down; watch the jobs report and Fed tone.", "first_seen": "2026-07-09"},
+      {"name": "Uranium policy tailwinds", "status": "open", "note": "Uranium ETF -27% in 60 days; Cameco resolved the Cigar Lake disruption; CCJ below its 200-day average.", "first_seen": "2026-07-09"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, re-check the five families, and look for concrete catalysts (Q2 earnings of XOM, NEM, NVDA, LLY, FCX, the jobs report, Iran or Hormuz escalation). Stay flat unless a named reason appears."
+  }
+}

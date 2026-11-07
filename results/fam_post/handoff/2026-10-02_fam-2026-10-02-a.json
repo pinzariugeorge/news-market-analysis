@@ -1,0 +1,63 @@
+{
+ "run_id": "fam-2026-10-02-a",
+ "written_at": "2026-10-02T09:00:00Z",
+ "decision_day": "2026-10-02",
+ "data_cutoff": "2026-10-02",
+ "what_changed": "WTI bounced to 92.9 and Brent is about 102-103 on US-Iran escalation (a third carrier, China fuel export halt reports) and G7 reserve release talk, while XOM is still flat over 20 days. US yields hit a 24-year peak on a global bond rout and gold slipped to about 4,202. Micron beat estimates; the jobs report is due today.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "XOM has not followed crude, the Iran headlines are priced in, and there is no dated catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Record-high yields and a firm dollar weigh on gold, with no concrete reason for a long."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The Micron beat and the sector rally are already priced in and rates are a headwind."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "The LLY approval is minor and drug-pricing policy is an overhang; no edge."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX and uranium are weak with no clear catalyst; the China condition on the Anglo Teck merger is ambiguous."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil, Iran tensions and diesel",
+   "status": "escalating",
+   "note": "Brent about 102-103; US threatens export ban on diesel, G7 reserve release; watch whether XOM follows crude.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Yields, bond rout and Fed",
+   "status": "escalating",
+   "note": "US 10-year about 5.24, a 24-year peak; watch today's jobs report and gold reaction.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "NVDA and AI chain",
+   "status": "open",
+   "note": "Micron beat and backlog; export smuggling arrest; watch rates and AI sentiment.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Health care and drug pricing",
+   "status": "open",
+   "note": "Medicare price-lowering plan finalised; sector weak; watch GLP-1 news.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Copper supply and uranium weakness",
+   "status": "open",
+   "note": "China demands copper supply commitments for Anglo Teck merger; FCX Q3 update; uranium ETF down 10.7% in 20 days.",
+   "first_seen": "2026-09-25"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the handoff, check the jobs report reaction, the 10-year yield (5.24 now), VIX (16.4), Brent near 102 and whether XOM follows, gold (4,202) and NEM earnings timing. Stay flat unless a named reason appears."
+}

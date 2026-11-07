@@ -68,6 +68,11 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/WIDE_SEARCH.md`, `results/donchian_pername.csv` | Wide search on ~200 stocks and 7 commodity futures (about 90 configurations): momentum, residual momentum, seasonality, industry momentum, trend, dip buying, commodity trend, trend filter; no robust edge |
+| `src/download_ohlc.py`, `src/strat_lab.py` to `strat_lab6.py`, `strat_lab_cmd.py`, `strat_lab_pername.py` | Wide OHLC download (`--long` for 2003 history, into git-ignored `data/raw/ohlc*`) and the portfolio strategy lab scripts (data cut 2024-12-31, `--final` flag in strat_lab/strat_lab2 for the one-time 2025+ test) |
+| `results/DONCHIAN_UNIVERSE.md`, `results/donchian_universe_N55_M3.csv` | Daily Donchian 55 / 3 ATR trail on all 40 names, build vs validation: cuts drawdown by half, return near zero; `src/run_donchian_universe.py` is the script |
+| `results/tradingkit_loop/daily_matrix.csv` | TradingKit daily matrix (build 2020-11..2023-12 and validation 2024..2026, 5 configs, NVDA/AMD/AVGO/gold/WTI) |
+| `results/tradingkit_loop/LOG.md`, `RESULTS.md` | TradingKit (MCP, installed globally) 1-hour strategy loop on NVDA/AMD/AVGO/gold: 8 variants, none qualified; table, ranking, reproduce notes |
 | `results/SURPRISE_TEST.md` | Earnings surprise tests with Alpha Vantage consensus history (639 events, 20 names): reaction follows the surprise, no drift, no pre-earnings edge; next possibilities |
 | `results/surprise_test.csv` | Same numbers as CSV |
 | `results/EARNINGS_TEST.md` | Earnings dates from SEC EDGAR (2,631 events) and the post-earnings drift test: no edge; findings |
@@ -95,6 +100,10 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
 | `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
 | `agent/DECISION_LOG.md` | Decision log columns, baselines, metrics, run phases, weekly review |
+| `results/FAMILY_POST.md`, `results/fam_post/` | Chained agent run on 14 post-cutoff days (Jul-Oct 2026) with news headlines and handoff notes: 70 flat calls; handoff rule worked; `src/download_news.py` adds the headlines |
+| `results/INSIDER_TEST.md`, `src/run_insider_test.py` | Insider (SEC Form 4) purchase test on our large-cap universe, 2014-2024: no edge |
+| `src/download_insider.py` | SEC insider-transaction bulk download (open-market purchases for our tickers, 2014q1-2024q4) into git-ignored `data/raw/insider/`; the user runs it with `SEC_USER_AGENT` set to their name and email (SEC blocks anonymous requests) |
+| `agent/HANDOFF.md`, `src/handoff.py`, `agent/state/handoff/` | Handoff rule between agent runs: spec, validator/reader/writer with overlap lock and self-tests; notes stored in `agent/state/handoff/` |
 | `agent/state/storylines.md` | Template for the open-storylines state file the agent updates |
 
 ## Code (`src/`)

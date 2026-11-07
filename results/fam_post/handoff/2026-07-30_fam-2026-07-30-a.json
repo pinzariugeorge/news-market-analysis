@@ -1,0 +1,63 @@
+{
+ "run_id": "fam-2026-07-30-a",
+ "written_at": "2026-07-30T09:00:00Z",
+ "decision_day": "2026-07-30",
+ "data_cutoff": "2026-07-30",
+ "what_changed": "A divided Fed held rates despite high inflation and stocks fell sharply; VIX rose to 20.7. The semiconductor ETF fell 14% in 5 days, WTI jumped 6.6% in one day to 84.5, and uranium and copper miners fell. All families stay flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "The WTI one-day spike is priced in and XOM is up 14.7% in 20 days; no durable edge."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is 24% below its peak with high yields and no NEM-specific catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Stress regime after a 14% weekly drop in the sector; do not guess a rebound, no NVDA result yet."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY is near its high after +25% in 60 days with no new named catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX fell with no stock-specific cause; the uranium and Congo headlines do not reach FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "US-Iran war and oil",
+   "status": "escalating",
+   "note": "WTI 84.5 and Brent 90.7 after a +6.6% day; watch XOM Q2 earnings, Hormuz or Red Sea news and any deal.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Fed on hold and yields",
+   "status": "escalating",
+   "note": "Divided Fed held rates despite high inflation; 10-year at 4.62%; gold -24% from peak. Watch the jobs report.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Chip selloff and earnings",
+   "status": "escalating",
+   "note": "Sector ETF -14% in 5 days, -23% in 20 days, VIX 20.7; a headline suggests a bounce in AMD, MU and LRCX. Watch the NVDA Q2 call date and capex guidance.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "open",
+   "note": "LLY +25% in 60 days after positive retatrutide Phase 3 results; watch Q2 earnings reaction.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "New US tariffs",
+   "status": "open",
+   "note": "Global tariffs face pushback from trade partners; watch the effect on copper and the dollar.",
+   "first_seen": "2026-07-23"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the handoff, re-check the five families after the VIX spike, and look for concrete catalysts (NVDA, XOM, LLY and FCX earnings, the jobs report, Iran news). Stay flat unless a named reason appears."
+}

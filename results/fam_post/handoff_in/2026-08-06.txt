@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-07-30-a (decision day 2026-07-30, data cutoff 2026-07-30)
+What changed: A divided Fed held rates despite high inflation and stocks fell sharply; VIX rose to 20.7. The semiconductor ETF fell 14% in 5 days, WTI jumped 6.6% in one day to 84.5, and uranium and copper miners fell. All families stay flat.
+Holdings and reasons:
+- oil_gas: flat | The WTI one-day spike is priced in and XOM is up 14.7% in 20 days; no durable edge.
+- gold_miners: flat | Gold is 24% below its peak with high yields and no NEM-specific catalyst.
+- chips: flat | Stress regime after a 14% weekly drop in the sector; do not guess a rebound, no NVDA result yet.
+- pharma: flat | LLY is near its high after +25% in 60 days with no new named catalyst.
+- copper_uranium: flat | FCX fell with no stock-specific cause; the uranium and Congo headlines do not reach FCX.
+Open storylines:
+- [escalating] US-Iran war and oil: WTI 84.5 and Brent 90.7 after a +6.6% day; watch XOM Q2 earnings, Hormuz or Red Sea news and any deal.
+- [escalating] Fed on hold and yields: Divided Fed held rates despite high inflation; 10-year at 4.62%; gold -24% from peak. Watch the jobs report.
+- [escalating] Chip selloff and earnings: Sector ETF -14% in 5 days, -23% in 20 days, VIX 20.7; a headline suggests a bounce in AMD, MU and LRCX. Watch the NVDA Q2 call date and capex guidance.
+- [open] Lilly obesity pipeline: LLY +25% in 60 days after positive retatrutide Phase 3 results; watch Q2 earnings reaction.
+- [open] New US tariffs: Global tariffs face pushback from trade partners; watch the effect on copper and the dollar.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, re-check the five families after the VIX spike, and look for concrete catalysts (NVDA, XOM, LLY and FCX earnings, the jobs report, Iran news). Stay flat unless a named reason appears.

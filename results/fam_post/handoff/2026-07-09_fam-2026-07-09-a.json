@@ -1,0 +1,57 @@
+{
+ "run_id": "fam-2026-07-09-a",
+ "written_at": "2026-07-09T12:00:00Z",
+ "decision_day": "2026-07-09",
+ "data_cutoff": "2026-07-09",
+ "what_changed": "The Iran storyline escalated: Trump said the deal is over, tankers were attacked near Hormuz and WTI rose 4.4% to 73.5. Chips dropped sharply over 5 days (ETF -9.6%), while pharma reached near highs. No concrete catalyst for any leader; all families remain flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil is whipsawing on US-Iran headlines and XOM did not follow the 4% crude jump; no durable edge."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is in a downtrend with high yields and no NEM-specific catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector pullback after a big run, but no named catalyst for NVDA."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY is near its high and no news relates to it."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper is weak and uranium export news does not help FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "US-Iran conflict and oil",
+   "status": "escalating",
+   "note": "Deal declared over, strikes resumed, tanker attacks near Hormuz; watch whether WTI holds above 73 and whether XOM follows.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Semiconductor volatility",
+   "status": "open",
+   "note": "ETF -9.6% in 5 days after +36% in 60; watch TSMC monthly sales (about the 10th) and chip earnings.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Fed and yields for gold",
+   "status": "open",
+   "note": "10-year at 4.57% near its high, gold -23% from its peak; watch the jobs report and Fed tone.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Uranium policy tailwinds",
+   "status": "open",
+   "note": "Australia-India export deal, US nuclear push; uranium ETF still -18% in 60 days, CCJ below its 200-day average.",
+   "first_seen": "2026-07-09"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the new handoff, re-check the five families, and look for concrete catalysts (Q2 earnings from mid-July, TSMC sales, jobs report, any Iran or Hormuz escalation). Stay flat unless a named reason appears."
+}

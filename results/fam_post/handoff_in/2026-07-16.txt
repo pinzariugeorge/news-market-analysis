@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fam-2026-07-09-a (decision day 2026-07-09, data cutoff 2026-07-09)
+What changed: The Iran storyline escalated: Trump said the deal is over, tankers were attacked near Hormuz and WTI rose 4.4% to 73.5. Chips dropped sharply over 5 days (ETF -9.6%), while pharma reached near highs. No concrete catalyst for any leader; all families remain flat.
+Holdings and reasons:
+- oil_gas: flat | Oil is whipsawing on US-Iran headlines and XOM did not follow the 4% crude jump; no durable edge.
+- gold_miners: flat | Gold is in a downtrend with high yields and no NEM-specific catalyst.
+- chips: flat | Sector pullback after a big run, but no named catalyst for NVDA.
+- pharma: flat | LLY is near its high and no news relates to it.
+- copper_uranium: flat | Copper is weak and uranium export news does not help FCX.
+Open storylines:
+- [escalating] US-Iran conflict and oil: Deal declared over, strikes resumed, tanker attacks near Hormuz; watch whether WTI holds above 73 and whether XOM follows.
+- [open] Semiconductor volatility: ETF -9.6% in 5 days after +36% in 60; watch TSMC monthly sales (about the 10th) and chip earnings.
+- [open] Fed and yields for gold: 10-year at 4.57% near its high, gold -23% from its peak; watch the jobs report and Fed tone.
+- [open] Uranium policy tailwinds: Australia-India export deal, US nuclear push; uranium ETF still -18% in 60 days, CCJ below its 200-day average.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the new handoff, re-check the five families, and look for concrete catalysts (Q2 earnings from mid-July, TSMC sales, jobs report, any Iran or Hormuz escalation). Stay flat unless a named reason appears.

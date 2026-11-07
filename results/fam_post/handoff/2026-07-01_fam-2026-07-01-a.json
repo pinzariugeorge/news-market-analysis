@@ -1,0 +1,57 @@
+{
+ "run_id": "fam-2026-07-01-a",
+ "written_at": "2026-07-01T08:00:00Z",
+ "decision_day": "2026-07-01",
+ "data_cutoff": "2026-07-01",
+ "what_changed": "First run with no previous handoff. All five families are flat. Oil, gold and uranium are in deep drawdowns, while semiconductors and health care sit near highs.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI crashed 38% in 60 days; no concrete reason for XOM long."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is in a downtrend with a firm dollar and high yields; no edge for NEM."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector rally is priced in; NVDA has no specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY is near its high and there is no named catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Mixed copper; the Cigar Lake news hits CCJ rather than FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil price collapse",
+   "status": "open",
+   "note": "WTI down 38% in 60 days; watch whether it stabilises and what the cause is (Middle East headline mentioned).",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Cameco Cigar Lake suspension",
+   "status": "open",
+   "note": "Orano mill disruption; watch duration and the uranium price reaction.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Fed under Chair Warsh, inflation focus",
+   "status": "open",
+   "note": "Rates and the dollar drive gold miners; watch the jobs report and Fed tone.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Semiconductor surge",
+   "status": "open",
+   "note": "Sector ETF up 67% in 60 days; AMD and TSM at highs, NVDA lagging.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the new handoff, re-check the five families, and look for a concrete catalyst (Q2 earnings season starting mid-July, the jobs report on the first Friday)."
+}

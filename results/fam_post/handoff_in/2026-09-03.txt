@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-08-27-a (decision day 2026-08-27, data cutoff 2026-08-27)
+What changed: Gold miners and health care gave back part of last week's jump (NEM -2.6%, LLY -3.6% on 08-26), and the gold gains held at +15% in 20 days. Copper and uranium names ran up (FCX +14% in 5 days). WTI fell to 82.2 on Iran optimism, and NVDA's Q2 results headline appeared with no numbers.
+Holdings and reasons:
+- oil_gas: flat | WTI -4% in 5 days on a known Iran story, with no dated XOM catalyst.
+- gold_miners: flat | NEM +44% in 20 days is priced in and there is no dated catalyst.
+- chips: flat | NVDA earnings reaction is unknown from the titles, so no clear reason for a long.
+- pharma: flat | LLY -7% in 5 days with no drug-specific cause visible.
+- copper_uranium: flat | FCX +14% in 5 days is already in the price, with no catalyst.
+Open storylines:
+- [fading] US-Iran war and oil: WTI 82.2, Brent 87.8, down on cautious optimism over Iran; watch for a deal or escalation and Russia-Ukraine news.
+- [open] Gold spike and yields: Gold 4653 (+15% in 20 days), 12.5% below peak; 10-year yield 4.66; watch the jobs report.
+- [open] NVDA Q2 results and Hugging Face deal: Q2 FY27 results published 08-26 and a $12.9B Hugging Face buy was reported; check the next record for the price reaction.
+- [fading] Health care and FDA: Sector 1.2% below its high; LLY -7% in 5 days; watch drug-pricing policy and FDA news.
+- [open] Copper and uranium rally: FCX +32% in 20 days, copper near its high, uranium ETF +28% in 20 days; watch FCX earnings and tariffs.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check the NVDA post-earnings move and whether the copper and gold rallies held, and look for a dated catalyst (FCX or XOM earnings, jobs report, Iran news). Stay flat unless a named reason appears.

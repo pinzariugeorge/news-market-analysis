@@ -91,3 +91,6 @@ A headline dated D may have been published after the close, so it is used only f
 - API keys go in `.env` only, never in chat.
 - Ask before spending money on paid data or paid API usage. Decided 2026-11-06: do not use the Anthropic API; model work runs inside Claude Code on the user's Pro subscription (subagents for simulation, a routine for the live phase).
 - Research and simulation only. No real money, no financial advice.
+
+## Update 2026-11-07: wide search result
+About 90 rule-based configurations on ~200 stocks and 7 commodity futures found no edge over a diversified basket once universe hindsight is reduced (`results/WIDE_SEARCH.md`). Decision: do not build the live system on a pure price rule; keep the news/event-driven agent thesis as the only untested source of edge, and treat a trend-filtered diversified basket as the risk-managed fallback (about 7% to 11% a year, 20%+ drawdowns, before tax).

@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-11",
+  "market_view": "Stress is rising: VIX up 8% in a day to 17.8, the 10-year yield at a new high of 4.94 on sticky August CPI and Fed-hike odds, and WTI jumped 6.7% in a day to 102.5 on Middle East supply attacks. Big moves cluster in this regime; stay selective.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI +23% in 20 days and +6.7% in one day is already in the driver, yet XOM is only +0.7% in 5 days and 3.6% below its high. No dated XOM catalyst; yesterday's driver move does not predict the stock. Rate-hike risk adds variance."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "reasoning": "Yields at a high, Fed-hike odds rising, gold below its 200-day average and near a one-month low. Headlines are restatements of price. No concrete reason for a long; the Fed vote next week adds variance."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NVDA -2.4% on the day, sector ETF -2.4%. Headlines (TSMC record sales, Anthropic IPO backing talk, HBM shortage) are known or noisy; no dated NVDA catalyst. A rising-rate shock hits long-duration stocks."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY -8% in 20 days with no LLY-specific news; headlines are generic FDA and Medicare items. A weak sector link means no driver reason. Nothing concrete to name for a long."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "reasoning": "Copper -5% in one day and FCX -6.6%, with a Trefis headline about a tariff doubt but no clear cause or reversal reason. Do not guess a rebound in a stress regime."}
+  },
+  "would_change_my_mind": "A dated, named catalyst for one leader (company event, policy decision, or confirmed supply shock not yet in the stock price) with a calm VIX.",
+  "handoff": {
+    "run_id": "fam-2026-09-11-a",
+    "written_at": "2026-09-11T12:00:00Z",
+    "decision_day": "2026-09-11",
+    "data_cutoff": "2026-09-11",
+    "what_changed": "WTI jumped 6.7% in a day to 102.5 (Brent 107.6) after Saudi East-West pipeline attacks, while XOM barely moved. The 10-year yield reached 4.94 on sticky August CPI with a Fed hike vote next week, and VIX rose to 17.8. Copper fell 5% in a day (FCX -6.6%) and NVDA slipped 2.4%.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "The oil spike is in the driver and XOM has not followed; no dated XOM catalyst."},
+      "gold_miners": {"position": "flat", "why": "Yields at a high and Fed-hike odds rising; no concrete reason for a long."},
+      "chips": {"position": "flat", "why": "Headlines are known or noisy and there is no dated NVDA catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY-specific news; generic FDA and Medicare headlines only."},
+      "copper_uranium": {"position": "flat", "why": "The one-day drop has no clear cause; no rebound guess in a stress regime."}
+    },
+    "open_storylines": [
+      {"name": "Oil spike and Middle East supply", "status": "escalating", "note": "WTI 102.5 (+23% in 20 days); Saudi East-West pipeline shut after drone attacks; US diesel at a record; watch whether XOM catches up and Iran news.", "first_seen": "2026-09-03"},
+      {"name": "Yields, inflation and Fed hike", "status": "escalating", "note": "10-year 4.94 at a high; August CPI sticky; Fed vote next week with a hike on the table; gold near a one-month low and miners exposed.", "first_seen": "2026-09-03"},
+      {"name": "NVDA and AI chain news", "status": "open", "note": "NVDA -2.4% on the day; TSMC record sales, Anthropic IPO backing report; watch rate reaction and AMD/NVDA margin debate.", "first_seen": "2026-09-03"},
+      {"name": "Health care and FDA", "status": "fading", "note": "LLY -8% in 20 days, sector -4% in 5 days; watch drug-pricing policy and GLP-1 news.", "first_seen": "2026-09-03"},
+      {"name": "Copper drop and tariffs", "status": "open", "note": "Copper -5% in a day, FCX -6.6%; Trefis cites tariff doubts; watch tariffs and China data.", "first_seen": "2026-09-03"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, check the Fed vote outcome and yield level, whether WTI held above 100 and whether XOM followed, and the jobs report timing. Stay flat unless a named reason appears."
+  }
+}

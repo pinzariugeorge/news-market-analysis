@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fam-2026-07-16-a (decision day 2026-07-16, data cutoff 2026-07-16)
+What changed: WTI rose to 79.6 (+8% in 5 days) amid US-Iran tension and yields rose again, while soft US inflation helped stocks. TSMC reported Q2 profit +77% and pledged another $100B in Arizona. VIX fell to 15.7. All families stay flat.
+Holdings and reasons:
+- oil_gas: flat | Crude jumped on Iran headlines but XOM lags and no durable edge is visible.
+- gold_miners: flat | Gold is in a downtrend with high yields; NEM news is minor.
+- chips: flat | TSMC results and investment are public and priced; no NVDA-specific catalyst.
+- pharma: flat | No LLY news; earnings season adds variance only.
+- copper_uranium: flat | Copper is mixed and the Cameco news does not help FCX.
+Open storylines:
+- [escalating] US-Iran conflict and oil: WTI 79.6, +8% in 5 days; yields and mortgage rates rising on the tension; watch whether XOM follows and the Q2 earnings from late July.
+- [open] Semiconductor strength and TSMC: TSMC Q2 profit +77% and a $100B Arizona pledge; sector ETF -8.7% in 20 days; watch NVDA and chip earnings.
+- [open] Fed and yields for gold: 10-year 4.55%, gold -24% from peak, miners deeply down; watch the jobs report and Fed tone.
+- [open] Uranium policy tailwinds: Uranium ETF -27% in 60 days; Cameco resolved the Cigar Lake disruption; CCJ below its 200-day average.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, re-check the five families, and look for concrete catalysts (Q2 earnings of XOM, NEM, NVDA, LLY, FCX, the jobs report, Iran or Hormuz escalation). Stay flat unless a named reason appears.

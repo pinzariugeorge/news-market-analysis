@@ -1,0 +1,63 @@
+{
+ "run_id": "fam-2026-08-06-a",
+ "written_at": "2026-08-06T10:00:00Z",
+ "decision_day": "2026-08-06",
+ "data_cutoff": "2026-08-06",
+ "what_changed": "The July stress reversed: VIX fell to 15.8 and the S&P 500 and Dow hit records. Chips rebounded 13% in 5 days, gold rose 3.7% in a day, copper hit a record, WTI fell 11% on Hormuz reopening hopes, and Lilly raised guidance. All families stay flat because the moves are already priced in.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI -11% in 5 days on Hormuz hopes is priced in and XOM has no company-specific catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "The one-day gold spike (+3.7%) and NEM +14% in 5 days are priced in, with no named cause."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The 13% sector rebound already happened and no NVDA catalyst is dated."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Lilly Q2 beat and guidance raise are priced in after a +4.9% day."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper at a record and FCX +21% in 20 days are priced in; uranium news does not reach FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "US-Iran war and oil",
+   "status": "fading",
+   "note": "WTI 75.2 (-21% in 60 days) on Strait of Hormuz reopening hopes; watch for a deal or a relapse and XOM earnings.",
+   "first_seen": "2026-07-30"
+  },
+  {
+   "name": "Fed on hold and yields",
+   "status": "open",
+   "note": "10-year at 4.62%, gold 19% below peak after a +3.7% day; watch the jobs report on the first Friday.",
+   "first_seen": "2026-07-30"
+  },
+  {
+   "name": "Chip selloff and rebound",
+   "status": "fading",
+   "note": "VIX back to 15.8 and the sector +13% in 5 days; AMD fell 7% after earnings despite strong results; watch the NVDA Q2 date and capex guidance.",
+   "first_seen": "2026-07-30"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "open",
+   "note": "Q2 results beat with guidance raised on 2026-08-05; LLY +4.9% on the day and 5% below its high; watch for follow-through.",
+   "first_seen": "2026-07-30"
+  },
+  {
+   "name": "Copper record and tariffs",
+   "status": "open",
+   "note": "Copper at an all-time high, FCX +21% in 20 days; watch the tariff effect on copper and the dollar, and FCX earnings.",
+   "first_seen": "2026-07-30"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the handoff, check whether the rebounds in chips, gold and copper held, and look for a dated catalyst (NVDA, FCX or XOM earnings, the jobs report, Iran or Hormuz news). Stay flat unless a named reason appears."
+}

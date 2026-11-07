@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-20",
+  "market_view": "Calm regime: VIX 14.9, down 6% on the day, yields and the dollar easing. Gold and miners spiked, health care jumped, chips weak.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI 85.8 (+3% in 5 days) is the old Iran/Hormuz story; XOM is up 6.7% in 20 days and 3.9% below its high. No dated catalyst and no new cause, so the move is priced in."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "reasoning": "Gold +2.8% in a day to a two-month high, NEM +7.9% on the day and +30.6% in 20 days. Explained by easing yields and a weaker dollar, but that is already priced in. No dated catalyst; chasing a spike is not a named reason."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "reasoning": "Sector ETF -4% in 5 days, AVGO and AMD weak. The headline on closing the China export loophole is not a clear reason for a long. NVDA earnings date is not in the record."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY +4.5% on the day and at its high, sector at a high, MRK +12.6% in a day. No LLY-specific cause in the headlines. A rally that already happened is priced in. A new FDA pick adds policy variance."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Copper is flat over 5 and 20 days; FCX +4.2% in a day looks like market-wide beta. No dated catalyst or cause in the headlines."}
+  },
+  "would_change_my_mind": "A dated, named catalyst inside the window (NVDA, FCX or XOM earnings, a concrete Iran or Hormuz deal, a drug-specific LLY result) that the price has not yet reflected.",
+  "handoff": {
+    "run_id": "fam-2026-08-20-a",
+    "written_at": "2026-08-20T09:00:00Z",
+    "decision_day": "2026-08-20",
+    "data_cutoff": "2026-08-20",
+    "what_changed": "Gold jumped 2.8% in a day to a two-month high (NEM +7.9%, AEM +11%) as yields and the dollar fell. Health care surged (MRK +12.6%, LLY +4.5%, sector at a high). Chips weakened (AVGO -12.9% in 5 days). WTI 85.8 (+3% in 5 days); VIX 14.9.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI up only 3% in 5 days on the known Iran story and no dated XOM catalyst, so it is priced in."},
+      "gold_miners": {"position": "flat", "why": "NEM +7.9% in a day and +30.6% in 20 days after the gold spike is priced in, with no dated catalyst."},
+      "chips": {"position": "flat", "why": "Sector is down 4% in 5 days, the NVDA date is unknown, and the export-loophole headline is not a clear reason."},
+      "pharma": {"position": "flat", "why": "LLY and the sector are at highs after a big one-day jump and no drug-specific cause appears."},
+      "copper_uranium": {"position": "flat", "why": "Copper flat in 5 and 20 days, and the FCX one-day jump looks like market beta with no catalyst."}
+    },
+    "open_storylines": [
+      {"name": "US-Iran war and oil", "status": "open", "note": "WTI 85.8, Brent 91.6; watch for a deal or escalation and XOM earnings.", "first_seen": "2026-08-13"},
+      {"name": "Gold spike and yields", "status": "open", "note": "Gold 4545, two-month high, 14.5% below peak; yields easing and Bessent moving to curb Treasury yields against Warsh's Fed; watch the jobs report.", "first_seen": "2026-08-13"},
+      {"name": "Chip weakness and China export loophole", "status": "open", "note": "Sector -4% in 5 days, AVGO -12.9%; watch the NVDA Q2 date and the export rules.", "first_seen": "2026-08-13"},
+      {"name": "Health care surge and FDA pick", "status": "open", "note": "Sector and LLY at highs, MRK +12.6% in a day; Trump named a new FDA pick; watch drug-pricing policy.", "first_seen": "2026-08-13"},
+      {"name": "Copper and tariffs", "status": "fading", "note": "Copper 3.2% below its high and flat in 20 days; watch FCX earnings.", "first_seen": "2026-08-13"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, check whether the gold and health care jumps held, and look for a dated catalyst (NVDA, FCX or XOM earnings, jobs report, Iran or Hormuz news). Stay flat unless a named reason appears."
+  }
+}

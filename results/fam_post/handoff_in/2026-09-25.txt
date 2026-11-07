@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-09-18-a (decision day 2026-09-18, data cutoff 2026-09-18)
+What changed: The Fed hike passed and the BOJ also hiked; VIX fell to 15.4 and risk assets bounced on 2026-09-17 (chips +2.8%, AMD +6.4%, copper +2.4%, miners +2-4%). WTI eased to 101.9 on Saudi export signals while XOM stayed flat; the 10-year yield is 4.95.
+Holdings and reasons:
+- oil_gas: flat | WTI is high but easing and XOM has not followed; no dated XOM catalyst.
+- gold_miners: flat | Hike is done and gold is bouncing, but yields are near a high and there is no concrete reason for a long.
+- chips: flat | The rebound day is priced in; headlines are generic and no dated NVDA catalyst.
+- pharma: flat | LLY approval is minor and Medicaid pricing policy is an overhang; no edge.
+- copper_uranium: flat | The copper bounce is a rebound guess; uranium headlines are local permitting news.
+Open storylines:
+- [open] Oil spike and Middle East supply: WTI 101.9 (+19% in 20 days) slipping on Saudi export signals; XOM flat; watch whether WTI holds above 100 and diesel and heating oil prices.
+- [open] Yields, inflation and Fed hike: Fed and BOJ have hiked; 10-year 4.95 near a high; gold bouncing to a weekly high; watch Warsh commentary and the jobs report.
+- [open] NVDA and AI chain news: Chips bounced 2.8% with AMD +6.4%; watch rate reaction and AI optimism versus inflation worries.
+- [open] Health care, FDA and drug pricing: LLY -10% in 20 days; Medicaid most-favored-nation pricing extended; LLY breast cancer combo approved; watch pricing policy and GLP-1 news.
+- [fading] Copper and tariffs: Copper rebounded 2.4% after last week's 5% drop; FCX +2.3%; watch tariffs and China data.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check whether WTI held above 100 and XOM followed, the 10-year yield level (4.95 now), VIX (15.4 now) and the jobs report timing. Stay flat unless a named reason appears.

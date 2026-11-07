@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-03",
+  "market_view": "Calm equity regime (VIX 15.2, down 7% on the day) but the 10-year yield is at 4.80, its highest since late 2023. Oil rebounded sharply and gold and uranium stocks pulled back in the last 5 days.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI +10.7% in 5 days is already priced in. The Chevron Venezuela plan is a five-year story with no near-term catalyst for XOM. XOM is 4% below its high. No named reason for a long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "NEM is up 20% in 20 days but down 5% in 5 days. The 10-year yield is at a high and gold is below its 200-day average. The jobs report adds variance, not direction. No dated catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "The Hugging Face deal is known, and the NVDA reaction to results and the deal is already in the price. The sector ETF is down 3% in 20 days. No new concrete reason."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY is 9% below its high with no drug-specific news in the headlines. Pharma stocks move on their own news and none is visible. No catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "FCX is down 6% in 5 days after the earlier run-up. Copper is flat, and the headlines show only small-cap noise. No catalyst or mispricing is nameable."}
+  },
+  "would_change_my_mind": "A dated, named catalyst for a leader (earnings or guidance, a drug approval, a policy decision) or a clear mispricing versus its driver.",
+  "handoff": {
+    "run_id": "fam-2026-09-03-a",
+    "written_at": "2026-09-03T09:00:00Z",
+    "decision_day": "2026-09-03",
+    "data_cutoff": "2026-09-03",
+    "what_changed": "WTI rebounded 10.7% in 5 days to 91.0 and Brent to 95.6, and the 10-year yield hit 4.80, its highest since late 2023. Gold miners and copper/uranium names fell 5-10% in 5 days after last week's run, while NVDA rose 7% in 5 days. The Hugging Face deal for NVDA is confirmed at $12.9B.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "The oil rally is already in the price and there is no dated XOM catalyst."},
+      "gold_miners": {"position": "flat", "why": "Yields at a high and no dated catalyst; the 20-day gain is priced in."},
+      "chips": {"position": "flat", "why": "The NVDA deal and earnings reaction are known and no new reason for a long appeared."},
+      "pharma": {"position": "flat", "why": "No drug-specific news visible for LLY."},
+      "copper_uranium": {"position": "flat", "why": "The pullback has no named cause or catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Oil rebound and Hormuz", "status": "escalating", "note": "WTI 91.0 (+21% in 20 days); Hormuz shipping disruptions in headlines; watch Iran news and Chevron Venezuela plan.", "first_seen": "2026-08-27"},
+      {"name": "Gold, yields and miners", "status": "open", "note": "Gold 4415 (-5% in 5 days), 10-year yield 4.80 at a high; watch the jobs report and the Fed.", "first_seen": "2026-08-27"},
+      {"name": "NVDA Hugging Face deal", "status": "open", "note": "$12.9B acquisition confirmed; NVDA +7% in 5 days; watch for a deal or regulatory reaction.", "first_seen": "2026-08-27"},
+      {"name": "Health care and FDA", "status": "fading", "note": "LLY -9% from its high; sector near its high; watch drug-pricing policy and FDA news.", "first_seen": "2026-08-27"},
+      {"name": "Copper and uranium pullback", "status": "fading", "note": "FCX -6% and CCJ -10% in 5 days; copper -3% in 20 days; watch tariffs and China data.", "first_seen": "2026-08-27"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, check whether the oil rebound and the yield high held, and look for a dated catalyst (jobs report, Iran or Hormuz news, XOM or NVDA news). Stay flat unless a named reason appears."
+  }
+}

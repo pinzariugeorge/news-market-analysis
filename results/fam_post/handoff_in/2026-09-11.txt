@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-09-03-a (decision day 2026-09-03, data cutoff 2026-09-03)
+What changed: WTI rebounded 10.7% in 5 days to 91.0 and Brent to 95.6, and the 10-year yield hit 4.80, its highest since late 2023. Gold miners and copper/uranium names fell 5-10% in 5 days after last week's run, while NVDA rose 7% in 5 days. The Hugging Face deal for NVDA is confirmed at $12.9B.
+Holdings and reasons:
+- oil_gas: flat | The oil rally is already in the price and there is no dated XOM catalyst.
+- gold_miners: flat | Yields at a high and no dated catalyst; the 20-day gain is priced in.
+- chips: flat | The NVDA deal and earnings reaction are known and no new reason for a long appeared.
+- pharma: flat | No drug-specific news visible for LLY.
+- copper_uranium: flat | The pullback has no named cause or catalyst.
+Open storylines:
+- [escalating] Oil rebound and Hormuz: WTI 91.0 (+21% in 20 days); Hormuz shipping disruptions in headlines; watch Iran news and Chevron Venezuela plan.
+- [open] Gold, yields and miners: Gold 4415 (-5% in 5 days), 10-year yield 4.80 at a high; watch the jobs report and the Fed.
+- [open] NVDA Hugging Face deal: $12.9B acquisition confirmed; NVDA +7% in 5 days; watch for a deal or regulatory reaction.
+- [fading] Health care and FDA: LLY -9% from its high; sector near its high; watch drug-pricing policy and FDA news.
+- [fading] Copper and uranium pullback: FCX -6% and CCJ -10% in 5 days; copper -3% in 20 days; watch tariffs and China data.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check whether the oil rebound and the yield high held, and look for a dated catalyst (jobs report, Iran or Hormuz news, XOM or NVDA news). Stay flat unless a named reason appears.

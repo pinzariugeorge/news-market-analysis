@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fam-2026-07-01-a (decision day 2026-07-01, data cutoff 2026-07-01)
+What changed: First run with no previous handoff. All five families are flat. Oil, gold and uranium are in deep drawdowns, while semiconductors and health care sit near highs.
+Holdings and reasons:
+- oil_gas: flat | WTI crashed 38% in 60 days; no concrete reason for XOM long.
+- gold_miners: flat | Gold is in a downtrend with a firm dollar and high yields; no edge for NEM.
+- chips: flat | Sector rally is priced in; NVDA has no specific catalyst.
+- pharma: flat | LLY is near its high and there is no named catalyst.
+- copper_uranium: flat | Mixed copper; the Cigar Lake news hits CCJ rather than FCX.
+Open storylines:
+- [open] Oil price collapse: WTI down 38% in 60 days; watch whether it stabilises and what the cause is (Middle East headline mentioned).
+- [open] Cameco Cigar Lake suspension: Orano mill disruption; watch duration and the uranium price reaction.
+- [open] Fed under Chair Warsh, inflation focus: Rates and the dollar drive gold miners; watch the jobs report and Fed tone.
+- [open] Semiconductor surge: Sector ETF up 67% in 60 days; AMD and TSM at highs, NVDA lagging.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the new handoff, re-check the five families, and look for a concrete catalyst (Q2 earnings season starting mid-July, the jobs report on the first Friday).

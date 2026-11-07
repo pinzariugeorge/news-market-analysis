@@ -1,0 +1,18 @@
+phase,config,instrument,trades,pf,maxdd_pct,net_pct,bh_pct,bh_dd_pct
+build,C0 donchian20/3,NVDA,11,3.83,28.4,209.8,294,66
+build,C0 donchian20/3,AMD,13,0.93,39.6,24.7,97,65
+build,C0 donchian20/3,AVGO,14,1.44,29.5,37.5,218,37
+build,C1 donchian55/3,NVDA,9,2.45,34.6,91.6,294,66
+build,C1 donchian55/3,AMD,7,1.92,22.1,50.7,97,65
+build,C1 donchian55/3,AVGO,10,2.71,18.4,47.9,218,37
+build,C0 donchian20/3,GOLD,16,1.25,15.4,5.3,9,20
+build,C1 donchian55/3,GOLD,7,3.99,7.1,12.5,9,20
+build,C2 ema20/50 (no stop),NVDA,9,2.32,57.0,141.5,294,66
+build,C2 ema20/50 (no stop),AMD,5,1.77,49.5,69.9,97,65
+build,C3 momentum126 (no stop),NVDA,9,1.42,51.2,198.9,294,66
+build,C4 rsi2<10 pullback,NVDA,18,1.31,22.1,10.5,294,66
+valid,C1 donchian55/3,NVDA,10,3.10,25.2,66.2,302,37
+valid,C1 donchian55/3,AMD,9,2.09,29.6,72.7,229,63
+valid,C1 donchian55/3,AVGO,9,1.49,24.7,16.4,181,41
+valid,C1 donchian55/3,GOLD,11,9.52,9.1,53.3,95,27
+valid,C1 donchian55/3,WTI,5,5.44,17.2,42.9,29,39

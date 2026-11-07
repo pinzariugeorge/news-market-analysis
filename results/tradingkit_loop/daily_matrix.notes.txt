@@ -1,0 +1,1 @@
+net_pct is final-equity return including any open position

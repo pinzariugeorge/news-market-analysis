@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-08-20-a (decision day 2026-08-20, data cutoff 2026-08-20)
+What changed: Gold jumped 2.8% in a day to a two-month high (NEM +7.9%, AEM +11%) as yields and the dollar fell. Health care surged (MRK +12.6%, LLY +4.5%, sector at a high). Chips weakened (AVGO -12.9% in 5 days). WTI 85.8 (+3% in 5 days); VIX 14.9.
+Holdings and reasons:
+- oil_gas: flat | WTI up only 3% in 5 days on the known Iran story and no dated XOM catalyst, so it is priced in.
+- gold_miners: flat | NEM +7.9% in a day and +30.6% in 20 days after the gold spike is priced in, with no dated catalyst.
+- chips: flat | Sector is down 4% in 5 days, the NVDA date is unknown, and the export-loophole headline is not a clear reason.
+- pharma: flat | LLY and the sector are at highs after a big one-day jump and no drug-specific cause appears.
+- copper_uranium: flat | Copper flat in 5 and 20 days, and the FCX one-day jump looks like market beta with no catalyst.
+Open storylines:
+- [open] US-Iran war and oil: WTI 85.8, Brent 91.6; watch for a deal or escalation and XOM earnings.
+- [open] Gold spike and yields: Gold 4545, two-month high, 14.5% below peak; yields easing and Bessent moving to curb Treasury yields against Warsh's Fed; watch the jobs report.
+- [open] Chip weakness and China export loophole: Sector -4% in 5 days, AVGO -12.9%; watch the NVDA Q2 date and the export rules.
+- [open] Health care surge and FDA pick: Sector and LLY at highs, MRK +12.6% in a day; Trump named a new FDA pick; watch drug-pricing policy.
+- [fading] Copper and tariffs: Copper 3.2% below its high and flat in 20 days; watch FCX earnings.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check whether the gold and health care jumps held, and look for a dated catalyst (NVDA, FCX or XOM earnings, jobs report, Iran or Hormuz news). Stay flat unless a named reason appears.

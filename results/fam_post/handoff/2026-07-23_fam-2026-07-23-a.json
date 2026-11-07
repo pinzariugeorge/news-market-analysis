@@ -1,0 +1,63 @@
+{
+ "run_id": "fam-2026-07-23-a",
+ "written_at": "2026-07-23T10:00:00Z",
+ "decision_day": "2026-07-23",
+ "data_cutoff": "2026-07-23",
+ "what_changed": "Oil escalated further: WTI 86.8 (+9% in 5 days), Brent 94 and headlines of $100 after Red Sea and tanker attacks. The 10-year yield rose to 4.66%, the highest since January 2025. NEM beat Q2 estimates and LLY reported positive retatrutide Phase 3 results; all families stay flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "XOM is +6.9% in 5 days and the escalation is priced in; no durable edge."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM's Q2 beat is public, while high yields and a firm dollar weigh on gold, which is 22% below its peak."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "AMD-specific news only; no NVDA catalyst and rising yields are a headwind."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Retatrutide Phase 3 success was expected and LLY is already up 31% in 60 days."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific catalyst; copper is mixed and the uranium headlines do not reach FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "US-Iran war and oil",
+   "status": "escalating",
+   "note": "WTI 86.8 and Brent 94-100 after Red Sea and tanker attacks; yields rising on inflation fear. Watch XOM Q2 earnings and any deal or Hormuz news.",
+   "first_seen": "2026-07-16"
+  },
+  {
+   "name": "Yields and gold",
+   "status": "escalating",
+   "note": "10-year at 4.66%, the highest since January 2025; gold -22% from peak, miners deeply down. Watch the jobs report and Fed tone.",
+   "first_seen": "2026-07-16"
+  },
+  {
+   "name": "Chip earnings and AI deals",
+   "status": "open",
+   "note": "AMD Helios and Anthropic deal; sector ETF -5.7% in 20 days. Watch NVDA, big tech earnings and capex guidance.",
+   "first_seen": "2026-07-16"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "open",
+   "note": "Retatrutide positive in two more Phase 3 trials; LLY +31% in 60 days. Watch Q2 earnings and the stock reaction.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "New US tariffs",
+   "status": "open",
+   "note": "Sweeping tariffs on 60-80 countries replace the global duty. Watch the effect on copper and the dollar.",
+   "first_seen": "2026-07-23"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read the handoff, re-check the five families, and look for concrete catalysts (Q2 earnings of XOM, NVDA, LLY, FCX, the jobs report, Iran or Red Sea escalation or a deal). Stay flat unless a named reason appears."
+}

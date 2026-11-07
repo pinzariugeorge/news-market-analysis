@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-25",
+  "market_view": "VIX is calm at 15.7 but the 10-year yield hit a high of 5.16 and the dollar is firm; oil is falling on US-Iran peace talk headlines and gold is weak. Mixed picture with no clear stock-specific catalyst.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI fell from 101.9 to about 94 and peace-talk headlines point lower, but XOM is flat and the oil move is already in the price. No dated XOM catalyst; Q3 earnings only in late October."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Gold is down 7.6% in 20 days, the 10-year yield is at a high of 5.16, the dollar is firm and KGC fell 11.6%. Jobs report adds variance only. No concrete reason for a long."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "The sector is up 7% in 5 days; headlines are generic (Oracle force majeure worry, memory weakness). No dated NVDA catalyst. A rally already in the price is not a reason."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY +2.7% on minor approval news (Olumiant pediatric); drug-pricing policy remains an overhang. No edge."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Copper is steady but FCX is down 8.8% in 20 days; the BHP Chile mine halt is a modest supply headline, not clearly reaching FCX. Uranium is weak. No concrete reason."}
+  },
+  "would_change_my_mind": "A dated, named company catalyst or a clear policy or supply shock that has not yet moved the stock.",
+  "handoff": {
+    "run_id": "fam-2026-09-25-a",
+    "written_at": "2026-09-25T09:00:00Z",
+    "decision_day": "2026-09-25",
+    "data_cutoff": "2026-09-25",
+    "what_changed": "WTI fell to 94.6 (from 101.9) on US-Iran peace-talk headlines while XOM stayed flat; the 10-year yield rose to a high of 5.16 and gold slid to about 4,298 (-7.6% in 20 days). Chips rose 7% in 5 days (AMD at a high); VIX is 15.7.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI is falling on peace talks, XOM has not followed, and there is no dated catalyst."},
+      "gold_miners": {"position": "flat", "why": "Yields at a high and a firm dollar weigh on gold; no concrete reason for a long."},
+      "chips": {"position": "flat", "why": "Strong 5-day rally already priced in; headlines are generic."},
+      "pharma": {"position": "flat", "why": "LLY approval is minor and pricing policy is an overhang; no edge."},
+      "copper_uranium": {"position": "flat", "why": "BHP Chile halt is a modest headline; FCX weak over 20 days and uranium falling; no edge."}
+    },
+    "open_storylines": [
+      {"name": "Oil, Iran war and peace talks", "status": "open", "note": "WTI 94.6 and below 93 on peace-talk headlines; Houthi attack claims on Saudi facilities; watch whether XOM follows and the heating oil price.", "first_seen": "2026-09-18"},
+      {"name": "Yields, inflation and Fed", "status": "escalating", "note": "10-year at a high of 5.16, gold weak, inflation expectations spiking; watch the jobs report and Warsh commentary.", "first_seen": "2026-09-18"},
+      {"name": "NVDA and AI chain", "status": "open", "note": "Chips +7% in 5 days; Oracle force majeure and memory stock weakness are worries; watch rates and AI sentiment.", "first_seen": "2026-09-18"},
+      {"name": "Health care and drug pricing", "status": "open", "note": "LLY +2.7% on minor FDA approval; TrumpRx and pricing policy overhang; watch GLP-1 news.", "first_seen": "2026-09-18"},
+      {"name": "Copper supply and uranium weakness", "status": "open", "note": "BHP halted a Chile copper mine after a worker death; uranium ETF -15% in 20 days; watch copper price and China data.", "first_seen": "2026-09-18"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, check whether WTI holds near or below 94 and XOM follows, the 10-year yield (5.16 now), VIX (15.7 now), gold (4,298) and the jobs report timing. Stay flat unless a named reason appears."
+  }
+}

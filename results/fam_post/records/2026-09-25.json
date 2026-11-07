@@ -1,0 +1,748 @@
+{
+ "decision_day": "2026-09-25",
+ "weekday": "Friday",
+ "information_cutoff": "closes dated before 2026-09-25; headlines published before 2026-09-25 12:00 GMT",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-09-24",
+   "last": 15.67,
+   "ret_1d_pct": 3.23,
+   "ret_5d_pct": 1.49,
+   "ret_20d_pct": 7.99,
+   "ret_60d_pct": -5.55,
+   "vol_20d_daily_pct": 6.18,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -49.5
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-09-24",
+     "last": 94.61,
+     "ret_1d_pct": 2.66,
+     "ret_5d_pct": -7.16,
+     "ret_20d_pct": 15.06,
+     "ret_60d_pct": 36.13,
+     "vol_20d_daily_pct": 2.84,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.2
+    },
+    "Brent crude oil": {
+     "last_date": "2026-09-24",
+     "last": 106.6,
+     "ret_1d_pct": 3.41,
+     "ret_5d_pct": 1.7,
+     "ret_20d_pct": 21.36,
+     "ret_60d_pct": 46.19,
+     "vol_20d_daily_pct": 2.54,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.9
+    },
+    "Natural gas": {
+     "last_date": "2026-09-24",
+     "last": 3.297,
+     "ret_1d_pct": 9.06,
+     "ret_5d_pct": 13.65,
+     "ret_20d_pct": 16.01,
+     "ret_60d_pct": 0.67,
+     "vol_20d_daily_pct": 2.67,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -55.8
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-09-24",
+     "last": 162.14,
+     "ret_1d_pct": 0.56,
+     "ret_5d_pct": -0.69,
+     "ret_20d_pct": 2.5,
+     "ret_60d_pct": 18.59,
+     "vol_20d_daily_pct": 1.68,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.4,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-09-24",
+     "last": 205.65,
+     "ret_1d_pct": 0.07,
+     "ret_5d_pct": -2.8,
+     "ret_20d_pct": 2.72,
+     "ret_60d_pct": 24.06,
+     "vol_20d_daily_pct": 1.49,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.6,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-09-24",
+     "last": 129.34,
+     "ret_1d_pct": 0.98,
+     "ret_5d_pct": -2.89,
+     "ret_20d_pct": -0.97,
+     "ret_60d_pct": 24.41,
+     "vol_20d_daily_pct": 2.08,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.4,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-09-24",
+     "last": 58.05,
+     "ret_1d_pct": 1.2,
+     "ret_5d_pct": -2.09,
+     "ret_20d_pct": -0.97,
+     "ret_60d_pct": 19.52,
+     "vol_20d_daily_pct": 1.95,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.4,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-09-24",
+     "last": 4298.0,
+     "ret_1d_pct": -0.47,
+     "ret_5d_pct": -2.31,
+     "ret_20d_pct": -7.64,
+     "ret_60d_pct": 6.43,
+     "vol_20d_daily_pct": 1.21,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -19.2
+    },
+    "Silver": {
+     "last_date": "2026-09-24",
+     "last": 63.457,
+     "ret_1d_pct": -1.44,
+     "ret_5d_pct": -3.07,
+     "ret_20d_pct": -6.67,
+     "ret_60d_pct": 6.69,
+     "vol_20d_daily_pct": 2.14,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -44.9
+    },
+    "US 10-year yield": {
+     "last_date": "2026-09-24",
+     "last": 5.162,
+     "ret_1d_pct": 0.94,
+     "ret_5d_pct": 4.35,
+     "ret_20d_pct": 10.68,
+     "ret_60d_pct": 16.84,
+     "vol_20d_daily_pct": 0.92,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0
+    },
+    "US dollar index": {
+     "last_date": "2026-09-24",
+     "last": 101.29,
+     "ret_1d_pct": 0.19,
+     "ret_5d_pct": 1.07,
+     "ret_20d_pct": 2.14,
+     "ret_60d_pct": 0.1,
+     "vol_20d_daily_pct": 0.29,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.3
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-09-24",
+     "last": 104.3,
+     "ret_1d_pct": -0.49,
+     "ret_5d_pct": -1.33,
+     "ret_20d_pct": -2.99,
+     "ret_60d_pct": -4.69,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -7.0
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-09-24",
+     "last": 121.3,
+     "ret_1d_pct": -1.82,
+     "ret_5d_pct": -2.48,
+     "ret_20d_pct": -7.83,
+     "ret_60d_pct": 29.87,
+     "vol_20d_daily_pct": 2.14,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.2,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-09-24",
+     "last": 193.88,
+     "ret_1d_pct": -0.86,
+     "ret_5d_pct": -3.72,
+     "ret_20d_pct": -9.42,
+     "ret_60d_pct": 24.98,
+     "vol_20d_daily_pct": 2.5,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -23.1,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-09-24",
+     "last": 24.42,
+     "ret_1d_pct": -11.59,
+     "ret_5d_pct": -14.29,
+     "ret_20d_pct": -24.44,
+     "ret_60d_pct": 3.39,
+     "vol_20d_daily_pct": 3.44,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -35.9,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-09-24",
+     "last": 143.88,
+     "ret_1d_pct": -1.08,
+     "ret_5d_pct": -5.47,
+     "ret_20d_pct": -7.78,
+     "ret_60d_pct": 28.1,
+     "vol_20d_daily_pct": 2.81,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.2,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-09-24",
+     "last": 600.52,
+     "ret_1d_pct": -0.15,
+     "ret_5d_pct": 7.12,
+     "ret_20d_pct": 8.05,
+     "ret_60d_pct": -8.44,
+     "vol_20d_daily_pct": 2.2,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.2
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-09-24",
+     "last": 224.58,
+     "ret_1d_pct": -0.41,
+     "ret_5d_pct": 2.39,
+     "ret_20d_pct": 7.12,
+     "ret_60d_pct": 12.24,
+     "vol_20d_daily_pct": 2.76,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.7,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-09-24",
+     "last": 350.36,
+     "ret_1d_pct": -1.3,
+     "ret_5d_pct": 0.88,
+     "ret_20d_pct": -1.47,
+     "ret_60d_pct": -7.25,
+     "vol_20d_daily_pct": 2.12,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -27.2,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-09-24",
+     "last": 629.26,
+     "ret_1d_pct": 2.38,
+     "ret_5d_pct": 15.44,
+     "ret_20d_pct": 30.84,
+     "ret_60d_pct": 8.32,
+     "vol_20d_daily_pct": 3.47,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-09-24",
+     "last": 451.15,
+     "ret_1d_pct": 1.03,
+     "ret_5d_pct": 4.86,
+     "ret_20d_pct": 8.01,
+     "ret_60d_pct": -5.53,
+     "vol_20d_daily_pct": 1.76,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.5,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-09-24",
+     "last": 169.87,
+     "ret_1d_pct": 0.63,
+     "ret_5d_pct": 0.63,
+     "ret_20d_pct": -2.11,
+     "ret_60d_pct": 7.07,
+     "vol_20d_daily_pct": 0.83,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.3
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-09-24",
+     "last": 1181.89,
+     "ret_1d_pct": 2.68,
+     "ret_5d_pct": 2.56,
+     "ret_20d_pct": -0.63,
+     "ret_60d_pct": -1.46,
+     "vol_20d_daily_pct": 1.16,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.7,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-09-24",
+     "last": 270.68,
+     "ret_1d_pct": 0.56,
+     "ret_5d_pct": 0.17,
+     "ret_20d_pct": 0.25,
+     "ret_60d_pct": 6.58,
+     "vol_20d_daily_pct": 1.0,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.8,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-09-24",
+     "last": 265.12,
+     "ret_1d_pct": 0.02,
+     "ret_5d_pct": 0.42,
+     "ret_20d_pct": 0.84,
+     "ret_60d_pct": 5.36,
+     "vol_20d_daily_pct": 1.15,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.3,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-09-24",
+     "last": 147.98,
+     "ret_1d_pct": -0.07,
+     "ret_5d_pct": 0.56,
+     "ret_20d_pct": -3.34,
+     "ret_60d_pct": 15.16,
+     "vol_20d_daily_pct": 1.19,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.4,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-09-24",
+     "last": 6.719,
+     "ret_1d_pct": 0.61,
+     "ret_5d_pct": 2.0,
+     "ret_20d_pct": 1.88,
+     "ret_60d_pct": 8.49,
+     "vol_20d_daily_pct": 1.57,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.2
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-09-24",
+     "last": 26.5,
+     "ret_1d_pct": -1.85,
+     "ret_5d_pct": -2.47,
+     "ret_20d_pct": -8.9,
+     "ret_60d_pct": 1.45,
+     "vol_20d_daily_pct": 1.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -18.3
+    },
+    "Uranium ETF": {
+     "last_date": "2026-09-24",
+     "last": 40.86,
+     "ret_1d_pct": -2.69,
+     "ret_5d_pct": -4.26,
+     "ret_20d_pct": -14.96,
+     "ret_60d_pct": -6.5,
+     "vol_20d_daily_pct": 2.71,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -33.9
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-09-24",
+     "last": 72.08,
+     "ret_1d_pct": -0.69,
+     "ret_5d_pct": 1.74,
+     "ret_20d_pct": -8.76,
+     "ret_60d_pct": 14.61,
+     "vol_20d_daily_pct": 2.56,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.8,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-09-24",
+     "last": 88.12,
+     "ret_1d_pct": -2.95,
+     "ret_5d_pct": -5.04,
+     "ret_20d_pct": -17.92,
+     "ret_60d_pct": -13.49,
+     "vol_20d_daily_pct": 2.37,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -34.3,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-09-24",
+     "last": 66.51,
+     "ret_1d_pct": -0.43,
+     "ret_5d_pct": 1.98,
+     "ret_20d_pct": -6.48,
+     "ret_60d_pct": 11.86,
+     "vol_20d_daily_pct": 2.35,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.6,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-09-24",
+     "last": 199.584,
+     "ret_1d_pct": -0.18,
+     "ret_5d_pct": 2.79,
+     "ret_20d_pct": -5.69,
+     "ret_60d_pct": 17.07,
+     "vol_20d_daily_pct": 2.7,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.2,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "September",
+  "earnings_season_window": false,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "theme": "market",
+   "title": "Author of America\u2019s tariff statute: Trump\u2019s tariffs are illegal",
+   "source": "CNN",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Wall Street ends higher as investors buy AI stocks; Microsoft rallies",
+   "source": "Reuters",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Opinion | Inside Ukraine\u2019s Drone Mission Control Room",
+   "source": "WSJ",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Yields Subside, Stocks Breathe Easier",
+   "source": "WSJ",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "The Peptide Boom That Isn\u2019t About Your Muscles",
+   "source": "WSJ",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Oil Prices Fall as U.S.-Iran Diplomacy, Regional Tensions Remain in Focus",
+   "source": "WSJ",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "The S&P 500\u2019s Best Dividend Stocks Share One Powerful Advantage",
+   "source": "24/7 Wall St.",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "How Pumping 14,443 Pounds of Iron Turned the Florida Gators Into Wrecking Balls",
+   "source": "WSJ",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+   "source": "U.S. Energy Information Administration (EIA) (.gov)",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Amendment 82: Constitutional Right to Purchase and Sell Natural Gas",
+   "source": "Colorado Public Radio",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "WTI Crude Oil futures fell below $93 as peace talks advanced.",
+   "source": "CME Group",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Saudi Arabia crude oil exports hit highest level since Iran war began despite pipeline outage",
+   "source": "CNBC",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Oil prices jump after Yemen\u2019s Houthis claim attacks on Saudi facilities",
+   "source": "Al Jazeera",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Why Record Heat Failed to Lift U.S. Natural Gas Prices",
+   "source": "Crude Oil Prices Today | OilPrice.com",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Maine posts record-breaking heating oil prices amid Iran War",
+   "source": "Maine Public",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Oil prices slide about 2% as US, Iran explore path out of war",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Investors Heavily Search Newmont Corporation (NEM): Here is What You Need to Know",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Grafton Expands in Chile with Newmont Gold Deal",
+   "source": "Investing News Network",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Gold Price Forecast: XAU/USD Avoids Breakdown as Yields Surged but Can it Continue?",
+   "source": "StoneX",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Wall Street split on gold price path after drop below $4,300, Main Street maintains bullish majority as jobs take center stage",
+   "source": "Kitco",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Gold Price Today on September 25, 2026",
+   "source": "USA Today",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Material World: Central-bank gold buying strengthens case for re-rating of mining equities",
+   "source": "AdviserVoice",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Gold price hits low of $4,254/oz after final Consumer Sentiment rises to 48.1, inflation expectations spike",
+   "source": "Kitco",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Gold price today, Friday, September 25, 2026: Gold prices hold as investors have a lot to consider",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Thieves Stole \u2018Nvidia\u2019 Trailers. They Got 20 Tons of Sand",
+   "source": "WIRED",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Huang\u2019s 2x Chip Vow Could Buy 37% of 2027 HBM Supply [2026]",
+   "source": "shattered.io",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Efficient MoE Training for Biological Foundation Models | NVIDIA Technical Blog",
+   "source": "NVIDIA Developer",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "With AMD Ryzen AI Max Series Processors, Perplexity Brings Portable Computer to Agentic PCs",
+   "source": "AMD",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Why Oracle's force majeure notice is freaking out AI bulls",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Micron and SanDisk Stocks Continue to Decline",
+   "source": "Intellectia AI",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Contain the Chaos: \u2018CONTROL Resonant\u2019 Launches on GeForce NOW",
+   "source": "NVIDIA Blog",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "How Open Science Can Help Researchers Prepare for the Next Pandemic",
+   "source": "NVIDIA Blog",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Biosimilars Action Plan",
+   "source": "U.S. Food and Drug Administration (.gov)",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "FDA Approves WELIREG Plus LENVIMA for Advanced ccRCC",
+   "source": "Eisai",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Consumer Window to Submit Claims for Inflated Generic Drug Prices Is Open",
+   "source": "Ohio Attorney General (.gov)",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Office of Global Policy and Strategy Leadership",
+   "source": "U.S. Food and Drug Administration (.gov)",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "FDA approves Lilly's Olumiant (baricitinib) for pediatric patients 12 years of age and older with severe alopecia areata",
+   "source": "Eli Lilly",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Want to Lower Drug Prices? Reform the U.S. Patent System",
+   "source": "Kaiser Permanente",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Public Notification: Vital Honey contains hidden drug ingredient",
+   "source": "U.S. Food and Drug Administration (.gov)",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "How TrumpRx brand-name drug prices compare to other countries",
+   "source": "Peterson-KFF Health System Tracker",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Westlake vs. Copper Hills - Football Game",
+   "source": "Deseret News",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Chinese, US firms line up for Peru copper projects as government cuts red tape",
+   "source": "Reuters",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Agreement clears way for resumption of Niger uranium project",
+   "source": "World Nuclear News",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Can Freeport-McMoRan's Growth Projects Drive the Next Expansion Wave?",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-25 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Here's Why Cameco (CCJ) Fell More Than Broader Market",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Freeport shifts focus to bring more housing to downtown area",
+   "source": "WMTW",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "Copper wire thefts surge in Yolo County, hitting agriculture hard",
+   "source": "KCRA",
+   "published_utc": "2026-09-24 07:00"
+  },
+  {
+   "theme": "copper_uranium",
+   "title": "BHP halts giant Chile copper mine after worker death",
+   "source": "AFR",
+   "published_utc": "2026-09-24 07:00"
+  }
+ ]
+}

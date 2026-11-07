@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-09-25-a (decision day 2026-09-25, data cutoff 2026-09-25)
+What changed: WTI fell to 94.6 (from 101.9) on US-Iran peace-talk headlines while XOM stayed flat; the 10-year yield rose to a high of 5.16 and gold slid to about 4,298 (-7.6% in 20 days). Chips rose 7% in 5 days (AMD at a high); VIX is 15.7.
+Holdings and reasons:
+- oil_gas: flat | WTI is falling on peace talks, XOM has not followed, and there is no dated catalyst.
+- gold_miners: flat | Yields at a high and a firm dollar weigh on gold; no concrete reason for a long.
+- chips: flat | Strong 5-day rally already priced in; headlines are generic.
+- pharma: flat | LLY approval is minor and pricing policy is an overhang; no edge.
+- copper_uranium: flat | BHP Chile halt is a modest headline; FCX weak over 20 days and uranium falling; no edge.
+Open storylines:
+- [open] Oil, Iran war and peace talks: WTI 94.6 and below 93 on peace-talk headlines; Houthi attack claims on Saudi facilities; watch whether XOM follows and the heating oil price.
+- [escalating] Yields, inflation and Fed: 10-year at a high of 5.16, gold weak, inflation expectations spiking; watch the jobs report and Warsh commentary.
+- [open] NVDA and AI chain: Chips +7% in 5 days; Oracle force majeure and memory stock weakness are worries; watch rates and AI sentiment.
+- [open] Health care and drug pricing: LLY +2.7% on minor FDA approval; TrumpRx and pricing policy overhang; watch GLP-1 news.
+- [open] Copper supply and uranium weakness: BHP halted a Chile copper mine after a worker death; uranium ETF -15% in 20 days; watch copper price and China data.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check whether WTI holds near or below 94 and XOM follows, the 10-year yield (5.16 now), VIX (15.7 now), gold (4,298) and the jobs report timing. Stay flat unless a named reason appears.

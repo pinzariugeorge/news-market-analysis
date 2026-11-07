@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-09-11-a (decision day 2026-09-11, data cutoff 2026-09-11)
+What changed: WTI jumped 6.7% in a day to 102.5 (Brent 107.6) after Saudi East-West pipeline attacks, while XOM barely moved. The 10-year yield reached 4.94 on sticky August CPI with a Fed hike vote next week, and VIX rose to 17.8. Copper fell 5% in a day (FCX -6.6%) and NVDA slipped 2.4%.
+Holdings and reasons:
+- oil_gas: flat | The oil spike is in the driver and XOM has not followed; no dated XOM catalyst.
+- gold_miners: flat | Yields at a high and Fed-hike odds rising; no concrete reason for a long.
+- chips: flat | Headlines are known or noisy and there is no dated NVDA catalyst.
+- pharma: flat | No LLY-specific news; generic FDA and Medicare headlines only.
+- copper_uranium: flat | The one-day drop has no clear cause; no rebound guess in a stress regime.
+Open storylines:
+- [escalating] Oil spike and Middle East supply: WTI 102.5 (+23% in 20 days); Saudi East-West pipeline shut after drone attacks; US diesel at a record; watch whether XOM catches up and Iran news.
+- [escalating] Yields, inflation and Fed hike: 10-year 4.94 at a high; August CPI sticky; Fed vote next week with a hike on the table; gold near a one-month low and miners exposed.
+- [open] NVDA and AI chain news: NVDA -2.4% on the day; TSMC record sales, Anthropic IPO backing report; watch rate reaction and AMD/NVDA margin debate.
+- [fading] Health care and FDA: LLY -8% in 20 days, sector -4% in 5 days; watch drug-pricing policy and GLP-1 news.
+- [open] Copper drop and tariffs: Copper -5% in a day, FCX -6.6%; Trefis cites tariff doubts; watch tariffs and China data.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check the Fed vote outcome and yield level, whether WTI held above 100 and whether XOM followed, and the jobs report timing. Stay flat unless a named reason appears.

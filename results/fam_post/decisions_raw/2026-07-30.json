@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-07-30",
+  "market_view": "Stress regime: VIX jumped 13% to 20.7 after a divided Fed held rates despite high inflation and Wall Street fell sharply. Semiconductors fell hard (ETF -14% in 5 days) and oil spiked again; 10-year yield stays near 4.6%.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "WTI +6.6% in one day is already priced in; XOM is +14.7% in 20 days. Headlines give no new concrete catalyst, and a deal or an escalation could swing it either way. No edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "reasoning": "Gold is 24% below its peak and under its 200-day average, yields are high and the Fed is on hold. No catalyst for NEM beyond the already known Q2 beat; the trend flag is not a reason."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "Sector ETF -14% in 5 days and a stress regime means large moves both ways. A headline mentions a chip rebound but it is unclear when; NVDA earnings call is scheduled but the date is unknown. Do not guess a rebound."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "reasoning": "LLY is up 25% in 60 days and near its high; defensive but no named catalyst, only earnings variance. Retatrutide news is already public."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "reasoning": "FCX fell 7.7% in 5 days with no FCX-specific cause; copper is mixed and uranium headlines (Congo exports, BLM land exchange comment) do not reach the stock. No concrete reason."}
+  },
+  "would_change_my_mind": "A concrete scheduled catalyst with a clear skew (for example an NVDA or FCX earnings result already out, an Iran deal or Hormuz news, or a soft jobs report moving yields) after the VIX calms.",
+  "handoff": {
+    "run_id": "fam-2026-07-30-a",
+    "written_at": "2026-07-30T09:00:00Z",
+    "decision_day": "2026-07-30",
+    "data_cutoff": "2026-07-30",
+    "what_changed": "A divided Fed held rates despite high inflation and stocks fell sharply; VIX rose to 20.7. The semiconductor ETF fell 14% in 5 days, WTI jumped 6.6% in one day to 84.5, and uranium and copper miners fell. All families stay flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "The WTI one-day spike is priced in and XOM is up 14.7% in 20 days; no durable edge."},
+      "gold_miners": {"position": "flat", "why": "Gold is 24% below its peak with high yields and no NEM-specific catalyst."},
+      "chips": {"position": "flat", "why": "Stress regime after a 14% weekly drop in the sector; do not guess a rebound, no NVDA result yet."},
+      "pharma": {"position": "flat", "why": "LLY is near its high after +25% in 60 days with no new named catalyst."},
+      "copper_uranium": {"position": "flat", "why": "FCX fell with no stock-specific cause; the uranium and Congo headlines do not reach FCX."}
+    },
+    "open_storylines": [
+      {"name": "US-Iran war and oil", "status": "escalating", "note": "WTI 84.5 and Brent 90.7 after a +6.6% day; watch XOM Q2 earnings, Hormuz or Red Sea news and any deal.", "first_seen": "2026-07-23"},
+      {"name": "Fed on hold and yields", "status": "escalating", "note": "Divided Fed held rates despite high inflation; 10-year at 4.62%; gold -24% from peak. Watch the jobs report.", "first_seen": "2026-07-23"},
+      {"name": "Chip selloff and earnings", "status": "escalating", "note": "Sector ETF -14% in 5 days, -23% in 20 days, VIX 20.7; a headline suggests a bounce in AMD, MU and LRCX. Watch the NVDA Q2 call date and capex guidance.", "first_seen": "2026-07-23"},
+      {"name": "Lilly obesity pipeline", "status": "open", "note": "LLY +25% in 60 days after positive retatrutide Phase 3 results; watch Q2 earnings reaction.", "first_seen": "2026-07-23"},
+      {"name": "New US tariffs", "status": "open", "note": "Global tariffs face pushback from trade partners; watch the effect on copper and the dollar.", "first_seen": "2026-07-23"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read the handoff, re-check the five families after the VIX spike, and look for concrete catalysts (NVDA, XOM, LLY and FCX earnings, the jobs report, Iran news). Stay flat unless a named reason appears."
+  }
+}

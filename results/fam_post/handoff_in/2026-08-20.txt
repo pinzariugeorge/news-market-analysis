@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fam-2026-08-13-a (decision day 2026-08-13, data cutoff 2026-08-13)
+What changed: Rebounds held: gold +10% in 20 days, NEM +24%, copper near its record, VIX 14.55. WTI rebounded 10.7% in 5 days as attacks dented Hormuz reopening hopes. July CPI in line at 3.4% and yields eased on soft wholesale inflation.
+Holdings and reasons:
+- oil_gas: flat | WTI +10.7% in 5 days on a Hormuz relapse is priced in and XOM has no dated catalyst.
+- gold_miners: flat | Gold +10% and NEM +24% in 20 days are priced in, with no named cause.
+- chips: flat | No dated NVDA catalyst; sector is flat over 20 days and the one-day bounce is priced in.
+- pharma: flat | LLY is near its high after the Q2 beat and no drug-specific news appears.
+- copper_uranium: flat | FCX +13.5% in 20 days and copper near record are priced in; no dated catalyst.
+Open storylines:
+- [open] US-Iran war and oil: WTI 83.3, +10.7% in 5 days after attacks dented Hormuz reopening hopes; watch for a deal or escalation and XOM earnings.
+- [open] Fed and inflation: July CPI 3.4% as expected, yields easing on soft wholesale inflation, gold 16% below peak; Fed hike odds debated; watch the jobs report on the first Friday.
+- [fading] Chip selloff and rebound: VIX 14.55, sector flat over 20 days; watch the NVDA Q2 date and capex guidance.
+- [fading] Lilly obesity pipeline: LLY 1.2% below its high after the Q2 beat; watch for follow-through or drug-pricing policy.
+- [open] Copper record and tariffs: Copper 1.6% below its high, FCX +13.5% in 20 days; Congo supply commentary; watch FCX earnings.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read the handoff, check whether the gold, copper and oil moves held, and look for a dated catalyst (NVDA, FCX or XOM earnings, jobs report, Iran or Hormuz news). Stay flat unless a named reason appears.
