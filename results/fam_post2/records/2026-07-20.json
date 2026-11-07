@@ -1,0 +1,550 @@
+{
+ "decision_day": "2026-07-20",
+ "weekday": "Monday",
+ "information_cutoff": "closes dated before 2026-07-20; headlines published before 2026-07-20 12:00 GMT",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-07-17",
+   "last": 18.77,
+   "ret_1d_pct": 12.19,
+   "ret_5d_pct": 24.88,
+   "ret_20d_pct": 1.79,
+   "ret_60d_pct": -0.79,
+   "vol_20d_daily_pct": 6.93,
+   "above_200d_avg": true,
+   "from_252d_high_pct": -39.5
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-07-17",
+     "last": 82.49,
+     "ret_1d_pct": 4.48,
+     "ret_5d_pct": 15.52,
+     "ret_20d_pct": 7.42,
+     "ret_60d_pct": -10.46,
+     "vol_20d_daily_pct": 3.12,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -27.0
+    },
+    "Brent crude oil": {
+     "last_date": "2026-07-17",
+     "last": 88.1,
+     "ret_1d_pct": 4.59,
+     "ret_5d_pct": 15.91,
+     "ret_20d_pct": 10.75,
+     "ret_60d_pct": -10.54,
+     "vol_20d_daily_pct": 3.22,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -25.6
+    },
+    "Natural gas": {
+     "last_date": "2026-07-17",
+     "last": 2.911,
+     "ret_1d_pct": 1.85,
+     "ret_5d_pct": -0.99,
+     "ret_20d_pct": -7.44,
+     "ret_60d_pct": 7.93,
+     "vol_20d_daily_pct": 2.48,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -61.0
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-07-17",
+     "last": 147.36,
+     "ret_1d_pct": 0.97,
+     "ret_5d_pct": 6.11,
+     "ret_20d_pct": 4.7,
+     "ret_60d_pct": -0.67,
+     "vol_20d_daily_pct": 1.61,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.1,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-07-17",
+     "last": 187.38,
+     "ret_1d_pct": 1.91,
+     "ret_5d_pct": 6.22,
+     "ret_20d_pct": 5.52,
+     "ret_60d_pct": 0.75,
+     "vol_20d_daily_pct": 1.65,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.3,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-07-17",
+     "last": 114.71,
+     "ret_1d_pct": 1.66,
+     "ret_5d_pct": 5.2,
+     "ret_20d_pct": 3.15,
+     "ret_60d_pct": -4.62,
+     "vol_20d_daily_pct": 1.97,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.3,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-07-17",
+     "last": 54.86,
+     "ret_1d_pct": 2.26,
+     "ret_5d_pct": 3.72,
+     "ret_20d_pct": 3.43,
+     "ret_60d_pct": -2.61,
+     "vol_20d_daily_pct": 2.25,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.2,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-07-17",
+     "last": 4018.8,
+     "ret_1d_pct": 0.67,
+     "ret_5d_pct": -2.31,
+     "ret_20d_pct": -8.28,
+     "ret_60d_pct": -14.85,
+     "vol_20d_daily_pct": 1.51,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -24.4
+    },
+    "Silver": {
+     "last_date": "2026-07-17",
+     "last": 56.038,
+     "ret_1d_pct": 0.25,
+     "ret_5d_pct": -6.31,
+     "ret_20d_pct": -20.73,
+     "ret_60d_pct": -26.66,
+     "vol_20d_daily_pct": 2.92,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -51.3
+    },
+    "US 10-year yield": {
+     "last_date": "2026-07-17",
+     "last": 4.541,
+     "ret_1d_pct": -0.61,
+     "ret_5d_pct": -0.61,
+     "ret_20d_pct": 1.75,
+     "ret_60d_pct": 5.8,
+     "vol_20d_daily_pct": 0.84,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.7
+    },
+    "US dollar index": {
+     "last_date": "2026-07-17",
+     "last": 100.75,
+     "ret_1d_pct": 0.02,
+     "ret_5d_pct": -0.22,
+     "ret_20d_pct": 0.66,
+     "ret_60d_pct": 2.38,
+     "vol_20d_daily_pct": 0.29,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.8
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-07-17",
+     "last": 108.27,
+     "ret_1d_pct": 0.28,
+     "ret_5d_pct": 0.13,
+     "ret_20d_pct": -0.7,
+     "ret_60d_pct": -2.65,
+     "vol_20d_daily_pct": 0.34,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -3.5
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-07-17",
+     "last": 89.7,
+     "ret_1d_pct": -1.24,
+     "ret_5d_pct": -5.87,
+     "ret_20d_pct": -15.11,
+     "ret_60d_pct": -17.93,
+     "vol_20d_daily_pct": 2.21,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -32.0,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-07-17",
+     "last": 136.97,
+     "ret_1d_pct": -0.23,
+     "ret_5d_pct": -6.74,
+     "ret_20d_pct": -20.82,
+     "ret_60d_pct": -32.56,
+     "vol_20d_daily_pct": 2.04,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -45.7,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-07-17",
+     "last": 22.57,
+     "ret_1d_pct": -1.53,
+     "ret_5d_pct": -6.5,
+     "ret_20d_pct": -17.27,
+     "ret_60d_pct": -29.6,
+     "vol_20d_daily_pct": 2.73,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -40.7,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-07-17",
+     "last": 104.18,
+     "ret_1d_pct": -0.07,
+     "ret_5d_pct": -5.33,
+     "ret_20d_pct": -17.22,
+     "ret_60d_pct": -26.54,
+     "vol_20d_daily_pct": 2.15,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -37.1,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-07-17",
+     "last": 556.53,
+     "ret_1d_pct": -2.18,
+     "ret_5d_pct": -8.92,
+     "ret_20d_pct": -10.81,
+     "ret_60d_pct": 19.77,
+     "vol_20d_daily_pct": 3.55,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.8
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-07-17",
+     "last": 202.81,
+     "ret_1d_pct": -2.21,
+     "ret_5d_pct": -3.86,
+     "ret_20d_pct": -0.9,
+     "ret_60d_pct": 1.47,
+     "vol_20d_daily_pct": 2.39,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.0,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-07-17",
+     "last": 370.83,
+     "ret_1d_pct": -0.97,
+     "ret_5d_pct": -7.29,
+     "ret_20d_pct": -5.62,
+     "ret_60d_pct": -7.79,
+     "vol_20d_daily_pct": 2.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -23.0,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-07-17",
+     "last": 495.76,
+     "ret_1d_pct": -1.03,
+     "ret_5d_pct": -11.14,
+     "ret_20d_pct": -3.26,
+     "ret_60d_pct": 74.26,
+     "vol_20d_daily_pct": 4.46,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.7,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-07-17",
+     "last": 398.37,
+     "ret_1d_pct": -2.77,
+     "ret_5d_pct": -8.23,
+     "ret_20d_pct": -7.82,
+     "ret_60d_pct": 8.23,
+     "vol_20d_daily_pct": 3.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.6,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-07-17",
+     "last": 161.09,
+     "ret_1d_pct": -0.44,
+     "ret_5d_pct": 0.16,
+     "ret_20d_pct": 6.89,
+     "ret_60d_pct": 10.4,
+     "vol_20d_daily_pct": 1.35,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.0
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-07-17",
+     "last": 1179.11,
+     "ret_1d_pct": 0.85,
+     "ret_5d_pct": -0.8,
+     "ret_20d_pct": 6.04,
+     "ret_60d_pct": 30.57,
+     "vol_20d_daily_pct": 2.15,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.6,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-07-17",
+     "last": 253.04,
+     "ret_1d_pct": 1.23,
+     "ret_5d_pct": -1.53,
+     "ret_20d_pct": 8.04,
+     "ret_60d_pct": 11.89,
+     "vol_20d_daily_pct": 2.03,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.3,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-07-17",
+     "last": 254.49,
+     "ret_1d_pct": 0.04,
+     "ret_5d_pct": 2.58,
+     "ret_20d_pct": 15.03,
+     "ret_60d_pct": 24.07,
+     "vol_20d_daily_pct": 2.37,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.5,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-07-17",
+     "last": 127.5,
+     "ret_1d_pct": -0.1,
+     "ret_5d_pct": 3.21,
+     "ret_20d_pct": 10.45,
+     "ret_60d_pct": 13.27,
+     "vol_20d_daily_pct": 2.12,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-07-17",
+     "last": 6.22,
+     "ret_1d_pct": -1.21,
+     "ret_5d_pct": -0.22,
+     "ret_20d_pct": -4.03,
+     "ret_60d_pct": 3.64,
+     "vol_20d_daily_pct": 1.58,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.5
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-07-17",
+     "last": 25.65,
+     "ret_1d_pct": -1.35,
+     "ret_5d_pct": -5.28,
+     "ret_20d_pct": -4.11,
+     "ret_60d_pct": -10.44,
+     "vol_20d_daily_pct": 1.78,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -20.9
+    },
+    "Uranium ETF": {
+     "last_date": "2026-07-17",
+     "last": 38.73,
+     "ret_1d_pct": -0.97,
+     "ret_5d_pct": -9.87,
+     "ret_20d_pct": -17.77,
+     "ret_60d_pct": -27.93,
+     "vol_20d_daily_pct": 2.12,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -37.3
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-07-17",
+     "last": 58.38,
+     "ret_1d_pct": -0.31,
+     "ret_5d_pct": -5.1,
+     "ret_20d_pct": -15.46,
+     "ret_60d_pct": -13.6,
+     "vol_20d_daily_pct": 2.82,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -18.6,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-07-17",
+     "last": 85.62,
+     "ret_1d_pct": -1.99,
+     "ret_5d_pct": -10.8,
+     "ret_20d_pct": -18.97,
+     "ret_60d_pct": -26.58,
+     "vol_20d_daily_pct": 2.11,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -36.1,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-07-17",
+     "last": 55.05,
+     "ret_1d_pct": -1.33,
+     "ret_5d_pct": -7.97,
+     "ret_20d_pct": -16.29,
+     "ret_60d_pct": -2.93,
+     "vol_20d_daily_pct": 2.93,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -22.0,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-07-17",
+     "last": 168.747,
+     "ret_1d_pct": -1.81,
+     "ret_5d_pct": -1.91,
+     "ret_20d_pct": -10.02,
+     "ret_60d_pct": -5.08,
+     "vol_20d_daily_pct": 2.7,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -20.4,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "July",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "theme": "market",
+   "title": "Trump imposes 50% tariffs on Canadian goods, citing disputes over autos, alcohol and cheese",
+   "source": "AP News",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "The bar for Tesla earnings is sky-high. Here's why and how options traders can capitalize",
+   "source": "CNBC",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Genesis Minerals (ASX:GMD) Drops as Investors Reassess Gold Stocks",
+   "source": "Kalkine",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Stocks to Watch Today: HDFC Bank, ICICI Bank, Reliance in Focus",
+   "source": "Univest",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "market",
+   "title": "Nuveen Core Plus Impact Fund (NPCT) Holds Steady Near Support Amid Modest Decline - AI Trade Signals",
+   "source": "https://www.dars.gov.et/",
+   "published_utc": "2026-07-19 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Argentina's assistant coach also lashes out at Spain after the loss in the final",
+   "source": "blue News",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "oil_gas",
+   "title": "Oil prices rise after Trump says Iran will pay for killing U.S. service members",
+   "source": "CNBC",
+   "published_utc": "2026-07-19 07:00"
+  },
+  {
+   "theme": "gold_miners",
+   "title": "Seeking Clues to Newmont (NEM) Q2 Earnings? A Peek Into Wall Street Projections for Key Metrics",
+   "source": "Yahoo Finance",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "NVIDIA NVLink: The Scale-Up Network for AI Factories | NVIDIA Technical Blog",
+   "source": "NVIDIA Developer",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "AMD launches Helios, its first rack AI system to rival Nvidia, adding Microsoft as newest buyer",
+   "source": "CNBC",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
+   "source": "NVIDIA Blog",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "NVIDIA Agent Toolkit Expands With New Omniverse Libraries, Putting AI Agents to Work Building Simulation-Ready Worlds",
+   "source": "NVIDIA Newsroom",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC\u2026",
+   "source": "AMD",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "chips",
+   "title": "Bristol Myers Squibb Building Life Science Industry\u2019s Most Advanced AI Factory on NVIDIA Vera Rubin",
+   "source": "NVIDIA Blog",
+   "published_utc": "2026-07-20 07:00"
+  },
+  {
+   "theme": "pharma",
+   "title": "Retatrutide Dosing: What We Know So Far",
+   "source": "Ro",
+   "published_utc": "2026-07-19 07:00"
+  }
+ ]
+}

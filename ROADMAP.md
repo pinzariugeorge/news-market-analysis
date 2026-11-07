@@ -100,6 +100,7 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 | `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
 | `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
 | `agent/DECISION_LOG.md` | Decision log columns, baselines, metrics, run phases, weekly review |
+| `results/FAMILY_POST2.md`, `results/fam_post2/`, `agent/FAMILY_AGENT_PROMPT_CATALYST.md` | Lowered-bar (0.52 + named catalyst) chained agent run on 22 post-cutoff days: 19 longs, mostly XOM on the Iran oil story, no evidence of added value; also records the fixed portfolio bug in `src/score_family_run.py` |
 | `results/FAMILY_POST.md`, `results/fam_post/` | Chained agent run on 14 post-cutoff days (Jul-Oct 2026) with news headlines and handoff notes: 70 flat calls; handoff rule worked; `src/download_news.py` adds the headlines |
 | `results/INSIDER_TEST.md`, `src/run_insider_test.py` | Insider (SEC Form 4) purchase test on our large-cap universe, 2014-2024: no edge |
 | `src/download_insider.py` | SEC insider-transaction bulk download (open-market purchases for our tickers, 2014q1-2024q4) into git-ignored `data/raw/insider/`; the user runs it with `SEC_USER_AGENT` set to their name and email (SEC blocks anonymous requests) |

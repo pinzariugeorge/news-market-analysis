@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260728-a (decision day 2026-07-28, data cutoff 2026-07-28)
+What changed: US-Iran tensions eased and WTI fell 7.5% (Brent 88), so the XOM long is closed at its horizon end. Chips were clobbered (NVDA -5%, SK Hynix -10%). Cameco received a UBS upgrade; generic drug tariffs are planned from 2028.
+Holdings and reasons:
+- oil_gas: flat | XOM horizon ended about 2026-07-27 and crude slid on Iran de-escalation, so exit and no new catalyst.
+- gold_miners: flat | Gold bearish below its 200-day average with high yields and no NEM catalyst.
+- chips: flat | NVDA fell in a sector rout with no NVDA-specific catalyst.
+- pharma: flat | No unpriced LLY catalyst; tariff news is distant and not LLY-specific.
+- copper_uranium: flat | No FCX catalyst; the Cameco upgrade is for a non-leader.
+Open storylines:
+- [fading] Iran oil shock: US-Iran tensions easing and crude down 8%; a renewed escalation would reopen the oil long case.
+- [open] Exxon Q2 earnings: Check the report date and guidance; XOM is flat now.
+- [open] Chip rout: Seoul-led semiconductor selloff (SK Hynix -10%, AMD, Intel, Micron down); watch NVDA for a named catalyst only.
+- [open] Yields and tariffs: 10-year near its high at 4.64; sweeping global tariffs draw criticism; generic drug tariffs planned from 2028.
+- [open] Cameco UBS upgrade: Relevant only if CCJ becomes the copper_uranium leader.
+- [fading] Lilly retatrutide Phase 3: Mostly priced; relevant only if a new unpriced catalyst appears.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; stay flat in all families unless a named unpriced catalyst for a leader appears; check Exxon earnings and any Iran re-escalation.

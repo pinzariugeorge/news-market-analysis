@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260715-a (decision day 2026-07-15, data cutoff 2026-07-15)
+What changed: Escalation: Reuters reports oil at a one-month high as US-Iran attacks deepen supply disruption; WTI up 12.6% in 5 days while XOM lagged. Soft US inflation print and Fed chair Warsh hawkish tone. Cameco reportedly resolved the Cigar Lake disruption (CCJ is not the leader).
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | Iran supply disruption is deepening and XOM has lagged crude; no de-escalation yet.
+- gold_miners: flat | Gold bear market, firm dollar and yields; only opinion pieces on NEM.
+- chips: flat | Only routine NVIDIA product news and a big recent rally; no named catalyst.
+- pharma: flat | No LLY-specific headline.
+- copper_uranium: flat | FCX has no catalyst; the Cigar Lake news concerns CCJ only.
+Open storylines:
+- [escalating] Iran oil shock: US-Iran attacks deepen supply disruption, Brent 84.7 and WTI 79.3, one-month high; watch for de-escalation and a crude reversal.
+- [open] Exxon Q2 earnings: Windfall signalled; watch report date and guidance.
+- [fading] Cameco Cigar Lake suspension: Yahoo Finance says Cameco resolved the disruption; relevant only if CCJ becomes leader.
+- [open] Newmont Q2 earnings: Watch call date, production and cost guidance.
+- [open] Gold bear market: Gold 23.5% below its high; watch rates and dollar.
+- [open] Fed inflation: Soft inflation print but Warsh says no tolerance for high inflation; jobs report due in window.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; exit XOM at 10 days (about 2026-07-21) or earlier on Hormuz de-escalation news or a crude slide; stay flat elsewhere unless a named catalyst for a leader appears.

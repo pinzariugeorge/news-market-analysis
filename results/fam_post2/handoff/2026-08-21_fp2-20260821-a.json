@@ -1,0 +1,69 @@
+{
+ "run_id": "fp2-20260821-a",
+ "written_at": "2026-08-21T12:00:00Z",
+ "decision_day": "2026-08-21",
+ "data_cutoff": "2026-08-21",
+ "what_changed": "Oil rebounded (WTI 87.83, +8.1% in 5 days) after Trump threatened sanctions on Iran partners, so the XOM long continues. LLY exited as planned. Yields still rising (10-year 4.70%); NEM surged again but remains flat for us.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-10, 10 days",
+   "why": "Iran sanctions threat and Hormuz risk keep crude firm and XOM lags crude; exit on a deal."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM up 35% in 20 days is priced and yields are rising."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No named catalyst; headlines are opinion pieces."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY guidance catalyst has run its hold; exited around 2026-08-21 with no new catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific catalyst; Congo ban unconfirmed."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil shock and Hormuz",
+   "status": "escalating",
+   "note": "Trump threatens sanctions on Iran partners; WTI 87.83. A deal would reverse it. XOM long since 2026-08-10.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Lilly Q2 guidance raise",
+   "status": "closed",
+   "note": "LLY exited at the planned hold; re-enter only on a new named catalyst.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Congo copper and cobalt export ban",
+   "status": "fading",
+   "note": "Re-enter FCX only if the ban is confirmed and copper rallies.",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "name": "Barrick-Newmont settlement and gold rally",
+   "status": "fading",
+   "note": "NEM up 35% in 20 days, priced; watch only for follow-through.",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "name": "Chip volatility",
+   "status": "open",
+   "note": "SOX ETF down 4.5% in 5 days; look for an NVDA-specific catalyst only.",
+   "first_seen": "2026-08-18"
+  },
+  {
+   "name": "Yields and inflation",
+   "status": "open",
+   "note": "10-year 4.70%, 30-year near 19-year highs; headwind for gold miners; watch the first-Friday jobs report.",
+   "first_seen": "2026-08-18"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; check XOM against Iran and Hormuz news (exit on a deal or when the 10-day hold ends without a live catalyst); stay flat on gold miners, chips, pharma and copper_uranium unless a named unpriced catalyst appears."
+}

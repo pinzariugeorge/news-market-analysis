@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp2-20260925-a (decision day 2026-09-25, data cutoff 2026-09-25)
+What changed: Oil keeps sliding on U.S.-Iran peace talks (WTI below 93 per CME), though Houthi attack claims on Saudi facilities add noise. The 10-year yield hit about 5.16% and gold slipped under 4,300. BHP halted a large Chile copper mine after a worker death, a possible short supply blip for copper.
+Holdings and reasons:
+- oil_gas: flat | Diplomacy is pushing crude lower and there is no clear new supply shock.
+- gold_miners: flat | Gold is below its 200-day average with yields at a high and no unpriced catalyst.
+- chips: flat | The rebound is priced and there is no named NVDA catalyst.
+- pharma: flat | The Olumiant pediatric approval is immaterial for LLY.
+- copper_uranium: flat | The BHP mine halt is probably brief and nothing is FCX-specific.
+Open storylines:
+- [fading] Iran war, Saudi and oil: WTI below 93 on peace talks; re-enter oil only on talks collapsing or a new supply shock (Houthi attacks on Saudi facilities are worth watching).
+- [open] Fed hike and yields: 10-year at about 5.16%, a high; watch the first-Friday jobs report and gold against its 200-day average.
+- [open] Chip rebound and AI: Semis ETF up 7% in 5 days; Oracle force majeure notice is an AI-demand worry; long only on a named NVDA catalyst.
+- [open] Copper supply and BHP Chile halt: BHP halted a giant Chile mine after a worker death (AFR, 09-24); check whether the halt lasts weeks and whether FCX gets a specific catalyst.
+- [open] Uranium: Cameco and GLE: Uranium ETF down 15% in 20 days; a Niger uranium project is resuming; relevant to CCJ, not the FCX leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; all five families are flat, so stay flat unless a named, unpriced catalyst appears (oil: failed talks or a supply shock; copper: a long BHP outage or FCX-specific news; chips: an NVDA-specific event); watch yields, the Fed and the jobs report.

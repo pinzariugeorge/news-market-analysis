@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-09-14",
+  "market_view": "Risk-on/off mixed: VIX 15.8 after a -11% day, but the 10-year yield is about 5% (WSJ: 'Wall Street Confronts Prospect of a New Era After Treasury Yield Hits 5%') and AI stocks are under pressure. Oil is the dominant macro story with WTI at 100.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.55, "catalyst": "CNBC: 'U.S. oil tops $105 as Saudi Arabia reportedly cancels some crude cargoes after pipeline closure'; Yahoo Finance: 'Oil prices soar over 4% to 16-week high after Saudi strikes'. A new supply shock on top of the Iran war, not yet fully in XOM, which has lagged crude.", "reasoning": "Escalation, not de-escalation: the prior condition to extend (WTI above 83, no de-escalation) holds and a fresh Saudi supply shock was added. XOM is up only 2.3% over 5 days versus WTI +9.6%. Extend the hold 10 more days; exit on credible de-escalation."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold is below its 200-day average, the 10-year yield is near 5% and rising. NEM headlines (Nevada JV expansion, Argentina project risk) are not one-sided catalysts. NEM is already up 11% in 20 days."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "Yahoo Finance 'AI Warning Sends Nvidia, AMD, Micron and Intel Shares Tumbling' and the Groq probe are negative; Huang/Trump reassurance headlines are soft. No unpriced positive catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "No LLY-specific headline; FDA approvals listed concern other companies. LLY is down 7.7% in 20 days but oversold is not a catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "No FCX-specific catalyst; the IEA copper supply-gap and BHP Alaska items are long-term and generic. Copper is flat to lower and the uranium ETF is weak."}
+  },
+  "would_change_my_mind": "Credible Iran/Saudi de-escalation or WTI falling back toward 85 would end the XOM long; a named company-specific positive for another leader would add a long.",
+  "handoff": {
+    "run_id": "fp2-20260914-a",
+    "written_at": "2026-09-14T12:00:00Z",
+    "decision_day": "2026-09-14",
+    "data_cutoff": "2026-09-14",
+    "what_changed": "WTI closed at 100.05 on 09-11 and headlines report US oil above $105 after Saudi strikes and a pipeline closure. The 10-year yield is near 5% and AI stocks fell on an industry warning to slow development. XOM horizon extended on the new Saudi supply shock.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-31, extended 10 days from 2026-09-14", "why": "Fresh Saudi supply shock with WTI above 100 and XOM lagging crude; no de-escalation."},
+      "gold_miners": {"position": "flat", "why": "Gold is below its 200-day average with the 10-year yield near 5% and no named catalyst."},
+      "chips": {"position": "flat", "why": "AI-slowdown warning hit chip shares and no unpriced positive catalyst exists."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst in the headlines."},
+      "copper_uranium": {"position": "flat", "why": "No FCX-specific catalyst; copper and uranium drivers are soft."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Saudi strikes and oil", "status": "escalating", "note": "WTI 100, headlines above 105 after Saudi pipeline closure; exit XOM about 2026-09-28 or on credible de-escalation or WTI back below about 90.", "first_seen": "2026-09-09"},
+      {"name": "Chevron and Exxon expansion", "status": "open", "note": "Chevron LNG expansion and Venezuela plans; Exxon Joliet refinery shut after power outage (minor); look for concrete deal terms.", "first_seen": "2026-09-09"},
+      {"name": "AI slowdown warning and NVIDIA probe", "status": "open", "note": "Industry chiefs call for slowing AI development, chip shares tumbled; Groq probe pending; long only on a clear unpriced catalyst.", "first_seen": "2026-09-09"},
+      {"name": "Yields at 5%, Fed and gold", "status": "escalating", "note": "10-year at 4.975%, WSJ new-era headline; gold 4,409 below its 200-day average; watch the first-Friday jobs report.", "first_seen": "2026-09-09"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; XOM is extended to about 2026-09-28, hold only while WTI stays well above 83 with no de-escalation, exit on credible de-escalation; stay flat on other families unless a named, unpriced catalyst appears; watch yields and the jobs report."
+  }
+}

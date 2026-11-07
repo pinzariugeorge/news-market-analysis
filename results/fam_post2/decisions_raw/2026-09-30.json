@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-09-30",
+  "market_view": "Calm VIX (16) but bonds had their worst month in years, with the 10-year at a new high near 5.26% and the dollar firm; core PCE came in softer than expected. Oil is easing on US-Iran hopes while Middle East exports recover.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: 'Oil prices settle down 2.5% on signs Middle East exports recovering' (Reuters) is a bearish driver move already in the price", "reasoning": "Crude is sliding on diplomacy and recovering exports, and XOM is near its highs. No new supply shock and no talks collapse. A driver move that already happened is not a long reason."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none: the NEM free-cash-flow stories and the 2027 gold forecast are old news and long-dated", "reasoning": "Gold is below its 200-day average and the 10-year yield is at a high with a firm dollar. The jobs report adds variance, not direction. No unpriced catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none that is unpriced: 'Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold' (CNBC) is a read-through to AI demand, but it concerns MU, not NVDA, and will be priced at the open", "reasoning": "Semis are up 9% in 20 days. The Micron beat is sector-positive but is a same-day event, likely priced by the time of trade. NVDA has no named catalyst of its own. DeepSeek/Huawei headline is a small negative."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none: Lilly mid-stage EloraTZP data (CNBC) and orforglipron safety data are same-day news, offset by 'US Cements Most-Favored-Nation Drug Price Model for Medicare' (Bloomberg Law)", "reasoning": "Good trial data are priced on release, and the MFN Medicare pricing model is a policy overhang. The headlines roughly offset. No one-sided unpriced setup for LLY."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none: 'Supply Pressures Emerge; Copper Prices Set to Trend Upward Amid Volatility' (Sunsirs) is a low-quality, vague forecast", "reasoning": "Copper and FCX are drifting lower (FCX -4.8% in 5 days) with a strong dollar and high yields. The BHP halt is not followed by any FCX-specific news. The uranium items concern CCJ, not the FCX leader."}
+  },
+  "would_change_my_mind": "A collapse of US-Iran talks or a new supply shock (oil), an NVDA-specific guidance or export event (chips), an FCX-specific outage or China demand surge (copper), or a sharp fall in yields with gold back above its 200-day average (gold).",
+  "handoff": {
+    "run_id": "fp2-20260930-a",
+    "written_at": "2026-09-30T12:00:00Z",
+    "decision_day": "2026-09-30",
+    "data_cutoff": "2026-09-30",
+    "what_changed": "Oil fell further on signs Middle East exports are recovering (WTI about 89). The 10-year yield hit a new high near 5.26% after bonds had their worst month in years, and gold is near 4,180. Micron beat and guided strongly, a sector read-through for chips, and Lilly posted positive obesity data against a Medicare MFN pricing overhang.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude is falling on diplomacy and recovering exports, with no new supply shock."},
+      "gold_miners": {"position": "flat", "why": "Gold is below its 200-day average with yields at a high and no unpriced catalyst."},
+      "chips": {"position": "flat", "why": "The Micron beat is a priced sector read-through and there is no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "Lilly trial data are priced on release and the MFN drug-pricing policy offsets them."},
+      "copper_uranium": {"position": "flat", "why": "Copper is soft with a strong dollar and there is no FCX-specific news."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Saudi and oil", "status": "fading", "note": "WTI about 89 on peace talks and recovering exports; re-enter oil only on talks collapsing or a new supply shock.", "first_seen": "2026-09-25"},
+      {"name": "Fed hike and yields", "status": "open", "note": "10-year at about 5.26%, a high; core PCE softer than expected; watch the first-Friday jobs report and gold against its 200-day average.", "first_seen": "2026-09-25"},
+      {"name": "Chip rebound and AI", "status": "open", "note": "Micron beat with strong data-center guidance; Semis ETF up 9% in 20 days; long NVDA only on a named NVDA catalyst.", "first_seen": "2026-09-25"},
+      {"name": "Copper supply and BHP Chile halt", "status": "fading", "note": "No follow-up on the BHP halt; check for FCX-specific news or a long outage.", "first_seen": "2026-09-25"},
+      {"name": "Uranium: Cameco and GLE", "status": "open", "note": "Uranium ETF down 12% in 20 days; US-Korea nuclear framework headline is relevant to CCJ, not the FCX leader.", "first_seen": "2026-09-25"},
+      {"name": "Medicare MFN drug pricing", "status": "open", "note": "US cemented the most-favored-nation model for Medicare; watch for LLY-specific impact versus obesity trial data.", "first_seen": "2026-09-30"},
+      {"name": "Tariffs in court", "status": "open", "note": "New global tariffs face a trade court challenge; a market-wide variance source, not a family catalyst.", "first_seen": "2026-09-30"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; all five families are flat, so stay flat unless a named, unpriced catalyst appears (oil: failed talks or a supply shock; copper: a long BHP outage or FCX-specific news; chips: an NVDA-specific event); watch yields, the Fed and the jobs report."
+  }
+}

@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp2-20260831-a (decision day 2026-08-31, data cutoff 2026-08-31)
+What changed: US strikes on Iran pushed oil to $86-90 and lifted XOM and CVX about 3% per headlines, a fresh supply shock, so XOM is bought. Gold, miners and semis fell sharply on the last close (gold -2.9%, NVDA -4.6%) with no named catalyst.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, 10 days | Fresh Iran supply shock (WTI $86-90 headlines) plus Exxon Venezuela news.
+- gold_miners: flat | Gold falling on higher yields and dollar; no catalyst.
+- chips: flat | No NVDA-specific catalyst; semis fell 3.5%.
+- pharma: flat | FDA headline does not name Lilly; no LLY catalyst.
+- copper_uranium: flat | No FCX-specific catalyst; FCX up 22% in 20 days.
+Open storylines:
+- [escalating] Iran strikes and oil: US strikes pushed WTI to $86-90; exit XOM at 10 days or on credible de-escalation; check whether the oil price holds.
+- [open] Exxon Venezuela: Trump says Exxon is going into Venezuela; look for concrete deal terms.
+- [open] Nvidia Q2 FY2027 results: No price-reaction information beyond a 4.6% one-day drop; long only with a named NVDA catalyst.
+- [open] Gold rally and Newmont: Gold fell 2.9% as the 10-year yield hit 4.72%; watch the first-Friday jobs report and yields.
+- [open] Copper and uranium rally: Uranium ETF -5.8% in a day, FCX up 22% in 20 days; look for an FCX-specific catalyst only.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; check whether WTI holds above 83 and the XOM position is still supported (exit on de-escalation or at the 10-day horizon, around 2026-09-14); stay flat on other families unless a named, unpriced catalyst appears.

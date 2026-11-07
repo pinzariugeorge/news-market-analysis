@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp2-20260707-a (decision day 2026-07-07, data cutoff 2026-07-07)
+What changed: Oil headlines turned: tanker attacks in Hormuz, the US revoked the Iran sanctions waiver, crude jumped 4-5% and Exxon signalled a Q2 profit windfall. Went long XOM as the only catalyst-backed call. Gold miners flagged as in a bear market; no news on Cameco restart or Newmont call date in this record.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | Iran supply-shock headlines plus Exxon Q2 windfall signal, after a 26% crude slide.
+- gold_miners: flat | Gold in a bear market, firm dollar and yields, no company catalyst for NEM.
+- chips: flat | No named catalyst for NVDA; sector already up sharply.
+- pharma: flat | No LLY-specific headline.
+- copper_uranium: flat | No headline concerns FCX; copper driver mixed.
+Open storylines:
+- [open] Iran oil shock: Hormuz tanker attacks, waiver revoked, blockade threat; watch whether crude holds the jump and XOM follows.
+- [open] Exxon Q2 earnings: Profit windfall signalled by Reuters; watch the report date and guidance.
+- [open] Cameco Cigar Lake suspension: No new news in this record; relevant only if CCJ becomes the leader.
+- [open] Newmont Q2 earnings: Watch the call date, production and cost guidance.
+- [open] Gold bear market: Morningstar says gold has entered a bear market; watch rates and dollar for a turn.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note, then the new record; check whether crude held the jump and XOM's reaction, exit XOM at 10 days or on de-escalation news; stay flat in the other families unless a named catalyst appears.

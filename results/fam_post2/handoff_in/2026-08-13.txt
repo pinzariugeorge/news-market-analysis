@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260810-a (decision day 2026-08-10, data cutoff 2026-08-10)
+What changed: Oil jumped about 5% before the open as Hormuz talks stalled (WTI above $82), and Reuters reported a Congo ban on copper and cobalt concentrate exports. Gold surged 2.3% on 2026-08-07 and NEM rose 7%, helped by the Barrick-Newmont settlement. LLY has no new news and stays held.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-10, 10 days | Hormuz talks stalled and crude jumped after Friday's close, an unpriced re-escalation catalyst for XOM.
+- gold_miners: flat | NEM up 20% in five days with the Barrick-Newmont settlement already priced, and gold still below its 200-day average.
+- chips: flat | Sector rally and TSMC sales are priced; no NVDA-specific catalyst.
+- pharma: long LLY since 2026-08-05, 10 days | Guidance raise on 2026-08-05; no negative catalyst so far, so the hold continues.
+- copper_uranium: long FCX since 2026-08-10, 10 days | Reuters reported a Congo ban on copper and cobalt concentrate exports, a supply shock not yet traded.
+Open storylines:
+- [escalating] Iran oil shock and Hormuz: Talks stalled and crude jumped about 5%; a deal announcement would reverse it; XOM long entered 2026-08-10, watch crude and the Wednesday inventory report.
+- [open] Lilly Q2 guidance raise: LLY long since 2026-08-05 for 10 days; exit around 2026-08-19 unless a negative catalyst appears.
+- [open] Congo copper and cobalt export ban: Check whether the ban is confirmed or narrowed, and how copper reacts; FCX long entered 2026-08-10.
+- [open] Barrick-Newmont settlement: Nevada JV dispute settled for $1.95B and an IPO path; already priced in NEM; watch follow-through only.
+- [open] Chip volatility: Sector +7.8% in five days, TSMC sales +45%; look for an NVDA-specific catalyst only.
+- [open] Yields and tariffs: 10-year yield 4.66 near its high; matters for gold miners.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; hold LLY through its window (about 2026-08-19), and check XOM against Hormuz news and FCX against the Congo ban follow-up. Exit the oil and copper longs on a Hormuz deal or a ban reversal. Stay flat on gold miners and chips unless a named unpriced catalyst appears.

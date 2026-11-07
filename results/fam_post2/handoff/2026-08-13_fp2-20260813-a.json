@@ -1,0 +1,69 @@
+{
+ "run_id": "fp2-20260813-a",
+ "written_at": "2026-08-13T12:30:00Z",
+ "decision_day": "2026-08-13",
+ "data_cutoff": "2026-08-13",
+ "what_changed": "Oil rose to WTI 83.27 (+10.7% in 5 days) as attacks dented Hormuz reopening hopes. A Reuters commentary says copper's Congo panic was overdone, and copper slipped 1.6% in 5 days. July CPI came in at 0.1% as expected and yields eased.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-10, 10 days",
+   "why": "Hormuz re-escalation continues (Al Jazeera, 2026-08-12) and XOM has lagged crude."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM up 24% in 20 days with the settlement priced and gold below its 200-day average."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No named catalyst; sector bounce only."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-08-05, 10 days",
+   "why": "Guidance raise on 2026-08-05 with no negative news; hold to about 2026-08-19."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Exited the FCX long: Reuters commentary argues the Congo panic was overdone and copper is drifting lower."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil shock and Hormuz",
+   "status": "escalating",
+   "note": "Attacks dent reopening hopes, WTI 83.27; a deal would reverse it; XOM long entered 2026-08-10.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Lilly Q2 guidance raise",
+   "status": "open",
+   "note": "LLY long since 2026-08-05; exit around 2026-08-19 unless a negative catalyst appears.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Congo copper and cobalt export ban",
+   "status": "fading",
+   "note": "Reuters commentary says the panic was overdone; FCX exited. Re-enter only if the ban is confirmed and copper rallies.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Barrick-Newmont settlement",
+   "status": "fading",
+   "note": "Priced in NEM, up 24% in 20 days; watch follow-through only.",
+   "first_seen": "2026-08-07"
+  },
+  {
+   "name": "Chip volatility",
+   "status": "open",
+   "note": "Look for an NVDA-specific catalyst only; TSMC and sector moves are priced.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Yields and inflation",
+   "status": "open",
+   "note": "July CPI 0.1% as expected, yields easing; 10-year at 4.68 near its high; matters for gold miners.",
+   "first_seen": "2026-08-10"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; hold LLY through about 2026-08-19, check XOM against Hormuz news (exit on a deal), and confirm FCX stays flat unless the Congo ban is confirmed and copper rallies. Stay flat on gold miners and chips unless a named unpriced catalyst appears."
+}

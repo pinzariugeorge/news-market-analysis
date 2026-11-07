@@ -1,0 +1,63 @@
+{
+ "run_id": "fp2-20260707-a",
+ "written_at": "2026-07-07T12:30:00Z",
+ "decision_day": "2026-07-07",
+ "data_cutoff": "2026-07-07",
+ "what_changed": "Oil headlines turned: tanker attacks in Hormuz, the US revoked the Iran sanctions waiver, crude jumped 4-5% and Exxon signalled a Q2 profit windfall. Went long XOM as the only catalyst-backed call. Gold miners flagged as in a bear market; no news on Cameco restart or Newmont call date in this record.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-07-07, 10 days",
+   "why": "Iran supply-shock headlines plus Exxon Q2 windfall signal, after a 26% crude slide."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold in a bear market, firm dollar and yields, no company catalyst for NEM."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No named catalyst for NVDA; sector already up sharply."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific headline."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No headline concerns FCX; copper driver mixed."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil shock",
+   "status": "open",
+   "note": "Hormuz tanker attacks, waiver revoked, blockade threat; watch whether crude holds the jump and XOM follows.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Exxon Q2 earnings",
+   "status": "open",
+   "note": "Profit windfall signalled by Reuters; watch the report date and guidance.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Cameco Cigar Lake suspension",
+   "status": "open",
+   "note": "No new news in this record; relevant only if CCJ becomes the leader.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Newmont Q2 earnings",
+   "status": "open",
+   "note": "Watch the call date, production and cost guidance.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Gold bear market",
+   "status": "open",
+   "note": "Morningstar says gold has entered a bear market; watch rates and dollar for a turn.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note, then the new record; check whether crude held the jump and XOM's reaction, exit XOM at 10 days or on de-escalation news; stay flat in the other families unless a named catalyst appears."
+}

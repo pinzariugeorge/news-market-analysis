@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260710-a (decision day 2026-07-10, data cutoff 2026-07-10)
+What changed: No new catalysts. Crude fell 2% on 07-09 but is up 5% over 5 days; XOM fell 2.6% yesterday. Al Jazeera piece on Hormuz since the 17 June US-Iran MoU and a Fed report citing the Iran war for inflation. No Exxon or Newmont dated news.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | Iran/Hormuz supply-shock storyline and Exxon Q2 windfall signal remain; no de-escalation headline yet.
+- gold_miners: flat | Gold bear market, firm dollar and yields; only opinion pieces on NEM.
+- chips: flat | No named catalyst for NVDA; sector already up sharply.
+- pharma: flat | No LLY-specific headline.
+- copper_uranium: flat | FCX has no catalyst; uranium headlines relate to CCJ only.
+Open storylines:
+- [open] Iran oil shock: Hormuz tankers, waiver revoked; Al Jazeera recap since June 17 MoU. Watch for de-escalation and whether crude holds above 70.
+- [open] Exxon Q2 earnings: Windfall signalled; watch report date and guidance.
+- [open] Cameco Cigar Lake suspension: No news; relevant only if CCJ becomes leader. Australia-India uranium deal noted 07-09.
+- [open] Newmont Q2 earnings: Watch call date, production and cost guidance.
+- [open] Gold bear market: Gold bounced 1.4% on 07-09 but is 22% below its high; watch rates and dollar.
+- [open] Fed inflation report: Fed report cites tariffs, Iran war, AI buildout for inflation; jobs report due in window.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; exit XOM at 10 days (about 2026-07-21) or earlier on Hormuz de-escalation news or a crude slide; stay flat elsewhere unless a named catalyst for a leader appears.

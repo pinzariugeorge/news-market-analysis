@@ -1,0 +1,63 @@
+{
+ "run_id": "fp2-20260826-a",
+ "written_at": "2026-08-26T12:30:00Z",
+ "decision_day": "2026-08-26",
+ "data_cutoff": "2026-08-26",
+ "what_changed": "Oil fell (WTI 82.36, -3.1% in a day) on cautious optimism over Iran and the 10-day XOM hold ended, so XOM is exited. Gold, miners and copper names ran further; no named catalyst for any family.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "XOM hold ended and Iran deal optimism removed the catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM up 48% in 20 days at a high is priced; no catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Nvidia Q2 results headline has no visible numbers; no one-sided setup."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific catalyst; FCX up 20% in 5 days is priced."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil and Hormuz",
+   "status": "fading",
+   "note": "Cautious optimism on Iran talks pushed WTI to 82.36; re-enter XOM only on a fresh supply shock.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Nvidia Q2 FY2027 results",
+   "status": "open",
+   "note": "Results published 2026-08-26; check the price reaction and guidance in the next record before any NVDA long.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Gold rally and Newmont",
+   "status": "open",
+   "note": "Gold at a three-month high, NEM at a 52-week high; priced, watch yields and the first-Friday jobs report.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Copper and uranium rally",
+   "status": "open",
+   "note": "Copper at a high, uranium ETF +24% in 20 days; look for an FCX-specific catalyst only.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Lilly guidance raise",
+   "status": "closed",
+   "note": "Exited; re-enter only on a new named catalyst.",
+   "first_seen": "2026-08-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; check Nvidia's post-results price move and any NVDA-specific catalyst; stay flat on all five families unless a named, unpriced catalyst appears."
+}

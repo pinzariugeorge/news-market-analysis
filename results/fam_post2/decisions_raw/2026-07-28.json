@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-07-28",
+  "market_view": "VIX moderate at 18.7; crude fell about 8% on US-Iran easing, yields near highs, and a chip rout hit Seoul and US chips. No broad stress regime.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: 'Oil Slides, European Gas Falls as US-Iran Tensions Ease' (dars.gov.et) removes the supply-shock case", "reasoning": "XOM horizon ended about 2026-07-27 and de-escalation with a crude slide was the exit trigger. Exit and stay flat; the supply premium is unwinding and no new catalyst is named."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold is below its 200-day average and 23% off its high, yields are high and the dollar firm. No NEM-specific catalyst in the headlines."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: 'AMD, Intel and Micron extend losses as chip stocks get clobbered' (CNBC) is a sector move, not an NVDA catalyst", "reasoning": "NVDA fell 5% in a sector rout and volatility is high. A drop is not a catalyst and rebound guessing is not allowed. The NVIDIA alliance blog is not a financial catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: generic drug tariffs from 2028 and the FDA peptide compounding panel do not target LLY near-term", "reasoning": "No LLY-specific unpriced catalyst; the stock is up 41% in 60 days with retatrutide news already priced."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none for FCX: 'Cameco gets UBS upgrade' (Yahoo Finance) concerns CCJ, which is not the leader", "reasoning": "FCX has no catalyst; copper rose modestly and FCX is up 6.7% in 5 days. The harness trades only the leader, and an analyst upgrade is thin."}
+  },
+  "would_change_my_mind": "A named company-specific catalyst for a leader (guidance raise, approval, export rule change) or a renewed Iran supply shock.",
+  "handoff": {
+    "run_id": "fp2-20260728-a",
+    "written_at": "2026-07-28T12:00:00Z",
+    "decision_day": "2026-07-28",
+    "data_cutoff": "2026-07-28",
+    "what_changed": "US-Iran tensions eased and WTI fell 7.5% (Brent 88), so the XOM long is closed at its horizon end. Chips were clobbered (NVDA -5%, SK Hynix -10%). Cameco received a UBS upgrade; generic drug tariffs are planned from 2028.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "XOM horizon ended about 2026-07-27 and crude slid on Iran de-escalation, so exit and no new catalyst."},
+      "gold_miners": {"position": "flat", "why": "Gold bearish below its 200-day average with high yields and no NEM catalyst."},
+      "chips": {"position": "flat", "why": "NVDA fell in a sector rout with no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "No unpriced LLY catalyst; tariff news is distant and not LLY-specific."},
+      "copper_uranium": {"position": "flat", "why": "No FCX catalyst; the Cameco upgrade is for a non-leader."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock", "status": "fading", "note": "US-Iran tensions easing and crude down 8%; a renewed escalation would reopen the oil long case.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Check the report date and guidance; XOM is flat now.", "first_seen": "2026-07-23"},
+      {"name": "Chip rout", "status": "open", "note": "Seoul-led semiconductor selloff (SK Hynix -10%, AMD, Intel, Micron down); watch NVDA for a named catalyst only.", "first_seen": "2026-07-28"},
+      {"name": "Yields and tariffs", "status": "open", "note": "10-year near its high at 4.64; sweeping global tariffs draw criticism; generic drug tariffs planned from 2028.", "first_seen": "2026-07-23"},
+      {"name": "Cameco UBS upgrade", "status": "open", "note": "Relevant only if CCJ becomes the copper_uranium leader.", "first_seen": "2026-07-28"},
+      {"name": "Lilly retatrutide Phase 3", "status": "fading", "note": "Mostly priced; relevant only if a new unpriced catalyst appears.", "first_seen": "2026-07-23"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; stay flat in all families unless a named unpriced catalyst for a leader appears; check Exxon earnings and any Iran re-escalation."
+  }
+}

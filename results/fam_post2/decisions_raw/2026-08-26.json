@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-26",
+  "market_view": "Calm tape (VIX 15.5, down 15% in 20 days) with falling yields and a softer dollar; oil dipped on cautious optimism over Iran, while gold miners and copper names are at highs after huge runs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none live: 'Oil prices dip as cautious optimism over Iran trumps new fears of Russian escalation in Ukraine' (NBC News) removes the Iran-risk premium behind the XOM long", "reasoning": "The 10-day hold has run (12 trading days since 2026-08-10) and WTI fell 3.1% on Iran deal optimism, undercutting the thesis. Exit XOM and stay flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "catalyst": "none: Gold three-month high (The Guardian) is an already-large move", "reasoning": "NEM is up 48% in 20 days at a 52-week high, gold up 16%; the move is priced. Headlines are opinion pieces and cost worries."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none usable: 'NVIDIA Announces Financial Results for Second Quarter Fiscal 2027' (NVIDIA Newsroom) is title only, no numbers or guidance visible", "reasoning": "Nvidia results are a scheduled event but I cannot see the outcome, so there is no one-sided setup. Variance is high; no named, checkable edge."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "No LLY-specific headline; the only pharma item is an unrelated FDA listeria notice. MRK's surge is not our name."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none: copper at a high and FCX up 20% in 5 days is an already-large move; 'Cameco Owns the Refinery at the Center of Canada's Uranium Threat' (Motley Fool) is vague and about CCJ, not FCX", "reasoning": "No FCX-specific named catalyst. The Freeport and cookware headlines are irrelevant noise. A price run alone is not a reason."}
+  },
+  "would_change_my_mind": "A confirmed FCX supply shock or a named, unpriced catalyst for one of the leaders, or a visible Nvidia guidance surprise not yet reflected in the price.",
+  "handoff": {
+    "run_id": "fp2-20260826-a",
+    "written_at": "2026-08-26T12:30:00Z",
+    "decision_day": "2026-08-26",
+    "data_cutoff": "2026-08-26",
+    "what_changed": "Oil fell (WTI 82.36, -3.1% in a day) on cautious optimism over Iran and the 10-day XOM hold ended, so XOM is exited. Gold, miners and copper names ran further; no named catalyst for any family.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "XOM hold ended and Iran deal optimism removed the catalyst."},
+      "gold_miners": {"position": "flat", "why": "NEM up 48% in 20 days at a high is priced; no catalyst."},
+      "chips": {"position": "flat", "why": "Nvidia Q2 results headline has no visible numbers; no one-sided setup."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst."},
+      "copper_uranium": {"position": "flat", "why": "No FCX-specific catalyst; FCX up 20% in 5 days is priced."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil and Hormuz", "status": "fading", "note": "Cautious optimism on Iran talks pushed WTI to 82.36; re-enter XOM only on a fresh supply shock.", "first_seen": "2026-08-10"},
+      {"name": "Nvidia Q2 FY2027 results", "status": "open", "note": "Results published 2026-08-26; check the price reaction and guidance in the next record before any NVDA long.", "first_seen": "2026-08-26"},
+      {"name": "Gold rally and Newmont", "status": "open", "note": "Gold at a three-month high, NEM at a 52-week high; priced, watch yields and the first-Friday jobs report.", "first_seen": "2026-08-10"},
+      {"name": "Copper and uranium rally", "status": "open", "note": "Copper at a high, uranium ETF +24% in 20 days; look for an FCX-specific catalyst only.", "first_seen": "2026-08-26"},
+      {"name": "Lilly guidance raise", "status": "closed", "note": "Exited; re-enter only on a new named catalyst.", "first_seen": "2026-08-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; check Nvidia's post-results price move and any NVDA-specific catalyst; stay flat on all five families unless a named, unpriced catalyst appears."
+  }
+}

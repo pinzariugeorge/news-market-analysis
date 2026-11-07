@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-31",
+  "market_view": "Calm regime (VIX 14.4, falling), 10-year yield near its high at 4.72% and a firmer dollar; gold and semis sold off sharply on the last session. A fresh Iran escalation is the only family-level news shock.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.54, "catalyst": "\"U.S. crude oil hits $90 per barrel following latest U.S. attacks against Iran\" (CNBC); \"Chevron and Exxon Mobil Rise 3% as U.S. Strikes on Iran Push WTI Crude Oil to $86\" (24/7 Wall St.); also \"Trump says Exxon is 'going in' to Venezuela\" (Reuters). A fresh supply shock, the re-entry trigger from the previous note; the last close (WTI 83.4, XOM +0.17%) predates it, so only part may be priced.", "reasoning": "New supply shock from renewed US strikes on Iran reverses last week's de-escalation; XOM is 8.6% below its high with low volatility and a Venezuela angle. Risk: part of the jump already happened and geopolitical spikes fade, hence only a small edge."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Gold fell 2.9% and NEM 3.3% in a day with yields and the dollar rising; \"Here's Why Gold Price Is Falling Again\" (Forbes) is a restatement of the move. NEM is up 37% in 20 days. No named, unpriced catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "NVDA fell 4.6% with the semiconductor ETF -3.5%; no NVDA-specific headline and no post-results information beyond price. The previous note required a catalyst; none appeared."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "\"FDA approves new use of popular diabetes drug\" (Action News 5) does not name Lilly or a drug, so it cannot be tied to LLY. No LLY-specific catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper is flat to slightly down and FCX is up 22% in 20 days; headlines are small-cap or non-FCX items (copper foil, Corcel placement, BT copper sale). No FCX-specific catalyst."}
+  },
+  "would_change_my_mind": "A de-escalation in Iran (WTI back below 83) would remove the oil long; an NVDA-specific or export-control catalyst, or a named Lilly event, would open those longs.",
+  "handoff": {
+    "run_id": "fp2-20260831-a",
+    "written_at": "2026-08-31T12:00:00Z",
+    "decision_day": "2026-08-31",
+    "data_cutoff": "2026-08-31",
+    "what_changed": "US strikes on Iran pushed oil to $86-90 and lifted XOM and CVX about 3% per headlines, a fresh supply shock, so XOM is bought. Gold, miners and semis fell sharply on the last close (gold -2.9%, NVDA -4.6%) with no named catalyst.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-31, 10 days", "why": "Fresh Iran supply shock (WTI $86-90 headlines) plus Exxon Venezuela news."},
+      "gold_miners": {"position": "flat", "why": "Gold falling on higher yields and dollar; no catalyst."},
+      "chips": {"position": "flat", "why": "No NVDA-specific catalyst; semis fell 3.5%."},
+      "pharma": {"position": "flat", "why": "FDA headline does not name Lilly; no LLY catalyst."},
+      "copper_uranium": {"position": "flat", "why": "No FCX-specific catalyst; FCX up 22% in 20 days."}
+    },
+    "open_storylines": [
+      {"name": "Iran strikes and oil", "status": "escalating", "note": "US strikes pushed WTI to $86-90; exit XOM at 10 days or on credible de-escalation; check whether the oil price holds.", "first_seen": "2026-08-26"},
+      {"name": "Exxon Venezuela", "status": "open", "note": "Trump says Exxon is going into Venezuela; look for concrete deal terms.", "first_seen": "2026-08-31"},
+      {"name": "Nvidia Q2 FY2027 results", "status": "open", "note": "No price-reaction information beyond a 4.6% one-day drop; long only with a named NVDA catalyst.", "first_seen": "2026-08-26"},
+      {"name": "Gold rally and Newmont", "status": "open", "note": "Gold fell 2.9% as the 10-year yield hit 4.72%; watch the first-Friday jobs report and yields.", "first_seen": "2026-08-26"},
+      {"name": "Copper and uranium rally", "status": "open", "note": "Uranium ETF -5.8% in a day, FCX up 22% in 20 days; look for an FCX-specific catalyst only.", "first_seen": "2026-08-26"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; check whether WTI holds above 83 and the XOM position is still supported (exit on de-escalation or at the 10-day horizon, around 2026-09-14); stay flat on other families unless a named, unpriced catalyst appears."
+  }
+}

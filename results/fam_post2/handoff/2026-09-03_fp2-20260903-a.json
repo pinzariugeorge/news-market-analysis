@@ -1,0 +1,57 @@
+{
+ "run_id": "fp2-20260903-a",
+ "written_at": "2026-09-03T12:00:00Z",
+ "decision_day": "2026-09-03",
+ "data_cutoff": "2026-09-03",
+ "what_changed": "WTI rose to $91 (+10.7% in 5d) and the 10-year yield hit 4.80%, the highest since Nov 2023. New headlines: Chevron $7B Venezuela investment, Hormuz shipping disruption, and NVIDIA to acquire Hugging Face for $12.9B. No de-escalation seen, so the XOM long is kept.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-31, 10 days",
+   "why": "WTI holds above 83 at $91 with Hormuz disruption and Venezuela headlines; exit at the horizon (about 2026-09-14) or on de-escalation."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Yields at a multi-year high and gold below its 200d average; no named catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "NVDA's Hugging Face acquisition is ambiguous for the acquirer and already followed by a 3.2% rise; no clear unpriced catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific catalyst in the headlines."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific catalyst; copper and uranium are weak."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran strikes, Hormuz and oil",
+   "status": "escalating",
+   "note": "WTI $91, Brent $95.6; Hormuz disruption lifting freight rates. Exit XOM at 10 days (about 2026-09-14) or on credible de-escalation; watch whether WTI holds above 83.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "Chevron and Exxon Venezuela",
+   "status": "open",
+   "note": "Chevron plans $7B to double Venezuela output in five years; earlier Exxon Venezuela news. Look for concrete deal terms.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "NVIDIA Hugging Face acquisition",
+   "status": "open",
+   "note": "$12.9B deal announced; watch the stock reaction and any NVDA-specific guidance. Long only with a clear unpriced catalyst.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Gold and yields",
+   "status": "open",
+   "note": "10-year yield 4.80%, highest since Nov 2023; gold -5% in 5d. Watch the first-Friday jobs report.",
+   "first_seen": "2026-08-31"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; check WTI stays above 83 and XOM is still supported (exit on de-escalation or at the 10-day horizon, around 2026-09-14); watch the first-Friday jobs report and yields for gold; stay flat on other families unless a named, unpriced catalyst appears."
+}

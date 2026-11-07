@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp2-20260826-a (decision day 2026-08-26, data cutoff 2026-08-26)
+What changed: Oil fell (WTI 82.36, -3.1% in a day) on cautious optimism over Iran and the 10-day XOM hold ended, so XOM is exited. Gold, miners and copper names ran further; no named catalyst for any family.
+Holdings and reasons:
+- oil_gas: flat | XOM hold ended and Iran deal optimism removed the catalyst.
+- gold_miners: flat | NEM up 48% in 20 days at a high is priced; no catalyst.
+- chips: flat | Nvidia Q2 results headline has no visible numbers; no one-sided setup.
+- pharma: flat | No LLY-specific catalyst.
+- copper_uranium: flat | No FCX-specific catalyst; FCX up 20% in 5 days is priced.
+Open storylines:
+- [fading] Iran oil and Hormuz: Cautious optimism on Iran talks pushed WTI to 82.36; re-enter XOM only on a fresh supply shock.
+- [open] Nvidia Q2 FY2027 results: Results published 2026-08-26; check the price reaction and guidance in the next record before any NVDA long.
+- [open] Gold rally and Newmont: Gold at a three-month high, NEM at a 52-week high; priced, watch yields and the first-Friday jobs report.
+- [open] Copper and uranium rally: Copper at a high, uranium ETF +24% in 20 days; look for an FCX-specific catalyst only.
+- [closed] Lilly guidance raise: Exited; re-enter only on a new named catalyst.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; check Nvidia's post-results price move and any NVDA-specific catalyst; stay flat on all five families unless a named, unpriced catalyst appears.

@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp2-20260723-a (decision day 2026-07-23, data cutoff 2026-07-23)
+What changed: Oil escalated further: Brent above 100 after reported tanker strikes off Saudi Arabia, WTI 86.8; 10-year yield at highest since Jan 2025. Newmont reported Q2 above estimates with steady output; Lilly reported two more positive retatrutide Phase 3 trials; broad new US tariffs on many countries.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, extended to 5 days from 2026-07-20 (exit about 2026-07-27) | Oil supply shock still escalating with no de-escalation; exit at the horizon end or earlier on a crude slide.
+- gold_miners: flat | Newmont beat but kept steady guidance, and gold is in a bear market with high yields.
+- chips: flat | No NVDA-specific catalyst; AMD news does not help the leader.
+- pharma: flat | Retatrutide Phase 3 news is mostly priced on release, so it is not a clear one-sided setup.
+- copper_uranium: flat | No FCX catalyst.
+Open storylines:
+- [escalating] Iran oil shock: Brent above 100, Red Sea and Saudi tanker attacks; exit XOM on de-escalation or crude slide.
+- [open] Exxon Q2 earnings: Watch report date and guidance; windfall signalled.
+- [open] Newmont Q2 results: Reported beat with steady output; watch the share reaction and cost guidance; gold still bearish.
+- [open] Yields and tariffs: 10-year at highest since Jan 2025 on oil inflation fears; new sweeping tariffs on 60 to 80 countries; watch gold miners and chips.
+- [open] Lilly retatrutide Phase 3: Two more positive obesity trials; watch LLY reaction and whether it continues; relevant only if unpriced.
+- [open] AMD Helios and Anthropic deal: AMD up to 5 billion dollars into Anthropic; relevant to NVDA only if it shifts the chip leader.
+- [fading] Cameco Cigar Lake: Reportedly resolved; relevant only if CCJ becomes leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; exit XOM at the horizon end (about 2026-07-27) or earlier on Iran de-escalation or a crude slide, and check Exxon earnings; stay flat elsewhere unless a named unpriced catalyst for a leader appears.

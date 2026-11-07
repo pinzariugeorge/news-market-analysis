@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fp2-20260909-a (decision day 2026-09-09, data cutoff 2026-09-09)
+What changed: WTI rose to $93 (Brent $97.9) and headlines now report crude above $100 as US and Iran launch new attacks; Trump says oil will not fall until after the midterms. The 10-year yield is 4.81%, a new high, with Fed-hike talk. FCX jumped 5.4% and NVDA faces a regulatory probe over its Groq licensing deal.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, 10 days | WTI is far above 83 with a prolonged Iran war and XOM has lagged crude; exit around 2026-09-14 or on de-escalation.
+- gold_miners: flat | Gold is below its 200-day average with yields at a multi-year high and no named catalyst.
+- chips: flat | NVDA Groq licensing probe is a negative and no unpriced positive catalyst exists.
+- pharma: flat | No LLY-specific catalyst in the headlines.
+- copper_uranium: flat | FCX +5.4% in a day is already priced and there is no FCX-specific catalyst.
+Open storylines:
+- [escalating] Iran war, Hormuz and oil: WTI $93 and headlines say above $100; exit XOM around 2026-09-14 or on credible de-escalation; watch whether WTI holds above 83.
+- [open] Chevron and Exxon Venezuela: Chevron plans $7B to double Venezuela output; look for concrete deal terms.
+- [open] NVIDIA regulatory probe and Hugging Face deal: Regulators investigate the Groq licensing deal; Hugging Face acquisition still pending; long only with a clear unpriced catalyst.
+- [open] Gold, yields and Fed: 10-year yield 4.81%, Fed hike talk (Warsh); gold 4,439 below its 200-day average; watch the first-Friday jobs report.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; XOM horizon ends about 2026-09-14, so plan the exit or extend only if WTI stays above 83 with no de-escalation; watch the jobs report and yields for gold; stay flat on other families unless a named, unpriced catalyst appears.

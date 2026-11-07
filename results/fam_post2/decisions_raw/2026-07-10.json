@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-07-10",
+  "market_view": "Calm tape (VIX 15.8, down 20% in 20 days) but a Fed report cites Iran war and tariffs as inflation drivers; yields high, dollar firm. Energy is the only family with a live named storyline.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "Carried storyline: Iran/Hormuz supply shock (prior note: tanker attacks, waiver revoked, Exxon Q2 windfall signal); today 'Strait of Hormuz: What has happened since the US-Iran MoU on June 17?' (Al Jazeera) and 'Fed report cites stepped-up inflation due to ... Iran war' (Reuters). Exxon Q2 earnings fall inside the window.", "reasoning": "Holding XOM from 07-07. Crude up 5% over 5 days though down 2% yesterday; no de-escalation headline in this record. The catalyst is thin and partly priced, so confidence stays barely above the bar; exit on de-escalation news."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Only analyst blog headlines on NEM ('Buy The Dip', Seeking Alpha) which are opinion, not a catalyst. Gold in a bear market with firm dollar and high yields."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Micron fab concrete pour is a long-dated capex item, not about NVDA. No export-rule or earnings catalyst named. Sector already up 37% in 60 days."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FDA framework and PFAS pages and an eye-drop recall are not LLY-specific. No trial or regulatory event for the leader."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Uranium export and nuclear headlines concern CCJ, not the leader FCX. FCX jumped 5% yesterday with copper, which is already priced; no FCX-specific catalyst."}
+  },
+  "would_change_my_mind": "Hormuz de-escalation or a crude drop below about 68 would exit XOM; a named company event (guidance, approval, export rule) for a leader would justify a long.",
+  "handoff": {
+    "run_id": "fp2-20260710-a",
+    "written_at": "2026-07-10T12:30:00Z",
+    "decision_day": "2026-07-10",
+    "data_cutoff": "2026-07-10",
+    "what_changed": "No new catalysts. Crude fell 2% on 07-09 but is up 5% over 5 days; XOM fell 2.6% yesterday. Al Jazeera piece on Hormuz since the 17 June US-Iran MoU and a Fed report citing the Iran war for inflation. No Exxon or Newmont dated news.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days", "why": "Iran/Hormuz supply-shock storyline and Exxon Q2 windfall signal remain; no de-escalation headline yet."},
+      "gold_miners": {"position": "flat", "why": "Gold bear market, firm dollar and yields; only opinion pieces on NEM."},
+      "chips": {"position": "flat", "why": "No named catalyst for NVDA; sector already up sharply."},
+      "pharma": {"position": "flat", "why": "No LLY-specific headline."},
+      "copper_uranium": {"position": "flat", "why": "FCX has no catalyst; uranium headlines relate to CCJ only."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock", "status": "open", "note": "Hormuz tankers, waiver revoked; Al Jazeera recap since June 17 MoU. Watch for de-escalation and whether crude holds above 70.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Windfall signalled; watch report date and guidance.", "first_seen": "2026-07-07"},
+      {"name": "Cameco Cigar Lake suspension", "status": "open", "note": "No news; relevant only if CCJ becomes leader. Australia-India uranium deal noted 07-09.", "first_seen": "2026-07-07"},
+      {"name": "Newmont Q2 earnings", "status": "open", "note": "Watch call date, production and cost guidance.", "first_seen": "2026-07-07"},
+      {"name": "Gold bear market", "status": "open", "note": "Gold bounced 1.4% on 07-09 but is 22% below its high; watch rates and dollar.", "first_seen": "2026-07-07"},
+      {"name": "Fed inflation report", "status": "open", "note": "Fed report cites tariffs, Iran war, AI buildout for inflation; jobs report due in window.", "first_seen": "2026-07-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; exit XOM at 10 days (about 2026-07-21) or earlier on Hormuz de-escalation news or a crude slide; stay flat elsewhere unless a named catalyst for a leader appears."
+  }
+}

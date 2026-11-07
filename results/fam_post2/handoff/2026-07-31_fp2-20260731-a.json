@@ -1,0 +1,69 @@
+{
+ "run_id": "fp2-20260731-a",
+ "written_at": "2026-07-31T12:00:00Z",
+ "decision_day": "2026-07-31",
+ "data_cutoff": "2026-07-31",
+ "what_changed": "Exxon and Chevron Q2 results are out with record profits; crude fell about 9% over five days. Chips rebounded sharply (semiconductor ETF +6.9%, AMD +13%) and copper rose on a storm-driven supply squeeze. Cameco reported Q2 and announced a Westinghouse IPO plan.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "XOM earnings are known and crude is sliding; no unpriced catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM jumped 4.8% already; gold below its 200-day average, yields high, no catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector-wide rebound already priced; no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY dropped 4.6% with no named cause; no catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper supply-shock headline is real but FCX +5.75% already priced it."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil shock",
+   "status": "fading",
+   "note": "Crude down 9% in 5 days; Trump threatens price interventions on oil majors; a re-escalation would reopen the oil long case.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Exxon Q2 earnings",
+   "status": "closed",
+   "note": "Results released 2026-07-31; profits surged on oil prices, already widely covered.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Chip rout and rebound",
+   "status": "open",
+   "note": "Violent two-way moves; look for an NVDA-specific catalyst only.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Yields and tariffs",
+   "status": "open",
+   "note": "10-year 4.66 near its high, Fed on hold, global tariffs draw rebukes and inflation worries.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Copper supply squeeze",
+   "status": "open",
+   "note": "Storms and supply squeeze lift copper (+2.7% day, +5.2% 20d); watch for FCX guidance or outage detail and whether continuation shows.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Cameco Q2 and Westinghouse IPO",
+   "status": "open",
+   "note": "Relevant only if CCJ becomes the copper_uranium leader.",
+   "first_seen": "2026-07-31"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; stay flat in all families unless a named unpriced catalyst for a leader appears; check FCX earnings or guidance, copper follow-through, any Iran re-escalation, and an NVDA-specific catalyst."
+}

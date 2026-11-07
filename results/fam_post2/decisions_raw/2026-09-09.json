@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-09-09",
+  "market_view": "VIX is calm at 15.7 but the 10-year yield is at a high of 4.81% and oil is near $100 on the Iran war, with inflation and Fed-hike worries in the headlines.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 5, "confidence": 0.55, "catalyst": "Supply shock continues: 'U.S. crude oil tops $100 again - last seen in May - as market braces for prolonged Iran war' (CNBC); 'Trump says oil prices that spiked because of Iran war likely won't come down until after midterms' (AP News). XOM has lagged WTI (5d -0.2% vs +8.5%), so the move is not fully in the stock.", "reasoning": "Continue the existing XOM long (since 2026-08-31, planned exit around 2026-09-14). WTI is above the 83 threshold, there is no de-escalation, and XOM has not followed crude. The 5-day horizon covers the remaining days of the plan."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Gold is below its 200-day average and the 10-year yield is at a high. Headlines are only price recaps, plus a UBS 'buying opportunity' note that is not a catalyst. Jobs report adds variance, not direction."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "'Regulators Are Investigating Nvidia's Licensing Deal With Groq' (NYT) is a negative for NVDA. Other items are routine (CUDA blog, CoreWeave demand comment). No clear unpriced positive catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "No LLY-specific headline. The camizestrant approval concerns another company and Medicare items are general. LLY fell 2.2% with the sector, which is not a cause."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FCX jumped 5.4% on the day and copper is at a high, which is already in the price. 'AI is fueling copper demand' (CNBC) is an opinion piece. No FCX-specific unpriced catalyst."}
+  },
+  "would_change_my_mind": "Credible Iran de-escalation or WTI falling below 83 would end the XOM long; a named, unpriced company catalyst would justify a long elsewhere.",
+  "handoff": {
+    "run_id": "fp2-20260909-a",
+    "written_at": "2026-09-09T12:00:00Z",
+    "decision_day": "2026-09-09",
+    "data_cutoff": "2026-09-09",
+    "what_changed": "WTI rose to $93 (Brent $97.9) and headlines now report crude above $100 as US and Iran launch new attacks; Trump says oil will not fall until after the midterms. The 10-year yield is 4.81%, a new high, with Fed-hike talk. FCX jumped 5.4% and NVDA faces a regulatory probe over its Groq licensing deal.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-31, 10 days", "why": "WTI is far above 83 with a prolonged Iran war and XOM has lagged crude; exit around 2026-09-14 or on de-escalation."},
+      "gold_miners": {"position": "flat", "why": "Gold is below its 200-day average with yields at a multi-year high and no named catalyst."},
+      "chips": {"position": "flat", "why": "NVDA Groq licensing probe is a negative and no unpriced positive catalyst exists."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst in the headlines."},
+      "copper_uranium": {"position": "flat", "why": "FCX +5.4% in a day is already priced and there is no FCX-specific catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "escalating", "note": "WTI $93 and headlines say above $100; exit XOM around 2026-09-14 or on credible de-escalation; watch whether WTI holds above 83.", "first_seen": "2026-09-03"},
+      {"name": "Chevron and Exxon Venezuela", "status": "open", "note": "Chevron plans $7B to double Venezuela output; look for concrete deal terms.", "first_seen": "2026-09-03"},
+      {"name": "NVIDIA regulatory probe and Hugging Face deal", "status": "open", "note": "Regulators investigate the Groq licensing deal; Hugging Face acquisition still pending; long only with a clear unpriced catalyst.", "first_seen": "2026-09-03"},
+      {"name": "Gold, yields and Fed", "status": "open", "note": "10-year yield 4.81%, Fed hike talk (Warsh); gold 4,439 below its 200-day average; watch the first-Friday jobs report.", "first_seen": "2026-09-03"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; XOM horizon ends about 2026-09-14, so plan the exit or extend only if WTI stays above 83 with no de-escalation; watch the jobs report and yields for gold; stay flat on other families unless a named, unpriced catalyst appears."
+  }
+}

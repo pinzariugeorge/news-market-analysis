@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260805-a (decision day 2026-08-05, data cutoff 2026-08-05)
+What changed: Lilly reported Q2 and raised full-year guidance before the US open on 2026-08-05 after LLY fell 8.6% in five days; I went long LLY. Crude fell another 5.7% on Strait of Hormuz reopening hopes, and Trump criticised Exxon and Chevron profits. Chips and copper continued strongly higher, AMD slid after earnings.
+Holdings and reasons:
+- oil_gas: flat | Crude down on Hormuz reopening hopes, no unpriced catalyst for XOM.
+- gold_miners: flat | NEM up already, gold below 200-day average, no catalyst.
+- chips: flat | Sector rebound priced, no NVDA-specific catalyst.
+- pharma: long LLY since 2026-08-05, 10 days | Q2 results with a full-year guidance raise released pre-open after a 8.6% five-day drop.
+- copper_uranium: flat | FCX +5.75% and copper near high already priced; no FCX-specific headline.
+Open storylines:
+- [fading] Iran oil shock and Hormuz: Crude -5.7% on reopening hopes; a re-escalation would reopen the oil long case; Trump pressure on oil majors continues.
+- [open] Lilly Q2 guidance raise: Check LLY reaction after the print; long entered 2026-08-05 for 10 days; sell-the-news risk.
+- [open] Chip volatility: Sector +8.7% in five days, AMD fell after earnings; look for an NVDA-specific catalyst only.
+- [open] Copper supply squeeze: Copper near its high; watch FCX guidance or outage detail and follow-through.
+- [open] Uranium producer results: Energy Fuels Q2 and mid-year producer updates; relevant only if CCJ becomes the leader.
+- [open] Yields and tariffs: 10-year yield 4.63 near its high; matters for gold miners.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; hold LLY long through its 10-day window unless a negative catalyst appears; stay flat elsewhere unless a named unpriced catalyst for a leader appears; check LLY reaction, Iran or Hormuz news, FCX guidance, and an NVDA-specific catalyst.

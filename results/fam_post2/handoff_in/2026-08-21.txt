@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260818-a (decision day 2026-08-18, data cutoff 2026-08-18)
+What changed: The US-Iran ceasefire expired and oil jumped (WTI 84.5, Brent 90.87), so the XOM long is kept. The 30-year yield hit a 19-year high of 5.33%. An unverified headline says the semiconductor index plunged over 6%, while the record shows the ETF up 1.06% on 2026-08-17. Copper news is limited to a Minnesota order against mining near the Boundary Waters.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-10, 10 days | The Iran ceasefire expired and Hormuz risk is rising, while XOM lags crude; exit on a deal.
+- gold_miners: flat | NEM is up 35% in 20 days, the move is priced, and yields are at highs with gold below its 200-day average.
+- chips: flat | No named catalyst; the plunge headline is unverified against the record and the sector is volatile.
+- pharma: long LLY since 2026-08-05, 10 days | Guidance raise on 2026-08-05 with no negative news; exit around 2026-08-19.
+- copper_uranium: flat | The Congo panic faded, and the Boundary Waters order is a local project matter with no FCX-specific effect.
+Open storylines:
+- [escalating] Iran oil shock and Hormuz: The ceasefire expired and Trump threatened Oman; WTI 84.5. A deal would reverse it. XOM long since 2026-08-10.
+- [open] Lilly Q2 guidance raise: LLY long since 2026-08-05; exit around 2026-08-19 unless a negative catalyst appears.
+- [fading] Congo copper and cobalt export ban: FCX exited earlier. Re-enter only if the ban is confirmed and copper rallies. The Boundary Waters order is a separate, local matter.
+- [fading] Barrick-Newmont settlement: Priced in NEM, up 35% in 20 days; watch follow-through only.
+- [open] Chip volatility: An unverified headline says the SOX fell over 6%; check the record. Look for an NVDA-specific catalyst only.
+- [open] Yields and inflation: The 30-year yield hit 5.33%, a 19-year high, and the 10-year is 4.72%. Headwind for gold miners; watch the first-Friday jobs report.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; exit LLY at about 2026-08-19 unless a new catalyst appears; check XOM against Hormuz and Iran news (exit on a deal); confirm FCX stays flat unless the Congo ban is confirmed and copper rallies; stay flat on gold miners and chips unless a named unpriced catalyst appears.

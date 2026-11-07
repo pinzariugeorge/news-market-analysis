@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260731-a (decision day 2026-07-31, data cutoff 2026-07-31)
+What changed: Exxon and Chevron Q2 results are out with record profits; crude fell about 9% over five days. Chips rebounded sharply (semiconductor ETF +6.9%, AMD +13%) and copper rose on a storm-driven supply squeeze. Cameco reported Q2 and announced a Westinghouse IPO plan.
+Holdings and reasons:
+- oil_gas: flat | XOM earnings are known and crude is sliding; no unpriced catalyst.
+- gold_miners: flat | NEM jumped 4.8% already; gold below its 200-day average, yields high, no catalyst.
+- chips: flat | Sector-wide rebound already priced; no NVDA-specific catalyst.
+- pharma: flat | LLY dropped 4.6% with no named cause; no catalyst.
+- copper_uranium: flat | Copper supply-shock headline is real but FCX +5.75% already priced it.
+Open storylines:
+- [fading] Iran oil shock: Crude down 9% in 5 days; Trump threatens price interventions on oil majors; a re-escalation would reopen the oil long case.
+- [closed] Exxon Q2 earnings: Results released 2026-07-31; profits surged on oil prices, already widely covered.
+- [open] Chip rout and rebound: Violent two-way moves; look for an NVDA-specific catalyst only.
+- [open] Yields and tariffs: 10-year 4.66 near its high, Fed on hold, global tariffs draw rebukes and inflation worries.
+- [open] Copper supply squeeze: Storms and supply squeeze lift copper (+2.7% day, +5.2% 20d); watch for FCX guidance or outage detail and whether continuation shows.
+- [open] Cameco Q2 and Westinghouse IPO: Relevant only if CCJ becomes the copper_uranium leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; stay flat in all families unless a named unpriced catalyst for a leader appears; check FCX earnings or guidance, copper follow-through, any Iran re-escalation, and an NVDA-specific catalyst.

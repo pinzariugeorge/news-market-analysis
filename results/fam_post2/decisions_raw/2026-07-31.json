@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-07-31",
+  "market_view": "VIX fell 17% to 17.1 after a violent chip and tech rebound; rates are near highs (10-year 4.66) and tariff headlines persist. Calmer regime, but yesterday's big moves are already in prices.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none: 'ExxonMobil Announces Second-Quarter 2026 Results' (ExxonMobil) and 'Exxon and Chevron's $26.5 Billion Quarter Draws Trump's Ire' (OilPrice.com) are the earnings event, already out and widely covered", "reasoning": "Earnings are known and crude fell 9% in five days. Trump price-intervention threats are a downside risk. No unpriced one-sided setup for XOM."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "NEM jumped 4.8% with gold +1.6% in one day (already priced). Gold is below its 200-day average with 10-year yields near highs. Newmont headlines are opinion pieces, not catalysts."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none: 'AMD and Micron surge, Lam Research climbs 17% as chip stocks rip higher' (CNBC) is a sector move already priced, not NVDA-specific", "reasoning": "Sector rebound after a rout is a move that already happened; no NVDA-specific catalyst. Very high volatility, so chasing is a coin flip."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "LLY fell 4.6% with no headline explaining it. No trial, regulator or pricing catalyst; a drop without a visible cause is not a reason to buy."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "'Deadly storms and a global supply squeeze are sending copper prices soaring' (CNBC): a copper supply shock, but copper +2.7% on the day and FCX +5.75% already price it", "reasoning": "A genuine supply-shock headline, but copper and FCX already jumped; continuation is not clearly one-sided and the FCX earnings date is unknown. Not enough to clear 0.52."}
+  },
+  "would_change_my_mind": "A named unpriced catalyst for a leader: an FCX guidance change or supply outage confirmation, an NVDA export-rule or earnings surprise, or a renewed Iran escalation lifting crude.",
+  "handoff": {
+    "run_id": "fp2-20260731-a",
+    "written_at": "2026-07-31T12:00:00Z",
+    "decision_day": "2026-07-31",
+    "data_cutoff": "2026-07-31",
+    "what_changed": "Exxon and Chevron Q2 results are out with record profits; crude fell about 9% over five days. Chips rebounded sharply (semiconductor ETF +6.9%, AMD +13%) and copper rose on a storm-driven supply squeeze. Cameco reported Q2 and announced a Westinghouse IPO plan.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "XOM earnings are known and crude is sliding; no unpriced catalyst."},
+      "gold_miners": {"position": "flat", "why": "NEM jumped 4.8% already; gold below its 200-day average, yields high, no catalyst."},
+      "chips": {"position": "flat", "why": "Sector-wide rebound already priced; no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "LLY dropped 4.6% with no named cause; no catalyst."},
+      "copper_uranium": {"position": "flat", "why": "Copper supply-shock headline is real but FCX +5.75% already priced it."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock", "status": "fading", "note": "Crude down 9% in 5 days; Trump threatens price interventions on oil majors; a re-escalation would reopen the oil long case.", "first_seen": "2026-07-28"},
+      {"name": "Exxon Q2 earnings", "status": "closed", "note": "Results released 2026-07-31; profits surged on oil prices, already widely covered.", "first_seen": "2026-07-28"},
+      {"name": "Chip rout and rebound", "status": "open", "note": "Violent two-way moves; look for an NVDA-specific catalyst only.", "first_seen": "2026-07-28"},
+      {"name": "Yields and tariffs", "status": "open", "note": "10-year 4.66 near its high, Fed on hold, global tariffs draw rebukes and inflation worries.", "first_seen": "2026-07-28"},
+      {"name": "Copper supply squeeze", "status": "open", "note": "Storms and supply squeeze lift copper (+2.7% day, +5.2% 20d); watch for FCX guidance or outage detail and whether continuation shows.", "first_seen": "2026-07-31"},
+      {"name": "Cameco Q2 and Westinghouse IPO", "status": "open", "note": "Relevant only if CCJ becomes the copper_uranium leader.", "first_seen": "2026-07-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; stay flat in all families unless a named unpriced catalyst for a leader appears; check FCX earnings or guidance, copper follow-through, any Iran re-escalation, and an NVDA-specific catalyst."
+  }
+}

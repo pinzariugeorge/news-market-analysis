@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-08-05",
+  "market_view": "VIX 16.5 and falling over five days, S&P 500 at records on a broad earnings beat; crude fell 5.7% on Strait of Hormuz reopening hopes, 10-year yield 4.63.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Crude -5.7% on Hormuz reopening hopes is a driver move already happened; Trump attack on Exxon and Chevron profits is a policy overhang, not a long case. No unpriced upside catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold +1.5% and NEM +2.5% already moved; gold below 200-day average, yields high. No headline for miners."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Sector rebounded (+8.7% in five days); the only chip headlines are AMD falling after earnings and NVDA product blog posts, nothing NVDA-specific and unpriced."},
+    "pharma": {"call": "long", "horizon_days": 10, "confidence": 0.55, "catalyst": "'Lilly reports second-quarter 2026 financial results, raises full-year guidance, and highlights continued growth and pipeline progress' (Eli Lilly, published 2026-08-05 07:00 UTC, before the US open, so the reaction is not in the closes). LLY is down 8.6% in five days into the print, so a guidance raise is a clear one-sided setup.", "reasoning": "Guidance raise is a named catalyst released before the open; stock fell into it. Risk: the market may already have expected it and sell the news, so confidence is only modestly above the bar."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "FCX +5.75% in a day and +13% in 20 days; copper near its high. Energy Fuels results and World Nuclear News producer updates are relevant to CCJ, not the FCX leader. No FCX guidance headline."}
+  },
+  "would_change_my_mind": "Lilly guidance turning out already expected (stock falling on the print) would lower the pharma call; an Iran re-escalation or an FCX guidance or outage headline would open oil or copper longs.",
+  "handoff": {
+    "run_id": "fp2-20260805-a",
+    "written_at": "2026-08-05T12:00:00Z",
+    "decision_day": "2026-08-05",
+    "data_cutoff": "2026-08-05",
+    "what_changed": "Lilly reported Q2 and raised full-year guidance before the US open on 2026-08-05 after LLY fell 8.6% in five days; I went long LLY. Crude fell another 5.7% on Strait of Hormuz reopening hopes, and Trump criticised Exxon and Chevron profits. Chips and copper continued strongly higher, AMD slid after earnings.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude down on Hormuz reopening hopes, no unpriced catalyst for XOM."},
+      "gold_miners": {"position": "flat", "why": "NEM up already, gold below 200-day average, no catalyst."},
+      "chips": {"position": "flat", "why": "Sector rebound priced, no NVDA-specific catalyst."},
+      "pharma": {"position": "long LLY since 2026-08-05, 10 days", "why": "Q2 results with a full-year guidance raise released pre-open after a 8.6% five-day drop."},
+      "copper_uranium": {"position": "flat", "why": "FCX +5.75% and copper near high already priced; no FCX-specific headline."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock and Hormuz", "status": "fading", "note": "Crude -5.7% on reopening hopes; a re-escalation would reopen the oil long case; Trump pressure on oil majors continues.", "first_seen": "2026-07-31"},
+      {"name": "Lilly Q2 guidance raise", "status": "open", "note": "Check LLY reaction after the print; long entered 2026-08-05 for 10 days; sell-the-news risk.", "first_seen": "2026-08-05"},
+      {"name": "Chip volatility", "status": "open", "note": "Sector +8.7% in five days, AMD fell after earnings; look for an NVDA-specific catalyst only.", "first_seen": "2026-07-31"},
+      {"name": "Copper supply squeeze", "status": "open", "note": "Copper near its high; watch FCX guidance or outage detail and follow-through.", "first_seen": "2026-07-31"},
+      {"name": "Uranium producer results", "status": "open", "note": "Energy Fuels Q2 and mid-year producer updates; relevant only if CCJ becomes the leader.", "first_seen": "2026-08-05"},
+      {"name": "Yields and tariffs", "status": "open", "note": "10-year yield 4.63 near its high; matters for gold miners.", "first_seen": "2026-07-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; hold LLY long through its 10-day window unless a negative catalyst appears; stay flat elsewhere unless a named unpriced catalyst for a leader appears; check LLY reaction, Iran or Hormuz news, FCX guidance, and an NVDA-specific catalyst."
+  }
+}

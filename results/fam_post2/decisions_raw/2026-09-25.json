@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-25",
+  "market_view": "Calm VIX (15.7), but the 10-year yield is at a high near 5.16% and the dollar is firm; stocks are catching a bid on AI and easing yields. Oil is sliding on U.S.-Iran diplomacy.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: 'WTI Crude Oil futures fell below $93 as peace talks advanced' (CME Group) points against a long; the Houthi attack headline (Al Jazeera) is offset by Saudi exports at a post-war high (CNBC)", "reasoning": "Crude is falling on diplomacy and the Houthi headline is mixed with rising Saudi exports. There is no clear one-sided supply shock, so stay flat after the XOM exit."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none: gold is below $4,300 and its 200-day average, yields are at a high, and the jobs report is a two-way event", "reasoning": "The 10-year yield near 5.2% and a firm dollar weigh on gold, and NEM has no unpriced company-specific news. The Grafton/Newmont deal is minor. No catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: no NVDA-specific event; 'Wall Street ends higher as investors buy AI stocks' (Reuters) is market mood, and the Oracle force majeure item is a negative for AI sentiment", "reasoning": "The semis rebound is already priced and the AI headlines are mood, not a named NVDA event. Mixed signals from Oracle and Micron. Stay flat."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: 'FDA approves Lilly's Olumiant ... severe alopecia areata' (Eli Lilly) is a small label expansion for an existing drug, not material for LLY", "reasoning": "A pediatric label expansion for Olumiant is immaterial against LLY's market cap, and LLY already rose 2.7% yesterday. Drug-pricing news is general. Flat."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "weak: 'BHP halts giant Chile copper mine after worker death' (AFR, 2026-09-24) is a supply outage, but such halts after a fatality are usually short and copper is already near its high; nothing FCX-specific", "reasoning": "The BHP halt is a real but probably brief supply disruption; copper is near its high and FCX fell 0.7% on the day. The expected effect on FCX is too small and uncertain to justify a long. Flat."}
+  },
+  "would_change_my_mind": "A long mine outage (weeks) or an FCX/Grasberg-specific disruption, a collapse of U.S.-Iran talks with a new supply shock, or an NVDA-specific export or guidance event.",
+  "handoff": {
+    "run_id": "fp2-20260925-a",
+    "written_at": "2026-09-25T12:00:00Z",
+    "decision_day": "2026-09-25",
+    "data_cutoff": "2026-09-25",
+    "what_changed": "Oil keeps sliding on U.S.-Iran peace talks (WTI below 93 per CME), though Houthi attack claims on Saudi facilities add noise. The 10-year yield hit about 5.16% and gold slipped under 4,300. BHP halted a large Chile copper mine after a worker death, a possible short supply blip for copper.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Diplomacy is pushing crude lower and there is no clear new supply shock."},
+      "gold_miners": {"position": "flat", "why": "Gold is below its 200-day average with yields at a high and no unpriced catalyst."},
+      "chips": {"position": "flat", "why": "The rebound is priced and there is no named NVDA catalyst."},
+      "pharma": {"position": "flat", "why": "The Olumiant pediatric approval is immaterial for LLY."},
+      "copper_uranium": {"position": "flat", "why": "The BHP mine halt is probably brief and nothing is FCX-specific."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Saudi and oil", "status": "fading", "note": "WTI below 93 on peace talks; re-enter oil only on talks collapsing or a new supply shock (Houthi attacks on Saudi facilities are worth watching).", "first_seen": "2026-08-31"},
+      {"name": "Fed hike and yields", "status": "open", "note": "10-year at about 5.16%, a high; watch the first-Friday jobs report and gold against its 200-day average.", "first_seen": "2026-09-22"},
+      {"name": "Chip rebound and AI", "status": "open", "note": "Semis ETF up 7% in 5 days; Oracle force majeure notice is an AI-demand worry; long only on a named NVDA catalyst.", "first_seen": "2026-09-22"},
+      {"name": "Copper supply and BHP Chile halt", "status": "open", "note": "BHP halted a giant Chile mine after a worker death (AFR, 09-24); check whether the halt lasts weeks and whether FCX gets a specific catalyst.", "first_seen": "2026-09-22"},
+      {"name": "Uranium: Cameco and GLE", "status": "open", "note": "Uranium ETF down 15% in 20 days; a Niger uranium project is resuming; relevant to CCJ, not the FCX leader.", "first_seen": "2026-09-22"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; all five families are flat, so stay flat unless a named, unpriced catalyst appears (oil: failed talks or a supply shock; copper: a long BHP outage or FCX-specific news; chips: an NVDA-specific event); watch yields, the Fed and the jobs report."
+  }
+}

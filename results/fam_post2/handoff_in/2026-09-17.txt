@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fp2-20260914-a (decision day 2026-09-14, data cutoff 2026-09-14)
+What changed: WTI closed at 100.05 on 09-11 and headlines report US oil above $105 after Saudi strikes and a pipeline closure. The 10-year yield is near 5% and AI stocks fell on an industry warning to slow development. XOM horizon extended on the new Saudi supply shock.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, extended 10 days from 2026-09-14 | Fresh Saudi supply shock with WTI above 100 and XOM lagging crude; no de-escalation.
+- gold_miners: flat | Gold is below its 200-day average with the 10-year yield near 5% and no named catalyst.
+- chips: flat | AI-slowdown warning hit chip shares and no unpriced positive catalyst exists.
+- pharma: flat | No LLY-specific catalyst in the headlines.
+- copper_uranium: flat | No FCX-specific catalyst; copper and uranium drivers are soft.
+Open storylines:
+- [escalating] Iran war, Saudi strikes and oil: WTI 100, headlines above 105 after Saudi pipeline closure; exit XOM about 2026-09-28 or on credible de-escalation or WTI back below about 90.
+- [open] Chevron and Exxon expansion: Chevron LNG expansion and Venezuela plans; Exxon Joliet refinery shut after power outage (minor); look for concrete deal terms.
+- [open] AI slowdown warning and NVIDIA probe: Industry chiefs call for slowing AI development, chip shares tumbled; Groq probe pending; long only on a clear unpriced catalyst.
+- [escalating] Yields at 5%, Fed and gold: 10-year at 4.975%, WSJ new-era headline; gold 4,409 below its 200-day average; watch the first-Friday jobs report.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; XOM is extended to about 2026-09-28, hold only while WTI stays well above 83 with no de-escalation, exit on credible de-escalation; stay flat on other families unless a named, unpriced catalyst appears; watch yields and the jobs report.

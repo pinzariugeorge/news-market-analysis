@@ -1,0 +1,75 @@
+{
+ "run_id": "fp2-20260930-a",
+ "written_at": "2026-09-30T12:00:00Z",
+ "decision_day": "2026-09-30",
+ "data_cutoff": "2026-09-30",
+ "what_changed": "Oil fell further on signs Middle East exports are recovering (WTI about 89). The 10-year yield hit a new high near 5.26% after bonds had their worst month in years, and gold is near 4,180. Micron beat and guided strongly, a sector read-through for chips, and Lilly posted positive obesity data against a Medicare MFN pricing overhang.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Crude is falling on diplomacy and recovering exports, with no new supply shock."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is below its 200-day average with yields at a high and no unpriced catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The Micron beat is a priced sector read-through and there is no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Lilly trial data are priced on release and the MFN drug-pricing policy offsets them."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper is soft with a strong dollar and there is no FCX-specific news."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Saudi and oil",
+   "status": "fading",
+   "note": "WTI about 89 on peace talks and recovering exports; re-enter oil only on talks collapsing or a new supply shock.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Fed hike and yields",
+   "status": "open",
+   "note": "10-year at about 5.26%, a high; core PCE softer than expected; watch the first-Friday jobs report and gold against its 200-day average.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Chip rebound and AI",
+   "status": "open",
+   "note": "Micron beat with strong data-center guidance; Semis ETF up 9% in 20 days; long NVDA only on a named NVDA catalyst.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Copper supply and BHP Chile halt",
+   "status": "fading",
+   "note": "No follow-up on the BHP halt; check for FCX-specific news or a long outage.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Uranium: Cameco and GLE",
+   "status": "open",
+   "note": "Uranium ETF down 12% in 20 days; US-Korea nuclear framework headline is relevant to CCJ, not the FCX leader.",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Medicare MFN drug pricing",
+   "status": "open",
+   "note": "US cemented the most-favored-nation model for Medicare; watch for LLY-specific impact versus obesity trial data.",
+   "first_seen": "2026-09-30"
+  },
+  {
+   "name": "Tariffs in court",
+   "status": "open",
+   "note": "New global tariffs face a trade court challenge; a market-wide variance source, not a family catalyst.",
+   "first_seen": "2026-09-30"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; all five families are flat, so stay flat unless a named, unpriced catalyst appears (oil: failed talks or a supply shock; copper: a long BHP outage or FCX-specific news; chips: an NVDA-specific event); watch yields, the Fed and the jobs report."
+}

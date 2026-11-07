@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-07-23",
+  "market_view": "Oil shock deepening (Brent above 100, Red Sea and Saudi tanker attacks), 10-year yield at highest since Jan 2025, new broad tariffs; VIX moderate at 16.6.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 5, "confidence": 0.55, "catalyst": "Brent crude crosses $100 after tankers reportedly struck off Saudi Arabia (CNBC); 'Global oil prices cross $100 a barrel as Iran war sends fuel prices surging' (ABC7); Exxon Q2 earnings due. Supply shock still escalating; XOM beta to crude is low, so it can still lag.", "reasoning": "Existing XOM long continues on a supply shock with no de-escalation (Rubio says Iran not serious about a deal). Exit by about 2026-07-27 per the prior plan, or earlier on a crude slide or de-escalation. Earnings add variance."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "Newmont Q2 beat (Reuters: 'Newmont tops profit estimates on higher gold prices, sees steady output'), but steady guidance only; the move is probably priced at the open", "reasoning": "In-line guidance, gold in a bear market, yields at a 2025 high and a firm dollar. No one-sided setup left after the gap."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none for NVDA (AMD Helios and AMD-Anthropic news favour AMD, not the leader)", "reasoning": "No NVDA-specific catalyst; the NVIDIA-KAIST lab is minor. Rising yields and a volatile sector argue against a long."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "'Lilly's triple agonist, retatrutide, successful in two additional Phase 3 obesity trials' (Eli Lilly), published 2026-07-23; likely largely priced on release (LLY already +31% in 60 days)", "reasoning": "Positive trial news but expected after earlier retatrutide data, and the reaction happens on the news day, so most is priced. Not clearly one-sided."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "No FCX-specific headline; the copper and uranium headlines are irrelevant (Saudi enrichment deal is unclear for CCJ). FCX already rose 3.9% in a day."}
+  },
+  "would_change_my_mind": "Iran de-escalation or a crude slide (exit XOM); a named, unpriced catalyst for NVDA, FCX, NEM or LLY.",
+  "handoff": {
+    "run_id": "fp2-20260723-a",
+    "written_at": "2026-07-23T12:30:00Z",
+    "decision_day": "2026-07-23",
+    "data_cutoff": "2026-07-23",
+    "what_changed": "Oil escalated further: Brent above 100 after reported tanker strikes off Saudi Arabia, WTI 86.8; 10-year yield at highest since Jan 2025. Newmont reported Q2 above estimates with steady output; Lilly reported two more positive retatrutide Phase 3 trials; broad new US tariffs on many countries.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, extended to 5 days from 2026-07-20 (exit about 2026-07-27)", "why": "Oil supply shock still escalating with no de-escalation; exit at the horizon end or earlier on a crude slide."},
+      "gold_miners": {"position": "flat", "why": "Newmont beat but kept steady guidance, and gold is in a bear market with high yields."},
+      "chips": {"position": "flat", "why": "No NVDA-specific catalyst; AMD news does not help the leader."},
+      "pharma": {"position": "flat", "why": "Retatrutide Phase 3 news is mostly priced on release, so it is not a clear one-sided setup."},
+      "copper_uranium": {"position": "flat", "why": "No FCX catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock", "status": "escalating", "note": "Brent above 100, Red Sea and Saudi tanker attacks; exit XOM on de-escalation or crude slide.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Watch report date and guidance; windfall signalled.", "first_seen": "2026-07-20"},
+      {"name": "Newmont Q2 results", "status": "open", "note": "Reported beat with steady output; watch the share reaction and cost guidance; gold still bearish.", "first_seen": "2026-07-20"},
+      {"name": "Yields and tariffs", "status": "open", "note": "10-year at highest since Jan 2025 on oil inflation fears; new sweeping tariffs on 60 to 80 countries; watch gold miners and chips.", "first_seen": "2026-07-20"},
+      {"name": "Lilly retatrutide Phase 3", "status": "open", "note": "Two more positive obesity trials; watch LLY reaction and whether it continues; relevant only if unpriced.", "first_seen": "2026-07-20"},
+      {"name": "AMD Helios and Anthropic deal", "status": "open", "note": "AMD up to 5 billion dollars into Anthropic; relevant to NVDA only if it shifts the chip leader.", "first_seen": "2026-07-20"},
+      {"name": "Cameco Cigar Lake", "status": "fading", "note": "Reportedly resolved; relevant only if CCJ becomes leader.", "first_seen": "2026-07-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; exit XOM at the horizon end (about 2026-07-27) or earlier on Iran de-escalation or a crude slide, and check Exxon earnings; stay flat elsewhere unless a named unpriced catalyst for a leader appears."
+  }
+}

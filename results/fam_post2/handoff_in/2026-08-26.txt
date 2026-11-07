@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp2-20260821-a (decision day 2026-08-21, data cutoff 2026-08-21)
+What changed: Oil rebounded (WTI 87.83, +8.1% in 5 days) after Trump threatened sanctions on Iran partners, so the XOM long continues. LLY exited as planned. Yields still rising (10-year 4.70%); NEM surged again but remains flat for us.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-10, 10 days | Iran sanctions threat and Hormuz risk keep crude firm and XOM lags crude; exit on a deal.
+- gold_miners: flat | NEM up 35% in 20 days is priced and yields are rising.
+- chips: flat | No named catalyst; headlines are opinion pieces.
+- pharma: flat | LLY guidance catalyst has run its hold; exited around 2026-08-21 with no new catalyst.
+- copper_uranium: flat | No FCX-specific catalyst; Congo ban unconfirmed.
+Open storylines:
+- [escalating] Iran oil shock and Hormuz: Trump threatens sanctions on Iran partners; WTI 87.83. A deal would reverse it. XOM long since 2026-08-10.
+- [closed] Lilly Q2 guidance raise: LLY exited at the planned hold; re-enter only on a new named catalyst.
+- [fading] Congo copper and cobalt export ban: Re-enter FCX only if the ban is confirmed and copper rallies.
+- [fading] Barrick-Newmont settlement and gold rally: NEM up 35% in 20 days, priced; watch only for follow-through.
+- [open] Chip volatility: SOX ETF down 4.5% in 5 days; look for an NVDA-specific catalyst only.
+- [open] Yields and inflation: 10-year 4.70%, 30-year near 19-year highs; headwind for gold miners; watch the first-Friday jobs report.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; check XOM against Iran and Hormuz news (exit on a deal or when the 10-day hold ends without a live catalyst); stay flat on gold miners, chips, pharma and copper_uranium unless a named unpriced catalyst appears.

@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp2-20260720-a (decision day 2026-07-20, data cutoff 2026-07-20)
+What changed: Oil escalated again: WTI 82.5 (+4.5% on Friday, +15.5% in 5 days) and CNBC says Trump says Iran will pay for killing US service members. VIX jumped to 18.8 and semis fell 8.9% in 5 days. Trump announced 50% tariffs on Canadian goods.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days (extended to a final 5-day horizon from today) | Iran escalation continues with no de-escalation, XOM still lags crude, Exxon Q2 earnings approaching.
+- gold_miners: flat | Gold bear market with firm dollar and yields; only a Newmont earnings preview.
+- chips: flat | No NVDA-specific catalyst; semis sold off sharply; AMD Helios news concerns AMD.
+- pharma: flat | No LLY-specific catalyst; only a retatrutide dosing explainer.
+- copper_uranium: flat | No FCX catalyst; copper and uranium weak.
+Open storylines:
+- [escalating] Iran oil shock: Trump says Iran will pay for killing US service members; Brent 88.1, WTI 82.5. Exit XOM on de-escalation or crude slide.
+- [open] Exxon Q2 earnings: Watch report date and guidance; windfall signalled.
+- [open] Newmont Q2 earnings: Preview of Wall Street projections published; watch call date, production and cost guidance.
+- [open] Gold bear market: Gold 24.4% below its high; watch rates and dollar.
+- [open] Canada tariffs: 50% US tariffs on Canadian goods announced; possible effect on TECK, CCJ and Canadian miners, none named yet.
+- [open] AMD Helios rack system: Microsoft is a new buyer; relevant only if it hits NVDA or shifts the chip leader.
+- [fading] Cameco Cigar Lake: Reportedly resolved; relevant only if CCJ becomes leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; exit XOM at the 5-day horizon end (about 2026-07-27) or earlier on Iran de-escalation or a crude slide, and re-check around Exxon earnings; stay flat elsewhere unless a named catalyst for a leader appears.

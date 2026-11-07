@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-07-01",
+  "market_view": "Calm regime: VIX 16.5 and falling, dollar firm, 10y yield 4.42%. Big divergences: crude and gold sharply down over 20 days, semiconductors surging, health care near highs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI fell about 25% in 20 days, but that move is already in the price and the only energy headline (EMA on Middle East gas tariffs) is a Singapore tariff story, not a supply shock. XOM's link to crude is weak. No named catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: only 'Newmont Announces Second Quarter 2026 Results Conference Call' (Yahoo Finance), a date notice with no one-sided setup", "reasoning": "Gold is down 10% in 20 days with a firm dollar and a Fed chair focused on inflation. Earnings are scheduled but the setup is not one-sided. Oversold is not a reason."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the NVIDIA Blog partner post and the Etched valuation story are promotional or sector chatter, not an unpriced event", "reasoning": "The sector ETF is up 67% in 60 days and AMD and TSM are at highs. NVDA itself is down 11% in 20 days. Momentum is not a catalyst and no headline gives a specific, unpriced driver for NVDA."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the only pharma headline is a generic FDA COVID-19 drugs page", "reasoning": "LLY is near its highs after a strong run. Nothing in the headlines is a trial result, approval or pricing decision. Pharma event days skew negative."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "Cameco suspends Cigar Lake mining operations after Orano mill disruption (Reuters) is a real uranium supply shock, but it hits CCJ, not the leader FCX; the copper headline (switch from copper to aluminium, Reuters) is a negative demand story", "reasoning": "The harness trades FCX. Copper is down 5% in 20 days, and the uranium supply news does not transmit to FCX. It also cuts CCJ's own output, so the net effect is unclear. No clear catalyst for FCX."}
+  },
+  "would_change_my_mind": "A named, one-sided event for the leader stock itself: a guidance raise, a regulatory decision, an export-control change or an outage in its own commodity.",
+  "handoff": {
+    "run_id": "fp2-20260701-a",
+    "written_at": "2026-07-01T09:00:00Z",
+    "decision_day": "2026-07-01",
+    "data_cutoff": "2026-07-01",
+    "what_changed": "First run: no previous note. All five families are flat because no named catalyst was found for the leader stocks. Noted the Cameco Cigar Lake suspension, the Newmont Q2 call date and the sharp falls in crude and gold.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI fell about 25% in 20 days but no named catalyst for XOM."},
+      "gold_miners": {"position": "flat", "why": "Only a Newmont call date notice; gold weak with a firm dollar and no one-sided setup."},
+      "chips": {"position": "flat", "why": "Sector up sharply already; no unpriced named event for NVDA."},
+      "pharma": {"position": "flat", "why": "No trial, approval or pricing headline for LLY."},
+      "copper_uranium": {"position": "flat", "why": "Cigar Lake news concerns CCJ, not the leader FCX; copper headline negative."}
+    },
+    "open_storylines": [
+      {"name": "Cameco Cigar Lake suspension", "status": "open", "note": "Watch the restart timing and uranium price reaction; relevant only if CCJ becomes the leader.", "first_seen": "2026-07-01"},
+      {"name": "Newmont Q2 earnings", "status": "open", "note": "Conference call announced; watch the date, production and cost guidance.", "first_seen": "2026-07-01"},
+      {"name": "Oil and gold slide", "status": "open", "note": "WTI down 25% and gold down 10% over 20 days; look for a supply shock or a rates or dollar turn.", "first_seen": "2026-07-01"},
+      {"name": "Fed chair Warsh inflation focus", "status": "open", "note": "Rates and dollar are the master variables for gold miners; watch for hawkish surprises.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note, then the new record; stay flat unless a named catalyst appears for a leader stock; check Cigar Lake and Newmont news."
+  }
+}

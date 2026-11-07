@@ -1,0 +1,57 @@
+{
+ "run_id": "fp2-20260701-a",
+ "written_at": "2026-07-01T09:00:00Z",
+ "decision_day": "2026-07-01",
+ "data_cutoff": "2026-07-01",
+ "what_changed": "First run: no previous note. All five families are flat because no named catalyst was found for the leader stocks. Noted the Cameco Cigar Lake suspension, the Newmont Q2 call date and the sharp falls in crude and gold.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI fell about 25% in 20 days but no named catalyst for XOM."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Only a Newmont call date notice; gold weak with a firm dollar and no one-sided setup."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector up sharply already; no unpriced named event for NVDA."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No trial, approval or pricing headline for LLY."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Cigar Lake news concerns CCJ, not the leader FCX; copper headline negative."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Cameco Cigar Lake suspension",
+   "status": "open",
+   "note": "Watch the restart timing and uranium price reaction; relevant only if CCJ becomes the leader.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Newmont Q2 earnings",
+   "status": "open",
+   "note": "Conference call announced; watch the date, production and cost guidance.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Oil and gold slide",
+   "status": "open",
+   "note": "WTI down 25% and gold down 10% over 20 days; look for a supply shock or a rates or dollar turn.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Fed chair Warsh inflation focus",
+   "status": "open",
+   "note": "Rates and dollar are the master variables for gold miners; watch for hawkish surprises.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note, then the new record; stay flat unless a named catalyst appears for a leader stock; check Cigar Lake and Newmont news."
+}

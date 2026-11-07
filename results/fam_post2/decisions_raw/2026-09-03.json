@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-09-03",
+  "market_view": "Calm equity regime (VIX 15.2, falling) but the 10-year yield is at 4.80%, the highest since Nov 2023, which weighs on gold. Oil is in a supply-shock regime: WTI $91, +21% in 20 days.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.55, "catalyst": "Continuing supply shock: WTI $91.01 (+10.7% in 5d, +21% in 20d) and 'Hormuz Disruptions Redraw Shipping Lanes and Lift Freight Rates' (Mitsui O.S.K. CFO); 'Chevron to Invest $7 Billion in Venezuela' (WSJ) supports the Venezuela theme. Carried from the previous position.", "reasoning": "Holding XOM from 2026-08-31. Crude held and rose above the $83 threshold; XOM lags crude (beta about 0.4, +8% in 20d), so a policy-scale shock may not yet be fully reflected. No de-escalation seen. Exit at the 10-day horizon around 2026-09-14."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "The 10-year yield is at its highest since 2023 and gold is below its 200d average (-5% in 5d). NEM is up 20% in 20d, which is not a catalyst. The only headlines are generic (San Luis hiring manager, WGC central bank stats). The jobs report adds variance only."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "'NVIDIA to Acquire Hugging Face' ($12.9B, NVIDIA Blog, CNBC): acquirer-side deal, direction of the stock reaction unclear and likely priced in by NVDA's +3.2% day and +7% over 5d.", "reasoning": "An acquisition by NVDA is not clearly one-sided for NVDA shareholders, and the stock already rose. The semiconductor ETF is down 3.4% in 20d. Broadcom headline is negative. No clean, unpriced NVDA catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "The only LLY headline is a generic Kalkine piece, and the FDA items are unrelated. LLY is flat on 1d and down on 5d. No trial result or policy event is named."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Headlines are small-cap or generic (Ivanhoe slide, copper theft, private placement). Copper is down 3% in 20d, and uranium is weak and below its 200d average. No FCX-specific catalyst."}
+  },
+  "would_change_my_mind": "Oil: credible Iran/Hormuz de-escalation or WTI falling back below about 83 means exit XOM. Elsewhere: a named, unpriced catalyst for NVDA, NEM, LLY or FCX.",
+  "handoff": {
+    "run_id": "fp2-20260903-a",
+    "written_at": "2026-09-03T12:00:00Z",
+    "decision_day": "2026-09-03",
+    "data_cutoff": "2026-09-03",
+    "what_changed": "WTI rose to $91 (+10.7% in 5d) and the 10-year yield hit 4.80%, the highest since Nov 2023. New headlines: Chevron $7B Venezuela investment, Hormuz shipping disruption, and NVIDIA to acquire Hugging Face for $12.9B. No de-escalation seen, so the XOM long is kept.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-31, 10 days", "why": "WTI holds above 83 at $91 with Hormuz disruption and Venezuela headlines; exit at the horizon (about 2026-09-14) or on de-escalation."},
+      "gold_miners": {"position": "flat", "why": "Yields at a multi-year high and gold below its 200d average; no named catalyst."},
+      "chips": {"position": "flat", "why": "NVDA's Hugging Face acquisition is ambiguous for the acquirer and already followed by a 3.2% rise; no clear unpriced catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst in the headlines."},
+      "copper_uranium": {"position": "flat", "why": "No FCX-specific catalyst; copper and uranium are weak."}
+    },
+    "open_storylines": [
+      {"name": "Iran strikes, Hormuz and oil", "status": "escalating", "note": "WTI $91, Brent $95.6; Hormuz disruption lifting freight rates. Exit XOM at 10 days (about 2026-09-14) or on credible de-escalation; watch whether WTI holds above 83.", "first_seen": "2026-08-31"},
+      {"name": "Chevron and Exxon Venezuela", "status": "open", "note": "Chevron plans $7B to double Venezuela output in five years; earlier Exxon Venezuela news. Look for concrete deal terms.", "first_seen": "2026-08-31"},
+      {"name": "NVIDIA Hugging Face acquisition", "status": "open", "note": "$12.9B deal announced; watch the stock reaction and any NVDA-specific guidance. Long only with a clear unpriced catalyst.", "first_seen": "2026-09-03"},
+      {"name": "Gold and yields", "status": "open", "note": "10-year yield 4.80%, highest since Nov 2023; gold -5% in 5d. Watch the first-Friday jobs report.", "first_seen": "2026-08-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; check WTI stays above 83 and XOM is still supported (exit on de-escalation or at the 10-day horizon, around 2026-09-14); watch the first-Friday jobs report and yields for gold; stay flat on other families unless a named, unpriced catalyst appears."
+  }
+}

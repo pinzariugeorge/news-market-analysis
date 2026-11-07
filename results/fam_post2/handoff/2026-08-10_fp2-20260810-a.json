@@ -1,0 +1,69 @@
+{
+ "run_id": "fp2-20260810-a",
+ "written_at": "2026-08-10T09:00:00Z",
+ "decision_day": "2026-08-10",
+ "data_cutoff": "2026-08-10",
+ "what_changed": "Oil jumped about 5% before the open as Hormuz talks stalled (WTI above $82), and Reuters reported a Congo ban on copper and cobalt concentrate exports. Gold surged 2.3% on 2026-08-07 and NEM rose 7%, helped by the Barrick-Newmont settlement. LLY has no new news and stays held.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-10, 10 days",
+   "why": "Hormuz talks stalled and crude jumped after Friday's close, an unpriced re-escalation catalyst for XOM."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM up 20% in five days with the Barrick-Newmont settlement already priced, and gold still below its 200-day average."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector rally and TSMC sales are priced; no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-08-05, 10 days",
+   "why": "Guidance raise on 2026-08-05; no negative catalyst so far, so the hold continues."
+  },
+  "copper_uranium": {
+   "position": "long FCX since 2026-08-10, 10 days",
+   "why": "Reuters reported a Congo ban on copper and cobalt concentrate exports, a supply shock not yet traded."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran oil shock and Hormuz",
+   "status": "escalating",
+   "note": "Talks stalled and crude jumped about 5%; a deal announcement would reverse it; XOM long entered 2026-08-10, watch crude and the Wednesday inventory report.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Lilly Q2 guidance raise",
+   "status": "open",
+   "note": "LLY long since 2026-08-05 for 10 days; exit around 2026-08-19 unless a negative catalyst appears.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Congo copper and cobalt export ban",
+   "status": "open",
+   "note": "Check whether the ban is confirmed or narrowed, and how copper reacts; FCX long entered 2026-08-10.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Barrick-Newmont settlement",
+   "status": "open",
+   "note": "Nevada JV dispute settled for $1.95B and an IPO path; already priced in NEM; watch follow-through only.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Chip volatility",
+   "status": "open",
+   "note": "Sector +7.8% in five days, TSMC sales +45%; look for an NVDA-specific catalyst only.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Yields and tariffs",
+   "status": "open",
+   "note": "10-year yield 4.66 near its high; matters for gold miners.",
+   "first_seen": "2026-08-05"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; hold LLY through its window (about 2026-08-19), and check XOM against Hormuz news and FCX against the Congo ban follow-up. Exit the oil and copper longs on a Hormuz deal or a ban reversal. Stay flat on gold miners and chips unless a named unpriced catalyst appears."
+}

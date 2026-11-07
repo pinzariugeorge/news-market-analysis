@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-07-20",
+  "market_view": "VIX jumped 12% in a day and 25% in 5 days to 18.8, semis sold off (-8.9% in 5 days), and an Iran-driven oil shock is escalating with WTI +15.5% in 5 days. New Canada tariff headline adds macro noise.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 5, "confidence": 0.54, "catalyst": "Existing position: 'Oil prices rise after Trump says Iran will pay for killing U.S. service members' (CNBC, 2026-07-19); Iran supply disruption escalating, XOM +6.1% in 5d vs WTI +15.5% so still lagging crude; Exxon Q2 earnings due in window.", "reasoning": "Escalation continues, no de-escalation news, XOM lags crude and earnings are near. Position is at about 9-10 days; hold briefly rather than exit into escalation, but crude has run hard so confidence is modest."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "Gold bear market (-24% from high), NEM below 200d average. Only a Newmont Q2 projections preview, no one-sided setup."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none for NVDA (AMD Helios/Microsoft news concerns AMD, not the leader)", "reasoning": "Semis fell sharply in a rising-VIX regime. NVIDIA headlines are routine product blogs. AMD win is a rival's news, arguably neutral to negative for NVDA."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Only a retatrutide dosing explainer from Ro, not a Lilly catalyst. LLY already up 30% in 60 days."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.44, "catalyst": "none", "reasoning": "No FCX headline. Copper and uranium falling, FCX down 15% in 20 days, but that is not a catalyst. Canada tariff story is unrelated to a named FCX effect."}
+  },
+  "would_change_my_mind": "Hormuz or Iran de-escalation news or a crude reversal would exit oil; a named company catalyst for NVDA, LLY, NEM or FCX would justify a long.",
+  "handoff": {
+    "run_id": "fp2-20260720-a",
+    "written_at": "2026-07-20T12:00:00Z",
+    "decision_day": "2026-07-20",
+    "data_cutoff": "2026-07-20",
+    "what_changed": "Oil escalated again: WTI 82.5 (+4.5% on Friday, +15.5% in 5 days) and CNBC says Trump says Iran will pay for killing US service members. VIX jumped to 18.8 and semis fell 8.9% in 5 days. Trump announced 50% tariffs on Canadian goods.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days (extended to a final 5-day horizon from today)", "why": "Iran escalation continues with no de-escalation, XOM still lags crude, Exxon Q2 earnings approaching."},
+      "gold_miners": {"position": "flat", "why": "Gold bear market with firm dollar and yields; only a Newmont earnings preview."},
+      "chips": {"position": "flat", "why": "No NVDA-specific catalyst; semis sold off sharply; AMD Helios news concerns AMD."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst; only a retatrutide dosing explainer."},
+      "copper_uranium": {"position": "flat", "why": "No FCX catalyst; copper and uranium weak."}
+    },
+    "open_storylines": [
+      {"name": "Iran oil shock", "status": "escalating", "note": "Trump says Iran will pay for killing US service members; Brent 88.1, WTI 82.5. Exit XOM on de-escalation or crude slide.", "first_seen": "2026-07-15"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Watch report date and guidance; windfall signalled.", "first_seen": "2026-07-15"},
+      {"name": "Newmont Q2 earnings", "status": "open", "note": "Preview of Wall Street projections published; watch call date, production and cost guidance.", "first_seen": "2026-07-15"},
+      {"name": "Gold bear market", "status": "open", "note": "Gold 24.4% below its high; watch rates and dollar.", "first_seen": "2026-07-15"},
+      {"name": "Canada tariffs", "status": "open", "note": "50% US tariffs on Canadian goods announced; possible effect on TECK, CCJ and Canadian miners, none named yet.", "first_seen": "2026-07-20"},
+      {"name": "AMD Helios rack system", "status": "open", "note": "Microsoft is a new buyer; relevant only if it hits NVDA or shifts the chip leader.", "first_seen": "2026-07-20"},
+      {"name": "Cameco Cigar Lake", "status": "fading", "note": "Reportedly resolved; relevant only if CCJ becomes leader.", "first_seen": "2026-07-15"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this note and the new record; exit XOM at the 5-day horizon end (about 2026-07-27) or earlier on Iran de-escalation or a crude slide, and re-check around Exxon earnings; stay flat elsewhere unless a named catalyst for a leader appears."
+  }
+}

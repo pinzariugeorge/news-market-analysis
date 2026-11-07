@@ -31,7 +31,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", default="fam_v0")
     ap.add_argument("--capital", type=float, default=1000.0)
+    ap.add_argument("--min-conf", type=float, default=0.55, help="confidence needed for a long (the catalyst prompt uses 0.52)")
     a = ap.parse_args()
+    global MIN_CONF
+    MIN_CONF = a.min_conf
     run = ROOT / "results" / a.run
     days = json.loads((run / "days.json").read_text(encoding="utf-8"))
     series, stocks, sel = fd.load_series(), fd.load_stocks(), fd.selections()
@@ -107,6 +110,10 @@ def main():
             longs = sorted([r for r in by_day[d] if r["call"] == "long" and r["confidence"] >= MIN_CONF], key=lambda r: -r["confidence"])[:3]
             for r in longs:
                 t, price = r["leader"], stocks[r["leader"]][d]
+                if t in pos:  # already holding this name: a repeated long call extends the hold instead of buying again (the old code overwrote the position and lost the cash)
+                    sh0, ep0, xd0, fam0 = pos[t]
+                    pos[t] = (sh0, ep0, max(xd0, allcal[min(k + r["horizon"], len(allcal) - 1)]), fam0)
+                    continue
                 sh = int((eq_now / 3) / price)
                 while sh >= 1:
                     v = sh * price

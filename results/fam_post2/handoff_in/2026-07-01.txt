@@ -1,0 +1,2 @@
+# Handoff from the previous run (read first)
+WARNING: FIRST RUN: no previous valid handoff; start from the handbook and the empty storylines template

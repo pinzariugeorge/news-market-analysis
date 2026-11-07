@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp2-20260922-a (decision day 2026-09-22, data cutoff 2026-09-22)
+What changed: WTI fell 4.5% to 95.78 on U.S.-Iran diplomacy hopes and improving Middle East crude flows (WSJ, Reuters), so the oil thesis is fading and XOM is exited. Semis ETF jumped 4% (AMD +10%), copper up six days toward a record; yields little changed ahead of Fed comments.
+Holdings and reasons:
+- oil_gas: flat (exited XOM, long since 2026-08-31) | De-escalation headlines and WTI sliding toward 90 hit the exit trigger.
+- gold_miners: flat | Gold under its 200-day average with yields near 5%; no unpriced catalyst.
+- chips: flat | The sharp rebound is already priced and there is no named NVDA catalyst.
+- pharma: flat | No LLY-specific unpriced catalyst; Medicare GLP-1 uptake is known.
+- copper_uranium: flat | Copper strength is priced and nothing FCX-specific; uranium news concerns CCJ.
+Open storylines:
+- [fading] Iran war, Saudi pipeline and oil: WTI 95.8 on diplomacy hopes; re-enter oil only on a new supply shock or talks collapsing (CNBC: Iran vows not to surrender).
+- [open] Fed hike and yields: 10-year about 4.96%, traders await Fed comments; watch the first-Friday jobs report and gold versus its 200-day average.
+- [open] Chip rebound and AI: Semis ETF +10% in 5 days, AMD at $1T; long only on a named NVDA catalyst, not mood.
+- [open] Copper toward record on China tightness: Six-day rally (Bloomberg); look for an FCX-specific catalyst or supply outage.
+- [open] Uranium: Cameco and GLE: Cameco is selling agent for Global Laser Enrichment output; relevant to CCJ, not the FCX leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note and the new record; all five families are flat, so stay flat unless a named, unpriced catalyst appears (oil: renewed supply shock or failed talks; copper: FCX-specific news; chips: NVDA-specific event); watch yields, the Fed and the jobs report.

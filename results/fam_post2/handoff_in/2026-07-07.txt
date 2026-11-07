@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fp2-20260701-a (decision day 2026-07-01, data cutoff 2026-07-01)
+What changed: First run: no previous note. All five families are flat because no named catalyst was found for the leader stocks. Noted the Cameco Cigar Lake suspension, the Newmont Q2 call date and the sharp falls in crude and gold.
+Holdings and reasons:
+- oil_gas: flat | WTI fell about 25% in 20 days but no named catalyst for XOM.
+- gold_miners: flat | Only a Newmont call date notice; gold weak with a firm dollar and no one-sided setup.
+- chips: flat | Sector up sharply already; no unpriced named event for NVDA.
+- pharma: flat | No trial, approval or pricing headline for LLY.
+- copper_uranium: flat | Cigar Lake news concerns CCJ, not the leader FCX; copper headline negative.
+Open storylines:
+- [open] Cameco Cigar Lake suspension: Watch the restart timing and uranium price reaction; relevant only if CCJ becomes the leader.
+- [open] Newmont Q2 earnings: Conference call announced; watch the date, production and cost guidance.
+- [open] Oil and gold slide: WTI down 25% and gold down 10% over 20 days; look for a supply shock or a rates or dollar turn.
+- [open] Fed chair Warsh inflation focus: Rates and dollar are the master variables for gold miners; watch for hawkish surprises.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this note, then the new record; stay flat unless a named catalyst appears for a leader stock; check Cigar Lake and Newmont news.

@@ -1,0 +1,57 @@
+{
+ "run_id": "fp2-20260917-a",
+ "written_at": "2026-09-17T12:00:00Z",
+ "decision_day": "2026-09-17",
+ "data_cutoff": "2026-09-17",
+ "what_changed": "Fed hiked rates unanimously; yields dipped and tech rallied. WTI fell 3.2% to 102.43 and XOM fell 3.5%, with CNBC reporting the Saudi pipeline outage is seen as less disruptive than feared, which weakens the oil thesis.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-31, extended to about 2026-09-28",
+   "why": "WTI still above 100 and no credible de-escalation, but the shock is seen as less disruptive and confidence is only marginal."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is below its 200-day average, yields are near 5% and the Fed hiked; no unpriced catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Huang's sales claim and the AI rebound are mood, not a checkable unpriced catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific catalyst in the headlines."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific catalyst; uranium news concerns CCJ."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Saudi strikes and oil",
+   "status": "fading",
+   "note": "WTI 102, but the pipeline outage is seen as less disruptive than feared; exit XOM about 2026-09-28, on credible de-escalation, or if WTI falls toward 90.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Fed hike and yields",
+   "status": "open",
+   "note": "First hike in years under Warsh; 10-year about 5.0% but dipping; watch the first-Friday jobs report and gold below its 200-day average.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "AI slowdown warning and chip rebound",
+   "status": "open",
+   "note": "Chips rebounding on Huang's twice-the-chips claim, but semis ETF is down 18% in 60 days; long only on a clear unpriced catalyst.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Uranium: Niger investment and Cameco offtake",
+   "status": "open",
+   "note": "US $414M Niger uranium deal and a Cameco laser enrichment offtake; relevant to CCJ, not the FCX leader; check for FCX-specific news.",
+   "first_seen": "2026-09-17"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this note and the new record; hold XOM to about 2026-09-28 only while WTI stays well above 90 with no credible de-escalation, and exit on de-escalation or WTI near 90; stay flat on the other families unless a named, unpriced catalyst appears; watch yields, the Fed and the jobs report."
+}
