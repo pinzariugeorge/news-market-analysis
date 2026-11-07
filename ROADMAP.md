@@ -68,6 +68,8 @@ Timing rule: a headline dated D is only usable from `decision_date` (next tradin
 ## Results (`results/`)
 | File | Content |
 |---|---|
+| `results/SURPRISE_TEST.md` | Earnings surprise tests with Alpha Vantage consensus history (639 events, 20 names): reaction follows the surprise, no drift, no pre-earnings edge; next possibilities |
+| `results/surprise_test.csv` | Same numbers as CSV |
 | `results/EARNINGS_TEST.md` | Earnings dates from SEC EDGAR (2,631 events) and the post-earnings drift test: no edge; findings |
 | `results/earnings_test.csv` | Same numbers as CSV |
 | `results/FAMILY_RUN.md` | Family agent run fam_v0 (validation 2023-2024): setup, result (all calls flat, portfolio stayed cash), counterfactuals, options |
@@ -133,7 +135,7 @@ Run with `python -I src\<script>.py` on Windows.
 - `cache/`: cached model outputs (git-ignored).
 
 ## Outside this repo
-- `D:\Projects\Marketing\news-market-analysis\.env`: the user's own env file with the Kaggle token. A copy lives in this folder's git-ignored `.env`.
+- `D:\Projects\Marketing\news-market-analysis\.env`: the user's own env file with the Kaggle token and the Alpha Vantage key (`src/download_consensus.py` reads the project `.env` first, then this one). `D:\Projects\Marketing\news-market-analysis\api_docu_vintage.txt`: the user's saved copy of the Alpha Vantage API documentation (about 260 KB). A copy lives in this folder's git-ignored `.env`.
 - `D:\Projects\Marketing\news-market-analysis\context\` (Romanian) and `requirements.txt`: notes from an earlier, different framing (GDELT news-vs-S&P correlation study, no trading). Not authoritative for this project; STRATEGY.md wins.
 
 ## How to get things

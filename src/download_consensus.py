@@ -24,11 +24,11 @@ DEFAULT = ["XOM", "CVX", "COP", "OXY", "NEM", "NVDA", "MU", "AMD", "INTC", "LLY"
 def key_from_env():
     if os.environ.get("ALPHAVANTAGE_API_KEY"):
         return os.environ["ALPHAVANTAGE_API_KEY"]
-    env = ROOT / ".env"
-    if env.exists():
-        for line in env.read_text(encoding="utf-8").splitlines():
-            if line.startswith("ALPHAVANTAGE_API_KEY="):
-                return line.split("=", 1)[1].strip()
+    for env in (ROOT / ".env", ROOT.parent / ".env"):          # project .env first, then the parent folder's .env
+        if env.exists():
+            for line in env.read_text(encoding="utf-8").splitlines():
+                if line.startswith("ALPHAVANTAGE_API_KEY=") and line.split("=", 1)[1].strip():
+                    return line.split("=", 1)[1].strip()
     return None
 
 
