@@ -20,6 +20,11 @@
    "at": "2026-11-09T12:35:15Z",
    "ok": true,
    "note": "0 orders: "
+  },
+  "close": {
+   "at": "2026-11-09T17:07:24Z",
+   "ok": true,
+   "note": "equity 1000.00, reconcile ok"
   }
  },
  "warnings": []

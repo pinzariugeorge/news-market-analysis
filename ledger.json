@@ -6,7 +6,12 @@
  "positions": [],
  "orders": [],
  "fills": [],
- "equity_history": [],
+ "equity_history": [
+  {
+   "date": "2026-11-09",
+   "equity": 1000.0
+  }
+ ],
  "notes": [
   {
    "time": "2026-11-09T12:35:15Z",
