@@ -178,3 +178,8 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 - Open: scheduled tasks start in the default permission mode and may pause for approvals on the first unattended run; the lid-close action is a Windows setting only the user can change; Saxo fees and purchase-tax rates are third-party figures.
 
 **Next step:** watch the 2026-11-10 morning run end to end, read the first reviewer report, then build the offline baselines.
+
+## 2026-11-09 (night): battery test
+- User decided: run locally only, unplugged, to measure battery drain. Daemon heartbeat now logs battery percent, AC state and battery saver; `python -I src\eu_cycle.py battery` prints the drain per hour. Daemon restarted 14:50 local (98%, on AC). Committed the restructure earlier (not pushed).
+
+**Next step:** read the drain after a few hours; watch the 2026-11-10 morning run.

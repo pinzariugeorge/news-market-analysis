@@ -42,6 +42,20 @@ def keep_awake():
         return False
 
 
+class SPS(ctypes.Structure):
+    _fields_ = [("ac", ctypes.c_ubyte), ("flag", ctypes.c_ubyte), ("pct", ctypes.c_ubyte), ("saver", ctypes.c_ubyte), ("life", ctypes.c_ulong), ("full", ctypes.c_ulong)]
+
+
+def power():
+    """(battery percent or None, on_ac True/False/None, battery_saver on) from GetSystemPowerStatus; used to measure drain, never to change anything."""
+    try:
+        s = SPS()
+        ctypes.windll.kernel32.GetSystemPowerStatus(ctypes.byref(s))
+        return (None if s.pct == 255 else int(s.pct)), (None if s.ac == 255 else bool(s.ac)), bool(s.saver)
+    except Exception:  # noqa: BLE001
+        return None, None, False
+
+
 def single_instance():
     f = pb.PAPER / "daemon.pid"
     if f.exists():
@@ -98,7 +112,8 @@ def main():
         awake = keep_awake()
         if beat is None or (now - beat).total_seconds() >= 60:
             beat = now
-            log("heartbeat awake_request={} trading_day={}".format(awake, pb.is_trading_day(now.date())))
+            pct, ac, saver = power()
+            log("heartbeat awake_request={} trading_day={} battery={}% ac={} saver={}".format(awake, pb.is_trading_day(now.date()), pct, ac, saver))
         step("tick", lambda: tick(now, last))
         time.sleep(30)
 

@@ -72,8 +72,8 @@ Run with `python -I src\<script>.py` on Windows.
 |---|---|---|
 | `live_feed.py` | ACTIVE | Live (about 15 min delayed) quotes and 5-minute bars for European stocks and ETCs from Yahoo, free; `quote`, `bars`, `snapshot` (appends to `data/live/`), self-test |
 | `paper_broker.py` | ACTIVE | The paper broker: ledger (atomic JSON, dashboard shape), order log, idempotent orders, risk checks, next-bar fills, fees/FX/taxes, hours and holidays (UTC, hand-coded EU summer time), stops and horizon exits, custody, reconcile, outcomes block; 29 self-tests on a temp folder (`python -I src\paper_broker.py selftest`) |
-| `eu_cycle.py` | ACTIVE | Daily cycle runner: `due`, `collect` (Google News RSS per theme, drivers, quote table), `prep`, `apply`, `fills`, `watch`, `close`, `status`; per-day state file; late starts produce warnings, never errors |
-| `eu_daemon.py` | ACTIVE | Always-on Python scheduler and keep-awake (heartbeat log, fills, 30-minute watchers, close job); started at logon by the Windows task `EuPaperDaemon` |
+| `eu_cycle.py` | ACTIVE | Daily cycle runner: `due`, `collect` (Google News RSS per theme, drivers, quote table), `prep`, `apply`, `fills`, `watch`, `close`, `status`, `battery` (drain from the daemon heartbeat); per-day state file; late starts produce warnings, never errors |
+| `eu_daemon.py` | ACTIVE | Always-on Python scheduler and keep-awake (heartbeat log with battery percent and AC state, fills, 30-minute watchers, close job); started at logon by the Windows task `EuPaperDaemon` |
 | `eu_report.py` | ACTIVE | Builds the end-of-day report page for the phone (`data/paper/reports/artifact.html`, published to Claude cloud by the reviewer task) |
 | `dashboard_server.py` | ACTIVE | Local server for the dashboard (`python -I src\dashboard_server.py`, port 8765): reads the paper ledger (or a DEMO one with `--demo`), live delayed quotes, FX to EUR; `--selftest` checks the account maths |
 | `eu_screen.py` | ACTIVE | Screens about 400 European large and mid caps across sectors: price at most 333 EUR, liquidity, volatility, returns, trend; writes `universe/eu_screen.csv` |

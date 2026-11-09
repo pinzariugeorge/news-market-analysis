@@ -10,6 +10,7 @@ Commands (python -I src/eu_cycle.py <command>):
   fills                  fills pending orders at the first eligible bar
   watch                  stops/exits from the risk manager, then fills (run every 30 minutes in session)
   close                  mark to market, custody, equity point, reconcile, day report
+  battery                battery drain from the daemon heartbeat log (percent per hour while on battery)
 Day state: data/paper/state/<YYYY-MM-DD>.json. Time is UTC inside; a day starts whenever the first command of the day runs.
 """
 import datetime as dt
@@ -364,6 +365,29 @@ def close(now=None):
     print("close: equity {:.2f} day {:+.2f}% reconcile {}".format(eq, rep["day_pnl_pct"], "ok" if not bad else bad))
 
 
+def battery():
+    import re
+    rows = []
+    for ln in (PAPER / "daemon.log").read_text(encoding="utf-8").splitlines():
+        m = re.match(r"(\S+) heartbeat .*battery=(\d+|None)% ac=(\w+)", ln)
+        if m and m.group(2) != "None":
+            rows.append((pb.parse_utc(m.group(1)), int(m.group(2)), m.group(3) == "True"))
+    if not rows:
+        print("no battery data yet (heartbeats before the update carry none)")
+        return
+    seg = [r for r in rows if not r[2]]
+    print("{} heartbeats with battery data; now {}% ({})".format(len(rows), rows[-1][1], "on AC" if rows[-1][2] else "on battery"))
+    if len(seg) >= 2:
+        # drain over the latest unbroken stretch on battery
+        i = len(rows) - 1
+        while i > 0 and not rows[i - 1][2]:
+            i -= 1
+        a, b = rows[i], rows[-1]
+        h = (b[0] - a[0]).total_seconds() / 3600
+        if not b[2] and h >= 0.05:
+            print("on battery since {} UTC: {}% -> {}% in {:.1f} h = {:.1f} % per hour; full day (11 h) would use about {:.0f}%".format(a[0].strftime("%H:%M"), a[1], b[1], h, (a[1] - b[1]) / h, (a[1] - b[1]) / h * 11))
+
+
 def status():
     now = pb.utc_now()
     d = today(now)
@@ -397,5 +421,7 @@ if __name__ == "__main__":
         watch()
     elif cmd == "close":
         close()
+    elif cmd == "battery":
+        battery()
     else:
         print(__doc__)
