@@ -6,6 +6,8 @@ Usage: python -I src/notify.py "text" [title] [priority 1-5]      send one messa
        python -I src/notify.py --selftest                           offline check of the request that would be sent
 Used by: eu_daemon.py (alive each morning, fills, errors, close result, low battery) and eu_cycle.py (trader orders, reviewer report ready with a link to the cloud report).
 """
+import shutil
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
@@ -39,6 +41,13 @@ def send(text, title="Paper trading", priority=3, click=None, tags=None):
         if not t:
             return False
         body, h = build(text, title, priority, click, tags)
+        curl = shutil.which("curl.exe") or shutil.which("curl")
+        if curl:   # Windows curl uses the system certificate store; Python's urllib fails the ntfy.sh chain on this machine ("certificate has expired"). Verification stays ON.
+            cmd = [curl, "-sS", "-m", "15", "-o", "NUL" if sys.platform == "win32" else "/dev/null", "-w", "%{http_code}", "--data-binary", "@-"]
+            for k, v in h.items():
+                cmd += ["-H", "{}: {}".format(k, v)]
+            r = subprocess.run(cmd + ["https://ntfy.sh/" + t], input=body, capture_output=True, timeout=25)
+            return r.stdout.decode().strip() == "200"
         r = urllib.request.urlopen(urllib.request.Request("https://ntfy.sh/" + t, data=body, headers=h, method="POST"), timeout=15)
         return r.status == 200
     except Exception:  # noqa: BLE001
