@@ -202,3 +202,8 @@ otify.py "test"`.
 
 ## 2026-11-09 (15:30 CET): dashboard sync made manual
 - User reported console windows flashing: the 2-minute git pull ran from a hidden process. Removed the timer: the cloud ledger is pulled at start and with a Sync button only; git and curl calls now use the no-window flag. Dashboard restarted.
+
+## 2026-11-09 (evening): cloud reviewer fix
+- The first cloud evening run failed: `eu_cycle.py prep` trusted the synced `collect` step flag, but `data/live/<date>/collected.json` is not in the state branch, so a cloud run after a local collect crashed with FileNotFoundError. `prep` now re-collects (force) when the file is missing. Checked in a cloud checkout with the real state pulled: `prep reviewer` and `eu_report.py` pass.
+
+**Next step:** merge the fix to `main` (cloud tasks clone it), fire `eu-paper-evening` once and read its result.
