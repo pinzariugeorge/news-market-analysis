@@ -40,7 +40,7 @@ tr.sel{background:rgba(36,87,214,.08)}tr.click{cursor:pointer}tr.click:hover{bac
 <body>
 <header>
   <h1>Paper Broker</h1><span id="mode" class="badge">...</span>
-  <span class="mute" id="status">loading...</span>
+  <span class="mute" id="status">loading...</span><button id="syncbtn" type="button" hidden>Sync cloud ledger</button>
   <span class="mute" style="margin-left:auto">Prices are delayed about 15 minutes. Research and simulation only.</span>
 </header>
 <main>
@@ -137,11 +137,13 @@ function refresh(){
     if(s.error){$("err").innerHTML='<div class="err">'+esc(s.error)+'</div>';return}
     $("err").innerHTML="";S=s;
     var m=$("mode");m.textContent=s.mode==="DEMO"?"DEMO DATA - not a result":"PAPER";m.className="badge"+(s.mode==="DEMO"?"":" paper");
+    $("syncbtn").hidden=!s.synced;
     $("status").textContent="prices "+s.now_utc+" UTC"+(s.synced?(" | cloud ledger synced "+(s.synced.at||"...")+" UTC"+(s.synced.err?(" (sync error: "+s.synced.err+")"):"")):"");
     if(!selected)selected=(s.account.positions[0]&&s.account.positions[0].symbol)||s.watch[0].symbol;
     renderKpis();renderWatch();renderTab();loadChart();
   }).catch(function(e){$("err").innerHTML='<div class="err">Cannot reach the dashboard server: '+esc(e)+'</div>'});
 }
+var sb=$("syncbtn");sb.onclick=function(){sb.disabled=true;sb.textContent="Syncing...";fetch("/api/sync").then(function(r){return r.json()}).then(function(){refresh()}).finally(function(){sb.disabled=false;sb.textContent="Sync cloud ledger"})};
 refresh();setInterval(refresh,30000);window.addEventListener("resize",function(){if(S)drawChart()});
 </script>
 </body>

@@ -21,8 +21,11 @@ SKIP_NAMES = {".lock", "daemon.pid", "daemon.log", "ledger.json.tmp", "ledger_de
 IDENT = ["-c", "user.name=paper-bot", "-c", "user.email=paper-bot@users.noreply.github.com"]
 
 
+NOWIN = 0x08000000 if os.name == "nt" else 0   # CREATE_NO_WINDOW: a hidden background process must not flash console windows
+
+
 def git(repo, *args, check=True):
-    r = subprocess.run(["git", "-C", str(repo)] + list(args), capture_output=True, text=True)
+    r = subprocess.run(["git", "-C", str(repo)] + list(args), capture_output=True, text=True, creationflags=NOWIN)
     if check and r.returncode != 0:
         raise RuntimeError("git {} failed: {}".format(" ".join(args[:2]), (r.stderr or r.stdout).strip()[:300]))
     return r

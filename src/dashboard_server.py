@@ -1,7 +1,7 @@
 """Local broker-style dashboard for the paper account: account summary, watchlist with live (delayed) prices, positions, orders, trade history, equity curve, agent notes.
 
 Run:  python -I src/dashboard_server.py            -> http://127.0.0.1:8765  (reads data/paper/ledger.json, or the DEMO ledger if there is none)
-      python -I src/dashboard_server.py --cloud     -> same page, but the ledger is pulled from the cloud state branch every 2 minutes into data/paper_view/ (never touches data/paper/); prices stay live (about 15 min delayed)
+      python -I src/dashboard_server.py --cloud     -> same page, but the ledger is pulled from the cloud state branch once at start and when you press Sync (no timer) into data/paper_view/ (never touches data/paper/); prices stay live (about 15 min delayed)
       python -I src/dashboard_server.py --demo      -> writes data/paper/ledger_demo.json (clearly marked DEMO, built from real daily closes) and exits
       python -I src/dashboard_server.py --selftest  -> offline checks of the account maths
 Standard library only. Prices come from `src/live_feed.py` (Yahoo, about 15 minutes delayed); the page refreshes every 30 seconds. Research and paper trading only.
@@ -41,16 +41,15 @@ CLOUD = False
 SYNC = {"at": None, "err": None}
 
 
-def sync_loop():
-    """Cloud mode: pull the ledger state from the git branch into data/paper_view/ every 2 minutes (read-only for the account; the cloud tasks are the only writers)."""
+def do_sync():
+    """Cloud mode: pull the ledger state from the git branch into data/paper_view/ (read-only for the account; the cloud tasks are the only writers). Runs once at start and when you press Sync; there is no timer."""
     import state_sync
-    while True:
-        try:
-            state_sync.pull(paper=VIEW)
-            SYNC["at"], SYNC["err"] = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S"), None
-        except Exception as e:  # noqa: BLE001
-            SYNC["err"] = str(e)[:120]
-        time.sleep(120)
+    try:
+        state_sync.pull(paper=VIEW)
+        SYNC["at"], SYNC["err"] = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S"), None
+    except Exception as e:  # noqa: BLE001
+        SYNC["err"] = str(e)[:120]
+    return dict(SYNC)
 
 
 def cached(key, fn, ttl=30):
@@ -213,6 +212,8 @@ class H(BaseHTTPRequestHandler):
         try:
             if u.path == "/":
                 self.send(PAGE.read_bytes(), "text/html")
+            elif u.path == "/api/sync":
+                self.send(json.dumps(do_sync() if CLOUD else {"err": "not in cloud mode"}))
             elif u.path == "/api/state":
                 self.send(json.dumps(state()))
             elif u.path == "/api/bars":
@@ -233,11 +234,7 @@ if __name__ == "__main__":
     else:
         if "--cloud" in sys.argv:
             CLOUD = True
-            threading.Thread(target=sync_loop, daemon=True).start()
-            for _ in range(60):          # wait up to 60 s for the first pull
-                if load_ledger() or SYNC["err"]:
-                    break
-                time.sleep(1)
+            do_sync()
         elif not load_ledger():
             make_demo()
         print("dashboard on http://127.0.0.1:8765  (Ctrl+C to stop)")

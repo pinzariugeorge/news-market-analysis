@@ -51,7 +51,7 @@ def send(text, title="Paper trading", priority=3, click=None, tags=None):
             cmd = [curl, "-sS", "-m", "15", "-o", "NUL" if sys.platform == "win32" else "/dev/null", "-w", "%{http_code}", "--data-binary", "@-"]
             for k, v in h.items():
                 cmd += ["-H", "{}: {}".format(k, v)]
-            r = subprocess.run(cmd + ["https://ntfy.sh/" + t], input=body, capture_output=True, timeout=25)
+            r = subprocess.run(cmd + ["https://ntfy.sh/" + t], input=body, capture_output=True, timeout=25, creationflags=0x08000000 if sys.platform == "win32" else 0)
             return r.stdout.decode().strip() == "200"
         r = urllib.request.urlopen(urllib.request.Request("https://ntfy.sh/" + t, data=body, headers=h, method="POST"), timeout=15)
         return r.status == 200

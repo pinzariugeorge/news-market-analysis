@@ -199,3 +199,6 @@ otify.py "test"`.
 
 ## 2026-11-09 (15:15 CET): live dashboard on the cloud state
 - `src/dashboard_server.py --cloud`: ledger pulled from `claude/paper-state` every 2 minutes into `data/paper_view/`, prices live (about 15 min delayed), header shows the last sync. Running now on http://127.0.0.1:8765 (hidden pythonw; restart it after a reboot with the same command).
+
+## 2026-11-09 (15:30 CET): dashboard sync made manual
+- User reported console windows flashing: the 2-minute git pull ran from a hidden process. Removed the timer: the cloud ledger is pulled at start and with a Sync button only; git and curl calls now use the no-window flag. Dashboard restarted.
