@@ -17,6 +17,11 @@ REPORT_URL = "https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6"
 
 
 def topic():
+    import os
+    if os.environ.get("EU_NO_NOTIFY"):
+        return None                       # tests and dry runs never notify
+    if os.environ.get("NTFY_TOPIC", "").strip():
+        return os.environ["NTFY_TOPIC"].strip()   # cloud environment variable
     for env in (ROOT / ".env", ROOT.parent / ".env"):
         if env.exists():
             for line in env.read_text(encoding="utf-8").splitlines():

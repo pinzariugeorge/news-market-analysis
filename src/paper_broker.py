@@ -420,6 +420,41 @@ def system_orders(now=None):
     return out
 
 
+def replay_exits(now=None):
+    """Cloud mode (no always-on watcher): find, from the 5-minute bars since each entry, when the -8% stop or the horizon exit WOULD have fired, and submit the sell with that
+    historical trigger time (the sell then fills at the first bar after it, exactly as the live watcher would have). Idempotent per day, symbol and tag. Returns the orders."""
+    now = now or utc_now()
+    out = []
+    led = load()
+    for p in led["positions"]:
+        sym = p["symbol"]
+        ft = next((f["time"] for f in reversed(led["fills"]) if f["symbol"] == sym and f["side"] == "BUY"), None)
+        if not ft:
+            continue
+        t0 = parse_utc(ft)
+        stop_px = p["avg_price"] * (1 + LIM["stop_pct"] / 100)
+        trig, tag = None, None
+        for b in get_bars(sym):
+            bt = parse_utc(b[0])
+            if bt <= t0:
+                continue                         # never the entry bar itself
+            op, cl = session(sym, bt.date())
+            end = bt + dt.timedelta(minutes=5)
+            if not (op <= bt < cl) or end > now:
+                continue
+            if b[4] is not None and b[4] <= stop_px:
+                trig, tag = end, "stop"           # the bar closed at or below the stop: the order exists from the bar's end
+                break
+        ex = dt.date.fromisoformat(p["exit_by"])
+        _, cl = session(sym, ex)
+        th = cl - dt.timedelta(minutes=45)
+        if th <= now and (trig is None or th < trig):
+            trig, tag = th, "horizon"
+        if trig and trig <= now:
+            out.append(submit({"symbol": sym, "side": "SELL", "qty": p["qty"], "tag": tag}, "system:" + tag, trig))
+    return out
+
+
 def mark_to_market(now=None, write=True):
     now = now or utc_now()
     with Lock():
@@ -568,6 +603,25 @@ def selftest():
         led = load()
         check("position closed and reconcile clean", not led["positions"] and reconcile() == [] and led["fills"][-1]["realized_eur"] < 0)
         check("outcomes block lists the closed trade", "Tally: 1 closed trades, 0 won" in outcomes_block())
+        # replay (cloud mode): a stop that fired while nobody was watching is found from the bars
+        led0 = load()
+        led0["positions"].append({"symbol": "BAYN.DE", "name": "Bayer", "qty": 3, "avg_price": 90.0, "currency": "EUR", "opened": "2026-11-09", "exit_by": "2026-11-30", "catalyst": "x", "confidence": 0.6,
+                                  "horizon": 10, "agent": "t", "theme": "pharma"})
+        led0["fills"].append({"id": 99, "order_id": "t-buy", "time": iso(day.replace(hour=13, minute=0)), "symbol": "BAYN.DE", "side": "BUY", "qty": 3, "price": 90.0, "currency": "EUR", "fee_eur": 2.5,
+                              "gross_eur": 270.0, "costs": {}, "realized_eur": None, "catalyst": "x", "agent": "t", "source": "agent", "theme": "pharma"})
+        led0["cash"] -= 272.5
+        save(led0)
+        BARS["BAYN.DE"] = [[iso(day.replace(hour=15, minute=m)), 90.0, 90, 89, 90.0 if m < 20 else 82.0, 10] for m in range(0, 60, 5)] + [[iso(day.replace(hour=16, minute=0)), 82.0, 82, 81, 82.0, 10]]
+        rs = replay_exits(day.replace(hour=16, minute=20))
+        check("replay finds the stop from the bars and uses the bar end as the order time", rs and rs[0]["status"] == "ACCEPTED" and rs[0]["time"] == iso(day.replace(hour=15, minute=25)) and "stop" in rs[0]["id"])
+        check("replay is idempotent", replay_exits(day.replace(hour=16, minute=20))[0].get("duplicate") is True)
+        process_fills(day.replace(hour=16, minute=20))
+        check("replayed stop fills at the next bar after the trigger", load()["fills"][-1]["symbol"] == "BAYN.DE" and load()["fills"][-1]["time"] == iso(day.replace(hour=15, minute=25)) and not any(x["symbol"] == "BAYN.DE" for x in load()["positions"]))
+        led1 = load()
+        led1["cash"], led1["fills"] = 1000.0, []
+        led1["positions"], led1["orders"] = [], []
+        save(led1)
+        led1["equity_history"] = []
         # loss cap
         led["equity_history"] = [{"date": "2026-11-06", "equity": 1000.0}]
         led["cash"] = 960.0

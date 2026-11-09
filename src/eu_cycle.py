@@ -10,6 +10,7 @@ Commands (python -I src/eu_cycle.py <command>):
   fills                  fills pending orders at the first eligible bar
   watch                  stops/exits from the risk manager, then fills (run every 30 minutes in session)
   close                  mark to market, custody, equity point, reconcile, day report
+  evening                cloud mode after the close: replay stops/exits from the bars, fills, then close
   battery                battery drain from the daemon heartbeat log (percent per hour while on battery)
 Day state: data/paper/state/<YYYY-MM-DD>.json. Time is UTC inside; a day starts whenever the first command of the day runs.
 """
@@ -392,6 +393,19 @@ def battery():
             print("on battery since {} UTC: {}% -> {}% in {:.1f} h = {:.1f} % per hour; full day (11 h) would use about {:.0f}%".format(a[0].strftime("%H:%M"), a[1], b[1], h, (a[1] - b[1]) / h, (a[1] - b[1]) / h * 11))
 
 
+def evening(now=None):
+    """Cloud mode, one call after the close: replay stops and horizon exits from the bars, fill everything pending, then the close job."""
+    now = now or pb.utc_now()
+    d = today(now)
+    if not pb.is_trading_day(d):
+        print("not a trading day")
+        return
+    for r in pb.replay_exits(now):
+        print("replayed exit:", r["id"], r["status"], r.get("reasons", ""))
+    do_fills(now)
+    close(now)
+
+
 def status():
     now = pb.utc_now()
     d = today(now)
@@ -425,6 +439,8 @@ if __name__ == "__main__":
         watch()
     elif cmd == "close":
         close()
+    elif cmd == "evening":
+        evening()
     elif cmd == "battery":
         battery()
     else:
