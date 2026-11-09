@@ -1,6 +1,7 @@
 """Local broker-style dashboard for the paper account: account summary, watchlist with live (delayed) prices, positions, orders, trade history, equity curve, agent notes.
 
 Run:  python -I src/dashboard_server.py            -> http://127.0.0.1:8765  (reads data/paper/ledger.json, or the DEMO ledger if there is none)
+      python -I src/dashboard_server.py --cloud     -> same page, but the ledger is pulled from the cloud state branch every 2 minutes into data/paper_view/ (never touches data/paper/); prices stay live (about 15 min delayed)
       python -I src/dashboard_server.py --demo      -> writes data/paper/ledger_demo.json (clearly marked DEMO, built from real daily closes) and exits
       python -I src/dashboard_server.py --selftest  -> offline checks of the account maths
 Standard library only. Prices come from `src/live_feed.py` (Yahoo, about 15 minutes delayed); the page refreshes every 30 seconds. Research and paper trading only.
@@ -35,6 +36,21 @@ PAGE = ROOT / "dashboard" / "index.html"
 WATCH = ("SHEL.L TTE.PA BP.L ENI.MI EQNR.OL FRES.L EDV.L IFX.DE STMPA.PA BESI.AS AZN.L NOVN.SW NOVO-B.CO SAN.PA GSK.L BAYN.DE GLEN.L RIO.L ANTO.L BOL.ST").split()
 FXSYM = {"GBp": "GBPEUR=X", "CHF": "CHFEUR=X", "DKK": "DKKEUR=X", "NOK": "NOKEUR=X", "SEK": "SEKEUR=X", "PLN": "PLNEUR=X", "USD": "USDEUR=X"}
 CACHE, LOCK = {}, threading.Lock()
+VIEW = ROOT / "data" / "paper_view"
+CLOUD = False
+SYNC = {"at": None, "err": None}
+
+
+def sync_loop():
+    """Cloud mode: pull the ledger state from the git branch into data/paper_view/ every 2 minutes (read-only for the account; the cloud tasks are the only writers)."""
+    import state_sync
+    while True:
+        try:
+            state_sync.pull(paper=VIEW)
+            SYNC["at"], SYNC["err"] = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S"), None
+        except Exception as e:  # noqa: BLE001
+            SYNC["err"] = str(e)[:120]
+        time.sleep(120)
 
 
 def cached(key, fn, ttl=30):
@@ -79,6 +95,9 @@ def account(ledger, quotes, fx):
 
 
 def load_ledger():
+    if CLOUD:
+        f = VIEW / "ledger.json"
+        return json.loads(f.read_text(encoding="utf-8")) if f.exists() else None
     for f in (LEDGER, DEMO):
         if f.exists():
             return json.loads(f.read_text(encoding="utf-8"))
@@ -116,7 +135,7 @@ def spark(symbol):
 def state():
     ledger = load_ledger()
     if not ledger:
-        return {"error": "no ledger: run with --demo or start the paper broker"}
+        return {"error": "no ledger yet: " + ("waiting for the first pull of the cloud state ({})".format(SYNC["err"] or "starting") if CLOUD else "run with --demo or start the paper broker")}
     syms = sorted(set(WATCH) | {p["symbol"] for p in ledger["positions"]})
     quotes, fx = get_quotes(syms), get_fx()
     acc = account(ledger, quotes, fx)
@@ -128,7 +147,7 @@ def state():
         sps = sp.get(s) or []
         chg = (sps[-1] / sps[0] - 1) * 100 if len(sps) > 1 else None
         watch.append({"symbol": s, "price": q and q["price"], "currency": q and q["currency"], "age_min": q and q["age_minutes"], "change_pct": chg, "spark": sps})
-    return {"mode": ledger.get("mode", "PAPER"), "now_utc": dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S"), "ledger": ledger, "account": acc, "watch": watch, "fx": fx}
+    return {"mode": ledger.get("mode", "PAPER"), "now_utc": dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S"), "ledger": ledger, "account": acc, "watch": watch, "fx": fx, "synced": dict(SYNC) if CLOUD else None}
 
 
 def make_demo():
@@ -212,7 +231,14 @@ if __name__ == "__main__":
         led = make_demo()
         print("wrote", DEMO, "cash", led["cash"])
     else:
-        if not load_ledger():
+        if "--cloud" in sys.argv:
+            CLOUD = True
+            threading.Thread(target=sync_loop, daemon=True).start()
+            for _ in range(60):          # wait up to 60 s for the first pull
+                if load_ledger() or SYNC["err"]:
+                    break
+                time.sleep(1)
+        elif not load_ledger():
             make_demo()
         print("dashboard on http://127.0.0.1:8765  (Ctrl+C to stop)")
         ThreadingHTTPServer(("127.0.0.1", 8765), H).serve_forever()
