@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-09",
+ "equity": 1000.0,
+ "day_pnl_eur": 0.0,
+ "day_pnl_pct": 0.0,
+ "total_pnl_pct": 0.0,
+ "cash": 1000.0,
+ "custody_today": 0.0,
+ "positions": [],
+ "fills_today": [],
+ "reconcile": "consistent",
+ "warnings": []
+}
