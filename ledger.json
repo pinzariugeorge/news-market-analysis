@@ -1,0 +1,19 @@
+{
+ "mode": "PAPER",
+ "currency": "EUR",
+ "start_cash": 1000.0,
+ "cash": 1000.0,
+ "positions": [],
+ "orders": [],
+ "fills": [],
+ "equity_history": [],
+ "notes": [
+  {
+   "time": "2026-11-09T12:35:15Z",
+   "agent": "trader",
+   "text": "0 orders. Risk-on day in Europe with metals up on a US-China truce extension and crude down as the Iran risk premium comes out. Most moves are continuations already priced in by midday, with US CPI pending as a two-way risk for copper, gold and chips, so nothing offers a named catalyst with an expected move well above round-trip cost."
+  }
+ ],
+ "custody_paid": 0.0,
+ "started": "2026-11-09T12:35:15Z"
+}
