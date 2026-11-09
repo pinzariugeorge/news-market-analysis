@@ -20,3 +20,6 @@ Changing the universe, limits, costs, prompts or models without writing the chan
 
 ## Known caveats
 The agent may recall history (all days are after its knowledge cutoff, but its knowledge of company facts is older). One account, one market regime, about three months: low power by design; a pass would call for a longer second test, not for real money.
+
+## Infrastructure change log (no change to rules, universe, limits, costs, prompts or models)
+- 2026-11-09 15:10 CET: hosting moved from the laptop (daemon, three local Claude tasks) to Claude Code cloud scheduled tasks (`eu-paper-morning`, `eu-paper-evening`, environment `eu-paper`, model Opus). Stops and horizon exits are now replayed from the day's 5-minute bars at the evening run instead of being watched live every 30 minutes; the replay uses the same trigger rules and fills at the first bar after the trigger, so the account is unchanged: it held only cash, no trade had ever been made. State lives in the git branch `claude/paper-state`. Same single account, same history.

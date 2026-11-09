@@ -48,6 +48,7 @@ Then `PLAN_EU.md` for the design and `TODO.md` for open items.
 ## Agent design (`agent/`)
 | File | Status | What it holds |
 |---|---|---|
+| `agent/CLOUD_TASKS.md` | ACTIVE | The two cloud task prompts (morning, evening) as created, with the schedule and the state-branch steps |
 | `agent/EU_TRADER_PROMPT.md` | ACTIVE | Live trader prompt (Opus with learning): universe, rules, costs, learning rules, exact JSON and handoff shape |
 | `agent/EU_RESEARCHER_PROMPT.md` | ACTIVE | Researcher prompt: morning brief per theme from the collected headlines, no recommendations |
 | `agent/EU_REVIEWER_PROMPT.md` | ACTIVE | Reviewer prompt: plain-language day conclusion for the phone, three discussion questions, tomorrow's handoff and lessons |
@@ -74,6 +75,8 @@ Run with `python -I src\<script>.py` on Windows.
 | `paper_broker.py` | ACTIVE | The paper broker: ledger (atomic JSON, dashboard shape), order log, idempotent orders, risk checks, next-bar fills, fees/FX/taxes, hours and holidays (UTC, hand-coded EU summer time), stops and horizon exits, custody, reconcile, outcomes block; 29 self-tests on a temp folder (`python -I src\paper_broker.py selftest`) |
 | `eu_cycle.py` | ACTIVE | Daily cycle runner: `due`, `collect` (Google News RSS per theme, drivers, quote table), `prep`, `apply`, `fills`, `watch`, `close`, `status`, `battery` (drain from the daemon heartbeat); per-day state file; late starts produce warnings, never errors |
 | `eu_daemon.py` | ACTIVE | Always-on Python scheduler and keep-awake (heartbeat log with battery percent and AC state, fills, 30-minute watchers, close job); started at logon by the Windows task `EuPaperDaemon` |
+| `state_sync.py` | ACTIVE | Git-backed state for cloud runs: `pull` restores data/paper/ from the branch claude/paper-state, `push` commits it back (temporary worktree, never touches the checked-out branch); self-test against a temporary bare remote |
+| `cloud_probe.py` | ACTIVE | Feasibility probe: can the machine reach Yahoo, Google News and ntfy (used once for the cloud environment) |
 | `notify.py` | ACTIVE | Phone notifications via ntfy.sh (topic in `.env` as NTFY_TOPIC, never printed; silent if missing): alive each morning, fills, errors, close result, low battery, trader decision, report ready with a link to the cloud report |
 | `eu_report.py` | ACTIVE | Builds the end-of-day report page for the phone (`data/paper/reports/artifact.html`, published to Claude cloud by the reviewer task) |
 | `dashboard_server.py` | ACTIVE | Local server for the dashboard (`python -I src\dashboard_server.py`, port 8765): reads the paper ledger (or a DEMO one with `--demo`), live delayed quotes, FX to EUR; `--selftest` checks the account maths |
@@ -113,7 +116,8 @@ US / S&P 500 era, moved 2026-11-09, nothing deleted. Start at `archive/README.md
 - `D:\Projects\Marketing\news-market-analysis\api_docu_vintage.txt`: saved Alpha Vantage API documentation (US-era).
 - `D:\Projects\Marketing\news-market-analysis\context\` (Romanian), `README.md`, `requirements.txt`: notes from an earlier GDELT news-vs-S&P framing. Not authoritative; `STRATEGY.md` wins.
 - Scheduled task `snapshot-estimates-daily` (`C:\Users\pinza\.claude\scheduled-tasks\`): DISABLED 2026-11-09 (it snapshotted US analyst estimates; its script is archived in `archive/src_us/snapshot_estimates.py`). Re-enable only after repointing it.
-- Windows task `EuPaperDaemon` (Task Scheduler, at logon, allowed on battery, no time limit, restart on failure) runs `src/eu_daemon.py`. Claude scheduled tasks `eu-paper-researcher` (cron 09:00 local = 08:00 CET), `eu-paper-trader` (09:30 local), `eu-paper-reviewer` (19:00 local, publishes the report) in `C:\Users\pinza\.claude\scheduled-tasks\`; the machine is on Bucharest time, one hour ahead of CET. Published day report: https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6 (private).
+- **Since 2026-11-09 15:10 CET the account runs in the cloud:** Claude Code cloud tasks `eu-paper-morning` (cron `7 7 * * 1-5` UTC) and `eu-paper-evening` (`7 17 * * 1-5` UTC) in environment `eu-paper` (network allowlist Yahoo, Google News, ntfy; Opus), routine pages https://claude.ai/code/routines/trig_01Qj8UKGLJvYWAFrSCyYseVk and https://claude.ai/code/routines/trig_014a3C7vhbEKKEU82jtBjvbD; state in git branch `claude/paper-state` (`claude/paper-state-test` is a test copy). The laptop daemon, the Windows task `EuPaperDaemon` and the three local Claude tasks are DISABLED (kept for fallback). To look at the dashboard locally run `python -I src\state_sync.py pull` first.
+- Windows task `EuPaperDaemon` (disabled) (Task Scheduler, at logon, allowed on battery, no time limit, restart on failure) runs `src/eu_daemon.py`. Claude scheduled tasks `eu-paper-researcher` (cron 09:00 local = 08:00 CET), `eu-paper-trader` (09:30 local), `eu-paper-reviewer` (19:00 local, publishes the report) in `C:\Users\pinza\.claude\scheduled-tasks\`; the machine is on Bucharest time, one hour ahead of CET. Published day report: https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6 (private).
 - Claude tooling set up on the way: TradingKit MCP in `C:\Users\pinza\.claude.json` (unavailable, membership check failed); click hook scripts in `C:\Users\pinza\.claude\scripts\` (`click_at.py`, `click_tray.py`) unrelated to the project.
 
 ## How to get things

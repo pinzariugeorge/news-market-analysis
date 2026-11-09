@@ -189,3 +189,10 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 **Next step:** user adds the topic; send a test with `python -I src
 otify.py "test"`.
+
+## 2026-11-09 (15:10 CET): moved to the cloud
+- Added `src/state_sync.py` (git-backed state), `replay_exits` in `src/paper_broker.py` (stops and horizon exits replayed from 5-minute bars; 3 new self-tests, all 32 pass), `evening` command in `src/eu_cycle.py`, env-based `notify.py`; wrote `agent/CLOUD_TASKS.md`.
+- Cloud environment `eu-paper` (network allowlist) probed: Yahoo, Google News, ntfy 200 (Default environment: all 403). Dry run on `claude/paper-state-test` passed (9 steps, reconcile consistent).
+- Created cloud routines `eu-paper-morning` and `eu-paper-evening` (Opus), disabled the laptop daemon, the Windows task and the three local tasks, pushed the real state to `claude/paper-state`. Infrastructure change logged in `PREREG_EU.md`.
+
+**Next step:** read the first real cloud evening run (2026-11-09 17:07 UTC) and morning run (2026-11-10 07:07 UTC) with `RemoteTrigger list_runs` and `get_run_log`; fix what the first unattended run shows.

@@ -16,6 +16,14 @@ Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_er
 - [ ] Verify Yahoo volume on Swiss and Nordic venues (Roche looks under-reported).
 - [ ] Decide what replaces uranium (nothing, or an ETC if found).
 
+## 1a-cloud. In the cloud since 2026-11-09 15:10 CET
+- [x] Cloud environment `eu-paper`, probe passed (Yahoo, Google News, ntfy all 200), dry run on a test state branch passed, tasks created, local daemon and tasks disabled, real state pushed to `claude/paper-state`.
+- [ ] First real cloud runs: evening 2026-11-09 17:07 UTC, morning 2026-11-10 07:07 UTC. Check each with `RemoteTrigger list_runs` / `get_run_log` (or the routine pages), and `git ls-remote --heads origin`.
+- [ ] Cron is UTC: on 2027-03-28 (summer time) move both crons one hour earlier (`7 6` and `7 16`) so they stay at 08:07 and 18:07 CET; move back on 2027-10-31.
+- [ ] Measure the token overhead per cloud run (docs do not state it) and the weekly usage after the first week.
+- [ ] Optional: add `NTFY_TOPIC` as an environment variable of `eu-paper` for phone alerts from the cloud (iOS push did not work earlier).
+- [ ] Fallback if the cloud fails: `Enable-ScheduledTask EuPaperDaemon`, re-enable the three local tasks, `python -I src\state_sync.py pull`, and disable the cloud routines (never run both).
+
 ## 1a. LIVE since 2026-11-09 (account A, Opus with learning)
 - [x] Paper broker, risk manager, cycle runner, daemon, prompts, logon task, scheduled agent tasks, report page; first cycle ran 13:35 CET (no trade).
 - [ ] First unattended morning (2026-11-10 09:10 local): check `data/paper/state/<date>.json`, `daemon.log`, and the scheduled task runs; approve any permission prompts so they are stored on the tasks.

@@ -2,6 +2,8 @@
 
 Status: DESIGN, nothing of the daily cycle runs yet. Times are CET (Xetra, Euronext, Zurich, Nordics, Madrid, Milan all trade about 09:00-17:30 CET; London 08:00-16:30 UK time is the same hours; Oslo closes 16:20, Copenhagen 17:00). No trading on exchange holidays (calendar file to build). Research and simulation only.
 
+> **Update 2026-11-09: the day now runs in the cloud as two tasks** (`agent/CLOUD_TASKS.md`): morning 08:07 CET (collect, researcher, trader, orders) and evening 18:07 CET (replay stops and exits from the bars, fills, close, reviewer, report, state push). The timetable below is the design; the local daemon and local tasks are disabled.
+
 ## Who does what
 | Role | Is | Job | Model |
 |---|---|---|---|
