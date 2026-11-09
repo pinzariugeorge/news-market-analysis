@@ -217,7 +217,7 @@ def get_quote(sym):
 
 
 def get_bars(sym):
-    return lf.bars(sym, "5d", "5m")
+    return lf.bars(sym, "1mo", "5m")   # a month of 5-minute bars, so a skipped day (no tokens, outage) can still be replayed
 
 
 # ---------------------------------------------------------------- account
