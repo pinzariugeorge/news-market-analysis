@@ -183,3 +183,9 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 - User decided: run locally only, unplugged, to measure battery drain. Daemon heartbeat now logs battery percent, AC state and battery saver; `python -I src\eu_cycle.py battery` prints the drain per hour. Daemon restarted 14:50 local (98%, on AC). Committed the restructure earlier (not pushed).
 
 **Next step:** read the drain after a few hours; watch the 2026-11-10 morning run.
+
+## 2026-11-09 (night): ntfy notifications
+- Added `src/notify.py` (ntfy.sh) and hooked it into the daemon (alive, fills, errors, close, battery 30/20/10%) and the cycle runner (trader decision, report ready). Needs `NTFY_TOPIC=<topic>` in the parent `.env`; until then it is silent. Daemon restarted.
+
+**Next step:** user adds the topic; send a test with `python -I src
+otify.py "test"`.

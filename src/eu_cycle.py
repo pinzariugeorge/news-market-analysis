@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 import live_feed as lf  # noqa: E402
 import paper_broker as pb  # noqa: E402
+import notify  # noqa: E402
 
 PAPER = pb.PAPER
 os.environ.setdefault("HANDOFF_DIR", str(PAPER / "handoff"))
@@ -296,6 +297,7 @@ def apply_trader(path, now=None):
     mv = dec.get("market_view", "")
     pb.add_note("trader", "{} orders. {}".format(len(results), mv)[:500])
     state_set(d, "trader", True, "{} orders: {}".format(len(results), ", ".join(r["status"] for r in results)))
+    notify.send(("Trader: " + "; ".join("{} {} x{} {}".format(r["side"], r["symbol"], r["qty"], r["status"]) for r in results)) if results else "Trader: no trade today.", "Paper trading decision", 3 if not results else 4)
     return 0
 
 
@@ -313,6 +315,8 @@ def apply_simple(role, path):
             print("reviewer output unreadable")
             return 1
     state_set(d, role, True, "")
+    if role == "reviewer":
+        notify.send("Day report ready. Tap to open it, then ask Claude about the day.", "Paper trading report", 3, notify.REPORT_URL)
     return 0
 
 

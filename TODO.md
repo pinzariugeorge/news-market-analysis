@@ -51,3 +51,7 @@ Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_er
 ## 6. Other
 - [ ] Push local commits to `origin/main` when the user says so (nothing committed since the Finnhub work).
 - [ ] Decide whether to rename the folder `sp500-news-sim` (it would change session paths; not done).
+
+- [ ] User: put `NTFY_TOPIC=<your long random topic>` in `D:\Projects\Marketing
+ews-market-analysis\.env`, subscribe to the same topic in the ntfy app, then test with `python -I src
+otify.py "test"`.
