@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-22",
+  "market_view": "VIX is calm at 14.9 (down 13% in 5 days) after the Fed hike; the 10-year is near 5.0% and the dollar is firm. Tech rebounded sharply (semi ETF +4% on the day, +10% in 5 days); oil fell hard on the day.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "WTI -4.5% on the day is already priced in. The only oil headline is a Zacks blog on Valero, Phillips 66 and Eni mentioning a Xi visit to Washington, with no XOM-specific cause. No named catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold is -6% in 20 days with yields near highs and a firm dollar. No NEM, production or guidance headline; the gold-themed items are unrelated stories."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semi ETF +4% and AMD +10% on the day are already in price. Headlines are promotional (NVDA 10-year return piece, Zacks blog), with no guidance or export-rule change. Chasing a rebound is not a catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY is 9% below its high after a 20-day dip, but there is no trial, regulator or pricing headline. Nothing pharma-specific in the record."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper +5.6% in 5 days is already priced in. No FCX, supply outage or China-data headline, and the uranium ETF is below its 200-day average without a cause."}
+  },
+  "would_change_my_mind": "A named headline on XOM (OPEC+ or Hormuz), NEM guidance, an NVDA guidance or export-rule change, an LLY trial or pricing item, or an FCX/copper supply outage or China data.",
+  "handoff": {
+    "run_id": "fp4-20260922-a",
+    "written_at": "2026-09-22T14:00:00Z",
+    "decision_day": "2026-09-22",
+    "data_cutoff": "2026-09-22",
+    "what_changed": "Five days since the 09-17 note. WTI fell 4.5% on 09-21 and XOM fell 3.2%. Tech rebounded: the semi ETF rose 4% on the day and 10% in 5 days, and AMD rose 10%. Copper rose 5.6% in 5 days. Headlines were again noise with no named catalyst, so all five families stay flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI drop is priced in; no XOM-specific headline."},
+      "gold_miners": {"position": "flat", "why": "Yields near highs and a firm dollar; no NEM headline."},
+      "chips": {"position": "flat", "why": "Sharp rebound already priced in; no NVDA guidance or export-rule headline."},
+      "pharma": {"position": "flat", "why": "No LLY trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "Copper rally priced in; no FCX or China-data headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil and Middle East escalation", "status": "open", "note": "WTI 95.8 after -4.5% on 09-21, still +10% in 20 days; XOM -3.2% on the day. Watch OPEC+, Hormuz or an XOM-specific headline.", "first_seen": "2026-09-14"},
+      {"name": "Rate hike and high yields", "status": "open", "note": "Fed hiked to 3.75-4.00% with signals of more; 10-year about 4.96%, dollar firm. Watch inflation data and the dollar for gold miners.", "first_seen": "2026-09-14"},
+      {"name": "Chips rebound", "status": "escalating", "note": "Semi ETF +10% in 5 days, AMD +25%, NVDA +7.8%. Watch NVDA guidance, analyst and export-rule headlines, and the Xi visit to Washington.", "first_seen": "2026-09-17"},
+      {"name": "Copper and uranium", "status": "open", "note": "Copper +5.6% in 5 days, uranium ETF 30% below its high. Watch supply outage or China-data headlines.", "first_seen": "2026-09-17"},
+      {"name": "LLY dip", "status": "open", "note": "LLY -7.2% in 20 days, 9% below its high. Watch for a trial, pricing or regulator headline.", "first_seen": "2026-09-14"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-09-22: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (OPEC+ or Hormuz news, gold reaction to yields, NVDA guidance or export rules, LLY trial or pricing, copper supply or China data); decide each family under the catalyst rule."
+  }
+}

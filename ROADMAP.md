@@ -2,153 +2,120 @@
 
 Lookup table for humans and agents. Check here before searching the repo. Keep it current: any time a file is added, moved, renamed or changes meaning, update this file in the same change.
 
-Last updated: 2026-11-06
+Last updated: 2026-11-09 (European pivot and cleanup). The folder is still called `sp500-news-sim` (renaming would break session paths); the project is now European: see `STRATEGY.md`.
 
 ## Start-of-session reading order
 1. `ROADMAP.md` (this file)
-2. `STRATEGY.md` (rules and decisions)
-3. `PROGRESS_LOG.md` (what was done, exact next step)
+2. `STRATEGY.md` (current decisions and rules)
+3. `PROGRESS_LOG.md` (what was done, exact next step; newest entry at the bottom)
+Then `PLAN_EU.md` for the design and `TODO.md` for open items.
 
-## Context files (repo root)
-| File | What it holds |
-|---|---|
-| `README.md` | One-page overview of the project |
-| `STRATEGY.md` | Goal, core rules, decisions (news source, handbook, timing rule), pipeline steps |
-| `PROGRESS_LOG.md` | Dated session entries, newest at the bottom, each ends with "Next step" |
-| `JOURNAL.md` | Plain-language notes, surprises, open questions |
-| `ROADMAP.md` | This file map |
-| `todo_suggestions.md` | Ideas that came up but were NOT adopted (user decision); move to `TODO.md` only when decided |
-| `TODO.md` | Open items: pre-2008 news source options, handbook work, other tasks |
-| `PLAN.md` | Plan v2: what we learned, theme families, phases 1-6 with gates, open decisions (trade current companies and commodities via Interactive Brokers Ireland) |
-| `PHASE1_FACTS.md` | Phase 1 facts: IBKR Ireland fees (verified vs reported vs open), access and onboarding, Romanian tax, what they mean for the cost model |
-| `CLAUDE.md` | Standing instructions for Claude sessions in this repo |
-| `.env.example` | Names of the secrets needed; the real `.env` is git-ignored and never printed |
+## Status labels used below
+- **ACTIVE**: part of the European project, works as is.
+- **PORT**: from the US era, still in the working tree because the European work will reuse it; reads US data or assumes IBKR/US conventions until ported.
+- **ARCHIVE**: moved to `archive/` (see `archive/README.md`); not part of the working tree.
 
-## Data (`data/`)
-| Path | Content | Git |
+## Root files
+| File | Status | What it holds |
 |---|---|---|
-| `data/raw/sp500_1950_2024_daily.csv` | Daily S&P 500 OHLCV, 1950-01-03 to 2024-04-30 (Date,Open,High,Low,Close,Volume,Source). Use this one | ignored |
-| `data/raw/sp500_2008_2024_daily.csv` | Same, 2008 onward (older file, superseded) | ignored |
-| `data/raw/sp500_2020_daily.csv` | Same, 2020 only (older file, superseded by the one above) | ignored |
-| `data/raw/candidates/sp500_headlines/sp500_headlines_2008_2024.csv` | Kaggle headlines (Title, Date, CP). `CP` = S&P close = outcome leak, never show to agents | ignored |
-| `data/processed/news_all.csv` | Cleaned headlines: date, decision_date, split, title. Use this one | tracked |
-| `data/processed/market_days.csv` | Per trading day 1950-2024: date, close, ret_pct, split (handbook = up to 2019, test = 2020, holdout = 2021+) | tracked |
-| `data/processed/earnings_events.csv` | Earnings release times (SEC 8-K Item 2.02) for 29 US filers: ticker, filing date, accepted time UTC and New York, session | tracked |
-| `data/processed/news_2020.csv` | Superseded by `news_all.csv` | tracked |
-
-Note: headlines only exist from 2008; prices from 1950. Splits: `handbook` = up to 2019 (news 2008-2019) (used to build the handbook), `test` = 2020 (never used to write the handbook), `holdout` = 2021 onward (second test).
-Timing rule: a headline dated D is only usable from `decision_date` (next trading day after D).
-
-## Handbook (`handbook/`)
-| File | Content |
-|---|---|
-| `handbook/AGENT_HANDBOOK.md` | Lean handbook for agent runs (about 1,400 tokens): rules of thumb and the five families; every number traced to the two full handbooks by `src/verify_handbook.py` |
-| `handbook/HANDBOOK_COMPANIES.md` | Handbook v1 for single stocks: how to use, driver links, entries for the five families (base rates, drivers, catalysts, event reactions), limits. Numbers from history to 2022, checked on 2023-24; 2025+ not used |
-| `handbook/family_stats.csv` | Statistics behind it (driver R-squared and beta, base rates, volume-shock events, weekday ratios, correlations) |
-| `handbook/BIGDAY_REVIEW.md` | Review of the 247 big-move days of 2008-2019 by event type: findings and observed ranges |
-| `handbook/bigday_review.csv` | One row per big day: date, return, event type (hand-labeled with hindsight), headline counts |
-| `handbook/SOURCES.md` | Web sources used for handbook entries (currently midterm elections) |
-| `handbook/HANDBOOK.md` | v0 draft: principles, 2008-2019 base rates, 16 event-type entries (incl. 3.6b US midterms, 3.6c presidential elections), agent usage steps, known limits. Built from 2008-2019 + general knowledge only (never 2020) |
-
-## Trading universe (`universe/`)
-| File | Content |
-|---|---|
-| `universe/EARNINGS_DATA_SOURCES.md` | Free consensus and guidance sources checked (Alpha Vantage is the best free history; guidance has no free structured source) and what to do next |
-| `universe/COMMODITY_DATA.md` | Free commodity and driver price series (symbols, coverage from 2000, sources that failed, caveats) |
-| `universe/UNIVERSE_RULE.md` | Universe rule v2: research behind it, the point-in-time rule, selections by date, limits, change log (five families x four single stocks; solar removed 2026-11-06) |
-| `universe/candidates.csv` | Candidate companies per family (input of the rule) |
-| `universe/rule_selections.csv` | Output of `src/select_universe.py`: top names per family at each as-of date |
-| `universe/fixed_universe.csv` | Earlier v1 liquidity table (30-day average); kept for reference |
-| `universe/BROAD_SCREEN.md` | Broad screen of what has traded well (sectors, themes, commodities, single stocks, to 2026-11-06) plus driver-to-asset correlations |
-| `universe/broad_screen.csv`, `universe/broad_screen_metrics.csv` | Input list and metrics (returns 1m/3m/6m/1y, volatility, liquidity, drawdown, 200-day flag) |
-| `universe/UNIVERSE.md` | Archived (solar removed 2026-11-06): method (criteria) and the solar value-chain list with 1-year volatility, liquidity and drawdown, dated 2026-11-05; research list, not recommendations |
-| `universe/solar_chain.csv` | Input list: ticker, name, role in the chain, notes |
-| `universe/solar_chain_metrics.csv` | Output of `src/build_universe.py` (current market metrics per ticker) |
+| `README.md` | ACTIVE | One-page overview |
+| `STRATEGY.md` | ACTIVE | Goal, decisions, rules (European era; the old file is `archive/docs_us/STRATEGY_sp500_era.md`) |
+| `PLAN_EU.md` | ACTIVE | Plan: decisions of 2026-11-09, free price feed, Saxo facts, paper broker design, daily cycle, phases and gates |
+| `DAILY_PLAN_EU.md` | ACTIVE | A trading day end to end: roles (collector, researcher, trader, risk manager, broker, reviewer, baseline bots), timetable in CET, risk limits, cost model, accounts and pass bar, failure handling, scheduling, build order. Design only |
+| `PREREG_EU.md` | ACTIVE | Pre-registration written before the first live decision: setup, limits (defaults), baselines, pass bar, what may not change during the test |
+| `PROGRESS_LOG.md` | ACTIVE | Dated session entries (whole history), each ends with "Next step" |
+| `TODO.md` | ACTIVE | Open items (the US-era list is `archive/docs_us/TODO_us_era.md`) |
+| `JOURNAL.md` | ACTIVE | Plain-language notes, surprises, open questions |
+| `todo_suggestions.md` | ACTIVE | Ideas that were NOT adopted; move to `TODO.md` only when decided |
+| `CLAUDE.md` | ACTIVE | Standing instructions for Claude sessions |
+| `.env.example` | ACTIVE | Names of secrets; the real `.env` is git-ignored and never printed |
+| `.gitignore` | ACTIVE | Ignores `.env`, `data/raw/`, `data/live/`, `archive/data_us/`, caches |
 
 ## Results (`results/`)
-| File | Content |
-|---|---|
-| `results/WIDE_SEARCH.md`, `results/donchian_pername.csv` | Wide search on ~200 stocks and 7 commodity futures (about 90 configurations): momentum, residual momentum, seasonality, industry momentum, trend, dip buying, commodity trend, trend filter; no robust edge |
-| `src/download_ohlc.py`, `src/strat_lab.py` to `strat_lab6.py`, `strat_lab_cmd.py`, `strat_lab_pername.py` | Wide OHLC download (`--long` for 2003 history, into git-ignored `data/raw/ohlc*`) and the portfolio strategy lab scripts (data cut 2024-12-31, `--final` flag in strat_lab/strat_lab2 for the one-time 2025+ test) |
-| `results/DONCHIAN_UNIVERSE.md`, `results/donchian_universe_N55_M3.csv` | Daily Donchian 55 / 3 ATR trail on all 40 names, build vs validation: cuts drawdown by half, return near zero; `src/run_donchian_universe.py` is the script |
-| `results/tradingkit_loop/daily_matrix.csv` | TradingKit daily matrix (build 2020-11..2023-12 and validation 2024..2026, 5 configs, NVDA/AMD/AVGO/gold/WTI) |
-| `results/tradingkit_loop/LOG.md`, `RESULTS.md` | TradingKit (MCP, installed globally) 1-hour strategy loop on NVDA/AMD/AVGO/gold: 8 variants, none qualified; table, ranking, reproduce notes |
-| `results/SURPRISE_TEST.md` | Earnings surprise tests with Alpha Vantage consensus history (639 events, 20 names): reaction follows the surprise, no drift, no pre-earnings edge; next possibilities |
-| `results/surprise_test.csv` | Same numbers as CSV |
-| `results/EARNINGS_TEST.md` | Earnings dates from SEC EDGAR (2,631 events) and the post-earnings drift test: no edge; findings |
-| `results/earnings_test.csv` | Same numbers as CSV |
-| `results/FAMILY_RUN.md` | Family agent run fam_v0 (validation 2023-2024): setup, result (all calls flat, portfolio stayed cash), counterfactuals, options |
-| `results/dashboard_family.html` | Dashboard of the family run: every stock, commodity and driver price with the agent's calls, portfolio vs leaders basket, decision table with reasoning. Open in a browser |
-| `results/fam_lean_check/` | Two decision days rerun with the lean handbook for comparison with `fam_v0` |
-| `results/fam_v0/` | Records (inputs), decisions_raw (agent JSON), decisions.csv, summary.json, dashboard_data.json |
-| `results/WIDE_TEST.md` | Wide test: momentum, reversal, low volatility, trend, oversold and random rules scored on the whole 20-name basket per decision date, by period and holding period; findings |
-| `results/wide_test.csv` | Same numbers as CSV |
-| `results/INDICATOR_TESTS.md` | Test of 10 standard indicator and candlestick signals on 45 stocks by period and holding period; no reliable edge; findings |
-| `results/indicator_tests.csv` | Same numbers as CSV |
-| `results/UNIVERSE_BASELINES.md` | Baselines on the rule-selected single-stock universe for a 500 USD account (whole shares, 2 positions, real costs), by period and holding period; findings |
-| `results/universe_baselines.csv` | Same numbers as CSV (500 USD, 2 positions); `results/universe_baselines_1000_3pos.csv` for 1,000 USD with 3 positions |
-| `results/BASELINES.md` | Baseline results on 2008-2019 and what the agent must beat |
-| `results/baselines_2008_2019.csv` | Same numbers as CSV |
-| `results/dashboard.html` | Dashboard: where the agent acted on the S&P chart, cumulative return vs baselines, expected range vs outcome, and a table with the agent's reasoning per day. Open it in a browser |
-| `results/pilot_v0/` | First pilot run: `days.json`, `records/` (inputs), `decisions_raw/` (agent JSON), `decisions.csv`, `summary.json`, `dashboard_data.json` |
+| File | Status | What it holds |
+|---|---|---|
+| `results/US_LESSONS.md` | ACTIVE | Condensed lessons from the whole US era: what was tested, that nothing beat random or a basket, rules that carry over. Read this instead of the archived results |
+
+## Universe (`universe/`)
+| File | Status | What it holds |
+|---|---|---|
+| `universe/EU_UNIVERSE.md` | ACTIVE | European candidates per theme family with liquidity and volatility, what is verified and what is not (Saxo tradability is not), open points |
+| `universe/eu_candidates.csv` | ACTIVE | The same table: ticker, exchange, currency, first date, days, median traded value (EUR m, 250 days), volatility, drawdown. Written by `src/eu_probe.py` |
+| `universe/eu_screen.csv` | ACTIVE | Broad European screen output of `src/eu_screen.py` (see `universe/EU_SCREEN.md` once written) |
+| `universe/UNIVERSE_RULE.md` | PORT | Point-in-time liquidity rule (250-day median value, quarterly rebalance with buffer); method is reusable, numbers are US |
+| `universe/COMMODITY_DATA.md` | PORT | Free commodity and driver series (symbols, coverage from 2000, sources that failed) |
 
 ## Agent design (`agent/`)
-| File | Content |
-|---|---|
-| `agent/FAMILY_AGENT_PROMPT_LEAN.md` | Same rules as the family prompt, pointing at the lean handbook only |
-| `agent/FAMILY_AGENT_PROMPT.md` | Prompt for the family run: long or flat per family with horizon and confidence; leader chosen by rule; JSON output |
-| `agent/DAILY_RECORD.md` | What the agent sees on decision day D (past-only market state, calendar, headlines) and the timing rule |
-| `agent/AGENT_PROMPT.md` | Agent prompt template v0: rules, provisional guardrails, procedure, JSON output format |
-| `agent/DECISION_LOG.md` | Decision log columns, baselines, metrics, run phases, weekly review |
-| `results/FAMILY_POST2.md`, `results/fam_post2/`, `agent/FAMILY_AGENT_PROMPT_CATALYST.md` | Lowered-bar (0.52 + named catalyst) chained agent run on 22 post-cutoff days: 19 longs, mostly XOM on the Iran oil story, no evidence of added value; also records the fixed portfolio bug in `src/score_family_run.py` |
-| `results/FAMILY_POST.md`, `results/fam_post/` | Chained agent run on 14 post-cutoff days (Jul-Oct 2026) with news headlines and handoff notes: 70 flat calls; handoff rule worked; `src/download_news.py` adds the headlines |
-| `results/INSIDER_TEST.md`, `src/run_insider_test.py` | Insider (SEC Form 4) purchase test on our large-cap universe, 2014-2024: no edge |
-| `src/download_insider.py` | SEC insider-transaction bulk download (open-market purchases for our tickers, 2014q1-2024q4) into git-ignored `data/raw/insider/`; the user runs it with `SEC_USER_AGENT` set to their name and email (SEC blocks anonymous requests) |
-| `agent/HANDOFF.md`, `src/handoff.py`, `agent/state/handoff/` | Handoff rule between agent runs: spec, validator/reader/writer with overlap lock and self-tests; notes stored in `agent/state/handoff/` |
-| `agent/state/storylines.md` | Template for the open-storylines state file the agent updates |
+| File | Status | What it holds |
+|---|---|---|
+| `agent/EU_TRADER_PROMPT.md` | ACTIVE | Live trader prompt (Opus with learning): universe, rules, costs, learning rules, exact JSON and handoff shape |
+| `agent/EU_RESEARCHER_PROMPT.md` | ACTIVE | Researcher prompt: morning brief per theme from the collected headlines, no recommendations |
+| `agent/EU_REVIEWER_PROMPT.md` | ACTIVE | Reviewer prompt: plain-language day conclusion for the phone, three discussion questions, tomorrow's handoff and lessons |
+| `agent/FAMILY_AGENT_PROMPT_CATALYST.md` | ARCHIVE-CANDIDATE | Current agent prompt: long or flat per theme family, long only with a named catalyst and confidence >= 0.52, JSON output, live-mode handoff section with the exact handoff shape |
+| `agent/FAMILY_AGENT_PROMPT_LEARN.md` | PORT | Same plus outcome feedback and the lessons ledger (a lesson needs >= 5 supporting closed trades to change a call) |
+| `agent/HANDOFF.md` | ACTIVE | Handoff rule between stateless runs (note shape, stale, pending orders, overlap) |
+| `agent/DECISION_LOG.md` | PORT | Decision log columns, baselines, metrics, weekly review |
+| `agent/state/storylines.md` | ACTIVE | Template for the open-storylines state file |
+| `agent/state/handoff/` | ACTIVE | Live handoff notes (empty until paper trading starts) |
+
+## Handbook (`handbook/`)
+All three are US-era text (US names, US drivers) written for the old agent; they must be rewritten for the European universe before the agent trades Europe.
+| File | Status | What it holds |
+|---|---|---|
+| `handbook/AGENT_HANDBOOK.md` | PORT | Lean handbook the agent reads (about 1,400 tokens): rules of thumb and the five families |
+| `handbook/HANDBOOK_COMPANIES.md` | PORT | Full single-stock handbook: driver links, base rates, catalysts, event reactions for the five families |
+| `handbook/family_stats.csv` | PORT | Statistics behind it (driver R-squared and beta, base rates, volume-shock events) |
 
 ## Code (`src/`)
-| Script | Purpose |
-|---|---|
-| `download_prices.py` | Yahoo prices, 2020 only (old) |
-| `download_prices_all.py` | Yahoo prices 1950 to 2024-04 -> `data/raw/sp500_1950_2024_daily.csv` |
-| `inspect_news_candidates.py` | Reports columns, date range and 2020 rows per month for candidate CSVs |
-| `verify_handbook.py` | Checks a lean handbook against its sources: size, required keywords, every number found in the sources, and family numbers in the matching family text |
-| `download_consensus.py` | Earnings history with consensus, actual and surprise from Alpha Vantage (needs a free key in `.env`; `--demo` tests with IBM) into `data/raw/consensus/` |
-| `snapshot_estimates.py` | Saves a dated snapshot of analyst estimates (EPS/revenue average, high/low, analyst count, revisions up/down, averages 7/30/60/90 days ago) per name into `data/raw/estimates/<TICKER>/<date>.json` (git-ignored); run daily by the scheduled task `snapshot-estimates-daily` |
-| `run_surprise_test.py` | Tests reaction and drift by surprise bucket, beat persistence, and holding through earnings by previous surprise; writes `results/surprise_test.csv` |
-| `download_earnings.py` | Earnings release dates and times from SEC EDGAR (free, no key) into `data/processed/earnings_events.csv` |
-| `run_earnings_test.py` | Post-earnings reaction and drift test with costs and period split; writes `results/earnings_test.csv` |
-| `familydata.py` | Shared data access for the family run (stocks cache, commodity CSVs, point-in-time names and leaders) |
-| `family_prepare.py` | Picks decision days and writes past-only family records into `results/<run>/records/` |
-| `score_family_run.py` | Scores family calls (counterfactual for flat) and a 1,000 USD whole-share portfolio vs benchmarks; writes decisions.csv, summary.json, dashboard_data.json |
-| `build_dashboard_family.py` | Builds `results/dashboard_family.html` |
-| `download_commodities.py` | Downloads free daily commodity and driver series from Yahoo (2000 on) into `data/raw/commodities/` (git-ignored) |
-| `build_family_stats.py` | Computes the per-family handbook statistics from history to 2024 (build and validation); writes `handbook/family_stats.csv` |
-| `run_wide_test.py` | Scores selection rules on the whole point-in-time basket per decision date (many decisions, costs, periods); writes `results/wide_test.csv` |
-| `run_indicator_tests.py` | Tests RSI, MACD, golden cross, Bollinger, breakout and candlestick patterns as long signals with costs and period splits; writes `results/indicator_tests.csv` |
-| `run_universe_baselines.py` | Baselines on the rule-selected universe for a small account: cash, hold two, random rotation, momentum, low volatility, trend; writes `results/universe_baselines.csv` |
-| `costs.py` | Cost model for IBKR Ireland US stocks (commission, pass-through assumptions, spread, FX, tax); `python -I src\costs.py` prints round-trip cost tables; import it in every backtest |
-| `select_universe.py` | Point-in-time universe rule: top 4 names per family by 250-day median dollar volume using only data before each as-of date; writes `universe/rule_selections.csv` |
-| `build_universe.py` | For a ticker CSV (`universe/*.csv`), downloads the last year of daily bars from Yahoo and writes `<name>_metrics.csv` (volatility, liquidity, drawdown): `python -I src\build_universe.py universe/solar_chain.csv` |
-| `pilot_prepare.py` | Picks pilot decision days (2008-2019 only, by category) and writes their past-only records to `results/<run>/records/` |
-| `score_decisions.py` | Joins stored agent decisions (`results/<run>/decisions_raw/`) with outcomes; writes `decisions.csv`, `summary.json`, `dashboard_data.json` |
-| `build_dashboard.py` | Builds `results/dashboard.html` (self-contained, no network): `python -I src\build_dashboard.py --run pilot_v0` |
-| `run_baselines.py` | Computes the no-model baselines (buy and hold, cash, volatility rule, capped long, 200-day trend, random) for a period; writes `results/baselines_<years>.csv` |
-| `build_daily_context.py` | Builds the past-only daily record JSON for one day: `python -I src\build_daily_context.py 2018-12-26` |
-| `review_big_days.py` | Labels 2008-2019 days with a move of 2% or more by event type, writes `handbook/bigday_review.csv`, prints per-type stats |
-| `build_news_corpus.py` | Raw headlines + prices -> `data/processed/news_all.csv` and `market_days.csv` (drops CP, fixes encoding, de-duplicates, adds decision_date and split) |
-
 Run with `python -I src\<script>.py` on Windows.
+| Script | Status | Purpose |
+|---|---|---|
+| `live_feed.py` | ACTIVE | Live (about 15 min delayed) quotes and 5-minute bars for European stocks and ETCs from Yahoo, free; `quote`, `bars`, `snapshot` (appends to `data/live/`), self-test |
+| `paper_broker.py` | ACTIVE | The paper broker: ledger (atomic JSON, dashboard shape), order log, idempotent orders, risk checks, next-bar fills, fees/FX/taxes, hours and holidays (UTC, hand-coded EU summer time), stops and horizon exits, custody, reconcile, outcomes block; 29 self-tests on a temp folder (`python -I src\paper_broker.py selftest`) |
+| `eu_cycle.py` | ACTIVE | Daily cycle runner: `due`, `collect` (Google News RSS per theme, drivers, quote table), `prep`, `apply`, `fills`, `watch`, `close`, `status`; per-day state file; late starts produce warnings, never errors |
+| `eu_daemon.py` | ACTIVE | Always-on Python scheduler and keep-awake (heartbeat log, fills, 30-minute watchers, close job); started at logon by the Windows task `EuPaperDaemon` |
+| `eu_report.py` | ACTIVE | Builds the end-of-day report page for the phone (`data/paper/reports/artifact.html`, published to Claude cloud by the reviewer task) |
+| `dashboard_server.py` | ACTIVE | Local server for the dashboard (`python -I src\dashboard_server.py`, port 8765): reads the paper ledger (or a DEMO one with `--demo`), live delayed quotes, FX to EUR; `--selftest` checks the account maths |
+| `eu_screen.py` | ACTIVE | Screens about 400 European large and mid caps across sectors: price at most 333 EUR, liquidity, volatility, returns, trend; writes `universe/eu_screen.csv` |
+| `eu_probe.py` | ACTIVE | Downloads true daily history for the European candidates into `data/raw/eu/daily/` and writes `universe/eu_candidates.csv` (liquidity, volatility) |
+| `handoff.py` | ACTIVE | Handoff note validator, reader, writer, overlap lock, optional `lessons` ledger; 13 self-tests (`python -I src\handoff.py selftest`) |
+| `learn_prep.py` | PORT | Builds the agent input for a learning run: handoff text plus outcomes of closed past calls (point-in-time) |
+| `score_family_run.py` | PORT | Scores family calls (counterfactual for flat) and a whole-share portfolio vs random-call and basket benchmarks |
+| `family_prepare.py` | PORT | Picks decision days and writes past-only records into `results/<run>/records/` |
+| `familydata.py` | PORT | Shared data access for the family harness (stocks cache, commodity CSVs, point-in-time names and leaders) |
+| `build_universe.py` | PORT | Downloads a year of daily bars for a ticker list and writes volatility, liquidity, drawdown (imported by `familydata.py`, `select_universe.py`) |
+| `select_universe.py` | PORT | Point-in-time universe rule: top names per family by median dollar volume before each as-of date |
+| `costs.py` | PORT | Cost model for IBKR Ireland US stocks; to be replaced by a Saxo European model |
+| `download_commodities.py` | PORT | Free daily commodity and driver series from Yahoo (2000 on) into `data/raw/commodities/` |
+| `download_news.py` | PORT | Google News RSS headlines per theme and date into a run's records (date-filtered, macro and commodity rich, noisy) |
+| `verify_handbook.py` | PORT | Checks a lean handbook against its sources (numbers and keywords) |
 
-## Planned, not created yet
+## Dashboard (`dashboard/`)
+| File | Status | What it holds |
+|---|---|---|
+| `dashboard/index.html` | ACTIVE | Broker-style page (account, watchlist, chart with fills, positions, orders, trades, equity, agent notes); talks to `src/dashboard_server.py` |
 
-- `cache/`: cached model outputs (git-ignored).
+## Data (`data/`, git-ignored)
+| Path | Status | Content |
+|---|---|---|
+| `data/raw/eu/daily/<TICKER>.csv` | ACTIVE | Daily OHLCV for the 47 European candidates, up to about 35 years (from `src/eu_probe.py`) |
+| `data/live/` | ACTIVE | Forward quote snapshots (`YYYY-MM-DD.jsonl`) written by `live_feed.snapshot`; created on first use |
+| `data/paper/` | ACTIVE | Runtime state: `ledger.json` (the real paper account), `orders.jsonl`, `state/<date>.json`, `run/<date>/` (agent inputs, brief, decision, reviewer output), `reports/` (day reports, `artifact.html`), `handoff/` (live handoff notes), `daemon.log`, and `ledger_demo.json` (DEMO data for the dashboard) |
+| `data/raw/commodities/` | PORT | Daily futures and driver series from 2000 (CL=F, BZ=F, GC=F, SI=F, HG=F, NG=F, PL=F, URA, SMH, XLV, VIX, TIP, TNX, DX-Y.NYB, U-UN.TO) |
+| `data/raw/stocks_cache.json` | PORT | Daily closes for the US names, read by `familydata.py`; goes away when the harness is ported |
+
+## Archive (`archive/`)
+US / S&P 500 era, moved 2026-11-09, nothing deleted. Start at `archive/README.md`. Sub-folders: `docs_us/` (old plan, IBKR facts, old strategy and to-do), `agent_us/`, `handbook_sp500/`, `src_us/` (about 35 scripts incl. the 90-configuration strategy search), `results_us/` (all results, runs, dashboards), `universe_us/`, `data_us/` (git-ignored: S&P prices, headlines, US OHLC, consensus, estimates, insider).
 
 ## Outside this repo
-- `D:\Projects\Marketing\news-market-analysis\.env`: the user's own env file with the Kaggle token and the Alpha Vantage key (`src/download_consensus.py` reads the project `.env` first, then this one). `D:\Projects\Marketing\news-market-analysis\api_docu_vintage.txt`: the user's saved copy of the Alpha Vantage API documentation (about 260 KB). A copy lives in this folder's git-ignored `.env`.
-- `D:\Projects\Marketing\news-market-analysis\context\` (Romanian) and `requirements.txt`: notes from an earlier, different framing (GDELT news-vs-S&P correlation study, no trading). Not authoritative for this project; STRATEGY.md wins.
+- `D:\Projects\Marketing\news-market-analysis\.env`: the user's env file (Kaggle token, Alpha Vantage, Finnhub, Massive/Polygon keys, personal email). Scripts read the project `.env` first, then this one. Never print it.
+- `D:\Projects\Marketing\news-market-analysis\api_docu_vintage.txt`: saved Alpha Vantage API documentation (US-era).
+- `D:\Projects\Marketing\news-market-analysis\context\` (Romanian), `README.md`, `requirements.txt`: notes from an earlier GDELT news-vs-S&P framing. Not authoritative; `STRATEGY.md` wins.
+- Scheduled task `snapshot-estimates-daily` (`C:\Users\pinza\.claude\scheduled-tasks\`): DISABLED 2026-11-09 (it snapshotted US analyst estimates; its script is archived in `archive/src_us/snapshot_estimates.py`). Re-enable only after repointing it.
+- Windows task `EuPaperDaemon` (Task Scheduler, at logon, allowed on battery, no time limit, restart on failure) runs `src/eu_daemon.py`. Claude scheduled tasks `eu-paper-researcher` (cron 09:00 local = 08:00 CET), `eu-paper-trader` (09:30 local), `eu-paper-reviewer` (19:00 local, publishes the report) in `C:\Users\pinza\.claude\scheduled-tasks\`; the machine is on Bucharest time, one hour ahead of CET. Published day report: https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6 (private).
+- Claude tooling set up on the way: TradingKit MCP in `C:\Users\pinza\.claude.json` (unavailable, membership check failed); click hook scripts in `C:\Users\pinza\.claude\scripts\` (`click_at.py`, `click_tray.py`) unrelated to the project.
 
 ## How to get things
-- Kaggle download: `kagglehub.dataset_download(ref, output_dir=...)` with `KAGGLE_API_TOKEN` in the environment (the `kaggle` CLI fails with this token type).
-- Remote: `origin` = git@github.com:pinzariugeorge/news-market-analysis.git, branch `main`.
+- Remote: `origin` = git@github.com:pinzariugeorge/news-market-analysis.git, branch `main`; push only when the user says so.
+- Live quote check: `python -I src\live_feed.py SHEL.L ASML.AS 4GLD.DE`.
+- Rebuild the European probe: `python -I src\eu_probe.py` (about 2 minutes, no key).

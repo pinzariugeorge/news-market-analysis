@@ -1,0 +1,72 @@
+{
+  "decision_day": "2026-08-10",
+  "market_view": "Calm regime: VIX 14.9 and falling, the 10y yield at 4.66% near its high, the dollar soft. Risk appetite is broad (chips, gold miners and copper names all rallied last week), so the price moves themselves are not reasons; only fresh named catalysts count.",
+  "families": {
+    "oil_gas": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.5,
+      "catalyst": "none qualifying: 'Oil prices climb as Iranian demands cloud outlook for Strait of Hormuz' (Al Jazeera) and 'U.S. oil rises back above $82 as doubt grows Washington and Tehran will reach Hormuz deal' (CNBC) describe a stalled deal, not a new supply shock",
+      "reasoning": "Stalemate headlines reverse part of last week's 7.7% crude drop, and that 5% bounce is already in futures before the open. No new attack, sanctions or outage. Trump pressure on Exxon remains a policy risk. The last escalation-headline trade lost. Flat."
+    },
+    "gold_miners": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.5,
+      "catalyst": "considered: 'Barrick, Newmont settle dispute with $1.95B deal' (Mining.com) and 'Barrick Gold Falls, Newmont Rises As Miners Agree On IPO' (IBD); too small relative to NEM's size and already reacting",
+      "reasoning": "NEM rose 20.6% in five days with gold up 7.1%, so the move is priced. The $1.95B settlement is roughly 1-2% of NEM's value and the headline says it is already rising. Yields remain near highs and the jobs report has passed. Flat."
+    },
+    "chips": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.51,
+      "catalyst": "considered: 'World's biggest chipmaker TSMC's sales surge 45% amid buoyant AI demand' (CNBC); confirms AI demand but is sector-wide and follows an 11.6% NVDA week",
+      "reasoning": "TSMC's monthly sales confirm demand, but NVDA is up 11.6% in five days and 5% from its high, so much is priced. The $500B asset-class headline comes from an unreliable source. NVDA earnings fall late August, just after a 10-day window. No NVDA-specific catalyst. Flat."
+    },
+    "pharma": {
+      "call": "long",
+      "horizon_days": 10,
+      "confidence": 0.52,
+      "catalyst": "Lilly's Q2 report on 2026-08-05 raised full-year guidance (from the previous run's record); no pricing, compounding or sector-negative headline since",
+      "reasoning": "Continuing the LLY long. LLY is up 3.2% in five days after the guidance raise and sits 4% below its high, and the health care ETF is near its high. No contrary headline today. Post-guidance-raise drift is a modest edge, so confidence stays at the bar."
+    },
+    "copper_uranium": {
+      "call": "long",
+      "horizon_days": 10,
+      "confidence": 0.55,
+      "catalyst": "'EXCLUSIVE: Congo bans copper and cobalt concentrates exports, official order says' (Reuters, 2026-08-10): a fresh, named supply shock to copper on top of an existing squeeze; published before Monday's open, after Friday's close",
+      "reasoning": "Congo is a top copper source, and an export ban on concentrates tightens a market already 2% below its 52-week high. Friday's 1.7% copper dip predates the news. FCX gains on price without Congo exposure. Policy shocks last weeks. Risk: the ban is reversed or clarified."
+    }
+  },
+  "would_change_my_mind": "Congo walking back or narrowing the export ban; a Lilly pricing or compounding headline; a fresh named Hormuz attack or sanctions headline for oil (or a signed deal ending it).",
+  "handoff": {
+    "run_id": "opus2-20260810-r11",
+    "written_at": "2026-08-10T11:45:00Z",
+    "decision_day": "2026-08-10",
+    "data_cutoff": "2026-08-10",
+    "what_changed": "Reuters reports Congo banned copper and cobalt concentrate exports, so I renewed the FCX long on a fresh supply shock. Oil bounced about 5% as US-Iran Hormuz deal hopes stalled, but there was no new attack or sanctions. Gold miners surged (NEM +20.6% in five days) and Barrick settled its Nevada JV dispute with Newmont for $1.95B; TSMC sales rose 45%.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "A stalled Hormuz deal and crude bounce are not a new named supply shock; Trump pressure on oil majors persists."},
+      "gold_miners": {"position": "flat", "why": "NEM's 20% week and the small $1.95B Barrick settlement are already priced."},
+      "chips": {"position": "flat", "why": "The TSMC sales surge is sector-wide after an 11.6% NVDA week; no NVDA-specific catalyst before its late-August earnings."},
+      "pharma": {"position": "long LLY since 2026-08-10, 10 days (renewed from 2026-08-05)", "why": "Drift after the Q2 guidance raise with no contrary pricing or compounding headline."},
+      "copper_uranium": {"position": "long FCX since 2026-08-10, 10 days (renewed from 2026-07-31)", "why": "Congo export ban on copper concentrates (Reuters) adds a fresh supply shock to the squeeze."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war", "status": "open", "note": "Deal talks stalled on Iranian demands and oil bounced about 5%. Re-enter XOM only on a fresh named attack or sanctions headline, not on stalemate.", "first_seen": "2026-07-07"},
+      {"name": "Oil price intervention", "status": "open", "note": "Trump says Exxon and Chevron are making too much money; watch for concrete policy such as export curbs or a windfall tax.", "first_seen": "2026-08-05"},
+      {"name": "Yields and inflation fear", "status": "open", "note": "The 10y yield is 4.66%, near its 52-week high; the jobs report has passed. Watch CPI in mid-August.", "first_seen": "2026-07-20"},
+      {"name": "Tariffs and trade", "status": "open", "note": "Watch copper demand and pharma tariff policy.", "first_seen": "2026-07-07"},
+      {"name": "Chip rebound and AI demand", "status": "open", "note": "TSMC sales rose 45% and NVDA is 5% below its high. Wait for an NVDA-specific catalyst; NVDA earnings are in late August.", "first_seen": "2026-08-04"},
+      {"name": "Lilly obesity pipeline", "status": "open", "note": "The Q2 report raised guidance. Watch pricing, compounding and sector-wide moves; the LLY long ends around 2026-08-24.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply squeeze / Congo export ban", "status": "escalating", "note": "Congo banned copper and cobalt concentrate exports (Reuters). Watch for a reversal, exemptions or enforcement, and for a demand or tariff hit. The FCX long ends around 2026-08-24.", "first_seen": "2026-07-31"},
+      {"name": "Barrick-Newmont Nevada JV", "status": "open", "note": "Barrick settled with Newmont for $1.95B and is planning an IPO or spinoff. This is minor for NEM unless more terms emerge.", "first_seen": "2026-08-10"},
+      {"name": "Uranium / Cameco", "status": "open", "note": "The uranium ETF rose 15% in five days and CCJ 12.8%. This matters only if CCJ becomes the leader.", "first_seen": "2026-08-05"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check the FCX long (renewed 2026-08-10) for Congo ban reversals or exemptions and for copper demand or tariff shocks. Check the LLY long (renewed 2026-08-10) for pricing or compounding news. Check oil for a fresh named attack or sanctions headline versus a Hormuz deal. Then read the record for a named catalyst in each family.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days.", "cases": 3, "evidence": "Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%. Contradicting: XOM 07-23 -1.56% (Brent >$100 tanker-strike headline), so the count drops to 3 net. All trades come from one Iran episode; late entries after a long run did worse. Does not change calls."}
+    ]
+  }
+}

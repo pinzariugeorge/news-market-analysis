@@ -1,0 +1,31 @@
+# Handoff from the previous run (read first)
+Run opus2-20260731-r9 (decision day 2026-07-31, data cutoff 2026-07-31)
+What changed: Exxon and Chevron reported surging Q2 profits but Trump threatened price interventions, and crude kept falling (WTI -9.3% in 5 days). A CNBC headline reports storms and a global supply squeeze sending copper soaring, so FCX is a new long. The Fed held rates; chips rebounded sharply for one day; LLY fell 4.6% in a sector-wide pharma drop.
+Holdings and reasons:
+- oil_gas: flat | Earnings are backward-looking, price-intervention threat, no new supply-shock headline.
+- gold_miners: flat | No NEM catalyst; yields near highs.
+- chips: flat | One-day rebound, no NVDA-specific catalyst.
+- pharma: long LLY since 2026-07-23, 10 days | Retatrutide Phase 3 wins; July 30 drop was sector-wide with no LLY news.
+- copper_uranium: long FCX since 2026-07-31, 10 days | CNBC: storms and a global supply squeeze sending copper prices soaring (named supply shock).
+Open storylines:
+- [fading] Hormuz / Iran war: Oil keeps giving back gains; re-enter XOM only on a fresh named supply-shock headline.
+- [open] Oil price intervention: Trump ire at Exxon/Chevron profits and threatened price interventions; a downside policy risk for oil names.
+- [open] Yields and inflation fear: 10y 4.66% near 52-week high; Fed held; jobs report first Friday of August; euro area inflation 2.9%.
+- [open] Tariffs and trade: Global tariffs drawing rebukes; inflation risk; watch copper demand and pharma tariff policy.
+- [open] Chip rout and rebound: Sharp July 30 rebound after the rout; Big Tech capex and NVDA news are the signals. No rebound guessing.
+- [open] Lilly obesity pipeline: Retatrutide wins; LLY Q2 earnings early August; watch pricing, compounding and the sector drop of July 30.
+- [escalating] Copper supply squeeze: Storms and global supply squeeze; watch for resolution of outages or a demand/tariff hit. FCX long ends around 2026-08-14.
+- [open] Uranium / Cameco: Cameco Q2 results, record uranium prices, Westinghouse IPO plan; matters only if CCJ becomes leader.
+Lessons ledger (cases = closed trades supporting it; below 5 cases it is only a hypothesis):
+- (3 cases) Hypothesis only: oil longs opened on a named supply-shock escalation headline (sanctions, ship attacks, attacks deepening disruption) win over 10 days. | XOM 2026-07-07 net +6.82% (basket +8.64%); XOM 2026-07-10 net +12.76% (basket +10.51%); XOM 2026-07-15 net +8.22% (basket +6.06%). All in one Iran episode; below 5 cases, does not change calls.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check the LLY long (opened 2026-07-23, ends around 2026-08-06) for Q2 earnings, pricing or compounding news; check the FCX long (opened 2026-07-31) for news that the copper supply squeeze is easing or tariff/demand shocks; check oil for a renewed supply-shock headline before any XOM re-entry; then read the new record for a named catalyst in each family.
+
+# Outcomes of your past calls (facts computed by the harness; closed trades only)
+- oil_gas XOM (0.53), called 2026-07-07, held 10d to 2026-07-21: net +6.82% (family basket +8.64%). Catalyst you quoted: 'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after 
+- oil_gas XOM (0.52), called 2026-07-10, held 10d to 2026-07-24: net +12.76% (family basket +10.51%). Catalyst you quoted: Continuing hold from 2026-07-07: Hormuz tanker attacks and the Iran escalation (supply shock). Today's record adds 'Strait of Hormuz: What h
+- oil_gas XOM (0.53), called 2026-07-15, held 10d to 2026-07-29: net +8.22% (family basket +6.06%). Catalyst you quoted: 'Oil prices rise 2% to one-month high as US-Iran attacks deepen supply disruption' (Reuters, 2026-07-14); no de-escalation headline yet
+- oil_gas XOM (0.53), called 2026-07-20, held 10d to 2026-08-03: net +4.27% (family basket +2.47%). Catalyst you quoted: "Oil prices rise after Trump says Iran will pay for killing U.S. service members" (CNBC, 2026-07-19): the US-Iran supply shock is escalating
+Per-family tally (closed trades):
+- oil_gas: 4 trades, 4 won, mean net +8.02%
+All: 4 trades, 4 won, mean net +8.02%

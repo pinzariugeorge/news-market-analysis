@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260826-a (decision day 2026-08-26, data cutoff 2026-08-26)
+What changed: WTI fell 3% on Iran de-escalation signals and gold fell about 1.3% after a hot July PCE revived rate-hike bets. NVDA reports earnings tonight; FCX and copper hit records; uranium names rallied. No leader-specific catalyst appeared.
+Holdings and reasons:
+- oil_gas: flat | WTI drop is a priced driver move and XOM news is commentary only.
+- gold_miners: flat | NEM is extended and hot PCE weighs on gold; no NEM-specific catalyst.
+- chips: flat | NVDA earnings tonight are a two-sided scheduled event, not a one-sided catalyst.
+- pharma: flat | Only a Zepbound cost study; no trial, approval or pricing catalyst for LLY.
+- copper_uranium: flat | Copper record and FCX run are priced; no FCX guidance news.
+Open storylines:
+- [fading] Iran war, Hormuz and oil: WTI 82, Brent 89, down 3% on de-escalation signals; watch XOM-specific news
+- [escalating] Q2 earnings season: NVDA result: NVDA reports tonight after the close; read the result and guidance in the next record; NEM and FCX guidance still a catalyst
+- [open] AI financing and credit: Broadcom debt and ASIC competition worries; watch NVDA reaction
+- [open] Hot PCE and rate-hike bets: Hot July PCE revived September hike bets; gold fell 1.3% to about 4600; watch Fed and yields
+- [open] Gold rebound: NEM at a high after +48% in 20 days; watch rates reaction and NEM guidance
+- [open] Copper and uranium: Copper at a record, FCX +20% in 5 days; uranium ETF +24% in 20 days on Saudi nuclear deal and Canada tariffs; watch FCX guidance
+- [open] Pharma rally: Health care ETF near a high, MRK +16% in 5 days; watch LLY filings and approvals
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; check the NVDA earnings reaction and guidance, then look for leader-specific catalysts (XOM news, NEM guidance, FCX guidance, LLY filings); stay flat otherwise.

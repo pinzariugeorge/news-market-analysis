@@ -1,0 +1,15 @@
+# Handoff from the previous run (read first)
+Run fp4-20260707-a (decision day 2026-07-07, data cutoff 2026-07-07)
+What changed: WARNING: the previous note was for 2026-07-01 and its next job was 2026-07-02, so days 07-02 to 07-06 were not run here; I treated the note as stale-ish but held no positions. Headlines again held no qualifying catalyst for any leader, so all five families stay flat. Chips bounced (AMD +6.6%, TSM +4.1% on 07-06) and gold rose 1%.
+Holdings and reasons:
+- oil_gas: flat | WTI is down 26% in 20 days and no OPEC+ or XOM headline gives a one-sided setup.
+- gold_miners: flat | Gold is weak against a firm dollar and yields, and no miner catalyst appears.
+- chips: flat | Headlines are sector commentary on AI and memory, with nothing specific to NVDA.
+- pharma: flat | No LLY-specific news; the stock is near its high.
+- copper_uranium: flat | No copper or uranium supply or demand headline.
+Open storylines:
+- [open] Oil slump: WTI is down 26% over 20 days (68.55). Watch OPEC+ or supply headlines for continuation or a reversal.
+- [open] Chip rally and memory reset: The semiconductor ETF is up 43% over 60 days, but memory names had a sharp selloff. Watch TSMC monthly sales around the 10th and earnings.
+- [open] Gold drawdown: Gold is down 21.6% from its high. Watch the Fed (new chair Warsh), the dollar and the jobs report.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-07-07: read the new record and headlines, then decide each family under the catalyst rule.

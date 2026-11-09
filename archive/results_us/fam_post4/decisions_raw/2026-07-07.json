@@ -1,0 +1,33 @@
+{
+  "decision_day": "2026-07-07",
+  "market_view": "Calm regime: VIX 15.6 and falling, 10-year yield 4.48%, dollar firm near 100.9. Chips are volatile after a big 60-day surge; oil is deeply sold off.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI is down 26% in 20 days and XOM is down 10%, but the headlines hold nothing on OPEC+, supply or XOM. A driver move that already happened is priced in, so no named catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Gold bounced 1% yesterday but is still down 7.5% over 20 days against a firm dollar and 4.5% yields. No NEM or gold headline. A one-day bounce is not a catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Only commentary headlines ('Nasdaq Weakness Shows AI Stocks Are Losing Their Easy Momentum', Investing.com; 'Flash Crash or Cash?', Investing.com), mostly about memory. Nothing specific to NVDA. TSMC sales around the 10th add variance only."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Only a retail piece, 'Is It Too Late to Buy Eli Lilly Stock?' (Motley Fool), with no new fact. LLY is 2% from its high with no trial, regulatory or pricing news."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "No copper or uranium supply or demand headline. Copper is 7% below its high and FCX is down 12% over 20 days, which is not a catalyst."}
+  },
+  "would_change_my_mind": "A named company or commodity event: OPEC+ or supply news, a guidance raise or pre-announcement for XOM/NEM/NVDA/LLY/FCX, an export-rule change, or an FDA decision.",
+  "handoff": {
+    "run_id": "fp4-20260707-a",
+    "written_at": "2026-07-07T14:00:00Z",
+    "decision_day": "2026-07-07",
+    "data_cutoff": "2026-07-07",
+    "what_changed": "WARNING: the previous note was for 2026-07-01 and its next job was 2026-07-02, so days 07-02 to 07-06 were not run here; I treated the note as stale-ish but held no positions. Headlines again held no qualifying catalyst for any leader, so all five families stay flat. Chips bounced (AMD +6.6%, TSM +4.1% on 07-06) and gold rose 1%.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI is down 26% in 20 days and no OPEC+ or XOM headline gives a one-sided setup."},
+      "gold_miners": {"position": "flat", "why": "Gold is weak against a firm dollar and yields, and no miner catalyst appears."},
+      "chips": {"position": "flat", "why": "Headlines are sector commentary on AI and memory, with nothing specific to NVDA."},
+      "pharma": {"position": "flat", "why": "No LLY-specific news; the stock is near its high."},
+      "copper_uranium": {"position": "flat", "why": "No copper or uranium supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil slump", "status": "open", "note": "WTI is down 26% over 20 days (68.55). Watch OPEC+ or supply headlines for continuation or a reversal.", "first_seen": "2026-07-01"},
+      {"name": "Chip rally and memory reset", "status": "open", "note": "The semiconductor ETF is up 43% over 60 days, but memory names had a sharp selloff. Watch TSMC monthly sales around the 10th and earnings.", "first_seen": "2026-07-01"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold is down 21.6% from its high. Watch the Fed (new chair Warsh), the dollar and the jobs report.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-07: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

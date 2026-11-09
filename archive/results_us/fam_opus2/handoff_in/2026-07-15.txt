@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus2-20260710-c3 (decision day 2026-07-10, data cutoff 2026-07-10)
+What changed: Oil rose 5% over the week on the Hormuz shock but WTI fell 2% on July 9 (72.08), and XOM fell 2.6%. There is no de-escalation headline yet. Gold bounced 1.4% with silver up 3.8%, and a Fed report cites 'stepped-up' inflation. Australia and India agreed on uranium exports.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | The Hormuz/Iran supply shock is the catalyst and no de-escalation headline has appeared; confidence was trimmed to 0.52.
+- gold_miners: flat | There is no NEM catalyst; the headlines are opinion pieces, and real rates and the dollar remain headwinds.
+- chips: flat | There is no NVDA-specific catalyst.
+- pharma: flat | There is no trial, approval or pricing news for LLY.
+- copper_uranium: flat | There is no copper catalyst for FCX; the uranium deal news is slow and concerns CCJ.
+Open storylines:
+- [escalating] Hormuz / Iran escalation: Tanker attacks, the revoked waiver and the blockade threat; Al Jazeera recaps events since the June 17 MoU. Oil gave back 2% on July 9. A de-escalation headline means exiting XOM.
+- [open] Oil price slide: WTI is at 72.08, down 18% over 20 days. US output is a record (EIA). The shock bounce may fade.
+- [open] Gold bear market: Gold is 22% below its high. A Fed report on rising inflation keeps rates high. Watch for a dovish turn or a safe-haven bid.
+- [fading] Gold miner M&A: The $9bn tie-up matters only if NEM becomes involved.
+- [open] Uranium supply and policy: The Cigar Lake suspension, the Australia-India export deal and the Trump nuclear push. These matter for CCJ only if it becomes the leader.
+- [open] Copper to aluminium substitution: A slow negative for copper demand.
+- [open] Q2 earnings season: Exxon has signalled a Q2 windfall. NEM's Q2 call is scheduled. Watch for guidance changes.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check the XOM long (10-day horizon from 2026-07-07, ends around 2026-07-21) against Iran and Hormuz news, and exit on a de-escalation headline. Then read the new record for a named catalyst in each family and decide long or flat.
+
+# Outcomes of your past calls
+No long call has closed yet. There is nothing to learn from yet; do not invent lessons.

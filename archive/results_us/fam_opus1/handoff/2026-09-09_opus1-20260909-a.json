@@ -1,0 +1,87 @@
+{
+ "run_id": "opus1-20260909-a",
+ "written_at": "2026-09-09T12:00:00Z",
+ "decision_day": "2026-09-09",
+ "data_cutoff": "2026-09-09",
+ "what_changed": "WTI rose to 93.0 (Brent 97.9) and headlines report crude above $100 as US and Iran launch new attacks; WSJ says Trump advisers see the war possibly lasting through end of term and Trump says oil prices won't fall until after the midterms. The 10-year yield is 4.81% with Fed hike talk (Warsh); regulators are investigating NVDA's Groq licensing deal; copper hit a 252-day high.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-31, 10 days",
+   "why": "Prolonged Iran war keeps crude above 90 and no exit trigger has appeared; XOM has lagged crude."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold fell on the tanker strikes and yields are at a one-year high; no named catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Regulatory probe of the NVDA-Groq deal is an overhang and there is no guidance or export-rule catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "FDA approvals in the news are not LLY's; no LLY-specific catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper at a high but no named supply shock; uranium news is not one-sided."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war / Hormuz and oil",
+   "status": "escalating",
+   "note": "WTI 93, Brent 98, crude headlines above $100; US struck five Iranian tankers. Exit XOM on a ceasefire, Hormuz reopening or WTI below about 83.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "Trump vs oil prices",
+   "status": "open",
+   "note": "Trump says prices fall only after midterms (lower near-term SPR/windfall risk); still exit XOM on a windfall tax, export limit or SPR release.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Venezuela oil opening",
+   "status": "open",
+   "note": "Chevron $7B plan to double Venezuela output; watch for XOM deal terms.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Rates and Fed hike risk",
+   "status": "escalating",
+   "note": "10-year 4.81%, one-year high; Warsh says 'work to do', September meeting hike debated. Weighs on gold and long-duration stocks.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Gold vs yields",
+   "status": "fading",
+   "note": "Gold 4439, -1% in 5 days; re-enter NEM only on a named catalyst (e.g. a Fed pause or safe-haven spike).",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "NVDA deals and regulators",
+   "status": "open",
+   "note": "Hugging Face $12.9B purchase; regulators investigating NVDA-Groq licensing deal (NYT 09-09). Long only on clear guidance or export-rule catalyst.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Unnamed FDA diabetes approval",
+   "status": "fading",
+   "note": "Still unconfirmed as LLY's; LLY -8.8% in 20 days with no named cause.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Copper at highs",
+   "status": "open",
+   "note": "Copper 6.74 at 252-day high, LME metals off records; re-enter FCX only on a named supply outage.",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "US-Canada trade war and uranium",
+   "status": "open",
+   "note": "US banning Canadian motorcycle, dairy, alcohol imports; watch whether tariffs reach uranium (CCJ).",
+   "first_seen": "2026-09-03"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note. Hold XOM (bought 2026-08-31, 10-day hold, exit about 2026-09-15) unless an Iran ceasefire or Hormuz reopening, a windfall tax, export limit or SPR release, or WTI below about 83 appears; then go flat. Past about 2026-09-15 re-decide XOM fresh on a catalyst. Keep the other four flat unless a named catalyst appears: LLY-specific approval, NVDA guidance or export-rule news, a copper supply outage, or a Fed pause for gold."
+}

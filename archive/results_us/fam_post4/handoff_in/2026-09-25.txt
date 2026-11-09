@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260922-a (decision day 2026-09-22, data cutoff 2026-09-22)
+What changed: Five days since the 09-17 note. WTI fell 4.5% on 09-21 and XOM fell 3.2%. Tech rebounded: the semi ETF rose 4% on the day and 10% in 5 days, and AMD rose 10%. Copper rose 5.6% in 5 days. Headlines were again noise with no named catalyst, so all five families stay flat.
+Holdings and reasons:
+- oil_gas: flat | WTI drop is priced in; no XOM-specific headline.
+- gold_miners: flat | Yields near highs and a firm dollar; no NEM headline.
+- chips: flat | Sharp rebound already priced in; no NVDA guidance or export-rule headline.
+- pharma: flat | No LLY trial, regulator or pricing headline.
+- copper_uranium: flat | Copper rally priced in; no FCX or China-data headline.
+Open storylines:
+- [open] Oil and Middle East escalation: WTI 95.8 after -4.5% on 09-21, still +10% in 20 days; XOM -3.2% on the day. Watch OPEC+, Hormuz or an XOM-specific headline.
+- [open] Rate hike and high yields: Fed hiked to 3.75-4.00% with signals of more; 10-year about 4.96%, dollar firm. Watch inflation data and the dollar for gold miners.
+- [escalating] Chips rebound: Semi ETF +10% in 5 days, AMD +25%, NVDA +7.8%. Watch NVDA guidance, analyst and export-rule headlines, and the Xi visit to Washington.
+- [open] Copper and uranium: Copper +5.6% in 5 days, uranium ETF 30% below its high. Watch supply outage or China-data headlines.
+- [open] LLY dip: LLY -7.2% in 20 days, 9% below its high. Watch for a trial, pricing or regulator headline.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-09-22: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (OPEC+ or Hormuz news, gold reaction to yields, NVDA guidance or export rules, LLY trial or pricing, copper supply or China data); decide each family under the catalyst rule.

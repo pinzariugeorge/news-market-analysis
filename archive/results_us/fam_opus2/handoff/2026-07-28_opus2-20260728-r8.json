@@ -1,0 +1,82 @@
+{
+ "run_id": "opus2-20260728-r8",
+ "written_at": "2026-07-28T12:30:00Z",
+ "decision_day": "2026-07-28",
+ "data_cutoff": "2026-07-28",
+ "what_changed": "US-Iran tensions eased: WTI -7.5% and Brent -8.7% on July 27 (oil's first fall in a week), so the XOM long is closed on the de-escalation rule. Chips were clobbered (SK Hynix -10%, NVDA -5%). An EU-US trade deal was announced, and Trump plans generic-drug tariffs from 2028.",
+ "families": {
+  "oil_gas": {
+   "position": "flat (XOM long exited 2026-07-28)",
+   "why": "De-escalation headline 'Oil Slides... as US-Iran Tensions Ease' triggered the exit rule."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No NEM catalyst; high yields and a firm dollar are headwinds."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector rout and no NVDA-specific positive catalyst."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-07-23, 10 days",
+   "why": "Retatrutide Phase 3 wins (July 23); no contrary news; confidence 0.53."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX catalyst; the UBS upgrade is for CCJ, which is not the leader."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Hormuz / Iran war",
+   "status": "fading",
+   "note": "Tensions eased July 27 and oil fell 7.5-8.7%. Re-entry in XOM only on a fresh named supply-shock headline.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Oil shock vs fade",
+   "status": "open",
+   "note": "WTI still +19% in 20 days but -23% over 60 days; further giveback likely if calm holds.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Yields and inflation fear",
+   "status": "open",
+   "note": "10y 4.64%, near its 52-week high; lower oil may ease it. Watch the Fed meeting and jobs report.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Tariffs and trade",
+   "status": "open",
+   "note": "Global tariffs criticised by partners; EU-US deal announced; generic drug tariffs planned from 2028. Watch copper demand and pharma policy.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Chip rout",
+   "status": "escalating",
+   "note": "SK Hynix -10%, AMD, Intel and Micron losses; Big Tech capex reports are the next signal. No rebound guessing.",
+   "first_seen": "2026-07-27"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "open",
+   "note": "Retatrutide Phase 3 wins; LLY Q2 earnings early August; watch compounding and pricing policy.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Uranium sentiment",
+   "status": "open",
+   "note": "UBS upgraded Cameco (July 27); matters for this family only if CCJ becomes leader.",
+   "first_seen": "2026-07-22"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, check the LLY long (opened 2026-07-23, ends around 2026-08-06) for trial, pricing, compounding or Q2 earnings news; check oil headlines for a renewed Hormuz/Red Sea supply shock before any XOM re-entry; then read the new record for a named catalyst in each family.",
+ "lessons": [
+  {
+   "rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline (sanctions, ship attacks) win over 10 days.",
+   "cases": 2,
+   "evidence": "XOM 2026-07-07 net +6.82% (basket +8.64%); XOM 2026-07-10 net +12.76% (basket +10.51%). Both in the same Iran episode; below 5 cases, does not change calls."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260810-a (decision day 2026-08-10, data cutoff 2026-08-10)
+What changed: Gold jumped 2.3% on 08-07 and miners surged (NEM +7.2%); Barrick and Newmont settled their Nevada JV dispute. TSMC revenue was strong and capex guidance was lifted, Nvidia is investing in Lancium, and COP changed CEO with an upgrade. Oil fell 7.7% in 5 days and political windfall-profit criticism of oil majors continues.
+Holdings and reasons:
+- oil_gas: flat | No positive XOM catalyst; windfall criticism and stalled Hormuz talks cut both ways.
+- gold_miners: flat | NEM JV settlement is largely priced after a 20% weekly surge; no guidance news.
+- chips: flat | TSMC and Lancium news are supportive but priced after an 11.6% weekly NVDA rally.
+- pharma: flat | No LLY-specific catalyst after the Q2 pop.
+- copper_uranium: flat | No FCX-specific news; copper near its high and FCX up 11% in 5 days.
+Open storylines:
+- [open] Iran war, Hormuz and oil: WTI 78.2, -7.7% in 5 days; peace talks stalled; windfall profit criticism of XOM and CVX; watch XOM news.
+- [open] Q2 earnings season: COP beat, CVX positive reaction, Barrick missed, Pfizer beat and raised; NEM, FCX and others still to report; a leader guidance raise is a catalyst.
+- [open] Chip rally, TSMC and AI financing: TSMC revenue +44.7% and capex up to $64B; Nvidia into Lancium for Stargate; Intel $15B share sale; Cuban AI financing warning; watch NVDA-specific news.
+- [open] Gold rebound and Nevada JV: Gold 4400 (+7% in 5 days), 17% below its high; Barrick and Newmont settled the Nevada JV and cleared a Barrick gold IPO; watch NEM earnings and guidance.
+- [open] Copper tariffs and uranium: Copper near its high; uranium ETF +15% in 5 days but 27% below its high; watch FCX guidance and Section 232.
+- [fading] LLY after Q2 beat: Pop is priced; watch retatrutide filing or a China probe.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise.

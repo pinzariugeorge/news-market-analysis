@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260930-a",
+ "written_at": "2026-09-30T14:00:00Z",
+ "decision_day": "2026-09-30",
+ "data_cutoff": "2026-09-30",
+ "what_changed": "10-year yield rose further to 5.26% (high) and the dollar is firm; WTI fell 3.5% to 89.4 while Brent is 102.6. Chips are mixed with Micron earnings ahead; uranium ETF fell to -12% over 20 days. Only minor headlines (Lilly Ebglyss data, Newmont FCF recap, XOM Vietnam deals).",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "No supply shock; XOM Vietnam deals are minor and oil's drop is already priced."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold below 200-day average with yields at a high; Newmont record FCF is backward-looking."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Micron earnings ahead is two-sided; no NVDA-specific demand or export catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Lilly Ebglyss data is minor; no GLP-1 trial, approval or pricing event."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX guidance or supply news; uranium and copper drifting lower."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "open",
+   "note": "WTI 89.4 (-3.5% yesterday), Brent 102.6; watch supply shock or XOM deals",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Rates risk",
+   "status": "escalating",
+   "note": "10-year 5.26% at a 252-day high; jobs report within the next 20 trading days",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "AI trade in chips",
+   "status": "open",
+   "note": "Micron earnings ahead (make-or-break framing); watch NVDA demand or export news",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Gold miners and rates",
+   "status": "open",
+   "note": "Gold -6.7% in 20 days, below 200-day average; NEM Q3 results guidance still to come",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Copper and uranium",
+   "status": "open",
+   "note": "Uranium ETF -12% in 20 days, copper -3% in 5 days; watch FCX guidance or Grasberg supply news",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "name": "Pharma and Lilly GLP-1",
+   "status": "open",
+   "note": "Novo oral GLP-1 deals and data; Lilly Ebglyss positive Phase 3b; watch trials, approvals and pricing",
+   "first_seen": "2026-09-25"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM or oil supply shock, NEM Q3 guidance, NVDA demand or export news after Micron earnings, LLY trial, approval or pricing news, FCX guidance or supply news); stay flat otherwise."
+}

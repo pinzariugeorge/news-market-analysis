@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260805-a (decision day 2026-08-05, data cutoff 2026-08-05)
+What changed: Lilly reported a Q2 beat and raise and the stock popped pre-market, so the LLY long is closed at its horizon. WTI fell 5.7% on Strait of Hormuz deal hopes, XOM missed Q2 estimates, and chips and copper names rallied strongly with the VIX at 16.5.
+Holdings and reasons:
+- oil_gas: flat | WTI drop on Hormuz hopes is priced; XOM missed Q2 and faces political criticism, with no positive catalyst.
+- gold_miners: flat | NEM follows gold; no NEM-specific guidance or production news.
+- chips: flat | Semi rally of 8.7% in 5 days is priced; no decisive NVDA catalyst.
+- pharma: flat | LLY long (opened 2026-07-23) closed at its horizon after the Q2 beat and raise pop; no fresh catalyst.
+- copper_uranium: flat | FCX jump with copper is priced; no FCX-specific news.
+Open storylines:
+- [open] Iran war, Hormuz deal and oil: WTI 75.8, -5.7% in a day on deal hopes; XOM missed Q2; COP and OXY report 08-05/06; watch deal outcome and XOM-specific news.
+- [open] Q2 earnings season: LLY beat and raised, AMD fell after a strong quarter, SCCO record; NEM, COP, OXY, FCX and others to come; a leader guidance raise is a catalyst.
+- [open] Chip rally and China components ban: Semi ETF +5.6% on 08-04; BNP warns on proposed US ban on Chinese AI components; SpaceX chose Nvidia; watch NVDA-specific news and TSMC monthly sales around the 10th.
+- [fading] LLY retatrutide and Q2 beat: Q2 revenue +48%, beat and raise, pop priced pre-market; position closed; watch for retatrutide filing or China probe.
+- [open] Gold slump and rates: Gold 4153, 22% below high, 10y 4.63%; miners bouncing; watch NEM earnings and guidance.
+- [fading] Uranium and Cameco: Cameco price target cut 29%; uranium ETF -31% from high; Section 232 pending; CCJ is not the leader.
+- [open] Copper tariffs and Chile disruptions: Record July inflows ahead of anticipated tariffs on refined imports; Chile storms; copper near its high; FCX +13% in 20 days.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise.

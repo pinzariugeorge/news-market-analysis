@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-07-15",
+  "market_view": "Calm regime (VIX 16.5, falling); June CPI and PPI came in soft, easing rate-hike worries, with the Fed meeting this week. Iran tensions are back and oil rebounded sharply.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Iran war resumption lifted WTI +12.6% in 5 days, but that driver move is already priced; XOM itself reacted little and a Yahoo piece notes it did the opposite of war-trade instinct. No XOM-specific event."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Soft CPI/PPI (Benzinga, SeekingAlpha) helped gold, but gold +1.6% yesterday and miners already bounced; Fed meeting adds variance, not direction. Analyst PT changes are not catalysts."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Nvidia CEO saying Rubin remains on track only rebuts delay reports; NVDA already +4% yesterday and +7.5% in 5 days. No export change, guidance raise or TSMC sales seen."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Merck Keytruda trial and J&J beat-and-raise concern MRK and JNJ, not leader LLY. LLY fell 6.7% in 5 days with no explanation in the headlines; no LLY event."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Morgan Stanley PT lift on FCX and Truist Cameco initiation are analyst opinions; NJ nuclear plan relates to CCJ, not FCX. FCX +3.3% yesterday is priced."}
+  },
+  "would_change_my_mind": "A named company event for the leader (guidance raise, regulatory approval, export-control change, confirmed supply outage) or a clear Fed-driven rate shift for gold.",
+  "handoff": {
+    "run_id": "fp3-20260715-a",
+    "written_at": "2026-07-15T14:00:00Z",
+    "decision_day": "2026-07-15",
+    "data_cutoff": "2026-07-15",
+    "what_changed": "Iran war resumed and WTI rebounded about 12.6% in 5 days; June CPI and PPI were soft; J&J beat and raised; Nvidia said Rubin is on track; Merck Keytruda endometrial trial positive. No leader-specific catalyst, so all stay flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Oil rally from Iran news is a driver move already priced; no XOM-specific catalyst."},
+      "gold_miners": {"position": "flat", "why": "Soft inflation data helps but is already reflected; Fed meeting this week adds variance only."},
+      "chips": {"position": "flat", "why": "Rubin on-track comment is a rebuttal, NVDA already up strongly; no export or guidance catalyst."},
+      "pharma": {"position": "flat", "why": "News concerns MRK and JNJ, not the leader LLY."},
+      "copper_uranium": {"position": "flat", "why": "Only analyst target changes and thematic pieces for FCX."}
+    },
+    "open_storylines": [
+      {"name": "FCX Grasberg output cut", "status": "open", "note": "No new news; watch Q2 earnings and Grasberg restart updates.", "first_seen": "2026-07-10"},
+      {"name": "LLY China trial security probe", "status": "open", "note": "No update today; watch for escalation or company response. LLY down 6.7% in 5 days, cause not visible.", "first_seen": "2026-07-10"},
+      {"name": "Q2 earnings season", "status": "open", "note": "JNJ beat and raised July 15; Intuitive Surgical July 16, Netflix July 16, WPM Aug 6; a guidance raise by a leader would be a catalyst.", "first_seen": "2026-07-10"},
+      {"name": "Iran war and oil rebound", "status": "escalating", "note": "WTI +12.6% in 5 days on resumed Iran-U.S. tensions; watch for a real supply disruption versus sentiment.", "first_seen": "2026-07-15"},
+      {"name": "Soft inflation and Fed meeting", "status": "open", "note": "June CPI 3.5% YoY, PPI -0.3%; Fed meeting this week; gold still -15% over 60 days.", "first_seen": "2026-07-15"},
+      {"name": "Chip sector and Nvidia Rubin", "status": "open", "note": "Rubin delay reports denied by Huang; watch TSMC monthly sales and Micron.", "first_seen": "2026-07-10"},
+      {"name": "MRK Keytruda approvals and trials", "status": "open", "note": "Positive Phase 3 endometrial result July 15 after bladder approval July 10; relevant to MRK, not the leader LLY.", "first_seen": "2026-07-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; look for a named leader-specific catalyst (Fed outcome for gold, TSMC sales, Q2 earnings, supply shock); stay flat if none."
+  }
+}

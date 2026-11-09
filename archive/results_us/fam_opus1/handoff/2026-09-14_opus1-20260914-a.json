@@ -1,0 +1,93 @@
+{
+ "run_id": "opus1-20260914-a",
+ "written_at": "2026-09-14T12:30:00Z",
+ "decision_day": "2026-09-14",
+ "data_cutoff": "2026-09-14",
+ "what_changed": "WTI rose to 100.05 (Brent 104.6) and headlines report US oil above $105 after Saudi strikes and a pipeline closure forced Saudi Arabia to cancel some cargoes. The 10-year yield hit about 4.98% (WSJ: 'Treasury Yield Hits 5%') and AI stocks fell on industry calls to slow development. Exxon shut its Joliet refinery after a power outage.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-09-14, 10 days (rolled from the 2026-08-31 entry)",
+   "why": "Saudi pipeline closure and strikes add a fresh supply shock to the Iran war, and XOM has lagged crude."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Yields near 5% and Fed hike talk weigh on gold; Newmont faces Argentina project risk; no named catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "AI-slowdown warning from industry chiefs and the NVDA-Groq probe are overhangs; no guidance or export-rule catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "FDA approvals in the news are not LLY's; no LLY-specific catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper off its high with no named outage; Saudi uranium discovery leans bearish for uranium."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Saudi supply and oil",
+   "status": "escalating",
+   "note": "WTI 100, Brent 105; Saudi strikes, pipeline closure and cancelled cargoes. Exit XOM on a ceasefire, pipeline restart, Hormuz reopening or WTI below about 85.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "Trump vs oil prices",
+   "status": "open",
+   "note": "Trump said prices fall only after midterms; still exit XOM on a windfall tax, export limit or SPR release.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Exxon Joliet refinery outage",
+   "status": "open",
+   "note": "Power-outage shutdown; small negative for XOM downstream unless prolonged.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Venezuela oil opening",
+   "status": "open",
+   "note": "Chevron $7B plan to double Venezuela output; watch for XOM deal terms.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Rates at 5% and Fed hike risk",
+   "status": "escalating",
+   "note": "10-year about 4.98%, one-year high; WSJ 'new era' framing; weighs on gold and long-duration stocks. Watch the Fed meeting.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Gold vs yields",
+   "status": "fading",
+   "note": "Gold 4409, -2.9% in 5 days; China official buying accelerated in August. Re-enter NEM only on a Fed pause or safe-haven spike.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "AI slowdown and NVDA regulators",
+   "status": "escalating",
+   "note": "Industry chiefs call for slowing AI; chips fell; NVDA-Groq probe ongoing. Long only on clear guidance or export-rule catalyst.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "LLY drift",
+   "status": "fading",
+   "note": "LLY -7.7% in 20 days with no named cause; watch for LLY-specific approval or data.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Copper and uranium supply",
+   "status": "open",
+   "note": "Copper 6.47, off high; IEA long-term gap; Saudi uranium discovery bearish for CCJ. Re-enter FCX only on a named outage.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "US-Canada trade war and uranium",
+   "status": "open",
+   "note": "Watch whether tariffs reach uranium (CCJ).",
+   "first_seen": "2026-09-09"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note. Hold XOM (rolled long 2026-09-14, 10-day hold, exit about 2026-09-28) unless an Iran/Gulf ceasefire, Saudi pipeline restart or Hormuz reopening, a windfall tax, export limit or SPR release, or WTI below about 85 appears; then go flat. Keep the other four flat unless a named catalyst appears: a Fed pause for gold, NVDA guidance or export-rule news, an LLY-specific approval, or a copper supply outage."
+}

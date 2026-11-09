@@ -4,3 +4,8 @@ __pycache__/
 data/raw/
 cache/
 .venv/
+
+# US-era archive (moved 2026-11-09; raw data stays untracked)
+archive/data_us/
+data/live/
+data/paper/

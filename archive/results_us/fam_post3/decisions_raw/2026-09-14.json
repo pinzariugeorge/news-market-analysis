@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-09-14",
+  "market_view": "VIX fell to 15.8 but the 10-year yield sits at a high of 4.98% and WTI is about $100 after a 23% 20-day rise. Monday brings an AI-pacing selloff in chips and memory; no other broad shock.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (Benzinga: 'Exxon Sees the US Supplying Nearly a Third of the World's LNG by 2030' is a long-dated talk, XOM already +2% on it)", "reasoning": "Oil spike is priced and XOM already moved on the LNG remark. No XOM-specific one-sided near-term catalyst; Chevron headlines are not XOM news."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold is below its 200-day average, yields at a high are a headwind, and NEM headlines are Zacks-style commentary ('lower production, higher costs and falling estimates'). No guidance event."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none (Yahoo: 'Chip Stocks Tumble as AI Pacing Call Reaches Beyond Memory' is a sentiment shock, not a company or policy change)", "reasoning": "A weekend essay on slowing AI sent chips down; a rebound is a guess, and a further slide is equally plausible. No NVDA demand or export news."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (Yahoo: 'Eli Lilly Fell Like a Rock Over the Last Month: This Big Bank Expects 45% Returns' is an analyst opinion)", "reasoning": "No LLY trial, approval or pricing news. A bank target and the Novo rebrand are not one-sided catalysts; the dip is already known."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (SeekingAlpha: 'Freeport-McMoRan: Recovering From Grasberg Drives Potential 10% FCF Yield' is a blog thesis)", "reasoning": "No FCX guidance, supply outage or China data in the headlines. Copper is flat to slightly down; the Grasberg recovery is known."}
+  },
+  "would_change_my_mind": "A named, one-sided leader event: FCX or NEM guidance change, an LLY approval or trial result, an NVDA demand or export-rule headline, or XOM-specific supply or M&A news.",
+  "handoff": {
+    "run_id": "fp3-20260914-a",
+    "written_at": "2026-09-14T14:00:00Z",
+    "decision_day": "2026-09-14",
+    "data_cutoff": "2026-09-14",
+    "what_changed": "A weekend call from AI CEOs for slower AI development hit chip and memory stocks Monday (Intel -7%, AMD -6%, NVDA lower). Oil was down about 2.4% on Friday but still near $100, and XOM gained about 2% on an LNG supply comment. The 10-year yield rose to 4.98%, a new high.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Oil spike is priced and XOM's LNG remark is long-dated, not a one-sided catalyst."},
+      "gold_miners": {"position": "flat", "why": "Yield at a high and gold below its 200-day average; no NEM guidance news."},
+      "chips": {"position": "flat", "why": "AI-pacing selloff is a sentiment shock with no named NVDA catalyst; rebound is a guess."},
+      "pharma": {"position": "flat", "why": "No LLY trial, approval or pricing news; only an analyst target."},
+      "copper_uranium": {"position": "flat", "why": "No FCX guidance or supply news; copper flat and Grasberg recovery already known."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "open", "note": "WTI about $100 (-2.4% Friday, +23% in 20 days); Chevron says LNG prices stay high on Middle East disruption; watch XOM-specific news and whether oil holds", "first_seen": "2026-09-09"},
+      {"name": "Rates risk", "status": "escalating", "note": "10-year yield 4.98% at a high, +4.5% in 5 days; watch the jobs report and Fed", "first_seen": "2026-09-09"},
+      {"name": "AI pacing selloff in chips", "status": "escalating", "note": "Anthropic and OpenAI CEOs urged slower AI development; memory fell 6-7%, Intel -7%, AMD -6%; watch whether NVDA demand or export news follows and whether the selloff fades", "first_seen": "2026-09-14"},
+      {"name": "Gold miners and rates", "status": "open", "note": "Gold below its 200-day average; NEM commentary mentions falling estimates; watch NEM guidance", "first_seen": "2026-09-09"},
+      {"name": "Copper and uranium", "status": "open", "note": "Copper -1.6% in 5 days, uranium ETF -3.3% Friday; watch FCX guidance or Grasberg supply news", "first_seen": "2026-09-09"},
+      {"name": "Pharma weakness", "status": "open", "note": "LLY -7.7% in 20 days; a bank sees 45% upside but that is only an opinion; watch LLY trials, approvals and pricing", "first_seen": "2026-09-09"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise."
+  }
+}

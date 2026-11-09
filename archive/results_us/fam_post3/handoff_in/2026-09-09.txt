@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260903-a (decision day 2026-09-03, data cutoff 2026-09-03)
+What changed: WTI rose 10.7% in 5 days; Nvidia agreed to buy Hugging Face for $12.93B; AVGO slid despite beating Q3 earnings on softer guidance. AbbVie posted positive Phase 3 etentamig data and Piper Sandler raised the XOM and CVX targets. The 10-year yield is at its high of 4.80% and gold is -5% in 5 days.
+Holdings and reasons:
+- oil_gas: flat | Analyst target raises and the CVX Venezuela deal are not an XOM-specific one-sided catalyst, and the oil rise is priced.
+- gold_miners: flat | Rate headwind with no NEM-specific catalyst; headlines are opinion only.
+- chips: flat | The NVDA-Hugging Face deal is two-sided and NVDA is up 3.2% already; AVGO reaction is negative.
+- pharma: flat | The positive Phase 3 news is for ABBV, not the leader LLY.
+- copper_uranium: flat | The copper record is priced; no FCX guidance or supply news.
+Open storylines:
+- [escalating] Iran war, Hormuz and oil: WTI 91, +21% in 20 days; watch XOM-specific news and whether the rise holds
+- [open] Q2 earnings aftermath: AVGO beat but guided softer and slid; NVDA reaction mixed (guided margins lower) but +3.2% yesterday; watch the follow-through
+- [open] AI financing and M&A: Nvidia-Hugging Face $12.93B deal; IREN $2.4B private credit for Nvidia GPUs; circular-financing debate continues
+- [open] Rate-hike bets and Warsh: 10-year yield 4.80% at its high; gold -5% in 5 days; watch the jobs report and Fed
+- [open] Gold rebound: NEM +20% in 20 days but -4.9% in 5 days; watch NEM guidance
+- [open] Copper and uranium: Copper record headlines but copper -3% in 20 days; uranium ETF -7.8% in 5 days; watch FCX guidance
+- [open] Pharma rally: Sector near highs; ABBV positive Phase 3 data; LLY lagging; watch LLY filings and approvals
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise.

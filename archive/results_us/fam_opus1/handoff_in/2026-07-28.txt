@@ -1,0 +1,21 @@
+# Handoff from the previous run (read first)
+Run opus1-20260723-a (decision day 2026-07-23, data cutoff 2026-07-23)
+What changed: Oil shock widened: Brent headlines above $100 after tankers struck off Saudi Arabia and Red Sea attacks, Rubio says Iran not serious about a deal; WTI 86.8 (+9.1% 5d), Brent 94.1 close. The 10-year yield hit its highest since January 2025 on inflation fear and the US imposed new tariffs on 60+ partners. NEM beat Q2 with steady guidance; LLY reported two more retatrutide Phase 3 wins.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days (renewed 2026-07-20, ends about 2026-08-03) | Iran war supply shock now spans Hormuz and the Red Sea with no de-escalation; held, not re-extended.
+- gold_miners: flat | NEM Q2 beat with unchanged guidance; gold bear market and rising yields give no one-sided setup.
+- chips: flat | No NVDA catalyst; AMD Helios in full production is a competitive negative.
+- pharma: flat | Retatrutide Phase 3 wins judged largely expected and priced after LLY's 60-day rally.
+- copper_uranium: flat | No FCX catalyst; new tariffs unclear for copper; Saudi uranium deal indirect and long-dated.
+Open storylines:
+- [escalating] Iran war / Hormuz and Red Sea oil shock: Exit XOM on ceasefire, chokepoint reopening, or the horizon end about 2026-08-03. Check WTI and Brent closes and any tanker attacks.
+- [open] Exxon Q2 earnings: Late July, inside the hold window; variance, not direction.
+- [open] Gold bear market and rising yields: 10-year at highest since Jan 2025; watch yields, dollar, jobs report. NEM Q2 beat done, guidance steady.
+- [open] AI chip competition: AMD Helios in full production, AMD $5bn Anthropic deal; watch NVDA guidance, export rules, big tech capex in earnings.
+- [escalating] US tariffs (Canada 50%, new duties on 60+ partners): Watch metals and energy carve-outs and retaliation affecting copper and crude flows.
+- [open] LLY retatrutide and Q2 earnings: Two more Phase 3 wins on 07-23; reconsider long only on a guidance raise or regulator filing news at Q2 results (early August).
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+- [fading] Uranium supply and policy: Saudi-US enrichment deal is long-dated; uranium ETF -10% over 20 days; indirect for FCX.
+- [open] Inflation, Warsh Fed and Q2 earnings: Oil-driven inflation fear lifting yields; earnings season raises variance, not a reason to be long.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note; exit XOM to flat if the Iran conflict de-escalates (ceasefire, Hormuz or Red Sea reopening) or the horizon (about 2026-08-03) has ended, otherwise check its Q2 result and keep; then re-check all five families for a named catalyst, especially LLY Q2 guidance and NVDA/export news.

@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-07-31",
+ "weekday": "Friday",
+ "information_cutoff": "closes dated before 2026-07-31; Massive news published before 2026-07-31 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-07-30",
+   "last": 17.09,
+   "ret_1d_pct": -17.28,
+   "ret_5d_pct": -8.61,
+   "ret_20d_pct": 3.01,
+   "ret_60d_pct": -1.67,
+   "vol_20d_daily_pct": 7.97,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -45.0
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-07-30",
+     "last": 83.59,
+     "ret_1d_pct": -1.03,
+     "ret_5d_pct": -9.33,
+     "ret_20d_pct": 21.89,
+     "ret_60d_pct": -21.45,
+     "vol_20d_daily_pct": 3.84,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -26.0
+    },
+    "Brent crude oil": {
+     "last_date": "2026-07-30",
+     "last": 89.03,
+     "ret_1d_pct": -1.88,
+     "ret_5d_pct": -11.58,
+     "ret_20d_pct": 24.4,
+     "ret_60d_pct": -22.2,
+     "vol_20d_daily_pct": 4.34,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -24.8
+    },
+    "Natural gas": {
+     "last_date": "2026-07-30",
+     "last": 2.758,
+     "ret_1d_pct": 1.21,
+     "ret_5d_pct": -5.42,
+     "ret_20d_pct": -14.35,
+     "ret_60d_pct": -3.8,
+     "vol_20d_daily_pct": 2.18,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -63.0
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-07-30",
+     "last": 156.97,
+     "ret_1d_pct": 0.14,
+     "ret_5d_pct": 0.05,
+     "ret_20d_pct": 15.18,
+     "ret_60d_pct": 2.13,
+     "vol_20d_daily_pct": 1.61,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.5,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-07-30",
+     "last": 192.31,
+     "ret_1d_pct": 0.23,
+     "ret_5d_pct": -1.09,
+     "ret_20d_pct": 16.07,
+     "ret_60d_pct": 0.02,
+     "vol_20d_daily_pct": 1.46,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.9,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-07-30",
+     "last": 119.03,
+     "ret_1d_pct": 0.82,
+     "ret_5d_pct": -0.97,
+     "ret_20d_pct": 15.32,
+     "ret_60d_pct": -4.71,
+     "vol_20d_daily_pct": 1.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.0,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-07-30",
+     "last": 55.95,
+     "ret_1d_pct": -0.14,
+     "ret_5d_pct": -2.86,
+     "ret_20d_pct": 16.71,
+     "ret_60d_pct": -7.17,
+     "vol_20d_daily_pct": 2.37,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.5,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-07-30",
+     "last": 4100.1,
+     "ret_1d_pct": 1.58,
+     "ret_5d_pct": 1.23,
+     "ret_20d_pct": 0.43,
+     "ret_60d_pct": -9.56,
+     "vol_20d_daily_pct": 1.33,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -22.9
+    },
+    "Silver": {
+     "last_date": "2026-07-30",
+     "last": 58.815,
+     "ret_1d_pct": 1.65,
+     "ret_5d_pct": 1.76,
+     "ret_20d_pct": -2.11,
+     "ret_60d_pct": -19.51,
+     "vol_20d_daily_pct": 2.41,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -48.9
+    },
+    "US 10-year yield": {
+     "last_date": "2026-07-30",
+     "last": 4.663,
+     "ret_1d_pct": 0.89,
+     "ret_5d_pct": -0.85,
+     "ret_20d_pct": 4.2,
+     "ret_60d_pct": 4.88,
+     "vol_20d_daily_pct": 0.72,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.9
+    },
+    "US dollar index": {
+     "last_date": "2026-07-30",
+     "last": 100.01,
+     "ret_1d_pct": -0.78,
+     "ret_5d_pct": -1.4,
+     "ret_20d_pct": -1.36,
+     "ret_60d_pct": 1.56,
+     "vol_20d_daily_pct": 0.31,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-07-30",
+     "last": 107.74,
+     "ret_1d_pct": -0.03,
+     "ret_5d_pct": 0.23,
+     "ret_20d_pct": -0.4,
+     "ret_60d_pct": -3.07,
+     "vol_20d_daily_pct": 0.16,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -4.0
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-07-30",
+     "last": 95.76,
+     "ret_1d_pct": 4.84,
+     "ret_5d_pct": 1.1,
+     "ret_20d_pct": 2.64,
+     "ret_60d_pct": -11.6,
+     "vol_20d_daily_pct": 2.49,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -27.4,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-07-30",
+     "last": 150.75,
+     "ret_1d_pct": 4.38,
+     "ret_5d_pct": 4.32,
+     "ret_20d_pct": -2.65,
+     "ret_60d_pct": -16.22,
+     "vol_20d_daily_pct": 2.32,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -40.2,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-07-30",
+     "last": 23.62,
+     "ret_1d_pct": 1.77,
+     "ret_5d_pct": -0.21,
+     "ret_20d_pct": 0.64,
+     "ret_60d_pct": -18.24,
+     "vol_20d_daily_pct": 2.66,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -38.0,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-07-30",
+     "last": 113.38,
+     "ret_1d_pct": 3.58,
+     "ret_5d_pct": 3.04,
+     "ret_20d_pct": 1.74,
+     "ret_60d_pct": -8.67,
+     "vol_20d_daily_pct": 2.54,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -31.6,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-07-30",
+     "last": 538.9,
+     "ret_1d_pct": 6.88,
+     "ret_5d_pct": -7.11,
+     "ret_20d_pct": -13.15,
+     "ret_60d_pct": 6.34,
+     "vol_20d_daily_pct": 3.21,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.4
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-07-30",
+     "last": 195.04,
+     "ret_1d_pct": 2.65,
+     "ret_5d_pct": -6.57,
+     "ret_20d_pct": -1.29,
+     "ret_60d_pct": -1.73,
+     "vol_20d_daily_pct": 2.54,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.3,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-07-30",
+     "last": 387.84,
+     "ret_1d_pct": 4.73,
+     "ret_5d_pct": -1.18,
+     "ret_20d_pct": 5.01,
+     "ret_60d_pct": -6.88,
+     "vol_20d_daily_pct": 2.77,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.5,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-07-30",
+     "last": 485.39,
+     "ret_1d_pct": 13.0,
+     "ret_5d_pct": -10.06,
+     "ret_20d_pct": -10.26,
+     "ret_60d_pct": 42.12,
+     "vol_20d_daily_pct": 5.4,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.4,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-07-30",
+     "last": 403.31,
+     "ret_1d_pct": 7.64,
+     "ret_5d_pct": -2.95,
+     "ret_20d_pct": -9.21,
+     "ret_60d_pct": 0.42,
+     "vol_20d_daily_pct": 3.04,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.5,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-07-30",
+     "last": 163.52,
+     "ret_1d_pct": -1.64,
+     "ret_5d_pct": 1.29,
+     "ret_20d_pct": 2.49,
+     "ret_60d_pct": 12.98,
+     "vol_20d_daily_pct": 1.31,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.2
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-07-30",
+     "last": 1154.97,
+     "ret_1d_pct": -4.55,
+     "ret_5d_pct": -2.61,
+     "ret_20d_pct": -3.09,
+     "ret_60d_pct": 19.32,
+     "vol_20d_daily_pct": 1.93,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.5,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-07-30",
+     "last": 255.82,
+     "ret_1d_pct": -3.66,
+     "ret_5d_pct": -1.33,
+     "ret_20d_pct": 0.72,
+     "ret_60d_pct": 14.1,
+     "vol_20d_daily_pct": 1.85,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.3,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-07-30",
+     "last": 257.41,
+     "ret_1d_pct": -2.24,
+     "ret_5d_pct": 0.19,
+     "ret_20d_pct": 2.53,
+     "ret_60d_pct": 23.66,
+     "vol_20d_daily_pct": 1.74,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.2,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-07-30",
+     "last": 129.79,
+     "ret_1d_pct": -0.44,
+     "ret_5d_pct": -0.53,
+     "ret_20d_pct": 3.53,
+     "ret_60d_pct": 14.75,
+     "vol_20d_daily_pct": 1.8,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.5,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-07-30",
+     "last": 6.444,
+     "ret_1d_pct": 2.73,
+     "ret_5d_pct": 2.21,
+     "ret_20d_pct": 5.24,
+     "ret_60d_pct": 11.21,
+     "vol_20d_daily_pct": 1.45,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.1
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-07-30",
+     "last": 25.96,
+     "ret_1d_pct": 1.01,
+     "ret_5d_pct": -1.82,
+     "ret_20d_pct": -4.52,
+     "ret_60d_pct": -6.28,
+     "vol_20d_daily_pct": 1.75,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -19.9
+    },
+    "Uranium ETF": {
+     "last_date": "2026-07-30",
+     "last": 39.72,
+     "ret_1d_pct": 5.86,
+     "ret_5d_pct": -3.43,
+     "ret_20d_pct": -8.01,
+     "ret_60d_pct": -27.48,
+     "vol_20d_daily_pct": 2.93,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -35.7
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-07-30",
+     "last": 63.44,
+     "ret_1d_pct": 5.75,
+     "ret_5d_pct": -0.09,
+     "ret_20d_pct": 4.81,
+     "ret_60d_pct": 14.16,
+     "vol_20d_daily_pct": 3.08,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.5,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-07-30",
+     "last": 88.23,
+     "ret_1d_pct": 4.33,
+     "ret_5d_pct": -1.23,
+     "ret_20d_pct": -9.41,
+     "ret_60d_pct": -25.39,
+     "vol_20d_daily_pct": 2.56,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -34.2,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-07-30",
+     "last": 62.49,
+     "ret_1d_pct": 8.72,
+     "ret_5d_pct": 4.41,
+     "ret_20d_pct": 5.29,
+     "ret_60d_pct": 10.08,
+     "vol_20d_daily_pct": 3.48,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.4,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-07-30",
+     "last": 180.996,
+     "ret_1d_pct": 5.43,
+     "ret_5d_pct": 1.53,
+     "ret_20d_pct": 9.6,
+     "ret_60d_pct": 12.36,
+     "vol_20d_daily_pct": 3.29,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.6,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "July",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "Is Tempus AI Stock a Buy After Its CEO Sold 250,000 Shares?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 13:27",
+   "related": "TEM,PSNL",
+   "summary": "Tempus AI CEO Eric Lefkofsky sold 250,000 shares worth $10.5 million on July 28, 2026, reducing his stake by 4% through a pre-scheduled trading plan established",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Global Aerospace Provides Insights on What In-Orbit Servicing Is, How In-Orbit Servicing Works, and the Key Technologies Enabling the IOS Revolution",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 13:24",
+   "related": "NOC",
+   "summary": "In-Orbit Servicing (IOS) is revolutionizing satellite maintenance by enabling spacecraft to refuel, repair, and upgrade satellites in orbit rather than replacin",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Important Notice to Long-Term Shareholders of EquipmentShare.com, Inc. (NASDAQ: EQPT); Insulet Corporation (NASDAQ: PODD); New Era Energy & Digital, Inc. (NASDAQ: NUAI) (f/k/a New Era Helium (NASDAQ: NEHC)); and Planet Fitness, Inc. (NYSE: PLNT): Grabar Law Office is Investigating Claims on Your Behalf",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 13:24",
+   "related": "EQPT,PODD,NUAI,NUAIW,PLNT",
+   "summary": "Grabar Law Office has initiated multiple shareholder investigations into alleged securities fraud and fiduciary duty breaches at EquipmentShare.com, Insulet Cor",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Insider at Iconic Industrial Stock Sells $4.2 Million Worth of Shares, According to Recent SEC Filing",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 13:20",
+   "related": "HON",
+   "summary": "Kenneth J. West, President/CEO of Process Technologies at Honeywell International, sold 17,032 shares worth $4.2 million on July 27, 2026, reducing his direct h",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Why Berkshire's Cash Pile Keeps Growing (and Which AI Stock It Might Buy Next)",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 13:15",
+   "related": "BRK.A,BRK.B,TSM,MSFT,GOOG,GOOGL",
+   "summary": "Berkshire Hathaway has accumulated a record $397 billion in cash and Treasury bills by selling stocks and earning substantial interest income. New CEO Greg Abel",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "The Real Reason Micron's Memory Cycle Could Be Different This Time",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 13:06",
+   "related": "MU",
+   "summary": "Micron is benefiting from surging AI memory demand, constrained supply, and longer customer commitments that could make its earnings more predictable and suppor",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Berkshire Hathaway Now Owns $16.3 Billion of This 1 Energy Stock. Should You Follow?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 13:05",
+   "related": "CVX,BRK.A,BRK.B",
+   "summary": "Berkshire Hathaway holds 84.3 million shares of Chevron worth $16.3 billion, making it the company's sixth-largest holding. The article highlights Chevron's str",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Steakholder Foods Ltd. Announces Up To $10.5 Million Private Placement",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 12:47",
+   "related": "STKH",
+   "summary": "Steakholder Foods Ltd. announced a private placement of 1.75 million ADSs at $2.00 per share, raising $3.5 million upfront with potential additional $7 million ",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Nuwellis Announces Pricing of $3.4 Million Registered Direct Offering Priced At-The-Market Under Nasdaq Rules",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 12:39",
+   "related": "NUWE",
+   "summary": "Nuwellis (NUWE) announced a $3.4 million registered direct offering of 1,310,890 shares at $2.59 per share, along with $3.1 million in warrant exercise proceeds",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "3 Ways to Get Space Economy Exposure Without Buying SpaceX Stock",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:30",
+   "related": "NASA,ARKX,RKLB",
+   "summary": "The article examines three space economy ETFs as alternatives to direct SpaceX investment. While McKinsey predicts the global space economy will grow from $630 ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Clover Health's CEO Just Sold 62,711 Shares for Tax Withholding. The Bigger News Comes Next Week.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:21",
+   "related": "CLOV",
+   "summary": "Clover Health CEO Andrew Toy sold 62,711 shares worth ~$292,860 on July 15, 2026, to cover tax withholding obligations from RSU vesting. The sale is non-discret",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "1 Key Metric To Watch That Could Send Arm Stock Soaring",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:15",
+   "related": "ARM,NVDA,INTC,AMD,MSFT,GOOG",
+   "summary": "Arm Holdings beat earnings expectations with 22% revenue growth to $1.29B and strong data center performance. The company's upcoming AGI CPU chip, already overs",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Nvidia Just Made a $2 Billion Bet on Nebius. Here's Why It Matters.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:06",
+   "related": "NVDA,NBIS",
+   "summary": "Nvidia has invested $2 billion in Nebius, providing capital, hardware, and technical support to help the AI cloud company compete with larger providers. The par",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Apple iPhone Sales Surge 22%. Here\u2019s What Investors Need to Know.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:06",
+   "related": "AAPL",
+   "summary": "Apple reported fiscal Q3 results with a surprise 22% surge in iPhone sales, reaching $54.3 billion and driving overall revenue to $109.4 billion, up 16% year-ov",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Bloom Energy vs. the Grid: Why Data Centers Are Choosing Fuel Cells",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 12:05",
+   "related": "BE,ORCL,ORCLpD,BAM,AEP,GS",
+   "summary": "AI-driven data centers face severe power constraints as electricity demand is projected to reach 565 TWh by 2026. Bloom Energy's solid-oxide fuel cells offer a ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "J-Star Holding Co., Ltd Regains Compliance with Nasdaq Minimum Bid Price Requirement",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 11:47",
+   "related": "YMAT",
+   "summary": "J-Star Holding Co., Ltd. (NASDAQ: YMAT) announced it has regained compliance with Nasdaq's minimum bid price requirement of $1.00 per share after maintaining th",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Dragonfly Energy Announces Strategic Acquisition of Dakota Lithium Assets, Expanding Into New Markets",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 11:30",
+   "related": "DFLI,DFLIW",
+   "summary": "Dragonfly Energy completed the acquisition of Dakota Lithium's operating assets for $4 million ($1M cash, $3M stock) to expand into marine, outdoor recreation, ",
+   "theme": "chips"
+  },
+  {
+   "title": "YXT.com Regains Compliance with Nasdaq Minimum Bid Price Requirement",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 11:30",
+   "related": "YXT",
+   "summary": "YXT.com Group Holding Limited (NASDAQ: YXT) announced on July 31, 2026, that it has regained compliance with Nasdaq's minimum bid price requirement of $1.00 per",
+   "theme": "chips"
+  },
+  {
+   "title": "Medicus Pharma Receives UAE Department of Health (DOH) Authorization to proceed with Novel Prospective Genomics Guided Precision Medicine Study Evaluating Teverelix\u00ae in Women with Endometriosis",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 11:30",
+   "related": "MDCX,MDCXW",
+   "summary": "Medicus Pharma Ltd. announced that the UAE Department of Health has granted IND authorization for its PRECISION-E2 Phase 2a clinical study evaluating Teverelix\u00ae",
+   "theme": "chips"
+  },
+  {
+   "title": "Robinhood Set Records on Revenue, Net Deposits, and Gold Subscribers. The Stock Is Still 44% Below Its High.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 11:26",
+   "related": "HOOD",
+   "summary": "Robinhood reported record Q2 results with $1.31B revenue (up 32% YoY), 4.8M Gold subscribers (up 39%), and record trading volumes. However, the stock fell 3.6% ",
+   "theme": "chips"
+  },
+  {
+   "title": "Novo Nordisk provides update on the ZEUS phase 3 trial in people with ASCVD, CKD and inflammation",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 11:21",
+   "related": "NVO",
+   "summary": "Novo Nordisk announced that ziltivekimab failed to meet its primary endpoint in the ZEUS phase 3 trial, showing no significant reduction in major adverse cardio",
+   "theme": "chips"
+  },
+  {
+   "title": "1 Stat That Makes MercadoLibre Stock Hard to Ignore Before Aug. 5",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 11:05",
+   "related": "MELI",
+   "summary": "MercadoLibre's revenue grew 49% last quarter, its fastest pace in four years, driven by strong performance in Brazil (56% increase) and improved logistics effic",
+   "theme": "chips"
+  },
+  {
+   "title": "Perella Weinberg Reports Second Quarter 2026 Results",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:59",
+   "related": "PWP",
+   "summary": "Perella Weinberg Partners reported Q2 2026 revenues of $157 million, up 1% year-over-year, with adjusted pre-tax income of $27 million. However, first-half reve",
+   "theme": "chips"
+  },
+  {
+   "title": "Perella Weinberg Announces Partner Promotions",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:59",
+   "related": "PWP",
+   "summary": "Perella Weinberg Partners announced the promotion of eight Managing Directors to Partners across various sectors including Financial Services, Industrials, Heal",
+   "theme": "chips"
+  },
+  {
+   "title": "MONDAY DEADLINE: GeneDx Holdings Corp. (WGS) Investors with Substantial Losses Have Opportunity to Lead Investor Class Action Lawsuit, Robbins Geller Rudman & Dowd LLP Announces",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:55",
+   "related": "WGS,ADMA,VIA",
+   "summary": "GeneDx Holdings Corp. (WGS) investors with substantial losses have until August 3, 2026 to seek appointment as lead plaintiff in a securities fraud class action",
+   "theme": "pharma"
+  },
+  {
+   "title": "AUGUST 10, 2026 VIA DEADLINE: Via Transportation, Inc. Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit, Robbins Geller Rudman & Dowd LLP Announces",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:55",
+   "related": "VIA",
+   "summary": "Robbins Geller Rudman & Dowd LLP announces a class action lawsuit against Via Transportation, Inc. for alleged securities fraud related to its September 2025 IP",
+   "theme": "pharma"
+  },
+  {
+   "title": "AUGUST 10, 2026 INVESTOR DEADLINE: ADMA Biologics, Inc. (ADMA) Investors with Substantial Losses Have Opportunity to Lead Shareholder Class Action Lawsuit, Robbins Geller Rudman & Dowd LLP Announces",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:55",
+   "related": "ADMA",
+   "summary": "ADMA Biologics faces a securities class action lawsuit alleging the company made false statements about revenue growth through channel stuffing and undisclosed ",
+   "theme": "pharma"
+  },
+  {
+   "title": "$ADMA Securities: Suffer Losses on Your ADMA Biologics Investment? BFA Law Reminds Investors of the Securities Fraud Lawsuit to Recover Losses",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:47",
+   "related": "ADMA",
+   "summary": "ADMA Biologics faces a securities fraud class action lawsuit after its stock plummeted following Culper Research's allegations of channel stuffing. The company ",
+   "theme": "pharma"
+  },
+  {
+   "title": "$REGN Securities: Suffer Losses on Your Regeneron Investment? BFA Law Reminds Investors of the Securities Fraud Lawsuit to Recover Losses",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:46",
+   "related": "REGN",
+   "summary": "A securities fraud class action lawsuit has been filed against Regeneron Pharmaceuticals for allegedly misleading investors about the success of its Phase III F",
+   "theme": "pharma"
+  },
+  {
+   "title": "$UTZ Securities: Think the $14.25 per share Offer for Utz Brands is Low? BFA Law Reminds Current Shareholders to Contact the Firm",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:46",
+   "related": "UTZ",
+   "summary": "Securities law firm BFA Law is investigating Utz Brands' take-private merger with Intersnack Group at $14.25 per share, alleging potential breaches of fiduciary",
+   "theme": "pharma"
+  },
+  {
+   "title": "$Z, $ZG Securities: Suffer Losses on Your Zillow Investment? BFA Law Reminds Investors of the Securities Fraud Lawsuit to Recover Losses",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 10:46",
+   "related": "Z,ZG",
+   "summary": "A securities fraud class action lawsuit has been filed against Zillow Group for alleged anticompetitive agreement with Redfin, resulting in a 16%+ stock drop. T",
+   "theme": "pharma"
+  },
+  {
+   "title": "ASML: Is a New Chinese Competitor a Major Threat? (NASDAQ: ASML)",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:30",
+   "related": "ASML",
+   "summary": "An unnamed Chinese company has begun manufacturing deep ultraviolet lithography (DUV) machines, a key semiconductor fabrication equipment. While the news initia",
+   "theme": "pharma"
+  },
+  {
+   "title": "1 Green Flag for Dutch Bros Heading Into Earnings on Aug. 5",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:15",
+   "related": "BROS",
+   "summary": "Dutch Bros, a rapidly expanding coffee chain, is positioned to report strong second-quarter earnings on Aug. 5, with accelerating same-store sales growth being ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "The Energy IPO Boom Is Just Getting Started. Here Are the Companies to Watch.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:10",
+   "related": "MWH,XE,FRVO,GOOG,GOOGL,GOOGM",
+   "summary": "AI data centers are driving unprecedented electricity demand, with projections showing 26% surge in data center consumption by 2026. This has sparked an energy ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Should You Buy Disney Stock Before Aug. 5?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:08",
+   "related": "DIS",
+   "summary": "Disney stock has fallen over 15% this year and 45% in five years, struggling with streaming losses, layoffs, and consumer belt-tightening. However, Wall Street ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Prediction: This AI Stock Will Double by 2031 -- Here's the Math",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:05",
+   "related": "GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Alphabet is predicted to double in value by 2031, driven by expected 15% annual earnings growth and potential valuation expansion. The company's massive AI infr",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "McDonald's Reports Earnings Aug. 4. Here's How Much $10,000 Invested Pays Annually.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 10:02",
+   "related": "MCD",
+   "summary": "McDonald's stock is down 9.6% year-to-date ahead of its August 4 earnings report, underperforming the consumer discretionary sector. A $10,000 investment yields",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "ICODA CBDO Artem Voinov Attend Blockchain Rio 2026 as Latin America Strengthens Its Position in Global Web3 Growth",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 09:45",
+   "related": "COIN",
+   "summary": "Artem Voinov, Chief Business Development Officer at ICODA, will attend Blockchain Rio 2026 as a Leaders-level participant and join the exclusive Financial Infra",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "If a Bear Market Is Coming in 2026, History Says This 1 Investment Is the Safest Place to Park Your Money",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-31 09:30",
+   "related": "VYM,VOO",
+   "summary": "The article suggests that the Vanguard High Dividend Yield Index Fund ETF (VYM) has historically outperformed during bear markets and recessions compared to the",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Man Group PLC : Form 8.3 - Senior plc",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-31 09:30",
+   "related": "SNIRY",
+   "summary": "Man Group PLC has disclosed a 1.63% interest in Senior Plc's 10p ordinary shares, totaling 6,854,654 shares held through cash-settled equity swap derivatives. T",
+   "theme": "copper_uranium"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+  "decision_day": "2026-09-25",
+  "market_view": "Calm but rate-pressured regime: VIX 15.7, 10y yield at a 52-week high of 5.16% and the dollar firm; AI stocks still bid but an Oracle force majeure notice unsettled AI bulls. Crude whipsaws between US-Iran peace talk headlines and fresh Houthi attacks on Saudi facilities.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (mixed): 'Oil prices jump after Yemen's Houthis claim attacks on Saudi facilities' (Al Jazeera) is offset by 'Oil prices slide about 2% as US, Iran explore path out of war' (Yahoo Finance) and 'Saudi Arabia crude oil exports hit highest level since Iran war began' (CNBC)", "reasoning": "Houthi claims are not a confirmed supply loss and Saudi exports are at a war-time high; peace talks advancing. Storyline fading; late entries in this episode have done worse. Flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "10y yield at a 52-week high, dollar firm, gold below $4,300 and falling; inflation expectations spike is pushing yields, not gold. Jobs report ahead adds variance only. No gold-specific catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "none new; existing NVDA hold from 2026-09-17 runs to about 10-01. Counter-headline: 'Why Oracle's force majeure notice is freaking out AI bulls' (Yahoo Finance)", "reasoning": "Huang 2x chip guidance is already priced after a 10% sector rally; Oracle force majeure and Micron weakness are fresh AI-demand doubts. No new catalyst to renew; keep existing hold to its end."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "minor: 'FDA approves Lilly's Olumiant (baricitinib) for pediatric patients 12 years of age and older with severe alopecia areata' (Eli Lilly); existing LLY hold from 2026-09-22 runs to about 10-06", "reasoning": "Pediatric alopecia label is too small to move LLY; GLP-1 Medicare uptake catalyst is already being held. No reason to add a new call; TrumpRx pricing comparisons are a mild risk."},
+    "copper_uranium": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "'BHP halts giant Chile copper mine after worker death' (AFR, 2026-09-24): a fresh named supply outage on top of China tightness, copper 1.2% below its 52-week high; FCX still -8.8% over 20 days so the outage is not fully priced", "reasoning": "New supply shock to copper while the market is already tight; renews the FCX hold. Peru projects are long-dated supply and do not offset near term. Exit on mine restart or China demand slump."}
+  },
+  "would_change_my_mind": "A quick restart of the BHP Chile mine or a copper inventory release; a confirmed Saudi output loss would reopen oil; a yield reversal below 5% would reopen gold.",
+  "handoff": {
+    "run_id": "opus2-20260925-r22",
+    "written_at": "2026-09-25T12:30:00Z",
+    "decision_day": "2026-09-25",
+    "data_cutoff": "2026-09-25",
+    "what_changed": "WTI 94.61 (-7.2% over 5d) on US-Iran peace talks and record Saudi exports, though Houthis claim attacks on Saudi facilities lifted it +2.7% on the day. 10y yield hit a 52-week high of 5.16%, gold below $4,300. BHP halted a giant Chile copper mine after a worker death; Oracle force majeure notice spooked AI bulls; FDA approved LLY Olumiant for pediatric alopecia.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Houthi claims are not a confirmed supply loss; peace talks and record Saudi exports dominate."},
+      "gold_miners": {"position": "flat", "why": "10y at a 52-week high and firm dollar; no gold catalyst."},
+      "chips": {"position": "long NVDA since 2026-09-17, 10 days", "why": "Held from Huang guidance call to about 10-01; not renewed given Oracle force majeure doubts."},
+      "pharma": {"position": "long LLY since 2026-09-22, 10 days", "why": "Medicare GLP-1 uptake (700k seniors, 70% Lilly); not renewed today, Olumiant approval is minor."},
+      "copper_uranium": {"position": "long FCX since 2026-09-25, 10 days", "why": "Renewed: BHP halts giant Chile copper mine after worker death (AFR), copper near record; confidence 0.53."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war, Saudi supply", "status": "fading", "note": "Peace talks advanced, Saudi exports at war-time high; Houthis claim attacks on Saudi facilities. Re-enter XOM only on a confirmed named supply loss; a deal closes it.", "first_seen": "2026-07-07"},
+      {"name": "XOM lagging crude", "status": "open", "note": "XOM -0.7% over 5d with WTI -7.2%; watch windfall tax, export curbs.", "first_seen": "2026-09-22"},
+      {"name": "Yields, inflation and the Fed", "status": "escalating", "note": "10y 5.16% at 52-week high; consumer inflation expectations spiked. Jobs report within 20 days. Gold headwind.", "first_seen": "2026-09-15"},
+      {"name": "AI demand, NVDA", "status": "open", "note": "Huang 2x chips vow vs Oracle force majeure notice and Micron decline. Exit NVDA on guidance cut or export hit; hold ends about 10-01.", "first_seen": "2026-09-17"},
+      {"name": "Tariffs and trade war", "status": "open", "note": "Legality of tariffs questioned (CNN); watch copper, Cameco, pharma tariffs.", "first_seen": "2026-08-01"},
+      {"name": "Lilly GLP-1 uptake and pricing", "status": "open", "note": "Medicare uptake strong; TrumpRx price comparisons a risk. Watch pricing policy, compounding, trials.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply tightness", "status": "escalating", "note": "BHP Chile mine halted after worker death; copper near record on China tightness. Exit on mine restart, supply release or China demand slump. Peru projects are long-dated.", "first_seen": "2026-07-31"},
+      {"name": "Uranium supply", "status": "open", "note": "Niger uranium project cleared to resume; CCJ weak (-17.9% over 20d). No CCJ catalyst.", "first_seen": "2026-09-15"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: check FCX (BHP Chile mine restart, copper record, China data) held to about 10-09; LLY held to about 10-06 for pricing or GLP-1 news; NVDA ends about 10-01 (check Oracle/AI capex news); XOM flat unless a confirmed named supply loss; watch yields above 5% and the jobs report for gold.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs on a named supply-shock escalation win over 10 days; later entries in a long-running episode do worse.", "cases": 1, "evidence": "Net count. Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%, 08-31 +4.95%. Contradicting: 07-23 -1.56%, 08-18 -0.86%, 08-21 -3.67%, 09-09 -2.08% (late entry, basket -4.58%). 09-03 +0.57% neutral. Oil 10 trades, 6 won, mean +2.94%."},
+      {"rule": "Hypothesis only: LLY longs after a trial or guidance catalyst have a positive mean net return over 10 days.", "cases": 3, "evidence": "LLY 07-23 +0.21%, 07-31 +2.43%, 08-05 +9.14%, 08-10 +0.92%; contradicting 07-28 -0.76%, 08-13 -3.02%. 4 of 6 won, mean +1.49%; no new closed trades."},
+      {"rule": "Hypothesis only: copper longs on a fresh supply-squeeze headline win.", "cases": 2, "evidence": "FCX 07-31 +5.91% (CNBC squeeze), 08-10 +10.09% (Reuters Congo ban). Continuations: 08-05 -0.68%, 08-13 +17.10%, 08-18 +9.02%. No new closed trades; 09-25 BHP halt entry is a new test."}
+    ]
+  }
+}

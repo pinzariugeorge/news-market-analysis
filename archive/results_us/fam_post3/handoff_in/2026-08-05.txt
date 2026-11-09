@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260731-a (decision day 2026-07-31, data cutoff 2026-07-31)
+What changed: VIX fell 17% and semis rebounded 6.9% in a day; gold, copper and miners bounced. XOM and CVX posted Q2 decks (no figures in the record); Cameco missed Q2 EPS and changed guidance, and AbbVie cut its full-year outlook. LLY fell 4.5% on 07-30 with no LLY-specific news.
+Holdings and reasons:
+- oil_gas: flat | XOM and CVX decks give no figures; the oil drop is a priced driver move and there is no XOM-specific catalyst.
+- gold_miners: flat | NEM's 4.8% jump follows gold; no NEM guidance or production headline.
+- chips: flat | A one-day semi rebound after a rout is not a catalyst; no NVDA-specific one-sided news.
+- pharma: long LLY since 2026-07-23, 10 days | Retatrutide thesis intact with no adverse LLY news; exit at about 2026-08-06 with Q2 earnings as added variance.
+- copper_uranium: flat | Cameco news is about CCJ, not FCX; FCX bounce with copper is priced.
+Open storylines:
+- [open] Iran war and oil: WTI 83.6, -9% over 5 days, +22% over 20 days; XOM and CVX Q2 results out July 31 (read figures when available); Middle East conflict may widen to Egypt.
+- [open] Q2 earnings season: SCCO beat, AEM, KGC, CCJ, AbbVie reported; XOM, CVX out July 31; NEM, LLY, big tech and chip reports to come; a guidance raise by a family leader is a catalyst.
+- [fading] Chip selloff and China scare: Semi ETF -13% in 20 days but +6.9% on 07-30; Bloomberg item on Moonshot using Nvidia chips via Alibaba; watch NVDA-specific news and TSMC monthly sales.
+- [open] LLY retatrutide and China trial probe: Long open to about 2026-08-06; LLY -4.5% on 07-30 without news; Q2 earnings upcoming; watch filing, safety, China probe; exit at horizon.
+- [open] Gold slump and rates: Gold 4100, 23% below high, 10y 4.66%; miners bounced; watch NEM earnings and guidance.
+- [open] Uranium and Cameco results: Cameco missed Q2 EPS, changed guidance, filed confidential draft S-1 for a Westinghouse IPO; uranium ETF -36% from its high; Section 232 decision pending; CCJ is not the leader.
+- [open] AbbVie guidance cut: ABBV cut full-year EPS outlook on the Apogee deal; peer read-through to pharma; ABBV is not the leader.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; LLY long opened 2026-07-23 with a 10-day horizon (exit about 2026-08-06): check LLY news (Q2 earnings, filing, safety, China probe) and exit at horizon; look for named leader-specific catalysts (XOM earnings figures, NVDA news, NEM guidance, FCX guidance); stay flat otherwise.

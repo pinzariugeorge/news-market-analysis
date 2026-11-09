@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260723-a",
+ "written_at": "2026-07-23T14:00:00Z",
+ "decision_day": "2026-07-23",
+ "data_cutoff": "2026-07-23",
+ "what_changed": "Three days since the last note (07-20). WTI rose another 5% to 86.8 (+18.6% over 20 days), gold bounced 2.5% over 5 days, the semiconductor ETF stayed roughly flat over 5 days, and VIX eased to 16.6. Headlines again held no leader-specific catalyst.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil rally is already priced in and there is no XOM or OPEC+ headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold and NEM bounce has no Fed, dollar or company catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Only a TSMC US-investment promotional article and opinion pieces, no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY news in the headlines."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX jump has no supply or demand headline and copper itself fell."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil rebound",
+   "status": "escalating",
+   "note": "WTI 86.83, +9.1% over 5 days and +18.6% over 20 days, but -8% over 60 days. Watch OPEC+ or supply headlines and XOM earnings for continuation or reversal.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Chip sell-off and memory reset",
+   "status": "fading",
+   "note": "Semiconductor ETF -5.7% over 20 days and flat over 5 days. TSMC announced a larger US investment (Motley Fool). Watch TSMC sales, chip earnings and the AI-spending doubts (Oracle, IBM).",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Gold drawdown",
+   "status": "open",
+   "note": "Gold 21.9% below its high, +2.5% over 5 days; miners still down 20-27% over 60 days. Watch the Fed, dollar, 10-year yield (4.66%) and the jobs report.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "IBM capex warning and AI-spending doubt",
+   "status": "open",
+   "note": "IBM fell about 25% after a Q2 pre-announcement miss; Oracle is down over 50% from its peak. Watch the read-through to chip earnings.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "VIX uptick",
+   "status": "fading",
+   "note": "VIX 16.6, -2.4% on the day, -14.6% over 20 days. Closed unless it climbs above about 20.",
+   "first_seen": "2026-07-20"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-07-23: read the new record and headlines, then decide each family under the catalyst rule."
+}

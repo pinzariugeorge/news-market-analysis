@@ -1,0 +1,71 @@
+{
+  "run": "fam_post4",
+  "decision_days": 22,
+  "missing": [],
+  "calls": 110,
+  "long_calls": 0,
+  "flat_calls": 110,
+  "hit_rate_all": 0.473,
+  "mean_net_when_long": null,
+  "mean_net_if_long_when_flat": 1.816,
+  "mean_net_always_long_all_calls": 1.816,
+  "avg_confidence_long": null,
+  "avg_confidence_flat": 0.493,
+  "per_family": {
+    "oil_gas": {
+      "n_long": 0,
+      "n_flat": 22,
+      "mean_net_when_long": null,
+      "mean_net_if_long_when_flat": 3.259,
+      "mean_net_all_days": 3.259,
+      "hit_rate": 0.273
+    },
+    "gold_miners": {
+      "n_long": 0,
+      "n_flat": 22,
+      "mean_net_when_long": null,
+      "mean_net_if_long_when_flat": 2.86,
+      "mean_net_all_days": 2.86,
+      "hit_rate": 0.636
+    },
+    "chips": {
+      "n_long": 0,
+      "n_flat": 22,
+      "mean_net_when_long": null,
+      "mean_net_if_long_when_flat": 1.794,
+      "mean_net_all_days": 1.794,
+      "hit_rate": 0.364
+    },
+    "pharma": {
+      "n_long": 0,
+      "n_flat": 22,
+      "mean_net_when_long": null,
+      "mean_net_if_long_when_flat": -0.55,
+      "mean_net_all_days": -0.55,
+      "hit_rate": 0.591
+    },
+    "copper_uranium": {
+      "n_long": 0,
+      "n_flat": 22,
+      "mean_net_when_long": null,
+      "mean_net_if_long_when_flat": 1.718,
+      "mean_net_all_days": 1.718,
+      "hit_rate": 0.5
+    }
+  },
+  "portfolio": {
+    "capital": 1000.0,
+    "final": 1000.0,
+    "max_drawdown_pct": 0.0,
+    "fees": 0.0,
+    "orders": 0
+  },
+  "benchmarks": {
+    "leaders_basket_final": 2507.7,
+    "cash_final": 1000.0,
+    "random_calls_final_median": 1000.0,
+    "random_calls_final_5th": 1000.0,
+    "random_calls_final_95th": 1000.0
+  },
+  "note": "Validation run on 2023-2024 decision days; model memory of these years cannot be excluded; survivor bias in names."
+}

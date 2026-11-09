@@ -1,0 +1,75 @@
+{
+ "run_id": "fp3-20260831-a",
+ "written_at": "2026-08-31T14:00:00Z",
+ "decision_day": "2026-08-31",
+ "data_cutoff": "2026-08-31",
+ "what_changed": "Fresh US-Iran strikes lifted oil about 2% premarket, reversing last week's de-escalation drop. Gold fell 2.9% on Friday with the 10-year yield at 4.72% and hawkish Warsh talk. Chips fell 3.5% Friday; the NVDA earnings reaction is still not visible. LLY posted positive Taltz plus Zepbound phase 3b data.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "The oil jump is a priced driver move and XOM news is minor; the Chevron Venezuela deal is CVX only."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Rate and dollar headwinds and NEM extended after +37% in 20 days; no NEM-specific catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No NVDA-specific catalyst; AVGO earnings this week are a two-sided event."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "The LLY combination-data headline is modest and not a one-sided catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX guidance or supply news; the copper record is priced."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "escalating",
+   "note": "US struck Iran again; oil +2% premarket after WTI fell to 83.4 last week; watch XOM-specific news and whether the rise holds",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "AVGO reports this week; NVDA result and guidance still not seen in headlines; NEM and FCX guidance still a catalyst",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "AI financing and credit",
+   "status": "open",
+   "note": "Circular financing debate (Nvidia-MediaTek $3.5B deal) and AI bubble pieces; watch the AVGO and NVDA reaction",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Rate-hike bets and Warsh",
+   "status": "open",
+   "note": "Warsh hawkishness; 10-year yield 4.72% near its high; gold -2.9% Friday; watch Fed and yields",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Gold rebound",
+   "status": "fading",
+   "note": "Gold gave back 3% in 5 days; NEM still +37% in 20 days; watch NEM guidance",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Copper and uranium",
+   "status": "open",
+   "note": "Uranium ETF -5.8% Friday; FCX +22% in 20 days; watch FCX guidance",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Pharma rally",
+   "status": "open",
+   "note": "Big pharma at 52-week highs; LLY -6% in 5 days; watch LLY filings, approvals, pricing",
+   "first_seen": "2026-08-26"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for the NVDA earnings reaction and AVGO result, then leader-specific catalysts (XOM news, NEM guidance, FCX guidance, LLY filings); stay flat otherwise."
+}

@@ -1,0 +1,21 @@
+# Handoff from the previous run (read first)
+Run opus1-20260903-a (decision day 2026-09-03, data cutoff 2026-09-03)
+What changed: WTI rose to 91.0 (+10.7% in 5 days) and Brent to 95.6; a headline cites Hormuz disruptions rerouting shipping. Chevron plans $7B in Venezuela to double output, and NVDA agreed to buy Hugging Face for $12.9B (NVDA +3.2% on 09-02). The 10-year yield hit 4.80%, its highest since November 2023; gold is -5.1% in 5 days.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, 10 days | Iran strikes and Hormuz disruption keep crude at 91; no exit trigger has appeared.
+- gold_miners: flat | Gold is falling with yields at multi-year highs, and there is no named catalyst.
+- chips: flat | The Hugging Face purchase is not a clear one-sided catalyst for the acquirer, and there is still no guidance detail.
+- pharma: flat | The FDA diabetes approval is still unconfirmed as LLY's.
+- copper_uranium: flat | No copper supply news, and uranium is weak with no catalyst.
+Open storylines:
+- [escalating] Iran war / Hormuz and oil: WTI 91, Brent 95.6; Hormuz disruption reported. Exit XOM on a ceasefire, a Hormuz reopening or WTI below about 83.
+- [open] Venezuela oil opening: Chevron $7B plan to double Venezuela output (Reuters/WSJ 09-02/03); Trump said Exxon is going in. Watch for XOM deal terms.
+- [open] Trump vs oil majors windfall: A windfall tax, export limits or an SPR release would hurt XOM; the risk rises with crude above 90.
+- [escalating] Rates at multi-year high: 10-year yield at 4.80%, highest since November 2023; this weighs on gold and long-duration stocks. Jobs report due in the window.
+- [fading] Gold rally vs yields: Gold 4415, -5.1% in 5 days. Re-enter NEM only on a new named catalyst.
+- [open] NVDA Q2 results and Hugging Face deal: NVDA buying Hugging Face for $12.9B; NVDA +7% in 5 days. Long only on clear guidance or an export-rule catalyst.
+- [open] Unnamed FDA diabetes drug approval: Still unconfirmed whether it is LLY tirzepatide; check before any LLY long.
+- [fading] Copper supply squeeze: Copper 6.50, -1.4% in 5 days. Re-enter FCX only on new supply news.
+- [open] Uranium weakness: Uranium ETF -7.8%, CCJ -10% in 5 days; no named cause. Watch US-Canada tariff news for CCJ.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Hold XOM (bought 2026-08-31, 10-day hold, exit about 2026-09-15) unless an Iran ceasefire or Hormuz reopening, a Trump windfall tax or SPR release, or WTI below about 83 appears; then go flat. Keep the other four families flat unless a named catalyst appears: confirm whether the FDA diabetes approval is LLY's, look for NVDA guidance or export-rule news, and watch for copper supply shocks.

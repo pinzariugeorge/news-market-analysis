@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260922-a",
+ "written_at": "2026-09-22T14:00:00Z",
+ "decision_day": "2026-09-22",
+ "data_cutoff": "2026-09-22",
+ "what_changed": "Oil fell 4.5% Monday (XOM -3.2%) while Meta's Muse AI assistant sent the Nasdaq to a record and chips jumped (semis +4%, AMD +10%, NVDA +2.3%). VIX fell to 14.9. Copper rose 5.6% in 5 days. Lilly reported 700,000 seniors starting GLP-1 treatment under Medicare.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil drop is priced and the Venezuela return for XOM is only a vague early-stage item."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold below its 200-day average with yields near highs; no NEM guidance."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "AI rally already in the price after a 5-day surge; no NVDA-specific demand or export catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY Medicare GLP-1 uptake is incremental, not a trial, approval or pricing event."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX guidance or supply news; copper near highs after a 5-day rise."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "open",
+   "note": "WTI about $96 after -4.5% Monday; JPMorgan says direction unknown; watch XOM Venezuela deal progress and whether oil holds",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "Rates risk",
+   "status": "open",
+   "note": "10-year near 5.0% at a high; watch jobs report and Fed signals",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "AI trade rebound in chips",
+   "status": "open",
+   "note": "Meta Muse lifted semis; Alibaba Zhenwu V900 chip is competition; data-center opposition rising; watch NVDA demand or export news",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "Gold miners and rates",
+   "status": "open",
+   "note": "Gold -6.3% in 20 days, below 200-day average; watch NEM guidance",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "Copper and uranium",
+   "status": "open",
+   "note": "Copper +5.6% in 5 days; JPMorgan bullish on uranium (NXE); Westinghouse IPO talk for CCJ; watch FCX guidance or Grasberg supply news",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "Pharma and Lilly GLP-1",
+   "status": "open",
+   "note": "LLY -7.2% in 20 days; Medicare GLP-1 uptake strong; watch trials, approvals and pricing",
+   "first_seen": "2026-09-17"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM deal or oil supply shock, NEM guidance, NVDA demand or export news, LLY trial, approval or pricing news, FCX guidance or supply news); stay flat otherwise."
+}

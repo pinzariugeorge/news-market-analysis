@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Broker</title>
+<style>
+:root{--bg:#f4f5f7;--panel:#fff;--ink:#16181d;--mute:#6b7280;--line:#e3e6eb;--up:#0a7f4f;--down:#c42b2b;--accent:#2457d6;--warn:#b45309;--warnbg:#fef3c7}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--panel:#171a21;--ink:#e8eaee;--mute:#8b93a1;--line:#272c36;--up:#3fb97f;--down:#ef6b6b;--accent:#6c93ff;--warn:#f5c26b;--warnbg:#3a2f12}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding:12px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{font-size:16px;margin:0}
+.badge{padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600;background:var(--warnbg);color:var(--warn)}
+.badge.paper{background:rgba(36,87,214,.12);color:var(--accent)}
+.mute{color:var(--mute)}
+main{padding:16px;display:grid;gap:16px;max-width:1400px;margin:0 auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card .l{font-size:12px;color:var(--mute)}.card .v{font-size:22px;font-weight:650;margin-top:2px;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:16px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{font-size:12px;color:var(--mute);font-weight:600;text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td.wrap{white-space:normal;text-align:left;min-width:180px;color:var(--mute)}
+tr.sel{background:rgba(36,87,214,.08)}tr.click{cursor:pointer}tr.click:hover{background:rgba(127,127,127,.07)}
+.up{color:var(--up)}.down{color:var(--down)}
+.scroll{overflow:auto;max-height:420px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:8px;flex-wrap:wrap}
+.tab{padding:8px 12px;border:0;background:none;color:var(--mute);font:inherit;cursor:pointer;border-bottom:2px solid transparent}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.chart{width:100%;height:280px}
+.empty{padding:24px;text-align:center;color:var(--mute)}
+.note{padding:8px 0;border-bottom:1px solid var(--line)}
+.err{padding:12px;background:var(--warnbg);color:var(--warn);border-radius:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Paper Broker</h1><span id="mode" class="badge">...</span>
+  <span class="mute" id="status">loading...</span>
+  <span class="mute" style="margin-left:auto">Prices are delayed about 15 minutes. Research and simulation only.</span>
+</header>
+<main>
+  <div id="err"></div>
+  <section class="kpis" id="kpis"></section>
+  <section class="grid">
+    <div class="card"><div class="l" style="margin-bottom:6px">Watchlist (click a row)</div><div class="scroll"><table id="watch"></table></div></div>
+    <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><strong id="csym">-</strong><span class="mute" id="cinfo"></span></div><svg id="chart" class="chart" role="img" aria-label="Price chart"></svg></div>
+  </section>
+  <section class="card">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="scroll" id="tabbody"></div>
+  </section>
+</main>
+<script>
+"use strict";
+var S=null, selected=null, tab="Positions", barsCache={};
+var TABS=["Positions","Orders","Trades","Equity","Agent notes"];
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function n(x,d){return x==null?"-":Number(x).toLocaleString("en-GB",{minimumFractionDigits:d==null?2:d,maximumFractionDigits:d==null?2:d})}
+function sgn(x){return x==null?"":(x>0?"up":x<0?"down":"")}
+function pct(x){return x==null?"-":(x>0?"+":"")+n(x,2)+"%"}
+function eur(x){return x==null?"-":(x>0?"+":"")+n(x,2)}
+function kpi(l,v,c){return '<div class="card"><div class="l">'+l+'</div><div class="v '+(c||"")+'">'+v+'</div></div>'}
+function renderKpis(){
+  var a=S.account,L=S.ledger;
+  $("kpis").innerHTML=kpi("Equity (EUR)",n(a.equity))+kpi("Cash (EUR)",n(L.cash))+kpi("Market value (EUR)",n(a.market_value))+
+   kpi("Total P&amp;L",eur(a.total_pnl)+' <span style="font-size:14px">('+pct(a.total_pnl_pct)+')</span>',sgn(a.total_pnl))+kpi("Open positions",a.positions.length)+kpi("Started with",n(L.start_cash));
+}
+function spark(arr,up){
+  if(!arr||arr.length<2)return "";
+  var w=90,h=24,mn=Math.min.apply(null,arr),mx=Math.max.apply(null,arr),r=(mx-mn)||1;
+  var pts=arr.map(function(v,i){return (i/(arr.length-1)*w).toFixed(1)+","+(h-2-(v-mn)/r*(h-4)).toFixed(1)}).join(" ");
+  return '<svg width="'+w+'" height="'+h+'" aria-hidden="true"><polyline fill="none" stroke="var(--'+(up?"up":"down")+')" stroke-width="1.5" points="'+pts+'"/></svg>';
+}
+function renderWatch(){
+  var h='<tr><th>Symbol</th><th>Last</th><th>Day %</th><th>Trend</th></tr>';
+  S.watch.forEach(function(w){
+    h+='<tr class="click'+(w.symbol===selected?" sel":"")+'" data-s="'+esc(w.symbol)+'"><td>'+esc(w.symbol)+'</td><td>'+n(w.price)+' <span class="mute">'+esc(w.currency||"")+'</span></td><td class="'+sgn(w.change_pct)+'">'+pct(w.change_pct)+'</td><td>'+spark(w.spark,(w.change_pct||0)>=0)+'</td></tr>';
+  });
+  $("watch").innerHTML=h;
+  Array.prototype.forEach.call($("watch").querySelectorAll("tr.click"),function(tr){tr.onclick=function(){selected=tr.getAttribute("data-s");renderWatch();loadChart()}});
+}
+function loadChart(){
+  if(!selected)return;
+  $("csym").textContent=selected;
+  fetch("/api/bars?symbol="+encodeURIComponent(selected)+"&range=5d").then(function(r){return r.json()}).then(function(b){barsCache[selected]=b;drawChart()});
+}
+function drawChart(){
+  var b=barsCache[selected]||[],svg=$("chart");
+  if(b.length<2){svg.innerHTML='<text x="10" y="20" fill="var(--mute)">no bars</text>';return}
+  var W=svg.clientWidth||700,H=280,pl=8,pr=56,pt=8,pb=20;
+  var cl=b.map(function(x){return x[4]}),mn=Math.min.apply(null,cl),mx=Math.max.apply(null,cl),r=(mx-mn)||1;
+  var ts=b.map(function(x){return Date.parse(x[0])}),t0=ts[0],t1=ts[ts.length-1];
+  function XI(i){return pl+i/(b.length-1)*(W-pl-pr)}
+  function X(t){var k=0;while(k<ts.length-1&&ts[k]<t)k++;return XI(k)}
+  function Y(v){return pt+(1-(v-mn)/r)*(H-pt-pb)}
+  var up=cl[cl.length-1]>=cl[0];
+  var d=b.map(function(x,i){return (i?"L":"M")+XI(i).toFixed(1)+","+Y(x[4]).toFixed(1)}).join("");
+  var s='<path d="'+d+'" fill="none" stroke="var(--'+(up?"up":"down")+')" stroke-width="1.6"/>';
+  for(var i=0;i<=4;i++){var v=mn+r*i/4;s+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="var(--line)"/><text x="'+(W-pr+4)+'" y="'+(Y(v)+4)+'" font-size="11" fill="var(--mute)">'+n(v)+'</text>'}
+  S.ledger.fills.filter(function(f){return f.symbol===selected}).forEach(function(f){
+    var t=Date.parse(f.time);if(t<t0||t>t1)return;var buy=f.side==="BUY";
+    s+='<g><title>'+esc(f.side+" "+f.qty+" @ "+f.price)+'</title><path d="M'+X(t)+','+(buy?Y(f.price)+4:Y(f.price)-4)+' l-5,'+(buy?9:-9)+' h10z" fill="var(--'+(buy?"up":"down")+')"/></g>';
+  });
+  svg.innerHTML=s;
+  $("cinfo").textContent=b.length+" five-minute bars, last "+n(cl[cl.length-1])+"  (arrows = your paper fills)";
+}
+function table(cols,rows){
+  if(!rows.length)return '<div class="empty">Nothing here yet.</div>';
+  return '<table><tr>'+cols.map(function(c){return '<th>'+c[0]+'</th>'}).join("")+'</tr>'+rows.map(function(r){return '<tr>'+cols.map(function(c){var v=c[1](r);return '<td'+(c[2]?' class="'+c[2]+'"':'')+'>'+v+'</td>'}).join("")+'</tr>'}).join("")+'</table>';
+}
+function renderTab(){
+  $("tabs").innerHTML=TABS.map(function(t){return '<button class="tab" role="tab" aria-selected="'+(t===tab)+'" data-t="'+t+'">'+t+'</button>'}).join("");
+  Array.prototype.forEach.call($("tabs").children,function(b){b.onclick=function(){tab=b.getAttribute("data-t");renderTab()}});
+  var L=S.ledger,a=S.account,h="";
+  if(tab==="Positions")h=table([["Symbol",function(p){return esc(p.symbol)+' <span class="mute">'+esc(p.name||"")+'</span>'}],["Qty",function(p){return p.qty}],["Avg price",function(p){return n(p.avg_price)}],["Last",function(p){return n(p.last)}],
+    ["Value EUR",function(p){return n(p.value_eur)}],["P&amp;L EUR",function(p){return eur(p.pnl_eur)},""],["P&amp;L %",function(p){return pct(p.pnl_pct)}],["Opened",function(p){return esc(p.opened)}],["Exit by",function(p){return esc(p.exit_by)}],["Catalyst / reason",function(p){return esc(p.catalyst)+(p.confidence?" ("+p.confidence+")":"")},"wrap"]],a.positions);
+  if(tab==="Orders")h=table([["Time",function(o){return esc(o.time)}],["Symbol",function(o){return esc(o.symbol)}],["Side",function(o){return esc(o.side)}],["Qty",function(o){return o.qty}],["Type",function(o){return esc(o.type)}],["Limit",function(o){return o.limit==null?"-":n(o.limit)}],["Status",function(o){return esc(o.status)}]],L.orders);
+  if(tab==="Trades")h=table([["Time",function(f){return esc(f.time)}],["Symbol",function(f){return esc(f.symbol)}],["Side",function(f){return '<span class="'+(f.side==="BUY"?"up":"down")+'">'+esc(f.side)+'</span>'}],["Qty",function(f){return f.qty}],["Price",function(f){return n(f.price)+" "+esc(f.currency)}],["Fee EUR",function(f){return n(f.fee_eur)}],["Agent",function(f){return esc(f.agent)}],["Catalyst quoted",function(f){return esc(f.catalyst)},"wrap"]],L.fills.slice().reverse());
+  if(tab==="Equity")h=equity(L.equity_history);
+  if(tab==="Agent notes")h=L.notes.length?L.notes.slice().reverse().map(function(x){return '<div class="note"><span class="mute">'+esc(x.time)+' · '+esc(x.agent)+'</span><br>'+esc(x.text)+'</div>'}).join(""):'<div class="empty">No notes.</div>';
+  $("tabbody").innerHTML=h;
+}
+function equity(hs){
+  if(!hs||hs.length<2)return '<div class="empty">The equity curve appears after the first days of paper trading.</div>';
+  var W=800,H=220,vals=hs.map(function(x){return x.equity}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),r=(mx-mn)||1;
+  var d=hs.map(function(x,i){return (i?"L":"M")+(10+i/(hs.length-1)*(W-70)).toFixed(1)+","+(10+(1-(x.equity-mn)/r)*(H-30)).toFixed(1)}).join("");
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="'+H+'" role="img" aria-label="Equity curve"><path d="'+d+'" fill="none" stroke="var(--accent)" stroke-width="1.8"/><text x="'+(W-56)+'" y="20" font-size="11" fill="var(--mute)">'+n(mx)+'</text><text x="'+(W-56)+'" y="'+(H-12)+'" font-size="11" fill="var(--mute)">'+n(mn)+'</text></svg>';
+}
+function refresh(){
+  fetch("/api/state").then(function(r){return r.json()}).then(function(s){
+    if(s.error){$("err").innerHTML='<div class="err">'+esc(s.error)+'</div>';return}
+    $("err").innerHTML="";S=s;
+    var m=$("mode");m.textContent=s.mode==="DEMO"?"DEMO DATA - not a result":"PAPER";m.className="badge"+(s.mode==="DEMO"?"":" paper");
+    $("status").textContent="updated "+s.now_utc+" UTC";
+    if(!selected)selected=(s.account.positions[0]&&s.account.positions[0].symbol)||s.watch[0].symbol;
+    renderKpis();renderWatch();renderTab();loadChart();
+  }).catch(function(e){$("err").innerHTML='<div class="err">Cannot reach the dashboard server: '+esc(e)+'</div>'});
+}
+refresh();setInterval(refresh,30000);window.addEventListener("resize",function(){if(S)drawChart()});
+</script>
+</body>
+</html>

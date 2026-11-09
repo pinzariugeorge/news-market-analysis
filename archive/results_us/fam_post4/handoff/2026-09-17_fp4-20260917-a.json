@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260917-a",
+ "written_at": "2026-09-17T09:30:00Z",
+ "decision_day": "2026-09-17",
+ "data_cutoff": "2026-09-17",
+ "what_changed": "Three days since the 09-14 note. The Fed raised rates as expected; the 10-year yield hit 5.0% and the dollar rose 0.7%. WTI fell 3.2% on 09-16 and XOM fell 3.5%; the uranium ETF fell 11.7% in 5 days. Headlines were again noise with no named catalyst, so all five families stay flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI drop and rally are priced in; no XOM-specific headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Expected Fed hike with yields at highs and a firmer dollar; no NEM headline."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No NVDA guidance or export-rule headline; CoreWeave Vera Rubin piece is promotion."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, regulator or pricing headline."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No copper supply or China-data headline for FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil and Middle East escalation",
+   "status": "open",
+   "note": "WTI 102 after -3.2% on 09-16, still +20% in 20 days; XOM -3.5% on the day. Watch OPEC+, Hormuz or a XOM-specific headline.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Rate hike and high yields",
+   "status": "open",
+   "note": "Fed hiked as expected; 10-year 5.0% at a high, dollar firm. Watch inflation data and dollar for gold miners.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "NVDA margin and memory costs",
+   "status": "fading",
+   "note": "NVDA -4.4% in 5 days, semi ETF 18% below its high. Watch guidance, analyst and export-rule headlines.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "Copper and uranium weakness",
+   "status": "open",
+   "note": "Copper -5.5% and uranium ETF -11.7% in 5 days; FCX -9% in 5 days. Watch supply outage or China-data headlines.",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "name": "LLY dip",
+   "status": "open",
+   "note": "LLY -7.2% in 20 days, 11% below its high. Watch for a trial, pricing or regulator headline.",
+   "first_seen": "2026-09-09"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-09-17: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (oil escalation or OPEC+ news, gold reaction to the Fed and yields, NVDA guidance or export rules, LLY trial or pricing, copper supply or China data); decide each family under the catalyst rule."
+}

@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260903-a (decision day 2026-09-03, data cutoff 2026-09-03)
+What changed: Three days since the last note (08-31). WTI rebounded +10.7% in 5 days, NVDA bounced +7% in 5 days, gold fell -5.1% in 5 days and the uranium ETF fell -7.8%. The 09-03 headlines were again noise, with no catalyst for any family.
+Holdings and reasons:
+- oil_gas: flat | WTI +21% in 20 days is priced in and there is no XOM headline.
+- gold_miners: flat | Gold -5.1% in 5 days with the 10-year yield at 4.80% and no NEM, Fed or dollar headline.
+- chips: flat | The only NVDA item is a Zacks memory-cost margin worry; the 5-day bounce is not a catalyst.
+- pharma: flat | No LLY trial, regulator or pricing headline.
+- copper_uranium: flat | No FCX, copper supply or China data headline; uranium weak.
+Open storylines:
+- [escalating] Oil rebound: WTI +21% in 20 days, +10.7% in 5 days, reversing the August softness. Watch for OPEC+, Hormuz or supply headlines and any XOM-specific news.
+- [open] NVDA margin and memory costs: Zacks: memory costs may cut NVDA gross margin from 75% to 71-72% by Q4 FY2027. NVDA +7% in 5 days. Watch for guidance, analyst or export-rule headlines.
+- [open] Gold pullback and high yields: Gold -5.1% in 5 days, 17% below its high; 10-year yield 4.80% at its high. Watch the August jobs report (first Friday), the Fed and the dollar.
+- [open] Uranium and copper weakness: Uranium ETF -7.8% in 5 days, CCJ -10%; FCX -6.4% in 5 days. Watch for a supply outage or China data headline.
+- [fading] LLY dip: LLY -2.5% in 5 days, 9.4% below its high. Watch for a trial, pricing or regulator headline.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-09-03: read the new record and headlines, check the August jobs report, and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX; decide each family under the catalyst rule.

@@ -1,0 +1,87 @@
+{
+ "run_id": "opus1-20260922-a",
+ "written_at": "2026-09-22T12:00:00Z",
+ "decision_day": "2026-09-22",
+ "data_cutoff": "2026-09-22",
+ "what_changed": "WTI fell to 95.8 (-4.5% on the day, -5.5% over 5 days) on U.S.-Iran diplomacy hopes, improving Middle East crude flows and a possible Saudi pipeline fix, so XOM was exited. Chips rallied strongly (semis +10% over 5 days, AMD reached $1 trillion); NVDA is held. Lilly CEO said 70% of 700,000 new Medicare GLP-1 starts are on Lilly drugs.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Exited XOM on 2026-09-22: diplomacy hopes, improving flows and a possible Saudi pipeline fix erode the supply-shock thesis."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No Fed pause; yields near 5% and a firmer dollar."
+  },
+  "chips": {
+   "position": "long NVDA since 2026-09-17, 10 days",
+   "why": "Huang's 'twice as many chips next year' guidance and strong AI-chip demand; no exit trigger yet."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY CEO Medicare GLP-1 comment is positive but not an approval or data catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper near record on China tightness but already priced; no named outage."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Saudi supply and oil",
+   "status": "fading",
+   "note": "WTI 95.8, Brent 100.3; U.S.-Iran diplomacy hopes, improving flows, possible Saudi pipeline fix. Re-enter XOM only if talks collapse or a new Gulf/Hormuz outage appears.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Trump vs oil prices",
+   "status": "open",
+   "note": "Trump UN speech weighed on oil; watch windfall tax, export limit or SPR release; Russia energy-ceasefire push (Zelensky) could also lower oil.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Venezuela oil opening",
+   "status": "open",
+   "note": "Chevron's $7B plan; watch for XOM deal terms.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Fed hiking cycle and 5% yields",
+   "status": "escalating",
+   "note": "10-year 4.96%; 'Pressure from the bond market hits a new level' (Yahoo). A sharp spike above about 5.1% is an NVDA exit risk; a Fed pause signal would favour gold.",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "Gold vs yields",
+   "status": "fading",
+   "note": "Gold 4384, 17.6% below high; record Chinese imports and fiscal-demand talk. Re-enter NEM only on a Fed pause or safe-haven spike.",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "NVDA guidance and AI sentiment",
+   "status": "open",
+   "note": "NVDA 227.4, 3.5% below high; AMD hit $1T. Exit on a guidance cut, export rule, NVDA-Groq probe escalation or sharp rate spike; Gelsinger-backed networking challenger and Huawei Q1 2027 chip are slow-burn risks.",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "LLY GLP-1 Medicare uptake",
+   "status": "open",
+   "note": "CEO: 700,000 new seniors on GLP-1s, 70% on Lilly drugs; LLY -7% over 20 days. Go long only on an approval, trial readout or guidance raise.",
+   "first_seen": "2026-09-22"
+  },
+  {
+   "name": "Copper and uranium supply",
+   "status": "open",
+   "note": "Copper 6.69, sixth day up toward record on China tightness; uranium supply looks ample. Re-enter FCX only on a named outage.",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "name": "US-Canada trade war and uranium",
+   "status": "open",
+   "note": "Watch whether tariffs reach uranium (CCJ).",
+   "first_seen": "2026-09-17"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note. Hold NVDA (long since 2026-09-17, 10 days, exit about 2026-10-01) unless a guidance cut, new export rule or sharp rate spike (10-year well above 5%) appears. Keep oil flat (XOM exited 2026-09-22) unless U.S.-Iran talks collapse or a new Gulf supply outage appears. Keep gold, pharma and copper flat unless a Fed pause, an LLY approval or trial readout, or a named copper outage appears."
+}

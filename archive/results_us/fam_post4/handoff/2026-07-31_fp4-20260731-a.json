@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260731-a",
+ "written_at": "2026-07-31T14:00:00Z",
+ "decision_day": "2026-07-31",
+ "data_cutoff": "2026-07-31",
+ "what_changed": "Three days since the last note (07-28). VIX fell 17% to 17.1, and chips, miners and copper names bounced sharply (semiconductor ETF +6.9%, NEM +4.8%, FCX +5.8%) while LLY fell 4.6%. Headlines again held no leader-specific catalyst.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI whipsaw has no named cause and there is no XOM or OPEC+ headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold and NEM bounce has no Fed, dollar or NEM catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector rebound after a sell-off has no explaining headline; the Nvidia-Nebius stake is minor."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY drop has no LLY news; the Novo trial failure is a different company."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX and copper rise has no supply or demand headline."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil whipsaw",
+   "status": "open",
+   "note": "WTI -9% over 5 days, +22% over 20 days. Watch OPEC+ or supply headlines and XOM earnings.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Chip sell-off and rebound",
+   "status": "open",
+   "note": "Semiconductor ETF -13% over 20 days but +6.9% on the day. Watch chip and cloud earnings, TSMC sales (about the 10th) and export-rule news.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Gold drawdown",
+   "status": "open",
+   "note": "Gold 23% below its high, 10-year yield 4.66%. Watch the Fed and the jobs report.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Pharma dip and Novo trial failure",
+   "status": "open",
+   "note": "LLY -4.6% on the day with the sector; Novo ZEUS ziltivekimab failure reported. Watch for any LLY read-through.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Earnings week",
+   "status": "open",
+   "note": "Apple reported (iPhone +22%); SpaceX August 4, MercadoLibre and Disney August 5. Watch for read-through to AI spending and energy.",
+   "first_seen": "2026-07-28"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-07-31: read the new record and headlines, then decide each family under the catalyst rule."
+}

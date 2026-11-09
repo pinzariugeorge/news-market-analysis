@@ -1,0 +1,57 @@
+{
+ "run_id": "fp3-20260701-a",
+ "written_at": "2026-07-01T14:00:00Z",
+ "decision_day": "2026-07-01",
+ "data_cutoff": "2026-07-01",
+ "what_changed": "First run: there was no previous handoff. All five families were assessed from the 2026-07-01 record and none has a qualifying catalyst, so everything is flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Crude is down sharply and no catalyst is named; the headlines are opinion pieces."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is weak, UBS cut targets and no one-sided event is named."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The sector rally is already priced in and NVDA has no specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "The LLY China probe is a negative and there is no positive catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "The FCX output cut on Grasberg delays is already priced in; nothing positive and checkable."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "FCX Grasberg output cut",
+   "status": "open",
+   "note": "Watch for Q2 earnings and Grasberg restart news; the stock is down about 11% after the cut.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "LLY China trial security probe",
+   "status": "open",
+   "note": "House Select Committee probe; watch for escalation or a company response.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "Earnings from NEM, JNJ and the oil majors are due in July and August; a guidance raise would be a catalyst.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Oil and gold selloff",
+   "status": "open",
+   "note": "WTI is down 25% and gold down 10% over 20 days; watch for a supply shock or rate shift, not oversold bounces.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list; stay flat if none."
+}

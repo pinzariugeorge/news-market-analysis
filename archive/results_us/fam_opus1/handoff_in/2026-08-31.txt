@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260826-a (decision day 2026-08-26, data cutoff 2026-08-26)
+What changed: Crude fell (WTI 82.4, -3.1% on 08-25) on Iran optimism; gold hit a 3-month high (4695, +6.2% in 5 days) and NEM reached its 52-week high (+47.7% in 20 days), so NEM was closed at its planned date. Copper hit a 1-year high (6.71) and FCX +20.5% in 5 days; NVDA Q2 FY2027 results headline out (title only), plus AWS 2M GPU deal; Canada retaliated with up to 50% tariffs on US goods.
+Holdings and reasons:
+- oil_gas: flat | Iran optimism pulling crude down; no unpriced supply catalyst.
+- gold_miners: flat (closed long NEM held since 2026-08-10 on 2026-08-26) | Planned exit passed; gold move and NEM at 52-week high already priced.
+- chips: flat | NVDA results known only by title; outcome two-sided until guidance and reaction are visible.
+- pharma: flat | No LLY-specific news.
+- copper_uranium: long FCX since 2026-07-31, 20 days | Congo export ban keeps copper tight, copper at 1-year high; exit due about 2026-08-28.
+Open storylines:
+- [fading] Iran war / Hormuz oil shock: NBC 08-26: cautious optimism over Iran pushes oil down; WTI 82.4. Re-enter XOM only on a new closure or supply loss crude has not moved on.
+- [open] Russia-Ukraine escalation: New fears of Russian escalation (NBC 08-26); CIA director surprise Moscow trip (WSJ). Watch for energy supply hits.
+- [open] Trump vs oil majors' windfall: No new action; windfall tax, export limits or SPR releases would hurt XOM.
+- [open] Gold rally vs yields: Gold 4695 3-month high, 10-year eased to 4.64%, dollar soft. NEM closed; re-enter only on a new named catalyst, not the move itself.
+- [fading] Barrick-Newmont Nevada settlement and costs: NEM exited 08-26 after +47.7% in 20 days; Yahoo flags rising costs diluting the windfall. Watch production and cost guidance.
+- [open] NVDA Q2 FY2027 results: Results headline 08-26 (title only), AWS 2M additional GPUs, Hugging Face acquisition close; OpenAI chip competition (SemiAnalysis). Next run: check guidance and the stock reaction before any long.
+- [escalating] US-Canada tariffs: Canada retaliates with up to 50% tariffs on hundreds of US products (NYT 08-25); Cameco refinery cited in Canada uranium threat. Watch CCJ and inflation effects.
+- [open] Copper supply squeeze: Congo concentrate export ban; copper 6.71 at 1-year high. Exit FCX on ban reversal or exemption, copper breakdown or dollar rebound; hold ends about 2026-08-28.
+- [open] Uranium: Uranium ETF +10.4% in 5 days, CCJ +11.4%; Canada uranium export threat in the tariff fight. Indirect for FCX.
+- [closed] LLY Q2 guidance raise: Exited 2026-08-18; re-enter only on new LLY-specific news.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. If on or after 2026-08-28, close FCX and go flat in copper_uranium unless a new named catalyst appears; earlier, exit if the Congo ban is reversed or exempted or copper breaks down. Check NVDA results detail and post-earnings reaction for a one-sided guidance catalyst; re-check XOM for new supply loss; gold, pharma stay flat absent a new named catalyst.

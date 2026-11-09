@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260810-a (decision day 2026-08-10, data cutoff 2026-08-10)
+What changed: Five days since the last note (08-05). Gold rose 7.1% and NEM 20.6% in 5 days, the semi ETF rose 7.8%, and WTI fell 7.7% in 5 days. LLY recovered (+3.2% in 5 days). Headlines on 08-10 were noise: no leader-specific catalyst in any family.
+Holdings and reasons:
+- oil_gas: flat | WTI whipsaw has no named cause; no XOM or OPEC+ headline.
+- gold_miners: flat | The NEM +20.6% 5-day gold rebound is already priced in and no Fed, dollar or NEM headline explains it.
+- chips: flat | The semi ETF is up 7.8% in 5 days with no NVDA-specific catalyst in the headlines.
+- pharma: flat | No LLY, trial or pricing headline; LLY is 4% below its high.
+- copper_uranium: flat | FCX strength (+11% in 5 days) has no supply or demand headline.
+Open storylines:
+- [open] Oil whipsaw: WTI -7.7% in 5 days, -23% over 60 days, +9.5% over 20 days. Watch OPEC+ or supply headlines, Iran and shipping-lane tensions, and XOM earnings.
+- [open] Chip rebound and AI capex: Semi ETF +7.8% in 5 days after an 8.7% rise earlier. Watch TSMC monthly sales (about the 10th), NVDA news, export rules.
+- [escalating] Gold bounce: Gold +7.1% in 5 days (still 17% below its high), NEM +20.6%. Watch the Fed, the August jobs report and 10-year yield 4.66%.
+- [fading] LLY pullback: LLY recovered (+3.2% in 5 days). Watch for LLY earnings, trial or pricing news.
+- [open] Iran tensions: Motley Fool mentions rising Iran tensions and shipping disruptions; may matter for oil and gold if confirmed by a harder headline.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-10: read the new record and headlines, then decide each family under the catalyst rule.

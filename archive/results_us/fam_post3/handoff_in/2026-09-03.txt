@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260831-a (decision day 2026-08-31, data cutoff 2026-08-31)
+What changed: Fresh US-Iran strikes lifted oil about 2% premarket, reversing last week's de-escalation drop. Gold fell 2.9% on Friday with the 10-year yield at 4.72% and hawkish Warsh talk. Chips fell 3.5% Friday; the NVDA earnings reaction is still not visible. LLY posted positive Taltz plus Zepbound phase 3b data.
+Holdings and reasons:
+- oil_gas: flat | The oil jump is a priced driver move and XOM news is minor; the Chevron Venezuela deal is CVX only.
+- gold_miners: flat | Rate and dollar headwinds and NEM extended after +37% in 20 days; no NEM-specific catalyst.
+- chips: flat | No NVDA-specific catalyst; AVGO earnings this week are a two-sided event.
+- pharma: flat | The LLY combination-data headline is modest and not a one-sided catalyst.
+- copper_uranium: flat | No FCX guidance or supply news; the copper record is priced.
+Open storylines:
+- [escalating] Iran war, Hormuz and oil: US struck Iran again; oil +2% premarket after WTI fell to 83.4 last week; watch XOM-specific news and whether the rise holds
+- [open] Q2 earnings season: AVGO reports this week; NVDA result and guidance still not seen in headlines; NEM and FCX guidance still a catalyst
+- [open] AI financing and credit: Circular financing debate (Nvidia-MediaTek $3.5B deal) and AI bubble pieces; watch the AVGO and NVDA reaction
+- [open] Rate-hike bets and Warsh: Warsh hawkishness; 10-year yield 4.72% near its high; gold -2.9% Friday; watch Fed and yields
+- [fading] Gold rebound: Gold gave back 3% in 5 days; NEM still +37% in 20 days; watch NEM guidance
+- [open] Copper and uranium: Uranium ETF -5.8% Friday; FCX +22% in 20 days; watch FCX guidance
+- [open] Pharma rally: Big pharma at 52-week highs; LLY -6% in 5 days; watch LLY filings, approvals, pricing
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for the NVDA earnings reaction and AVGO result, then leader-specific catalysts (XOM news, NEM guidance, FCX guidance, LLY filings); stay flat otherwise.

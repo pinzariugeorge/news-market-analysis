@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-07-15",
+ "weekday": "Wednesday",
+ "information_cutoff": "closes dated before 2026-07-15; Massive news published before 2026-07-15 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-07-14",
+   "last": 16.5,
+   "ret_1d_pct": -3.85,
+   "ret_5d_pct": 2.29,
+   "ret_20d_pct": -6.67,
+   "ret_60d_pct": -5.61,
+   "vol_20d_daily_pct": 6.96,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -46.9
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-07-14",
+     "last": 79.34,
+     "ret_1d_pct": 1.54,
+     "ret_5d_pct": 12.63,
+     "ret_20d_pct": -6.53,
+     "ret_60d_pct": -16.21,
+     "vol_20d_daily_pct": 3.42,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -29.8
+    },
+    "Brent crude oil": {
+     "last_date": "2026-07-14",
+     "last": 84.73,
+     "ret_1d_pct": 1.72,
+     "ret_5d_pct": 14.25,
+     "ret_20d_pct": -2.98,
+     "ret_60d_pct": -14.75,
+     "vol_20d_daily_pct": 3.47,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -28.4
+    },
+    "Natural gas": {
+     "last_date": "2026-07-14",
+     "last": 2.904,
+     "ret_1d_pct": 0.24,
+     "ret_5d_pct": -11.06,
+     "ret_20d_pct": -6.92,
+     "ret_60d_pct": 9.71,
+     "vol_20d_daily_pct": 2.57,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -61.1
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-07-14",
+     "last": 145.09,
+     "ret_1d_pct": 0.4,
+     "ret_5d_pct": 2.4,
+     "ret_20d_pct": -1.31,
+     "ret_60d_pct": -4.53,
+     "vol_20d_daily_pct": 1.86,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.4,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-07-14",
+     "last": 181.76,
+     "ret_1d_pct": -0.24,
+     "ret_5d_pct": 4.45,
+     "ret_20d_pct": -2.92,
+     "ret_60d_pct": -3.4,
+     "vol_20d_daily_pct": 1.81,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.9,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-07-14",
+     "last": 111.87,
+     "ret_1d_pct": -0.87,
+     "ret_5d_pct": 3.16,
+     "ret_20d_pct": -4.37,
+     "ret_60d_pct": -7.98,
+     "vol_20d_daily_pct": 2.12,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.4,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-07-14",
+     "last": 54.57,
+     "ret_1d_pct": -0.44,
+     "ret_5d_pct": 5.59,
+     "ret_20d_pct": -3.48,
+     "ret_60d_pct": -4.04,
+     "vol_20d_daily_pct": 2.36,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.6,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-07-14",
+     "last": 4069.7,
+     "ret_1d_pct": 1.6,
+     "ret_5d_pct": -2.11,
+     "ret_20d_pct": -3.99,
+     "ret_60d_pct": -15.36,
+     "vol_20d_daily_pct": 1.63,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -23.5
+    },
+    "Silver": {
+     "last_date": "2026-07-14",
+     "last": 58.772,
+     "ret_1d_pct": 1.97,
+     "ret_5d_pct": -3.54,
+     "ret_20d_pct": -13.39,
+     "ret_60d_pct": -25.23,
+     "vol_20d_daily_pct": 3.05,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -48.9
+    },
+    "US 10-year yield": {
+     "last_date": "2026-07-14",
+     "last": 4.585,
+     "ret_1d_pct": -0.52,
+     "ret_5d_pct": 1.24,
+     "ret_20d_pct": 2.18,
+     "ret_60d_pct": 6.41,
+     "vol_20d_daily_pct": 0.85,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.8
+    },
+    "US dollar index": {
+     "last_date": "2026-07-14",
+     "last": 100.94,
+     "ret_1d_pct": -0.34,
+     "ret_5d_pct": -0.2,
+     "ret_20d_pct": 1.19,
+     "ret_60d_pct": 2.77,
+     "vol_20d_daily_pct": 0.3,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.7
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-07-14",
+     "last": 108.01,
+     "ret_1d_pct": 0.09,
+     "ret_5d_pct": -0.15,
+     "ret_20d_pct": -1.46,
+     "ret_60d_pct": -2.86,
+     "vol_20d_daily_pct": 0.36,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -3.7
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-07-14",
+     "last": 94.75,
+     "ret_1d_pct": 1.77,
+     "ret_5d_pct": -0.33,
+     "ret_20d_pct": -5.47,
+     "ret_60d_pct": -16.45,
+     "vol_20d_daily_pct": 2.54,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -28.2,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-07-14",
+     "last": 144.41,
+     "ret_1d_pct": 0.63,
+     "ret_5d_pct": -3.94,
+     "ret_20d_pct": -11.21,
+     "ret_60d_pct": -32.81,
+     "vol_20d_daily_pct": 2.53,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -42.7,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-07-14",
+     "last": 23.91,
+     "ret_1d_pct": 1.83,
+     "ret_5d_pct": 0.13,
+     "ret_20d_pct": -6.53,
+     "ret_60d_pct": -29.41,
+     "vol_20d_daily_pct": 3.24,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -37.2,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-07-14",
+     "last": 108.49,
+     "ret_1d_pct": 0.61,
+     "ret_5d_pct": -3.04,
+     "ret_20d_pct": -6.55,
+     "ret_60d_pct": -25.03,
+     "vol_20d_daily_pct": 2.76,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -34.5,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-07-14",
+     "last": 600.31,
+     "ret_1d_pct": 2.51,
+     "ret_5d_pct": 3.24,
+     "ret_20d_pct": -3.17,
+     "ret_60d_pct": 31.99,
+     "vol_20d_daily_pct": 3.74,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.3
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-07-14",
+     "last": 211.8,
+     "ret_1d_pct": 4.06,
+     "ret_5d_pct": 7.55,
+     "ret_20d_pct": 3.22,
+     "ret_60d_pct": 6.78,
+     "vol_20d_daily_pct": 2.48,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.2,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-07-14",
+     "last": 389.11,
+     "ret_1d_pct": 1.32,
+     "ret_5d_pct": 4.94,
+     "ret_20d_pct": 1.84,
+     "ret_60d_pct": -2.35,
+     "vol_20d_daily_pct": 3.14,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.2,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-07-14",
+     "last": 548.13,
+     "ret_1d_pct": 2.57,
+     "ret_5d_pct": 6.2,
+     "ret_20d_pct": 7.15,
+     "ret_60d_pct": 96.98,
+     "vol_20d_daily_pct": 4.78,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.6,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-07-14",
+     "last": 420.39,
+     "ret_1d_pct": -0.28,
+     "ret_5d_pct": -2.82,
+     "ret_20d_pct": -0.84,
+     "ret_60d_pct": 15.7,
+     "vol_20d_daily_pct": 3.74,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.0,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-07-14",
+     "last": 158.29,
+     "ret_1d_pct": -1.93,
+     "ret_5d_pct": -3.74,
+     "ret_20d_pct": 2.91,
+     "ret_60d_pct": 7.97,
+     "vol_20d_daily_pct": 1.34,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.7
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-07-14",
+     "last": 1152.54,
+     "ret_1d_pct": -2.48,
+     "ret_5d_pct": -6.72,
+     "ret_20d_pct": 1.72,
+     "ret_60d_pct": 27.49,
+     "vol_20d_daily_pct": 2.16,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.7,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-07-14",
+     "last": 253.85,
+     "ret_1d_pct": -1.52,
+     "ret_5d_pct": -5.01,
+     "ret_20d_pct": 5.39,
+     "ret_60d_pct": 8.23,
+     "vol_20d_daily_pct": 1.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.0,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-07-14",
+     "last": 244.78,
+     "ret_1d_pct": -1.3,
+     "ret_5d_pct": -3.88,
+     "ret_20d_pct": 7.49,
+     "ret_60d_pct": 17.13,
+     "vol_20d_daily_pct": 2.34,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.2,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-07-14",
+     "last": 120.78,
+     "ret_1d_pct": -2.62,
+     "ret_5d_pct": -6.27,
+     "ret_20d_pct": 1.45,
+     "ret_60d_pct": 4.61,
+     "vol_20d_daily_pct": 2.14,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.8,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-07-14",
+     "last": 6.33,
+     "ret_1d_pct": 1.56,
+     "ret_5d_pct": 2.57,
+     "ret_20d_pct": -1.56,
+     "ret_60d_pct": 4.34,
+     "vol_20d_daily_pct": 1.58,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.8
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-07-14",
+     "last": 26.73,
+     "ret_1d_pct": 1.91,
+     "ret_5d_pct": 2.18,
+     "ret_20d_pct": -1.55,
+     "ret_60d_pct": -6.64,
+     "vol_20d_daily_pct": 1.65,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -17.6
+    },
+    "Uranium ETF": {
+     "last_date": "2026-07-14",
+     "last": 41.55,
+     "ret_1d_pct": 2.04,
+     "ret_5d_pct": -0.48,
+     "ret_20d_pct": -8.72,
+     "ret_60d_pct": -24.82,
+     "vol_20d_daily_pct": 2.4,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -32.8
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-07-14",
+     "last": 61.95,
+     "ret_1d_pct": 3.3,
+     "ret_5d_pct": 4.42,
+     "ret_20d_pct": -9.44,
+     "ret_60d_pct": -9.27,
+     "vol_20d_daily_pct": 2.81,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.6,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-07-14",
+     "last": 91.57,
+     "ret_1d_pct": 1.52,
+     "ret_5d_pct": -3.27,
+     "ret_20d_pct": -9.3,
+     "ret_60d_pct": -23.86,
+     "vol_20d_daily_pct": 2.51,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -31.7,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-07-14",
+     "last": 60.09,
+     "ret_1d_pct": 2.77,
+     "ret_5d_pct": 2.95,
+     "ret_20d_pct": -7.33,
+     "ret_60d_pct": 3.85,
+     "vol_20d_daily_pct": 2.86,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.8,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-07-14",
+     "last": 178.433,
+     "ret_1d_pct": 4.5,
+     "ret_5d_pct": 7.44,
+     "ret_20d_pct": -3.9,
+     "ret_60d_pct": -2.15,
+     "vol_20d_daily_pct": 2.66,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.8,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "July",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "If You're Worried About a Market Crash, Here's the 1 Thing You Shouldn't Do, According to History.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 13:15",
+   "related": "PG,KO,COST,TJX",
+   "summary": "With the S&P 500 facing valuation concerns and macroeconomic headwinds, the article advises investors not to sell during a market crash. Historical data shows t",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "ASUS Expands its Versatile ChromeOS Lineup in the US with Chromebook CM15 and CM32 Detachable",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 13:00",
+   "related": "GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "ASUS announced the US availability of two new Chromebooks: the CM15 (15.6-inch, starting at $269.99) and CM32 Detachable (12.1-inch, $579.00). Both feature Medi",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Workhorse Group Sets Date for Second Quarter Earnings Release and Conference Call",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 13:00",
+   "related": "WKHS",
+   "summary": "Workhorse Group Inc. announced it will hold a conference call on August 13, 2026, to discuss second quarter results and business outlook. The company also appoi",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "IBM: What Its Earnings Misses Say About the State of AI Right Now",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 12:35",
+   "related": "IBM,MU,SNDK",
+   "summary": "IBM released preliminary Q2 results showing revenue of $17.2B (up 1% YoY) and adjusted EPS of $2.93, both below expectations. The company revealed that AI spend",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "American Express Raised Its Platinum Annual Fee to $895. Here's What the 29% Hike Means for Card-Fee Revenue.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 12:30",
+   "related": "AXP,MCO",
+   "summary": "American Express increased its Platinum card annual fee from $695 to $895, a 29% hike and the first increase since 2021. The fee increase is expected to meaning",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "What Does the HeartFlow CEO's Sale of Over 20,000 Company Shares Mean for Investors?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 12:10",
+   "related": "HTFL",
+   "summary": "HeartFlow CEO John Farquhar sold 22,562 shares worth ~$626,100 on July 10, 2026, as part of a pre-arranged Rule 10b5-1 trading plan established in September 202",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "If You're 25 and Just Starting Out, This Is the Only Vanguard ETF You Need for the Next Decade",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 12:08",
+   "related": "VTI,VOO,NVDA,GOOG,GOOGL,GOOGM",
+   "summary": "For young investors starting out, the Vanguard Total Stock Market ETF (VTI) is recommended as a simple, low-cost core portfolio holding. It invests in approxima",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Youxin Technology Signs Cooperation Intention Agreement to Join Guangzhou's Citywide Government AI Hub Initiative \u201cSuiZhiZheng\u201d as an Ecosystem Partner",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "YAAS,TCEHY",
+   "summary": "Youxin Technology has signed a cooperation intention agreement to join SuiZhiZheng, Guangzhou's government AI platform, alongside major tech companies like Huaw",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Octave Launches CoLabs: A Customer Innovation Program to Scale AI Across Industrial Operations",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "OCTV,FLR",
+   "summary": "Octave Intelligence plc has launched Octave CoLabs, a collaborative innovation program that embeds Octave's technical expertise with customers to develop AI wor",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Slate Medicines Strengthens Board of Directors with Appointment of Mark W. Hahn",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "MRK",
+   "summary": "Slate Medicines, a biotech company developing migraine treatments, announced the appointment of Mark W. Hahn to its Board of Directors. Hahn brings over 25 year",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Black Rock Coffee Bar Continues Austin-Area Growth with New Killeen Location",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "BRCB",
+   "summary": "Black Rock Coffee Bar, an Oregon-based boutique coffee chain, opened its eleventh Austin-area location in Killeen, Texas on July 10, 2026. The store at 540 W St",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Pasqal Appoints Hewlett Packard Enterprise's Former High Performance Computing & AI Leader as Chief Commercial Officer to Drive Quantum Deployment at Enterprise Scale",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "HPE,HPEpC,BBCQ,BBCQU,BBCQW",
+   "summary": "Pasqal, a neutral-atom quantum computing company, appointed Mark Armstrong, former HPE executive, as Chief Commercial Officer for EMEA and APAC regions. Armstro",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Skyline Builders Group Holding Adds John M. Melkon to Board of Directors",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 12:00",
+   "related": "KAZR",
+   "summary": "Skyline Builders Group Holding Limited (NASDAQ: KAZR) announced the appointment of John M. Melkon, a 30-year veteran in critical material supply chains and nati",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "2 Superior Growth Stocks to Buy in 2026",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:35",
+   "related": "NVDA,META,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Nvidia and Meta Platforms are recommended as top growth stocks for 2026. Nvidia, the leading AI hardware supplier, shows strong revenue growth of 85% YoY with e",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "AI Capex Crosses $1 Trillion Next Year. Here Are 2 Industrial Stocks That Will Benefit",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:30",
+   "related": "VRT,PWR,NVDA",
+   "summary": "As AI spending by U.S. hyperscalers is projected to reach $1 trillion in 2027, industrial companies supporting data center infrastructure are positioned for sig",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Should You Buy SoFi Stock Before July 29?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:30",
+   "related": "SOFI",
+   "summary": "SoFi Technologies stock has declined significantly this year but now appears more affordable at 23x forward earnings. Ahead of Q2 earnings on July 29, the compa",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Here's How Many Shares of Costco Stock You'd Need for $1,000 in Yearly Dividends",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:19",
+   "related": "COST",
+   "summary": "Costco raised its quarterly dividend to $1.47 per share (annual $5.88) for the 22nd consecutive year, requiring 171 shares to generate $1,000 in annual dividend",
+   "theme": "chips"
+  },
+  {
+   "title": "Warren Buffett's Hand-Picked Successor, Greg Abel, Revamped Berkshire Hathaway's Portfolio. Should You Buy the Only Berkshire Dividend Stock Left That Yields Over 6%?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:15",
+   "related": "KHC,BRK.A,BRK.B,GOOG,GOOGL,GOOGM",
+   "summary": "Greg Abel, Warren Buffett's successor at Berkshire Hathaway, has revamped the company's portfolio by adding tech stocks like Alphabet while maintaining a positi",
+   "theme": "chips"
+  },
+  {
+   "title": "AI Is Reshaping a Trillion-Dollar Wall Street Catalyst, and It Has Terrifying Implications for the 2nd-Priciest Stock Market in History",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:06",
+   "related": "GOOG,GOOGL,GOOGM,GOOGN,META,AAPL",
+   "summary": "Major tech companies like Alphabet, Meta, and Apple are redirecting capital away from stock buybacks to fund massive AI infrastructure investments. This shift e",
+   "theme": "chips"
+  },
+  {
+   "title": "SK Hynix Controls More Than Half the HBM Market Nvidia Depends On",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 11:05",
+   "related": "SKHY,NVDA,MU",
+   "summary": "SK Hynix's Nasdaq listing gives U.S. investors access to the dominant supplier of high-bandwidth memory (HBM) chips critical for Nvidia's AI accelerators, contr",
+   "theme": "chips"
+  },
+  {
+   "title": "Global Clinical Trials Market to Reach $176.32 Billion by 2030 as AI and Decentralized Research Accelerate Growth",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 10:46",
+   "related": "ICLR,CRL,TMO,IQV,WUXAY,FTRE",
+   "summary": "The global clinical trials market is projected to grow from $127.16 billion in 2025 to $176.32 billion by 2030, with a CAGR of 6.8%. Growth is driven by AI-enab",
+   "theme": "chips"
+  },
+  {
+   "title": "Hybrid Robots Market Projected to Reach $10.03 Billion by 2030 as Smart Manufacturing Accelerates",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 10:44",
+   "related": "AMZN,TSLA",
+   "summary": "The global hybrid robots market is experiencing rapid expansion, forecast to grow from $4.93 billion in 2025 to $10.03 billion by 2030 at a CAGR of 15.3%. Growt",
+   "theme": "chips"
+  },
+  {
+   "title": "Warehouse Shuttle Software Market to Reach $2.66 Billion by 2030 as AI and Automation Transform Logistics",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 10:42",
+   "related": "HON,SAP,DFKCY",
+   "summary": "The global warehouse shuttle software market is projected to grow from $1.38 billion in 2025 to $2.66 billion by 2030, with a CAGR of 14.1%. Growth is driven by",
+   "theme": "chips"
+  },
+  {
+   "title": "VCI Global Reports FY2025 Results, Highlighting Strategic Restructuring and Positioning for Long-Term Growth",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 10:36",
+   "related": "VCIG",
+   "summary": "VCI Global completed a major strategic transformation in FY2025, including the spin-off of V Capital Consulting Group and repositioning as an AI-native operatin",
+   "theme": "chips"
+  },
+  {
+   "title": "6 Cryptocurrencies I'm Watching Like a Hawk in July",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 10:30",
+   "related": "ETHV,SOLZ,GTAO,PURR",
+   "summary": "As the crypto market shows signs of recovery, the author identifies six cryptocurrencies to watch in July based on tokenized real-world assets, tokenomics impro",
+   "theme": "pharma"
+  },
+  {
+   "title": "3 Vanguard ETFs Poised to Outperform as the Market Shifts Beyond Big Tech",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 10:25",
+   "related": "VHT,VTV,VB,LLY,MU",
+   "summary": "As the market broadens beyond technology stocks, three Vanguard ETFs are positioned to benefit: the Healthcare ETF (VHT) is rallying on strong biotech and obesi",
+   "theme": "pharma"
+  },
+  {
+   "title": "AI Chip Spending Is Projected to Hit $1.6 Trillion by 2030. Here Are the Stocks Positioned to Capture Much of It.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 10:24",
+   "related": "NVDA,ASML,SKHY,TSM,INTC",
+   "summary": "McKinsey projects semiconductor spending will reach $1.6 trillion by 2030, driven by AI demand. The article highlights three companies positioned to benefit: Nv",
+   "theme": "pharma"
+  },
+  {
+   "title": "With a Nearly 7% Dividend Yield, Is Verizon Stock a Buy on SpaceX Fears?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 10:15",
+   "related": "VZ,SPCX,TMUS,TMUSI,TMUSL,TMUSZ",
+   "summary": "Verizon's stock has declined following SpaceX's IPO amid investor concerns about satellite internet competition. However, the article argues the sell-off is ove",
+   "theme": "pharma"
+  },
+  {
+   "title": "Nucleating & Clarifying Agents Market Reach to Hit USD 868.84 Million by 2035 on Rising High-Clarity Packaging Demand | SNS Insider",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 09:30",
+   "related": "BASFY,CLZNY",
+   "summary": "The global nucleating and clarifying agents market is projected to grow from USD 426.33 million in 2025 to USD 868.84 million by 2035, at a CAGR of 6.80%. Growt",
+   "theme": "pharma"
+  },
+  {
+   "title": "Global Biochemistry Analyzer Market to Reach $8.18 Billion by 2035 as Diagnostic Testing Demand Accelerates",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 09:24",
+   "related": "RHHBY,ABT,DHR,TMO,SMMNY",
+   "summary": "The global biochemistry analyzer market is projected to reach $8.18 billion by 2035, driven by increasing diagnostic testing demand, adoption of fully automated",
+   "theme": "pharma"
+  },
+  {
+   "title": "Nxera Pharma Webinar for Financial Results Presentation - 2Q2026",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 09:13",
+   "related": "ABBV",
+   "summary": "Nxera Pharma will announce its 2Q 2026 earnings results and host a live webinar presentation on August 7, 2026, featuring senior executives. The company will di",
+   "theme": "pharma"
+  },
+  {
+   "title": "S&P 500: Credit Markets Raise Questions Equity Investors Choose to Ignore",
+   "source": "Investing.com",
+   "published_utc": "2026-07-15 09:05",
+   "related": "NVDA",
+   "summary": "The S&P 500 rose 38 basis points on Tuesday, driven primarily by declining implied volatility rather than fundamental strength. While CPI data came in cooler th",
+   "theme": "pharma"
+  },
+  {
+   "title": "Major Shareholder Announcement",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:38",
+   "related": "UBS",
+   "summary": "UBS Group AG has notified Bang & Olufsen A/S of crossing the 5% major shareholder threshold, holding 7,676,171 shares (5.21% of total share capital and voting r",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "IBM Plunged After Issuing a Warning on the Software Sector. Time to Buy?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 08:30",
+   "related": "IBM",
+   "summary": "IBM stock plummeted 25% after CEO Arvind Krishna warned that high hardware capital expenditures are causing companies to shift budgets away from software spendi",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Form 8.5 (EPT/RI)-Advanced Medical Solutions Group Plc",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:26",
+   "related": "IVTJY",
+   "summary": "Investec Bank plc, acting as Advisor & Joint Broker to Advanced Medical Solutions Group Plc, disclosed public dealing activities on 14th July 2026. The exempt p",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Form 8.5 (EPT/RI)-Gamma Communications Plc",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:24",
+   "related": "IVTJY",
+   "summary": "Investec Bank plc, acting as Joint Broker to Gamma Communications Plc, disclosed public dealing in Gamma Communications ordinary shares on 14th July 2026. The b",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Oral Obesity Therapies Market to Reach $6.32 Billion by 2030 as Demand for GLP-1 Treatments Accelerates",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:15",
+   "related": "NVO,LLY,PFE,MRK,AZN,RHHBY",
+   "summary": "The global oral obesity therapies market is projected to grow from $4.32 billion in 2026 to $6.32 billion by 2030, with a compound annual growth rate of 9.9%. T",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Ultraviolet Dye Kit Market Forecast to Reach $1.5 Billion by 2030 as Demand for Advanced Leak Detection Grow",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:14",
+   "related": "IFHLY",
+   "summary": "The global ultraviolet dye kit market is projected to grow from $1.14 billion in 2026 to $1.5 billion by 2030, with a compound annual growth rate of 7.2%. Growt",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Health and Safety Management Market Forecast to Reach $2.87 Billion by 2030 as AI and Connected Safety Adoption Accelerate",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-15 08:13",
+   "related": "HON,MMM,DD,FTV,WTKWY",
+   "summary": "The global health and safety management market is projected to grow from $2.07 billion in 2026 to $2.87 billion by 2030, with a compound annual growth rate of 8",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's What I Think Is Going On With Coca-Cola Stock",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-15 08:12",
+   "related": "KO,NVDA,AMZN",
+   "summary": "Coca-Cola stock is outperforming the market in 2026, up 22% versus 11% for the S&P 500, even beating growth stocks like Nvidia and Amazon. The article attribute",
+   "theme": "copper_uranium"
+  }
+ ]
+}

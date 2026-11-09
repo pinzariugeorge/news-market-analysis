@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run opus1-20260707-a (decision day 2026-07-07, data cutoff 2026-07-07)
+What changed: Iran escalation: tanker attacks in the Strait of Hormuz, the US revoked an Iran oil sanctions waiver, and Trump threatened bombing and a naval blockade; oil reportedly jumped 4-5% after the 07-06 close. Exxon signalled a Q2 profit windfall. Went long XOM on that supply-shock catalyst; the other four families stay flat.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | Named supply shock (Iran waiver revoked, Hormuz tanker attacks, blockade threat) not yet in the 07-06 closes; confidence 0.53.
+- gold_miners: flat | Gold in a bear market with a firm dollar; no NEM-specific catalyst.
+- chips: flat | No NVDA-specific catalyst; sector bounce already priced in.
+- pharma: flat | LLY near highs with no trial, approval or pricing news.
+- copper_uranium: flat | No headline reaches FCX; copper move priced in.
+Open storylines:
+- [escalating] Iran / Strait of Hormuz escalation: Watch for an actual blockade or strikes (supports the XOM long) versus de-escalation or waiver reinstatement (exit signal); check WTI and Brent closes.
+- [fading] Crude slump: WTI was down 26% in 20 days and back at pre-Iran-war levels on 07-06; the Iran news may reverse it. Watch OPEC+ and output growth.
+- [open] Exxon Q2 windfall signal: Reuters says Exxon signalled a Q2 profit windfall; XOM Q2 earnings in late July fall inside or near the hold window and add variance.
+- [open] Gold bear market: Morningstar cut near-term gold assumptions; a $9 bln gold-miner tie-up (not NEM) was reported. Watch the dollar, real rates, the jobs report and the NEM Q2 call.
+- [open] Cigar Lake suspension: Watch the restart timeline and uranium spot; leader is FCX so impact is indirect. No update in this record.
+- [open] Copper to aluminium substitution: Watch whether more automakers switch away from copper (demand headwind for FCX). No update in this record.
+- [open] Q2 earnings season and Fed under Warsh: Earnings of XOM, NEM, LLY, FCX and NVDA peers in July-August and the jobs report raise variance; not a reason to be long.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note, check whether the XOM long is still justified by the Iran/Hormuz storyline (exit to flat on clear de-escalation or once the 10-day horizon ends), then re-check all five families for a named catalyst in the new headlines.

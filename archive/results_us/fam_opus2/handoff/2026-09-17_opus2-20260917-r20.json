@@ -1,0 +1,98 @@
+{
+ "run_id": "opus2-20260917-r20",
+ "written_at": "2026-11-08T12:00:00Z",
+ "decision_day": "2026-09-17",
+ "data_cutoff": "2026-09-17",
+ "what_changed": "The Fed hiked for the first time in years (Warsh); the 10y reached 5.0% then dipped. Oil eased: CNBC says the market sees the Saudi pipeline outage as less disruptive than feared; WTI 102.43 (-3.2%), XOM -3.5% on 09-16. Jensen Huang said Nvidia will sell twice as many chips next year and AI stocks rebounded.",
+ "families": {
+  "oil_gas": {
+   "position": "flat (XOM not renewed; earlier 09-14 renewal runs to about 09-28 if the harness keeps it)",
+   "why": "The Saudi supply-loss catalyst is fading per CNBC; no new escalation; late entry in a long episode."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Fed hike and 5% 10y are headwinds; only analyst price-target raises, no catalyst."
+  },
+  "chips": {
+   "position": "long NVDA since 2026-09-17, 10 days",
+   "why": "Huang: Nvidia will sell twice as many chips next year (CNBC), a guidance-type catalyst not yet priced; confidence 0.52."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific headline; pricing-policy headlines tilt negative."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No fresh copper supply shock; Niger uranium investment adds supply."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Hormuz / Iran war, Saudi supply",
+   "status": "fading",
+   "note": "Saudi pipeline outage seen as less disruptive than feared; crude two straight losses. Re-enter XOM only on a new named supply loss; a truce confirms exit.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "XOM lagging crude",
+   "status": "open",
+   "note": "XOM -0.6% over 5 days vs WTI +6.6%; Joliet refinery outage (no update). Watch windfall tax or export curbs; India-US tariff fight over Russian oil.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Yields, inflation and the Fed",
+   "status": "escalating",
+   "note": "Fed hiked (first in years, unanimous); 10y 5.0% then dipped. Jobs report within 20 days. Gold headwind.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "AI demand vs slowdown, NVDA",
+   "status": "open",
+   "note": "Huang says twice as many chips next year; AI stocks rebounding. Risks: Huawei AI chip Q1 2027, Groq probe, slowdown calls. Exit on a guidance cut or export-rule hit.",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "name": "Tariffs and trade war",
+   "status": "open",
+   "note": "New US tariffs on India over Russian oil; tariffs a midterm issue. Watch copper, Cameco and pharma tariffs.",
+   "first_seen": "2026-08-18"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "fading",
+   "note": "No LLY news; re-enter only on a named trial, approval or guidance headline.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Copper supply / Congo export ban",
+   "status": "fading",
+   "note": "Copper -5.5% over 5 days, no fresh supply headline. Watch outages, exemptions, reversal.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Uranium supply",
+   "status": "open",
+   "note": "US $414M Niger uranium investment (more supply); Cameco laser-enrichment offtake; US projects on hold.",
+   "first_seen": "2026-09-17"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day: check the NVDA long (any guidance, export-rule or Huawei news; held to about 10-01); check whether the Saudi pipeline reopened or a new supply loss or Iran truce appeared (XOM flat unless a new named escalation); watch the Fed hike effect on yields and gold and the jobs report; scan for a fresh copper supply or LLY catalyst.",
+ "lessons": [
+  {
+   "rule": "Hypothesis only: oil longs on a named supply-shock escalation win over 10 days; later entries in a long-running episode do worse.",
+   "cases": 2,
+   "evidence": "Net count. Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%, 08-31 +4.95% (new, US strikes Iran; basket +5.75%). Contradicting: 07-23 -1.56%, 08-18 -0.86%, 08-21 -3.67%. Oil 8 trades, 5 won, mean +3.87%. One Iran episode; does not change calls."
+  },
+  {
+   "rule": "Hypothesis only: LLY longs after a trial or guidance catalyst have a positive mean net return over 10 days.",
+   "cases": 3,
+   "evidence": "LLY 07-23 +0.21%, 07-31 +2.43%, 08-05 +9.14%, 08-10 +0.92%; contradicting 07-28 -0.76%, 08-13 -3.02%. 4 of 6 won, mean +1.49%; no new trades."
+  },
+  {
+   "rule": "Hypothesis only: copper longs on a fresh supply-squeeze headline win.",
+   "cases": 2,
+   "evidence": "FCX 07-31 +5.91% (CNBC squeeze), 08-10 +10.09% (Reuters Congo ban). Continuations: 08-05 -0.68%, 08-13 +17.10%, 08-18 +9.02%. No new trades."
+  }
+ ]
+}

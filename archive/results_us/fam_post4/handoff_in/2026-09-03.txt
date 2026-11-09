@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260831-a (decision day 2026-08-31, data cutoff 2026-08-31)
+What changed: Five days since the last note (08-26). 08-28 was a broad risk-off day: gold -2.9%, NEM -3.3%, the semiconductor ETF -3.5%, NVDA -4.6% (two days after earnings) and the uranium ETF -5.8%. The 08-31 headlines were again noise, with no catalyst for any family.
+Holdings and reasons:
+- oil_gas: flat | WTI -4.2% in 5 days is priced in, and the only oil item is a bearish Hormuz and Venezuela opinion piece with no XOM headline.
+- gold_miners: flat | Gold fell 2.9% after a rally, NEM is +36.6% in 20 days, and no Fed, dollar or NEM headline gives a reason.
+- chips: flat | NVDA fell 4.6% after its earnings with no guidance or export-rule headline, and a selloff alone is not a catalyst.
+- pharma: flat | No LLY trial, regulator or pricing headline; the -6.4% 5-day dip is not a catalyst.
+- copper_uranium: flat | FCX +22% in 20 days and -2.5% on 08-28 with no copper supply, China data or FCX headline.
+Open storylines:
+- [open] NVDA post-earnings reaction: NVDA -4.6% on 08-28, two days after earnings, with no cause in the headlines. Watch for a guidance, analyst or export-rule headline.
+- [open] Gold rally and pullback: Gold +10% in 20 days then -2.9% on 08-28; NEM +36.6% in 20 days. 10-year yield 4.72% near its high. Watch the Fed, the August jobs report (first Friday) and the dollar.
+- [open] Copper and miners surge: FCX +22% in 20 days, 4.3% below its high. Watch for a supply outage or China data headline.
+- [open] Oil softness: WTI -4.2% in 5 days and -13% in 60 days. A Motley Fool piece cites a Hormuz reopening and higher Venezuelan output. Watch OPEC+ and supply headlines.
+- [open] LLY dip: LLY -6.4% in 5 days and 8.3% below its high. Watch for a trial, pricing or regulator headline.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-31: read the new record and headlines, look for a named catalyst on NVDA, NEM, FCX, LLY or XOM, check the jobs report, and decide each family under the catalyst rule.

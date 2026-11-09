@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260715-a (decision day 2026-07-15, data cutoff 2026-07-15)
+What changed: Iran war resumed and WTI rebounded about 12.6% in 5 days; June CPI and PPI were soft; J&J beat and raised; Nvidia said Rubin is on track; Merck Keytruda endometrial trial positive. No leader-specific catalyst, so all stay flat.
+Holdings and reasons:
+- oil_gas: flat | Oil rally from Iran news is a driver move already priced; no XOM-specific catalyst.
+- gold_miners: flat | Soft inflation data helps but is already reflected; Fed meeting this week adds variance only.
+- chips: flat | Rubin on-track comment is a rebuttal, NVDA already up strongly; no export or guidance catalyst.
+- pharma: flat | News concerns MRK and JNJ, not the leader LLY.
+- copper_uranium: flat | Only analyst target changes and thematic pieces for FCX.
+Open storylines:
+- [open] FCX Grasberg output cut: No new news; watch Q2 earnings and Grasberg restart updates.
+- [open] LLY China trial security probe: No update today; watch for escalation or company response. LLY down 6.7% in 5 days, cause not visible.
+- [open] Q2 earnings season: JNJ beat and raised July 15; Intuitive Surgical July 16, Netflix July 16, WPM Aug 6; a guidance raise by a leader would be a catalyst.
+- [escalating] Iran war and oil rebound: WTI +12.6% in 5 days on resumed Iran-U.S. tensions; watch for a real supply disruption versus sentiment.
+- [open] Soft inflation and Fed meeting: June CPI 3.5% YoY, PPI -0.3%; Fed meeting this week; gold still -15% over 60 days.
+- [open] Chip sector and Nvidia Rubin: Rubin delay reports denied by Huang; watch TSMC monthly sales and Micron.
+- [open] MRK Keytruda approvals and trials: Positive Phase 3 endometrial result July 15 after bladder approval July 10; relevant to MRK, not the leader LLY.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; look for a named leader-specific catalyst (Fed outcome for gold, TSMC sales, Q2 earnings, supply shock); stay flat if none.

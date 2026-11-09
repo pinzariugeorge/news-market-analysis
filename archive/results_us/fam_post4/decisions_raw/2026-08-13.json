@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-13",
+  "market_view": "Calm regime: VIX 14.55, down 18% over 60 days; 10-year yield 4.68%, dollar flat near 100. Commodity and sector rebounds are broad, but no family has a hard company-specific catalyst today.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI +10.7% in 5 days and XOM +10.6% in 20 days are already priced in. The only oil-adjacent headline (Phillips 66 insider sale after a strong Q2) is not an XOM catalyst. No OPEC+ or supply headline."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "NEM +23.8% in 20 days and gold +10.3% have already happened. Headlines hold nothing on the Fed, dollar or NEM (only an IAU vs SLVP ETF comparison). Jobs report is variance, not direction."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "none", "reasoning": "NVDA headlines are opinion pieces: Wall Street raising earnings estimates (Motley Fool), a Japanese physical-AI coalition, and CoreWeave's $104B backlog. These are analyst and sentiment items, not a checkable surprise. NVDA is already up 3% yesterday."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY trial, regulator or pricing headline. LLY is 1% below its high after +21% in 60 days; no named reason to expect more."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No copper supply, China data or FCX headline. The only related items are an ETF comparison (NLR vs EMLP, mentioning CCJ) and a data-center optics theme. FCX +13.5% in 20 days is priced in."}
+  },
+  "would_change_my_mind": "A hard company or commodity headline: OPEC+ or supply shock, Fed or dollar shift for gold, an export-rule change or guidance for chips, a trial or pricing decision for LLY, a copper supply outage.",
+  "handoff": {
+    "run_id": "fp4-20260813-a",
+    "written_at": "2026-08-13T13:45:00Z",
+    "decision_day": "2026-08-13",
+    "data_cutoff": "2026-08-13",
+    "what_changed": "Three days since the last note (08-10). WTI rebounded +10.7% in 5 days, NEM is now +23.8% in 20 days, and VIX is down to 14.55. Headlines on 08-13 were again noise (Motley Fool opinion pieces, insider sales, CoreWeave and Nebius earnings); no leader-specific catalyst in any family.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI and XOM rebounds are priced in and no OPEC+ or XOM headline exists."},
+      "gold_miners": {"position": "flat", "why": "NEM +23.8% in 20 days is already priced in and no Fed, dollar or NEM headline explains it."},
+      "chips": {"position": "flat", "why": "Only analyst-estimate and sentiment pieces on NVDA; no checkable surprise."},
+      "pharma": {"position": "flat", "why": "No LLY trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "No copper supply, China data or FCX headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -21% over 60 days but +10.7% in 5 days. Watch OPEC+ or supply headlines, Iran and shipping-lane tensions, and XOM earnings.", "first_seen": "2026-08-10"},
+      {"name": "Chip rebound and AI capex", "status": "open", "note": "NVDA +3% yesterday. AI-cloud earnings (CoreWeave backlog $104B, Nebius +34%) are supportive. Watch TSMC monthly sales, NVDA news, export rules.", "first_seen": "2026-08-10"},
+      {"name": "Gold bounce", "status": "open", "note": "Gold +10.3% in 20 days, still 16% below its high; NEM +23.8% in 20 days. Watch the Fed, the August jobs report and the 10-year yield at 4.68%.", "first_seen": "2026-08-05"},
+      {"name": "LLY near highs", "status": "open", "note": "LLY 1.2% below its high, +21% in 60 days. Watch LLY earnings, trial or pricing news.", "first_seen": "2026-08-05"},
+      {"name": "Iran tensions", "status": "fading", "note": "No fresh headline on 08-13; relevant only if a harder oil or gold headline appears.", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-13: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

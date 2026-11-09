@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260818-a (decision day 2026-08-18, data cutoff 2026-08-18)
+What changed: Bond yields surged and chips sold off pre-open (Fabrinet miss, Nvidia datacom weakness); Brent is about $91 and XOM is gaining. NEM is up 35% in 20 days, with gold at 4474. Nvidia Q2 earnings preview is circulating; no leader-specific catalyst appeared.
+Holdings and reasons:
+- oil_gas: flat | XOM gain is a priced-in oil move with no XOM-specific catalyst.
+- gold_miners: flat | NEM is up 35% in 20 days and there is no guidance news.
+- chips: flat | Yields-driven selloff and an earnings preview without a one-sided setup.
+- pharma: flat | No LLY trial, approval or pricing catalyst.
+- copper_uranium: flat | Only opinion pieces on copper; no FCX guidance or supply shock.
+Open storylines:
+- [open] Iran war, Hormuz and oil: Brent about 91, WTI 84.5; watch XOM-specific news
+- [open] Q2 earnings season: NEM guidance and Nvidia Q2 results pending; a leader guidance raise is a catalyst
+- [escalating] AI financing and yields selloff: Bond yields surging, Fabrinet miss, AI bond supply; watch NVDA earnings reaction
+- [open] Gold rebound: Gold 4474, NEM +35% in 20 days; rising yields are a risk
+- [open] Copper and uranium: Copper near its high; watch FCX guidance, Cameco Westinghouse IPO
+- [open] LLY retatrutide Canada dispute: Canada Revenue Agency application on unapproved retatrutide; watch for filings or probes
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM guidance, Nvidia earnings result, FCX guidance, LLY filings); stay flat otherwise.

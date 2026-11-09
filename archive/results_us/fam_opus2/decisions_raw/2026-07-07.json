@@ -1,0 +1,38 @@
+{
+  "decision_day": "2026-07-07",
+  "market_view": "VIX is low at 15.6 and fell 15% this week, so this is a calm regime. Oil has slid about 26% in a month, but new headlines report tanker attacks in Hormuz and the US revoking Iran's sanctions waiver. Gold is in a bear market, and chips and pharma sit near their highs.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after Trump threatens to bomb Iran and reimpose naval blockade' (CNBC). This is a supply shock with an escalation path (blockade threat). The last close (July 6) does not include it yet.", "reasoning": "A Hormuz supply shock is a named catalyst. The policy escalation (waiver revoked, blockade threat) could last weeks. The risks are that one-off incidents fade and the jump may already be in the open price. XOM moves only 0.3-0.6x crude, so confidence is modest."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none. The '$9 bln tie-up' (Reuters Breakingviews) does not involve NEM, and Morningstar says gold has entered a bear market.", "reasoning": "Gold is down 21.6% from its high, the dollar is firm and the 10-year yield is near its high. The one-day bounce is not a catalyst, and there is no NEM-specific news."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The only NVDA headline is a company blog post. The SOX bounce yesterday is already priced in, and earnings season adds variance without direction."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY is near its high, and there are no trial, approval or pricing headlines. The one pharma headline is about an unrelated veterinary device."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FCX has no copper supply or demand catalyst. The small project-stake and uranium-mine opposition headlines do not reach FCX."}
+  },
+  "would_change_my_mind": "A de-escalation headline (waiver restored, talks with Iran) or a quick fade of crude back below 68 would remove the oil catalyst.",
+  "handoff": {
+    "run_id": "opus2-20260707-b2",
+    "written_at": "2026-07-07T12:00:00Z",
+    "decision_day": "2026-07-07",
+    "data_cutoff": "2026-07-07",
+    "what_changed": "The oil slide met a supply shock: headlines report tanker attacks in the Strait of Hormuz, the US revoking Iran's sale authorization, oil up 4-5%, and a Trump threat to bomb Iran or reimpose a blockade. Gold bounced 1% but Morningstar calls it a bear market. The other families are unchanged.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days", "why": "The Hormuz supply shock and Iran escalation are a named catalyst at confidence 0.53."},
+      "gold_miners": {"position": "flat", "why": "Gold is in a bear market with a firm dollar and no NEM catalyst; the $9bn miner tie-up is not NEM."},
+      "chips": {"position": "flat", "why": "There is no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "There is no trial, approval or pricing news for LLY."},
+      "copper_uranium": {"position": "flat", "why": "There is no copper catalyst for FCX."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran escalation", "status": "escalating", "note": "Tanker attacks, the revoked waiver and the blockade threat. Watch for de-escalation (exit risk for the XOM long) or more supply disruption.", "first_seen": "2026-07-07"},
+      {"name": "Oil price slide", "status": "open", "note": "WTI was 68.55 at the July 6 close, down 26% in 20 days and back to pre-Iran-war levels as output grows. The shock may reverse it.", "first_seen": "2026-07-01"},
+      {"name": "Gold bear market", "status": "open", "note": "Gold is down 21.6% from its high with a hawkish Fed under Warsh. Watch for a dovish turn or a safe-haven bid from the Iran escalation.", "first_seen": "2026-07-01"},
+      {"name": "Gold miner M&A", "status": "open", "note": "A $9bn gold miner tie-up (Reuters Breakingviews). It matters only if NEM becomes involved.", "first_seen": "2026-07-07"},
+      {"name": "Cigar Lake suspension", "status": "open", "note": "The Orano mill disruption matters for CCJ only if it becomes the leader.", "first_seen": "2026-07-01"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "A slow negative for copper demand.", "first_seen": "2026-07-01"},
+      {"name": "Q2 earnings season", "status": "open", "note": "Exxon signals a Q2 profit windfall (Reuters). NEM has its Q2 call scheduled. Look for guidance changes.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check the XOM long (10-day horizon from 2026-07-07) against Iran and Hormuz news. Then read the new record for a named catalyst in each family and decide long or flat.",
+    "lessons": []
+  }
+}

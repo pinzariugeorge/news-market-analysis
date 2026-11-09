@@ -1,0 +1,40 @@
+{
+  "decision_day": "2026-08-26",
+  "market_view": "Calm regime: VIX 15.5 (-15% in 20 days), 10-year eased to 4.64%, dollar soft. Metals are surging (gold 3-month high, copper at a 1-year high), crude fell 3% on Iran optimism, and NVDA results land around now (two-sided).",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none; NBC News 'Oil prices dip as cautious optimism over Iran trumps new fears of Russian escalation' points to easing, not a new supply loss", "reasoning": "WTI -3.1% on 08-25 as Iran optimism grows; the earlier sanctions threat is unwinding, not escalating. No unpriced closure or supply loss; Trump pressure on majors remains a downside risk. Stay flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none new; Guardian 'Gold price hits three-month high amid fears over Iran war and Trump economy' is a driver move already in prices", "reasoning": "Planned exit date (about 08-24) has passed. NEM +47.7% in 20 days and at its 52-week high; gold +6.2% in 5 days is already priced. Yahoo cost-dilution headline adds two-sided risk. Close NEM, take profit, go flat."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none one-sided; NVIDIA Newsroom 'NVIDIA Announces Financial Results for Second Quarter Fiscal 2027' is title-only with no numbers or guidance", "reasoning": "Earnings outcome and guidance unknown from the title; AWS 2 million GPU deal and Hugging Face deal are positive but likely tied to the results. OpenAI Jalapeno competition story. Scheduled event, two-sided. Flat."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none; only an FDA Listeria cheese notice, irrelevant to LLY", "reasoning": "No LLY-specific news; LLY -1.1% on 08-25 while MRK rallies on its own story. Sector near its high. Keep flat."},
+    "copper_uranium": {"call": "long", "horizon_days": 5, "confidence": 0.53, "catalyst": "Congo copper concentrate export ban (carried from the handoff note), no reversal or exemption seen; copper now at its 1-year high (6.71, +3.5% in 5 days), confirming continued tightness", "reasoning": "Continue FCX long started 2026-07-31 to its planned exit about 08-28. Exit triggers (ban reversal, copper breakdown, dollar rebound) absent; dollar soft. FCX +20.5% in 5 days raises pullback risk, so confidence only modest and short remaining horizon."}
+  },
+  "would_change_my_mind": "A Congo ban exemption or copper reversal would close FCX; NVDA results with a clear guidance raise and no sell-off, or a new Hormuz supply loss, would justify NVDA or XOM longs.",
+  "handoff": {
+    "run_id": "opus1-20260826-a",
+    "written_at": "2026-08-26T12:00:00Z",
+    "decision_day": "2026-08-26",
+    "data_cutoff": "2026-08-26",
+    "what_changed": "Crude fell (WTI 82.4, -3.1% on 08-25) on Iran optimism; gold hit a 3-month high (4695, +6.2% in 5 days) and NEM reached its 52-week high (+47.7% in 20 days), so NEM was closed at its planned date. Copper hit a 1-year high (6.71) and FCX +20.5% in 5 days; NVDA Q2 FY2027 results headline out (title only), plus AWS 2M GPU deal; Canada retaliated with up to 50% tariffs on US goods.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Iran optimism pulling crude down; no unpriced supply catalyst."},
+      "gold_miners": {"position": "flat (closed long NEM held since 2026-08-10 on 2026-08-26)", "why": "Planned exit passed; gold move and NEM at 52-week high already priced."},
+      "chips": {"position": "flat", "why": "NVDA results known only by title; outcome two-sided until guidance and reaction are visible."},
+      "pharma": {"position": "flat", "why": "No LLY-specific news."},
+      "copper_uranium": {"position": "long FCX since 2026-07-31, 20 days", "why": "Congo export ban keeps copper tight, copper at 1-year high; exit due about 2026-08-28."}
+    },
+    "open_storylines": [
+      {"name": "Iran war / Hormuz oil shock", "status": "fading", "note": "NBC 08-26: cautious optimism over Iran pushes oil down; WTI 82.4. Re-enter XOM only on a new closure or supply loss crude has not moved on.", "first_seen": "2026-08-21"},
+      {"name": "Russia-Ukraine escalation", "status": "open", "note": "New fears of Russian escalation (NBC 08-26); CIA director surprise Moscow trip (WSJ). Watch for energy supply hits.", "first_seen": "2026-08-26"},
+      {"name": "Trump vs oil majors' windfall", "status": "open", "note": "No new action; windfall tax, export limits or SPR releases would hurt XOM.", "first_seen": "2026-08-21"},
+      {"name": "Gold rally vs yields", "status": "open", "note": "Gold 4695 3-month high, 10-year eased to 4.64%, dollar soft. NEM closed; re-enter only on a new named catalyst, not the move itself.", "first_seen": "2026-08-21"},
+      {"name": "Barrick-Newmont Nevada settlement and costs", "status": "fading", "note": "NEM exited 08-26 after +47.7% in 20 days; Yahoo flags rising costs diluting the windfall. Watch production and cost guidance.", "first_seen": "2026-08-10"},
+      {"name": "NVDA Q2 FY2027 results", "status": "open", "note": "Results headline 08-26 (title only), AWS 2M additional GPUs, Hugging Face acquisition close; OpenAI chip competition (SemiAnalysis). Next run: check guidance and the stock reaction before any long.", "first_seen": "2026-08-21"},
+      {"name": "US-Canada tariffs", "status": "escalating", "note": "Canada retaliates with up to 50% tariffs on hundreds of US products (NYT 08-25); Cameco refinery cited in Canada uranium threat. Watch CCJ and inflation effects.", "first_seen": "2026-08-21"},
+      {"name": "Copper supply squeeze", "status": "open", "note": "Congo concentrate export ban; copper 6.71 at 1-year high. Exit FCX on ban reversal or exemption, copper breakdown or dollar rebound; hold ends about 2026-08-28.", "first_seen": "2026-07-31"},
+      {"name": "Uranium", "status": "open", "note": "Uranium ETF +10.4% in 5 days, CCJ +11.4%; Canada uranium export threat in the tariff fight. Indirect for FCX.", "first_seen": "2026-08-21"},
+      {"name": "LLY Q2 guidance raise", "status": "closed", "note": "Exited 2026-08-18; re-enter only on new LLY-specific news.", "first_seen": "2026-08-18"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note. If on or after 2026-08-28, close FCX and go flat in copper_uranium unless a new named catalyst appears; earlier, exit if the Congo ban is reversed or exempted or copper breaks down. Check NVDA results detail and post-earnings reaction for a one-sided guidance catalyst; re-check XOM for new supply loss; gold, pharma stay flat absent a new named catalyst."
+  }
+}

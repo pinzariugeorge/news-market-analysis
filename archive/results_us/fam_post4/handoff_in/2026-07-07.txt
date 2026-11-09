@@ -1,0 +1,15 @@
+# Handoff from the previous run (read first)
+Run fp4-20260701-a (decision day 2026-07-01, data cutoff 2026-07-01)
+What changed: First run, so there is no previous note. Headlines held no qualifying catalyst for any leader (XOM, NEM, NVDA, LLY, FCX), so all five families are flat.
+Holdings and reasons:
+- oil_gas: flat | WTI fell 25% in 20 days and nothing in the headlines gives a one-sided setup.
+- gold_miners: flat | Gold is weak against a firm dollar and yields, and no miner catalyst appears.
+- chips: flat | The sector surge is already priced in and the headlines are only commentary.
+- pharma: flat | No LLY-specific news; the stock is near its high.
+- copper_uranium: flat | No copper or uranium supply or demand headline.
+Open storylines:
+- [open] Oil slump: WTI is down 38% over 60 days. Watch for OPEC+ or supply headlines that justify continuation or a reversal.
+- [open] Chip rally: The semiconductor ETF is up 67% over 60 days. Watch for earnings and TSMC monthly sales around the 10th.
+- [open] Gold drawdown: Gold is down 24% from its high. Watch the Fed, the dollar and the jobs report.
+Pending orders: none
+EXACT NEXT JOB: Run the 2026-07-02 decision: read the new record and headlines, then decide each family under the catalyst rule.

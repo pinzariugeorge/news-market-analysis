@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260728-a (decision day 2026-07-28, data cutoff 2026-07-28)
+What changed: WTI fell 7.5% on Iran diplomacy headlines; a China lithography report hit semis and the Nasdaq 100 entered a correction. JNJ announced a $5.5B talc settlement; SCCO beat Q2 estimates. LLY has no new news; the long continues.
+Holdings and reasons:
+- oil_gas: flat | Oil drop on diplomacy is a priced driver move; no XOM-specific catalyst.
+- gold_miners: flat | Only analyst notes on NEM; gold and miners stay weak against high yields.
+- chips: flat | Sector rout on China lithography news is not a catalyst for a long; NVDA's SSI investment is minor.
+- pharma: long LLY since 2026-07-23, 10 days | Retatrutide phase 3 wins ahead of an FDA filing; thesis intact, no adverse news.
+- copper_uranium: flat | SCCO beat is a priced peer read-through; no FCX-specific catalyst.
+Open storylines:
+- [fading] Iran war and oil: WTI 82.6 after a 7.5% one-day fall on diplomacy; watch for talks collapsing versus a real deal, XOM earnings, CVX report July 31
+- [open] Q2 earnings season: SCCO beat on July 27; CVX reports July 31; NEM, AEM, XOM, big tech and chip reports still to come; a guidance raise by a leader would be a catalyst
+- [escalating] Chip selloff and China lithography scare: Semi ETF -10% in 20 days, Nasdaq 100 in correction, ASML and SanDisk hit; watch NVDA-specific news and TSMC monthly sales
+- [open] LLY retatrutide and China trial probe: Long open to about 2026-08-06; watch FDA filing, safety news and the unresolved China trial probe; exit at horizon
+- [open] Gold slump and rates: Gold 23% below high, 10y yield 4.64%, dollar firm; Fed meets today; watch NEM earnings and guidance
+- [open] Uranium sector sell-off: Uranium ETF -7.5% in 20 days, CCJ not the leader; watch Section 232 decision
+- [open] JNJ talc settlement: $5.5B settlement needs 95% claimant acceptance; JNJ is not the family leader
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; LLY long opened 2026-07-23 with a 10-day horizon (exit about 2026-08-06), check for LLY news (filing, safety, China probe) and exit at horizon; look for named leader-specific catalysts (XOM supply shock or earnings, NVDA news, NEM guidance, FCX guidance); stay flat otherwise.

@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-09-09",
+  "market_view": "Calm equity regime (VIX 15.7, 49% below its 252-day high) but the 10-year yield is at a high of 4.81% and oil keeps rising on US-Iran Middle East tension. No family has a stock-specific catalyst in the headlines.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: Zacks 'Oil Surge Continues on Escalating Middle East Crisis' (WTI +13% in 20 days, three-month highs) is a driver move already in the price, and it names no XOM item", "reasoning": "WTI +8.5% in 5 days is priced in. XOM lagged (-0.2% in 5 days), but a lagging stock is not a named catalyst and there is no XOM-specific headline. Escalation risk cuts both ways."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the only AEM item (asset sale to Vizsla Copper) is minor and concerns AEM, not NEM", "reasoning": "Gold is -16.5% from its high with the 10-year yield at its high; NEM is +30% in 60 days. No Fed, dollar or NEM headline. The August jobs report has passed and the next scheduled risk is inflation or Fed data."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none: the Motley Fool and Zacks items on Broadcom AI revenue and photonics stocks are opinion pieces, not an NVDA event", "reasoning": "NVDA fell 2% on a day when the sector rose 1.2%. The prior memory-cost margin worry is unresolved, and there is no guidance, export-rule or earnings item. Market-wide AI optimism is not a named catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none: the Pfizer item is not about LLY; no trial, regulator or pricing headline", "reasoning": "LLY is -8.8% in 20 days and the health care ETF fell 2.5% yesterday, but a dip is not a catalyst. No LLY news."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the Zacks 'FCX $1000 a decade ago' piece is filler and the Canterra drill result is small and unrelated to FCX", "reasoning": "Copper hit a 252-day high (+2.2% yesterday) and FCX +5.4% on the day; that is a driver and stock move already priced in. There is no supply-outage or China-data headline, so no continuation reason."}
+  },
+  "would_change_my_mind": "A named XOM, NEM, NVDA, LLY or FCX event: guidance change, trial or regulator decision, export-rule change, or a confirmed supply outage or Gulf disruption.",
+  "handoff": {
+    "run_id": "fp4-20260909-a",
+    "written_at": "2026-09-09T09:00:00Z",
+    "decision_day": "2026-09-09",
+    "data_cutoff": "2026-09-09",
+    "what_changed": "Six days since the last note (09-03). Copper rose to a 252-day high (+2.2% in 1 day), FCX +5.4% and SCCO +4.9% in 1 day. WTI rose a further 8.5% in 5 days on a Middle East/Iran escalation and AMD +5.9% in 1 day, while XOM stayed flat. Gold was flat and LLY fell another 2%. Headlines were again noise with no named catalyst, so all five families stay flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI +13% in 20 days on US-Iran tension is priced in and there is no XOM-specific headline."},
+      "gold_miners": {"position": "flat", "why": "Gold is 16.5% below its high with the 10-year yield at 4.81% and no NEM, Fed or dollar headline."},
+      "chips": {"position": "flat", "why": "No NVDA event; memory-cost margin worry is unresolved and sector news is opinion pieces."},
+      "pharma": {"position": "flat", "why": "LLY is -8.8% in 20 days but there is no trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "Copper's high and FCX +5.4% in 1 day are priced in and there is no supply or China-data headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil and Middle East escalation", "status": "escalating", "note": "WTI 93, Brent 98, three-month highs on US-Iran tension and disrupted Gulf flows; XOM lags (-0.2% in 5 days). Watch for OPEC+, Hormuz or a XOM-specific headline.", "first_seen": "2026-09-03"},
+      {"name": "NVDA margin and memory costs", "status": "open", "note": "Zacks memory-cost margin worry from the last note is still unresolved; NVDA -2% on 09-08 while the sector rose. Watch for guidance, analyst or export-rule headlines.", "first_seen": "2026-09-03"},
+      {"name": "Gold pullback and high yields", "status": "open", "note": "Gold 4439, 16.5% below its high; 10-year yield 4.81% at its high; dollar softer. Watch inflation, the Fed and the dollar.", "first_seen": "2026-09-03"},
+      {"name": "Copper at highs", "status": "open", "note": "Copper at a 252-day high and FCX/SCCO/TECK jumped on 09-08 with no stated reason in the headlines. Watch for a supply outage or China-data headline that explains it; uranium ETF +4.4% in 5 days but 23% below its high.", "first_seen": "2026-09-09"},
+      {"name": "LLY dip", "status": "open", "note": "LLY -8.8% in 20 days, 12.2% below its high; the health care ETF -2.5% on 09-08. Watch for a trial, pricing or regulator headline.", "first_seen": "2026-09-03"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-09-09: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (oil escalation news, copper explanation, NVDA guidance or export rules, LLY trial or pricing); decide each family under the catalyst rule."
+  }
+}

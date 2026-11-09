@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260831-a (decision day 2026-08-31, data cutoff 2026-08-31)
+What changed: Over the weekend the US struck Iran again; CNBC says crude hit $90 and 24/7 Wall St. says CVX and XOM rose 3% with WTI at $86 (Friday WTI close 83.4). Friday 08-28 was risk-off in metals and chips: gold -2.9%, NEM -3.3%, NVDA -4.6%, uranium ETF -5.8%, FCX -2.5%. FCX closed at its planned exit; XOM opened long on the Iran strikes and a Venezuela headline.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, 10 days | Fresh US strikes on Iran push crude up from 83.4 and Trump says Exxon is going into Venezuela.
+- gold_miners: flat | Gold falling again with yields and dollar up; no new named catalyst.
+- chips: flat | NVDA fell 4.6% after results with no guidance detail in the record; two-sided.
+- pharma: flat | FDA approval headline does not name the drug or company.
+- copper_uranium: flat (closed long FCX held since 2026-07-31 on 2026-08-31) | Planned 20-day hold ended; no new copper catalyst.
+Open storylines:
+- [escalating] Iran war / US strikes and oil: Latest US attacks on Iran lift crude toward $86-90. Exit XOM on a ceasefire/de-escalation deal or if WTI falls back below about 83.
+- [open] Exxon in Venezuela: Trump says Exxon is 'going in' to Venezuela; G20 meets amid a Venezuela deal. Watch for deal terms and sanctions changes.
+- [open] Trump vs oil majors' windfall: A windfall tax, export limits or SPR release would hurt XOM, more likely with crude near $90.
+- [open] Russia-Ukraine escalation: No new headline this run; watch energy supply hits.
+- [fading] Gold rally vs yields: Gold 4530, -3.2% in 5 days; 10-year 4.72%, dollar up. Re-enter NEM only on a new named catalyst.
+- [open] NVDA Q2 FY2027 results: NVDA -4.6% on 08-28; no guidance detail seen. Z.ai model on Chinese chips is a competition note. Long only on a clear guidance catalyst.
+- [open] US-Canada tariffs: G20 meets amid Canada tariff rift; watch CCJ and Canada uranium export threat.
+- [fading] Copper supply squeeze: FCX closed after the 20-day hold; copper 6.56 near its high. Re-enter only on new supply news (Congo ban change, mine outage).
+- [open] Uranium: Uranium ETF -5.8% and CCJ -5.9% on 08-28; local mining-ban headlines only.
+- [open] Unnamed FDA diabetes drug approval: Action News 5 08-30: FDA approves new use of popular diabetes drug; check whether it is an LLY drug (tirzepatide) before any LLY long.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Hold XOM (bought 2026-08-31, 10-day hold, exit about 2026-09-15) unless an Iran ceasefire/de-escalation, a Trump windfall tax/SPR release, or WTI back below about 83 appears; then go flat. Keep copper_uranium flat unless new copper supply news. Check whether the FDA diabetes approval is LLY's and whether NVDA guidance detail is available; gold stays flat absent a new named catalyst.

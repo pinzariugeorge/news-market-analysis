@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260723-a (decision day 2026-07-23, data cutoff 2026-07-23)
+What changed: Three days since the last note (07-20). WTI rose another 5% to 86.8 (+18.6% over 20 days), gold bounced 2.5% over 5 days, the semiconductor ETF stayed roughly flat over 5 days, and VIX eased to 16.6. Headlines again held no leader-specific catalyst.
+Holdings and reasons:
+- oil_gas: flat | Oil rally is already priced in and there is no XOM or OPEC+ headline.
+- gold_miners: flat | Gold and NEM bounce has no Fed, dollar or company catalyst.
+- chips: flat | Only a TSMC US-investment promotional article and opinion pieces, no NVDA-specific catalyst.
+- pharma: flat | No LLY news in the headlines.
+- copper_uranium: flat | FCX jump has no supply or demand headline and copper itself fell.
+Open storylines:
+- [escalating] Oil rebound: WTI 86.83, +9.1% over 5 days and +18.6% over 20 days, but -8% over 60 days. Watch OPEC+ or supply headlines and XOM earnings for continuation or reversal.
+- [fading] Chip sell-off and memory reset: Semiconductor ETF -5.7% over 20 days and flat over 5 days. TSMC announced a larger US investment (Motley Fool). Watch TSMC sales, chip earnings and the AI-spending doubts (Oracle, IBM).
+- [open] Gold drawdown: Gold 21.9% below its high, +2.5% over 5 days; miners still down 20-27% over 60 days. Watch the Fed, dollar, 10-year yield (4.66%) and the jobs report.
+- [open] IBM capex warning and AI-spending doubt: IBM fell about 25% after a Q2 pre-announcement miss; Oracle is down over 50% from its peak. Watch the read-through to chip earnings.
+- [fading] VIX uptick: VIX 16.6, -2.4% on the day, -14.6% over 20 days. Closed unless it climbs above about 20.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-07-23: read the new record and headlines, then decide each family under the catalyst rule.

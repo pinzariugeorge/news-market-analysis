@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-07-15",
+  "market_view": "Calm regime (VIX 16.5, down 47% from its 1-year high) with a soft US inflation print, but yields and the dollar stay firm under a hawkish Warsh Fed; the US-Iran conflict is escalating and has driven crude up 12-14% in 5 days.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "'Oil prices rise 2% to one-month high as US-Iran attacks deepen supply disruption' (Reuters, 2026-07-14): ongoing Hormuz supply shock, escalating not reversing.", "reasoning": "Hold XOM from 07-07; the exit condition (de-escalation) is not met and supply disruption is deepening. XOM rose only 2.4% against WTI +12.6% in 5 days, so the move is not fully reflected. Horizon ends about 07-21; Q2 earnings later add variance."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold bear market (down 15% in 60 days) with firm dollar and near-high 10-year yields; Fed chair signals no tolerance for inflation. NEM headlines are opinion pieces, not catalysts."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NVIDIA robotics and Japan partnership posts are routine product news; NVDA already rose 4% on 07-14. Valuation articles are not catalysts. No export-rule or guidance news."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "LLY fell 6.7% in 5 days with the whole sector and no stock-specific headline; no trial, approval or pricing news to name. A dip alone is not a catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'Cameco Resolves Cigar Lake Disruption' bears on CCJ and uranium, not leader FCX, and removes a supply-shock tailwind. The FCX +3.3% copper bounce is already priced in."}
+  },
+  "would_change_my_mind": "A US-Iran ceasefire or Hormuz reopening would make me exit XOM at once; a named FCX, NVDA or LLY company catalyst (guidance, approval, export change) would make me consider a long.",
+  "handoff": {
+    "run_id": "opus1-20260715-a",
+    "written_at": "2026-07-15T12:30:00Z",
+    "decision_day": "2026-07-15",
+    "data_cutoff": "2026-07-15",
+    "what_changed": "Iran conflict escalated: Reuters reports US-Iran attacks deepening supply disruption, WTI 79 (+12.6% in 5 days), Brent 85; XOM lagged (+2.4%). Soft US inflation reading and Warsh tells Congress no tolerance for high inflation. Cameco resolved the Cigar Lake disruption.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days", "why": "Iran/Hormuz supply shock is escalating, not reversed; horizon ends about 2026-07-21."},
+      "gold_miners": {"position": "flat", "why": "Gold bear market with firm dollar and yields; only opinion pieces on NEM."},
+      "chips": {"position": "flat", "why": "Only routine NVIDIA product posts; no guidance or export-rule catalyst."},
+      "pharma": {"position": "flat", "why": "LLY down 6.7% in 5 days with the sector and no specific news."},
+      "copper_uranium": {"position": "flat", "why": "Cigar Lake resolution bears on CCJ, not leader FCX; copper bounce priced in."}
+    },
+    "open_storylines": [
+      {"name": "Iran / Strait of Hormuz conflict", "status": "escalating", "note": "US-Iran attacks deepening supply disruption; exit XOM on ceasefire, Hormuz reopening or the 10-day horizon (about 07-21). Check WTI and Brent closes.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Late July, near or after the hold window end; adds variance.", "first_seen": "2026-07-10"},
+      {"name": "Gold bear market", "status": "open", "note": "Watch dollar, real rates, the jobs report and the NEM Q2 call; analyst buy notes are not catalysts.", "first_seen": "2026-07-07"},
+      {"name": "Uranium supply and policy", "status": "fading", "note": "Cameco resolved the Cigar Lake disruption; leader is FCX so the impact is indirect.", "first_seen": "2026-07-07"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "Watch for more automakers switching away from copper (FCX demand headwind). No update in this record.", "first_seen": "2026-07-07"},
+      {"name": "Inflation, Warsh Fed and Q2 earnings", "status": "open", "note": "Soft US inflation print but Warsh says no tolerance for high inflation; earnings season raises variance, not a reason to be long.", "first_seen": "2026-07-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note; exit XOM to flat if the Iran/Hormuz conflict de-escalates or the 10-day horizon from 2026-07-07 has ended (about 07-21), otherwise re-check its catalyst; then re-check all five families for a named catalyst in the new headlines."
+  }
+}

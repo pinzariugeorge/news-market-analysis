@@ -1,0 +1,21 @@
+# Handoff from the previous run (read first)
+Run opus1-20260731-a (decision day 2026-07-31, data cutoff 2026-07-31)
+What changed: Exxon and Chevron reported a record wartime Q2 ($26.5B combined) but Trump threatened price interventions and Brent kept falling (-11.6% in 5 days). Chips rebounded sharply on 07-30 (SOXX +6.9%, AMD +13%) and VIX fell to 17. CNBC reports storms and a global supply squeeze sending copper soaring; opened a long FCX on that catalyst.
+Holdings and reasons:
+- oil_gas: flat | Q2 windfall already reported and oil falling as Iran tensions ease; Trump price-intervention threat is a downside risk.
+- gold_miners: flat | Gold bounce on a weaker dollar after the Fed hold is priced; yields near 1-year high; no catalyst.
+- chips: flat | One-day rebound after a rout is not a catalyst; no NVDA-specific news.
+- pharma: flat | LLY fell 4.6% on 07-30 without a headline; waiting for Q2 guidance.
+- copper_uranium: long FCX since 2026-07-31, 20 days | CNBC 'Deadly storms and a global supply squeeze are sending copper prices soaring' is a persistent supply shock; exit if supply returns or copper reverses on a stronger dollar.
+Open storylines:
+- [fading] Iran war / Hormuz oil shock: Brent 89, down 11.6% in 5 days. Re-enter XOM only on renewed tanker attacks or chokepoint closure with crude not yet repriced.
+- [open] Oil windfall and Trump price interventions: Record XOM/CVX Q2 profits drew Trump's ire and intervention threats; watch for windfall tax, export limits or SPR actions (negative for XOM).
+- [open] Gold bear market and rising yields: 10-year 4.66% near 1-year high; Fed held this week; watch the jobs report, dollar and NEM news.
+- [open] Chip rout and rebound: Rout from Seoul then a sharp 07-30 rebound; watch NVDA news, export rules and big tech capex in earnings.
+- [open] US global tariffs and inflation: Trade partners rebuke the forced-labor rationale; euro area inflation 2.9%; watch metals and energy carve-outs and retaliation.
+- [open] LLY Q2 earnings and retatrutide: LLY -4.6% on 07-30 unexplained; long only on a guidance raise or regulator filing news at Q2 results.
+- [escalating] Copper supply squeeze: Storms and a global squeeze sent copper +2.7% to 6.44, 3% off its 1-year high; FCX long. Watch mine restarts, China demand, the dollar and FCX news.
+- [open] Uranium: Cameco Q2, Westinghouse IPO, DRC undeclared exports: Cameco reports record uranium prices and plans a Westinghouse IPO; studies show undeclared uranium from the DRC. Indirect for FCX.
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note; confirm the FCX long filled and check the copper supply story (exit if supply recovers or copper reverses on a dollar rebound; the 20-day hold ends around 2026-08-28). Re-check the four flat families for a named catalyst: Iran/Hormuz re-escalation or Trump oil interventions for XOM, LLY Q2 guidance, NVDA or export-control news, and gold on yields and the jobs report.

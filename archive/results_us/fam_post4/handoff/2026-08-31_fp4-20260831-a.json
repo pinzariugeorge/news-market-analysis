@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260831-a",
+ "written_at": "2026-08-31T09:00:00Z",
+ "decision_day": "2026-08-31",
+ "data_cutoff": "2026-08-31",
+ "what_changed": "Five days since the last note (08-26). 08-28 was a broad risk-off day: gold -2.9%, NEM -3.3%, the semiconductor ETF -3.5%, NVDA -4.6% (two days after earnings) and the uranium ETF -5.8%. The 08-31 headlines were again noise, with no catalyst for any family.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI -4.2% in 5 days is priced in, and the only oil item is a bearish Hormuz and Venezuela opinion piece with no XOM headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold fell 2.9% after a rally, NEM is +36.6% in 20 days, and no Fed, dollar or NEM headline gives a reason."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "NVDA fell 4.6% after its earnings with no guidance or export-rule headline, and a selloff alone is not a catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, regulator or pricing headline; the -6.4% 5-day dip is not a catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX +22% in 20 days and -2.5% on 08-28 with no copper supply, China data or FCX headline."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "NVDA post-earnings reaction",
+   "status": "open",
+   "note": "NVDA -4.6% on 08-28, two days after earnings, with no cause in the headlines. Watch for a guidance, analyst or export-rule headline.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Gold rally and pullback",
+   "status": "open",
+   "note": "Gold +10% in 20 days then -2.9% on 08-28; NEM +36.6% in 20 days. 10-year yield 4.72% near its high. Watch the Fed, the August jobs report (first Friday) and the dollar.",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "Copper and miners surge",
+   "status": "open",
+   "note": "FCX +22% in 20 days, 4.3% below its high. Watch for a supply outage or China data headline.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Oil softness",
+   "status": "open",
+   "note": "WTI -4.2% in 5 days and -13% in 60 days. A Motley Fool piece cites a Hormuz reopening and higher Venezuelan output. Watch OPEC+ and supply headlines.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "LLY dip",
+   "status": "open",
+   "note": "LLY -6.4% in 5 days and 8.3% below its high. Watch for a trial, pricing or regulator headline.",
+   "first_seen": "2026-08-26"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-08-31: read the new record and headlines, look for a named catalyst on NVDA, NEM, FCX, LLY or XOM, check the jobs report, and decide each family under the catalyst rule."
+}

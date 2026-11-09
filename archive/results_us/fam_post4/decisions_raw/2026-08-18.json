@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-18",
+  "market_view": "Calm regime: VIX 15.2 (down 18.6% in 20 days, up 6.6% on the day), S&P slightly lower on 08-17, 10-year yield 4.72% near its high, dollar flat. Headlines are again opinion pieces and insider-sale notes with no leader-specific catalyst.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI +2.6% yesterday and XOM +8.8% in 20 days are already priced in. No OPEC+, supply or XOM headline in the record; XOM earnings window adds variance only."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "NEM +34.9% in 20 days and gold +11.4% are already in the price, with the 10-year yield at 4.72% as a headwind. No Fed, dollar or NEM headline explains the rally."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "none", "reasoning": "NVDA earnings on Aug. 26 (Motley Fool, 'History Says Nvidia Is Going to Disappoint Wall Street After Aug. 26') is a scheduled event with no one-sided setup; the piece is opinion. Other items are sentiment or AI-cloud stories."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY trial, regulator or pricing headline. LLY fell 4% over 5 days and is 4.2% below its high, which is not a catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No copper supply, China data or FCX headline. FCX +16% in 20 days and +2.8% yesterday are already priced in; the nuclear articles are generic opinion."}
+  },
+  "would_change_my_mind": "A concrete headline on the leader or its driver: an OPEC+ or supply shock, an NVDA pre-announcement or export-rule change, an LLY trial or approval, a copper supply outage, or a Fed or jobs surprise for gold.",
+  "handoff": {
+    "run_id": "fp4-20260818-a",
+    "written_at": "2026-08-18T09:00:00Z",
+    "decision_day": "2026-08-18",
+    "data_cutoff": "2026-08-18",
+    "what_changed": "Five days since the last note (08-13). NEM now +34.9% in 20 days, FCX +16% in 20 days, XOM +8.8% in 20 days, and VIX is 15.2. Headlines on 08-18 were again noise (Motley Fool opinion pieces, insider sales); NVDA earnings on Aug. 26 is the only scheduled leader event.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI and XOM moves are priced in and no OPEC+ or XOM headline exists."},
+      "gold_miners": {"position": "flat", "why": "NEM +34.9% in 20 days is already priced in and no Fed, dollar or NEM headline explains it."},
+      "chips": {"position": "flat", "why": "NVDA earnings on Aug. 26 has no one-sided setup, and the pieces about it are opinion."},
+      "pharma": {"position": "flat", "why": "No LLY trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "No copper supply, China data or FCX headline."}
+    },
+    "open_storylines": [
+      {"name": "NVDA earnings Aug 26", "status": "open", "note": "Scheduled event inside the next window. Watch for a pre-announcement, guidance or export-rule headline; the Motley Fool 'will disappoint' piece is opinion, not a catalyst.", "first_seen": "2026-08-18"},
+      {"name": "Gold rally", "status": "open", "note": "Gold +11.4% and NEM +34.9% in 20 days, gold still 15.9% below its high. Watch the Fed, the August jobs report and the 10-year yield at 4.72%.", "first_seen": "2026-08-10"},
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -14% over 60 days but +2.6% yesterday. Watch OPEC+ or supply headlines, Iran and shipping tensions, and XOM earnings.", "first_seen": "2026-08-10"},
+      {"name": "LLY near highs", "status": "open", "note": "LLY 4.2% below its high, +16% in 60 days. Watch LLY trial, pricing or earnings news.", "first_seen": "2026-08-13"},
+      {"name": "Iran tensions", "status": "fading", "note": "No fresh headline on 08-18; relevant only if a harder oil or gold headline appears.", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-18: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

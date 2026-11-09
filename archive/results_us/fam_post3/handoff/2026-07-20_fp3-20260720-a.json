@@ -1,0 +1,75 @@
+{
+ "run_id": "fp3-20260720-a",
+ "written_at": "2026-07-20T14:00:00Z",
+ "decision_day": "2026-07-20",
+ "data_cutoff": "2026-07-20",
+ "what_changed": "VIX +12% on the day; WTI +4.5% (+15.5% in 5 days) on Iran/Middle East escalation; semis -9% in 5 days after Oracle debt and AI capex worries. COP agreed to buy 42% of bp's Kirkuk venture; Q2 earnings previews for NEM, FCX, OXY; no leader-specific catalyst.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil spike is a driver move already priced; Kirkuk deal is COP not XOM."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Only NEM earnings previews; gold and miners still weak with no catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Sector selloff on AI capex worries; no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Lilly buys ATAI, small; no LLY trial or policy news."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX earnings preview only; uranium and copper weak."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war and oil",
+   "status": "escalating",
+   "note": "WTI 82.5, +15.5% in 5 days; watch for a real supply disruption versus sentiment",
+   "first_seen": "2026-07-15"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "NEM, FCX, OXY and big tech report this week; a guidance raise by a leader would be a catalyst",
+   "first_seen": "2026-07-15"
+  },
+  {
+   "name": "Chip selloff and AI capex worries",
+   "status": "open",
+   "note": "Semi ETF -9% in 5 days; Oracle debt concern; AMD Advancing AI event and Helios on Azure; watch NVDA-specific news and TSMC",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "FCX Grasberg output cut",
+   "status": "open",
+   "note": "No new news; watch FCX Q2 earnings and restart updates",
+   "first_seen": "2026-07-15"
+  },
+  {
+   "name": "LLY China trial security probe",
+   "status": "open",
+   "note": "No update; watch for escalation. Lilly also acquiring ATAI",
+   "first_seen": "2026-07-15"
+  },
+  {
+   "name": "Gold slump and rates",
+   "status": "open",
+   "note": "Gold -8% in 20 days, -15% in 60; firm dollar and yields; watch Fed and NEM earnings",
+   "first_seen": "2026-07-15"
+  },
+  {
+   "name": "Uranium sector sell-off",
+   "status": "open",
+   "note": "Uranium ETF -18% in 20 days; CCJ down; not the leader FCX",
+   "first_seen": "2026-07-20"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; look for a named leader-specific catalyst (XOM supply shock, NVDA news, LLY trial, FCX or NEM earnings guidance); stay flat if none."
+}

@@ -1,78 +1,53 @@
-# To-do (open items we must not forget)
+# To-do (open items)
 
-Last updated: 2026-11-06
+Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_era.md`.
 
-## 1. News source for 2000-2007 (pre-2008)
-Why: the S&P headlines dataset starts in 2008, but prices go back to 1950. We want news for the dot-com crash, the 2001 attacks, the 2002 lows, the 2003 war and the 2006 midterms so the handbook and agents have informed context. Nothing is downloaded yet. 2020 stays the test year and 2021+ the holdout.
+## Decisions needed from the user
+- [x] Account size: 1,000 EUR (2026-11-09).
+- [x] ETFs: no; read as no ETCs either, commodities are drivers only (2026-11-09). Tell me if ETCs should be allowed after all.
+- [x] Scheduled task `snapshot-estimates-daily` disabled (2026-11-09); its US data in `data/raw/estimates/` is no longer updated.
+- [ ] Open a Saxo account (or get access to its instrument search) to verify which European names and ETCs are tradable for a Romanian retail client, and the real commission, FX and custody figures. Never paste credentials in chat.
+- [ ] Approve or refuse any paid data source if the free Yahoo feed proves unreliable.
 
-### Options found (2026-11-06)
-| Option | Coverage and content | Needs from the user |
-|---|---|---|
-| NYT Archive API | Headlines and abstracts by month from 1851 (all of 2000-2007, 96 months). General news, not finance-only. Free for non-commercial use; rate limits not verified. Endpoint: `https://api.nytimes.com/svc/archive/v1/<year>/<month>.json?api-key=...` | Create a free key at developer.nytimes.com and put it in `.env` (never in chat). Cache each month locally. |
-| HF `Brianferrell787/financial-news-multisource` (https://huggingface.co/datasets/Brianferrell787/financial-news-multisource) | 24 subsets, 57M+ rows, parquet, about 21 GB in total (low-confidence figure). Columns: date, text (title + body), extra_fields (JSON; `date_trading` = next NYSE session open, recommended for backtests). Gated; license "other", non-commercial research only. | Log in to Hugging Face and request access, then token in `.env`. Download only the chosen subsets via `data_files="data/<subset>/*.parquet"`. |
-| ABC News Australia (`therohk/million-headlines`) | From about 2003 (start date not verified), general and local, not finance-focused. | Nothing (Kaggle access already works). |
+## 1. European data and universe
+- [x] Free daily history and live delayed quotes tested; 47 candidates probed (`universe/EU_UNIVERSE.md`, `src/eu_probe.py`, `src/live_feed.py`).
+- [ ] Port `src/select_universe.py`, `src/familydata.py`, `src/build_universe.py` to the European daily files (`data/raw/eu/daily/`), currencies (EUR, GBp, CHF, DKK, NOK, SEK, PLN) and exchange calendars; apply the point-in-time liquidity rule.
+- [ ] Commodity and driver series stay in `data/raw/commodities/`; add European energy and metal references (Brent, TTF gas, EUA carbon) if a free source exists.
+- [ ] Verify Yahoo volume on Swiss and Nordic venues (Roche looks under-reported).
+- [ ] Decide what replaces uranium (nothing, or an ETC if found).
 
-### Relevant HF subsets (ranges are the dataset card's own approximate descriptions; file sizes and row counts could not be seen because the dataset is gated)
-- `fnspid_news`: 1999-2023, financial news. Recommended first choice for finance coverage.
-- `nyt_headlines_1990_2020`: covers 2000-2007.
-- `nyt_articles_2000_present`: 2000-2025.
-- `gold_news_kaggle`: 2000-2021.
-- `djia_stock_headlines`: card says 2000-2016 (the well-known Kaggle "Daily News for Stock Market Prediction" set is Reddit WorldNews 2008-2016, so verify).
-- `benzinga_6000stocks`: "2000s-2010s", undated.
-- `bloomberg_reuters`: Bloomberg 2006-2013, Reuters 2007-2013.
-- `headlines_10sites_2007_2022`, `finsen_us_2007_2023`: start 2007.
-- Not useful for this window: `cnbc_headlines` (2017-2020), `huffpost_news` (2012-2018), `mind_news_2019`, `yahoo_finance_*`, `frontpage_news`, `all_the_news_2`.
+## 1a. LIVE since 2026-11-09 (account A, Opus with learning)
+- [x] Paper broker, risk manager, cycle runner, daemon, prompts, logon task, scheduled agent tasks, report page; first cycle ran 13:35 CET (no trade).
+- [ ] First unattended morning (2026-11-10 09:10 local): check `data/paper/state/<date>.json`, `daemon.log`, and the scheduled task runs; approve any permission prompts so they are stored on the tasks.
+- [ ] Baselines offline (random calls, basket, cash) as pre-registered.
+- [ ] Set lid-close action to "do nothing" (user, Windows power settings) if the laptop must keep running with the lid shut.
 
-### Agreed next actions
-- [ ] User picks the source(s). Current recommendation: `fnspid_news` (HF) for finance coverage plus the NYT Archive API for major world events.
-- [ ] Download, normalize to `date, decision_date, split, title` like `news_all.csv`, drop any price/outcome columns, apply the next-trading-day timing rule, de-duplicate.
-- [ ] Extend `src/build_news_corpus.py` and document the new files in `ROADMAP.md`.
-- [ ] Also write a small event calendar for 2000-2007 from general knowledge if news coverage stays thin.
+## 1b. Agents and daily cycle (design in `DAILY_PLAN_EU.md`)
+- [ ] User confirms: roster (A = Opus with learning, B = Sonnet with learning, plus baseline bots), risk limits, themes (five, or add banks, power equipment, defence).
+- [ ] Build in order: paper broker core, risk manager and baseline bots, collector and European prompts and handbook, scheduler and a dry-run week.
+- [ ] Freeze the pre-registered pass bar before day 1.
 
-## 2. Handbook work
-- [x] Base-rate table recomputed on 1950-2019 and by volatility regime (2026-11-06); calendar patterns added as 3.15, volatility regime as 3.16.
-- [ ] More calendar entries still open: Fed meeting days (needs the FOMC date list), earnings seasons, quarter-end and options expiration, holidays, 2008/2012/2016 election detail, crisis episodes (1987, 2000-2002).
-- [x] Reviewed the 247 big-move days of 2008-2019 by event type (`handbook/BIGDAY_REVIEW.md`); ranges updated. Still open: a true predictive test (news before day D vs move on D).
-- [ ] Better causal news source: the S&P headlines name a cause on fewer than 1 in 4 big days. Candidates are in section 1, plus event calendars (FOMC, jobs report, CPI dates).
-- [x] Daily record format, agent prompt v0, decision log and storylines template written (`agent/`); `src/build_daily_context.py` builds the past-only record (leak check passed).
-- [ ] Build the simulation harness: loop over days, call the agent (subagents or API, decide later), store decisions, reveal outcomes, score vs baselines. Baselines on 2008-2019 are done (`results/BASELINES.md`).
+## 2. Paper broker (`src/paper_broker/`)
+- [x] Broker-style dashboard (`src/dashboard_server.py`, `dashboard/index.html`) with a DEMO ledger; it reads the ledger JSON v0 that the broker must write to `data/paper/ledger.json`.
+- [ ] Near-live prices: stay on Yahoo; if it fails, choose between Saxo level 1 (about 7 EUR a month per exchange) and EODHD (user approval needed).
+- [ ] Ledger (SQLite), order and fill model (next-bar fill, spread and slippage by liquidity), Saxo cost model replacing `src/costs.py`, FX and pence handling, exchange hours and holidays, risk limits, idempotent order log, reconcile command, self-tests.
+- [ ] Replay a past week of 5-minute bars through it and check every fill and fee by hand.
+- [ ] Trade log field for the quoted catalyst, confidence, horizon and headline; wire `src/learn_prep.py` to the trade log instead of `decisions_raw`.
 
-## 3. Simulation harness and model use (no extra API cost planned)
-- [x] Pilot v0 done: 12 decisions via Sonnet subagents; about 67k tokens per decision (about 0.8M tokens for 12), so 3,000 days (about 200M) is not feasible on the subscription and even 300 days is about 20M. See PROGRESS_LOG.
-- [ ] Cut the cost per decision: a smaller handbook extract per day, chronological multi-day runs in one session (the agent keeps the handbook in context and learns day by day, like live), and fewer days. Pick one and re-measure.
-- [ ] Decide the test design from that: sampled days (all big-move days plus a few hundred random days) over several sessions, and/or a rule-based Python version of the handbook for all days with the model only reading headlines on sampled days.
-- [x] Live phase handoff implemented (2026-11-07): `agent/HANDOFF.md` (rule), `src/handoff.py` (read, write, validate, overlap lock, 13 self-tests), prompts updated with a live-mode section. Still to do for live: wire it into the scheduled routine and broker reconciliation; first real use is the chained post-cutoff agent test.
-- [ ] Live phase: one decision a day as a scheduled Claude Code routine on the subscription (no API); check plan limits first.
+## 3. News and event sources for Europe
+- [ ] Google News RSS per company and per commodity for European names (`src/download_news.py` ported); test coverage.
+- [ ] Forward collection of macro and commodity headlines from now on (daily snapshot job), since history cannot be backtested cleanly.
+- [ ] European company filings and calendars (earnings dates, central bank dates, OPEC, EU regulatory decisions); Finnhub and Massive do not cover European names.
 
-- [ ] API cost estimate (asked 2026-11-06, not adopted; prices from the Claude API skill cache dated 2026-10-06, check the pricing page before relying on them): about 9k input and 3k output tokens per decision called directly. Per decision about $0.002 Haiku 5.5, $0.05 Sonnet 5.5, $0.10 Opus 5.5, $0.24 Fable 5.1; batch API is half. Examples with Sonnet 5.5: 300 days about $14 (about $7 batch), all 3,020 dev days about $145 (about $72 batch), a year of live daily decisions about $12. The usage numbers are assumptions, not measured.
+## 4. Agent and handbook
+- [ ] Rewrite `handbook/AGENT_HANDBOOK.md` and `handbook/HANDBOOK_COMPANIES.md` for the European universe (drivers, exchanges, earnings seasons, local holidays).
+- [ ] Port the prompts (`agent/FAMILY_AGENT_PROMPT_CATALYST.md`, `..._LEARN.md`) to European names, CET timing and live-quote inputs.
+- [ ] Sonnet with learning on the same 22 US days was never run; low priority now that the US era is archived.
 
-## 3a. Plan v2 next actions (see `PLAN.md`)
-- [x] Families: five (solar removed); single stocks only; names chosen by a point-in-time rule (`universe/UNIVERSE_RULE.md`); holding period capped at 20 days.
-- [ ] User still to give: account size to design for and allowed instruments (US single stocks assumed); add a market value screen and a revenue-purity screen when a reliable data source is chosen; verify tradability of the selected names at IBKR Ireland.
-- [x] Phase 1 part 1 (2026-11-06): `src/costs.py` written and `PHASE1_FACTS.md` (official US stock fees verified; tax from Romanian press).
-- [x] Baselines on the universe for a 500 USD account (`results/UNIVERSE_BASELINES.md`): noise dominates with two positions; no strategy consistent; 5-day holds cost up to 17% of the account in fees.
-- [x] Wide test done (`results/WIDE_TEST.md`): no selection rule consistently beats the equal-weight basket; trend slightly positive but weak.
-- [x] Judge strategies on many decisions (all 20 names in parallel as a paper portfolio, each decision scored separately), add event windows and calendar data, then the agent with the same costs.
-- [x] eToro fees and API researched (`PHASE1_FACTS.md`): 1 USD per stock open and close, ETFs free, API free for eligible users; eligibility for Romania, conversion fee and rate limits still open; some stock buys can be executed as CFDs.
-- [x] Indicator and candlestick tests (`results/INDICATOR_TESTS.md`): no reliable edge; only oversold buying (RSI below 30) was positive in all periods and it fades once market-wide days are removed. Candidate for a later out-of-sample test with a market-selloff filter.
-- [ ] Phase 1 part 2, open: third-party fee amounts (collapsed IBKR section), currency conversion cost, paper account and API access, US stocks permission for Romanian retail clients, US dividend withholding and W-8BEN, CASS thresholds. Best done in the IBKR application flow and with an accountant.
-- [ ] Phase 2: history for chosen names and drivers (2000 onward), scheduled calendars (earnings, EIA, OPEC, FOMC), company-level news source.
+## 5. Paper trading
+- [ ] Pre-register: rules, risk numbers, at least 60 trading days and 30 trades, benchmarks (random calls, basket, cash), stop rules, one account per agent setup.
+- [ ] Daily schedule: collect, run agent, fill, mark to market, report; overlap lock and handoff from `src/handoff.py`.
 
-## 3b. Universe and company-level work (new direction, 2026-11-06)
-- [x] First research list: solar value chain with current metrics (`universe/UNIVERSE.md`).
-- [ ] Confirm themes besides solar with the user (lithium, copper, semiconductors, uranium, oil services, ...).
-- [ ] Check each candidate: tradable and fee schedule at the chosen broker, status of the company (bankruptcies, delistings), earnings dates.
-- [x] Free commodity and driver prices downloaded (`universe/COMMODITY_DATA.md`); FRED and EIA (free key) still to retry for spot prices and storage reports.
-- [x] Agent run on the family harness (validation 2023-2024): all 115 calls flat, portfolio stayed cash (`results/FAMILY_RUN.md`, dashboard `results/dashboard_family.html`). Open: choose among the options at the end of FAMILY_RUN.md (accept, change prompt, run final test once, stop).
-- [x] Earnings dates sourced from SEC EDGAR (free, no key; 29 US filers; foreign filers not covered) and post-earnings drift tested: no edge (`results/EARNINGS_TEST.md`). Still open: consensus estimates and guidance (needed to forecast surprises) and company news.
-- [x] Consensus data downloaded (Alpha Vantage key in the parent `.env`) and surprise tests run: no edge (`results/SURPRISE_TEST.md`). Daily `EARNINGS_ESTIMATES` snapshots running (scheduled task, started 2026-11-07); once about 2 quarters of reports have passed, test whether revisions predict surprise and reaction; sample of `EARNINGS_CALL_TRANSCRIPT` sentiment.
-- [x] (done) Consensus data (user to create a free Alpha Vantage key and put `ALPHAVANTAGE_API_KEY` in `.env`): then run `src/download_consensus.py` and `src/run_surprise_test.py` (`universe/EARNINGS_DATA_SOURCES.md`). Guidance: no free structured source; optional extraction from SEC press releases.
-- [ ] Source company-level news and earnings dates (Benzinga stock-news Kaggle dataset, `fnspid_news` subset, or a current news source) and component price series (polysilicon index, silver, etc.).
-- [x] Handbook v1 for the five families written (`handbook/HANDBOOK_COMPANIES.md`); still open: earnings calendar and scheduled-event data, and testing the general-knowledge parts.
-- [x] Extend the handbook with company-level entries (earnings reaction, guidance, tariff and policy news, component price moves) using history only.
-- [ ] Rerun baselines on the new universe with realistic fixed fees for 500 EUR and 5,000 EUR accounts; redo the agent pilot on single names.
-
-## 4. Other
-- [ ] Check why 2020-09-23 has 55 headlines.
-- [ ] Push local commits to `origin/main` when the user says so.
-- [ ] Choose broker, scheduler and live research source only when we reach paper trading (see `STRATEGY.md`).
+## 6. Other
+- [ ] Push local commits to `origin/main` when the user says so (nothing committed since the Finnhub work).
+- [ ] Decide whether to rename the folder `sp500-news-sim` (it would change session paths; not done).

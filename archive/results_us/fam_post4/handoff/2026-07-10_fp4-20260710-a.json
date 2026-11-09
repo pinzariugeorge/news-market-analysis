@@ -1,0 +1,51 @@
+{
+ "run_id": "fp4-20260710-a",
+ "written_at": "2026-07-10T14:00:00Z",
+ "decision_day": "2026-07-10",
+ "data_cutoff": "2026-07-10",
+ "what_changed": "Three days since the last note (07-07), no gap beyond the expected spacing. Gold +1.4% and copper +2.65% on 07-09, with miners and FCX bouncing (FCX +5.3%). Oil is still falling and the VIX fell to 15.8. Headlines again held no leader-specific catalyst.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "No XOM or OPEC+ headline; WTI still down 18% in 20 days with no one-sided setup."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold bounce already happened and no NEM-specific catalyst appears."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Only opinion and market-report headlines on NVDA; no specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY news; the stock is near its high after a large 60-day gain."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "The copper and FCX bounce is priced in; no supply or demand headline."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil slump",
+   "status": "open",
+   "note": "WTI is 72.08, down 18% over 20 days but up 5% over 5 days. Watch OPEC+ or supply headlines for a reversal or continuation.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Chip rally and memory reset",
+   "status": "open",
+   "note": "The semiconductor ETF is up 37% over 60 days. AMD +5.7% on 07-09. SK Hynix $26.5B US ADR listing is a memory-sector item. Watch TSMC monthly sales around the 10th and earnings.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Gold drawdown",
+   "status": "open",
+   "note": "Gold is 22% below its high but bounced 1.4% on 07-09. Watch the Fed, the dollar and the jobs report.",
+   "first_seen": "2026-07-07"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-07-10: read the new record and headlines, then decide each family under the catalyst rule."
+}

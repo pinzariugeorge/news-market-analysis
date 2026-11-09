@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260818-a (decision day 2026-08-18, data cutoff 2026-08-18)
+What changed: Five days since the last note (08-13). NEM now +34.9% in 20 days, FCX +16% in 20 days, XOM +8.8% in 20 days, and VIX is 15.2. Headlines on 08-18 were again noise (Motley Fool opinion pieces, insider sales); NVDA earnings on Aug. 26 is the only scheduled leader event.
+Holdings and reasons:
+- oil_gas: flat | WTI and XOM moves are priced in and no OPEC+ or XOM headline exists.
+- gold_miners: flat | NEM +34.9% in 20 days is already priced in and no Fed, dollar or NEM headline explains it.
+- chips: flat | NVDA earnings on Aug. 26 has no one-sided setup, and the pieces about it are opinion.
+- pharma: flat | No LLY trial, regulator or pricing headline.
+- copper_uranium: flat | No copper supply, China data or FCX headline.
+Open storylines:
+- [open] NVDA earnings Aug 26: Scheduled event inside the next window. Watch for a pre-announcement, guidance or export-rule headline; the Motley Fool 'will disappoint' piece is opinion, not a catalyst.
+- [open] Gold rally: Gold +11.4% and NEM +34.9% in 20 days, gold still 15.9% below its high. Watch the Fed, the August jobs report and the 10-year yield at 4.72%.
+- [open] Oil whipsaw: WTI -14% over 60 days but +2.6% yesterday. Watch OPEC+ or supply headlines, Iran and shipping tensions, and XOM earnings.
+- [open] LLY near highs: LLY 4.2% below its high, +16% in 60 days. Watch LLY trial, pricing or earnings news.
+- [fading] Iran tensions: No fresh headline on 08-18; relevant only if a harder oil or gold headline appears.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-18: read the new record and headlines, then decide each family under the catalyst rule.

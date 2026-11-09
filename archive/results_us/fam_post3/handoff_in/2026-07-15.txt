@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260710-a (decision day 2026-07-10, data cutoff 2026-07-10)
+What changed: No catalyst in any family; all stay flat. New items: Goldman says China oil demand may not fully recover, Micron keeps sliding since its late-June results, and the FDA approved a Merck pembrolizumab combination (MRK is not the pharma leader).
+Holdings and reasons:
+- oil_gas: flat | CVX deals and a Goldman China-demand warning are not a supply shock for XOM.
+- gold_miners: flat | Only analyst opinion and target cuts; no rate or gold event.
+- chips: flat | Micron weakness and Iran worry, no positive checkable NVDA catalyst; TSMC sales not yet seen.
+- pharma: flat | MRK FDA approval does not concern the leader LLY; no LLY event.
+- copper_uranium: flat | Only analyst target changes and thematic pieces; FCX +5% already priced.
+Open storylines:
+- [open] FCX Grasberg output cut: No new news; watch for Q2 earnings and Grasberg restart updates.
+- [open] LLY China trial security probe: No update in today's headlines; watch for escalation or a company response.
+- [open] Q2 earnings season: JNJ Q2 preview out; Goldman reports July 14, Netflix July 16, WPM Aug 6 after close; a guidance raise would be a catalyst.
+- [open] Oil and gold selloff: WTI -18% over 20 days, gold -3.4%; Goldman warns of lasting China oil demand loss; watch for a supply shock or rate shift.
+- [open] Chip sector wobble: Micron cratering since late-June earnings, SK Hynix IPO prep, Iran worry; watch TSMC monthly sales (about the 10th) and further earnings.
+- [open] MRK bladder cancer FDA approval: Pembrolizumab plus enfortumab vedotin approved July 10; relevant to MRK, not the pharma leader LLY.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list (TSMC sales, Q2 earnings, supply shocks); stay flat if none.

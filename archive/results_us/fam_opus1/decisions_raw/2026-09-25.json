@@ -1,0 +1,39 @@
+{
+  "decision_day": "2026-09-25",
+  "market_view": "Calm VIX (15.7) but the 10-year yield hit a new high at 5.16% with a firmer dollar; WSJ says 'Yields Subside, Stocks Breathe Easier' this morning. Oil is torn between U.S.-Iran peace talks and Houthi attacks on Saudi facilities.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Houthi attacks on Saudi facilities (Al Jazeera) lifted Brent 3.4%, but 'Oil prices slide about 2% as US, Iran explore path out of war' (Yahoo) and record Saudi exports (CNBC) undercut a lasting outage. Attack move already priced; talks not collapsed. Stay flat."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "10-year at a 52-week high of 5.16%, dollar firm, gold below $4,300 and 19% off high; inflation expectations spiked. No Fed pause or safe-haven spike. Flat."},
+    "chips": {"call": "long", "horizon_days": 5, "confidence": 0.53, "catalyst": "Continuing NVDA hold on Huang's guidance to make twice as many chips next year ('Huang's 2x Chip Vow Could Buy 37% of 2027 HBM Supply', shattered.io); demand pull not yet fully reflected with NVDA 4.7% below high while AMD made a new high.", "reasoning": "Long since 2026-09-17; finish the planned window to about 2026-10-01. Yield at 5.16% is near my exit trigger and Oracle's force majeure notice worries AI bulls, so confidence trimmed, but WSJ reports yields subsiding and no guidance cut or export rule."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'FDA approves Lilly's Olumiant ... for pediatric patients' (Eli Lilly) is a small label expansion, not a GLP-1 approval or readout; LLY already +2.7% on the day. Flat."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'BHP halts giant Chile copper mine after worker death' (AFR) is a named outage but likely a short safety halt; copper rose only 0.6% and one-off incidents fade in days. Peru projects add future supply; uranium weak. Flat, watch halt length."}
+  },
+  "would_change_my_mind": "A multi-week BHP Chile halt (FCX), collapse of U.S.-Iran talks or lasting Saudi damage (XOM), a Fed pause (NEM), or a 10-year jump well above 5.2% or an AI capex scare spreading from Oracle (exit NVDA).",
+  "handoff": {
+    "run_id": "opus1-20260925-a",
+    "written_at": "2026-09-25T12:30:00Z",
+    "decision_day": "2026-09-25",
+    "data_cutoff": "2026-09-25",
+    "what_changed": "The 10-year reached a new high at 5.16% (5-day +4.4%) though WSJ says yields subsided this morning; gold fell below $4,300. Houthis claimed attacks on Saudi facilities (Brent 106.6, +3.4%) while U.S.-Iran talks advanced and Saudi exports hit a war-time high. BHP halted a giant Chile copper mine after a worker death; Oracle's force majeure notice unsettled AI bulls.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Houthi attack move already priced and U.S.-Iran talks still advancing; no lasting outage confirmed."},
+      "gold_miners": {"position": "flat", "why": "Yields at a 52-week high and a firm dollar; no Fed pause."},
+      "chips": {"position": "long NVDA since 2026-09-17, 10 days", "why": "Huang's 2x chip guidance intact; no guidance cut or export rule; exit about 2026-10-01 or earlier on a yield spike or AI capex scare."},
+      "pharma": {"position": "flat", "why": "Olumiant pediatric alopecia approval is minor; no GLP-1 catalyst."},
+      "copper_uranium": {"position": "flat", "why": "BHP Chile halt after a worker death looks short; copper barely moved."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Saudi supply and oil", "status": "open", "note": "WTI 94.6, Brent 106.6; Houthis claim attacks on Saudi facilities, but U.S.-Iran peace talks advancing and Saudi exports at war-time high. Re-enter XOM only if talks collapse or Saudi damage proves lasting.", "first_seen": "2026-09-17"},
+      {"name": "Trump vs oil prices", "status": "open", "note": "Watch windfall tax, export limit or SPR release; Russia energy-ceasefire push could lower oil.", "first_seen": "2026-09-22"},
+      {"name": "Venezuela oil opening", "status": "open", "note": "Chevron's $7B plan; watch for XOM deal terms.", "first_seen": "2026-09-22"},
+      {"name": "Fed hiking cycle and 5% yields", "status": "escalating", "note": "10-year 5.16%, at a 52-week high; inflation expectations spiked (Kitco). A move well above 5.2% is an NVDA exit; a Fed pause would favour gold. Jobs report in the next 20 days.", "first_seen": "2026-09-17"},
+      {"name": "Gold vs yields", "status": "fading", "note": "Gold 4298, 19% below high; central-bank buying talk. Re-enter NEM only on a Fed pause or safe-haven spike.", "first_seen": "2026-09-17"},
+      {"name": "NVDA guidance and AI sentiment", "status": "open", "note": "NVDA 224.6, 4.7% below high; AMD at a new high. New risk: Oracle force majeure notice spooking AI bulls; Micron falling. Exit on guidance cut, export rule, NVDA-Groq probe escalation, capex scare or rate spike.", "first_seen": "2026-09-17"},
+      {"name": "LLY GLP-1 Medicare uptake", "status": "open", "note": "LLY 1181.9; Olumiant pediatric approval minor. Go long only on a GLP-1 approval, trial readout or guidance raise.", "first_seen": "2026-09-22"},
+      {"name": "Copper supply: BHP Chile halt", "status": "open", "note": "Copper 6.72, 1.2% below high; BHP halted a giant Chile mine after a worker death (AFR). If the halt lasts weeks, consider FCX; Peru projects add future supply.", "first_seen": "2026-09-25"},
+      {"name": "Uranium supply and US-Canada trade", "status": "open", "note": "Niger uranium project cleared to resume; uranium ETF -15% over 20 days. Watch tariffs reaching CCJ.", "first_seen": "2026-09-22"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note. Hold NVDA (long since 2026-09-17, 10 days) and exit about 2026-10-01, or earlier if the 10-year moves well above 5.2%, guidance is cut, an export rule appears, or the Oracle AI-capex worry spreads. Keep oil flat unless U.S.-Iran talks collapse or Saudi damage proves lasting. Check whether the BHP Chile halt has lasted more than a few days before considering FCX. Keep gold and pharma flat unless a Fed pause or an LLY GLP-1 approval or readout appears."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-09-03",
+  "market_view": "Calm regime: VIX 15.2 (-7% on the day, -51% from its 252-day high). The 10-year yield sits at its high (4.80%) and gold is -5% in 5 days; WTI is +10.7% in 5 days and +21% in 20 days.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Piper Sandler raising the XOM target to $185 (Neutral) is an analyst note, not a surprise. The Chevron Venezuela deal is CVX only. The oil rise is already priced and XOM lags crude. No XOM-specific one-sided catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Headlines are opinion pieces ('Gold Supercycle...'). Gold -5% in 5 days with yields at highs; no NEM guidance or production news. NEM is +20% in 20 days."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'Nvidia Agrees to Acquire Hugging Face for $12.93 Billion' (Yahoo) is a buyer-side deal with an ambiguous sign. NVDA already rose 3.2% yesterday. AVGO sold off after its earnings. Not a one-sided catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The ABBV Phase 3 CERVINO result is positive but ABBV is not the leader. The LLY headline is a small private financing. No LLY-specific catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'Copper Surges as Shifting Trade Policy and AI Demand Collide' (Yahoo) is the record price move, already priced, while copper is -3% in 20 days. No FCX guidance or supply news."}
+  },
+  "would_change_my_mind": "An FCX guidance raise or supply outage, a clear LLY trial or approval headline, NEM guidance, XOM-specific news, or an NVDA one-sided demand or export-rule headline.",
+  "handoff": {
+    "run_id": "fp3-20260903-a",
+    "written_at": "2026-09-03T14:00:00Z",
+    "decision_day": "2026-09-03",
+    "data_cutoff": "2026-09-03",
+    "what_changed": "WTI rose 10.7% in 5 days; Nvidia agreed to buy Hugging Face for $12.93B; AVGO slid despite beating Q3 earnings on softer guidance. AbbVie posted positive Phase 3 etentamig data and Piper Sandler raised the XOM and CVX targets. The 10-year yield is at its high of 4.80% and gold is -5% in 5 days.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Analyst target raises and the CVX Venezuela deal are not an XOM-specific one-sided catalyst, and the oil rise is priced."},
+      "gold_miners": {"position": "flat", "why": "Rate headwind with no NEM-specific catalyst; headlines are opinion only."},
+      "chips": {"position": "flat", "why": "The NVDA-Hugging Face deal is two-sided and NVDA is up 3.2% already; AVGO reaction is negative."},
+      "pharma": {"position": "flat", "why": "The positive Phase 3 news is for ABBV, not the leader LLY."},
+      "copper_uranium": {"position": "flat", "why": "The copper record is priced; no FCX guidance or supply news."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "escalating", "note": "WTI 91, +21% in 20 days; watch XOM-specific news and whether the rise holds", "first_seen": "2026-08-31"},
+      {"name": "Q2 earnings aftermath", "status": "open", "note": "AVGO beat but guided softer and slid; NVDA reaction mixed (guided margins lower) but +3.2% yesterday; watch the follow-through", "first_seen": "2026-08-31"},
+      {"name": "AI financing and M&A", "status": "open", "note": "Nvidia-Hugging Face $12.93B deal; IREN $2.4B private credit for Nvidia GPUs; circular-financing debate continues", "first_seen": "2026-08-31"},
+      {"name": "Rate-hike bets and Warsh", "status": "open", "note": "10-year yield 4.80% at its high; gold -5% in 5 days; watch the jobs report and Fed", "first_seen": "2026-08-31"},
+      {"name": "Gold rebound", "status": "open", "note": "NEM +20% in 20 days but -4.9% in 5 days; watch NEM guidance", "first_seen": "2026-08-31"},
+      {"name": "Copper and uranium", "status": "open", "note": "Copper record headlines but copper -3% in 20 days; uranium ETF -7.8% in 5 days; watch FCX guidance", "first_seen": "2026-08-31"},
+      {"name": "Pharma rally", "status": "open", "note": "Sector near highs; ABBV positive Phase 3 data; LLY lagging; watch LLY filings and approvals", "first_seen": "2026-08-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise."
+  }
+}

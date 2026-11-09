@@ -1,0 +1,48 @@
+# Handoff from the previous run (read first)
+Run opus2-20260826-r15 (decision day 2026-08-26, data cutoff 2026-08-26)
+What changed: NBC: oil dips on cautious optimism over Iran, and WTI fell 3.1% to $82.4, so I did not renew XOM. NVDA reported Q2 FY27 alongside an AWS 2 million GPU deal and a reported Hugging Face acquisition; the content is unknown. Canada retaliated with up to 50% tariffs on US goods. Copper hit a 52-week high and FCX is up 20% in 5 days.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-18, 10 days (renewed 2026-08-21, not renewed 2026-08-26; ends about 2026-09-04) | The Iran supply shock is softening on 'cautious optimism' (NBC, Aug 26); I hold to the end but do not extend.
+- gold_miners: flat | NEM is up 48% in 20 days; the gold three-month high is already priced in, and there is no unpriced catalyst.
+- chips: flat | NVDA earnings are out, but the record has the title only; the reaction is two-sided and unknown.
+- pharma: long LLY since 2026-08-13, 10 days, not renewed (ends about 2026-08-27) | There is no new LLY catalyst; let it run off.
+- copper_uranium: long FCX since 2026-08-18, 10 days, not renewed (ends about 2026-09-01) | The Congo ban is still in force, but there is no fresh headline and FCX is up 20% in 5 days.
+Open storylines:
+- [fading] Hormuz / Iran war: NBC (Aug 26): oil dips on cautious optimism over Iran. Watch for a truce or deal (bearish oil) versus renewed strikes or secondary sanctions. The XOM hold ends about 09-04.
+- [open] Russia / Ukraine escalation: New fears of Russian escalation in Ukraine, and the CIA director made a surprise Moscow trip. Watch for energy sanctions or supply effects.
+- [open] Oil price intervention: Trump pressure on XOM and CVX profits. Watch for export curbs or a windfall tax.
+- [open] Yields and inflation: The 10y eased to 4.64% and VIX is 15.5. Watch Fed hike odds and inflation data; they weigh on gold and long-duration stocks.
+- [escalating] Tariffs and trade / Canada: Canada retaliates with up to 50% tariffs on hundreds of US products (NYT, Aug 25), and there is a Canada uranium threat involving Cameco's refinery. Watch copper and uranium supply and pharma tariffs.
+- [open] NVDA earnings and AI demand: Q2 FY27 results are out (title only), plus the AWS 2 million GPU deal and a Hugging Face acquisition report. Next run: check reported guidance and the reaction; long only on a clear guidance beat not yet priced.
+- [fading] Lilly obesity pipeline: The hold ends about 08-27. Re-enter only on a new trial, approval or guidance headline.
+- [open] Copper supply squeeze / Congo export ban: The ban is in force and copper is at a 52-week high, but there is no fresh headline. Watch for exemptions, reversal or new outages. The FCX hold ends about 09-01.
+- [open] Uranium / Cameco: The uranium ETF is up 10% in 5 days, and Canada threatens uranium exports (Cameco refinery). Matters only if CCJ becomes the leader.
+Lessons ledger (cases = closed trades supporting it; below 5 cases it is only a hypothesis):
+- (3 cases) Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse. | XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%; contradicting XOM 07-23 -1.56% (entered after Brent passed $100). Net 3, one Iran episode only; does not change calls.
+- (4 cases) Hypothesis only: LLY longs after a trial or guidance catalyst have a positive mean net return over 10 days. | LLY 07-23 +0.21%, 07-31 +2.43%, 08-05 +9.14%, 08-10 +0.92%; contradicting 07-28 -0.76%. 4 of 5 won, mean +2.39%. Below 5 net cases; does not change calls.
+- (3 cases) Hypothesis only: copper longs on a fresh supply-squeeze headline win; continuation holds with no new headline do not. | FCX 07-31 +5.91% (fresh CNBC squeeze), 08-10 +10.09% (fresh Reuters Congo ban, beat basket +7.19%); FCX 08-05 -0.68% continuation lost (basket +0.84%). Below 5; does not change calls.
+- (2 cases) Hypothesis only: continuation holds with no new headline lag the family basket. | LLY 08-10 +0.92% vs basket +6.81%; FCX 08-05 -0.68% vs +0.84%. Counter: XOM 07-10 continuation +12.76% beat its basket. Does not change calls.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day: check the NVDA earnings content and guidance; long only on a clear, unpriced beat. Check Iran truce versus re-escalation for oil (XOM ends about 09-04). Confirm LLY has closed (about 08-27) and let FCX run off (about 09-01) unless there is fresh Congo or supply news. Then read the record for a named catalyst in each family.
+
+# Outcomes of your past calls (facts computed by the harness; closed trades only)
+- oil_gas XOM (0.53), called 2026-07-07, held 10d to 2026-07-21: net +6.82% (family basket +8.64%). Catalyst you quoted: 'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after 
+- oil_gas XOM (0.52), called 2026-07-10, held 10d to 2026-07-24: net +12.76% (family basket +10.51%). Catalyst you quoted: Continuing hold from 2026-07-07: Hormuz tanker attacks and the Iran escalation (supply shock). Today's record adds 'Strait of Hormuz: What h
+- oil_gas XOM (0.53), called 2026-07-15, held 10d to 2026-07-29: net +8.22% (family basket +6.06%). Catalyst you quoted: 'Oil prices rise 2% to one-month high as US-Iran attacks deepen supply disruption' (Reuters, 2026-07-14); no de-escalation headline yet
+- oil_gas XOM (0.53), called 2026-07-20, held 10d to 2026-08-03: net +4.27% (family basket +2.47%). Catalyst you quoted: "Oil prices rise after Trump says Iran will pay for killing U.S. service members" (CNBC, 2026-07-19): the US-Iran supply shock is escalating
+- oil_gas XOM (0.54), called 2026-07-23, held 10d to 2026-08-06: net -1.56% (family basket -2.39%). Catalyst you quoted: 'Brent crude crosses $100 after tankers reportedly struck off Saudi Arabia' (CNBC, July 22) and 'Oil prices rise after Rubio says Iran is no
+- pharma LLY (0.53), called 2026-07-23, held 10d to 2026-08-06: net +0.21% (family basket -1.77%). Catalyst you quoted: 'Lilly's triple agonist, retatrutide, successful in two additional Phase 3 obesity trials, delivering significant improvements in weight and
+- pharma LLY (0.53), called 2026-07-28, held 10d to 2026-08-11: net -0.76% (family basket -2.28%). Catalyst you quoted: Continuing hold from 2026-07-23: retatrutide succeeded in two more Phase 3 obesity trials (Eli Lilly, July 23). Nothing today contradicts it
+- pharma LLY (0.52), called 2026-07-31, held 10d to 2026-08-14: net +2.43% (family basket +2.01%). Catalyst you quoted: Continuing hold from 2026-07-23: retatrutide Phase 3 wins (July 23 record); no contrary LLY headline in today's record
+- copper_uranium FCX (0.52), called 2026-07-31, held 10d to 2026-08-14: net +5.91% (family basket +6.76%). Catalyst you quoted: 'Deadly storms and a global supply squeeze are sending copper prices soaring' (CNBC, 2026-07-31): a named supply shock to copper; supply out
+- pharma LLY (0.55), called 2026-08-05, held 10d to 2026-08-19: net +9.14% (family basket +10.55%). Catalyst you quoted: 'Lilly reports second-quarter 2026 financial results, raises full-year guidance, and highlights continued growth and pipeline progress' (Eli
+- copper_uranium FCX (0.53), called 2026-08-05, held 10d to 2026-08-19: net -0.68% (family basket +0.84%). Catalyst you quoted: CNBC (2026-07-31): storms and a global supply squeeze are sending copper prices soaring. The squeeze is still active: copper is up 4.7% in f
+- pharma LLY (0.52), called 2026-08-10, held 10d to 2026-08-24: net +0.92% (family basket +6.81%). Catalyst you quoted: Lilly's Q2 report on 2026-08-05 raised full-year guidance (from the previous run's record); no pricing, compounding or sector-negative headl
+- copper_uranium FCX (0.55), called 2026-08-10, held 10d to 2026-08-24: net +10.09% (family basket +7.19%). Catalyst you quoted: 'EXCLUSIVE: Congo bans copper and cobalt concentrates exports, official order says' (Reuters, 2026-08-10): a fresh, named supply shock to co
+- pharma LLY (0.52), called 2026-08-13, held 10d to 2026-08-27: net -3.02% (family basket +2.98%). Catalyst you quoted: Continuing hold from 2026-08-10 (renewed from 2026-08-05): drift after Lilly's Q2 guidance raise; today's pharma headlines (Medicaid, Medica
+- copper_uranium FCX (0.52), called 2026-08-13, held 10d to 2026-08-27: net +17.10% (family basket +13.01%). Catalyst you quoted: Continuing hold from 2026-08-10: Congo's ban on copper and cobalt concentrate exports (Reuters) stays in force; 'Copper's Congo panic says m
+Per-family tally (closed trades):
+- oil_gas: 5 trades, 4 won, mean net +6.10%
+- pharma: 6 trades, 4 won, mean net +1.49%
+- copper_uranium: 4 trades, 3 won, mean net +8.11%
+All: 15 trades, 11 won, mean net +4.79%

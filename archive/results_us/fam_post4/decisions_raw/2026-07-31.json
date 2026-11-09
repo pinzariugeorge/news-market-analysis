@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-07-31",
+  "market_view": "VIX fell 17% to 17.1 after a volatile week; chips and miners bounced sharply on the day, oil is still whipsawing. A relief rally, not a cause.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI -9% over 5 days, +22% over 20 days, with no OPEC+ or XOM headline. The only energy headline is a Berkshire/Chevron stake article, which is not a catalyst. XOM was flat on the day."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Gold +1.6% and NEM +4.8% in a day is already priced in. No Fed, dollar or NEM headline. Gold is still 23% below its high and the 10-year yield is high."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Nvidia's $2B Nebius investment (Motley Fool) is a minor, already-known item. The Chinese DUV article is opinion. The sector bounced 6.9% in a day after a 13% 20-day drop, which is a mood move, not a catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY fell 4.6% with the health care ETF and no LLY headline. Novo's ZEUS failure (GlobeNewswire) is a different company and trial. The class-action items are noise."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper +2.7% and FCX +5.8% in a day, with no supply or China headline. A driver move that has already happened is priced in."}
+  },
+  "would_change_my_mind": "A leader-specific headline: OPEC+ or supply shock, Fed or dollar shift, chip export rule or guidance raise, LLY trial or regulator news, copper mine outage.",
+  "handoff": {
+    "run_id": "fp4-20260731-a",
+    "written_at": "2026-07-31T14:00:00Z",
+    "decision_day": "2026-07-31",
+    "data_cutoff": "2026-07-31",
+    "what_changed": "Three days since the last note (07-28). VIX fell 17% to 17.1, and chips, miners and copper names bounced sharply (semiconductor ETF +6.9%, NEM +4.8%, FCX +5.8%) while LLY fell 4.6%. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI whipsaw has no named cause and there is no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold and NEM bounce has no Fed, dollar or NEM catalyst."},
+      "chips": {"position": "flat", "why": "Sector rebound after a sell-off has no explaining headline; the Nvidia-Nebius stake is minor."},
+      "pharma": {"position": "flat", "why": "LLY drop has no LLY news; the Novo trial failure is a different company."},
+      "copper_uranium": {"position": "flat", "why": "FCX and copper rise has no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -9% over 5 days, +22% over 20 days. Watch OPEC+ or supply headlines and XOM earnings.", "first_seen": "2026-07-28"},
+      {"name": "Chip sell-off and rebound", "status": "open", "note": "Semiconductor ETF -13% over 20 days but +6.9% on the day. Watch chip and cloud earnings, TSMC sales (about the 10th) and export-rule news.", "first_seen": "2026-07-28"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold 23% below its high, 10-year yield 4.66%. Watch the Fed and the jobs report.", "first_seen": "2026-07-28"},
+      {"name": "Pharma dip and Novo trial failure", "status": "open", "note": "LLY -4.6% on the day with the sector; Novo ZEUS ziltivekimab failure reported. Watch for any LLY read-through.", "first_seen": "2026-07-31"},
+      {"name": "Earnings week", "status": "open", "note": "Apple reported (iPhone +22%); SpaceX August 4, MercadoLibre and Disney August 5. Watch for read-through to AI spending and energy.", "first_seen": "2026-07-28"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-31: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

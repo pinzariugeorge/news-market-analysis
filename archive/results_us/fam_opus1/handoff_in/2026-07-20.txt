@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run opus1-20260715-a (decision day 2026-07-15, data cutoff 2026-07-15)
+What changed: Iran conflict escalated: Reuters reports US-Iran attacks deepening supply disruption, WTI 79 (+12.6% in 5 days), Brent 85; XOM lagged (+2.4%). Soft US inflation reading and Warsh tells Congress no tolerance for high inflation. Cameco resolved the Cigar Lake disruption.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | Iran/Hormuz supply shock is escalating, not reversed; horizon ends about 2026-07-21.
+- gold_miners: flat | Gold bear market with firm dollar and yields; only opinion pieces on NEM.
+- chips: flat | Only routine NVIDIA product posts; no guidance or export-rule catalyst.
+- pharma: flat | LLY down 6.7% in 5 days with the sector and no specific news.
+- copper_uranium: flat | Cigar Lake resolution bears on CCJ, not leader FCX; copper bounce priced in.
+Open storylines:
+- [escalating] Iran / Strait of Hormuz conflict: US-Iran attacks deepening supply disruption; exit XOM on ceasefire, Hormuz reopening or the 10-day horizon (about 07-21). Check WTI and Brent closes.
+- [open] Exxon Q2 earnings: Late July, near or after the hold window end; adds variance.
+- [open] Gold bear market: Watch dollar, real rates, the jobs report and the NEM Q2 call; analyst buy notes are not catalysts.
+- [fading] Uranium supply and policy: Cameco resolved the Cigar Lake disruption; leader is FCX so the impact is indirect.
+- [open] Copper to aluminium substitution: Watch for more automakers switching away from copper (FCX demand headwind). No update in this record.
+- [open] Inflation, Warsh Fed and Q2 earnings: Soft US inflation print but Warsh says no tolerance for high inflation; earnings season raises variance, not a reason to be long.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note; exit XOM to flat if the Iran/Hormuz conflict de-escalates or the 10-day horizon from 2026-07-07 has ended (about 07-21), otherwise re-check its catalyst; then re-check all five families for a named catalyst in the new headlines.

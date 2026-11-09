@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-10",
+  "market_view": "Calm regime: VIX 14.9, down 17% over 60 days, 10-year yield 4.66%, dollar index 99.6. Broad risk-on rebound in chips, gold miners and copper names last week, but the headlines hold no family-specific catalyst.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI fell 7.7% in 5 days but rose 1.2% on the last day; no OPEC+, supply or XOM headline. The only energy item is a Motley Fool dividend listicle, which is not a catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold rose 2.3% on the day and 7.1% in 5 days; NEM rose 7.2% on the day and 20.6% in 5 days. This is a large move already priced in, with no Fed, dollar or NEM headline. Chasing it is a momentum call, which has no edge."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semiconductor ETF is up 7.8% in 5 days. The NVDA mentions are a robotics report and a Nasdaq streak article, neither a catalyst. TSMC monthly sales (about the 10th) are scheduled but one-sided in neither direction."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY, trial, pricing or regulator headline. The NeOnc readout and the Capricor suit concern other companies. LLY is 4% below its high with no cause visible."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FCX is up 11% in 5 days and copper fell 1.7% on the last day. The headlines hold only buybacks, tariff commentary and defense items, with no copper supply or demand news. Nothing named."}
+  },
+  "would_change_my_mind": "A leader-specific headline (XOM or OPEC+ supply shock, NEM guidance, NVDA export-rule change or earnings read-through, LLY trial or pricing news, FCX/copper supply outage) with a one-sided setup.",
+  "handoff": {
+    "run_id": "fp4-20260810-a",
+    "written_at": "2026-08-10T14:00:00Z",
+    "decision_day": "2026-08-10",
+    "data_cutoff": "2026-08-10",
+    "what_changed": "Five days since the last note (08-05). Gold rose 7.1% and NEM 20.6% in 5 days, the semi ETF rose 7.8%, and WTI fell 7.7% in 5 days. LLY recovered (+3.2% in 5 days). Headlines on 08-10 were noise: no leader-specific catalyst in any family.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI whipsaw has no named cause; no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "The NEM +20.6% 5-day gold rebound is already priced in and no Fed, dollar or NEM headline explains it."},
+      "chips": {"position": "flat", "why": "The semi ETF is up 7.8% in 5 days with no NVDA-specific catalyst in the headlines."},
+      "pharma": {"position": "flat", "why": "No LLY, trial or pricing headline; LLY is 4% below its high."},
+      "copper_uranium": {"position": "flat", "why": "FCX strength (+11% in 5 days) has no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -7.7% in 5 days, -23% over 60 days, +9.5% over 20 days. Watch OPEC+ or supply headlines, Iran and shipping-lane tensions, and XOM earnings.", "first_seen": "2026-08-05"},
+      {"name": "Chip rebound and AI capex", "status": "open", "note": "Semi ETF +7.8% in 5 days after an 8.7% rise earlier. Watch TSMC monthly sales (about the 10th), NVDA news, export rules.", "first_seen": "2026-08-05"},
+      {"name": "Gold bounce", "status": "escalating", "note": "Gold +7.1% in 5 days (still 17% below its high), NEM +20.6%. Watch the Fed, the August jobs report and 10-year yield 4.66%.", "first_seen": "2026-08-05"},
+      {"name": "LLY pullback", "status": "fading", "note": "LLY recovered (+3.2% in 5 days). Watch for LLY earnings, trial or pricing news.", "first_seen": "2026-08-05"},
+      {"name": "Iran tensions", "status": "open", "note": "Motley Fool mentions rising Iran tensions and shipping disruptions; may matter for oil and gold if confirmed by a harder headline.", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-10: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

@@ -1,0 +1,75 @@
+{
+ "run_id": "fp3-20260723-a",
+ "written_at": "2026-07-23T14:00:00Z",
+ "decision_day": "2026-07-23",
+ "data_cutoff": "2026-07-23",
+ "what_changed": "WTI rose to 86.8 (+18.6% in 20 days) with headlines of $100 oil. Lilly reported two more positive retatrutide phase 3 trials ahead of an FDA filing; FCX beat Q2 estimates (gap up pre-market); JNJ also beat with a positive myeloma trial. Semis flat in 5 days, gold flat in 20 days.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil spike is a driver move already priced; no XOM-specific catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No NEM catalyst; gold and miners remain weak against firm yields."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No NVDA-specific catalyst; only generic AI capex commentary."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-07-23, 10 days",
+   "why": "Retatrutide cleared two more phase 3 trials ahead of an FDA filing."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX earnings beat was priced in pre-market; no guidance raise."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war and oil",
+   "status": "escalating",
+   "note": "WTI 86.8, Brent 94; headlines of $100 oil; watch for a real supply disruption versus sentiment and XOM earnings",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "FCX and JNJ reported beats; NEM, XOM, big tech and chip reports still to come; a guidance raise by a leader would be a catalyst",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Chip selloff and AI capex worries",
+   "status": "open",
+   "note": "Semi ETF -5.7% in 20 days; Tesla earnings miss and Meta capex noted; watch NVDA-specific news and TSMC",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "FCX Grasberg output cut",
+   "status": "open",
+   "note": "Q2 profit up on copper prices despite lower Grasberg output; watch restart updates and guidance",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "LLY retatrutide and China trial probe",
+   "status": "open",
+   "note": "Two more phase 3 wins and FDA filing next; earlier China trial security probe still unresolved; Lilly acquiring ATAI",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Gold slump and rates",
+   "status": "open",
+   "note": "Gold 22% below high, 10y yield 4.66%, dollar firm; watch Fed and NEM earnings",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Uranium sector sell-off",
+   "status": "open",
+   "note": "Uranium ETF -10% in 20 days; Critical Minerals List and Section 232 decision pending; CCJ is not the leader",
+   "first_seen": "2026-07-20"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; LLY long opened 2026-07-23 with a 10-day horizon, check for LLY news (filing, safety, China probe) and exit at horizon; look for named leader-specific catalysts (XOM supply shock, NVDA news, NEM guidance); stay flat otherwise."
+}

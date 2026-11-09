@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-07-15",
+  "market_view": "Calm regime: VIX 16.5 and falling, cooler CPI helped the S&P 500 on 07-14. Oil rebounded sharply (WTI +12.6% in 5 days) and chips bounced; no headline names a leader-specific catalyst.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI +12.6% in 5 days is a driver move that already happened. No XOM or OPEC+ headline; the oil_gas-tagged items are unrelated general news."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold +1.6% on 07-14 is priced in; gold is still 23% below its high and below its 200-day average. No NEM headline."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NVDA headlines are opinion pieces (Motley Fool lists, SK Hynix HBM share). IBM's capex-shift warning is not a chip catalyst. NVDA +4% on 07-14 is priced in."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "No LLY-specific news; only a market-size press release and a Fool ETF piece. LLY -6.7% over 5 days with the sector down; no cause visible."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper +1.6% and FCX +3.3% are already priced. No supply or China demand headline for copper or uranium."}
+  },
+  "would_change_my_mind": "A leader-specific headline: OPEC+ or supply shock, NEM guidance, an NVDA export-rule change or guidance raise, an LLY trial or regulator decision, or a copper mine outage.",
+  "handoff": {
+    "run_id": "fp4-20260715-a",
+    "written_at": "2026-07-15T14:00:00Z",
+    "decision_day": "2026-07-15",
+    "data_cutoff": "2026-07-15",
+    "what_changed": "Five days since the last note (07-10). WTI jumped 12.6% over 5 days to 79.3 and the semiconductor ETF bounced (+2.5% on 07-14). LLY fell 6.7% over 5 days with the health care ETF down. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI rebound already priced; no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold bounce priced in; no NEM-specific catalyst."},
+      "chips": {"position": "flat", "why": "Only opinion headlines on NVDA; NVDA +4% on 07-14 already priced."},
+      "pharma": {"position": "flat", "why": "No LLY news; the 5-day drop has no visible cause."},
+      "copper_uranium": {"position": "flat", "why": "Copper and FCX bounce priced in; no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil rebound", "status": "open", "note": "WTI 79.34, +12.6% over 5 days but -6.5% over 20 days. Watch OPEC+ or supply headlines for continuation or a reversal.", "first_seen": "2026-07-07"},
+      {"name": "Chip rally and memory reset", "status": "open", "note": "Semiconductor ETF +32% over 60 days, NVDA +4% on 07-14. SK Hynix US listing and HBM share are memory items. Watch TSMC monthly sales around the 10th and chip earnings.", "first_seen": "2026-07-07"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold is 23.5% below its high, +1.6% on 07-14. Watch the Fed, dollar and jobs report.", "first_seen": "2026-07-07"},
+      {"name": "IBM capex warning", "status": "open", "note": "IBM fell about 25% after warning that hardware capex is squeezing software budgets. Watch for read-through to AI spending and chip earnings.", "first_seen": "2026-07-15"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-15: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

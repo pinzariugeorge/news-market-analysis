@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260813-a (decision day 2026-08-13, data cutoff 2026-08-13)
+What changed: Oil rebounded: WTI 83.3, +10.7% in 5 days, XOM +5.4%. Gold is 4467 (+3.8% in 5 days) and NEM +13%. COP reported a record Permian quarter and FCX beat but with volumes down 30%. AI financing news is heavy (AMD $5B bond, Nvidia and Broadcom debt) and Cerebras plunged on earnings.
+Holdings and reasons:
+- oil_gas: flat | No XOM-specific catalyst; the oil rebound is already priced.
+- gold_miners: flat | NEM rallied 24% in a month and no guidance news is out.
+- chips: flat | AI financing headlines are two-sided and NVDA has no specific catalyst.
+- pharma: flat | No LLY catalyst; the stock is near its high after a 21% 60-day gain.
+- copper_uranium: flat | FCX earnings were mixed with volumes down 30%; no guidance raise.
+Open storylines:
+- [open] Iran war, Hormuz and oil: WTI 83.3 after +10.7% in 5 days; watch XOM news and the windfall-profit criticism
+- [open] Q2 earnings season: COP record Permian output, Barrick beat, FCX beat with volumes down; NEM, NVDA and others pending; a leader guidance raise is a catalyst
+- [escalating] AI financing and chip rally: AMD $5B bond, Nvidia and Broadcom debt, Brookfield $500B AI push, Wolfe warns of risks, Cerebras miss; watch NVDA-specific news
+- [open] Gold rebound and Nevada JV: Gold 4467, 16% below its high; NEM +24% in a month; watch NEM earnings and guidance
+- [open] Copper and uranium: Copper near its high; FCX volumes -30% y/y; watch FCX guidance and Section 232
+- [fading] LLY after Q2 beat: Near its high; watch a retatrutide filing or a China probe
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise.

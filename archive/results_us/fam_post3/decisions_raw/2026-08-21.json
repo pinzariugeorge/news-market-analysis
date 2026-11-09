@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-08-21",
+  "market_view": "Calm regime (VIX 16, down 14% over 20 days) with yields stabilizing; gold at a three-month high, chips weak over five days on AI financing worries.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI rebounded 8% in five days, but that is a driver move already priced in. XOM headlines are a pipe contract (Corinth Pipeworks, Rovuma LNG) and a German regulator's carbon credit probe; neither is material."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NEM is up 35% in 20 days. 'Why Is Newmont Stock Surging Friday?' (Yahoo) cites strong gold and a routine board appointment, not guidance. Gold at a three-month high is already priced in."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "News is about Broadcom's $70B debt deal and credit-spread worries, not NVDA-specific. The NVDA earnings result is not in the record and there is no one-sided setup."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY headlines are record-high and technical-setup commentary, which restates price. The sector rally came from Moderna and Merck news, not LLY, and LLY fell 2.8% yesterday."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "'Freeport-McMoRan Stock Hits All-Time High' (Benzinga) restates momentum. No FCX guidance, supply shock or copper-specific news. Copper itself is down 0.4% on the day."}
+  },
+  "would_change_my_mind": "A leader-specific item: an XOM or NEM guidance change, an NVDA earnings result with a clear reaction setup, an FCX supply outage or guidance cut or raise, or an LLY approval or trial readout.",
+  "handoff": {
+    "run_id": "fp3-20260821-a",
+    "written_at": "2026-08-21T14:00:00Z",
+    "decision_day": "2026-08-21",
+    "data_cutoff": "2026-08-21",
+    "what_changed": "Gold hit a three-month high and NEM rose further; FCX touched an all-time high; yields stabilized. Broadcom is raising $70B or more of debt for a chip financing deal, and the pharma sector rallied on Moderna and Merck news. No leader-specific catalyst appeared.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI rebound is priced in and XOM news is minor."},
+      "gold_miners": {"position": "flat", "why": "NEM is extended after 35% in 20 days and the news is only a board appointment."},
+      "chips": {"position": "flat", "why": "Broadcom debt and credit worries are not an NVDA-specific, one-sided catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY trial, approval or pricing catalyst; commentary only."},
+      "copper_uranium": {"position": "flat", "why": "FCX all-time high is momentum, not a catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "open", "note": "Brent about 94, WTI 88, up 8% in 5 days; watch XOM-specific news", "first_seen": "2026-08-18"},
+      {"name": "Q2 earnings season", "status": "open", "note": "NVDA Q2 result pending, major week ahead; NEM and FCX guidance; a leader guidance raise is a catalyst", "first_seen": "2026-08-18"},
+      {"name": "AI financing and credit", "status": "escalating", "note": "Broadcom raising $70B or more of debt, widening CDS spreads, Warsh Jackson Hole test; watch NVDA reaction", "first_seen": "2026-08-18"},
+      {"name": "Gold rebound", "status": "open", "note": "Gold 4571 at a three-month high, NEM +35% in 20 days; yields stabilizing", "first_seen": "2026-08-18"},
+      {"name": "Copper and uranium", "status": "open", "note": "FCX at an all-time high; uranium ETF weak; watch FCX guidance", "first_seen": "2026-08-18"},
+      {"name": "Pharma rally", "status": "open", "note": "Health care ETF up about 6% this week on Moderna and Merck; LLY at a record high; watch LLY filings and Canada retatrutide dispute", "first_seen": "2026-08-18"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM guidance, NVDA earnings result, FCX guidance, LLY filings); stay flat otherwise."
+  }
+}

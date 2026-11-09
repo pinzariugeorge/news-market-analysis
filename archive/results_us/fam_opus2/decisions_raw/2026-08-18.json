@@ -1,0 +1,73 @@
+{
+  "decision_day": "2026-08-18",
+  "market_view": "Calm but rate-pressured regime: VIX 15.2 (+6.6% on the day, -18.6% over 20 days) while the 30-year yield hit a 19-year high above 5.33% (CNBC) and the 10y is at 4.72%, near its 52-week high. The main new fact is the expiry of the US-Iran ceasefire, which reopens the oil supply-shock storyline.",
+  "families": {
+    "oil_gas": {
+      "call": "long",
+      "horizon_days": 10,
+      "confidence": 0.53,
+      "catalyst": "'Oil prices jump after US-Iran ceasefire expires and Trump threatens Oman' (The Guardian, 2026-08-18). A ceasefire that has expired, plus a threat toward Oman (a state on the Strait of Hormuz), is a named escalation. Crude is still 14% below its level of 60 days ago and only +1.5% over 20 days, so a renewed war risk premium is not fully rebuilt yet.",
+      "reasoning": "This is a regime-level escalation, not a one-off incident, and it comes after a 60-day crude decline rather than a long run. WTI was already up 2.55% on Aug 17, so part of the move is priced; the confidence stays modest. Downside risk: a quick new truce or Trump pressure on oil-company profits."
+    },
+    "gold_miners": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.5,
+      "catalyst": "none",
+      "reasoning": "NEM is up 35% in 20 days, and the only headlines are a Cadia community grant and an FT letter about central-bank repatriation. Rising long yields work against gold. There is no named catalyst."
+    },
+    "chips": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.5,
+      "catalyst": "none",
+      "reasoning": "Nvidia's $105B OpenAI data-center financing (CNBC) adds balance-sheet risk as much as demand. The 'SOX plunges over 6%' headline (BigGo) conflicts with the record's +1.06% SOX day, so it is unreliable. Late-August earnings add variance only."
+    },
+    "pharma": {
+      "call": "flat",
+      "horizon_days": 10,
+      "confidence": 0.5,
+      "catalyst": "none new; the Q2 guidance raise is now about two weeks old",
+      "reasoning": "The existing LLY hold (renewed 08-13) runs to about 08-27. I am not renewing it: LLY fell 4% in 5 days with no headline to explain it, the record has no LLY news, and the guidance-raise drift is stale. The only pharma headline is irrelevant."
+    },
+    "copper_uranium": {
+      "call": "long",
+      "horizon_days": 10,
+      "confidence": 0.52,
+      "catalyst": "The Congo concentrate export ban is still in force (carried storyline, no reversal or exemption in the record); also 'Walz executive order moves to block copper mining near the Boundary Waters' (MPR News, 2026-08-18), which adds a small US supply restriction. Copper is 1.5% off its 52-week high, and supply bans tend to persist for weeks.",
+      "reasoning": "The supply story is intact and FCX recovered 2.8% on Aug 17 after a 5-day dip. Risks: an exemption to the Congo ban, demand or tariff shocks, and high long yields. Confidence is at the bar."
+    }
+  },
+  "would_change_my_mind": "A new US-Iran truce or Hormuz reopening deal (oil), an exemption to or reversal of the Congo export ban (copper), or a company-specific NVDA or LLY headline.",
+  "handoff": {
+    "run_id": "opus2-20260818-r13",
+    "written_at": "2026-08-18T12:00:00Z",
+    "decision_day": "2026-08-18",
+    "data_cutoff": "2026-08-18",
+    "what_changed": "The US-Iran ceasefire expired and Trump threatened Oman (Guardian); crude rose 2.6% on Aug 17, so I re-entered XOM. The 30-year yield hit a 19-year high above 5.33% (CNBC). Walz moved to block copper mining near the Boundary Waters (MPR News); there is no Congo ban reversal.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-18, 10 days", "why": "Ceasefire expiry and the threat to Oman are a named escalation after a 60-day crude decline."},
+      "gold_miners": {"position": "flat", "why": "NEM is up 35% in 20 days with no catalyst, and rising long yields work against it."},
+      "chips": {"position": "flat", "why": "There is no NVDA-specific catalyst; the $105B OpenAI financing is two-sided, and earnings in late August add variance."},
+      "pharma": {"position": "long LLY since 2026-08-13, 10 days, not renewed (ends about 2026-08-27)", "why": "The guidance-raise drift is stale and LLY fell 4% in 5 days with no headline."},
+      "copper_uranium": {"position": "long FCX since 2026-08-18, 10 days (renewed from 2026-08-13)", "why": "The Congo export ban is still in force, and a new Minnesota restriction adds a small supply effect."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war", "status": "escalating", "note": "The ceasefire expired and Trump threatened Oman (Aug 18). Watch for strikes on shipping or Omani ports, versus a new truce. The XOM long ends about 2026-09-01.", "first_seen": "2026-07-07"},
+      {"name": "Oil price intervention", "status": "open", "note": "Trump pressure on Exxon and Chevron profits; watch for export curbs or a windfall tax.", "first_seen": "2026-07-20"},
+      {"name": "Yields and inflation", "status": "escalating", "note": "The 30y topped 5.33%, a 19-year high, and the 10y is 4.72%. Watch Jackson Hole and Fed hike odds; this weighs on gold and long-duration stocks.", "first_seen": "2026-07-28"},
+      {"name": "Tariffs and trade", "status": "open", "note": "The St. Louis Fed says tariff effects on inflation are stabilizing. Watch copper demand and pharma tariff policy.", "first_seen": "2026-07-20"},
+      {"name": "Chip rebound and AI demand", "status": "open", "note": "NVDA is 4.6% below its high, with $105B OpenAI Ohio financing; earnings are late August. Wait for an NVDA-specific catalyst; the BigGo 'SOX -6%' headline did not match the data.", "first_seen": "2026-07-20"},
+      {"name": "Lilly obesity pipeline", "status": "fading", "note": "Not renewed on 08-18; the hold ends about 08-27. Re-enter only on a new trial, approval or guidance headline.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply squeeze / Congo export ban", "status": "open", "note": "The ban is in force; Walz's order blocks Boundary Waters mining. Watch for exemptions, reversal or enforcement, and demand or tariff hits. The FCX long ends about 2026-09-01.", "first_seen": "2026-07-31"},
+      {"name": "Uranium / Cameco", "status": "open", "note": "The uranium ETF is up 17% in 20 days; Dewey-Burdock project opposition. Matters only if CCJ becomes the leader.", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day: check XOM (opened 2026-08-18) for a US-Iran truce or a Hormuz deal versus attacks on shipping or Oman; check FCX (renewed 2026-08-18) for a Congo ban exemption or reversal and copper demand or tariff shocks; let LLY run off around 08-27 unless a new LLY catalyst appears; check NVDA for a pre-earnings company catalyst. Then read the record for a named catalyst in each family.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse.", "cases": 3, "evidence": "Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%. Contradicting: XOM 07-23 -1.56% (entered after Brent passed $100). Net 3; one Iran episode only. Does not change calls."},
+      {"rule": "Hypothesis only: pharma drift holds after a trial or guidance catalyst earn small positive returns and beat the family basket.", "cases": 3, "evidence": "LLY 07-23 +0.21%, 07-28 -0.76%, 07-31 +2.43%; mean +0.63%, and all three beat the basket. Too few cases; does not change calls."},
+      {"rule": "Hypothesis only: copper longs on a named supply-squeeze headline win over 10 days.", "cases": 1, "evidence": "FCX 07-31 +5.91% (basket +6.76%). A single case; does not change calls."}
+    ]
+  }
+}

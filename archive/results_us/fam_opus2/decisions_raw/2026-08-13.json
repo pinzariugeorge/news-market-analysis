@@ -1,0 +1,43 @@
+{
+  "decision_day": "2026-08-13",
+  "market_view": "Calm regime: VIX 14.6 and falling, July CPI as expected (3.4% annual) and lighter wholesale inflation eased yields from near their 52-week high (10y 4.68%). Commodities already ran hard last week (crude +11%, NEM +13%), so most news is priced.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none qualifying: 'Oil prices rise as attacks dent hopes for Strait of Hormuz reopening' (Al Jazeera, Aug 12) names no specific new attack and comes after WTI +10.7% and XOM +5.4% in five days", "reasoning": "The Hormuz stalemate is already in the 11% crude rebound; WTI was flat on the day. No named sanctions or attack escalation, and US gas output is at a record. Late entries after a long run did worse in my one-episode history (hypothesis only)."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: 'Newmont Shares Rally 24% in a Month' (Yahoo Finance) restates the move; 'Newmont backs explorer Headwater on 3rd Nevada gold project' (Mining.com) is minor", "reasoning": "NEM +13% in five days and +24% in 20 days; gold +10% in a month. Softer PPI helps gold, but that is a market-wide rates move already partly priced. No company catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the only NVDA headline is a support/resistance technical note; NVDA earnings in late August are a variance event, not a direction", "reasoning": "NVDA +3% yesterday with the sector (+2.1%); sector-wide moves are not catalysts. Wait for an NVDA-specific headline."},
+    "pharma": {"call": "long", "horizon_days": 10, "confidence": 0.52, "catalyst": "Continuing hold from 2026-08-10 (renewed from 2026-08-05): drift after Lilly's Q2 guidance raise; today's pharma headlines (Medicaid, Medicare Advantage, universal coverage study) contain no drug-pricing, compounding or Lilly-specific negative", "reasoning": "LLY is 1.2% below its high with the health care ETF at a new high; no contrary headline. Keep the existing long at the bar rather than add risk; closed LLY trades so far are about flat."},
+    "copper_uranium": {"call": "long", "horizon_days": 10, "confidence": 0.52, "catalyst": "Continuing hold from 2026-08-10: Congo's ban on copper and cobalt concentrate exports (Reuters) stays in force; 'Copper's Congo panic says more about copper than Congo' (Reuters commentary, Aug 12) argues the market is tight rather than reporting a reversal or exemption", "reasoning": "Copper and FCX paused (-1.6% and -0.2% in five days) without a reversal of the ban; FCX is 3.5% below its high. The commentary hints the panic may be overdone, so confidence stays at the bar."}
+  },
+  "would_change_my_mind": "A Congo exemption or reversal (exit FCX), a Lilly pricing or compounding headline (exit LLY), or a named tanker attack or new Iran sanctions with crude not yet reacting (consider XOM).",
+  "handoff": {
+    "run_id": "opus2-20260813-r12",
+    "written_at": "2026-08-13T12:30:00Z",
+    "decision_day": "2026-08-13",
+    "data_cutoff": "2026-08-13",
+    "what_changed": "July CPI came in as expected (0.1% m/m, 3.4% y/y) and lighter-than-expected PPI eased yields; VIX fell to 14.6. Al Jazeera says attacks dent Hormuz reopening hopes, but crude was flat on the day after an 11% week. A Reuters commentary called the copper move a 'Congo panic'; copper and FCX paused but no reversal of the ban was reported.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Unnamed attacks on a stalled Hormuz reopening come after an 11% crude rebound, so they are priced; no new sanctions or named escalation."},
+      "gold_miners": {"position": "flat", "why": "NEM is up 24% in a month and the Headwater Nevada stake is minor; no fresh catalyst."},
+      "chips": {"position": "flat", "why": "Only a technical note on NVDA; sector bounce is not a catalyst; earnings in late August add variance."},
+      "pharma": {"position": "long LLY since 2026-08-13, 10 days (renewed from 2026-08-10)", "why": "Drift after the Q2 guidance raise with no pricing or compounding headline against it."},
+      "copper_uranium": {"position": "long FCX since 2026-08-13, 10 days (renewed from 2026-08-10)", "why": "Congo concentrate export ban still in force; Reuters commentary frames it as a tight market, not a reversal."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war", "status": "open", "note": "Attacks dent reopening hopes (Al Jazeera, Aug 12) but crude already up 11% in five days. Re-enter XOM only on a named attack or sanctions headline before crude reacts.", "first_seen": "2026-07-07"},
+      {"name": "Oil price intervention", "status": "open", "note": "Trump pressure on Exxon and Chevron profits; watch for export curbs or a windfall tax.", "first_seen": "2026-08-05"},
+      {"name": "Yields and inflation", "status": "fading", "note": "July CPI as expected and PPI lighter; 10y eased to 4.68%. Watch Fed rate-hike odds and Jackson Hole later in August.", "first_seen": "2026-07-28"},
+      {"name": "Tariffs and trade", "status": "open", "note": "Watch copper demand and pharma tariff policy.", "first_seen": "2026-07-07"},
+      {"name": "Chip rebound and AI demand", "status": "open", "note": "NVDA 4.9% below its high; earnings late August. Wait for an NVDA-specific catalyst.", "first_seen": "2026-07-23"},
+      {"name": "Lilly obesity pipeline", "status": "open", "note": "Q2 guidance raise; watch pricing, compounding and sector-wide moves. LLY long ends around 2026-08-27.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply squeeze / Congo export ban", "status": "open", "note": "Ban in force; Reuters commentary calls it a 'Congo panic'. Watch for exemptions, reversal or enforcement, and demand or tariff hits. FCX long ends around 2026-08-27.", "first_seen": "2026-07-31"},
+      {"name": "Barrick-Newmont Nevada", "status": "fading", "note": "$1.95B settlement done; Newmont backs Headwater on a third Nevada project. Minor for NEM.", "first_seen": "2026-08-10"},
+      {"name": "Uranium / Cameco", "status": "open", "note": "Uranium ETF +5% in five days, nuclear push ramps up mills (NPR). Matters only if CCJ becomes the leader.", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check FCX (renewed 2026-08-13) for Congo ban exemptions or reversal and copper demand or tariff shocks; check LLY (renewed 2026-08-13) for pricing or compounding news; check oil for a named attack or sanctions headline versus a Hormuz deal; check NVDA for a pre-earnings company catalyst. Then read the record for a named catalyst in each family.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse.", "cases": 3, "evidence": "Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%. Contradicting: XOM 07-23 -1.56% (entered after Brent >$100). Net 3; one Iran episode only. Does not change calls."},
+      {"rule": "Hypothesis only: pharma drift holds after a trial or guidance catalyst earn about zero after costs.", "cases": 2, "evidence": "LLY 07-23 +0.21%, LLY 07-28 -0.76% (both beat the family basket). Too few cases; does not change calls."}
+    ]
+  }
+}

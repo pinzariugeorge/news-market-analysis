@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260914-a (decision day 2026-09-14, data cutoff 2026-09-14)
+What changed: WTI rose to 100.05 (Brent 104.6) and headlines report US oil above $105 after Saudi strikes and a pipeline closure forced Saudi Arabia to cancel some cargoes. The 10-year yield hit about 4.98% (WSJ: 'Treasury Yield Hits 5%') and AI stocks fell on industry calls to slow development. Exxon shut its Joliet refinery after a power outage.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-09-14, 10 days (rolled from the 2026-08-31 entry) | Saudi pipeline closure and strikes add a fresh supply shock to the Iran war, and XOM has lagged crude.
+- gold_miners: flat | Yields near 5% and Fed hike talk weigh on gold; Newmont faces Argentina project risk; no named catalyst.
+- chips: flat | AI-slowdown warning from industry chiefs and the NVDA-Groq probe are overhangs; no guidance or export-rule catalyst.
+- pharma: flat | FDA approvals in the news are not LLY's; no LLY-specific catalyst.
+- copper_uranium: flat | Copper off its high with no named outage; Saudi uranium discovery leans bearish for uranium.
+Open storylines:
+- [escalating] Iran war, Saudi supply and oil: WTI 100, Brent 105; Saudi strikes, pipeline closure and cancelled cargoes. Exit XOM on a ceasefire, pipeline restart, Hormuz reopening or WTI below about 85.
+- [open] Trump vs oil prices: Trump said prices fall only after midterms; still exit XOM on a windfall tax, export limit or SPR release.
+- [open] Exxon Joliet refinery outage: Power-outage shutdown; small negative for XOM downstream unless prolonged.
+- [open] Venezuela oil opening: Chevron $7B plan to double Venezuela output; watch for XOM deal terms.
+- [escalating] Rates at 5% and Fed hike risk: 10-year about 4.98%, one-year high; WSJ 'new era' framing; weighs on gold and long-duration stocks. Watch the Fed meeting.
+- [fading] Gold vs yields: Gold 4409, -2.9% in 5 days; China official buying accelerated in August. Re-enter NEM only on a Fed pause or safe-haven spike.
+- [escalating] AI slowdown and NVDA regulators: Industry chiefs call for slowing AI; chips fell; NVDA-Groq probe ongoing. Long only on clear guidance or export-rule catalyst.
+- [fading] LLY drift: LLY -7.7% in 20 days with no named cause; watch for LLY-specific approval or data.
+- [open] Copper and uranium supply: Copper 6.47, off high; IEA long-term gap; Saudi uranium discovery bearish for CCJ. Re-enter FCX only on a named outage.
+- [open] US-Canada trade war and uranium: Watch whether tariffs reach uranium (CCJ).
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Hold XOM (rolled long 2026-09-14, 10-day hold, exit about 2026-09-28) unless an Iran/Gulf ceasefire, Saudi pipeline restart or Hormuz reopening, a windfall tax, export limit or SPR release, or WTI below about 85 appears; then go flat. Keep the other four flat unless a named catalyst appears: a Fed pause for gold, NVDA guidance or export-rule news, an LLY-specific approval, or a copper supply outage.

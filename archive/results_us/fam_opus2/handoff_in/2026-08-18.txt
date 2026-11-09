@@ -1,0 +1,40 @@
+# Handoff from the previous run (read first)
+Run opus2-20260813-r12 (decision day 2026-08-13, data cutoff 2026-08-13)
+What changed: July CPI came in as expected (0.1% m/m, 3.4% y/y) and lighter-than-expected PPI eased yields; VIX fell to 14.6. Al Jazeera says attacks dent Hormuz reopening hopes, but crude was flat on the day after an 11% week. A Reuters commentary called the copper move a 'Congo panic'; copper and FCX paused but no reversal of the ban was reported.
+Holdings and reasons:
+- oil_gas: flat | Unnamed attacks on a stalled Hormuz reopening come after an 11% crude rebound, so they are priced; no new sanctions or named escalation.
+- gold_miners: flat | NEM is up 24% in a month and the Headwater Nevada stake is minor; no fresh catalyst.
+- chips: flat | Only a technical note on NVDA; sector bounce is not a catalyst; earnings in late August add variance.
+- pharma: long LLY since 2026-08-13, 10 days (renewed from 2026-08-10) | Drift after the Q2 guidance raise with no pricing or compounding headline against it.
+- copper_uranium: long FCX since 2026-08-13, 10 days (renewed from 2026-08-10) | Congo concentrate export ban still in force; Reuters commentary frames it as a tight market, not a reversal.
+Open storylines:
+- [open] Hormuz / Iran war: Attacks dent reopening hopes (Al Jazeera, Aug 12) but crude already up 11% in five days. Re-enter XOM only on a named attack or sanctions headline before crude reacts.
+- [open] Oil price intervention: Trump pressure on Exxon and Chevron profits; watch for export curbs or a windfall tax.
+- [fading] Yields and inflation: July CPI as expected and PPI lighter; 10y eased to 4.68%. Watch Fed rate-hike odds and Jackson Hole later in August.
+- [open] Tariffs and trade: Watch copper demand and pharma tariff policy.
+- [open] Chip rebound and AI demand: NVDA 4.9% below its high; earnings late August. Wait for an NVDA-specific catalyst.
+- [open] Lilly obesity pipeline: Q2 guidance raise; watch pricing, compounding and sector-wide moves. LLY long ends around 2026-08-27.
+- [open] Copper supply squeeze / Congo export ban: Ban in force; Reuters commentary calls it a 'Congo panic'. Watch for exemptions, reversal or enforcement, and demand or tariff hits. FCX long ends around 2026-08-27.
+- [fading] Barrick-Newmont Nevada: $1.95B settlement done; Newmont backs Headwater on a third Nevada project. Minor for NEM.
+- [open] Uranium / Cameco: Uranium ETF +5% in five days, nuclear push ramps up mills (NPR). Matters only if CCJ becomes the leader.
+Lessons ledger (cases = closed trades supporting it; below 5 cases it is only a hypothesis):
+- (3 cases) Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse. | Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%. Contradicting: XOM 07-23 -1.56% (entered after Brent >$100). Net 3; one Iran episode only. Does not change calls.
+- (2 cases) Hypothesis only: pharma drift holds after a trial or guidance catalyst earn about zero after costs. | LLY 07-23 +0.21%, LLY 07-28 -0.76% (both beat the family basket). Too few cases; does not change calls.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check FCX (renewed 2026-08-13) for Congo ban exemptions or reversal and copper demand or tariff shocks; check LLY (renewed 2026-08-13) for pricing or compounding news; check oil for a named attack or sanctions headline versus a Hormuz deal; check NVDA for a pre-earnings company catalyst. Then read the record for a named catalyst in each family.
+
+# Outcomes of your past calls (facts computed by the harness; closed trades only)
+- oil_gas XOM (0.53), called 2026-07-07, held 10d to 2026-07-21: net +6.82% (family basket +8.64%). Catalyst you quoted: 'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after 
+- oil_gas XOM (0.52), called 2026-07-10, held 10d to 2026-07-24: net +12.76% (family basket +10.51%). Catalyst you quoted: Continuing hold from 2026-07-07: Hormuz tanker attacks and the Iran escalation (supply shock). Today's record adds 'Strait of Hormuz: What h
+- oil_gas XOM (0.53), called 2026-07-15, held 10d to 2026-07-29: net +8.22% (family basket +6.06%). Catalyst you quoted: 'Oil prices rise 2% to one-month high as US-Iran attacks deepen supply disruption' (Reuters, 2026-07-14); no de-escalation headline yet
+- oil_gas XOM (0.53), called 2026-07-20, held 10d to 2026-08-03: net +4.27% (family basket +2.47%). Catalyst you quoted: "Oil prices rise after Trump says Iran will pay for killing U.S. service members" (CNBC, 2026-07-19): the US-Iran supply shock is escalating
+- oil_gas XOM (0.54), called 2026-07-23, held 10d to 2026-08-06: net -1.56% (family basket -2.39%). Catalyst you quoted: 'Brent crude crosses $100 after tankers reportedly struck off Saudi Arabia' (CNBC, July 22) and 'Oil prices rise after Rubio says Iran is no
+- pharma LLY (0.53), called 2026-07-23, held 10d to 2026-08-06: net +0.21% (family basket -1.77%). Catalyst you quoted: 'Lilly's triple agonist, retatrutide, successful in two additional Phase 3 obesity trials, delivering significant improvements in weight and
+- pharma LLY (0.53), called 2026-07-28, held 10d to 2026-08-11: net -0.76% (family basket -2.28%). Catalyst you quoted: Continuing hold from 2026-07-23: retatrutide succeeded in two more Phase 3 obesity trials (Eli Lilly, July 23). Nothing today contradicts it
+- pharma LLY (0.52), called 2026-07-31, held 10d to 2026-08-14: net +2.43% (family basket +2.01%). Catalyst you quoted: Continuing hold from 2026-07-23: retatrutide Phase 3 wins (July 23 record); no contrary LLY headline in today's record
+- copper_uranium FCX (0.52), called 2026-07-31, held 10d to 2026-08-14: net +5.91% (family basket +6.76%). Catalyst you quoted: 'Deadly storms and a global supply squeeze are sending copper prices soaring' (CNBC, 2026-07-31): a named supply shock to copper; supply out
+Per-family tally (closed trades):
+- oil_gas: 5 trades, 4 won, mean net +6.10%
+- pharma: 3 trades, 2 won, mean net +0.63%
+- copper_uranium: 1 trades, 1 won, mean net +5.91%
+All: 9 trades, 7 won, mean net +4.26%

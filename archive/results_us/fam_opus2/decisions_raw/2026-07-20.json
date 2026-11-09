@@ -1,0 +1,38 @@
+{
+  "decision_day": "2026-07-20",
+  "market_view": "Risk is rising: VIX up 25% in five days to 18.8 and chips sold off hard (semis ETF -8.9% over 5 days), while US-Iran escalation pushed WTI +15.5% in a week to 82.49; a new 50% US tariff on Canadian goods adds trade risk. Rates stay high (10y 4.54%) and the dollar firm, a headwind for gold.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "\"Oil prices rise after Trump says Iran will pay for killing U.S. service members\" (CNBC, 2026-07-19): the US-Iran supply shock is escalating again, with no ceasefire or Hormuz reopening headline.", "reasoning": "Hold the XOM long. Escalation now involves US casualties and threatened retaliation, so the supply risk is likely to last weeks. XOM (+6.1% in 5 days) has lagged crude (+15.5%). Risks: a fast de-escalation and Q2 earnings variance. Exit on a ceasefire headline."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold is -8.3% over 20 days and 24% below its high, with high yields and a firm dollar. The NEM headline is an earnings preview: variance, not direction. 'Genesis Minerals drops as investors reassess gold stocks' says sentiment is weak."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "NVIDIA headlines are routine product and blog news. 'AMD launches Helios... to rival Nvidia, adding Microsoft as newest buyer' (CNBC) adds competition for NVDA. The sector is selling off as VIX rises. No positive catalyst for the leader."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The only headline is a consumer piece on retatrutide dosing, not a trial result or approval. LLY is near its high after +30% over 60 days. No checkable catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "There is no copper headline. Copper is -4% over 20 days and FCX -15.5%. The 50% Canada tariff hits trade sentiment and Canadian names (TECK, CCJ), not FCX directly. No supply shock named."}
+  },
+  "would_change_my_mind": "A US-Iran ceasefire or Hormuz reopening headline (exit XOM); a dovish Fed turn or safe-haven gold bid (gold miners); a guidance raise or export-rule easing for NVDA.",
+  "handoff": {
+    "run_id": "opus2-20260720-e5",
+    "written_at": "2026-07-20T12:30:00Z",
+    "decision_day": "2026-07-20",
+    "data_cutoff": "2026-07-20",
+    "what_changed": "Oil escalated further: WTI +15.5% over 5 days to 82.49 (Brent 88.10) after Trump said Iran will pay for killing US service members (CNBC, July 19). Chips sold off (semis -8.9% over 5 days), VIX rose to 18.8, and Trump imposed 50% tariffs on Canadian goods (AP, July 20). AMD launched the Helios rack system with Microsoft as a buyer.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days; renewed 2026-07-20 for 10 days", "why": "US-Iran escalation now includes US casualties and threatened retaliation; no de-escalation headline; confidence 0.53."},
+      "gold_miners": {"position": "flat", "why": "Gold is weak with high yields and a firm dollar; NEM Q2 earnings are only a variance event."},
+      "chips": {"position": "flat", "why": "Routine NVIDIA product news; AMD Helios adds competition; the sector is selling off."},
+      "pharma": {"position": "flat", "why": "No trial, approval or pricing news for LLY."},
+      "copper_uranium": {"position": "flat", "why": "No copper catalyst for FCX; the Canada tariff is a trade-sentiment negative."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran escalation", "status": "escalating", "note": "US service members killed and Trump threatens Iran (July 19); WTI 82.49. A ceasefire or reopening headline means exiting XOM.", "first_seen": "2026-07-07"},
+      {"name": "Oil price slide vs shock", "status": "open", "note": "WTI still -10% over 60 days with record US output; the shock bounce could fade fast.", "first_seen": "2026-07-07"},
+      {"name": "Gold bear market and Fed", "status": "open", "note": "Gold 24% below its high, 10y 4.54%; Warsh hawkish. Watch for a dovish turn or safe-haven bid.", "first_seen": "2026-07-07"},
+      {"name": "US-Canada tariffs", "status": "open", "note": "50% tariffs on Canadian goods (AP, July 20). Watch for retaliation and effects on TECK, CCJ and energy flows.", "first_seen": "2026-07-20"},
+      {"name": "AI chip competition", "status": "open", "note": "AMD Helios rack with Microsoft as a buyer challenges NVDA; chips selling off with VIX up.", "first_seen": "2026-07-20"},
+      {"name": "Uranium supply and policy", "status": "fading", "note": "Cigar Lake resolved; uranium ETF -9.9% over 5 days. Matters only if CCJ becomes leader.", "first_seen": "2026-07-07"},
+      {"name": "Q2 earnings season", "status": "open", "note": "NEM Q2 previews out; XOM Q2 windfall signalled. Variance, not direction.", "first_seen": "2026-07-15"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check the XOM long (renewed 2026-07-20 for 10 days, ends around 2026-08-03) against US-Iran and Hormuz news and exit on a de-escalation headline; then read the new record for a named catalyst in each family and decide long or flat.",
+    "lessons": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "decision_day": "2026-07-10",
+  "market_view": "Calm regime: VIX 15.8, down 20% in 20 days; 10-year yield 4.54% and a firm dollar near its high. A Fed report cites 'stepped-up' inflation from tariffs, the Iran war and the AI buildout, which keeps rates high.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.52, "catalyst": "Continuing hold from 2026-07-07: Hormuz tanker attacks and the Iran escalation (supply shock). Today's record adds 'Strait of Hormuz: What has happened since the US-Iran MoU on June 17?' (Al Jazeera), with no de-escalation headline.", "reasoning": "WTI is up 5% over 5 days but gave back 2% yesterday, and XOM fell 2.6%. The supply shock has not been reversed by any headline, and the Q2 profit windfall comes later in July. The edge is thin, so confidence is cut to 0.52 but the hold stays to its 10-day horizon."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The NEM headlines are opinion pieces ('Buy The Dip', 'Looks Cheap'), not catalysts. Gold is 22% below its high, with high real rates, a firm dollar and a Fed report on rising inflation. Yesterday's 1.4% bounce is already priced in."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The only headline is Micron's New York fab construction, which is not about NVDA. There is no export-rule or guidance news. TSMC monthly sales around the 10th add variance, not direction."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The FDA headlines (manufacturing framework, PFAS) and an eye-drop recall do not touch LLY. LLY is 1.5% below its high after a 31% gain over 60 days, and there is no trial or pricing catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The uranium headlines (an Australia-India export deal, the US mining push) are slow, matter for CCJ rather than the FCX leader, and are mildly supply-positive. FCX's 5.3% jump came with copper up 2.7%, which is already priced in. There is no copper-specific catalyst."}
+  },
+  "would_change_my_mind": "A US-Iran de-escalation or reopening headline would make me exit the XOM long; a Fed dovish turn or a NEM guidance raise would make me reconsider gold miners.",
+  "handoff": {
+    "run_id": "opus2-20260710-c3",
+    "written_at": "2026-07-10T12:30:00Z",
+    "decision_day": "2026-07-10",
+    "data_cutoff": "2026-07-10",
+    "what_changed": "Oil rose 5% over the week on the Hormuz shock but WTI fell 2% on July 9 (72.08), and XOM fell 2.6%. There is no de-escalation headline yet. Gold bounced 1.4% with silver up 3.8%, and a Fed report cites 'stepped-up' inflation. Australia and India agreed on uranium exports.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days", "why": "The Hormuz/Iran supply shock is the catalyst and no de-escalation headline has appeared; confidence was trimmed to 0.52."},
+      "gold_miners": {"position": "flat", "why": "There is no NEM catalyst; the headlines are opinion pieces, and real rates and the dollar remain headwinds."},
+      "chips": {"position": "flat", "why": "There is no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "There is no trial, approval or pricing news for LLY."},
+      "copper_uranium": {"position": "flat", "why": "There is no copper catalyst for FCX; the uranium deal news is slow and concerns CCJ."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran escalation", "status": "escalating", "note": "Tanker attacks, the revoked waiver and the blockade threat; Al Jazeera recaps events since the June 17 MoU. Oil gave back 2% on July 9. A de-escalation headline means exiting XOM.", "first_seen": "2026-07-07"},
+      {"name": "Oil price slide", "status": "open", "note": "WTI is at 72.08, down 18% over 20 days. US output is a record (EIA). The shock bounce may fade.", "first_seen": "2026-07-07"},
+      {"name": "Gold bear market", "status": "open", "note": "Gold is 22% below its high. A Fed report on rising inflation keeps rates high. Watch for a dovish turn or a safe-haven bid.", "first_seen": "2026-07-07"},
+      {"name": "Gold miner M&A", "status": "fading", "note": "The $9bn tie-up matters only if NEM becomes involved.", "first_seen": "2026-07-07"},
+      {"name": "Uranium supply and policy", "status": "open", "note": "The Cigar Lake suspension, the Australia-India export deal and the Trump nuclear push. These matter for CCJ only if it becomes the leader.", "first_seen": "2026-07-07"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "A slow negative for copper demand.", "first_seen": "2026-07-07"},
+      {"name": "Q2 earnings season", "status": "open", "note": "Exxon has signalled a Q2 windfall. NEM's Q2 call is scheduled. Watch for guidance changes.", "first_seen": "2026-07-07"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check the XOM long (10-day horizon from 2026-07-07, ends around 2026-07-21) against Iran and Hormuz news, and exit on a de-escalation headline. Then read the new record for a named catalyst in each family and decide long or flat.",
+    "lessons": []
+  }
+}

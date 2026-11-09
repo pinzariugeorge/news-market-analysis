@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260813-a (decision day 2026-08-13, data cutoff 2026-08-13)
+What changed: Al Jazeera: attacks dented hopes for a Hormuz reopening; WTI 83.3 (+10.7% in 5 days), already priced, so XOM stays flat. CPI in line (3.4% y/y) and a lighter PPI eased yields, helping gold (4468) and NEM (+13% in 5 days). Reuters commentary says the Congo copper panic reflects an already tight market; copper eased 1.6% in 5 days, FCX flat.
+Holdings and reasons:
+- oil_gas: flat | Renewed Hormuz attacks are already priced (crude +10.7%, XOM +5.4% in 5 days); no one-sided catalyst.
+- gold_miners: long NEM since 2026-08-10, 10 days | Barrick settlement clears uncertainty and easing yields support gold; no negative deal details seen.
+- chips: flat | No export-rule or guidance catalyst; NVDA late-August earnings are two-sided.
+- pharma: long LLY since 2026-08-05, 10 days | Guidance raise still rewarded (+4.3% in 5 days, near high); no drug-pricing news.
+- copper_uranium: long FCX since 2026-07-31, 20 days | Congo concentrate export ban keeps copper tight (1.6% off 1-year high); no reversal seen.
+Open storylines:
+- [escalating] Iran war / Hormuz oil shock: Al Jazeera: attacks dent reopening hopes; WTI 83.3, Brent 89. Already repriced; re-enter XOM only on a new closure with crude not yet moved.
+- [open] Trump vs oil majors' windfall: No new action seen; watch for a windfall tax, export limits or SPR releases (negative for XOM).
+- [open] Gold bear market and rising yields: Gold 4468, 16% below high; 10-year 4.68% near 1-year high but eased on lighter PPI. A yield rebound would hurt NEM.
+- [open] Barrick-Newmont Nevada settlement and IPO: $1.95B settlement, NEM long; NEM +24% in a month and backing Headwater on a 3rd Nevada project. Exit on negative details; hold ends about 2026-08-24.
+- [open] Chip rout and rebound: SOXX +2.7% in 5 days, NVDA 5% off high. Watch NVDA earnings late August and export rules.
+- [open] US inflation and tariffs: July CPI +0.1% m/m, 3.4% y/y as expected; PPI lighter. Watch Fed odds, tariff carve-outs and retaliation.
+- [fading] LLY Q2 guidance raise: LLY long, 1.2% off high. Exit on a sell-off or drug-pricing news; hold ends about 2026-08-19.
+- [open] Copper supply squeeze: Congo concentrate export ban; Reuters commentary says panic reflects tight copper. Copper 6.60 (-1.6% in 5 days). Exit on ban reversal or exemption, mine restarts, dollar rebound or copper reversal; hold ends about 2026-08-28.
+- [open] Uranium: producer updates and mill opposition: Uranium ETF +5.4% in 5 days; NPR on uranium mill and tribal health concerns. Indirect for FCX.
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Exit LLY at about 2026-08-19 or earlier on a sell-off or pricing news. Hold NEM to about 2026-08-24 unless yields rebound sharply or settlement details turn negative. Hold FCX to about 2026-08-28 unless the Congo ban is reversed or exempted or copper reverses. Re-check XOM (Hormuz, Trump actions) and NVDA (earnings date, export rules) for a named, unpriced catalyst.

@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260909-a",
+ "written_at": "2026-09-09T14:00:00Z",
+ "decision_day": "2026-09-09",
+ "data_cutoff": "2026-09-09",
+ "what_changed": "Brent topped $100 after US strikes on Iranian tankers (WTI +8.5% in 5 days) while XOM lagged. Copper hit a record and FCX rose 5.4% yesterday; Bernstein cut the NEM and FCX targets. Nebius reported Blackwell auction prices 15-20% higher, a mild demand datapoint for NVDA.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Oil spike is priced and no XOM-specific one-sided catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Yield at its high is a headwind and NEM news is only a target cut."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Blackwell demand anecdote is mild and not a clear one-sided catalyst; NVDA lagged peers."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, approval or pricing news."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper record and FCX jump are priced; no FCX guidance or supply news."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "escalating",
+   "note": "Brent above $100 after strikes on Iranian tankers; traders bet fighting eases this month; watch XOM-specific news and whether the rise holds",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Rate-hike bets and rates risk",
+   "status": "open",
+   "note": "10-year yield 4.81% at its high; Morgan Stanley flags oil and rates as main risks; watch the jobs report and Fed",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "AI demand and chips",
+   "status": "open",
+   "note": "Nebius says Blackwell auction prices +15-20%; NVDA -2% yesterday while AMD +5.9%; watch NVDA demand or export news and AVGO follow-through",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Gold miners and rates",
+   "status": "open",
+   "note": "Gold below 200-day average; Bernstein cut NEM target to $144; watch NEM guidance",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Copper record and uranium",
+   "status": "open",
+   "note": "Copper at a high and FCX +5.4% yesterday; Bernstein cut FCX target to $47; watch FCX guidance or supply news",
+   "first_seen": "2026-09-03"
+  },
+  {
+   "name": "Pharma weakness",
+   "status": "open",
+   "note": "Health care ETF -2.5% yesterday; LLY -8.8% in 20 days; watch LLY filings, approvals and trial news",
+   "first_seen": "2026-09-03"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise."
+}

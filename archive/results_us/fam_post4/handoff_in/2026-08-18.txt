@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260813-a (decision day 2026-08-13, data cutoff 2026-08-13)
+What changed: Three days since the last note (08-10). WTI rebounded +10.7% in 5 days, NEM is now +23.8% in 20 days, and VIX is down to 14.55. Headlines on 08-13 were again noise (Motley Fool opinion pieces, insider sales, CoreWeave and Nebius earnings); no leader-specific catalyst in any family.
+Holdings and reasons:
+- oil_gas: flat | WTI and XOM rebounds are priced in and no OPEC+ or XOM headline exists.
+- gold_miners: flat | NEM +23.8% in 20 days is already priced in and no Fed, dollar or NEM headline explains it.
+- chips: flat | Only analyst-estimate and sentiment pieces on NVDA; no checkable surprise.
+- pharma: flat | No LLY trial, regulator or pricing headline.
+- copper_uranium: flat | No copper supply, China data or FCX headline.
+Open storylines:
+- [open] Oil whipsaw: WTI -21% over 60 days but +10.7% in 5 days. Watch OPEC+ or supply headlines, Iran and shipping-lane tensions, and XOM earnings.
+- [open] Chip rebound and AI capex: NVDA +3% yesterday. AI-cloud earnings (CoreWeave backlog $104B, Nebius +34%) are supportive. Watch TSMC monthly sales, NVDA news, export rules.
+- [open] Gold bounce: Gold +10.3% in 20 days, still 16% below its high; NEM +23.8% in 20 days. Watch the Fed, the August jobs report and the 10-year yield at 4.68%.
+- [open] LLY near highs: LLY 1.2% below its high, +21% in 60 days. Watch LLY earnings, trial or pricing news.
+- [fading] Iran tensions: No fresh headline on 08-13; relevant only if a harder oil or gold headline appears.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-13: read the new record and headlines, then decide each family under the catalyst rule.

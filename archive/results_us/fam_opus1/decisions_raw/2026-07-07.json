@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-07-07",
+  "market_view": "Calm regime: VIX 15.6, down 15% in five days; dollar firm near its 52-week high and 10-year yield near 4.5%. Crude has fallen 26% in 20 days, but new Iran and Strait of Hormuz headlines point to a fresh supply risk.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after Trump threatens to bomb Iran and reimpose naval blockade' (CNBC), plus 'Exxon signals Q2 profit windfall' (Reuters). The 07-06 closes (WTI -0.2%, XOM -0.5%) do not yet show the jump, and a waiver revocation plus blockade threat is a policy escalation that can last weeks.", "reasoning": "A named supply shock after a 26% crude slide, with XOM still 20% off its high. XOM moves only 0.33-0.61 times crude and part of the jump will be in the open; geopolitical spikes often fade, so confidence stays just above the bar."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold +1% yesterday but down 7.5% in 20 days; Morningstar says gold is in a bear market. The $9 bln tie-up commentary does not name NEM. Firm dollar and a jobs report inside the window add variance, not direction."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Only an NVIDIA blog post; the semi ETF +2% yesterday is priced in. NVDA is 17% off its high with no specific news; TSMC monthly sales around the 10th are a scheduled event without a one-sided setup."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY trial, approval or pricing news. LLY is 2.4% from its high after a 26% 60-day run; the sector fell 1.1% yesterday. Earnings season adds variance."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Headlines are a small uranium mine protest, a junior copper stake and a CCJ listicle; none reaches FCX. Copper +1% yesterday is priced in; FCX down 12% in 20 days with no named cause to reverse."}
+  },
+  "would_change_my_mind": "Signs of Iran de-escalation or reinstated waivers (oil gives back the jump) would make oil flat; a guidance raise or supply outage for NEM, NVDA, LLY or FCX would justify a long there.",
+  "handoff": {
+    "run_id": "opus1-20260707-a",
+    "written_at": "2026-07-07T11:45:00Z",
+    "decision_day": "2026-07-07",
+    "data_cutoff": "2026-07-07",
+    "what_changed": "Iran escalation: tanker attacks in the Strait of Hormuz, the US revoked an Iran oil sanctions waiver, and Trump threatened bombing and a naval blockade; oil reportedly jumped 4-5% after the 07-06 close. Exxon signalled a Q2 profit windfall. Went long XOM on that supply-shock catalyst; the other four families stay flat.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days", "why": "Named supply shock (Iran waiver revoked, Hormuz tanker attacks, blockade threat) not yet in the 07-06 closes; confidence 0.53."},
+      "gold_miners": {"position": "flat", "why": "Gold in a bear market with a firm dollar; no NEM-specific catalyst."},
+      "chips": {"position": "flat", "why": "No NVDA-specific catalyst; sector bounce already priced in."},
+      "pharma": {"position": "flat", "why": "LLY near highs with no trial, approval or pricing news."},
+      "copper_uranium": {"position": "flat", "why": "No headline reaches FCX; copper move priced in."}
+    },
+    "open_storylines": [
+      {"name": "Iran / Strait of Hormuz escalation", "status": "escalating", "note": "Watch for an actual blockade or strikes (supports the XOM long) versus de-escalation or waiver reinstatement (exit signal); check WTI and Brent closes.", "first_seen": "2026-07-07"},
+      {"name": "Crude slump", "status": "fading", "note": "WTI was down 26% in 20 days and back at pre-Iran-war levels on 07-06; the Iran news may reverse it. Watch OPEC+ and output growth.", "first_seen": "2026-07-01"},
+      {"name": "Exxon Q2 windfall signal", "status": "open", "note": "Reuters says Exxon signalled a Q2 profit windfall; XOM Q2 earnings in late July fall inside or near the hold window and add variance.", "first_seen": "2026-07-07"},
+      {"name": "Gold bear market", "status": "open", "note": "Morningstar cut near-term gold assumptions; a $9 bln gold-miner tie-up (not NEM) was reported. Watch the dollar, real rates, the jobs report and the NEM Q2 call.", "first_seen": "2026-07-01"},
+      {"name": "Cigar Lake suspension", "status": "open", "note": "Watch the restart timeline and uranium spot; leader is FCX so impact is indirect. No update in this record.", "first_seen": "2026-07-01"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "Watch whether more automakers switch away from copper (demand headwind for FCX). No update in this record.", "first_seen": "2026-07-01"},
+      {"name": "Q2 earnings season and Fed under Warsh", "status": "open", "note": "Earnings of XOM, NEM, LLY, FCX and NVDA peers in July-August and the jobs report raise variance; not a reason to be long.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note, check whether the XOM long is still justified by the Iran/Hormuz storyline (exit to flat on clear de-escalation or once the 10-day horizon ends), then re-check all five families for a named catalyst in the new headlines."
+  }
+}

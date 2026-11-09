@@ -1,0 +1,39 @@
+{
+  "decision_day": "2026-07-23",
+  "market_view": "Iran war is escalating into a dual-chokepoint oil shock (Brent headlines above $100, tankers struck off Saudi Arabia, Red Sea attacks); the 10-year yield is at its highest since January 2025 on inflation fear, and new sweeping US tariffs on 60+ partners add macro risk. VIX is moderate at 16.6 but rose 6% in 5 days; it is earnings season.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.55, "catalyst": "'Brent crude crosses $100 after tankers reportedly struck off Saudi Arabia' (CNBC) and 'Oil prices rise after Rubio says Iran is not serious about a deal' (CNBC): supply shock still widening, no de-escalation", "reasoning": "Keep existing XOM long (renewed 07-20, ends about 08-03). Supply threat now spans Hormuz and Red Sea and diplomacy stalled; XOM moves only 0.3-0.6x crude, so not fully priced. Reversal risk on any ceasefire; Q2 earnings add variance."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none qualifying: 'Newmont tops profit estimates on higher gold prices, sees steady output' (Reuters) is a beat with unchanged guidance", "reasoning": "NEM beat but only reaffirmed guidance; stock already +3.5% on 07-22. Gold in a bear market with the 10-year yield at an 18-month high and a firm dollar; no one-sided setup."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none for NVDA; 'AMD says its newest AI server is in full production, will ship in months' (Reuters) is a competitive negative", "reasoning": "NVDA headlines are a Korea research lab, not demand or export news. AMD Helios ramp and Anthropic deal pressure NVDA share; big tech earnings ahead add variance only."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "considered: 'Lilly's triple agonist, retatrutide, successful in two additional Phase 3 obesity trials' (Eli Lilly); judged largely expected", "reasoning": "Additional Phase 3 wins confirm an already-known strong programme; LLY is +31.6% over 60 days so success is mostly priced. Q2 earnings early August add variance. Close to the bar but not a surprise; stay flat."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none for FCX; 'Saudi Arabia and US strike deal for kingdom to enrich uranium' (Guardian) is long-dated and indirect", "reasoning": "FCX +3.9% on 07-22 with copper down, no named reason. New tariffs on 60 partners are an unclear demand risk for copper. Uranium deal is years from affecting demand and the leader is FCX."}
+  },
+  "would_change_my_mind": "An Iran ceasefire or Hormuz/Red Sea reopening would flip oil to flat; an LLY guidance raise or a gold rally on falling yields would bring pharma or gold miners into consideration.",
+  "handoff": {
+    "run_id": "opus1-20260723-a",
+    "written_at": "2026-07-23T11:30:00Z",
+    "decision_day": "2026-07-23",
+    "data_cutoff": "2026-07-23",
+    "what_changed": "Oil shock widened: Brent headlines above $100 after tankers struck off Saudi Arabia and Red Sea attacks, Rubio says Iran not serious about a deal; WTI 86.8 (+9.1% 5d), Brent 94.1 close. The 10-year yield hit its highest since January 2025 on inflation fear and the US imposed new tariffs on 60+ partners. NEM beat Q2 with steady guidance; LLY reported two more retatrutide Phase 3 wins.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-07-07, 10 days (renewed 2026-07-20, ends about 2026-08-03)", "why": "Iran war supply shock now spans Hormuz and the Red Sea with no de-escalation; held, not re-extended."},
+      "gold_miners": {"position": "flat", "why": "NEM Q2 beat with unchanged guidance; gold bear market and rising yields give no one-sided setup."},
+      "chips": {"position": "flat", "why": "No NVDA catalyst; AMD Helios in full production is a competitive negative."},
+      "pharma": {"position": "flat", "why": "Retatrutide Phase 3 wins judged largely expected and priced after LLY's 60-day rally."},
+      "copper_uranium": {"position": "flat", "why": "No FCX catalyst; new tariffs unclear for copper; Saudi uranium deal indirect and long-dated."}
+    },
+    "open_storylines": [
+      {"name": "Iran war / Hormuz and Red Sea oil shock", "status": "escalating", "note": "Exit XOM on ceasefire, chokepoint reopening, or the horizon end about 2026-08-03. Check WTI and Brent closes and any tanker attacks.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Late July, inside the hold window; variance, not direction.", "first_seen": "2026-07-20"},
+      {"name": "Gold bear market and rising yields", "status": "open", "note": "10-year at highest since Jan 2025; watch yields, dollar, jobs report. NEM Q2 beat done, guidance steady.", "first_seen": "2026-07-20"},
+      {"name": "AI chip competition", "status": "open", "note": "AMD Helios in full production, AMD $5bn Anthropic deal; watch NVDA guidance, export rules, big tech capex in earnings.", "first_seen": "2026-07-20"},
+      {"name": "US tariffs (Canada 50%, new duties on 60+ partners)", "status": "escalating", "note": "Watch metals and energy carve-outs and retaliation affecting copper and crude flows.", "first_seen": "2026-07-20"},
+      {"name": "LLY retatrutide and Q2 earnings", "status": "open", "note": "Two more Phase 3 wins on 07-23; reconsider long only on a guidance raise or regulator filing news at Q2 results (early August).", "first_seen": "2026-07-23"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "FCX demand headwind if more automakers switch; no update.", "first_seen": "2026-07-20"},
+      {"name": "Uranium supply and policy", "status": "fading", "note": "Saudi-US enrichment deal is long-dated; uranium ETF -10% over 20 days; indirect for FCX.", "first_seen": "2026-07-20"},
+      {"name": "Inflation, Warsh Fed and Q2 earnings", "status": "open", "note": "Oil-driven inflation fear lifting yields; earnings season raises variance, not a reason to be long.", "first_seen": "2026-07-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note; exit XOM to flat if the Iran conflict de-escalates (ceasefire, Hormuz or Red Sea reopening) or the horizon (about 2026-08-03) has ended, otherwise check its Q2 result and keep; then re-check all five families for a named catalyst, especially LLY Q2 guidance and NVDA/export news."
+  }
+}

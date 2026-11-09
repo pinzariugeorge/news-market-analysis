@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-05",
+  "market_view": "VIX 16.5, calm after a 9% fall over 5 days; risk assets bounced hard (semis +5.6% on the day, copper miners +5-8%) while WTI dropped 5.7% with no named cause. Earnings-season noise dominates the headlines.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI -5.7% on the day has no cause in the headlines; XOM only -0.7%. Shell buyback and an EPD dividend raise are not XOM catalysts. A driver move already happened and is priced in."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold +1.5% and NEM +2.5% have no Fed, dollar or NEM headline. The Warsh 'fewer FOMC meetings' piece is opinion, not a decision. Gold is 22% below its high; trend is not a reason."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.51, "catalyst": "none qualifying: Amazon capex raised to $220B (The Motley Fool) is positive for AI demand but was reported with the earnings and the sector already jumped 5.6%; AMD fell 9% after hours on gross-margin guidance", "reasoning": "AI capex news is mostly priced after a +8.7% five-day sector run, and the AMD margin reaction cuts the other way. No NVDA-specific catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY -8.6% over 5 days with no LLY headline; no trial, regulator or pricing news for the family. A dip without a cause is not a catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper +1.6% and FCX +5.8% have no supply or China headline. Bloom Energy and data-center power articles are not uranium or copper catalysts. A move that already happened is priced in."}
+  },
+  "would_change_my_mind": "A leader-specific headline: a supply shock or OPEC+ decision for XOM, a Fed or dollar shift for NEM, an export-rule change or NVDA guidance for chips, an LLY trial or regulator result, or a copper supply outage for FCX.",
+  "handoff": {
+    "run_id": "fp4-20260805-a",
+    "written_at": "2026-08-05T14:00:00Z",
+    "decision_day": "2026-08-05",
+    "data_cutoff": "2026-08-05",
+    "what_changed": "Five days since the last note (07-31). VIX eased to 16.5; semis rose a further 5.6% on the day, copper miners ran again, WTI fell 5.7% and LLY slid to 9.7% below its high. Headlines held earnings-season news (Amazon capex $220B, AMD margin miss, Meta, Apple, SpaceX) but no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI whipsaw again has no named cause and there is no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold and NEM bounce has no Fed, dollar or NEM catalyst."},
+      "chips": {"position": "flat", "why": "Amazon capex raise is already in a sector up 8.7% in five days; AMD margin reaction is mixed; no NVDA catalyst."},
+      "pharma": {"position": "flat", "why": "LLY decline over five days has no LLY news."},
+      "copper_uranium": {"position": "flat", "why": "FCX and copper strength has no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -5.7% on the day, -20% over 60 days. Watch OPEC+ or supply headlines and XOM earnings.", "first_seen": "2026-07-28"},
+      {"name": "Chip rebound and AI capex", "status": "open", "note": "Semi ETF +8.7% in 5 days; Amazon capex $220B, Meta capex $130-145B, AMD fell 9% after hours on margins. Watch NVDA read-through, TSMC sales (about the 10th), export rules.", "first_seen": "2026-07-28"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold 22% below its high, 10-year yield 4.63%. Watch the Fed (Warsh considering fewer FOMC meetings) and the August jobs report.", "first_seen": "2026-07-28"},
+      {"name": "LLY pullback", "status": "open", "note": "LLY -8.6% over 5 days, no LLY headline. Watch for LLY earnings or any trial or pricing news.", "first_seen": "2026-07-31"},
+      {"name": "SpaceX lockup expiry", "status": "open", "note": "Lockup ends Aug 6; possible market-wide sentiment effect, not a family catalyst.", "first_seen": "2026-08-05"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-05: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

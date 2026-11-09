@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-07-01",
+  "market_view": "VIX has fallen to 16.45 (down 32% in 60 days), a calm risk-on regime led by semiconductors. Crude and gold have both sold off sharply; no stress signal.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI is down 25% in 20 days, but the move is already priced in. Headlines are Zacks and SeekingAlpha opinion pieces ('Limited Downside Risk, But Don't Expect Much In The Near-Term'), not events. Q2 earnings add variance, not direction."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold is down 10% in 20 days, the dollar is firm and the 10-year yield rose 1% on the day. UBS cut targets on NEM, AEM and WPM, and the other headlines are generic bullish opinion. No named one-sided event, and an oversold bounce is not a catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The sector ETF is up 67% in 60 days and sits near its high, but NVDA is down 10.8% in 20 days. NVDA headlines (Palantir partnership, edge AI) are soft and not specific. Momentum is not a catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "'Eli Lilly (LLY) Faces China Trial Security Probe From U.S. Lawmakers' (Yahoo) is a negative, not a long catalyst. The Verzenios China deal is minor. LLY is up 28% in 60 days, so a rise is already priced in."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "FCX 'Down 11.0% After Cutting 2026 Output Outlook On Grasberg Delays' (Yahoo) is a negative that has already been priced in. UBS raised its FCX target, which is a mild positive. Cameco's Cigar Lake suspension has no 2026 impact and concerns a non-leader."}
+  },
+  "would_change_my_mind": "A named, checkable positive event for a leader (a guidance raise, a supply shock to its commodity, an M&A offer or a regulatory approval) that the price has not yet reflected.",
+  "handoff": {
+    "run_id": "fp3-20260701-a",
+    "written_at": "2026-07-01T14:00:00Z",
+    "decision_day": "2026-07-01",
+    "data_cutoff": "2026-07-01",
+    "what_changed": "First run: there was no previous handoff. All five families were assessed from the 2026-07-01 record and none has a qualifying catalyst, so everything is flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude is down sharply and no catalyst is named; the headlines are opinion pieces."},
+      "gold_miners": {"position": "flat", "why": "Gold is weak, UBS cut targets and no one-sided event is named."},
+      "chips": {"position": "flat", "why": "The sector rally is already priced in and NVDA has no specific catalyst."},
+      "pharma": {"position": "flat", "why": "The LLY China probe is a negative and there is no positive catalyst."},
+      "copper_uranium": {"position": "flat", "why": "The FCX output cut on Grasberg delays is already priced in; nothing positive and checkable."}
+    },
+    "open_storylines": [
+      {"name": "FCX Grasberg output cut", "status": "open", "note": "Watch for Q2 earnings and Grasberg restart news; the stock is down about 11% after the cut.", "first_seen": "2026-07-01"},
+      {"name": "LLY China trial security probe", "status": "open", "note": "House Select Committee probe; watch for escalation or a company response.", "first_seen": "2026-07-01"},
+      {"name": "Q2 earnings season", "status": "open", "note": "Earnings from NEM, JNJ and the oil majors are due in July and August; a guidance raise would be a catalyst.", "first_seen": "2026-07-01"},
+      {"name": "Oil and gold selloff", "status": "open", "note": "WTI is down 25% and gold down 10% over 20 days; watch for a supply shock or rate shift, not oversold bounces.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list; stay flat if none."
+  }
+}

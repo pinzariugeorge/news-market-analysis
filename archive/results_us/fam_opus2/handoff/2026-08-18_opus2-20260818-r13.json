@@ -1,0 +1,98 @@
+{
+ "run_id": "opus2-20260818-r13",
+ "written_at": "2026-08-18T12:00:00Z",
+ "decision_day": "2026-08-18",
+ "data_cutoff": "2026-08-18",
+ "what_changed": "The US-Iran ceasefire expired and Trump threatened Oman (Guardian); crude rose 2.6% on Aug 17, so I re-entered XOM. The 30-year yield hit a 19-year high above 5.33% (CNBC). Walz moved to block copper mining near the Boundary Waters (MPR News); there is no Congo ban reversal.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-08-18, 10 days",
+   "why": "Ceasefire expiry and the threat to Oman are a named escalation after a 60-day crude decline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM is up 35% in 20 days with no catalyst, and rising long yields work against it."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "There is no NVDA-specific catalyst; the $105B OpenAI financing is two-sided, and earnings in late August add variance."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-08-13, 10 days, not renewed (ends about 2026-08-27)",
+   "why": "The guidance-raise drift is stale and LLY fell 4% in 5 days with no headline."
+  },
+  "copper_uranium": {
+   "position": "long FCX since 2026-08-18, 10 days (renewed from 2026-08-13)",
+   "why": "The Congo export ban is still in force, and a new Minnesota restriction adds a small supply effect."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Hormuz / Iran war",
+   "status": "escalating",
+   "note": "The ceasefire expired and Trump threatened Oman (Aug 18). Watch for strikes on shipping or Omani ports, versus a new truce. The XOM long ends about 2026-09-01.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Oil price intervention",
+   "status": "open",
+   "note": "Trump pressure on Exxon and Chevron profits; watch for export curbs or a windfall tax.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Yields and inflation",
+   "status": "escalating",
+   "note": "The 30y topped 5.33%, a 19-year high, and the 10y is 4.72%. Watch Jackson Hole and Fed hike odds; this weighs on gold and long-duration stocks.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Tariffs and trade",
+   "status": "open",
+   "note": "The St. Louis Fed says tariff effects on inflation are stabilizing. Watch copper demand and pharma tariff policy.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Chip rebound and AI demand",
+   "status": "open",
+   "note": "NVDA is 4.6% below its high, with $105B OpenAI Ohio financing; earnings are late August. Wait for an NVDA-specific catalyst; the BigGo 'SOX -6%' headline did not match the data.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "fading",
+   "note": "Not renewed on 08-18; the hold ends about 08-27. Re-enter only on a new trial, approval or guidance headline.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Copper supply squeeze / Congo export ban",
+   "status": "open",
+   "note": "The ban is in force; Walz's order blocks Boundary Waters mining. Watch for exemptions, reversal or enforcement, and demand or tariff hits. The FCX long ends about 2026-09-01.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Uranium / Cameco",
+   "status": "open",
+   "note": "The uranium ETF is up 17% in 20 days; Dewey-Burdock project opposition. Matters only if CCJ becomes the leader.",
+   "first_seen": "2026-08-10"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day: check XOM (opened 2026-08-18) for a US-Iran truce or a Hormuz deal versus attacks on shipping or Oman; check FCX (renewed 2026-08-18) for a Congo ban exemption or reversal and copper demand or tariff shocks; let LLY run off around 08-27 unless a new LLY catalyst appears; check NVDA for a pre-earnings company catalyst. Then read the record for a named catalyst in each family.",
+ "lessons": [
+  {
+   "rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse.",
+   "cases": 3,
+   "evidence": "Supporting: XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%. Contradicting: XOM 07-23 -1.56% (entered after Brent passed $100). Net 3; one Iran episode only. Does not change calls."
+  },
+  {
+   "rule": "Hypothesis only: pharma drift holds after a trial or guidance catalyst earn small positive returns and beat the family basket.",
+   "cases": 3,
+   "evidence": "LLY 07-23 +0.21%, 07-28 -0.76%, 07-31 +2.43%; mean +0.63%, and all three beat the basket. Too few cases; does not change calls."
+  },
+  {
+   "rule": "Hypothesis only: copper longs on a named supply-squeeze headline win over 10 days.",
+   "cases": 1,
+   "evidence": "FCX 07-31 +5.91% (basket +6.76%). A single case; does not change calls."
+  }
+ ]
+}

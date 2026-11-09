@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260720-a (decision day 2026-07-20, data cutoff 2026-07-20)
+What changed: VIX +12% on the day; WTI +4.5% (+15.5% in 5 days) on Iran/Middle East escalation; semis -9% in 5 days after Oracle debt and AI capex worries. COP agreed to buy 42% of bp's Kirkuk venture; Q2 earnings previews for NEM, FCX, OXY; no leader-specific catalyst.
+Holdings and reasons:
+- oil_gas: flat | Oil spike is a driver move already priced; Kirkuk deal is COP not XOM.
+- gold_miners: flat | Only NEM earnings previews; gold and miners still weak with no catalyst.
+- chips: flat | Sector selloff on AI capex worries; no NVDA-specific catalyst.
+- pharma: flat | Lilly buys ATAI, small; no LLY trial or policy news.
+- copper_uranium: flat | FCX earnings preview only; uranium and copper weak.
+Open storylines:
+- [escalating] Iran war and oil: WTI 82.5, +15.5% in 5 days; watch for a real supply disruption versus sentiment
+- [open] Q2 earnings season: NEM, FCX, OXY and big tech report this week; a guidance raise by a leader would be a catalyst
+- [open] Chip selloff and AI capex worries: Semi ETF -9% in 5 days; Oracle debt concern; AMD Advancing AI event and Helios on Azure; watch NVDA-specific news and TSMC
+- [open] FCX Grasberg output cut: No new news; watch FCX Q2 earnings and restart updates
+- [open] LLY China trial security probe: No update; watch for escalation. Lilly also acquiring ATAI
+- [open] Gold slump and rates: Gold -8% in 20 days, -15% in 60; firm dollar and yields; watch Fed and NEM earnings
+- [open] Uranium sector sell-off: Uranium ETF -18% in 20 days; CCJ down; not the leader FCX
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; look for a named leader-specific catalyst (XOM supply shock, NVDA news, LLY trial, FCX or NEM earnings guidance); stay flat if none.

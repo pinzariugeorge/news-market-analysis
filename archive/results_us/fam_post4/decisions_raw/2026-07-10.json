@@ -1,0 +1,33 @@
+{
+  "decision_day": "2026-07-10",
+  "market_view": "Calm regime: VIX 15.8, down 20% in 20 days. Rates firm (10y 4.54%), dollar near its high. Oil is still deeply down (WTI -18% in 20d) and gold remains in a drawdown.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Headlines only mention XOM in a wax market report and CVX in a generative-AI market report, which are noise. WTI is volatile and XOM fell 2.6% on 07-09. No one-sided setup."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold +1.4% is a move that has already happened. The Equinox Gold and Orla Mining proxy item concerns other names, not NEM. Miners are far below their highs with a firm dollar and yields."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NVDA headlines are Motley Fool opinion pieces and market-size reports, with nothing specific. The SK Hynix ADR listing concerns MU. TSMC monthly sales around the 10th is a scheduled event, but its setup is not one-sided."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY news. The pharma headlines are small-cap lawsuits and press releases. LLY is 1.5% below its high after +31% in 60 days."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Copper +2.65% and FCX +5.3% happened on 07-09 and are already priced in. No copper supply or China demand headline. The items listed under this theme are unrelated."}
+  },
+  "would_change_my_mind": "A leader-specific headline such as a guidance raise, an approval or a supply shock, or a copper or crude supply disruption with a clear one-sided setup.",
+  "handoff": {
+    "run_id": "fp4-20260710-a",
+    "written_at": "2026-07-10T14:00:00Z",
+    "decision_day": "2026-07-10",
+    "data_cutoff": "2026-07-10",
+    "what_changed": "Three days since the last note (07-07), no gap beyond the expected spacing. Gold +1.4% and copper +2.65% on 07-09, with miners and FCX bouncing (FCX +5.3%). Oil is still falling and the VIX fell to 15.8. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "No XOM or OPEC+ headline; WTI still down 18% in 20 days with no one-sided setup."},
+      "gold_miners": {"position": "flat", "why": "Gold bounce already happened and no NEM-specific catalyst appears."},
+      "chips": {"position": "flat", "why": "Only opinion and market-report headlines on NVDA; no specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY news; the stock is near its high after a large 60-day gain."},
+      "copper_uranium": {"position": "flat", "why": "The copper and FCX bounce is priced in; no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil slump", "status": "open", "note": "WTI is 72.08, down 18% over 20 days but up 5% over 5 days. Watch OPEC+ or supply headlines for a reversal or continuation.", "first_seen": "2026-07-07"},
+      {"name": "Chip rally and memory reset", "status": "open", "note": "The semiconductor ETF is up 37% over 60 days. AMD +5.7% on 07-09. SK Hynix $26.5B US ADR listing is a memory-sector item. Watch TSMC monthly sales around the 10th and earnings.", "first_seen": "2026-07-07"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold is 22% below its high but bounced 1.4% on 07-09. Watch the Fed, the dollar and the jobs report.", "first_seen": "2026-07-07"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-10: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

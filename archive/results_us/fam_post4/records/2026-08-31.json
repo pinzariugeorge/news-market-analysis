@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-08-31",
+ "weekday": "Monday",
+ "information_cutoff": "closes dated before 2026-08-31; Massive news published before 2026-08-31 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-08-28",
+   "last": 14.43,
+   "ret_1d_pct": -0.55,
+   "ret_5d_pct": -4.63,
+   "ret_20d_pct": -9.76,
+   "ret_60d_pct": -10.15,
+   "vol_20d_daily_pct": 4.09,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -53.5
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-08-28",
+     "last": 83.4,
+     "ret_1d_pct": -0.16,
+     "ret_5d_pct": -4.2,
+     "ret_20d_pct": -1.5,
+     "ret_60d_pct": -13.14,
+     "vol_20d_daily_pct": 2.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -26.2
+    },
+    "Brent crude oil": {
+     "last_date": "2026-08-28",
+     "last": 89.31,
+     "ret_1d_pct": -0.43,
+     "ret_5d_pct": -5.38,
+     "ret_20d_pct": -0.9,
+     "ret_60d_pct": -8.69,
+     "vol_20d_daily_pct": 2.89,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -24.5
+    },
+    "Natural gas": {
+     "last_date": "2026-08-28",
+     "last": 2.888,
+     "ret_1d_pct": -0.65,
+     "ret_5d_pct": 4.15,
+     "ret_20d_pct": 5.13,
+     "ret_60d_pct": -10.14,
+     "vol_20d_daily_pct": 2.11,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -61.3
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-08-28",
+     "last": 156.71,
+     "ret_1d_pct": 0.17,
+     "ret_5d_pct": -5.09,
+     "ret_20d_pct": 0.82,
+     "ret_60d_pct": 2.74,
+     "vol_20d_daily_pct": 1.52,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.6,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-08-28",
+     "last": 201.86,
+     "ret_1d_pct": 1.05,
+     "ret_5d_pct": -1.66,
+     "ret_20d_pct": 2.56,
+     "ret_60d_pct": 6.4,
+     "vol_20d_daily_pct": 1.5,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.4,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-08-28",
+     "last": 130.35,
+     "ret_1d_pct": 0.64,
+     "ret_5d_pct": -3.35,
+     "ret_20d_pct": 8.19,
+     "ret_60d_pct": 9.49,
+     "vol_20d_daily_pct": 1.77,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.4,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-08-28",
+     "last": 59.1,
+     "ret_1d_pct": -0.12,
+     "ret_5d_pct": -3.59,
+     "ret_20d_pct": 3.56,
+     "ret_60d_pct": -0.91,
+     "vol_20d_daily_pct": 2.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.8,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-08-28",
+     "last": 4529.9,
+     "ret_1d_pct": -2.88,
+     "ret_5d_pct": -3.22,
+     "ret_20d_pct": 10.3,
+     "ret_60d_pct": 1.41,
+     "vol_20d_daily_pct": 1.48,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -14.8
+    },
+    "Silver": {
+     "last_date": "2026-08-28",
+     "last": 66.995,
+     "ret_1d_pct": -3.51,
+     "ret_5d_pct": -3.56,
+     "ret_20d_pct": 16.33,
+     "ret_60d_pct": -8.82,
+     "vol_20d_daily_pct": 2.19,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -41.8
+    },
+    "US 10-year yield": {
+     "last_date": "2026-08-28",
+     "last": 4.72,
+     "ret_1d_pct": 1.03,
+     "ret_5d_pct": -0.38,
+     "ret_20d_pct": -0.53,
+     "ret_60d_pct": 5.1,
+     "vol_20d_daily_pct": 0.86,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.5
+    },
+    "US dollar index": {
+     "last_date": "2026-08-28",
+     "last": 99.7,
+     "ret_1d_pct": 0.54,
+     "ret_5d_pct": 0.91,
+     "ret_20d_pct": -0.1,
+     "ret_60d_pct": 0.17,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.9
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-08-28",
+     "last": 106.94,
+     "ret_1d_pct": -0.47,
+     "ret_5d_pct": -0.18,
+     "ret_20d_pct": -0.64,
+     "ret_60d_pct": -2.58,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -4.7
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-08-28",
+     "last": 127.98,
+     "ret_1d_pct": -3.26,
+     "ret_5d_pct": -2.74,
+     "ret_20d_pct": 36.57,
+     "ret_60d_pct": 19.08,
+     "vol_20d_daily_pct": 3.2,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.3,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-08-28",
+     "last": 206.25,
+     "ret_1d_pct": -4.27,
+     "ret_5d_pct": -4.54,
+     "ret_20d_pct": 41.98,
+     "ret_60d_pct": 20.16,
+     "vol_20d_daily_pct": 3.78,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -18.2,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-08-28",
+     "last": 31.27,
+     "ret_1d_pct": -3.81,
+     "ret_5d_pct": -4.55,
+     "ret_20d_pct": 35.37,
+     "ret_60d_pct": 11.0,
+     "vol_20d_daily_pct": 3.8,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.9,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-08-28",
+     "last": 153.33,
+     "ret_1d_pct": -2.95,
+     "ret_5d_pct": -2.82,
+     "ret_20d_pct": 40.63,
+     "ret_60d_pct": 22.71,
+     "vol_20d_daily_pct": 3.61,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.5,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-08-28",
+     "last": 553.11,
+     "ret_1d_pct": -3.47,
+     "ret_5d_pct": -1.3,
+     "ret_20d_pct": 2.33,
+     "ret_60d_pct": -13.29,
+     "vol_20d_daily_pct": 2.21,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.3
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-08-28",
+     "last": 217.55,
+     "ret_1d_pct": -4.57,
+     "ret_5d_pct": 1.32,
+     "ret_20d_pct": 8.37,
+     "ret_60d_pct": 1.3,
+     "vol_20d_daily_pct": 2.89,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.7,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-08-28",
+     "last": 368.79,
+     "ret_1d_pct": -0.74,
+     "ret_5d_pct": 0.09,
+     "ret_20d_pct": -5.26,
+     "ret_60d_pct": -23.05,
+     "vol_20d_daily_pct": 2.71,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -23.4,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-08-28",
+     "last": 465.58,
+     "ret_1d_pct": -2.33,
+     "ret_5d_pct": -1.62,
+     "ret_20d_pct": -2.22,
+     "ret_60d_pct": -14.18,
+     "vol_20d_daily_pct": 3.45,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.9,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-08-28",
+     "last": 417.52,
+     "ret_1d_pct": -2.29,
+     "ret_5d_pct": -0.34,
+     "ret_20d_pct": 3.28,
+     "ret_60d_pct": -4.39,
+     "vol_20d_daily_pct": 1.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.6,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-08-28",
+     "last": 171.16,
+     "ret_1d_pct": -0.24,
+     "ret_5d_pct": -1.98,
+     "ret_20d_pct": 5.3,
+     "ret_60d_pct": 16.0,
+     "vol_20d_daily_pct": 1.15,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.6
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-08-28",
+     "last": 1174.61,
+     "ret_1d_pct": -0.13,
+     "ret_5d_pct": -6.44,
+     "ret_20d_pct": 2.24,
+     "ret_60d_pct": 8.88,
+     "vol_20d_daily_pct": 2.39,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.3,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-08-28",
+     "last": 268.04,
+     "ret_1d_pct": 0.85,
+     "ret_5d_pct": -0.81,
+     "ret_20d_pct": 4.56,
+     "ret_60d_pct": 20.07,
+     "vol_20d_daily_pct": 1.18,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.0,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-08-28",
+     "last": 255.48,
+     "ret_1d_pct": -1.03,
+     "ret_5d_pct": -3.58,
+     "ret_20d_pct": 1.81,
+     "ret_60d_pct": 17.66,
+     "vol_20d_daily_pct": 1.41,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.9,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-08-28",
+     "last": 148.35,
+     "ret_1d_pct": -0.8,
+     "ret_5d_pct": -2.75,
+     "ret_20d_pct": 13.94,
+     "ret_60d_pct": 29.34,
+     "vol_20d_daily_pct": 3.17,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.2,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-08-28",
+     "last": 6.562,
+     "ret_1d_pct": -0.38,
+     "ret_5d_pct": -0.27,
+     "ret_20d_pct": 1.96,
+     "ret_60d_pct": 1.25,
+     "vol_20d_daily_pct": 1.04,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.2
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-08-28",
+     "last": 28.22,
+     "ret_1d_pct": -2.56,
+     "ret_5d_pct": 1.51,
+     "ret_20d_pct": 8.71,
+     "ret_60d_pct": 3.45,
+     "vol_20d_daily_pct": 1.97,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.0
+    },
+    "Uranium ETF": {
+     "last_date": "2026-08-28",
+     "last": 45.57,
+     "ret_1d_pct": -5.79,
+     "ret_5d_pct": -1.09,
+     "ret_20d_pct": 16.64,
+     "ret_60d_pct": -9.57,
+     "vol_20d_daily_pct": 2.88,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.3
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-08-28",
+     "last": 76.45,
+     "ret_1d_pct": -2.51,
+     "ret_5d_pct": -0.27,
+     "ret_20d_pct": 22.07,
+     "ret_60d_pct": 8.22,
+     "vol_20d_daily_pct": 2.92,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.3,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-08-28",
+     "last": 100.01,
+     "ret_1d_pct": -5.94,
+     "ret_5d_pct": -2.44,
+     "ret_20d_pct": 15.78,
+     "ret_60d_pct": -12.7,
+     "vol_20d_daily_pct": 2.89,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -25.4,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-08-28",
+     "last": 69.34,
+     "ret_1d_pct": -1.7,
+     "ret_5d_pct": 0.2,
+     "ret_20d_pct": 15.11,
+     "ret_60d_pct": 3.14,
+     "vol_20d_daily_pct": 2.36,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.2,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-08-28",
+     "last": 207.723,
+     "ret_1d_pct": -3.0,
+     "ret_5d_pct": -2.87,
+     "ret_20d_pct": 16.2,
+     "ret_60d_pct": 8.0,
+     "vol_20d_daily_pct": 3.07,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.5,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "August",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "Is the Options Market Predicting a Spike in Liquidia Stock?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:29",
+   "related": "LQDA",
+   "summary": "Liquidia Corporation (LQDA) is drawing attention from options traders due to high implied volatility in its Jan 15, 2027 $22.50 Call options, suggesting investo",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Look Beyond Profit, Buy These 4 Stocks With Increasing Cash Flows",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:28",
+   "related": "TPC,NESR,HURN,RCMT",
+   "summary": "An analysis identifies four stocks with rising cash flows and strong financial metrics: Tutor Perini (TPC) with 14% revenue growth forecast, National Energy Ser",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Should You Invest in NVMI Stock Following Healthy Q2 Results?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:25",
+   "related": "NVMI,FORM,UMC",
+   "summary": "Nova Ltd. (NVMI) reported record Q2 2026 revenue of $255M (up 16% YoY) and non-GAAP EPS of $2.51 (up 14% YoY), driven by strong demand for advanced semiconducto",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Can Gaming Become the Next Revenue Pillar for Netflix Stock?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:24",
+   "related": "NFLX,TTWO,RBLX",
+   "summary": "Netflix secured an exclusive partnership with Rockstar Games to air extended GTA VI footage ahead of its November launch, marking its highest-profile gaming mov",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "CVS vs. UNH: Which Health Insurance Stock Has More Upside Now?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:24",
+   "related": "UNH,CVS",
+   "summary": "UnitedHealth Group (UNH) emerges as the stronger investment choice compared to CVS Health (CVS), driven by improving results across UnitedHealthcare and Optum d",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Should You Invest in FCEL Stock Before Q3 Earnings Release?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:17",
+   "related": "FCEL,BE,PLUG",
+   "summary": "FuelCell Energy is expected to report Q3 2026 revenues of $39.1 million, down 16.3% year-over-year, with a loss of $0.32 per share. While planned South Korean m",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Is Rescale's Cloud Expansion Another Catalyst for CRWV's AI Growth?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:17",
+   "related": "CRWV,MSFT,NBIS",
+   "summary": "CoreWeave (CRWV) announced an expansion of its cloud ecosystem through a partnership with Rescale, enabling customers in aerospace, automotive, energy, and manu",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Deciphering HP (HPQ) International Revenue Trends",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "HPQ",
+   "summary": "HP reported Q3 2026 total revenue of $15.68 billion, up 12.5% year-over-year. International operations showed strong performance, with Europe, Middle East and A",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Marvell (MRVL) International Revenue Performance Explored",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "MRVL",
+   "summary": "Marvell Technology reported Q3 2026 revenues of $2.74 billion with 36.6% growth, driven primarily by China which contributed 42.4% of total revenue. While China",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Exploring Analyst Estimates for Campbell (CPB) Q4 Earnings, Beyond Revenue and EPS",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "CPB",
+   "summary": "Wall Street analysts expect Campbell to report Q4 earnings of $0.40 per share, representing a 35.5% year-over-year decline, with revenues projected at $2.15 bil",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Wall Street's Insights Into Key Metrics Ahead of Lululemon (LULU) Q2 Earnings",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "LULU",
+   "summary": "Lululemon is expected to report Q2 2026 earnings of $1.79 per share, down 42.3% year-over-year, with revenues forecasted at $2.47 billion, a 2.3% decline. While",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "International Markets and Salesforce (CRM): A Deep Dive for Investors",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "CRM",
+   "summary": "Salesforce reported Q3 2026 total revenue of $11.35 billion, up 10.8% year-over-year. Europe exceeded analyst expectations with $2.76 billion (24.4% of revenue)",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Understanding Abercrombie (ANF) Reliance on International Revenue",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "ANF",
+   "summary": "Abercrombie & Fitch reported Q2 2026 total revenue of $1.27 billion, up 4.8% year-over-year. International markets contributed significantly, with Europe, Middl",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Guidewire Software (GWRE) Q4 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "GWRE",
+   "summary": "Guidewire Software is expected to report Q4 earnings of $0.94 per share (up 11.9% YoY) with revenues of $402.23 million (up 12.8% YoY). Key metrics show strong ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "SB Financial Group, Inc. (SBFG) Hits Fresh High: Is There Still Room to Run?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "SBFG",
+   "summary": "SB Financial Group (SBFG) has reached a new 52-week high of $28.47, gaining 5.3% over the past month and 24.2% year-to-date. The stock has consistently beaten e",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Ahead of Ciena (CIEN) Q3 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "CIEN",
+   "summary": "Wall Street analysts expect Ciena to report Q3 earnings of $1.73 per share, representing a 158.2% year-over-year increase, with revenues projected at $1.64 bill",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Chime Financial, Inc. (CHYM) Hit a 52 Week High, Can the Run Continue?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "CHYM,BULL,BULLW",
+   "summary": "Chime Financial (CHYM) has surged 44.4% over the past month, hitting a new 52-week high of $34.16. The stock has consistently beaten earnings estimates and is e",
+   "theme": "chips"
+  },
+  {
+   "title": "International Markets and Agilent (A): A Deep Dive for Investors",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "A",
+   "summary": "Agilent Technologies reported Q3 2026 total revenue of $1.88 billion, up 8.1% year-over-year. Europe contributed $504 million (26.8%), missing analyst expectati",
+   "theme": "chips"
+  },
+  {
+   "title": "Exploring Analyst Estimates for UiPath (PATH) Q2 Earnings, Beyond Revenue and EPS",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "PATH",
+   "summary": "Wall Street analysts predict UiPath will report Q2 earnings of $0.15 per share (flat year-over-year) with revenues of $397.59 million (+9.9% YoY). Key metrics s",
+   "theme": "chips"
+  },
+  {
+   "title": "Should You Buy Kimball Electronics Stock After Lackluster Q4 Results?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:15",
+   "related": "KE,KLAC,GRMN",
+   "summary": "Kimball Electronics (KE) reported a Q4 adjusted loss of 1 cent per share with revenues declining 2.3% year-over-year, missing expectations. However, the company",
+   "theme": "chips"
+  },
+  {
+   "title": "3 Top-Ranked Dividend Stocks: A Smarter Way to Boost Your Retirement Income",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:10",
+   "related": "AVAL,BRX",
+   "summary": "With traditional retirement income sources like bonds and Social Security becoming less reliable, dividend-paying stocks from high-quality companies offer a via",
+   "theme": "chips"
+  },
+  {
+   "title": "Improve Your Retirement Income with These 3 Top-Ranked Dividend Stocks",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 13:10",
+   "related": "ASB,ASBA,ASBpE,ASBpF,BIP,BIPH",
+   "summary": "With traditional retirement income sources like bonds and Social Security facing challenges due to low yields and projected fund depletion, dividend-paying stoc",
+   "theme": "chips"
+  },
+  {
+   "title": "WISE at Work: Early Results Show Paychex AI Is Reducing Payroll Errors and Improving Service Efficiency at Scale",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-08-31 13:00",
+   "related": "PAYX",
+   "summary": "Paychex announced early results from its WISE AI platform, which has been adopted by over 50,000 businesses. The agentic AI engine has demonstrated significant ",
+   "theme": "chips"
+  },
+  {
+   "title": "Fortinet Launches Free High School Cybersecurity Curriculum to Build the Next Generation of Cyber Defenders",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-08-31 13:00",
+   "related": "FTNT",
+   "summary": "Fortinet announced the launch of a free, standards-aligned Technical High School Cybersecurity Curriculum available to U.S. secondary schools. The two-year prog",
+   "theme": "chips"
+  },
+  {
+   "title": "Looking for Earnings Beat? Buy These 5 Top-Ranked Stocks",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:42",
+   "related": "ALL,ALLpB,ALLpH,ALLpI,ALLpJ,W",
+   "summary": "An analysis of stocks with strong potential to deliver earnings surprises identifies five companies: Allstate (ALL), Wayfair (W), BILL Holdings (BILL), Twilio (",
+   "theme": "pharma"
+  },
+  {
+   "title": "Samsara Set to Report Q2 Earnings: What's in Store for the Stock?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:41",
+   "related": "IOT",
+   "summary": "Samsara is set to report Q2 fiscal 2027 results on September 3, expecting revenues of $482-$484 million and non-GAAP EPS of 15-16 cents. The company's upmarket ",
+   "theme": "pharma"
+  },
+  {
+   "title": "Natural Gas Gains 2.7% for the Week: Is Momentum Building?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:41",
+   "related": "LNG,AR,EE",
+   "summary": "U.S. natural gas prices rose 2.7% for the week, supported by hot weather, strong LNG export demand, and smaller-than-average storage builds. LNG exports surged ",
+   "theme": "pharma"
+  },
+  {
+   "title": "Qualcomm vs. Sandisk: Comparing Gradual Revenue Contraction Against Rapid Revenue Acceleration",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-31 12:32",
+   "related": "QCOM,SNDK",
+   "summary": "Qualcomm faces declining revenue momentum in the handset market with flat to slightly declining quarterly results over two years, while Sandisk has experienced ",
+   "theme": "pharma"
+  },
+  {
+   "title": "Here's How Much a $1000 Investment in Twilio Made 10 Years Ago Would Be Worth Today",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:30",
+   "related": "TWLO",
+   "summary": "A $1,000 investment in Twilio (TWLO) made in August 2016 would be worth $4,383.04 as of August 31, 2026, representing a 338.30% gain. This significantly outperf",
+   "theme": "pharma"
+  },
+  {
+   "title": "Here's How Much a $1000 Investment in Semtech Made 10 Years Ago Would Be Worth Today",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:30",
+   "related": "SMTC",
+   "summary": "A $1,000 investment in Semtech (SMTC) made 10 years ago in August 2016 would be worth $5,004.58 as of August 31, 2026, representing a 400.46% gain. This signifi",
+   "theme": "pharma"
+  },
+  {
+   "title": "Here's How Much a $1000 Investment in DexCom Made 10 Years Ago Would Be Worth Today",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:30",
+   "related": "DXCM",
+   "summary": "A $1,000 investment in DexCom (DXCM) made 10 years ago in August 2016 would be worth $3,981.59 as of August 31, 2026, representing a 298.16% gain. This signific",
+   "theme": "pharma"
+  },
+  {
+   "title": "4 Industrial Stocks to Grab on Robust Jump in Durable Goods Orders",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:30",
+   "related": "CAT,HLIO,CR,PRLB",
+   "summary": "U.S. durable goods orders surged 1.1% in July, exceeding analyst expectations, driven by a 2.3% jump in transportation equipment. The manufacturing sector conti",
+   "theme": "pharma"
+  },
+  {
+   "title": "Is Occidental Petroleum a Bargain or a Value Trap Right Now?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-31 12:30",
+   "related": "OXY,OXY.WS,SHEL,BRK.A,BRK.B",
+   "summary": "Occidental Petroleum trades 10% below its 52-week high. While near-term oil price headwinds (Strait of Hormuz reopening, Venezuelan output increases) present do",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Beat the Market the Zacks Way: Accelerant, Insight, General Mills in Focus",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:28",
+   "related": "ARX,MMM,NSIT,ZIM,SHOP,BR",
+   "summary": "Zacks highlights strong stock performance from its various rating systems and portfolios. Accelerant gained 53.7% after a Zacks Rank upgrade, while Shopify and ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Urban Outfitters' Strong Retail Segment Supports Growth Momentum",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:20",
+   "related": "URBN,FIGS,BOOT,AEO",
+   "summary": "Urban Outfitters' Retail segment drove growth with 8% revenue increase to $1.39B and 6.2% comparable sales growth in Q2 fiscal 2027. FP Group led brand performa",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Vanguard Growth ETFs Compared: Should You Go for Megacap or Small-Cap Growth Stocks to Finish Out 2026?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-31 12:15",
+   "related": "MGK,VBK,AAPL,MSFT,NVDA",
+   "summary": "Vanguard Morningstar Mega Cap Growth ETF (MGK) and Vanguard Morningstar Small-Cap Growth ETF (VBK) both offer low-cost growth exposure at 0.05% expense ratios b",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why You Should Hold Onto ArcelorMittal Stock for Now",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:12",
+   "related": "MT,MTRN,FSTR,AVNT",
+   "summary": "ArcelorMittal is expanding EAF, electrical steel, and iron ore capacity while returning $0.7 billion to shareholders in H1 2026 through dividends and buybacks. ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Did Apple Go Too Far This Time?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-31 12:08",
+   "related": "AAPL,NFLX,DIS,AMZN,CCZ,CMCSA",
+   "summary": "Apple has raised Apple TV+ prices to $14.99/month, tripling the cost since launch in 2019. The article argues this aggressive pricing strategy\u2014a 79% increase ac",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "SAIC (SAIC) Tops Q2 Earnings and Revenue Estimates",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:05",
+   "related": "SAIC,AI",
+   "summary": "SAIC reported quarterly earnings of $3.01 per share, significantly beating the consensus estimate of $2.25 per share, representing a 33.78% earnings surprise. T",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "3 Precious Metals Funds Combining Safety and High Returns",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-08-31 12:02",
+   "related": "NEM",
+   "summary": "Precious metals funds are experiencing renewed investor interest as market uncertainty drives investors toward defensive assets. Gold and precious metals funds ",
+   "theme": "copper_uranium"
+  }
+ ]
+}

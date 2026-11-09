@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-07-01",
+ "weekday": "Wednesday",
+ "information_cutoff": "closes dated before 2026-07-01; company news published before 2026-07-01 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-06-30",
+   "last": 16.45,
+   "ret_1d_pct": -6.8,
+   "ret_5d_pct": -15.6,
+   "ret_20d_pct": 2.49,
+   "ret_60d_pct": -31.94,
+   "vol_20d_daily_pct": 11.76,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -47.0
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-06-30",
+     "last": 69.5,
+     "ret_1d_pct": -1.77,
+     "ret_5d_pct": -5.07,
+     "ret_20d_pct": -24.59,
+     "ret_60d_pct": -37.69,
+     "vol_20d_daily_pct": 2.58,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -38.5
+    },
+    "Brent crude oil": {
+     "last_date": "2026-06-30",
+     "last": 72.92,
+     "ret_1d_pct": -0.31,
+     "ret_5d_pct": -5.4,
+     "ret_20d_pct": -23.23,
+     "ret_60d_pct": -33.12,
+     "vol_20d_daily_pct": 2.43,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -38.4
+    },
+    "Natural gas": {
+     "last_date": "2026-06-30",
+     "last": 3.275,
+     "ret_1d_pct": 2.96,
+     "ret_5d_pct": 4.07,
+     "ret_20d_pct": 3.02,
+     "ret_60d_pct": 16.96,
+     "vol_20d_daily_pct": 2.49,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -56.1
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-06-30",
+     "last": 136.72,
+     "ret_1d_pct": 0.49,
+     "ret_5d_pct": -2.15,
+     "ret_20d_pct": -8.48,
+     "ret_60d_pct": -14.92,
+     "vol_20d_daily_pct": 1.49,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -20.3,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-06-30",
+     "last": 165.76,
+     "ret_1d_pct": -1.61,
+     "ret_5d_pct": -5.81,
+     "ret_20d_pct": -10.8,
+     "ret_60d_pct": -16.69,
+     "vol_20d_daily_pct": 1.42,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -21.5,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-06-30",
+     "last": 103.96,
+     "ret_1d_pct": -0.23,
+     "ret_5d_pct": -5.47,
+     "ret_20d_pct": -10.05,
+     "ret_60d_pct": -20.35,
+     "vol_20d_daily_pct": 1.9,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -22.3,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-06-30",
+     "last": 48.57,
+     "ret_1d_pct": -1.06,
+     "ret_5d_pct": -7.01,
+     "ret_20d_pct": -17.57,
+     "ret_60d_pct": -22.87,
+     "vol_20d_daily_pct": 1.55,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.7,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-06-30",
+     "last": 4038.5,
+     "ret_1d_pct": -0.01,
+     "ret_5d_pct": -2.67,
+     "ret_20d_pct": -10.38,
+     "ret_60d_pct": -13.7,
+     "vol_20d_daily_pct": 1.83,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -24.1
+    },
+    "Silver": {
+     "last_date": "2026-06-30",
+     "last": 59.477,
+     "ret_1d_pct": 2.24,
+     "ret_5d_pct": -4.1,
+     "ret_20d_pct": -20.7,
+     "ret_60d_pct": -18.23,
+     "vol_20d_daily_pct": 3.34,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -48.3
+    },
+    "US 10-year yield": {
+     "last_date": "2026-06-30",
+     "last": 4.418,
+     "ret_1d_pct": 1.01,
+     "ret_5d_pct": -1.67,
+     "ret_20d_pct": -1.27,
+     "ret_60d_pct": 2.43,
+     "vol_20d_daily_pct": 0.88,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.3
+    },
+    "US dollar index": {
+     "last_date": "2026-06-30",
+     "last": 101.19,
+     "ret_1d_pct": 0.08,
+     "ret_5d_pct": -0.22,
+     "ret_20d_pct": 2.01,
+     "ret_60d_pct": 1.16,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.4
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-06-30",
+     "last": 109.43,
+     "ret_1d_pct": -0.43,
+     "ret_5d_pct": 0.49,
+     "ret_20d_pct": -0.5,
+     "ret_60d_pct": -1.25,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -2.5
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-06-30",
+     "last": 93.4,
+     "ret_1d_pct": -1.17,
+     "ret_5d_pct": -4.54,
+     "ret_20d_pct": -13.67,
+     "ret_60d_pct": -18.11,
+     "vol_20d_daily_pct": 3.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -29.2,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-06-30",
+     "last": 155.13,
+     "ret_1d_pct": 0.89,
+     "ret_5d_pct": -3.14,
+     "ret_20d_pct": -12.14,
+     "ret_60d_pct": -25.61,
+     "vol_20d_daily_pct": 3.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -38.5,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-06-30",
+     "last": 23.62,
+     "ret_1d_pct": -0.67,
+     "ret_5d_pct": -5.56,
+     "ret_20d_pct": -18.94,
+     "ret_60d_pct": -25.04,
+     "vol_20d_daily_pct": 3.66,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -38.0,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-06-30",
+     "last": 112.32,
+     "ret_1d_pct": 1.25,
+     "ret_5d_pct": -3.55,
+     "ret_20d_pct": -12.81,
+     "ret_60d_pct": -17.14,
+     "vol_20d_daily_pct": 3.67,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -32.2,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-06-30",
+     "last": 655.89,
+     "ret_1d_pct": 3.78,
+     "ret_5d_pct": 5.44,
+     "ret_20d_pct": 7.91,
+     "ret_60d_pct": 67.18,
+     "vol_20d_daily_pct": 4.27,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.9
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-06-30",
+     "last": 200.09,
+     "ret_1d_pct": 2.63,
+     "ret_5d_pct": 0.02,
+     "ret_20d_pct": -10.82,
+     "ret_60d_pct": 12.8,
+     "vol_20d_daily_pct": 2.57,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.1,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-06-30",
+     "last": 377.75,
+     "ret_1d_pct": 1.42,
+     "ret_5d_pct": -0.63,
+     "ret_20d_pct": -17.88,
+     "ret_60d_pct": 20.09,
+     "vol_20d_daily_pct": 4.46,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -21.6,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-06-30",
+     "last": 580.91,
+     "ret_1d_pct": 7.68,
+     "ret_5d_pct": 11.75,
+     "ret_20d_pct": 13.87,
+     "ret_60d_pct": 167.09,
+     "vol_20d_daily_pct": 5.16,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-06-30",
+     "last": 477.57,
+     "ret_1d_pct": 4.94,
+     "ret_5d_pct": 9.44,
+     "ret_20d_pct": 9.63,
+     "ret_60d_pct": 40.86,
+     "vol_20d_daily_pct": 3.69,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-06-30",
+     "last": 158.66,
+     "ret_1d_pct": -1.29,
+     "ret_5d_pct": 4.26,
+     "ret_20d_pct": 7.32,
+     "ret_60d_pct": 8.07,
+     "vol_20d_daily_pct": 1.25,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.3
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-06-30",
+     "last": 1199.43,
+     "ret_1d_pct": -2.48,
+     "ret_5d_pct": 8.34,
+     "ret_20d_pct": 10.83,
+     "ret_60d_pct": 28.2,
+     "vol_20d_daily_pct": 2.2,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.5,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-06-30",
+     "last": 253.97,
+     "ret_1d_pct": -1.76,
+     "ret_5d_pct": 6.23,
+     "ret_20d_pct": 13.63,
+     "ret_60d_pct": 4.5,
+     "vol_20d_daily_pct": 1.66,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.8,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-06-30",
+     "last": 251.64,
+     "ret_1d_pct": -1.05,
+     "ret_5d_pct": 7.19,
+     "ret_20d_pct": 18.18,
+     "ret_60d_pct": 20.49,
+     "vol_20d_daily_pct": 2.17,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.0,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-06-30",
+     "last": 128.5,
+     "ret_1d_pct": -0.68,
+     "ret_5d_pct": 7.44,
+     "ret_20d_pct": 11.57,
+     "ret_60d_pct": 6.31,
+     "vol_20d_daily_pct": 1.95,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.7,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-06-30",
+     "last": 6.193,
+     "ret_1d_pct": 1.56,
+     "ret_5d_pct": 0.84,
+     "ret_20d_pct": -5.08,
+     "ret_60d_pct": 11.32,
+     "vol_20d_daily_pct": 1.84,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.9
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-06-30",
+     "last": 26.09,
+     "ret_1d_pct": -0.11,
+     "ret_5d_pct": -1.32,
+     "ret_20d_pct": -6.52,
+     "ret_60d_pct": -6.99,
+     "vol_20d_daily_pct": 1.57,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -19.5
+    },
+    "Uranium ETF": {
+     "last_date": "2026-06-30",
+     "last": 43.7,
+     "ret_1d_pct": -0.52,
+     "ret_5d_pct": -4.12,
+     "ret_20d_pct": -13.53,
+     "ret_60d_pct": -10.63,
+     "vol_20d_daily_pct": 3.73,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -29.3
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-06-30",
+     "last": 62.89,
+     "ret_1d_pct": 2.06,
+     "ret_5d_pct": -2.34,
+     "ret_20d_pct": -6.19,
+     "ret_60d_pct": 2.46,
+     "vol_20d_daily_pct": 3.78,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.3,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-06-30",
+     "last": 101.86,
+     "ret_1d_pct": -1.56,
+     "ret_5d_pct": -6.46,
+     "ret_20d_pct": -9.53,
+     "ret_60d_pct": -9.51,
+     "vol_20d_daily_pct": 3.89,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -24.0,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-06-30",
+     "last": 59.46,
+     "ret_1d_pct": 2.18,
+     "ret_5d_pct": -0.27,
+     "ret_20d_pct": -12.37,
+     "ret_60d_pct": 12.55,
+     "vol_20d_daily_pct": 3.38,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.7,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-06-30",
+     "last": 170.489,
+     "ret_1d_pct": 3.45,
+     "ret_5d_pct": -2.41,
+     "ret_20d_pct": -10.46,
+     "ret_60d_pct": -1.03,
+     "vol_20d_daily_pct": 4.07,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.6,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "July",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "The Zacks Analyst Blog Highlights Microsoft, Exxon Mobil, Dell and BK Technologies",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:15",
+   "related": "XOM",
+   "summary": "Microsoft, Exxon Mobil and Dell headline Zacks' latest research with updates on AI, energy and infrastructure growth opportunities.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Zacks Industry Outlook Highlights Exxon, Chevron and BP",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 12:53",
+   "related": "XOM",
+   "summary": "Exxon, Chevron and BP are positioned to benefit from favorable oil prices, stable midstream cash flows and diversified energy operations.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Exxon Mobil: Limited Downside Risk, But Don't Expect Much In The Near-Term",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 11:19",
+   "related": "XOM",
+   "summary": "Exxon Mobil stock remains a \"Hold\" as its dividend is less competitive and shares are near fair value. Here's what investors need to know about XOM.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "One Of The Huge Mistakes Dividend Investors Are Making Right Now",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 09:05",
+   "related": "CVX",
+   "summary": "Dividend investing may seem simple in theory, but there are many pitfalls that investors fall into along the journey. Click here to read in detail.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "2 Energy Stocks to Consider Right Now and 1 We Turn Down",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 08:17",
+   "related": "XOM",
+   "summary": "Energy businesses quietly power the physical things we depend on, from cars and homes to e-commerce infrastructure. Their momentum is also rising as lower inter",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Energy and Tech Led the First Half, but Only Tech Looks Ready to Keep Winning",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 07:30",
+   "related": "XOM",
+   "summary": "Technology stocks may have more room to run than energy shares as AI spending remains strong and oil prices retreat.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Here is Why Chevron (CVX) is Among the 12 Best NYSE Stocks to Buy for Dividends",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 04:19",
+   "related": "CVX",
+   "summary": "With an annual dividend yield of 4.16%, Chevron Corporation (NYSE:CVX) is included among the 12 Best NYSE Stocks to Buy for Dividends. Chevron Corporation (NYSE",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Chevron (CVX) Price Target Lowered at Morgan Stanley. Here is Why",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 04:17",
+   "related": "CVX",
+   "summary": "With an annual dividend yield of 4.30%, Chevron Corporation (NYSE:CVX) is included among the 10 Energy Stocks with Highest Dividends. Chevron Corporation (NYSE:",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "What to Expect From Newmont's Next Quarterly Earnings Report",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 12:44",
+   "related": "NEM",
+   "summary": "Newmont will release its second-quarter earnings soon, and analysts anticipate a double-digit bottom-line growth.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "I've Never Been This Bullish On Gold",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 07:30",
+   "related": "AEM",
+   "summary": "Gold is down 20%\u00e2\u0080\u0094is it a buy? Explore inflation, negative real yields, deficits, and central bank demand, plus top gold picks. Click to read the analysis.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Why Are Central Banks Buying So Much Gold? 90% Institutions Cite This Reason",
+   "source": "Benzinga",
+   "published_utc": "2026-07-01 02:33",
+   "related": "NEM",
+   "summary": "Central banks are turning to gold for protection against crises, inflation and geopolitical risks, according to the World Gold Council survey. ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Newmont Corporation (NEM) Stock Slides as Market Rises: Facts to Know Before You Trade",
+   "source": "Yahoo",
+   "published_utc": "2026-06-30 21:50",
+   "related": "NEM",
+   "summary": "Newmont Corporation (NEM) reached $93.4 at the closing of the latest trading day, reflecting a -1.17% change compared to its last close.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "UBS Maintains Buy on Newmont, Lowers Price Target to $120",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 14:08",
+   "related": "NEM",
+   "summary": "UBS  analyst Daniel Major   maintains Newmont (NYSE:NEM) with a Buy and lowers the price target from $140 to $120.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "UBS Maintains Buy on Wheaton Precious Metals, Lowers Price Target to $150",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 14:06",
+   "related": "WPM",
+   "summary": "UBS  analyst Daniel Major   maintains Wheaton Precious Metals (NYSE:WPM) with a Buy and lowers the price target from $165 to $150.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "UBS Maintains Neutral on Agnico Eagle Mines, Lowers Price Target to $170",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 14:01",
+   "related": "AEM",
+   "summary": "UBS  analyst Daniel Major   maintains Agnico Eagle Mines (NYSE:AEM) with a Neutral and lowers the price target from $210 to $170.",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Silver Just Hit A 'Now Or Never' Level: Which Miner Is Best Positioned If The Metal Bounces?",
+   "source": "Yahoo",
+   "published_utc": "2026-06-30 13:31",
+   "related": "WPM",
+   "summary": "Silver is approaching what many technical traders would describe as a make-or-break moment. After a sharp rally over the past two years, the precious metal has ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "MercadoLibre Is Down 16% This Year While Growing Revenue 49%. Is This the Best Dip to Buy?",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:27",
+   "related": "NVDA",
+   "summary": "The Latin America fintech pioneer is out of favor, but the tailwinds could outweigh the headwinds.",
+   "theme": "chips"
+  },
+  {
+   "title": "Alex Karp Touts Palantir-Nvidia Partnership For Secure AI, Criticizes OpenAI And Anthropic Over Lack Of IP Protection",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:25",
+   "related": "NVDA",
+   "summary": "During an interview with CNBC, Karp argued that the frontier AI model developers OpenAI and Anthropic reportedly lack measures to protect their clients' intelle",
+   "theme": "chips"
+  },
+  {
+   "title": "3 Top Dividend Stocks to Own No Matter What Happens to Interest Rates This Year",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:20",
+   "related": "NVDA",
+   "summary": "Higher interest rates might negatively impact the economy. Be prepared.",
+   "theme": "chips"
+  },
+  {
+   "title": "Dataknox Solutions Unveils New Third Party Maintenance Offerings to Extend the Life of Valuable AI Hardware",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:15",
+   "related": "NVDA",
+   "summary": "Dataknox Solutions, a full-spectrum IT infrastructure managed services provider (MSP), today announced new third party maintenance (TPM) offerings for AI hardwa",
+   "theme": "chips"
+  },
+  {
+   "title": "Edge AI Could Become a Real TAM Expansion Story for NVIDIA",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:13",
+   "related": "NVDA",
+   "summary": "Nvidia (NASDAQ:NVDA) may very well be the king of the so-called \u201cAI Factories,\u201d but the GPU titan also stands to gain as the AI revolution makes its way to the ",
+   "theme": "chips"
+  },
+  {
+   "title": "About That 'Robust' Earnings Growth",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 13:08",
+   "related": "NVDA",
+   "summary": "Equity markets posted strong H1 2026 gains, but S&P 500 earnings growth is narrowly concentrated in a few sectors and megacap tech names. Read the full analysis",
+   "theme": "chips"
+  },
+  {
+   "title": "6 Market Experts Sound Off On AI, Tech, Hot IPOs, And Top Stocks For 2026",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 13:06",
+   "related": "NVDA",
+   "summary": "With questions swirling on AI and tech stocks, hot IPOs, Fed policy, and ongoing tensions in the Middle East, where is an investor to turn? Six experts share th",
+   "theme": "chips"
+  },
+  {
+   "title": "Quantum Computing\u2019s Cash Crisis: Which Players Can Actually Survive the Long Game?",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:05",
+   "related": "NVDA",
+   "summary": "Pure-play quantum stocks are burning investor cash at wildly different rates, and the company with the biggest balance sheet is not necessarily the safest bet. ",
+   "theme": "chips"
+  },
+  {
+   "title": "J&J's Innovative Medicine Business in Q2: Here's What to Watch",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:27",
+   "related": "JNJ",
+   "summary": "JNJ's Q2 Innovative Medicine results face scrutiny as Stelara biosimilar pressure offsets growth from key blockbusters and newer therapies ahead of earnings.",
+   "theme": "pharma"
+  },
+  {
+   "title": "Eli Lilly (LLY) Faces China Trial Security Probe From U.S. Lawmakers",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:17",
+   "related": "LLY",
+   "summary": "U.S. lawmakers have opened a national security probe into Eli Lilly's (NYSE:LLY) clinical trial activities in China. The House Select Committee on China is seek",
+   "theme": "pharma"
+  },
+  {
+   "title": "Innovent, Eli Lilly Partner to Commercialize Breast Cancer Drug in China",
+   "source": "Benzinga",
+   "published_utc": "2026-07-01 13:09",
+   "related": "LLY",
+   "summary": "Innovent and Eli Lilly sign a China commercialization deal for Verzenios, expanding patient access while Lilly retains manufacturing.",
+   "theme": "pharma"
+  },
+  {
+   "title": "Cathie Wood's Biggest Portfolio Moves Reveal Where She's Betting Next",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:04",
+   "related": "LLY",
+   "summary": "Cathie Wood Loads Up on AI Winners as She Cuts Roku and China Exposure",
+   "theme": "pharma"
+  },
+  {
+   "title": "Amgen or Biogen: Which Biotech Stock Appears Better Poised?",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:04",
+   "related": "LLY",
+   "summary": "AMGN stands out compared to Biogen given its broader product portfolio, pipeline depth and steadier growth outlook despite patent and competition risks.",
+   "theme": "pharma"
+  },
+  {
+   "title": "Medicare Keeps You Alive. This Portfolio Keeps You Looking Good.",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 13:00",
+   "related": "JNJ",
+   "summary": "Hearing aids restore conversations. Dental work restores smiles. Vision correction restores independence. Many of the expenses Medicare leaves uncovered sit at ",
+   "theme": "pharma"
+  },
+  {
+   "title": "Zacks Investment Ideas feature highlights: Eli Lilly and Altria",
+   "source": "Yahoo",
+   "published_utc": "2026-07-01 12:34",
+   "related": "LLY",
+   "summary": "Eli Lilly and Altria stand out as defensive stock ideas as investors weigh a hawkish Fed, a pivotal jobs report and shifting market leadership.",
+   "theme": "pharma"
+  },
+  {
+   "title": "'White House Adds Pandemic Response Staff as Ebola Cases Rise' - Bloomberg News",
+   "source": "Benzinga",
+   "published_utc": "2026-07-01 12:19",
+   "related": "JNJ",
+   "summary": "https://www.bloomberg.com/news/articles/2026-07-01/white-house-adds-pandemic-response-staff-as-ebola-cases-rise",
+   "theme": "pharma"
+  },
+  {
+   "title": "Freeport-McMoRan: Grasberg Determines The Valuation",
+   "source": "SeekingAlpha",
+   "published_utc": "2026-07-01 10:52",
+   "related": "FCX",
+   "summary": "Freeport-McMoRan is well-positioned in copper, benefiting from electrification trends and a robust project pipeline.",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Cameco Temporarily Suspends Operations At Its Cigar Lake Mine In Saskatchewan Due To Issues At Orano's McClean Lake Processing Mill; Sees No Impact On 2026 Cigar Lake Production Outlook",
+   "source": "Benzinga",
+   "published_utc": "2026-07-01 06:33",
+   "related": "CCJ",
+   "summary": "Orano\u2019s McClean Lake mill has encountered operational challenges with its sulfuric acid plant that caused it to shut down in order to repair the issue. Orano is",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "UBS Maintains Buy on Freeport-McMoRan, Raises Price Target to $77",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 14:56",
+   "related": "FCX",
+   "summary": "UBS  analyst Daniel Major   maintains Freeport-McMoRan (NYSE:FCX) with a Buy and raises the price target from $75 to $77.",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Forget Southern Copper: 1 Domestic Copper King to Buy Hand Over Fist as the Global Supply Crunch Intensifies",
+   "source": "Yahoo",
+   "published_utc": "2026-06-30 14:31",
+   "related": "FCX",
+   "summary": "Southern Copper (NYSE:SCCO) is the name on every commodity desk\u2019s lips right now, with the stock up 73.95% over the past year on the back of a screaming copper ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "UBS Maintains Sell on Southern Copper, Raises Price Target to $160",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 13:59",
+   "related": "SCCO",
+   "summary": "UBS  analyst Myles Allsop   maintains Southern Copper (NYSE:SCCO) with a Sell and raises the price target from $145 to $160.",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Buried in Practice Investigates Missing US State Department Human Rights Report on Freeport-McMoRan in West Papua",
+   "source": "Yahoo",
+   "published_utc": "2026-06-30 12:48",
+   "related": "FCX",
+   "summary": "Buried in Practice: Freeport in West Papua, Indonesia\u2014and the State Department Human Rights Report That Disappeared draws attention to new research into a publi",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Freeport Vs. Southern Copper: Which AI Metal Stock Looks Better For H2?",
+   "source": "Benzinga",
+   "published_utc": "2026-06-30 10:19",
+   "related": "FCX",
+   "summary": "Freeport and Southern Copper both stand to benefit from AI-driven copper demand. Here&#39;s which miner may be better positioned for the second half of 2026.",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Freeport-McMoRan (FCX) Is Down 11.0% After Cutting 2026 Output Outlook On Grasberg Delays",
+   "source": "Yahoo",
+   "published_utc": "2026-06-30 10:06",
+   "related": "FCX",
+   "summary": "Earlier this month, Freeport-McMoRan Inc. declared a total cash dividend of US$0.15 per share for its common stock, split evenly between a US$0.075 base dividen",
+   "theme": "copper_uranium"
+  }
+ ]
+}

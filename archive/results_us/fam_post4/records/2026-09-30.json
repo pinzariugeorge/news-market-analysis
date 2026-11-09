@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-09-30",
+ "weekday": "Wednesday",
+ "information_cutoff": "closes dated before 2026-09-30; Massive news published before 2026-09-30 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-09-29",
+   "last": 16.04,
+   "ret_1d_pct": -0.19,
+   "ret_5d_pct": 12.88,
+   "ret_20d_pct": -1.84,
+   "ret_60d_pct": -0.56,
+   "vol_20d_daily_pct": 6.16,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -48.3
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-09-29",
+     "last": 89.38,
+     "ret_1d_pct": -3.48,
+     "ret_5d_pct": -5.51,
+     "ret_20d_pct": 4.22,
+     "ret_60d_pct": 30.39,
+     "vol_20d_daily_pct": 2.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -20.9
+    },
+    "Brent crude oil": {
+     "last_date": "2026-09-29",
+     "last": 102.59,
+     "ret_1d_pct": -2.56,
+     "ret_5d_pct": 3.37,
+     "ret_20d_pct": 13.37,
+     "ret_60d_pct": 42.51,
+     "vol_20d_daily_pct": 2.7,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.3
+    },
+    "Natural gas": {
+     "last_date": "2026-09-29",
+     "last": 3.011,
+     "ret_1d_pct": 0.37,
+     "ret_5d_pct": 1.55,
+     "ret_20d_pct": 2.59,
+     "ret_60d_pct": -7.21,
+     "vol_20d_daily_pct": 3.1,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -59.6
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-09-29",
+     "last": 161.35,
+     "ret_1d_pct": -0.72,
+     "ret_5d_pct": 1.66,
+     "ret_20d_pct": 0.25,
+     "ret_60d_pct": 18.26,
+     "vol_20d_daily_pct": 1.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.9,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-09-29",
+     "last": 204.38,
+     "ret_1d_pct": -0.96,
+     "ret_5d_pct": 0.97,
+     "ret_20d_pct": -0.85,
+     "ret_60d_pct": 21.58,
+     "vol_20d_daily_pct": 1.44,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.1,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-09-29",
+     "last": 125.44,
+     "ret_1d_pct": -0.48,
+     "ret_5d_pct": 0.14,
+     "ret_20d_pct": -5.32,
+     "ret_60d_pct": 21.1,
+     "vol_20d_daily_pct": 2.06,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.2,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-09-29",
+     "last": 54.94,
+     "ret_1d_pct": -2.07,
+     "ret_5d_pct": -2.43,
+     "ret_20d_pct": -8.71,
+     "ret_60d_pct": 12.56,
+     "vol_20d_daily_pct": 1.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.1,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-09-29",
+     "last": 4179.7,
+     "ret_1d_pct": 0.27,
+     "ret_5d_pct": -4.49,
+     "ret_20d_pct": -6.73,
+     "ret_60d_pct": 0.29,
+     "vol_20d_daily_pct": 1.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -21.4
+    },
+    "Silver": {
+     "last_date": "2026-09-29",
+     "last": 60.668,
+     "ret_1d_pct": -0.9,
+     "ret_5d_pct": -7.98,
+     "ret_20d_pct": -8.39,
+     "ret_60d_pct": -2.02,
+     "vol_20d_daily_pct": 2.2,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -47.3
+    },
+    "US 10-year yield": {
+     "last_date": "2026-09-29",
+     "last": 5.255,
+     "ret_1d_pct": 0.29,
+     "ret_5d_pct": 5.78,
+     "ret_20d_pct": 10.45,
+     "ret_60d_pct": 17.33,
+     "vol_20d_daily_pct": 0.91,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0
+    },
+    "US dollar index": {
+     "last_date": "2026-09-29",
+     "last": 101.37,
+     "ret_1d_pct": 0.17,
+     "ret_5d_pct": 0.77,
+     "ret_20d_pct": 1.95,
+     "ret_60d_pct": 0.52,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.2
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-09-29",
+     "last": 104.01,
+     "ret_1d_pct": -0.08,
+     "ret_5d_pct": -1.47,
+     "ret_20d_pct": -2.63,
+     "ret_60d_pct": -4.13,
+     "vol_20d_daily_pct": 0.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -7.3
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-09-29",
+     "last": 117.09,
+     "ret_1d_pct": 0.9,
+     "ret_5d_pct": -7.99,
+     "ret_20d_pct": -7.12,
+     "ret_60d_pct": 19.24,
+     "vol_20d_daily_pct": 2.23,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.4,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-09-29",
+     "last": 185.83,
+     "ret_1d_pct": 0.91,
+     "ret_5d_pct": -8.71,
+     "ret_20d_pct": -8.51,
+     "ret_60d_pct": 19.94,
+     "vol_20d_daily_pct": 2.58,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.3,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-09-29",
+     "last": 24.32,
+     "ret_1d_pct": 0.87,
+     "ret_5d_pct": -15.26,
+     "ret_20d_pct": -20.73,
+     "ret_60d_pct": -1.62,
+     "vol_20d_daily_pct": 3.54,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -36.1,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-09-29",
+     "last": 135.39,
+     "ret_1d_pct": -0.17,
+     "ret_5d_pct": -11.98,
+     "ret_20d_pct": -10.24,
+     "ret_60d_pct": 17.49,
+     "vol_20d_daily_pct": 2.91,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -18.3,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-09-29",
+     "last": 606.9,
+     "ret_1d_pct": 1.15,
+     "ret_5d_pct": -0.09,
+     "ret_20d_pct": 9.03,
+     "ret_60d_pct": 0.43,
+     "vol_20d_daily_pct": 1.97,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.3
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-09-29",
+     "last": 227.21,
+     "ret_1d_pct": -0.72,
+     "ret_5d_pct": -0.73,
+     "ret_20d_pct": 2.91,
+     "ret_60d_pct": 16.19,
+     "vol_20d_daily_pct": 1.71,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.6,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-09-29",
+     "last": 355.1,
+     "ret_1d_pct": 1.58,
+     "ret_5d_pct": -2.59,
+     "ret_20d_pct": -4.12,
+     "ret_60d_pct": -5.03,
+     "vol_20d_daily_pct": 1.9,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.3,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-09-29",
+     "last": 607.57,
+     "ret_1d_pct": -0.05,
+     "ret_5d_pct": -2.6,
+     "ret_20d_pct": 29.07,
+     "ret_60d_pct": 10.06,
+     "vol_20d_daily_pct": 3.53,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.7,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-09-29",
+     "last": 456.94,
+     "ret_1d_pct": 0.9,
+     "ret_5d_pct": 1.09,
+     "ret_20d_pct": 10.02,
+     "ret_60d_pct": 1.14,
+     "vol_20d_daily_pct": 1.59,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.3,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-09-29",
+     "last": 170.73,
+     "ret_1d_pct": -0.31,
+     "ret_5d_pct": 0.49,
+     "ret_20d_pct": 0.11,
+     "ret_60d_pct": 5.41,
+     "vol_20d_daily_pct": 0.81,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.8
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-09-29",
+     "last": 1184.63,
+     "ret_1d_pct": -0.01,
+     "ret_5d_pct": 1.24,
+     "ret_20d_pct": 2.41,
+     "ret_60d_pct": -1.29,
+     "vol_20d_daily_pct": 1.07,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.5,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-09-29",
+     "last": 267.57,
+     "ret_1d_pct": -1.61,
+     "ret_5d_pct": -0.6,
+     "ret_20d_pct": 0.65,
+     "ret_60d_pct": 3.18,
+     "vol_20d_daily_pct": 0.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.9,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-09-29",
+     "last": 263.29,
+     "ret_1d_pct": -1.12,
+     "ret_5d_pct": -0.72,
+     "ret_20d_pct": 2.68,
+     "ret_60d_pct": 3.35,
+     "vol_20d_daily_pct": 1.08,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.1,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-09-29",
+     "last": 149.28,
+     "ret_1d_pct": 0.4,
+     "ret_5d_pct": -1.08,
+     "ret_20d_pct": 1.03,
+     "ret_60d_pct": 17.75,
+     "vol_20d_daily_pct": 1.08,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.6,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-09-29",
+     "last": 6.543,
+     "ret_1d_pct": -0.34,
+     "ret_5d_pct": -3.2,
+     "ret_20d_pct": -0.76,
+     "ret_60d_pct": 5.92,
+     "vol_20d_daily_pct": 1.63,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.8
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-09-29",
+     "last": 26.47,
+     "ret_1d_pct": 0.65,
+     "ret_5d_pct": -2.86,
+     "ret_20d_pct": -4.89,
+     "ret_60d_pct": -3.22,
+     "vol_20d_daily_pct": 1.29,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -18.4
+    },
+    "Uranium ETF": {
+     "last_date": "2026-09-29",
+     "last": 40.04,
+     "ret_1d_pct": -0.22,
+     "ret_5d_pct": -8.46,
+     "ret_20d_pct": -12.02,
+     "ret_60d_pct": -8.75,
+     "vol_20d_daily_pct": 2.46,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -35.2
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-09-29",
+     "last": 70.79,
+     "ret_1d_pct": -1.63,
+     "ret_5d_pct": -4.79,
+     "ret_20d_pct": -6.54,
+     "ret_60d_pct": 16.05,
+     "vol_20d_daily_pct": 2.53,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.4,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-09-29",
+     "last": 86.88,
+     "ret_1d_pct": -0.18,
+     "ret_5d_pct": -8.15,
+     "ret_20d_pct": -12.03,
+     "ret_60d_pct": -10.89,
+     "vol_20d_daily_pct": 2.08,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -35.2,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-09-29",
+     "last": 64.85,
+     "ret_1d_pct": -0.48,
+     "ret_5d_pct": -5.85,
+     "ret_20d_pct": -4.8,
+     "ret_60d_pct": 5.53,
+     "vol_20d_daily_pct": 2.31,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.9,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-09-29",
+     "last": 200.545,
+     "ret_1d_pct": -0.04,
+     "ret_5d_pct": -1.74,
+     "ret_20d_pct": -3.03,
+     "ret_60d_pct": 17.89,
+     "vol_20d_daily_pct": 2.63,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.8,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "September",
+  "earnings_season_window": false,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "Meta's Stock Has Rocketed Over 30% in the Past Month. Here's How the Embattled \"Magnificent Seven\" Company Completely Flipped the Script",
+   "source": "The Motley Fool",
+   "published_utc": "2026-09-30 13:27",
+   "related": "META,AAPL,AMJB,JPM,JPMpC,JPMpD",
+   "summary": "Meta's stock surged nearly 32% over the past month, driven by strong investor reception to its new personal AI agent, Muse, which became the top free app on App",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "AMP's $5.5B Buyback Aids Shareholder Returns: Will It Be Sustainable?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:27",
+   "related": "AMP,APO,APOS,ARES,ARESpB",
+   "summary": "Ameriprise Financial authorized an additional $5.5 billion for share repurchases through September 2028, supported by strong excess capital and free cash flow g",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Can Mama's Creations Push Gross Margin Into the High-20% Range?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:26",
+   "related": "MAMA,CHEF,LKNCY,LW",
+   "summary": "Mama's Creations improved gross margin to 24% in fiscal Q2 from 23.6% in Q1, targeting mid-to-high-20% margins. The company identified 4-5 percentage points of ",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "IOVA Stock Hits 52-Week High on Raised Revenue Outlook for 2026",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:22",
+   "related": "IOVA,ACIU,PGEN",
+   "summary": "Iovance Biotherapeutics raised its 2026 revenue outlook to $410-$420 million from $350-$370 million, driven by strong patient demand for its therapies Amtagvi a",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Rate-Hedged ETF (RISR) Hits New 52-Week High",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:21",
+   "related": "RISR",
+   "summary": "RISR ETF has reached a 52-week high and risen 5.25% from its low, driven by climbing Treasury yields and expectations of potential Fed rate hikes. The fund's ac",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Is T1 Energy Moving Toward Vertical Integration in Solar?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:21",
+   "related": "TE,FSLR,JKS",
+   "summary": "T1 Energy is building a vertically integrated U.S. solar supply chain spanning polysilicon, wafers, cells, and modules. The company operates G1_Dallas for modul",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Is LUNR Building a Full-Service Space Infrastructure Platform?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:20",
+   "related": "LUNR,RKLB,KTOS",
+   "summary": "Intuitive Machines (LUNR) is transitioning from a lunar lander provider to a comprehensive space infrastructure company across three pillars: building spacecraf",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Walmart vs. Dollar General: Which Retail Stock Stands Out Now?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:20",
+   "related": "WMT,DG",
+   "summary": "In a comparison of two major value-focused retailers, Dollar General emerges as the better near-term investment despite Walmart's superior scale and omnichannel",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Can Affirm's Crate & Barrel Deal Expand Its Home-Furnishing Reach?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:19",
+   "related": "AFRM,XYZ,PYPL",
+   "summary": "Affirm Holdings has partnered with Crate & Barrel Holdings to offer installment financing across Crate & Barrel, Crate & Barrel Kids, and CB2 brands in the US a",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "BTSG Deploys AI Across Operations: Will It Improve Margins?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:19",
+   "related": "BTSG,BTSGU,OPCH,ADUS",
+   "summary": "BrightSpring Health Services is leveraging AI and automation across hiring, intake, documentation, and patient care to improve productivity. The company reporte",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Should You Buy, Hold or Sell Costco Stock After Its Q4 Earnings Beat?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:18",
+   "related": "COST,DG,TGT",
+   "summary": "Costco reported strong Q4 2026 earnings with adjusted EPS of $6.60 (beating estimates) and 11.1% revenue growth. The company demonstrated strength in its member",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "How to Play the AI Trade With a Core-Satellite ETF Strategy",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:17",
+   "related": "VOO,RSP,SPXT,XLP,QUAL,IYW",
+   "summary": "Despite growing AI safety concerns from OpenAI and Anthropic, analysts remain optimistic about AI's long-term potential. Rather than making an all-or-nothing be",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Pre-Markets Up on Excellent Data from PCE and ADP",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:17",
+   "related": "ADP",
+   "summary": "Stock futures opened higher on September 30th, 2026, following better-than-expected economic reports. Core PCE inflation fell to 3.0% year-over-year, the lowest",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Better AI Chip Stock to Buy Today: Broadcom vs. Marvell",
+   "source": "The Motley Fool",
+   "published_utc": "2026-09-30 13:17",
+   "related": "AVGO,MRVL,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Broadcom and Marvell are both leaders in custom AI chip design and data center networking, benefiting from the AI infrastructure build-out wave. While Marvell s",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Shopify's Merchant Solutions Growth Accelerates: More Upside Ahead?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:16",
+   "related": "SHOP,XYZ,PYPL",
+   "summary": "Shopify reported strong Q2 2026 results with Merchant Solutions revenues jumping 37% to $2.78 billion, driven by increased Shopify Payments penetration (68% of ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Here's Why You Should Add URGN Stock to Your Portfolio Now",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:11",
+   "related": "URGN,TEVA,PGEN,ACIU",
+   "summary": "UroGen Pharma is transitioning from development-stage to commercial-growth biotech, driven by strong Zusduri uptake (73% sequential revenue growth to $50.4M in ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "NetApp's Keystone Sovereign Targets Europe's Regulated Data Market",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:09",
+   "related": "NTAP,SMCI,SMCIP,HPE,HPEpC",
+   "summary": "NetApp is launching Keystone Sovereign, a data sovereignty-focused storage-as-a-service offering targeting regulated customers in Germany and France, with expan",
+   "theme": "chips"
+  },
+  {
+   "title": "CarMax Q2 Earnings Beat Estimates on Strong Unit Sales, CAF Growth",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:06",
+   "related": "KMX,GM,TSLA,GPC",
+   "summary": "CarMax reported Q2 fiscal 2027 earnings of $1.16 per share, up 81.3% year-over-year, beating consensus estimates. Retail used-unit sales climbed 13.8% with aver",
+   "theme": "chips"
+  },
+  {
+   "title": "Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought",
+   "source": "The Motley Fool",
+   "published_utc": "2026-09-30 13:05",
+   "related": "NVDA,SPCX,ABNB",
+   "summary": "Cathie Wood's Ark Invest added to positions in Nvidia, SpaceX, and Airbnb on Tuesday. Nvidia announced a record $150 billion share buyback authorization and tra",
+   "theme": "chips"
+  },
+  {
+   "title": "Realty Income Expands in Europe: Can the Region Drive More Growth?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:05",
+   "related": "O,WPC,GNL,GNLpA,GNLpB,GNLpD",
+   "summary": "Realty Income established a euro-denominated joint venture with KKR to expand its European operations, which now represent 20% of annualized base rent. The comp",
+   "theme": "chips"
+  },
+  {
+   "title": "Tesla Expands Cybercab Fleet to Strengthen Robotaxi Operations",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:02",
+   "related": "TSLA,MBLY,GTX",
+   "summary": "Tesla has doubled its Cybercab fleet in Austin to over 100 vehicles, increasing availability from 58 to 125 vehicles between September 21-25, 2026. The expansio",
+   "theme": "chips"
+  },
+  {
+   "title": "Toast Expands Into Convenience Stores With New Fuel Platform",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:02",
+   "related": "TOST,BILL,ANET",
+   "summary": "Toast (TOST) launched Toast Fuel, a cloud-native platform targeting convenience stores and fuel operators. The platform integrates fuel payments, in-store retai",
+   "theme": "chips"
+  },
+  {
+   "title": "CCL Q3 Earnings Call Highlights Demand Strength, 2027 Bookings",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:00",
+   "related": "CCL",
+   "summary": "Carnival Corporation (CCL) reported Q3 2026 earnings that beat consensus estimates, with adjusted EPS of $1.43 vs. $1.36 expected and revenues of $8.44B vs. $8.",
+   "theme": "chips"
+  },
+  {
+   "title": "UEC Q4 Earnings Call Highlights Production Ramp and U.S. Strategy",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:00",
+   "related": "UEC",
+   "summary": "Uranium Energy Corp. (UEC) reported fiscal Q4 production of 82,744 pounds, up 157% sequentially, as it expanded operations across Wyoming and Texas. The company",
+   "theme": "chips"
+  },
+  {
+   "title": "A Rare Bullish Call on U.S. Treasuries: ETFs to Play",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:00",
+   "related": "IEF,SHV,VGSH",
+   "summary": "Market analyst Jim Bianco sees value in U.S. Treasuries as yields climb above 5% for the first time in nearly two decades. With improved risk-reward dynamics, B",
+   "theme": "pharma"
+  },
+  {
+   "title": "Sezzle's On-Demand Push: Can It Win More Enterprise Merchants?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 13:00",
+   "related": "SEZL,AFRM,XYZ",
+   "summary": "Sezzle Inc. is leveraging its On-Demand buy now pay later product to compete for enterprise merchants with competitive pricing while building a pathway to subsc",
+   "theme": "pharma"
+  },
+  {
+   "title": "Here's Why You Should Retain Nissan Stock in Your Portfolio",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:59",
+   "related": "NSANY,MBLY,GTX",
+   "summary": "Nissan's U.S. retail sales rose over 9% in Q1, driven by strong Pathfinder, Frontier, and Rogue demand, with the 2027 Rogue Hybrid launching in fall 2026. The c",
+   "theme": "pharma"
+  },
+  {
+   "title": "CDW's Buyback Pace Jumps: Can Stronger Cash Flow Sustain Returns?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:59",
+   "related": "CDW,NOW,ACN",
+   "summary": "CDW returned $706 million to shareholders in H1 2026, including $545 million in buybacks, with net leverage at 2.5X and over $1.1 billion in remaining buyback c",
+   "theme": "pharma"
+  },
+  {
+   "title": "Here's Why UiPath (PATH) Is a Great 'Buy the Bottom' Stock Now",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:55",
+   "related": "PATH",
+   "summary": "UiPath (PATH) stock has declined 7% over the past week but formed a hammer chart pattern suggesting potential trend reversal. The technical signal is supported ",
+   "theme": "pharma"
+  },
+  {
+   "title": "NGVT Stock Rallies 31% in a Year: What's Driving the Upside?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:53",
+   "related": "NGVT,RS,AVNT,KRO",
+   "summary": "Ingevity Corporation (NGVT) shares have gained 30.6% over the past year, outperforming its industry. The company's portfolio optimization through divestitures a",
+   "theme": "pharma"
+  },
+  {
+   "title": "Is the Options Market Predicting a Spike in Burford Capital Stock?",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:52",
+   "related": "BUR",
+   "summary": "Burford Capital Limited (BUR) is experiencing elevated implied volatility in its October 2026 $2.50 put options, suggesting traders expect significant price mov",
+   "theme": "pharma"
+  },
+  {
+   "title": "Why RingCentral (RNG) is a Top Momentum Stock for the Long-Term",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "RNG",
+   "summary": "Zacks Premium offers investment research tools including Style Scores (Value, Growth, Momentum, and VGM) designed to complement the Zacks Rank system. These sco",
+   "theme": "pharma"
+  },
+  {
+   "title": "Why Petrobras (PBR) is a Top Momentum Stock for the Long-Term",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "PBR,PBR.A",
+   "summary": "Petrobras (PBR), Brazil's largest integrated energy firm, receives a #3 (Hold) rating from Zacks with a VGM Score of A. The stock shows positive momentum with a",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why PBF Energy (PBF) is a Strong Momentum Stock",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "PBF",
+   "summary": "Zacks Premium offers investment research tools including the Zacks Rank and Style Scores to help investors identify high-performing stocks. The Zacks Rank #1 (S",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why Arhaus, Inc. (ARHS) is a Strong Momentum Stock",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "ARHS",
+   "summary": "Zacks Premium offers investment research tools including the Zacks Rank and Style Scores to help investors identify high-performing stocks. The platform highlig",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why Host Hotels (HST) is a Strong Momentum Stock",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "HST",
+   "summary": "Zacks explains how its Style Scores (Value, Growth, Momentum, and VGM) work alongside the Zacks Rank to help investors select stocks with the best performance p",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why Boise Cascade (BCC) is a Strong Momentum Stock",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "BCC",
+   "summary": "Boise Cascade (BCC), a major wood products manufacturer and building products distributor, has received a #3 (Hold) rating on the Zacks Rank with a VGM Score of",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why Micron (MU) is a Top Momentum Stock for the Long-Term",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "MU",
+   "summary": "Zacks Premium offers Style Scores (Value, Growth, Momentum, and VGM) that work alongside the Zacks Rank to help investors identify stocks with the best performa",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why Jabil (JBL) is a Top Momentum Stock for the Long-Term",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "JBL",
+   "summary": "Zacks Premium offers investment research tools including daily Zacks Rank updates, Style Scores (Value, Growth, Momentum, and VGM), and equity research reports ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Here's Why Scorpio Tankers (STNG) is a Strong Momentum Stock",
+   "source": "Zacks Investment Research",
+   "published_utc": "2026-09-30 12:50",
+   "related": "STNG",
+   "summary": "Scorpio Tankers (STNG), a Monaco-based seaborne transportation company, is highlighted as a stock to watch with a #3 (Hold) Zacks Rank and B VGM Score. The tran",
+   "theme": "copper_uranium"
+  }
+ ]
+}

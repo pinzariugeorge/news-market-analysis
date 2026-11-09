@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260818-a (decision day 2026-08-18, data cutoff 2026-08-18)
+What changed: The Guardian: the US-Iran ceasefire expired and Trump threatened Oman; WTI 84.5 (+2.6% on 08-17), already priced. CNBC: 30-year Treasury yield topped 5.33%, a 19-year high; 10-year 4.72% at its 1-year high, yet gold rose to 4474 and NEM +2.2%. LLY fell 4% in 5 days, so LLY is exited; Walz order blocks copper mining near Boundary Waters (not FCX).
+Holdings and reasons:
+- oil_gas: flat | Ceasefire expiry and Oman threat already in crude (+2.6% in a day) and XOM (6% off high); no unpriced one-sided catalyst.
+- gold_miners: long NEM since 2026-08-10, 10 days | Barrick settlement cleared uncertainty and gold keeps rising despite higher yields; exit due about 2026-08-24.
+- chips: flat | NVDA $105B OpenAI financing is two-sided, a 6% SOX plunge headline conflicts with the record, and late-August earnings are two-sided.
+- pharma: flat | LLY exited at its planned date after a 4% five-day sell-off; guidance-raise catalyst faded.
+- copper_uranium: long FCX since 2026-07-31, 20 days | Congo export ban keeps copper tight (1.5% off 1-year high); no reversal seen; exit due about 2026-08-28.
+Open storylines:
+- [escalating] Iran war / Hormuz oil shock: US-Iran ceasefire expired, Trump threatened Oman (Guardian); WTI 84.5, Brent 90.9. Already repriced; re-enter XOM only on a new closure with crude not yet moved.
+- [open] Trump vs oil majors' windfall: No new action; watch windfall tax, export limits or SPR releases (negative for XOM). US shale majors cutting spending despite higher prices.
+- [escalating] Rising long yields vs gold: 30-year above 5.33% (19-year high), 10-year 4.72% at 1-year high; gold 4474 still rising, 16% below high. A sharp yield jump with gold falling would hurt NEM.
+- [open] Barrick-Newmont Nevada settlement and IPO: $1.95B settlement, NEM long (+35% in 20 days, 9% off high). Exit on negative details; hold ends about 2026-08-24.
+- [open] Chip rout and rebound / NVDA capital bets: SOXX +4.3% in 5 days but a BigGo headline claims a 6% SOX plunge (unconfirmed by record). NVDA backing $105B OpenAI Ohio financing. NVDA earnings late August; watch export rules.
+- [open] US inflation and tariffs: St. Louis Fed: tariff effects on inflation stabilizing; July CPI 3.4% y/y. Long-end yields still rising on spending concerns. Watch Fed odds and tariff moves.
+- [closed] LLY Q2 guidance raise: Exited 2026-08-18 after LLY -4% in 5 days; re-enter only on new LLY-specific news.
+- [open] Copper supply squeeze: Congo concentrate export ban; copper 6.60, 1.5% off high. Walz order blocks Boundary Waters copper mining (long-run US supply). Exit on ban reversal or exemption, mine restarts, dollar rebound or copper reversal; hold ends about 2026-08-28.
+- [open] Uranium: producer updates and project opposition: Uranium ETF +17% in 20 days; opposition to Dewey-Burdock project (NDN Collective). Indirect for FCX.
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Confirm LLY is flat. Hold NEM to about 2026-08-24 unless the 10-year jumps sharply with gold falling or settlement details turn negative, then go flat. Hold FCX to about 2026-08-28 unless the Congo ban is reversed or exempted or copper reverses. Re-check XOM (Hormuz, Oman, Trump actions) and NVDA (earnings date, export rules, financing news) for a named, unpriced catalyst.

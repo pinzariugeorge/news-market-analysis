@@ -1,0 +1,57 @@
+{
+ "run_id": "fp4-20260728-a",
+ "written_at": "2026-07-28T13:40:00Z",
+ "decision_day": "2026-07-28",
+ "data_cutoff": "2026-07-28",
+ "what_changed": "Five days since the last note (07-23). WTI fell 7.5% in one day to 82.6 (still +19% over 20 days), NVDA fell 5% and the semiconductor ETF 2.3%, gold rose 1.5% over 5 days, and VIX is 18.7. Headlines again held no leader-specific catalyst.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "One-day oil drop has no named cause and no XOM or OPEC+ headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold bounce lacks a Fed, dollar or NEM catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "NVDA and sector sell-off has no explaining headline, only opinion pieces."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY news in the headlines."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "FCX rise has no supply or demand headline."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil whipsaw",
+   "status": "open",
+   "note": "WTI -7.5% on the day, +19% over 20 days, -23% over 60 days. Watch OPEC+ or supply headlines and XOM earnings for the reason.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Chip sell-off and AI-spending doubt",
+   "status": "escalating",
+   "note": "Semiconductor ETF -10.3% over 20 days, NVDA -5% on the day. Watch chip and cloud earnings, TSMC sales (about the 10th) and any export-rule news.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Gold drawdown",
+   "status": "open",
+   "note": "Gold 23% below its high, 10-year yield 4.64%, dollar firm. Watch the Fed and the jobs report.",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "name": "Earnings week",
+   "status": "open",
+   "note": "Apple and Norwegian Cruise report July 30; SpaceX August 4. Watch for read-through to energy (fuel costs) and AI spending.",
+   "first_seen": "2026-07-28"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-07-28: read the new record and headlines, then decide each family under the catalyst rule."
+}

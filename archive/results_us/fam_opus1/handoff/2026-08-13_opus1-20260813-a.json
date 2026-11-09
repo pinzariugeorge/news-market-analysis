@@ -1,0 +1,93 @@
+{
+ "run_id": "opus1-20260813-a",
+ "written_at": "2026-08-13T11:55:00Z",
+ "decision_day": "2026-08-13",
+ "data_cutoff": "2026-08-13",
+ "what_changed": "Al Jazeera: attacks dented hopes for a Hormuz reopening; WTI 83.3 (+10.7% in 5 days), already priced, so XOM stays flat. CPI in line (3.4% y/y) and a lighter PPI eased yields, helping gold (4468) and NEM (+13% in 5 days). Reuters commentary says the Congo copper panic reflects an already tight market; copper eased 1.6% in 5 days, FCX flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Renewed Hormuz attacks are already priced (crude +10.7%, XOM +5.4% in 5 days); no one-sided catalyst."
+  },
+  "gold_miners": {
+   "position": "long NEM since 2026-08-10, 10 days",
+   "why": "Barrick settlement clears uncertainty and easing yields support gold; no negative deal details seen."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No export-rule or guidance catalyst; NVDA late-August earnings are two-sided."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-08-05, 10 days",
+   "why": "Guidance raise still rewarded (+4.3% in 5 days, near high); no drug-pricing news."
+  },
+  "copper_uranium": {
+   "position": "long FCX since 2026-07-31, 20 days",
+   "why": "Congo concentrate export ban keeps copper tight (1.6% off 1-year high); no reversal seen."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war / Hormuz oil shock",
+   "status": "escalating",
+   "note": "Al Jazeera: attacks dent reopening hopes; WTI 83.3, Brent 89. Already repriced; re-enter XOM only on a new closure with crude not yet moved.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Trump vs oil majors' windfall",
+   "status": "open",
+   "note": "No new action seen; watch for a windfall tax, export limits or SPR releases (negative for XOM).",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Gold bear market and rising yields",
+   "status": "open",
+   "note": "Gold 4468, 16% below high; 10-year 4.68% near 1-year high but eased on lighter PPI. A yield rebound would hurt NEM.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Barrick-Newmont Nevada settlement and IPO",
+   "status": "open",
+   "note": "$1.95B settlement, NEM long; NEM +24% in a month and backing Headwater on a 3rd Nevada project. Exit on negative details; hold ends about 2026-08-24.",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "name": "Chip rout and rebound",
+   "status": "open",
+   "note": "SOXX +2.7% in 5 days, NVDA 5% off high. Watch NVDA earnings late August and export rules.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "US inflation and tariffs",
+   "status": "open",
+   "note": "July CPI +0.1% m/m, 3.4% y/y as expected; PPI lighter. Watch Fed odds, tariff carve-outs and retaliation.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "LLY Q2 guidance raise",
+   "status": "fading",
+   "note": "LLY long, 1.2% off high. Exit on a sell-off or drug-pricing news; hold ends about 2026-08-19.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Copper supply squeeze",
+   "status": "open",
+   "note": "Congo concentrate export ban; Reuters commentary says panic reflects tight copper. Copper 6.60 (-1.6% in 5 days). Exit on ban reversal or exemption, mine restarts, dollar rebound or copper reversal; hold ends about 2026-08-28.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Uranium: producer updates and mill opposition",
+   "status": "open",
+   "note": "Uranium ETF +5.4% in 5 days; NPR on uranium mill and tribal health concerns. Indirect for FCX.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Copper to aluminium substitution",
+   "status": "open",
+   "note": "FCX demand headwind if more automakers switch; no update.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note. Exit LLY at about 2026-08-19 or earlier on a sell-off or pricing news. Hold NEM to about 2026-08-24 unless yields rebound sharply or settlement details turn negative. Hold FCX to about 2026-08-28 unless the Congo ban is reversed or exempted or copper reverses. Re-check XOM (Hormuz, Trump actions) and NVDA (earnings date, export rules) for a named, unpriced catalyst."
+}

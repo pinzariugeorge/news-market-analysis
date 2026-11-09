@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus1-20260810-a (decision day 2026-08-10, data cutoff 2026-08-10)
+What changed: Reuters: Congo banned copper and cobalt concentrate exports, a new supply shock supporting the FCX long. Barrick settled the Nevada JV dispute with Newmont for $1.95B, clearing the way for an IPO; opened a NEM long. Crude rebounded (WTI 78, headlines cite above 82) on Hormuz deal doubts; LLY +3.2% over 5 days after its guidance raise.
+Holdings and reasons:
+- oil_gas: flat | Hormuz stalemate rebound is already priced and Trump pressure on oil majors persists; no one-sided catalyst.
+- gold_miners: long NEM since 2026-08-10, 10 days | Barrick pays Newmont $1.95B to settle the Nevada JV dispute, clearing uncertainty; gold helped by lower yields.
+- chips: flat | TSMC sales +45% confirms AI demand but NVDA +11.6% in 5 days already prices it; earnings late August are two-sided.
+- pharma: long LLY since 2026-08-05, 10 days | Q2 guidance raise received well (+3.2% in 5 days); no pricing threat seen.
+- copper_uranium: long FCX since 2026-07-31, 20 days | Congo concentrate export ban adds to the copper supply squeeze; copper 2% off its 1-year high.
+Open storylines:
+- [open] Iran war / Hormuz oil shock: Stalemate: Iranian demands cloud a Hormuz deal; WTI 78 (headlines cite above 82). Re-enter XOM only on renewed closure or tanker attacks with crude not yet repriced.
+- [open] Trump vs oil majors' windfall: No new action seen; watch for a windfall tax, export limits or SPR releases (negative for XOM).
+- [open] Gold bear market and rising yields: Gold 4400, +7% in 5 days but 17% below its high; 10-year 4.66% near its 1-year high. A yield rebound would hurt NEM.
+- [open] Barrick-Newmont Nevada settlement and IPO: $1.95B settlement and IPO of Barrick's North American spinoff; NEM long. Watch deal details, payment timing and NEM's reaction; exit if it is judged negative for NEM.
+- [open] Chip rout and rebound: SOXX +7.8% in 5 days; TSMC sales +45%; Nvidia $500B financing push with Apollo, BlackRock, KKR. Watch NVDA earnings late August and export rules.
+- [open] US global tariffs and inflation: No update; watch metals and energy carve-outs and retaliation.
+- [open] LLY Q2 guidance raise: LLY long; stock +3.2% over 5 days. Exit on a sell-off or drug-pricing news; hold ends around 2026-08-19.
+- [escalating] Copper supply squeeze: Reuters: Congo bans copper and cobalt concentrate exports. Copper 6.57, 2% off its 1-year high. Exit on a ban reversal, mine restarts, a dollar rebound or a copper reversal; hold ends around 2026-08-28.
+- [open] Uranium: producer updates and Westinghouse IPO: Uranium ETF +15% in 5 days; local opposition to a mine near Navajo Nation. Indirect for FCX.
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Confirm the NEM long filled and check its reaction to the Barrick settlement (exit if details are negative; hold ends around 2026-08-24). Keep LLY until about 2026-08-19 unless it sells off or pricing news hits. Check the Congo export ban (exit FCX on a reversal or exemption; hold ends around 2026-08-28). Re-check XOM (Hormuz, Trump actions) and NVDA (earnings date, export rules) for a named catalyst.

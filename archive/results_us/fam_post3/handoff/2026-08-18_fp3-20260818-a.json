@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260818-a",
+ "written_at": "2026-08-18T09:00:00Z",
+ "decision_day": "2026-08-18",
+ "data_cutoff": "2026-08-18",
+ "what_changed": "Bond yields surged and chips sold off pre-open (Fabrinet miss, Nvidia datacom weakness); Brent is about $91 and XOM is gaining. NEM is up 35% in 20 days, with gold at 4474. Nvidia Q2 earnings preview is circulating; no leader-specific catalyst appeared.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "XOM gain is a priced-in oil move with no XOM-specific catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM is up 35% in 20 days and there is no guidance news."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Yields-driven selloff and an earnings preview without a one-sided setup."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, approval or pricing catalyst."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Only opinion pieces on copper; no FCX guidance or supply shock."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "open",
+   "note": "Brent about 91, WTI 84.5; watch XOM-specific news",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "NEM guidance and Nvidia Q2 results pending; a leader guidance raise is a catalyst",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "AI financing and yields selloff",
+   "status": "escalating",
+   "note": "Bond yields surging, Fabrinet miss, AI bond supply; watch NVDA earnings reaction",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "Gold rebound",
+   "status": "open",
+   "note": "Gold 4474, NEM +35% in 20 days; rising yields are a risk",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "Copper and uranium",
+   "status": "open",
+   "note": "Copper near its high; watch FCX guidance, Cameco Westinghouse IPO",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "LLY retatrutide Canada dispute",
+   "status": "open",
+   "note": "Canada Revenue Agency application on unapproved retatrutide; watch for filings or probes",
+   "first_seen": "2026-08-17"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM guidance, Nvidia earnings result, FCX guidance, LLY filings); stay flat otherwise."
+}

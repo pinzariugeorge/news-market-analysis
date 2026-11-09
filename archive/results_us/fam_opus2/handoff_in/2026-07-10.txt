@@ -1,0 +1,22 @@
+# Handoff from the previous run (read first)
+Run opus2-20260707-b2 (decision day 2026-07-07, data cutoff 2026-07-07)
+What changed: The oil slide met a supply shock: headlines report tanker attacks in the Strait of Hormuz, the US revoking Iran's sale authorization, oil up 4-5%, and a Trump threat to bomb Iran or reimpose a blockade. Gold bounced 1% but Morningstar calls it a bear market. The other families are unchanged.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days | The Hormuz supply shock and Iran escalation are a named catalyst at confidence 0.53.
+- gold_miners: flat | Gold is in a bear market with a firm dollar and no NEM catalyst; the $9bn miner tie-up is not NEM.
+- chips: flat | There is no NVDA-specific catalyst.
+- pharma: flat | There is no trial, approval or pricing news for LLY.
+- copper_uranium: flat | There is no copper catalyst for FCX.
+Open storylines:
+- [escalating] Hormuz / Iran escalation: Tanker attacks, the revoked waiver and the blockade threat. Watch for de-escalation (exit risk for the XOM long) or more supply disruption.
+- [open] Oil price slide: WTI was 68.55 at the July 6 close, down 26% in 20 days and back to pre-Iran-war levels as output grows. The shock may reverse it.
+- [open] Gold bear market: Gold is down 21.6% from its high with a hawkish Fed under Warsh. Watch for a dovish turn or a safe-haven bid from the Iran escalation.
+- [open] Gold miner M&A: A $9bn gold miner tie-up (Reuters Breakingviews). It matters only if NEM becomes involved.
+- [open] Cigar Lake suspension: The Orano mill disruption matters for CCJ only if it becomes the leader.
+- [open] Copper to aluminium substitution: A slow negative for copper demand.
+- [open] Q2 earnings season: Exxon signals a Q2 profit windfall (Reuters). NEM has its Q2 call scheduled. Look for guidance changes.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check the XOM long (10-day horizon from 2026-07-07) against Iran and Hormuz news. Then read the new record for a named catalyst in each family and decide long or flat.
+
+# Outcomes of your past calls
+No long call has closed yet. There is nothing to learn from yet; do not invent lessons.

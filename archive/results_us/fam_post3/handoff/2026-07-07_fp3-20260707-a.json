@@ -1,0 +1,63 @@
+{
+ "run_id": "fp3-20260707-a",
+ "written_at": "2026-07-07T14:00:00Z",
+ "decision_day": "2026-07-07",
+ "data_cutoff": "2026-07-07",
+ "what_changed": "No catalyst found in any family; all stay flat. New items: Samsung earnings triggered a chip selloff, OPEC+ announced a small 188k BOED hike, and gold-miner rebound commentary appeared but is opinion only.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Only analyst opinion and a small OPEC+ hike; no supply shock named."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Rebound calls are opinion; no rate or event catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Samsung-driven selloff and Nvidia rack delay worries are negative, nothing positive and checkable."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No trial, regulatory or pricing event in the headlines."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No new FCX or copper event; only thematic articles."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "FCX Grasberg output cut",
+   "status": "open",
+   "note": "No new news; watch for Q2 earnings and Grasberg restart updates.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "LLY China trial security probe",
+   "status": "open",
+   "note": "No update in today's headlines; watch for escalation or a company response.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "WPM reports Aug 6 after close; NEM, JNJ and oil majors due July-August; a guidance raise would be a catalyst.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Oil and gold selloff",
+   "status": "open",
+   "note": "WTI -26% and gold -7.5% over 20 days; OPEC+ adding 188k BOED, Iran tension a possible supply risk; watch for a supply shock or rate shift.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Chip sector wobble",
+   "status": "open",
+   "note": "Samsung results disappointed after a 145% run, Nvidia rack delay report and DeepSeek in-house chip report; watch TSMC monthly sales (about the 10th) and further earnings.",
+   "first_seen": "2026-07-07"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list (TSMC sales around July 10, Q2 earnings); stay flat if none."
+}

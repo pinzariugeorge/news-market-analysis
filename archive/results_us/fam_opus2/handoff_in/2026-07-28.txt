@@ -1,0 +1,29 @@
+# Handoff from the previous run (read first)
+Run opus2-20260723-r7 (decision day 2026-07-23, data cutoff 2026-07-23)
+What changed: Oil escalated again: tankers reportedly struck off Saudi Arabia and Red Sea attacks put Brent headlines at $100 (WTI close 86.83, +9.1% in 5 days); Rubio says Iran is not serious about a deal. The 10y hit 4.66%, highest since January 2025, and Trump imposed new tariffs on 60+ trade partners. Lilly reported two more successful retatrutide Phase 3 trials and NEM beat Q2 estimates.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, renewed 2026-07-23 for 10 days | Iran war supply shock widened to Saudi tankers and the Red Sea with no deal in sight; confidence 0.54.
+- gold_miners: flat | NEM beat but only reaffirmed guidance; rising yields weigh on gold.
+- chips: flat | No NVDA-specific catalyst; AMD Helios and the AMD-Anthropic deal add competition.
+- pharma: long LLY since 2026-07-23, 10 days | Retatrutide succeeded in two more Phase 3 obesity trials (Eli Lilly, July 23); confidence 0.53.
+- copper_uranium: flat | No copper catalyst for FCX; tariffs and yields are negatives.
+Open storylines:
+- [escalating] Hormuz / Iran war escalation: Tankers struck off Saudi Arabia and Red Sea attacks (July 22-23); Rubio says Iran not serious about a deal. A ceasefire or reopening headline means exiting XOM.
+- [open] Oil shock vs fade: WTI +18.6% in 20 days but still -8% over 60 days with record US output; the shock bounce could reverse fast.
+- [escalating] Yields and inflation fear: 10y 4.66%, highest since January 2025, on oil-driven inflation fear; headwind for gold and long-duration stocks. Watch Fed tone.
+- [escalating] Tariffs: 50% on Canada (July 20) and new tariffs on 60+ trade partners (July 23). Watch retaliation and effects on copper demand and TECK.
+- [open] AI chip competition: AMD Helios in full production; AMD to invest up to $5B in Anthropic. Big Tech earnings next week for capex signals.
+- [open] Lilly obesity pipeline: Retatrutide two more Phase 3 wins (July 23). Watch filing news, LLY Q2 earnings (early August) and drug-pricing policy.
+- [open] Q2 earnings season: NEM beat with guidance reaffirmed; XOM Q2 due late July/early August. Variance, not direction.
+- [fading] Uranium supply and policy: US-Saudi enrichment deal (July 22); uranium ETF -10% in 20 days. Matters only if CCJ becomes leader.
+Lessons ledger (cases = closed trades supporting it; below 5 cases it is only a hypothesis):
+- (1 cases) Hypothesis only: oil longs opened on a named supply-shock escalation headline (sanctions, ship attacks) win over 10 days. | oil_gas XOM called 2026-07-07, net +6.82% (basket +8.64%). One trade; below 5 cases, does not change calls.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check the XOM long (renewed 2026-07-23 for 10 days, ends around 2026-08-06) against Iran, Red Sea and Hormuz news and exit on a de-escalation headline; check the LLY long (opened 2026-07-23 for 10 days, ends around 2026-08-06) for trial, pricing or earnings news; then read the new record for a named catalyst in each family.
+
+# Outcomes of your past calls (facts computed by the harness; closed trades only)
+- oil_gas XOM (0.53), called 2026-07-07, held 10d to 2026-07-21: net +6.82% (family basket +8.64%). Catalyst you quoted: 'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after 
+- oil_gas XOM (0.52), called 2026-07-10, held 10d to 2026-07-24: net +12.76% (family basket +10.51%). Catalyst you quoted: Continuing hold from 2026-07-07: Hormuz tanker attacks and the Iran escalation (supply shock). Today's record adds 'Strait of Hormuz: What h
+Per-family tally (closed trades):
+- oil_gas: 2 trades, 2 won, mean net +9.79%
+All: 2 trades, 2 won, mean net +9.79%

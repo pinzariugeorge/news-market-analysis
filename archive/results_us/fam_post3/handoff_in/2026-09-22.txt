@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260917-a (decision day 2026-09-17, data cutoff 2026-09-17)
+What changed: The Fed raised rates a quarter point Wednesday and the 10-year yield sits near 5.0%. Oil fell 3.2% (XOM -3.5%, COP -6%, OXY -6.5%) and stocks and gold rebounded premarket Thursday. Nebius raised cloud compute prices about 20%, a sign AI compute is tight.
+Holdings and reasons:
+- oil_gas: flat | Oil drop after a big run is priced and no XOM-specific one-sided news.
+- gold_miners: flat | Gold rebound only, still below its 200-day average with yields at a high; no NEM guidance.
+- chips: flat | Nebius price hikes are only an indirect AI demand signal; no NVDA-specific catalyst.
+- pharma: flat | No LLY trial, approval or pricing news.
+- copper_uranium: flat | No FCX guidance or supply news; copper down 5.5% in 5 days.
+Open storylines:
+- [open] Iran war, Hormuz and oil: WTI about $102 (-3.2% Wednesday, +20.6% in 20 days); energy stocks fell harder than crude; watch XOM-specific news and whether oil holds
+- [escalating] Rates risk: Fed hiked a quarter point; 10-year 5.0% at a high; watch the jobs report and further Fed signals
+- [open] AI pacing selloff in chips: Semis -5% in 5 days, NVDA -4.4%; Nebius compute price hikes suggest tight supply; watch NVDA demand or export news
+- [open] Gold miners and rates: Gold rebounded but below its 200-day average; watch NEM guidance after the earnings call
+- [open] Copper and uranium: Copper -5.5% in 5 days, uranium ETF -11.7%; watch FCX guidance or Grasberg supply news
+- [open] Pharma weakness: LLY -7.2% in 20 days; watch LLY trials, approvals and pricing
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise.

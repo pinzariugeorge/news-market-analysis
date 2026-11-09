@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-08-21",
+ "weekday": "Friday",
+ "information_cutoff": "closes dated before 2026-08-21; Massive news published before 2026-08-21 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-08-20",
+   "last": 16.01,
+   "ret_1d_pct": 7.52,
+   "ret_5d_pct": 9.43,
+   "ret_20d_pct": -14.39,
+   "ret_60d_pct": -5.88,
+   "vol_20d_daily_pct": 6.23,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -48.4
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-08-20",
+     "last": 87.83,
+     "ret_1d_pct": 2.33,
+     "ret_5d_pct": 8.1,
+     "ret_20d_pct": -4.73,
+     "ret_60d_pct": -6.45,
+     "vol_20d_daily_pct": 3.49,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -22.2
+    },
+    "Brent crude oil": {
+     "last_date": "2026-08-20",
+     "last": 93.78,
+     "ret_1d_pct": 2.36,
+     "ret_5d_pct": 7.71,
+     "ret_20d_pct": -6.86,
+     "ret_60d_pct": -5.82,
+     "vol_20d_daily_pct": 4.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -20.8
+    },
+    "Natural gas": {
+     "last_date": "2026-08-20",
+     "last": 2.733,
+     "ret_1d_pct": -2.88,
+     "ret_5d_pct": 0.22,
+     "ret_20d_pct": -6.28,
+     "ret_60d_pct": -5.56,
+     "vol_20d_daily_pct": 2.36,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -63.4
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-08-20",
+     "last": 166.15,
+     "ret_1d_pct": 0.84,
+     "ret_5d_pct": 4.75,
+     "ret_20d_pct": 5.9,
+     "ret_60d_pct": 10.91,
+     "vol_20d_daily_pct": 1.51,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.1,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-08-20",
+     "last": 205.77,
+     "ret_1d_pct": 0.0,
+     "ret_5d_pct": 4.08,
+     "ret_20d_pct": 5.84,
+     "ret_60d_pct": 11.4,
+     "vol_20d_daily_pct": 1.7,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.5,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-08-20",
+     "last": 134.89,
+     "ret_1d_pct": 3.3,
+     "ret_5d_pct": 8.33,
+     "ret_20d_pct": 12.22,
+     "ret_60d_pct": 15.72,
+     "vol_20d_daily_pct": 2.07,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-08-20",
+     "last": 61.52,
+     "ret_1d_pct": 2.38,
+     "ret_5d_pct": 6.62,
+     "ret_20d_pct": 6.81,
+     "ret_60d_pct": 7.07,
+     "vol_20d_daily_pct": 2.3,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.1,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-08-20",
+     "last": 4571.4,
+     "ret_1d_pct": 0.57,
+     "ret_5d_pct": 3.42,
+     "ret_20d_pct": 12.87,
+     "ret_60d_pct": 1.53,
+     "vol_20d_daily_pct": 1.22,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -14.0
+    },
+    "Silver": {
+     "last_date": "2026-08-20",
+     "last": 68.026,
+     "ret_1d_pct": 3.49,
+     "ret_5d_pct": 4.86,
+     "ret_20d_pct": 17.7,
+     "ret_60d_pct": -10.85,
+     "vol_20d_daily_pct": 2.05,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -40.9
+    },
+    "US 10-year yield": {
+     "last_date": "2026-08-20",
+     "last": 4.696,
+     "ret_1d_pct": 0.92,
+     "ret_5d_pct": 1.19,
+     "ret_20d_pct": -0.15,
+     "ret_60d_pct": 4.52,
+     "vol_20d_daily_pct": 0.89,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.0
+    },
+    "US dollar index": {
+     "last_date": "2026-08-20",
+     "last": 98.9,
+     "ret_1d_pct": 0.07,
+     "ret_5d_pct": -1.06,
+     "ret_20d_pct": -2.49,
+     "ret_60d_pct": -0.27,
+     "vol_20d_daily_pct": 0.3,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -2.7
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-08-20",
+     "last": 107.52,
+     "ret_1d_pct": 0.01,
+     "ret_5d_pct": 0.34,
+     "ret_20d_pct": 0.03,
+     "ret_60d_pct": -2.98,
+     "vol_20d_daily_pct": 0.24,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -4.2
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-08-20",
+     "last": 127.64,
+     "ret_1d_pct": 2.05,
+     "ret_5d_pct": 11.78,
+     "ret_20d_pct": 34.76,
+     "ret_60d_pct": 14.36,
+     "vol_20d_daily_pct": 3.25,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.3,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-08-20",
+     "last": 212.04,
+     "ret_1d_pct": 2.08,
+     "ret_5d_pct": 17.56,
+     "ret_20d_pct": 46.73,
+     "ret_60d_pct": 17.43,
+     "vol_20d_daily_pct": 3.59,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.9,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-08-20",
+     "last": 31.43,
+     "ret_1d_pct": 5.12,
+     "ret_5d_pct": 17.06,
+     "ret_20d_pct": 32.78,
+     "ret_60d_pct": 6.58,
+     "vol_20d_daily_pct": 3.61,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.4,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-08-20",
+     "last": 150.25,
+     "ret_1d_pct": 1.91,
+     "ret_5d_pct": 13.95,
+     "ret_20d_pct": 36.55,
+     "ret_60d_pct": 15.34,
+     "vol_20d_daily_pct": 3.47,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.3,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-08-20",
+     "last": 562.65,
+     "ret_1d_pct": 0.31,
+     "ret_5d_pct": -4.49,
+     "ret_20d_pct": -3.02,
+     "ret_60d_pct": -6.56,
+     "vol_20d_daily_pct": 2.87,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -15.9
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-08-20",
+     "last": 216.85,
+     "ret_1d_pct": -0.33,
+     "ret_5d_pct": -3.75,
+     "ret_20d_pct": 3.88,
+     "ret_60d_pct": 0.93,
+     "vol_20d_daily_pct": 2.34,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.0,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-08-20",
+     "last": 364.03,
+     "ret_1d_pct": 0.43,
+     "ret_5d_pct": -12.87,
+     "ret_20d_pct": -7.25,
+     "ret_60d_pct": -13.74,
+     "vol_20d_daily_pct": 2.77,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -24.4,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-08-20",
+     "last": 469.46,
+     "ret_1d_pct": 0.65,
+     "ret_5d_pct": -2.81,
+     "ret_20d_pct": -13.01,
+     "ret_60d_pct": -6.83,
+     "vol_20d_daily_pct": 4.98,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -19.2,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-08-20",
+     "last": 416.0,
+     "ret_1d_pct": 0.95,
+     "ret_5d_pct": -3.37,
+     "ret_20d_pct": 0.1,
+     "ret_60d_pct": 0.89,
+     "vol_20d_daily_pct": 2.49,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.9,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-08-20",
+     "last": 172.39,
+     "ret_1d_pct": -1.87,
+     "ret_5d_pct": 2.38,
+     "ret_20d_pct": 6.78,
+     "ret_60d_pct": 16.08,
+     "vol_20d_daily_pct": 1.25,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.9
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-08-20",
+     "last": 1244.4,
+     "ret_1d_pct": -2.81,
+     "ret_5d_pct": 2.93,
+     "ret_20d_pct": 4.94,
+     "ret_60d_pct": 16.87,
+     "vol_20d_daily_pct": 2.48,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.8,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-08-20",
+     "last": 267.37,
+     "ret_1d_pct": -2.21,
+     "ret_5d_pct": 2.02,
+     "ret_20d_pct": 3.12,
+     "ret_60d_pct": 16.16,
+     "vol_20d_daily_pct": 1.39,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.2,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-08-20",
+     "last": 261.83,
+     "ret_1d_pct": -1.56,
+     "ret_5d_pct": 4.39,
+     "ret_20d_pct": 1.91,
+     "ret_60d_pct": 22.86,
+     "vol_20d_daily_pct": 1.61,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-08-20",
+     "last": 148.99,
+     "ret_1d_pct": -2.11,
+     "ret_5d_pct": 9.92,
+     "ret_20d_pct": 14.19,
+     "ret_60d_pct": 24.45,
+     "vol_20d_daily_pct": 2.92,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.1,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-08-20",
+     "last": 6.46,
+     "ret_1d_pct": -0.42,
+     "ret_5d_pct": -2.01,
+     "ret_20d_pct": 2.46,
+     "ret_60d_pct": 1.56,
+     "vol_20d_daily_pct": 1.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.6
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-08-20",
+     "last": 26.46,
+     "ret_1d_pct": -1.78,
+     "ret_5d_pct": -1.85,
+     "ret_20d_pct": 0.42,
+     "ret_60d_pct": -3.18,
+     "vol_20d_daily_pct": 1.65,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -18.4
+    },
+    "Uranium ETF": {
+     "last_date": "2026-08-20",
+     "last": 43.84,
+     "ret_1d_pct": -2.6,
+     "ret_5d_pct": -3.12,
+     "ret_20d_pct": 6.59,
+     "ret_60d_pct": -13.8,
+     "vol_20d_daily_pct": 2.82,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -29.1
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-08-20",
+     "last": 71.22,
+     "ret_1d_pct": 3.08,
+     "ret_5d_pct": 6.57,
+     "ret_20d_pct": 12.16,
+     "ret_60d_pct": 10.66,
+     "vol_20d_daily_pct": 2.79,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.7,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-08-20",
+     "last": 95.59,
+     "ret_1d_pct": -2.44,
+     "ret_5d_pct": -2.21,
+     "ret_20d_pct": 7.01,
+     "ret_60d_pct": -11.63,
+     "vol_20d_daily_pct": 2.34,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -28.7,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-08-20",
+     "last": 66.16,
+     "ret_1d_pct": 0.32,
+     "ret_5d_pct": 3.76,
+     "ret_20d_pct": 10.54,
+     "ret_60d_pct": 1.46,
+     "vol_20d_daily_pct": 3.02,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.2,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-08-20",
+     "last": 196.762,
+     "ret_1d_pct": 2.08,
+     "ret_5d_pct": 5.94,
+     "ret_20d_pct": 10.37,
+     "ret_60d_pct": 5.92,
+     "vol_20d_daily_pct": 2.58,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -7.2,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "August",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "Berkshire Sold All of Its Domino's Stock. I Didn't. Here's Why.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 12:30",
+   "related": "DPZ,BRK.A,BRK.B,GOOG,GOOGL,GOOGM",
+   "summary": "While new Berkshire Hathaway CEO Greg Abel sold the company's entire Domino's stake as part of a portfolio overhaul, analyst Matt DiLallo remains bullish on the",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Curaleaf's Hostile Takeover Bid for Aurora Is Just the Tip of the Iceberg for Cannabis Consolidation. These 2 Stocks Could Be the Biggest Winners.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 12:15",
+   "related": "ACB,CGC,TLRY",
+   "summary": "The cannabis sector is undergoing consolidation as weaker players exit and stronger companies acquire competitors. Curaleaf has made an unsolicited $4 per share",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Meet the Newest Member of the S&P 500. It's Up 365% Since Its IPO, and It Can Keep Climbing From Here.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 11:32",
+   "related": "RDDT,GOOG,GOOGL,GOOGM,GOOGN,VMRK",
+   "summary": "Reddit has been added to the S&P 500 mid-quarter and is up 365% since its IPO. Despite strong Q2 earnings with 61% revenue growth and 178% EPS growth, the stock",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "The Best Dividend Stock for 2027 and Beyond: Procter & Gamble",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 11:15",
+   "related": "PG",
+   "summary": "Procter & Gamble is highlighted as an ideal dividend stock for 2027 and beyond, offering a 3% yield with consistent 4-6% annual dividend growth that has histori",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Should You Buy Datadog Stock Right Now?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 11:15",
+   "related": "DDOG,MSFT,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Datadog stock trades at an expensive 22.7 price-to-sales ratio, significantly higher than tech peers and the broader market. However, strong demand for its AI m",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Bloom Energy Calls Its Fuel Cells \"Lego Blocks.\" Here's Why That Word Choice Is the Whole Investment Thesis.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 11:05",
+   "related": "BE,ORCL,ORCLpD,BAM,NVDA,INTC",
+   "summary": "Bloom Energy's modular, factory-manufactured solid-oxide fuel cells are experiencing historic demand from data center developers. The \"Lego block\" design enable",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "IBBQ vs. PBE: Which Biotech ETF Is the Better Buy?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 11:02",
+   "related": "AMGN,VRTX,REGN",
+   "summary": "The article compares two biotech ETFs from Invesco: IBBQ, which offers broad diversification across 251 companies with a low 0.19% expense ratio, and PBE, which",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Is USA Rare Earth Under $20 a Bargain or a Trap?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 10:34",
+   "related": "USAR",
+   "summary": "USA Rare Earth (USAR) trades around $18, down 50% from its 52-week high, but analyst Matt DiLallo argues it's not a bargain despite the discount. While the comp",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "This Institutional Investor Thinks Ethereum Will Outperform Solana During the Next 12 Months. Could It Happen?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 10:15",
+   "related": "SCBFY",
+   "summary": "Standard Chartered predicts Ethereum will outperform Solana over the next 12 months, expecting Ethereum to nearly double while Solana rises 57%. However, Ethere",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Applied Digital Has $36 Billion Today. $86 Billion Could Be Next.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 10:11",
+   "related": "APLD",
+   "summary": "Applied Digital currently has approximately $36 billion in contracted lease revenue, with renewal options potentially pushing that figure to $86 billion. The ar",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "A $1,000 Investment With Bill Ackman in 2004 Would Be Worth Over $25,000 Today. Here's the Strategy Behind His Two-Decade Track Record.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 09:30",
+   "related": "CP,CMG",
+   "summary": "Bill Ackman's Pershing Square Capital Management achieved a 15.6% annualized return from 2004-2026, turning a hypothetical $1,000 investment into $26,000, signi",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "It's Been 26 Years Since Costco Split 2-for-1. Here's What $1,000 Invested the Day Before the Split Would Be Worth Today.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 09:15",
+   "related": "COST",
+   "summary": "Costco's stock hasn't split since January 2000, when a 2-for-1 split cut the share price from $98.12 to $49.06. A $1,000 investment made before that split would",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Why Madison Air Solutions Stock Was Getting Mashed This Week",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 09:14",
+   "related": "MAIR,WFC,WFCpA,WFCpC,WFCpD,WFCpL",
+   "summary": "Madison Air Solutions (MAIR) stock fell 16% week-to-date after announcing a $5.4 billion acquisition of Germany-based ebm-papst. Investors sold off shares due t",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Warren Buffett's Successor, Greg Abel, Is Transforming Berkshire Hathaway With This $43 Billion Investment (and I'm Not Talking About Alphabet)",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 09:06",
+   "related": "BRK.A,BRK.B,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Greg Abel, who took over as Berkshire Hathaway CEO on December 31, 2025, has invested approximately $43 billion in Japanese companies, particularly the five sog",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "1 High-Yield Pipeline Stock Investors Keep Underestimating",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 08:15",
+   "related": "OKE",
+   "summary": "ONEOK (OKE) has surged 30.6% year-to-date, outperforming the Alerian Midstream Energy Index by 68 basis points. Despite offering a 4.5% dividend yield and recen",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "I Examined the Top Holdings of 17 Billionaire Money Managers, and These 3 Stocks Were the Common Denominators",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 08:06",
+   "related": "GOOG,GOOGL,GOOGM,GOOGN,TSM,AMZN",
+   "summary": "Analysis of Form 13F filings from 17 billionaire money managers reveals three common top-four holdings: Alphabet, Taiwan Semiconductor Manufacturing (TSMC), and",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Macy's Stock Trades at Just 10 Times Earnings. There's Only 1 Explanation for Why Macy's Is This Cheap.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 06:05",
+   "related": "M",
+   "summary": "Macy's stock trades at a low valuation of 10x trailing earnings, but investors are pricing in continued deterioration of the brick-and-mortar retail business. W",
+   "theme": "chips"
+  },
+  {
+   "title": "Google's Marvell Warrant Doesn't Fully Vest Until Google Buys $120 Billion of Chips",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 03:18",
+   "related": "MRVL,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Marvell Technology issued Google a warrant for nearly 59 million shares worth $12.2 billion as part of a custom chip partnership. The warrant vests in 240 insta",
+   "theme": "chips"
+  },
+  {
+   "title": "Is a Financial Sector ETF a Better Buy Than Picking the Stocks Yourself?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 02:30",
+   "related": "XLF,AMJB,JPM,JPMpC,JPMpD,JPMpJ",
+   "summary": "The article compares investing in financial sector ETFs versus individual stocks, using the State Street Financial Select Sector SPDR ETF (XLF) as an example. E",
+   "theme": "chips"
+  },
+  {
+   "title": "Why MPLX Stock Is Suddenly Trending on Wall Street",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 01:30",
+   "related": "MPLX,GS,GSpA,GSpC,GSpD,BCS",
+   "summary": "MPLX, a midstream operator with dominant positioning in natural gas gathering and processing in the Permian Basin, is trending on Wall Street due to strong Q2 e",
+   "theme": "chips"
+  },
+  {
+   "title": "Alibaba Cloud Revenue Jumps 45%. Is the Profit Plunge and China E-Commerce Slide Cause for Concern?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 01:28",
+   "related": "BABA",
+   "summary": "Alibaba reported Q2 earnings with revenue meeting expectations at 269 billion yuan ($40B, +9% YoY), but net income plunged 38% to 20.7 billion yuan, missing ana",
+   "theme": "chips"
+  },
+  {
+   "title": "B.O.S. (BOSC) Q2 2026 Earnings Call Transcript",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 00:08",
+   "related": "BOSC",
+   "summary": "B.O.S. reported Q2 2026 revenue of $14.9 million, up 29% year-over-year, with net income of $1.4 million ($0.19 per share). The company raised full-year guidanc",
+   "theme": "chips"
+  },
+  {
+   "title": "Which Streaming Stock Would Hold Up Better in a Recession: Netflix or Walt Disney?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-21 00:05",
+   "related": "NFLX,DIS",
+   "summary": "In a potential recession, Netflix would likely outperform Disney due to its pure-play streaming model. While streaming services are generally resilient during d",
+   "theme": "chips"
+  },
+  {
+   "title": "Why Walmart Stock Fell Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 23:35",
+   "related": "WMT",
+   "summary": "Walmart stock dropped 9.15% after reporting U.S. comparable sales growth of only 2.6%, falling short of Wall Street's 3.5% estimate and marking the slowest comp",
+   "theme": "chips"
+  },
+  {
+   "title": "The U.S. Just Hit $40 Trillion in Debt \u2014 2 Years Ahead of Schedule. Here's What Investors Need to Know.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 22:17",
+   "related": "GOVT",
+   "summary": "The U.S. federal government has reached $40 trillion in outstanding debt, two years ahead of schedule. High debt levels are straining the fiscal budget, with ne",
+   "theme": "pharma"
+  },
+  {
+   "title": "Capricor (CAPR) Q2 2026 Earnings Call Transcript",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 22:08",
+   "related": "CAPR",
+   "summary": "Capricor Therapeutics reported Q2 2026 results with a net loss of $40.7 million ($0.70 per share) and cash reserves of $237.9 million. The company faced a signi",
+   "theme": "pharma"
+  },
+  {
+   "title": "Interactive Brokers' Margin Loans Grew 49% in a Year to $100.7 Billion",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 20:32",
+   "related": "IBKR",
+   "summary": "Interactive Brokers reported a 49% year-over-year surge in customer margin loans to $100.7 billion in July, with customer count growing 34% to 5.3 million. This",
+   "theme": "pharma"
+  },
+  {
+   "title": "Texas Roadhouse Director Sells 869 Shares for $180,000 -- Should Investors Beware?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 20:23",
+   "related": "TXRH",
+   "summary": "Texas Roadhouse director Donna Epps sold 820 shares and gifted 49 shares on Aug. 17, 2026, reducing her stake by 18% while retaining nearly 4,000 shares and 1,2",
+   "theme": "pharma"
+  },
+  {
+   "title": "Why Estee Lauder Rallied This Week",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 20:22",
+   "related": "EL",
+   "summary": "Estee Lauder stock rallied 11.8% this week after reporting fiscal Q4 earnings that beat analyst expectations with 6.5% revenue growth and 333% EPS growth. The c",
+   "theme": "pharma"
+  },
+  {
+   "title": "Vanguard VCIT vs Fidelity FIGB: Which Bond ETF Is the Better Choice for Investors in 2026?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 20:14",
+   "related": "VCIT,FIGB",
+   "summary": "The article compares two bond ETFs: Vanguard's VCIT and Fidelity's FIGB. VCIT offers a lower expense ratio (0.03% vs 0.36%), higher dividend yield (4.9% vs 4.1%",
+   "theme": "pharma"
+  },
+  {
+   "title": "Billionaire Investor David Tepper Recently Dumped Appaloosa Management's Stake in Sandisk and Initiated a New Position In a Stock That Some Wall Street Experts Think Could Eventually Be Worth $10 Trillion",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 20:05",
+   "related": "SPCX,SNDK,GS,GSpA,GSpC,GSpD",
+   "summary": "Billionaire investor David Tepper's Appaloosa Management exited its Sandisk position in Q2 2026 and initiated a new stake in SpaceX, which some analysts believe",
+   "theme": "pharma"
+  },
+  {
+   "title": "Vertex Pharmaceuticals' Rally Has a New Engine -- and Wall Street Thinks the Best Is Still Ahead",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 19:30",
+   "related": "VRTX,SION,ABBV,CRSP",
+   "summary": "Vertex Pharmaceuticals strengthens its dominant position in the cystic fibrosis market after competitor Sionna Therapeutics failed a clinical trial for its CF d",
+   "theme": "pharma"
+  },
+  {
+   "title": "Should Investors Buy Shares Too as Tennant Director Mulligan Buys 8,000 Shares for $539,000?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 19:21",
+   "related": "TNC",
+   "summary": "Tennant Company director Donal L. Mulligan purchased 8,000 shares worth $539,000 on August 12, 2026, increasing his total holdings by 27% to 38,175 shares. The ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Burger King's $700 Million Fix Is Paying Off for Restaurant Brands International",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 19:15",
+   "related": "QSR,DPZ,MCD",
+   "summary": "Restaurant Brands International's turnaround strategy is showing strong results for Burger King, with U.S. same-store sales up 8.5% in Q2 and the Whopper relaun",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Billionaire John Malone Buys 51K Liberty Latin America Shares. What Does This Mean for Investors?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 19:12",
+   "related": "LILA,LILAK,LILAP,SPCX",
+   "summary": "Billionaire John Malone purchased 50,696 shares of Liberty Latin America (LILA) indirectly through a charitable remainder unitrust, increasing his total benefic",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Is Rocket Lab Stock a Buy After Its Big Contract Win?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 19:05",
+   "related": "RKLB,LMT,NOC,VSAT",
+   "summary": "Rocket Lab announced participation in the U.S. Space Force's $981 million NITE-STAR program, but the actual value to the company is significantly less impressiv",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why Is XRP (Ripple) Up 24.9% Today?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 18:19",
+   "related": "XRPC",
+   "summary": "XRP surged 24.9% on August 20, 2026, following President Trump's public endorsement of the Clarity Act at the White House alongside Ripple CEO Brad Garlinghouse",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "1 Vanguard ETF Up 23% in 12 Months (Hint: It's Not VOO). Here's What History Says Investors Should Do.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 18:15",
+   "related": "VXUS,VOO,TSM,ASML",
+   "summary": "The Vanguard Total International Stock ETF (VXUS) has gained 23% over the past 12 months, outperforming the S&P 500 in the short term. However, over the past de",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why Did Lockheed Martin Stock Drop Today?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 18:06",
+   "related": "LMT",
+   "summary": "Lockheed Martin stock dropped 2.7% despite positive news about a partnership with Saildrone to mount Lockheed-built missiles on autonomous drone boats. The coll",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why StubHub Holdings Stock Crashed This Week",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-20 17:50",
+   "related": "STUB,LYV,BAC,BACpB,BACpE,BACpK",
+   "summary": "StubHub stock plummeted 16.8% after reporting record Q2 revenue of $573 million (up 33% YoY) but remaining unprofitable with a net loss of $40,000. Despite a Wo",
+   "theme": "copper_uranium"
+  }
+ ]
+}

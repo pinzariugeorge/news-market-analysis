@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-07-01",
+  "market_view": "Calm regime: VIX 16.45, down 15.6% over 5 days and far below its 1-year high; 10-year yield 4.42% and dollar near its 1-year high. Commodities weak (crude -25% in 20 days, gold -10%), while semis and health care sit near highs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI fell 24.6% in 20 days and XOM already dropped 8.5%; the move is priced in. The only energy headline (Singapore tariffs, Middle East conflict) is about past costs, not new supply. Earnings season adds variance, not direction."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold is down 10% in 20 days, the dollar is firm and the Fed chair stresses inflation. The 'Newmont Announces Second Quarter 2026 Results Conference Call' headline is only a scheduled event with no one-sided setup."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semi ETF jumped 3.8% yesterday, which is priced in. NVDA lags its peers but the headlines are a company blog post and a competitor (Etched) funding round. No guidance or export-rule catalyst, and volatility is high."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "LLY is near its high after +8% in 5 days, and the only headline is a generic FDA COVID page. No trial, approval or pricing news. Bad-news event days dominate in pharma."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none for the leader FCX", "reasoning": "'Cameco suspends Cigar Lake mining operations after Orano mill disruption' (Reuters) is a uranium supply shock that is mixed for CCJ and irrelevant to FCX. 'Ferrari and BMW join Tesla, China in switch from copper to cheaper aluminium' (Reuters) leans negative for copper demand."}
+  },
+  "would_change_my_mind": "A concrete one-sided headline such as a guidance raise, an export-control easing for NVDA, a copper mine outage, an OPEC+ supply cut or a pharma approval.",
+  "handoff": {
+    "run_id": "opus1-20260701-a",
+    "written_at": "2026-07-01T11:55:00Z",
+    "decision_day": "2026-07-01",
+    "data_cutoff": "2026-07-01",
+    "what_changed": "This is the first run, so there is no prior note. The run started from the handbook, found no named catalyst for any leader and stayed flat in all five families.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude's 25% slide is priced in and there is no new supply catalyst."},
+      "gold_miners": {"position": "flat", "why": "Gold is falling with a firm dollar, and the NEM Q2 call is only a scheduled event."},
+      "chips": {"position": "flat", "why": "Yesterday's semi rally is priced in, and there is no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "LLY is near its highs with no trial or approval news."},
+      "copper_uranium": {"position": "flat", "why": "The Cigar Lake suspension is a uranium story that is mixed for CCJ, not a catalyst for FCX."}
+    },
+    "open_storylines": [
+      {"name": "Cigar Lake suspension", "status": "open", "note": "Watch the restart timeline, the uranium spot price and the Cameco guidance change; leader is FCX so impact is indirect.", "first_seen": "2026-07-01"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "Watch whether more automakers switch away from copper (a demand headwind for FCX).", "first_seen": "2026-07-01"},
+      {"name": "Crude slump", "status": "open", "note": "WTI is down 38% in 60 days; watch for an OPEC+ response or Middle East supply news.", "first_seen": "2026-07-01"},
+      {"name": "Q2 earnings season", "status": "open", "note": "NEM Q2 call announced; earnings of XOM, NEM, LLY, FCX and NVDA's peers fall in July-August. These raise variance and are not a reason to be long.", "first_seen": "2026-07-01"},
+      {"name": "Fed under Warsh", "status": "open", "note": "Inflation focus and the jobs report are inside the window; this matters for gold miners via rates and the dollar.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note, then re-check all five families for a named catalyst in the new record's headlines, especially Cigar Lake updates, OPEC+ news and Q2 pre-announcements."
+  }
+}

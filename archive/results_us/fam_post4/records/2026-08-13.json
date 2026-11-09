@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-08-13",
+ "weekday": "Thursday",
+ "information_cutoff": "closes dated before 2026-08-13; Massive news published before 2026-08-13 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-08-12",
+   "last": 14.55,
+   "ret_1d_pct": -4.78,
+   "ret_5d_pct": -7.97,
+   "ret_20d_pct": -7.15,
+   "ret_60d_pct": -18.35,
+   "vol_20d_daily_pct": 7.24,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -53.1
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-08-12",
+     "last": 83.27,
+     "ret_1d_pct": 0.08,
+     "ret_5d_pct": 10.7,
+     "ret_20d_pct": 4.61,
+     "ret_60d_pct": -21.01,
+     "vol_20d_daily_pct": 3.81,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -26.3
+    },
+    "Brent crude oil": {
+     "last_date": "2026-08-12",
+     "last": 88.98,
+     "ret_1d_pct": 0.08,
+     "ret_5d_pct": 11.99,
+     "ret_20d_pct": 4.74,
+     "ret_60d_pct": -18.56,
+     "vol_20d_daily_pct": 4.41,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -24.8
+    },
+    "Natural gas": {
+     "last_date": "2026-08-12",
+     "last": 2.804,
+     "ret_1d_pct": 1.34,
+     "ret_5d_pct": 4.32,
+     "ret_20d_pct": -4.1,
+     "ret_60d_pct": -5.27,
+     "vol_20d_daily_pct": 2.21,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -62.4
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-08-12",
+     "last": 159.75,
+     "ret_1d_pct": -0.03,
+     "ret_5d_pct": 5.36,
+     "ret_20d_pct": 10.55,
+     "ret_60d_pct": 1.16,
+     "vol_20d_daily_pct": 1.52,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.8,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-08-12",
+     "last": 196.6,
+     "ret_1d_pct": -0.03,
+     "ret_5d_pct": 5.47,
+     "ret_20d_pct": 8.26,
+     "ret_60d_pct": 2.88,
+     "vol_20d_daily_pct": 1.72,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.9,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-08-12",
+     "last": 127.3,
+     "ret_1d_pct": 1.1,
+     "ret_5d_pct": 10.66,
+     "ret_20d_pct": 14.21,
+     "ret_60d_pct": 3.99,
+     "vol_20d_daily_pct": 1.88,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.9,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-08-12",
+     "last": 58.55,
+     "ret_1d_pct": -0.86,
+     "ret_5d_pct": 8.81,
+     "ret_20d_pct": 8.89,
+     "ret_60d_pct": -1.79,
+     "vol_20d_daily_pct": 2.31,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.6,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-08-12",
+     "last": 4467.5,
+     "ret_1d_pct": 0.59,
+     "ret_5d_pct": 3.77,
+     "ret_20d_pct": 10.26,
+     "ret_60d_pct": -2.07,
+     "vol_20d_daily_pct": 1.33,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -16.0
+    },
+    "Silver": {
+     "last_date": "2026-08-12",
+     "last": 65.555,
+     "ret_1d_pct": 1.21,
+     "ret_5d_pct": 5.57,
+     "ret_20d_pct": 14.79,
+     "ret_60d_pct": -15.04,
+     "vol_20d_daily_pct": 2.12,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -43.0
+    },
+    "US 10-year yield": {
+     "last_date": "2026-08-12",
+     "last": 4.682,
+     "ret_1d_pct": -0.04,
+     "ret_5d_pct": 1.41,
+     "ret_20d_pct": 3.01,
+     "ret_60d_pct": 1.89,
+     "vol_20d_daily_pct": 0.85,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.3
+    },
+    "US dollar index": {
+     "last_date": "2026-08-12",
+     "last": 100.01,
+     "ret_1d_pct": 0.19,
+     "ret_5d_pct": 0.32,
+     "ret_20d_pct": -0.49,
+     "ret_60d_pct": 0.75,
+     "vol_20d_daily_pct": 0.28,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-08-12",
+     "last": 106.92,
+     "ret_1d_pct": 0.03,
+     "ret_5d_pct": -0.07,
+     "ret_20d_pct": -1.06,
+     "ret_60d_pct": -3.34,
+     "vol_20d_daily_pct": 0.21,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -4.7
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-08-12",
+     "last": 117.84,
+     "ret_1d_pct": 0.54,
+     "ret_5d_pct": 12.99,
+     "ret_20d_pct": 23.77,
+     "ret_60d_pct": 8.05,
+     "vol_20d_daily_pct": 3.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.7,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-08-12",
+     "last": 185.18,
+     "ret_1d_pct": 1.89,
+     "ret_5d_pct": 11.93,
+     "ret_20d_pct": 30.2,
+     "ret_60d_pct": 2.69,
+     "vol_20d_daily_pct": 3.13,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -26.6,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-08-12",
+     "last": 27.48,
+     "ret_1d_pct": 0.88,
+     "ret_5d_pct": 6.93,
+     "ret_20d_pct": 16.15,
+     "ret_60d_pct": -3.17,
+     "vol_20d_daily_pct": 3.1,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -27.8,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-08-12",
+     "last": 134.88,
+     "ret_1d_pct": 0.35,
+     "ret_5d_pct": 9.82,
+     "ret_20d_pct": 24.28,
+     "ret_60d_pct": 3.43,
+     "vol_20d_daily_pct": 3.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -18.6,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-08-12",
+     "last": 584.83,
+     "ret_1d_pct": 2.08,
+     "ret_5d_pct": 2.66,
+     "ret_20d_pct": -1.01,
+     "ret_60d_pct": 5.12,
+     "vol_20d_daily_pct": 3.04,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.6
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-08-12",
+     "last": 224.09,
+     "ret_1d_pct": 3.03,
+     "ret_5d_pct": 2.22,
+     "ret_20d_pct": 5.45,
+     "ret_60d_pct": -0.55,
+     "vol_20d_daily_pct": 2.49,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.9,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-08-12",
+     "last": 416.05,
+     "ret_1d_pct": -0.01,
+     "ret_5d_pct": -0.53,
+     "ret_20d_pct": 5.52,
+     "ret_60d_pct": -2.15,
+     "vol_20d_daily_pct": 2.56,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.6,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-08-12",
+     "last": 482.93,
+     "ret_1d_pct": 1.82,
+     "ret_5d_pct": 0.18,
+     "ret_20d_pct": -8.73,
+     "ret_60d_pct": 13.87,
+     "vol_20d_daily_pct": 5.14,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -16.9,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-08-12",
+     "last": 429.15,
+     "ret_1d_pct": 1.68,
+     "ret_5d_pct": 3.66,
+     "ret_20d_pct": 2.31,
+     "ret_60d_pct": 6.13,
+     "vol_20d_daily_pct": 2.75,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.1,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-08-12",
+     "last": 168.44,
+     "ret_1d_pct": 0.26,
+     "ret_5d_pct": 2.61,
+     "ret_20d_pct": 6.41,
+     "ret_60d_pct": 16.09,
+     "vol_20d_daily_pct": 1.04,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-08-12",
+     "last": 1220.28,
+     "ret_1d_pct": 0.43,
+     "ret_5d_pct": 4.31,
+     "ret_20d_pct": 5.5,
+     "ret_60d_pct": 21.43,
+     "vol_20d_daily_pct": 2.19,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.2,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-08-12",
+     "last": 260.86,
+     "ret_1d_pct": 0.41,
+     "ret_5d_pct": 1.27,
+     "ret_20d_pct": 5.6,
+     "ret_60d_pct": 15.06,
+     "vol_20d_daily_pct": 1.27,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -2.4,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-08-12",
+     "last": 248.76,
+     "ret_1d_pct": -0.53,
+     "ret_5d_pct": 1.04,
+     "ret_20d_pct": 1.9,
+     "ret_60d_pct": 18.24,
+     "vol_20d_daily_pct": 1.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.5,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-08-12",
+     "last": 132.92,
+     "ret_1d_pct": 1.92,
+     "ret_5d_pct": 3.58,
+     "ret_20d_pct": 7.53,
+     "ret_60d_pct": 19.34,
+     "vol_20d_daily_pct": 1.33,
+     "above_200d_avg": true,
+     "from_252d_high_pct": 0.0,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-08-12",
+     "last": 6.597,
+     "ret_1d_pct": -0.23,
+     "ret_5d_pct": -1.58,
+     "ret_20d_pct": 4.82,
+     "ret_60d_pct": 5.53,
+     "vol_20d_daily_pct": 1.35,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-08-12",
+     "last": 27.1,
+     "ret_1d_pct": -0.18,
+     "ret_5d_pct": 4.23,
+     "ret_20d_pct": 1.38,
+     "ret_60d_pct": 0.04,
+     "vol_20d_daily_pct": 1.81,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -16.4
+    },
+    "Uranium ETF": {
+     "last_date": "2026-08-12",
+     "last": 45.2,
+     "ret_1d_pct": 0.07,
+     "ret_5d_pct": 5.39,
+     "ret_20d_pct": 10.51,
+     "ret_60d_pct": -9.47,
+     "vol_20d_daily_pct": 2.87,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.9
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-08-12",
+     "last": 69.22,
+     "ret_1d_pct": 0.51,
+     "ret_5d_pct": -0.24,
+     "ret_20d_pct": 13.53,
+     "ret_60d_pct": 9.86,
+     "vol_20d_daily_pct": 2.96,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.5,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-08-12",
+     "last": 99.03,
+     "ret_1d_pct": 0.3,
+     "ret_5d_pct": 5.05,
+     "ret_20d_pct": 8.85,
+     "ret_60d_pct": -7.89,
+     "vol_20d_daily_pct": 2.6,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -26.1,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-08-12",
+     "last": 65.95,
+     "ret_1d_pct": -0.29,
+     "ret_5d_pct": -0.15,
+     "ret_20d_pct": 13.8,
+     "ret_60d_pct": 7.5,
+     "vol_20d_daily_pct": 3.22,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -6.5,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-08-12",
+     "last": 192.96,
+     "ret_1d_pct": 0.21,
+     "ret_5d_pct": 0.12,
+     "ret_20d_pct": 8.64,
+     "ret_60d_pct": 11.57,
+     "vol_20d_daily_pct": 3.25,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.0,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "August",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "Archer Aviation CEO Signals Strong Outlook for Investors",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 13:15",
+   "related": "ACHR,ACHR.WS,BA,BApA",
+   "summary": "Archer Aviation CEO Adam Goldstein projects confidence in the company's future as it approaches commercialization milestones, including U.S. operations through ",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "The Biggest Chip Stocks All Yield Under 1%. Here's Where the Cash Actually Goes.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 13:12",
+   "related": "NVDA,AVGO,TSM,AMAT",
+   "summary": "Major chip stocks (Nvidia, Broadcom, Taiwan Semiconductor, and Applied Materials) all offer dividend yields below 1% despite strong profitability. Instead of di",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Marc Benioff's Salesforce Spent a Record $27 Billion on Stock Buybacks in a Single Quarter to Fight What He Calls the \"SaaSpocalypse.\" Here's Why the Size of That Repurchase Matters.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 12:30",
+   "related": "CRM",
+   "summary": "Salesforce executed a record $27 billion stock buyback in Q1 (19% of market cap), signaling management confidence despite a 46% stock decline amid 'SaaSpocalyps",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Why Sandisk Stock Keeps Falling?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 11:31",
+   "related": "SNDK,DRAM",
+   "summary": "Sandisk stock has fallen 45% from its 52-week high despite strong financial performance, with a 175% year-over-year revenue increase and 24x earnings growth. Th",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Prediction: This Artificial Intelligence (AI) Stock Is Going to Double by 2027",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 11:15",
+   "related": "UPST,FICO",
+   "summary": "Upstart, an AI-powered loan assessment company, is predicted to double by end of 2026 despite being down 35% year-to-date. The company reported strong Q2 2026 r",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Jeff Bezos Remains Amazon's Largest Individual Shareholder With Roughly 900 Million Shares. Here's Why That Stake Still Anchors the Stock.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 10:15",
+   "related": "AMZN",
+   "summary": "Jeff Bezos maintains a ~9% stake in Amazon worth approximately $245 billion, making him the company's largest individual shareholder. His continued ownership si",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "The Race to $5 Trillion: Who Will Get There First, Apple or Alphabet?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 10:10",
+   "related": "AAPL,GOOG,GOOGL,GOOGM,GOOGN,NVDA",
+   "summary": "Apple and Alphabet are competing to become the second company to reach a $5 trillion market cap after Nvidia. While Apple currently leads with $4.4 trillion ver",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "NVR Director George Oliver Buys $405K in Stock -- Should Investors Buy Too?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 10:07",
+   "related": "NVR",
+   "summary": "NVR Director George Oliver purchased 63 shares worth approximately $405,185, establishing his inaugural equity position in the residential construction company.",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Elon Musk Says SpaceX Short-Sellers Probably Won't Survive. These 3 Earnings Numbers Say He's Wrong.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 09:30",
+   "related": "SPCX",
+   "summary": "Despite SpaceX's impressive headline earnings growth (92% YoY revenue increase, tripled EBITDA), the article argues short-sellers may be right about the company",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "XRP (Ripple) Just Did Something It Hasn't Done Since 2024, and Here's What It Means for Investors",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 09:14",
+   "related": "XRPC",
+   "summary": "XRP has fallen below $1 for the first time since 2024, down 72% from its $3.65 peak last year. The decline reflects structural issues: Ripple's payment network ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Google Parent Alphabet Just Revealed How Many SpaceX Shares It Owns... and the Figure Is a Doozy",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 09:06",
+   "related": "GOOG,GOOGL,GOOGM,GOOGN,SPCX",
+   "summary": "Alphabet revealed in its Q2 2026 Form 13F filing that it owns 551.2 million SpaceX shares worth $94.18 billion, representing a 7% stake and 8,000%+ return on it",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Nvidia Stock Investors Just Got Good News From Wall Street (Hint: It's Time to Buy)",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:48",
+   "related": "NVDA,GOOG,GOOGL,GOOGM,GOOGN,AMZN",
+   "summary": "Wall Street has raised Nvidia's earnings estimates to 44% annual growth over the next three years, as analysts continue to underestimate hyperscaler spending on",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:46",
+   "related": "AMZN,AAPL",
+   "summary": "Amazon is positioned to reach a $4 trillion market capitalization before 2030, driven by projected revenue growth to $1.1 trillion by 2028 (15% CAGR), expansion",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Missed Out on Amazon? This Stock Could Be Your Second Chance to Profit From Owning a Growing E-Commerce Conglomerate",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:45",
+   "related": "SE,AMZN",
+   "summary": "Sea Limited, a Southeast Asian e-commerce conglomerate, is positioned as a potential Amazon-like growth opportunity. With a market cap about one-fortieth of Ama",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Cathie Wood Is Buying the Dip on Crypto. Here Are 2 Investments to Put on Your Crypto Shopping List.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:30",
+   "related": "COIN,CRCL,ARKK,HOOD",
+   "summary": "Cathie Wood of Ark Invest is buying crypto-related stocks during market downturns. She has invested approximately $8 million in Coinbase Global, which is pivoti",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Jensen Huang Just Signed 7 Japanese Industrial Giants Into Nvidia's Physical AI Coalition. Here's Why $1 Trillion in Confirmed Demand Should Matter to Investors.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:21",
+   "related": "NVDA,FANUY,HTHIY,YASKY,SFTBY",
+   "summary": "Nvidia has secured commitments from seven major Japanese industrial companies (Fujitsu, FANUC, Yaskawa Electric, Kawasaki Heavy Industries, Hitachi, NEC, and So",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "The Next Big AI Market Bottleneck Is Here: 8 Stocks to Play the Boom in Optics",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:20",
+   "related": "MRVL,AVGO,LITE,COHR,AAOI,APH",
+   "summary": "As AI innovation accelerates, data centers are shifting from copper wiring to optical connections for faster, more energy-efficient connectivity. This shift is ",
+   "theme": "chips"
+  },
+  {
+   "title": "There's No Denying Macy's Is a Great Buy Now, but This Stock Could Be an Even Better Buy Over the Next 10 Years",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 08:15",
+   "related": "M,COST",
+   "summary": "While Macy's has executed a successful turnaround with growing same-store sales and strong stock performance, Costco Wholesale is positioned as a superior long-",
+   "theme": "chips"
+  },
+  {
+   "title": "Uber Is Due for a Rally as Fundamentals Improve",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 07:10",
+   "related": "UBER,DASH",
+   "summary": "Uber's fundamentals are strengthening with improved profit margins, growing user base, and strong delivery segment growth, yet the stock remains down 8% year-to",
+   "theme": "chips"
+  },
+  {
+   "title": "1 Number That Makes Lowe's Stock an Obvious Buy Before Aug. 19",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 06:45",
+   "related": "LOW,HD",
+   "summary": "Lowe's stock is trading at a discount with a forward P/E ratio of 17.4, the lowest since end of 2023, making it attractive ahead of Q2 earnings on Aug. 19. The ",
+   "theme": "chips"
+  },
+  {
+   "title": "Nvidia Could Hit $7.5 Trillion in Value Thanks to This Overlooked Business Opportunity",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 06:31",
+   "related": "NVDA,MRVL,ANET",
+   "summary": "Nvidia's data center networking business is emerging as a significant growth driver alongside its GPU dominance. With networking revenue reaching $14.8 billion ",
+   "theme": "chips"
+  },
+  {
+   "title": "SpaceX Is Back Above Its IPO Price. Is It too Late to Buy the Stock?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 05:30",
+   "related": "SPCX",
+   "summary": "SpaceX stock has rebounded to $145, climbing above its $135 IPO price after dropping to $104. While insiders haven't sold post-lockup expiration and the company",
+   "theme": "chips"
+  },
+  {
+   "title": "CoreWeave Has $104 Billion of Contracted Revenue and a $59 Billion Market Value",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 01:14",
+   "related": "CRWV,META,NVDA",
+   "summary": "CoreWeave reported a $104 billion revenue backlog as of June 30, 2026, up from $30.1 billion a year earlier, with Q2 revenue doubling 112% year-over-year to $2.",
+   "theme": "chips"
+  },
+  {
+   "title": "Which Precious Metals ETF Is the Better Buy: iShares' Gold Trust IAU or Silver Miners SLVP?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 01:12",
+   "related": "SLVP",
+   "summary": "iShares Gold Trust (IAU) offers lower costs (0.25% expense ratio) and stability with direct physical gold exposure, making it suitable for portfolio diversifica",
+   "theme": "chips"
+  },
+  {
+   "title": "Why Nebius Stock Skyrocketed Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 01:05",
+   "related": "NBIS",
+   "summary": "Nebius Group shares surged 34.14% after reporting impressive growth metrics driven by exponential demand for AI computing capacity. The cloud computing provider",
+   "theme": "pharma"
+  },
+  {
+   "title": "Sezzle's President Holds $145 Million in Stock. Here's What His Post-Earnings Insider Filing Signals",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 00:11",
+   "related": "SEZL",
+   "summary": "Sezzle's President Paul Paradis disposed of 7,110 shares worth $838,980 on August 10 through a non-discretionary tax withholding event related to vesting restri",
+   "theme": "pharma"
+  },
+  {
+   "title": "Miller Industries (MLR) Q2 2026 Earnings Call Transcript",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-13 00:11",
+   "related": "MLR",
+   "summary": "Miller Industries reported Q2 2026 revenue of $240 million (up 12.1% YoY) with net income of $7.3 million. The company reaffirmed full-year guidance of $850-900",
+   "theme": "pharma"
+  },
+  {
+   "title": "What Sezzle's Marketing Pullback Means for Growth, and Why an Insider Move Shouldn't Rattle Investors",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 23:37",
+   "related": "SEZL",
+   "summary": "Sezzle's COO Amin Sabzivand sold 6,973 shares (3% of holdings) through an automatic tax withholding upon RSU vesting, not a discretionary move. The real story i",
+   "theme": "pharma"
+  },
+  {
+   "title": "Should You Worry That Sezzle's CEO Disposed of Shares as the Stock Crashed? Here's What to Know",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 23:28",
+   "related": "SEZL",
+   "summary": "Sezzle CEO Charles Youakim sold 6,978 shares worth $823,404 on August 10 due to non-discretionary tax withholding on vested restricted stock units. The transact",
+   "theme": "pharma"
+  },
+  {
+   "title": "Why Octave Intelligence Stock Slumped Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 23:27",
+   "related": "OCTV,HXGBY",
+   "summary": "Octave Intelligence (OCTV) stock fell 3.25% after reporting Q2 earnings that missed revenue expectations at $398 million (vs. $400M+ expected) despite beating o",
+   "theme": "pharma"
+  },
+  {
+   "title": "Elon Musk Says AI Revenue Will Eclipse the Rest of SpaceX by September. Here\u2019s What Investors Need to Know",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 22:35",
+   "related": "SPCX,NVDA,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "Elon Musk announced that SpaceX's AI revenue will surpass all other business segments by September 2026, with plans to reach 10 gigawatts of computing capacity ",
+   "theme": "pharma"
+  },
+  {
+   "title": "Grab CEO Anthony Tan Sells 400,000 Shares for $1.4 Million. Here's What Investors Need to Know.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 22:26",
+   "related": "GRAB,GRABW,UBER",
+   "summary": "Grab CEO Anthony Tan sold approximately 400,000 Class A shares for $1.4 million on August 10, 2026, reducing his direct holdings by nearly 48%. The sale was exe",
+   "theme": "pharma"
+  },
+  {
+   "title": "A Phillips 66 Insider Cashed In Options After a Blowout Quarter. Here's What to Know",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 22:17",
+   "related": "PSX",
+   "summary": "Ann M. Kluppel, SVP and Controller of Phillips 66, exercised and sold 7,834 shares for $1.7 million at $210.78 per share following the company's exceptional Q2 ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Advanced Micro Devices vs. AppLovin: Which Technology Stock Is a Better Buy in 2026?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 21:25",
+   "related": "AMD,APP,NVDA,INTC,MSFT,TSM",
+   "summary": "The article compares AMD and AppLovin as investment choices in 2026. AMD, a semiconductor company, reported strong AI infrastructure growth with 30%+ quarterly ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Labcorp CEO Adam Schechter Sells 4,669 Shares for $1.5 Million",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 21:15",
+   "related": "LH",
+   "summary": "Labcorp CEO Adam Schechter sold 4,669 shares worth approximately $1.5 million on August 11, 2026, through a pre-scheduled Rule 10b5-1 trading plan. The sale rep",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why Wendy's Stock Blasted Almost 15% Higher Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 21:10",
+   "related": "WEN",
+   "summary": "Wendy's stock surged nearly 15% after reports that Trian Fund Management, led by Nelson Peltz and backed by a consortium of investors including BlueFive Capital",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Which Is the Better Energy Sector ETF, VanEck's Nuclear-Focused NLR or First Trust's EMLP Targeting Energy Infrastructure?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 21:09",
+   "related": "NLR,EMLP,CEG,CCJ,EPD",
+   "summary": "VanEck's NLR nuclear-focused ETF and First Trust's EMLP energy infrastructure fund offer different approaches to energy sector investing. NLR delivers higher 5-",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Why IREN Stock Is Up Nearly 10% Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 20:14",
+   "related": "CRWV,NBIS",
+   "summary": "IREN stock surged nearly 10% on Wednesday following strong quarterly earnings reports from competitors CoreWeave and Nebius Group. Both companies demonstrated r",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "How to Earn $500 a Month From Enbridge Stock",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 20:10",
+   "related": "ENB",
+   "summary": "Enbridge, a Canadian midstream pipeline operator, offers conservative income investors a stable dividend investment. With a 5.3% dividend yield and 31 consecuti",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Alphabet and Apple Are Among Berkshire Hathaway's Top Holdings. Here's What That Tells Us About CEO Greg Abel's Investing Style in Tech Stocks.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-08-12 20:06",
+   "related": "BRK.A,BRK.B,AAPL,GOOG,GOOGL,GOOGM",
+   "summary": "Under new CEO Greg Abel, Berkshire Hathaway is increasing its exposure to tech stocks, maintaining Apple as its largest holding at 20.1% of the equity portfolio",
+   "theme": "copper_uranium"
+  }
+ ]
+}

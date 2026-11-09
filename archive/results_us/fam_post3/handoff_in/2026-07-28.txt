@@ -1,0 +1,19 @@
+# Handoff from the previous run (read first)
+Run fp3-20260723-a (decision day 2026-07-23, data cutoff 2026-07-23)
+What changed: WTI rose to 86.8 (+18.6% in 20 days) with headlines of $100 oil. Lilly reported two more positive retatrutide phase 3 trials ahead of an FDA filing; FCX beat Q2 estimates (gap up pre-market); JNJ also beat with a positive myeloma trial. Semis flat in 5 days, gold flat in 20 days.
+Holdings and reasons:
+- oil_gas: flat | Oil spike is a driver move already priced; no XOM-specific catalyst.
+- gold_miners: flat | No NEM catalyst; gold and miners remain weak against firm yields.
+- chips: flat | No NVDA-specific catalyst; only generic AI capex commentary.
+- pharma: long LLY since 2026-07-23, 10 days | Retatrutide cleared two more phase 3 trials ahead of an FDA filing.
+- copper_uranium: flat | FCX earnings beat was priced in pre-market; no guidance raise.
+Open storylines:
+- [escalating] Iran war and oil: WTI 86.8, Brent 94; headlines of $100 oil; watch for a real supply disruption versus sentiment and XOM earnings
+- [open] Q2 earnings season: FCX and JNJ reported beats; NEM, XOM, big tech and chip reports still to come; a guidance raise by a leader would be a catalyst
+- [open] Chip selloff and AI capex worries: Semi ETF -5.7% in 20 days; Tesla earnings miss and Meta capex noted; watch NVDA-specific news and TSMC
+- [open] FCX Grasberg output cut: Q2 profit up on copper prices despite lower Grasberg output; watch restart updates and guidance
+- [open] LLY retatrutide and China trial probe: Two more phase 3 wins and FDA filing next; earlier China trial security probe still unresolved; Lilly acquiring ATAI
+- [open] Gold slump and rates: Gold 22% below high, 10y yield 4.66%, dollar firm; watch Fed and NEM earnings
+- [open] Uranium sector sell-off: Uranium ETF -10% in 20 days; Critical Minerals List and Section 232 decision pending; CCJ is not the leader
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; LLY long opened 2026-07-23 with a 10-day horizon, check for LLY news (filing, safety, China probe) and exit at horizon; look for named leader-specific catalysts (XOM supply shock, NVDA news, NEM guidance); stay flat otherwise.

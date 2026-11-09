@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260731-a (decision day 2026-07-31, data cutoff 2026-07-31)
+What changed: Three days since the last note (07-28). VIX fell 17% to 17.1, and chips, miners and copper names bounced sharply (semiconductor ETF +6.9%, NEM +4.8%, FCX +5.8%) while LLY fell 4.6%. Headlines again held no leader-specific catalyst.
+Holdings and reasons:
+- oil_gas: flat | WTI whipsaw has no named cause and there is no XOM or OPEC+ headline.
+- gold_miners: flat | Gold and NEM bounce has no Fed, dollar or NEM catalyst.
+- chips: flat | Sector rebound after a sell-off has no explaining headline; the Nvidia-Nebius stake is minor.
+- pharma: flat | LLY drop has no LLY news; the Novo trial failure is a different company.
+- copper_uranium: flat | FCX and copper rise has no supply or demand headline.
+Open storylines:
+- [open] Oil whipsaw: WTI -9% over 5 days, +22% over 20 days. Watch OPEC+ or supply headlines and XOM earnings.
+- [open] Chip sell-off and rebound: Semiconductor ETF -13% over 20 days but +6.9% on the day. Watch chip and cloud earnings, TSMC sales (about the 10th) and export-rule news.
+- [open] Gold drawdown: Gold 23% below its high, 10-year yield 4.66%. Watch the Fed and the jobs report.
+- [open] Pharma dip and Novo trial failure: LLY -4.6% on the day with the sector; Novo ZEUS ziltivekimab failure reported. Watch for any LLY read-through.
+- [open] Earnings week: Apple reported (iPhone +22%); SpaceX August 4, MercadoLibre and Disney August 5. Watch for read-through to AI spending and energy.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-07-31: read the new record and headlines, then decide each family under the catalyst rule.

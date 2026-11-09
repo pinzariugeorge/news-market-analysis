@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260930-a",
+ "written_at": "2026-09-30T14:00:00Z",
+ "decision_day": "2026-09-30",
+ "data_cutoff": "2026-09-30",
+ "what_changed": "Five days since the 09-25 note. WTI fell 3.5% on 09-29 to 89.4 and the 10-year yield rose to 5.26%, another high. Core PCE came in at 3.0% and futures opened higher, but headlines show no named catalyst on XOM, NEM, NVDA, LLY or FCX, so all five families stay flat.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI drop is priced in and there is no XOM, OPEC+ or Hormuz headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Yields at a high, firm dollar, gold -6.7% in 20 days, and no NEM headline."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The NVDA $150B buyback is old news and priced in; no fresh guidance or export-rule item."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, regulator or pricing headline."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper and uranium are weak and there is no FCX or China-data headline."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil and Middle East escalation",
+   "status": "open",
+   "note": "WTI 89.4, +30% in 60 days, -3.5% on 09-29; watch OPEC+, Hormuz or an XOM-specific headline.",
+   "first_seen": "2026-09-22"
+  },
+  {
+   "name": "Rate hike and high yields",
+   "status": "escalating",
+   "note": "10-year at 5.26% (high), dollar firm, gold -6.7% in 20 days; core PCE cooled to 3.0%, so watch the jobs report and the Fed for gold miners.",
+   "first_seen": "2026-09-22"
+  },
+  {
+   "name": "Chips rebound",
+   "status": "open",
+   "note": "Semi ETF +9% in 20 days, AMD +29% in 20 days; NVDA $150B buyback is old news; watch guidance, export rules and TSMC sales around the 10th.",
+   "first_seen": "2026-09-22"
+  },
+  {
+   "name": "Copper and uranium weakness",
+   "status": "open",
+   "note": "Copper -3.2% in 5 days, uranium ETF 35% below its high; watch supply outage or China-data headlines.",
+   "first_seen": "2026-09-22"
+  },
+  {
+   "name": "LLY and GLP-1 competition",
+   "status": "fading",
+   "note": "LLY 7.5% below its high and quiet; watch an LLY trial or pricing headline.",
+   "first_seen": "2026-09-25"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-09-30: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (OPEC+ or Hormuz news, gold reaction to yields and the jobs report, NVDA guidance or export rules, LLY trial or pricing, copper supply or China data); decide each family under the catalyst rule."
+}

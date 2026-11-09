@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-07-01",
+  "market_view": "Calm regime: VIX 16.5, down 16% in five days and 47% below its yearly high; 10-year at 4.42%, dollar firm near its yearly high. Earnings season starts this month and the jobs report falls inside the window, which adds variance but gives no direction.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI down 25% in 20 days and still falling. The Singapore tariff headline on the Middle East conflict is a backward-looking effect, not a new supply shock. No catalyst in the headlines points to oil turning back up; XOM has already priced in part of the drop."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Gold down 10% in 20 days, dollar firm, and the Warsh headline points to an inflation focus (hawkish lean). Newmont's headlines only schedule its Q2 call, and earnings add variance, not direction. No catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semiconductor sector jumped 3.8% yesterday, and that move is already priced in. NVIDIA's blog post is promotional, and the Etched headline is mild competition news. No concrete guidance or export-control catalyst for NVDA."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY sits near its high after an 8% five-day run. The only pharma headline is a generic FDA COVID page. No trial, approval or pricing catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none for the leader FCX; 'Cameco suspends Cigar Lake mining operations after Orano mill disruption' (Reuters) is a uranium supply shock, but it hurts CCJ's own output and does not touch copper", "reasoning": "The leader is FCX (copper). Reuters reports carmakers switching from copper to aluminium, a mild negative for demand. Copper rose 1.6% yesterday, which is already priced in. No copper-specific catalyst."}
+  },
+  "would_change_my_mind": "A concrete one-sided headline: an OPEC+ cut or new supply disruption for oil, an NVDA guidance raise or export relief, an LLY approval, or a copper mine outage.",
+  "handoff": {
+    "run_id": "opus2-20260701-a1",
+    "written_at": "2026-11-08T12:00:00Z",
+    "decision_day": "2026-07-01",
+    "data_cutoff": "2026-07-01",
+    "what_changed": "First run, so there is no previous note to compare against. Oil and gold have fallen hard over the past month, chips and pharma are near their highs, and VIX is low. No family had a named catalyst, so every family is flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude is in a steep downtrend and no supply-shock headline was found."},
+      "gold_miners": {"position": "flat", "why": "Gold is weak, the dollar is firm and the Fed leans hawkish; NEM's Q2 call is only a scheduled event."},
+      "chips": {"position": "flat", "why": "The sector rally is already priced in and no NVDA-specific catalyst was found."},
+      "pharma": {"position": "flat", "why": "LLY is near its high and no trial or approval news was found."},
+      "copper_uranium": {"position": "flat", "why": "The leader FCX has no copper catalyst; the Cigar Lake news is about uranium."}
+    },
+    "open_storylines": [
+      {"name": "Cigar Lake suspension", "status": "open", "note": "Watch how long the Orano mill disruption lasts and whether uranium spot prices respond; it matters for CCJ only if the uranium name becomes the leader.", "first_seen": "2026-07-01"},
+      {"name": "Oil price slide", "status": "open", "note": "WTI at 69.5, down 25% in 20 days; watch OPEC+ decisions and Middle East supply news for a turn.", "first_seen": "2026-07-01"},
+      {"name": "Fed under Warsh", "status": "open", "note": "Focus on inflation and independence (hawkish lean); this matters for gold miners and rates.", "first_seen": "2026-07-01"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "Carmakers are switching away from copper, a slow negative for copper demand.", "first_seen": "2026-07-01"},
+      {"name": "Q2 earnings season", "status": "open", "note": "NEM has scheduled its Q2 call; look for guidance raises or pre-announcements as catalysts.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read the new record and its headlines, check the open storylines for a named catalyst in each family, and decide long or flat.",
+    "lessons": []
+  }
+}

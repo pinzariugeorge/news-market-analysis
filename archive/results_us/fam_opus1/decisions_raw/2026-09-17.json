@@ -1,0 +1,40 @@
+{
+  "decision_day": "2026-09-17",
+  "market_view": "The Fed delivered its first hike in years (WSJ, NYT), but yields dipped afterwards and tech led a higher close as oil eased; the 10-year is near 5.0% and VIX is a moderate 17.7. Oil gave back 3% from a high level as the Saudi pipeline outage is seen as less disruptive.",
+  "families": {
+    "oil_gas": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "Continuing Iran war and Saudi supply shock: WTI 102.4, Brent 105.8, +20% in 20 days, while XOM is -1.35% over 20 days. None of the exit triggers (ceasefire, pipeline restart, Hormuz reopening, windfall tax, export limit, SPR release, WTI below 85) has appeared.", "reasoning": "Hold the existing XOM long to about 2026-09-28. CNBC 'Oil finishes the week flat as the market sees Saudi pipeline outage as less disruptive than feared' trims the edge, so confidence is lower, but crude stays far above XOM's implied level and no exit trigger fired."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "The Fed hiked instead of pausing (WSJ 'Fed Delivers First Rate Hike in Years'). Gold at 4388 is 17.5% below its high, the dollar is up and real rates are rising. Analyst target raises and a one-day NEM pop are not a catalyst."},
+    "chips": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "CNBC 'Jensen Huang says Nvidia will sell twice as many chips next year' is a forward volume guide, the kind of guidance catalyst the previous note waited for. NVDA rose only 0.82% on 9/16 and is 9.3% below its high, so it does not look fully priced.", "reasoning": "A guidance-type statement plus the WSJ headline 'Investors Come Back to AI Stocks' after the AI-slowdown scare. Risks: rates near 5%, the Huawei AI-chip plan for Q1 2027 and the NVDA-Groq probe. Modest confidence, 10-day hold."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY-specific headline. The breast cancer approval (Nature) is not tied to LLY, and Medicare drug-pricing items are policy noise. LLY is down 7% over 20 days with no named cause."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Copper is down 5.5% over 5 days with no named outage. The US $414M Niger uranium investment adds supply and leans bearish; the Cameco enrichment offtake is small. No catalyst for FCX."}
+  },
+  "would_change_my_mind": "A Gulf ceasefire, Saudi pipeline restart or WTI below 85 (exit XOM); an NVDA guidance cut, a new export rule or a renewed rate spike (exit NVDA); a Fed pause signal (gold).",
+  "handoff": {
+    "run_id": "opus1-20260917-a",
+    "written_at": "2026-09-17T12:00:00Z",
+    "decision_day": "2026-09-17",
+    "data_cutoff": "2026-09-17",
+    "what_changed": "The Fed raised rates for the first time in years with a unanimous vote under Warsh, yet yields dipped and tech led a higher close. WTI eased to 102.4 (-3.2% on the day) as the market sees the Saudi pipeline outage as less disruptive than feared. Jensen Huang said Nvidia will sell twice as many chips next year.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-09-14, 10 days", "why": "The Iran war and Saudi supply shock keep crude above 100 while XOM lags; no exit trigger yet, but the outage is now seen as less severe."},
+      "gold_miners": {"position": "flat", "why": "The Fed hiked instead of pausing; yields near 5% and a firmer dollar weigh on gold."},
+      "chips": {"position": "long NVDA since 2026-09-17, 10 days", "why": "Huang's 'twice as many chips next year' guidance and investors returning to AI stocks; NVDA is still 9% below its high."},
+      "pharma": {"position": "flat", "why": "No LLY-specific catalyst."},
+      "copper_uranium": {"position": "flat", "why": "No copper outage; the US-Niger uranium investment leans bearish for supply."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Saudi supply and oil", "status": "open", "note": "WTI 102, Brent 106; the market sees the Saudi pipeline outage as less disruptive. Exit XOM on a ceasefire, pipeline restart, Hormuz reopening or WTI below about 85.", "first_seen": "2026-09-14"},
+      {"name": "Trump vs oil prices", "status": "open", "note": "Exit XOM on a windfall tax, export limit or SPR release; new US tariffs over Russian oil (India) are worth watching.", "first_seen": "2026-09-14"},
+      {"name": "Exxon Joliet refinery outage", "status": "fading", "note": "No follow-up headline; small downstream negative unless prolonged.", "first_seen": "2026-09-14"},
+      {"name": "Venezuela oil opening", "status": "open", "note": "Chevron's $7B plan; watch for XOM deal terms.", "first_seen": "2026-09-14"},
+      {"name": "Fed hiking cycle and 5% yields", "status": "escalating", "note": "First hike delivered; yields dipped after it (Fed 'regains trust'). Watch for guidance on further hikes; a pause signal would favour gold.", "first_seen": "2026-09-14"},
+      {"name": "Gold vs yields", "status": "fading", "note": "Gold 4388, 17.5% below its high; re-enter NEM only on a Fed pause or safe-haven spike.", "first_seen": "2026-09-14"},
+      {"name": "NVDA guidance and AI sentiment", "status": "open", "note": "Huang says twice as many chips next year; AI stocks rebounding. Exit on a guidance cut, an export rule, an NVDA-Groq probe escalation or a sharp rate spike; Huawei plans a Q1 2027 AI chip.", "first_seen": "2026-09-14"},
+      {"name": "LLY drift", "status": "fading", "note": "LLY -7% over 20 days with no named cause; watch for an LLY-specific approval or data.", "first_seen": "2026-09-14"},
+      {"name": "Copper and uranium supply", "status": "open", "note": "Copper 6.43, -5.5% over 5 days; the US $414M Niger uranium deal and the Saudi discovery lean bearish for CCJ. Re-enter FCX only on a named outage.", "first_seen": "2026-09-14"},
+      {"name": "US-Canada trade war and uranium", "status": "open", "note": "Watch whether tariffs reach uranium (CCJ).", "first_seen": "2026-09-14"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note. Hold XOM (long since 2026-09-14, exit about 2026-09-28) unless a Gulf ceasefire, Saudi pipeline restart, Hormuz reopening, windfall tax, export limit, SPR release or WTI below about 85 appears. Hold NVDA (long since 2026-09-17, 10 days, exit about 2026-10-01) unless a guidance cut, new export rule or sharp rate spike appears. Keep gold, pharma and copper flat unless a Fed pause, an LLY-specific approval or a copper supply outage appears."
+  }
+}

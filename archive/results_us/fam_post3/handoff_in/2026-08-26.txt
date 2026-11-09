@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260821-a (decision day 2026-08-21, data cutoff 2026-08-21)
+What changed: Gold hit a three-month high and NEM rose further; FCX touched an all-time high; yields stabilized. Broadcom is raising $70B or more of debt for a chip financing deal, and the pharma sector rallied on Moderna and Merck news. No leader-specific catalyst appeared.
+Holdings and reasons:
+- oil_gas: flat | WTI rebound is priced in and XOM news is minor.
+- gold_miners: flat | NEM is extended after 35% in 20 days and the news is only a board appointment.
+- chips: flat | Broadcom debt and credit worries are not an NVDA-specific, one-sided catalyst.
+- pharma: flat | No LLY trial, approval or pricing catalyst; commentary only.
+- copper_uranium: flat | FCX all-time high is momentum, not a catalyst.
+Open storylines:
+- [open] Iran war, Hormuz and oil: Brent about 94, WTI 88, up 8% in 5 days; watch XOM-specific news
+- [open] Q2 earnings season: NVDA Q2 result pending, major week ahead; NEM and FCX guidance; a leader guidance raise is a catalyst
+- [escalating] AI financing and credit: Broadcom raising $70B or more of debt, widening CDS spreads, Warsh Jackson Hole test; watch NVDA reaction
+- [open] Gold rebound: Gold 4571 at a three-month high, NEM +35% in 20 days; yields stabilizing
+- [open] Copper and uranium: FCX at an all-time high; uranium ETF weak; watch FCX guidance
+- [open] Pharma rally: Health care ETF up about 6% this week on Moderna and Merck; LLY at a record high; watch LLY filings and Canada retatrutide dispute
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM guidance, NVDA earnings result, FCX guidance, LLY filings); stay flat otherwise.

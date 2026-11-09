@@ -1,0 +1,20 @@
+# Handoff from the previous run (read first)
+Run opus1-20260720-a (decision day 2026-07-20, data cutoff 2026-07-20)
+What changed: Iran conflict escalated again: CNBC reports Trump saying Iran will pay for killing US service members; WTI 82.5 (+15.5% in 5 days), Brent 88.1, XOM +6.1%. Chips fell about 9% in a week and AMD won Microsoft for its Helios rack; VIX up 25% in 5 days; US imposed 50% tariffs on Canadian goods.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days (renewed 2026-07-20 for 10 more days, ends about 2026-08-03) | Iran/Hormuz supply shock still escalating after US service member deaths; no de-escalation seen.
+- gold_miners: flat | Gold bear market with firm dollar and yields; only a NEM Q2 earnings preview.
+- chips: flat | No NVDA catalyst; AMD Helios Microsoft win is a competitive negative and the sector is selling off.
+- pharma: flat | No trial, regulator or guidance news for LLY.
+- copper_uranium: flat | No FCX catalyst; Canada tariff effect on copper unclear; uranium still falling.
+Open storylines:
+- [escalating] Iran / Strait of Hormuz conflict: Trump says Iran will pay for killed US service members; exit XOM on ceasefire, Hormuz reopening or the renewed horizon (about 08-03). Check WTI and Brent closes.
+- [open] Exxon Q2 earnings: Late July, inside the renewed hold window; adds variance, not direction.
+- [open] Gold bear market: Watch dollar, real rates, the jobs report and the NEM Q2 results; analyst previews are not catalysts.
+- [open] AI chip competition and chip selloff: AMD Helios rack with Microsoft as buyer; sector -9% in 5 days. Watch NVDA guidance, export rules and TSMC results.
+- [open] US tariffs on Canada: 50% tariffs on Canadian goods; watch any metals or energy carve-outs and retaliation affecting copper, uranium or crude flows.
+- [open] Copper to aluminium substitution: Watch for more automakers switching away from copper (FCX demand headwind). No update.
+- [fading] Uranium supply and policy: Cigar Lake disruption resolved; uranium ETF -9.9% in 5 days; leader is FCX so impact is indirect.
+- [open] Inflation, Warsh Fed and Q2 earnings: Warsh hawkish on inflation; VIX rising; earnings season raises variance, not a reason to be long.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note; exit XOM to flat if the Iran/Hormuz conflict de-escalates (ceasefire, Hormuz reopening) or the renewed horizon (about 2026-08-03) has ended, otherwise re-check its catalyst and the Q2 earnings result; then re-check all five families for a named catalyst in the new headlines.

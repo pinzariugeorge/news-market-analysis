@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260710-a",
+ "written_at": "2026-07-10T14:00:00Z",
+ "decision_day": "2026-07-10",
+ "data_cutoff": "2026-07-10",
+ "what_changed": "No catalyst in any family; all stay flat. New items: Goldman says China oil demand may not fully recover, Micron keeps sliding since its late-June results, and the FDA approved a Merck pembrolizumab combination (MRK is not the pharma leader).",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "CVX deals and a Goldman China-demand warning are not a supply shock for XOM."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Only analyst opinion and target cuts; no rate or gold event."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Micron weakness and Iran worry, no positive checkable NVDA catalyst; TSMC sales not yet seen."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "MRK FDA approval does not concern the leader LLY; no LLY event."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Only analyst target changes and thematic pieces; FCX +5% already priced."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "FCX Grasberg output cut",
+   "status": "open",
+   "note": "No new news; watch for Q2 earnings and Grasberg restart updates.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "LLY China trial security probe",
+   "status": "open",
+   "note": "No update in today's headlines; watch for escalation or a company response.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "JNJ Q2 preview out; Goldman reports July 14, Netflix July 16, WPM Aug 6 after close; a guidance raise would be a catalyst.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Oil and gold selloff",
+   "status": "open",
+   "note": "WTI -18% over 20 days, gold -3.4%; Goldman warns of lasting China oil demand loss; watch for a supply shock or rate shift.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Chip sector wobble",
+   "status": "open",
+   "note": "Micron cratering since late-June earnings, SK Hynix IPO prep, Iran worry; watch TSMC monthly sales (about the 10th) and further earnings.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "MRK bladder cancer FDA approval",
+   "status": "open",
+   "note": "Pembrolizumab plus enfortumab vedotin approved July 10; relevant to MRK, not the pharma leader LLY.",
+   "first_seen": "2026-07-10"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list (TSMC sales, Q2 earnings, supply shocks); stay flat if none."
+}

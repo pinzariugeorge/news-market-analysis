@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-07-23",
+  "market_view": "Calm-ish regime: VIX 16.6, down 14.6% over 20 days, with a small 5-day uptick. Oil keeps rebounding (WTI 86.8, +9% in 5 days), gold and miners are bouncing inside a deep drawdown, and chips are range-bound after the earlier sell-off.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI +18.6% over 20 days and XOM +6.9% over 5 days are already priced. No XOM, OPEC+ or supply headline in today's list. Earnings season raises variance but gives no direction."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "NEM +3.5% on gold +1.9% is a driver move already in the price. Gold is still 22% below its high, the 10-year yield is near its high and the dollar is firm. No NEM, Fed or guidance headline."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: 'Huge News for Taiwan Semiconductor Stock Investors' (The Motley Fool) on a $100B TSMC US investment increase is a promotional article, mostly a TSMC story, and not a clear NVDA catalyst", "reasoning": "No NVDA-specific or export-rule headline. The TSMC investment piece is a retail article that is likely priced in. Other chip headlines are opinion pieces (Griffin 'hype' comment, SK Hynix). Sector is flat over 5 days."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY news; the only related headline is an ETF comparison article. LLY is up 31.6% over 60 days and fell 1.05% yesterday. Pharma trades on its own trial and regulatory news, and none is present."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FCX +3.9% on the day and +6.6% over 5 days while copper fell 0.9%, which is a stock move with no named cause. No supply outage, China data or tariff headline. Nothing checkable."}
+  },
+  "would_change_my_mind": "A leader-specific headline such as an XOM or NEM guidance change, an OPEC+ decision, an NVDA export-rule change or earnings pre-announcement, an LLY trial or approval result, or an FCX mine outage.",
+  "handoff": {
+    "run_id": "fp4-20260723-a",
+    "written_at": "2026-07-23T14:00:00Z",
+    "decision_day": "2026-07-23",
+    "data_cutoff": "2026-07-23",
+    "what_changed": "Three days since the last note (07-20). WTI rose another 5% to 86.8 (+18.6% over 20 days), gold bounced 2.5% over 5 days, the semiconductor ETF stayed roughly flat over 5 days, and VIX eased to 16.6. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Oil rally is already priced in and there is no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold and NEM bounce has no Fed, dollar or company catalyst."},
+      "chips": {"position": "flat", "why": "Only a TSMC US-investment promotional article and opinion pieces, no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY news in the headlines."},
+      "copper_uranium": {"position": "flat", "why": "FCX jump has no supply or demand headline and copper itself fell."}
+    },
+    "open_storylines": [
+      {"name": "Oil rebound", "status": "escalating", "note": "WTI 86.83, +9.1% over 5 days and +18.6% over 20 days, but -8% over 60 days. Watch OPEC+ or supply headlines and XOM earnings for continuation or reversal.", "first_seen": "2026-07-20"},
+      {"name": "Chip sell-off and memory reset", "status": "fading", "note": "Semiconductor ETF -5.7% over 20 days and flat over 5 days. TSMC announced a larger US investment (Motley Fool). Watch TSMC sales, chip earnings and the AI-spending doubts (Oracle, IBM).", "first_seen": "2026-07-20"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold 21.9% below its high, +2.5% over 5 days; miners still down 20-27% over 60 days. Watch the Fed, dollar, 10-year yield (4.66%) and the jobs report.", "first_seen": "2026-07-20"},
+      {"name": "IBM capex warning and AI-spending doubt", "status": "open", "note": "IBM fell about 25% after a Q2 pre-announcement miss; Oracle is down over 50% from its peak. Watch the read-through to chip earnings.", "first_seen": "2026-07-20"},
+      {"name": "VIX uptick", "status": "fading", "note": "VIX 16.6, -2.4% on the day, -14.6% over 20 days. Closed unless it climbs above about 20.", "first_seen": "2026-07-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-23: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

@@ -1,0 +1,63 @@
+{
+ "run_id": "opus1-20260701-a",
+ "written_at": "2026-07-01T11:55:00Z",
+ "decision_day": "2026-07-01",
+ "data_cutoff": "2026-07-01",
+ "what_changed": "This is the first run, so there is no prior note. The run started from the handbook, found no named catalyst for any leader and stayed flat in all five families.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Crude's 25% slide is priced in and there is no new supply catalyst."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold is falling with a firm dollar, and the NEM Q2 call is only a scheduled event."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Yesterday's semi rally is priced in, and there is no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY is near its highs with no trial or approval news."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "The Cigar Lake suspension is a uranium story that is mixed for CCJ, not a catalyst for FCX."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Cigar Lake suspension",
+   "status": "open",
+   "note": "Watch the restart timeline, the uranium spot price and the Cameco guidance change; leader is FCX so impact is indirect.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Copper to aluminium substitution",
+   "status": "open",
+   "note": "Watch whether more automakers switch away from copper (a demand headwind for FCX).",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Crude slump",
+   "status": "open",
+   "note": "WTI is down 38% in 60 days; watch for an OPEC+ response or Middle East supply news.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "NEM Q2 call announced; earnings of XOM, NEM, LLY, FCX and NVDA's peers fall in July-August. These raise variance and are not a reason to be long.",
+   "first_seen": "2026-07-01"
+  },
+  {
+   "name": "Fed under Warsh",
+   "status": "open",
+   "note": "Inflation focus and the jobs report are inside the window; this matters for gold miners via rates and the dollar.",
+   "first_seen": "2026-07-01"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note, then re-check all five families for a named catalyst in the new record's headlines, especially Cigar Lake updates, OPEC+ news and Q2 pre-announcements."
+}

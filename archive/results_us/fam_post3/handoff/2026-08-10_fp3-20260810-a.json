@@ -1,0 +1,69 @@
+{
+ "run_id": "fp3-20260810-a",
+ "written_at": "2026-08-10T14:00:00Z",
+ "decision_day": "2026-08-10",
+ "data_cutoff": "2026-08-10",
+ "what_changed": "Gold jumped 2.3% on 08-07 and miners surged (NEM +7.2%); Barrick and Newmont settled their Nevada JV dispute. TSMC revenue was strong and capex guidance was lifted, Nvidia is investing in Lancium, and COP changed CEO with an upgrade. Oil fell 7.7% in 5 days and political windfall-profit criticism of oil majors continues.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "No positive XOM catalyst; windfall criticism and stalled Hormuz talks cut both ways."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM JV settlement is largely priced after a 20% weekly surge; no guidance news."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "TSMC and Lancium news are supportive but priced after an 11.6% weekly NVDA rally."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY-specific catalyst after the Q2 pop."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX-specific news; copper near its high and FCX up 11% in 5 days."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "open",
+   "note": "WTI 78.2, -7.7% in 5 days; peace talks stalled; windfall profit criticism of XOM and CVX; watch XOM news.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Q2 earnings season",
+   "status": "open",
+   "note": "COP beat, CVX positive reaction, Barrick missed, Pfizer beat and raised; NEM, FCX and others still to report; a leader guidance raise is a catalyst.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Chip rally, TSMC and AI financing",
+   "status": "open",
+   "note": "TSMC revenue +44.7% and capex up to $64B; Nvidia into Lancium for Stargate; Intel $15B share sale; Cuban AI financing warning; watch NVDA-specific news.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Gold rebound and Nevada JV",
+   "status": "open",
+   "note": "Gold 4400 (+7% in 5 days), 17% below its high; Barrick and Newmont settled the Nevada JV and cleared a Barrick gold IPO; watch NEM earnings and guidance.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "Copper tariffs and uranium",
+   "status": "open",
+   "note": "Copper near its high; uranium ETF +15% in 5 days but 27% below its high; watch FCX guidance and Section 232.",
+   "first_seen": "2026-08-05"
+  },
+  {
+   "name": "LLY after Q2 beat",
+   "status": "fading",
+   "note": "Pop is priced; watch retatrutide filing or a China probe.",
+   "first_seen": "2026-08-05"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise."
+}

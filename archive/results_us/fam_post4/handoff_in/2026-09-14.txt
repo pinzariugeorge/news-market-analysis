@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260909-a (decision day 2026-09-09, data cutoff 2026-09-09)
+What changed: Six days since the last note (09-03). Copper rose to a 252-day high (+2.2% in 1 day), FCX +5.4% and SCCO +4.9% in 1 day. WTI rose a further 8.5% in 5 days on a Middle East/Iran escalation and AMD +5.9% in 1 day, while XOM stayed flat. Gold was flat and LLY fell another 2%. Headlines were again noise with no named catalyst, so all five families stay flat.
+Holdings and reasons:
+- oil_gas: flat | WTI +13% in 20 days on US-Iran tension is priced in and there is no XOM-specific headline.
+- gold_miners: flat | Gold is 16.5% below its high with the 10-year yield at 4.81% and no NEM, Fed or dollar headline.
+- chips: flat | No NVDA event; memory-cost margin worry is unresolved and sector news is opinion pieces.
+- pharma: flat | LLY is -8.8% in 20 days but there is no trial, regulator or pricing headline.
+- copper_uranium: flat | Copper's high and FCX +5.4% in 1 day are priced in and there is no supply or China-data headline.
+Open storylines:
+- [escalating] Oil and Middle East escalation: WTI 93, Brent 98, three-month highs on US-Iran tension and disrupted Gulf flows; XOM lags (-0.2% in 5 days). Watch for OPEC+, Hormuz or a XOM-specific headline.
+- [open] NVDA margin and memory costs: Zacks memory-cost margin worry from the last note is still unresolved; NVDA -2% on 09-08 while the sector rose. Watch for guidance, analyst or export-rule headlines.
+- [open] Gold pullback and high yields: Gold 4439, 16.5% below its high; 10-year yield 4.81% at its high; dollar softer. Watch inflation, the Fed and the dollar.
+- [open] Copper at highs: Copper at a 252-day high and FCX/SCCO/TECK jumped on 09-08 with no stated reason in the headlines. Watch for a supply outage or China-data headline that explains it; uranium ETF +4.4% in 5 days but 23% below its high.
+- [open] LLY dip: LLY -8.8% in 20 days, 12.2% below its high; the health care ETF -2.5% on 09-08. Watch for a trial, pricing or regulator headline.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-09-09: read the new record and headlines and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX (oil escalation news, copper explanation, NVDA guidance or export rules, LLY trial or pricing); decide each family under the catalyst rule.

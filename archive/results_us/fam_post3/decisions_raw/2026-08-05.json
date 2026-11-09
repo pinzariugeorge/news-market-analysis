@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-08-05",
+  "market_view": "Calm regime (VIX 16.5, down 9% over 5 days); stocks near record highs on easing concerns and a possible Strait of Hormuz deal, which pushed WTI down 5.7% in a day. Broad risk-on rally led by chips and copper names.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none: 'ExxonMobil missed Q2 earnings estimates' (Yahoo/Zacks) is a negative, and 'Trump rips Exxon, Chevron for making too much money' (Yahoo) is political risk", "reasoning": "WTI fell 5.7% on Hormuz deal hopes, a priced driver move with possible further downside; XOM missed Q2 and faces political pressure. No one-sided positive catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NEM bounce follows gold (+1.5%); the headlines are generic with no NEM guidance or production news. NEM earnings are upcoming (variance, not direction). Stay flat."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: 'SpaceX Chooses Nvidia' (Benzinga) is mildly positive but small; 'US Ban on Chinese AI Components' (Benzinga) is a risk", "reasoning": "Semi ETF up 5.6% yesterday and 8.7% over 5 days; the rally is priced. The SpaceX item is not material for NVDA, and AMD fell after a strong quarter. No decisive catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "LLY beat-and-raise ('Eli Lilly's Diabetes And Obesity Drugs Blow Past Expectations; Shares Pop', Yahoo), but already priced pre-market", "reasoning": "Prior long since 07-23 reached its horizon (about 08-06). The Q2 beat-and-raise is out and the pop is already in the price; close the position at the horizon and do not add after the news."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: copper inflows and Chile storms ('Shares of copper-related companies are trading higher', Benzinga) are already in the price", "reasoning": "FCX is up 5.75% in a day and 13% in 20 days on copper strength; the tariff and supply headlines are priced. No FCX-specific guidance news."}
+  },
+  "would_change_my_mind": "A leader-specific one-sided headline such as an FCX guidance raise, XOM-specific positive news after a pullback, or an NVDA export-control change.",
+  "handoff": {
+    "run_id": "fp3-20260805-a",
+    "written_at": "2026-08-05T14:00:00Z",
+    "decision_day": "2026-08-05",
+    "data_cutoff": "2026-08-05",
+    "what_changed": "Lilly reported a Q2 beat and raise and the stock popped pre-market, so the LLY long is closed at its horizon. WTI fell 5.7% on Strait of Hormuz deal hopes, XOM missed Q2 estimates, and chips and copper names rallied strongly with the VIX at 16.5.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI drop on Hormuz hopes is priced; XOM missed Q2 and faces political criticism, with no positive catalyst."},
+      "gold_miners": {"position": "flat", "why": "NEM follows gold; no NEM-specific guidance or production news."},
+      "chips": {"position": "flat", "why": "Semi rally of 8.7% in 5 days is priced; no decisive NVDA catalyst."},
+      "pharma": {"position": "flat", "why": "LLY long (opened 2026-07-23) closed at its horizon after the Q2 beat and raise pop; no fresh catalyst."},
+      "copper_uranium": {"position": "flat", "why": "FCX jump with copper is priced; no FCX-specific news."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz deal and oil", "status": "open", "note": "WTI 75.8, -5.7% in a day on deal hopes; XOM missed Q2; COP and OXY report 08-05/06; watch deal outcome and XOM-specific news.", "first_seen": "2026-07-31"},
+      {"name": "Q2 earnings season", "status": "open", "note": "LLY beat and raised, AMD fell after a strong quarter, SCCO record; NEM, COP, OXY, FCX and others to come; a leader guidance raise is a catalyst.", "first_seen": "2026-07-31"},
+      {"name": "Chip rally and China components ban", "status": "open", "note": "Semi ETF +5.6% on 08-04; BNP warns on proposed US ban on Chinese AI components; SpaceX chose Nvidia; watch NVDA-specific news and TSMC monthly sales around the 10th.", "first_seen": "2026-07-31"},
+      {"name": "LLY retatrutide and Q2 beat", "status": "fading", "note": "Q2 revenue +48%, beat and raise, pop priced pre-market; position closed; watch for retatrutide filing or China probe.", "first_seen": "2026-07-31"},
+      {"name": "Gold slump and rates", "status": "open", "note": "Gold 4153, 22% below high, 10y 4.63%; miners bouncing; watch NEM earnings and guidance.", "first_seen": "2026-07-31"},
+      {"name": "Uranium and Cameco", "status": "fading", "note": "Cameco price target cut 29%; uranium ETF -31% from high; Section 232 pending; CCJ is not the leader.", "first_seen": "2026-07-31"},
+      {"name": "Copper tariffs and Chile disruptions", "status": "open", "note": "Record July inflows ahead of anticipated tariffs on refined imports; Chile storms; copper near its high; FCX +13% in 20 days.", "first_seen": "2026-08-05"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise."
+  }
+}

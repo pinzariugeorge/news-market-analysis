@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260925-a (decision day 2026-09-25, data cutoff 2026-09-25)
+What changed: 10-year yield rose to 5.16%, a high, with hawkish Fed signals pushing gold lower (NEM -1.8%, KGC -11.6% on lower production guidance). WTI rebounded 2.7% yesterday and Brent is 106.6. Chips extended gains (AMD at a high) while uranium weakened.
+Holdings and reasons:
+- oil_gas: flat | Oil moves are priced in; the XOM-BSR supply agreement is minor.
+- gold_miners: flat | Gold below its 200-day average, yields at a high; no NEM-specific upside catalyst before its Q3 results.
+- chips: flat | AI rally already in price; no NVDA-specific demand or export catalyst.
+- pharma: flat | No LLY trial, approval or pricing event; Nektar legal win and Novo alliance are unclear.
+- copper_uranium: flat | No FCX guidance or supply news; generic copper commentary only.
+Open storylines:
+- [open] Iran war, Hormuz and oil: WTI 94.6, Brent 106.6, volatile (+2.7% yesterday, -7% over 5 days); watch XOM supply deals and any supply shock
+- [escalating] Rates risk: 10-year 5.16% at a 252-day high; hawkish Fed signals; watch jobs report
+- [open] AI trade in chips: Semis +7% in 5 days, AMD at a high; Musk/SpaceX Nvidia buildout headline vague; watch NVDA demand or export news
+- [open] Gold miners and rates: Gold -7.6% in 20 days, below 200-day average; Kinross guidance cut; NEM Q3 results date announced, watch guidance
+- [open] Copper and uranium: Copper near highs; uranium ETF -15% in 20 days; watch FCX guidance or Grasberg supply news
+- [open] Pharma and Lilly GLP-1: Novo long-acting obesity alliance, Nektar legal win over Lilly (details unknown); watch trials, approvals and pricing
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM or oil supply shock, NEM Q3 guidance, NVDA demand or export news, LLY trial, approval or pricing news, FCX guidance or supply news); stay flat otherwise.

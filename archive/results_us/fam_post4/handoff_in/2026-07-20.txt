@@ -1,0 +1,16 @@
+# Handoff from the previous run (read first)
+Run fp4-20260715-a (decision day 2026-07-15, data cutoff 2026-07-15)
+What changed: Five days since the last note (07-10). WTI jumped 12.6% over 5 days to 79.3 and the semiconductor ETF bounced (+2.5% on 07-14). LLY fell 6.7% over 5 days with the health care ETF down. Headlines again held no leader-specific catalyst.
+Holdings and reasons:
+- oil_gas: flat | WTI rebound already priced; no XOM or OPEC+ headline.
+- gold_miners: flat | Gold bounce priced in; no NEM-specific catalyst.
+- chips: flat | Only opinion headlines on NVDA; NVDA +4% on 07-14 already priced.
+- pharma: flat | No LLY news; the 5-day drop has no visible cause.
+- copper_uranium: flat | Copper and FCX bounce priced in; no supply or demand headline.
+Open storylines:
+- [open] Oil rebound: WTI 79.34, +12.6% over 5 days but -6.5% over 20 days. Watch OPEC+ or supply headlines for continuation or a reversal.
+- [open] Chip rally and memory reset: Semiconductor ETF +32% over 60 days, NVDA +4% on 07-14. SK Hynix US listing and HBM share are memory items. Watch TSMC monthly sales around the 10th and chip earnings.
+- [open] Gold drawdown: Gold is 23.5% below its high, +1.6% on 07-14. Watch the Fed, dollar and jobs report.
+- [open] IBM capex warning: IBM fell about 25% after warning that hardware capex is squeezing software budgets. Watch for read-through to AI spending and chip earnings.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-07-15: read the new record and headlines, then decide each family under the catalyst rule.

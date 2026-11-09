@@ -1,0 +1,75 @@
+{
+ "run_id": "fp3-20260826-a",
+ "written_at": "2026-08-26T14:00:00Z",
+ "decision_day": "2026-08-26",
+ "data_cutoff": "2026-08-26",
+ "what_changed": "WTI fell 3% on Iran de-escalation signals and gold fell about 1.3% after a hot July PCE revived rate-hike bets. NVDA reports earnings tonight; FCX and copper hit records; uranium names rallied. No leader-specific catalyst appeared.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI drop is a priced driver move and XOM news is commentary only."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM is extended and hot PCE weighs on gold; no NEM-specific catalyst."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "NVDA earnings tonight are a two-sided scheduled event, not a one-sided catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Only a Zepbound cost study; no trial, approval or pricing catalyst for LLY."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper record and FCX run are priced; no FCX guidance news."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran war, Hormuz and oil",
+   "status": "fading",
+   "note": "WTI 82, Brent 89, down 3% on de-escalation signals; watch XOM-specific news",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "Q2 earnings season: NVDA result",
+   "status": "escalating",
+   "note": "NVDA reports tonight after the close; read the result and guidance in the next record; NEM and FCX guidance still a catalyst",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "AI financing and credit",
+   "status": "open",
+   "note": "Broadcom debt and ASIC competition worries; watch NVDA reaction",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "Hot PCE and rate-hike bets",
+   "status": "open",
+   "note": "Hot July PCE revived September hike bets; gold fell 1.3% to about 4600; watch Fed and yields",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Gold rebound",
+   "status": "open",
+   "note": "NEM at a high after +48% in 20 days; watch rates reaction and NEM guidance",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "Copper and uranium",
+   "status": "open",
+   "note": "Copper at a record, FCX +20% in 5 days; uranium ETF +24% in 20 days on Saudi nuclear deal and Canada tariffs; watch FCX guidance",
+   "first_seen": "2026-08-21"
+  },
+  {
+   "name": "Pharma rally",
+   "status": "open",
+   "note": "Health care ETF near a high, MRK +16% in 5 days; watch LLY filings and approvals",
+   "first_seen": "2026-08-21"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; check the NVDA earnings reaction and guidance, then look for leader-specific catalysts (XOM news, NEM guidance, FCX guidance, LLY filings); stay flat otherwise."
+}

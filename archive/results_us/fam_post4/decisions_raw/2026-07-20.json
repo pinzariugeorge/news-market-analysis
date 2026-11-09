@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-07-20",
+  "market_view": "VIX jumped 12% on 07-17 to 18.8 (+25% over 5 days) with the semiconductor ETF down 8.9% over 5 days and WTI up 15.5%; a mild risk-off tilt, not a stress regime. Headlines are mostly opinion and press releases.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI +4.5% on 07-17 and +15.5% over 5 days is already priced in; no XOM, OPEC+ or supply headline in the record. Only a consumer-sentiment item mentions easing gas prices and reduced Middle East tensions. No named catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Gold is 24% below its high and NEM is down 15% over 20 days, but oversold is not a catalyst. No NEM, Fed or dollar headline. The only related items are irrelevant company notices."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "The semiconductor ETF fell 8.9% over 5 days. Headlines are Motley Fool opinion pieces (Meta in-house chips, memory ETF, Sandisk drop on a Chinese AI model), with no NVDA-specific fact. Earnings season adds variance only."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY headline; the pharma items are small-cap releases (Can-Fite, OKYO, Harrow). LLY is up 30% over 60 days, so a long would rest on momentum, which is not a reason."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "FCX fell 15% over 20 days with copper -1.2% on 07-17, but there is no supply, China demand or FCX headline in the record. A pullback alone is not a catalyst."}
+  },
+  "would_change_my_mind": "A named company or commodity headline: an XOM or OPEC+ supply item, an NVDA export-rule or guidance change, an LLY trial or approval result, an FCX or copper supply outage, or a Fed or dollar shift for gold.",
+  "handoff": {
+    "run_id": "fp4-20260720-a",
+    "written_at": "2026-07-20T14:00:00Z",
+    "decision_day": "2026-07-20",
+    "data_cutoff": "2026-07-20",
+    "what_changed": "Five days since the last note (07-15). WTI rose another 15.5% over 5 days (4.5% on 07-17) to 82.5, while the semiconductor ETF fell 8.9% over 5 days and VIX jumped 12% on 07-17 to 18.8. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI rally already priced in; no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold and NEM weak but no NEM, Fed or dollar catalyst."},
+      "chips": {"position": "flat", "why": "Sector sell-off has only opinion headlines, no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY news; only small-cap pharma releases."},
+      "copper_uranium": {"position": "flat", "why": "FCX pullback has no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil rebound", "status": "open", "note": "WTI 82.49, +15.5% over 5 days but -10.5% over 60 days. Watch OPEC+ or supply headlines for continuation or reversal.", "first_seen": "2026-07-15"},
+      {"name": "Chip sell-off and memory reset", "status": "open", "note": "Semiconductor ETF -8.9% over 5 days after +32% over 60 days earlier; Sandisk -24% on geopolitics and a new Chinese AI model; Meta building in-house AI chips from September. Watch TSMC sales and chip earnings.", "first_seen": "2026-07-15"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold 24.4% below its high and -8.3% over 20 days; miners down 15-21% over 20 days. Watch the Fed, dollar and jobs report.", "first_seen": "2026-07-15"},
+      {"name": "IBM capex warning", "status": "open", "note": "IBM fell about 25% after a Q2 pre-announcement miss; watch read-through to AI spending and chip earnings.", "first_seen": "2026-07-15"},
+      {"name": "VIX uptick", "status": "open", "note": "VIX 18.8, +12% on 07-17; watch whether it keeps rising toward a stress regime.", "first_seen": "2026-07-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-20: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

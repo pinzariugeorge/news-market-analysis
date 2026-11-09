@@ -1,0 +1,18 @@
+# Handoff from the previous run (read first)
+Run fp3-20260914-a (decision day 2026-09-14, data cutoff 2026-09-14)
+What changed: A weekend call from AI CEOs for slower AI development hit chip and memory stocks Monday (Intel -7%, AMD -6%, NVDA lower). Oil was down about 2.4% on Friday but still near $100, and XOM gained about 2% on an LNG supply comment. The 10-year yield rose to 4.98%, a new high.
+Holdings and reasons:
+- oil_gas: flat | Oil spike is priced and XOM's LNG remark is long-dated, not a one-sided catalyst.
+- gold_miners: flat | Yield at a high and gold below its 200-day average; no NEM guidance news.
+- chips: flat | AI-pacing selloff is a sentiment shock with no named NVDA catalyst; rebound is a guess.
+- pharma: flat | No LLY trial, approval or pricing news; only an analyst target.
+- copper_uranium: flat | No FCX guidance or supply news; copper flat and Grasberg recovery already known.
+Open storylines:
+- [open] Iran war, Hormuz and oil: WTI about $100 (-2.4% Friday, +23% in 20 days); Chevron says LNG prices stay high on Middle East disruption; watch XOM-specific news and whether oil holds
+- [escalating] Rates risk: 10-year yield 4.98% at a high, +4.5% in 5 days; watch the jobs report and Fed
+- [escalating] AI pacing selloff in chips: Anthropic and OpenAI CEOs urged slower AI development; memory fell 6-7%, Intel -7%, AMD -6%; watch whether NVDA demand or export news follows and whether the selloff fades
+- [open] Gold miners and rates: Gold below its 200-day average; NEM commentary mentions falling estimates; watch NEM guidance
+- [open] Copper and uranium: Copper -1.6% in 5 days, uranium ETF -3.3% Friday; watch FCX guidance or Grasberg supply news
+- [open] Pharma weakness: LLY -7.7% in 20 days; a bank sees 45% upside but that is only an opinion; watch LLY trials, approvals and pricing
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM news, NEM guidance, NVDA demand or export news, LLY trial or approval, FCX guidance or supply news); stay flat otherwise.

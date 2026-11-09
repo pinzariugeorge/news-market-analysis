@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260903-a",
+ "written_at": "2026-09-03T13:30:00Z",
+ "decision_day": "2026-09-03",
+ "data_cutoff": "2026-09-03",
+ "what_changed": "Three days since the last note (08-31). WTI rebounded +10.7% in 5 days, NVDA bounced +7% in 5 days, gold fell -5.1% in 5 days and the uranium ETF fell -7.8%. The 09-03 headlines were again noise, with no catalyst for any family.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI +21% in 20 days is priced in and there is no XOM headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold -5.1% in 5 days with the 10-year yield at 4.80% and no NEM, Fed or dollar headline."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "The only NVDA item is a Zacks memory-cost margin worry; the 5-day bounce is not a catalyst."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, regulator or pricing headline."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No FCX, copper supply or China data headline; uranium weak."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Oil rebound",
+   "status": "escalating",
+   "note": "WTI +21% in 20 days, +10.7% in 5 days, reversing the August softness. Watch for OPEC+, Hormuz or supply headlines and any XOM-specific news.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "NVDA margin and memory costs",
+   "status": "open",
+   "note": "Zacks: memory costs may cut NVDA gross margin from 75% to 71-72% by Q4 FY2027. NVDA +7% in 5 days. Watch for guidance, analyst or export-rule headlines.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "Gold pullback and high yields",
+   "status": "open",
+   "note": "Gold -5.1% in 5 days, 17% below its high; 10-year yield 4.80% at its high. Watch the August jobs report (first Friday), the Fed and the dollar.",
+   "first_seen": "2026-08-26"
+  },
+  {
+   "name": "Uranium and copper weakness",
+   "status": "open",
+   "note": "Uranium ETF -7.8% in 5 days, CCJ -10%; FCX -6.4% in 5 days. Watch for a supply outage or China data headline.",
+   "first_seen": "2026-08-31"
+  },
+  {
+   "name": "LLY dip",
+   "status": "fading",
+   "note": "LLY -2.5% in 5 days, 9.4% below its high. Watch for a trial, pricing or regulator headline.",
+   "first_seen": "2026-08-31"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-09-03: read the new record and headlines, check the August jobs report, and look for a named catalyst on XOM, NEM, NVDA, LLY or FCX; decide each family under the catalyst rule."
+}

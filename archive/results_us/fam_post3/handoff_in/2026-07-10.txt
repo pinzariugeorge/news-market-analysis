@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp3-20260707-a (decision day 2026-07-07, data cutoff 2026-07-07)
+What changed: No catalyst found in any family; all stay flat. New items: Samsung earnings triggered a chip selloff, OPEC+ announced a small 188k BOED hike, and gold-miner rebound commentary appeared but is opinion only.
+Holdings and reasons:
+- oil_gas: flat | Only analyst opinion and a small OPEC+ hike; no supply shock named.
+- gold_miners: flat | Rebound calls are opinion; no rate or event catalyst.
+- chips: flat | Samsung-driven selloff and Nvidia rack delay worries are negative, nothing positive and checkable.
+- pharma: flat | No trial, regulatory or pricing event in the headlines.
+- copper_uranium: flat | No new FCX or copper event; only thematic articles.
+Open storylines:
+- [open] FCX Grasberg output cut: No new news; watch for Q2 earnings and Grasberg restart updates.
+- [open] LLY China trial security probe: No update in today's headlines; watch for escalation or a company response.
+- [open] Q2 earnings season: WPM reports Aug 6 after close; NEM, JNJ and oil majors due July-August; a guidance raise would be a catalyst.
+- [open] Oil and gold selloff: WTI -26% and gold -7.5% over 20 days; OPEC+ adding 188k BOED, Iran tension a possible supply risk; watch for a supply shock or rate shift.
+- [open] Chip sector wobble: Samsung results disappointed after a 145% run, Nvidia rack delay report and DeepSeek in-house chip report; watch TSMC monthly sales (about the 10th) and further earnings.
+Pending orders: none
+EXACT NEXT JOB: Next decision day: read this handoff first, then the new record, and look for a named catalyst in each family headline list (TSMC sales around July 10, Q2 earnings); stay flat if none.

@@ -1,0 +1,63 @@
+{
+ "run_id": "fp4-20260821-a",
+ "written_at": "2026-08-21T14:00:00Z",
+ "decision_day": "2026-08-21",
+ "data_cutoff": "2026-08-21",
+ "what_changed": "Three days since the last note (08-18). WTI rebounded 8.1% in 5 days to 87.83 and NEM is still near highs (+34.8% in 20 days). VIX is 16.0, up 7.5% in a day. Headlines on 08-21 were again noise (Motley Fool pieces with nothing on the five leaders).",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "WTI rebound is a priced-in driver move and no XOM or OPEC+ headline exists."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "NEM +34.8% in 20 days is priced in and no Fed, dollar or NEM headline explains it."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "NVDA earnings on Aug. 26 has no one-sided setup and no export-rule headline appeared."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "No LLY trial, regulator or pricing headline."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "No copper supply, China data or FCX headline; FCX near its high is not a catalyst."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "NVDA earnings Aug 26",
+   "status": "open",
+   "note": "Scheduled event inside the next window. Watch for a pre-announcement, guidance or export-rule headline; semis ETF is down 4.5% in 5 days.",
+   "first_seen": "2026-08-18"
+  },
+  {
+   "name": "Gold rally",
+   "status": "open",
+   "note": "Gold +12.9% and NEM +34.8% in 20 days. Watch the Fed, the August jobs report and the 10-year yield at 4.70%.",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "name": "Oil whipsaw",
+   "status": "open",
+   "note": "WTI -6.5% over 60 days but +8.1% in 5 days. Watch OPEC+ or supply headlines and XOM earnings.",
+   "first_seen": "2026-08-18"
+  },
+  {
+   "name": "LLY near highs",
+   "status": "open",
+   "note": "LLY 2.8% below its high, +16.9% in 60 days, fell 2.8% on 08-20. Watch LLY trial, pricing or earnings news.",
+   "first_seen": "2026-08-18"
+  },
+  {
+   "name": "Iran tensions",
+   "status": "fading",
+   "note": "No fresh headline on 08-21; relevant only if a harder oil or gold headline appears.",
+   "first_seen": "2026-08-13"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Run the next decision day after 2026-08-21: read the new record and headlines, then decide each family under the catalyst rule."
+}

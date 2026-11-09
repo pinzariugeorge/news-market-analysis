@@ -1,0 +1,45 @@
+{
+  "decision_day": "2026-08-26",
+  "market_view": "Calm regime: VIX 15.5, down 15% in 20 days; the 10y eased to 4.64% and the dollar is soft. Oil fell 3% on Iran optimism, while gold, copper and uranium are at or near highs after large runs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none; today's headline points the other way: 'Oil prices dip as cautious optimism over Iran trumps new fears of Russian escalation in Ukraine' (NBC News, Aug 26)", "reasoning": "The supply-shock thesis is weakening: WTI is down 3.1% in a day on Iran optimism, and there is no new sanctions or shipping strike. I am not renewing; the 08-21 XOM hold runs to its end. A de-escalation headline is not a long catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none; 'Gold price hits three-month high amid fears over Iran war and Trump economy' (The Guardian) describes a move that already happened", "reasoning": "NEM is up 47.7% in 20 days and at its 52-week high; the gold rally is priced in. Iran optimism undercuts safe-haven demand, and the cost-inflation headline is not one-sided. No fresh, unpriced catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none qualifying; 'NVIDIA Announces Financial Results for Second Quarter Fiscal 2027' (NVIDIA Newsroom) is title only, with no beat or guidance figures; the AWS 2 million GPU deal and the Hugging Face report came out alongside it", "reasoning": "The earnings release is out, but the record does not show its content or the market's reaction. The AWS deal is positive, but it lands with the results and will be priced at the open. The outcome is two-sided, so I stay flat."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none; no LLY headline (only an FDA listeria notice)", "reasoning": "The LLY hold runs off around 08-27 as planned. Guidance drift from 08-05 is stale, and the sector strength is MRK-led, not LLY. No new trial, approval or guidance catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none fresh for FCX; 'Cameco Owns the Refinery at the Center of Canada's Uranium Threat' (Motley Fool) concerns CCJ, not the leader", "reasoning": "Copper is at its 52-week high and FCX is up 20.5% in 5 days with no fresh Congo or supply headline in the record. A continuation after the run has no named catalyst, so I let the FCX hold run off around 09-01."}
+  },
+  "would_change_my_mind": "Actual secondary sanctions or a Hormuz shipping strike (oil); NVDA guidance figures that clearly beat; a fresh Congo enforcement or new supply-outage headline (copper); a new LLY trial or approval headline.",
+  "handoff": {
+    "run_id": "opus2-20260826-r15",
+    "written_at": "2026-08-26T12:00:00Z",
+    "decision_day": "2026-08-26",
+    "data_cutoff": "2026-08-26",
+    "what_changed": "NBC: oil dips on cautious optimism over Iran, and WTI fell 3.1% to $82.4, so I did not renew XOM. NVDA reported Q2 FY27 alongside an AWS 2 million GPU deal and a reported Hugging Face acquisition; the content is unknown. Canada retaliated with up to 50% tariffs on US goods. Copper hit a 52-week high and FCX is up 20% in 5 days.",
+    "families": {
+      "oil_gas": {"position": "long XOM since 2026-08-18, 10 days (renewed 2026-08-21, not renewed 2026-08-26; ends about 2026-09-04)", "why": "The Iran supply shock is softening on 'cautious optimism' (NBC, Aug 26); I hold to the end but do not extend."},
+      "gold_miners": {"position": "flat", "why": "NEM is up 48% in 20 days; the gold three-month high is already priced in, and there is no unpriced catalyst."},
+      "chips": {"position": "flat", "why": "NVDA earnings are out, but the record has the title only; the reaction is two-sided and unknown."},
+      "pharma": {"position": "long LLY since 2026-08-13, 10 days, not renewed (ends about 2026-08-27)", "why": "There is no new LLY catalyst; let it run off."},
+      "copper_uranium": {"position": "long FCX since 2026-08-18, 10 days, not renewed (ends about 2026-09-01)", "why": "The Congo ban is still in force, but there is no fresh headline and FCX is up 20% in 5 days."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war", "status": "fading", "note": "NBC (Aug 26): oil dips on cautious optimism over Iran. Watch for a truce or deal (bearish oil) versus renewed strikes or secondary sanctions. The XOM hold ends about 09-04.", "first_seen": "2026-07-07"},
+      {"name": "Russia / Ukraine escalation", "status": "open", "note": "New fears of Russian escalation in Ukraine, and the CIA director made a surprise Moscow trip. Watch for energy sanctions or supply effects.", "first_seen": "2026-08-26"},
+      {"name": "Oil price intervention", "status": "open", "note": "Trump pressure on XOM and CVX profits. Watch for export curbs or a windfall tax.", "first_seen": "2026-08-14"},
+      {"name": "Yields and inflation", "status": "open", "note": "The 10y eased to 4.64% and VIX is 15.5. Watch Fed hike odds and inflation data; they weigh on gold and long-duration stocks.", "first_seen": "2026-08-14"},
+      {"name": "Tariffs and trade / Canada", "status": "escalating", "note": "Canada retaliates with up to 50% tariffs on hundreds of US products (NYT, Aug 25), and there is a Canada uranium threat involving Cameco's refinery. Watch copper and uranium supply and pharma tariffs.", "first_seen": "2026-08-14"},
+      {"name": "NVDA earnings and AI demand", "status": "open", "note": "Q2 FY27 results are out (title only), plus the AWS 2 million GPU deal and a Hugging Face acquisition report. Next run: check reported guidance and the reaction; long only on a clear guidance beat not yet priced.", "first_seen": "2026-08-14"},
+      {"name": "Lilly obesity pipeline", "status": "fading", "note": "The hold ends about 08-27. Re-enter only on a new trial, approval or guidance headline.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply squeeze / Congo export ban", "status": "open", "note": "The ban is in force and copper is at a 52-week high, but there is no fresh headline. Watch for exemptions, reversal or new outages. The FCX hold ends about 09-01.", "first_seen": "2026-07-31"},
+      {"name": "Uranium / Cameco", "status": "open", "note": "The uranium ETF is up 10% in 5 days, and Canada threatens uranium exports (Cameco refinery). Matters only if CCJ becomes the leader.", "first_seen": "2026-08-14"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day: check the NVDA earnings content and guidance; long only on a clear, unpriced beat. Check Iran truce versus re-escalation for oil (XOM ends about 09-04). Confirm LLY has closed (about 08-27) and let FCX run off (about 09-01) unless there is fresh Congo or supply news. Then read the record for a named catalyst in each family.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline win over 10 days; late entries after a long run do worse.", "cases": 3, "evidence": "XOM 07-07 +6.82%, 07-10 +12.76%, 07-15 +8.22%, 07-20 +4.27%; contradicting XOM 07-23 -1.56% (entered after Brent passed $100). Net 3, one Iran episode only; does not change calls."},
+      {"rule": "Hypothesis only: LLY longs after a trial or guidance catalyst have a positive mean net return over 10 days.", "cases": 4, "evidence": "LLY 07-23 +0.21%, 07-31 +2.43%, 08-05 +9.14%, 08-10 +0.92%; contradicting 07-28 -0.76%. 4 of 5 won, mean +2.39%. Below 5 net cases; does not change calls."},
+      {"rule": "Hypothesis only: copper longs on a fresh supply-squeeze headline win; continuation holds with no new headline do not.", "cases": 3, "evidence": "FCX 07-31 +5.91% (fresh CNBC squeeze), 08-10 +10.09% (fresh Reuters Congo ban, beat basket +7.19%); FCX 08-05 -0.68% continuation lost (basket +0.84%). Below 5; does not change calls."},
+      {"rule": "Hypothesis only: continuation holds with no new headline lag the family basket.", "cases": 2, "evidence": "LLY 08-10 +0.92% vs basket +6.81%; FCX 08-05 -0.68% vs +0.84%. Counter: XOM 07-10 continuation +12.76% beat its basket. Does not change calls."}
+    ]
+  }
+}

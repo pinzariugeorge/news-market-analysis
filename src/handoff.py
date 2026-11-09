@@ -67,6 +67,10 @@ def validate(note):
             if not isinstance(o, dict) or not {"symbol", "side", "qty", "status"} <= set(o):
                 p.append("pending order needs symbol, side, qty, status")
                 break
+    if "lessons" in note:  # optional lessons ledger (learning arm): list of at most 12 objects with rule (text) and cases (int >= 1)
+        L = note["lessons"]
+        if not isinstance(L, list) or len(L) > 12 or any(not isinstance(x, dict) or not str(x.get("rule", "")).strip() or not isinstance(x.get("cases"), int) or x["cases"] < 0 for x in L):
+            p.append("lessons must be a list of at most 12 objects with rule (text) and cases (integer >= 0)")
     if len(json.dumps(note)) > MAX_BYTES:
         p.append("note larger than {} bytes (keep it short; drop closed storylines)".format(MAX_BYTES))
     return p
@@ -122,6 +126,9 @@ def render(note, warn):
         out += ["- {}: {} | {}".format(f, v["position"], v["why"]) for f, v in note["families"].items()]
         out.append("Open storylines:")
         out += ["- [{}] {}: {}".format(s["status"], s["name"], s["note"]) for s in note["open_storylines"]] or ["- none"]
+        if note.get("lessons"):
+            out.append("Lessons ledger (cases = closed trades supporting it; below 5 cases it is only a hypothesis):")
+            out += ["- ({} cases) {} | {}".format(x["cases"], x["rule"], x.get("evidence", "")) for x in note["lessons"]]
         out.append("Pending orders: " + (json.dumps(note["pending_orders"]) if note["pending_orders"] else "none"))
         out.append("EXACT NEXT JOB: " + note["next_job"])
     return "\n".join(out)

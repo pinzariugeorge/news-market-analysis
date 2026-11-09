@@ -1,0 +1,25 @@
+# Handoff from the previous run (read first)
+Run opus2-20260720-e5 (decision day 2026-07-20, data cutoff 2026-07-20)
+What changed: Oil escalated further: WTI +15.5% over 5 days to 82.49 (Brent 88.10) after Trump said Iran will pay for killing US service members (CNBC, July 19). Chips sold off (semis -8.9% over 5 days), VIX rose to 18.8, and Trump imposed 50% tariffs on Canadian goods (AP, July 20). AMD launched the Helios rack system with Microsoft as a buyer.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-07-07, 10 days; renewed 2026-07-20 for 10 days | US-Iran escalation now includes US casualties and threatened retaliation; no de-escalation headline; confidence 0.53.
+- gold_miners: flat | Gold is weak with high yields and a firm dollar; NEM Q2 earnings are only a variance event.
+- chips: flat | Routine NVIDIA product news; AMD Helios adds competition; the sector is selling off.
+- pharma: flat | No trial, approval or pricing news for LLY.
+- copper_uranium: flat | No copper catalyst for FCX; the Canada tariff is a trade-sentiment negative.
+Open storylines:
+- [escalating] Hormuz / Iran escalation: US service members killed and Trump threatens Iran (July 19); WTI 82.49. A ceasefire or reopening headline means exiting XOM.
+- [open] Oil price slide vs shock: WTI still -10% over 60 days with record US output; the shock bounce could fade fast.
+- [open] Gold bear market and Fed: Gold 24% below its high, 10y 4.54%; Warsh hawkish. Watch for a dovish turn or safe-haven bid.
+- [open] US-Canada tariffs: 50% tariffs on Canadian goods (AP, July 20). Watch for retaliation and effects on TECK, CCJ and energy flows.
+- [open] AI chip competition: AMD Helios rack with Microsoft as a buyer challenges NVDA; chips selling off with VIX up.
+- [fading] Uranium supply and policy: Cigar Lake resolved; uranium ETF -9.9% over 5 days. Matters only if CCJ becomes leader.
+- [open] Q2 earnings season: NEM Q2 previews out; XOM Q2 windfall signalled. Variance, not direction.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, check the XOM long (renewed 2026-07-20 for 10 days, ends around 2026-08-03) against US-Iran and Hormuz news and exit on a de-escalation headline; then read the new record for a named catalyst in each family and decide long or flat.
+
+# Outcomes of your past calls (facts computed by the harness; closed trades only)
+- oil_gas XOM (0.53), called 2026-07-07, held 10d to 2026-07-21: net +6.82% (family basket +8.64%). Catalyst you quoted: 'Oil prices jump 5% after U.S. revokes Iran oil sanctions waiver following ship attacks' (NBC News) and 'Oil prices jump more than 4% after 
+Per-family tally (closed trades):
+- oil_gas: 1 trades, 1 won, mean net +6.82%
+All: 1 trades, 1 won, mean net +6.82%

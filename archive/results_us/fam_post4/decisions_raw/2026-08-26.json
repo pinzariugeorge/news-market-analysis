@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-26",
+  "market_view": "Calm regime: VIX 15.45, down 15% in 20 days. Long yields high (30-year at 5.23% per a Motley Fool piece), dollar soft; GDP, PCE and NVDA earnings all land today.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI fell 3.1% on 08-25; a driver move already happened and is priced in. No XOM, OPEC+ or supply headline. The oil_gas headlines are unrelated noise (fleet awards, class actions)."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NEM is at its 252-day high, +47.7% in 20 days, with gold +16%. That is priced in and no Fed, dollar or NEM headline explains it. Chasing it is momentum, which is not a catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: NVDA earnings after the close today (Motley Fool, 'Nvidia Earnings, Inflation, and GDP on the Same Day') is scheduled but has no one-sided setup", "reasoning": "Earnings add variance, not direction. No pre-announcement, guidance or export-rule headline. The AMD and SOXX pieces are opinion."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY trial, regulator or pricing headline. The AbbVie stake piece and the market reports are noise. LLY is 3.6% below its high with weak sector link."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "FCX is at its high, +20.5% in 5 days, with copper at a high too. That move is priced in and there is no copper supply, China data or FCX headline. A momentum chase is not a catalyst."}
+  },
+  "would_change_my_mind": "A named headline on a leader: guidance change, export-rule change, regulator decision, supply shock or OPEC+ action.",
+  "handoff": {
+    "run_id": "fp4-20260826-a",
+    "written_at": "2026-08-26T14:00:00Z",
+    "decision_day": "2026-08-26",
+    "data_cutoff": "2026-08-26",
+    "what_changed": "Five days since the last note (08-21). WTI fell 3.1% to 82.36 on 08-25 and NEM rose to a new high (+47.7% in 20 days). FCX is +20.5% in 5 days at a high and MRK is +15.7% in 5 days. Headlines on 08-26 were again noise; the NVDA earnings (after close today) are confirmed.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI drop is a priced-in driver move and no XOM or OPEC+ headline exists."},
+      "gold_miners": {"position": "flat", "why": "NEM at highs after +47.7% in 20 days is priced in and no Fed, dollar or NEM headline explains it."},
+      "chips": {"position": "flat", "why": "NVDA earnings after today's close have no one-sided setup and no export-rule headline appeared."},
+      "pharma": {"position": "flat", "why": "No LLY trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "FCX at highs after +20.5% in 5 days has no copper supply, China data or FCX headline behind it."}
+    },
+    "open_storylines": [
+      {"name": "NVDA earnings Aug 26", "status": "open", "note": "Reports after the close on 08-26. Next run: read the reaction and any guidance headline; a post-event reaction with a clear cause could qualify.", "first_seen": "2026-08-21"},
+      {"name": "Gold rally", "status": "escalating", "note": "Gold +16% and NEM +47.7% in 20 days, 10-year yield 4.64%. Watch the Fed, PCE inflation today and the August jobs report.", "first_seen": "2026-08-21"},
+      {"name": "Copper and miners surge", "status": "open", "note": "FCX +20.5% in 5 days at a high, copper at a high. Watch for a supply outage or China data headline.", "first_seen": "2026-08-26"},
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -3.1% on 08-25, +3.9% over 20 days. Watch OPEC+ or supply headlines and XOM news.", "first_seen": "2026-08-21"},
+      {"name": "LLY near highs", "status": "fading", "note": "LLY 3.6% below its high, +11.6% in 60 days. Watch LLY trial, pricing or earnings news.", "first_seen": "2026-08-21"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-26: read the new record and headlines, check the NVDA earnings reaction, then decide each family under the catalyst rule."
+  }
+}

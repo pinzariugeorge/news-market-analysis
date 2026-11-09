@@ -1,0 +1,33 @@
+{
+  "decision_day": "2026-07-01",
+  "market_view": "Calm regime: VIX 16.45, down 47% from its 252-day high. Oil and gold are in deep drawdowns (WTI -25% in 20d, gold -10%), while chips and health care sit at or near highs.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "WTI fell 25% in 20 days, but that move is already priced in. The only related headline is a Motley Fool dividend piece, not a catalyst. Earnings season adds variance without a one-sided setup."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none", "reasoning": "Gold is down 10% in 20 days with a rising dollar and a 10-year yield above its 200-day average. No miner headline exists. Cheapness is not a catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semiconductor ETF is up 67% in 60 days and 3.8% yesterday, which is priced in. Headlines (Motley Fool memory and TSMC pieces, a Huang remark about Marvell) are opinion pieces, not events. Earnings are not due in the window."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "LLY is near its high after a gain of about 11% in 20 days. No LLY-specific headline exists, and the pharma headlines are small-cap noise. No named catalyst."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "Copper fell 5% in 20 days and uranium fell 13%. No supply or China data headline exists. The Purebase Keystone mine item is irrelevant to FCX."}
+  },
+  "would_change_my_mind": "A company-specific headline (guidance change, approval, export-rule change, supply shock) for the leader name, or a sharp one-sided shift in a driver with a clear reason for continuation.",
+  "handoff": {
+    "run_id": "fp4-20260701-a",
+    "written_at": "2026-07-01T13:40:00Z",
+    "decision_day": "2026-07-01",
+    "data_cutoff": "2026-07-01",
+    "what_changed": "First run, so there is no previous note. Headlines held no qualifying catalyst for any leader (XOM, NEM, NVDA, LLY, FCX), so all five families are flat.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI fell 25% in 20 days and nothing in the headlines gives a one-sided setup."},
+      "gold_miners": {"position": "flat", "why": "Gold is weak against a firm dollar and yields, and no miner catalyst appears."},
+      "chips": {"position": "flat", "why": "The sector surge is already priced in and the headlines are only commentary."},
+      "pharma": {"position": "flat", "why": "No LLY-specific news; the stock is near its high."},
+      "copper_uranium": {"position": "flat", "why": "No copper or uranium supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil slump", "status": "open", "note": "WTI is down 38% over 60 days. Watch for OPEC+ or supply headlines that justify continuation or a reversal.", "first_seen": "2026-07-01"},
+      {"name": "Chip rally", "status": "open", "note": "The semiconductor ETF is up 67% over 60 days. Watch for earnings and TSMC monthly sales around the 10th.", "first_seen": "2026-07-01"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold is down 24% from its high. Watch the Fed, the dollar and the jobs report.", "first_seen": "2026-07-01"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the 2026-07-02 decision: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

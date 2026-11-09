@@ -1,0 +1,20 @@
+# Handoff from the previous run (read first)
+Run opus2-20260701-a1 (decision day 2026-07-01, data cutoff 2026-07-01)
+What changed: First run, so there is no previous note to compare against. Oil and gold have fallen hard over the past month, chips and pharma are near their highs, and VIX is low. No family had a named catalyst, so every family is flat.
+Holdings and reasons:
+- oil_gas: flat | Crude is in a steep downtrend and no supply-shock headline was found.
+- gold_miners: flat | Gold is weak, the dollar is firm and the Fed leans hawkish; NEM's Q2 call is only a scheduled event.
+- chips: flat | The sector rally is already priced in and no NVDA-specific catalyst was found.
+- pharma: flat | LLY is near its high and no trial or approval news was found.
+- copper_uranium: flat | The leader FCX has no copper catalyst; the Cigar Lake news is about uranium.
+Open storylines:
+- [open] Cigar Lake suspension: Watch how long the Orano mill disruption lasts and whether uranium spot prices respond; it matters for CCJ only if the uranium name becomes the leader.
+- [open] Oil price slide: WTI at 69.5, down 25% in 20 days; watch OPEC+ decisions and Middle East supply news for a turn.
+- [open] Fed under Warsh: Focus on inflation and independence (hawkish lean); this matters for gold miners and rates.
+- [open] Copper to aluminium substitution: Carmakers are switching away from copper, a slow negative for copper demand.
+- [open] Q2 earnings season: NEM has scheduled its Q2 call; look for guidance raises or pre-announcements as catalysts.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read the new record and its headlines, check the open storylines for a named catalyst in each family, and decide long or flat.
+
+# Outcomes of your past calls
+No long call has closed yet. There is nothing to learn from yet; do not invent lessons.

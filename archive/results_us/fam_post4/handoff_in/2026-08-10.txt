@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260805-a (decision day 2026-08-05, data cutoff 2026-08-05)
+What changed: Five days since the last note (07-31). VIX eased to 16.5; semis rose a further 5.6% on the day, copper miners ran again, WTI fell 5.7% and LLY slid to 9.7% below its high. Headlines held earnings-season news (Amazon capex $220B, AMD margin miss, Meta, Apple, SpaceX) but no leader-specific catalyst.
+Holdings and reasons:
+- oil_gas: flat | WTI whipsaw again has no named cause and there is no XOM or OPEC+ headline.
+- gold_miners: flat | Gold and NEM bounce has no Fed, dollar or NEM catalyst.
+- chips: flat | Amazon capex raise is already in a sector up 8.7% in five days; AMD margin reaction is mixed; no NVDA catalyst.
+- pharma: flat | LLY decline over five days has no LLY news.
+- copper_uranium: flat | FCX and copper strength has no supply or demand headline.
+Open storylines:
+- [open] Oil whipsaw: WTI -5.7% on the day, -20% over 60 days. Watch OPEC+ or supply headlines and XOM earnings.
+- [open] Chip rebound and AI capex: Semi ETF +8.7% in 5 days; Amazon capex $220B, Meta capex $130-145B, AMD fell 9% after hours on margins. Watch NVDA read-through, TSMC sales (about the 10th), export rules.
+- [open] Gold drawdown: Gold 22% below its high, 10-year yield 4.63%. Watch the Fed (Warsh considering fewer FOMC meetings) and the August jobs report.
+- [open] LLY pullback: LLY -8.6% over 5 days, no LLY headline. Watch for LLY earnings or any trial or pricing news.
+- [open] SpaceX lockup expiry: Lockup ends Aug 6; possible market-wide sentiment effect, not a family catalyst.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-05: read the new record and headlines, then decide each family under the catalyst rule.

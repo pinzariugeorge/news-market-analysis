@@ -1,0 +1,35 @@
+{
+  "decision_day": "2026-08-21",
+  "market_view": "Calm regime (VIX 16.0, up 7.5% on the day but down 14% over 20 days); 10-year yield 4.70%, dollar weak. Headlines are Motley Fool opinion and earnings recaps with nothing tied to the five leaders.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI rose 8% in 5 days, but that is a driver move already in the price. No XOM, OPEC+ or supply headline; the oil-related items are about OKE and MPLX, not XOM."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "NEM is up 34.8% in 20 days and gold 12.9%, all priced in. No Fed, dollar or NEM headline explains the move; the jobs report adds variance only."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "NVDA earnings (Aug. 26 per the previous note) fall inside the window but there is no one-sided setup. The Marvell/Google warrant piece (Motley Fool) concerns MRVL, not NVDA. No export-rule headline."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY trial, regulator or pricing headline. The Vertex piece is about a competitor failing a CF trial and is unrelated to LLY. LLY fell 2.8% on the day with the sector."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No copper supply, China data or FCX headline. FCX is 0.7% below its high after +12% in 20 days, which is momentum and not a catalyst."}
+  },
+  "would_change_my_mind": "A leader-specific headline: an NVDA pre-announcement or export-rule change, an XOM or OPEC+ supply shock, a Fed or dollar shift for NEM, a copper supply outage for FCX, or an LLY trial or regulator result.",
+  "handoff": {
+    "run_id": "fp4-20260821-a",
+    "written_at": "2026-08-21T14:00:00Z",
+    "decision_day": "2026-08-21",
+    "data_cutoff": "2026-08-21",
+    "what_changed": "Three days since the last note (08-18). WTI rebounded 8.1% in 5 days to 87.83 and NEM is still near highs (+34.8% in 20 days). VIX is 16.0, up 7.5% in a day. Headlines on 08-21 were again noise (Motley Fool pieces with nothing on the five leaders).",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "WTI rebound is a priced-in driver move and no XOM or OPEC+ headline exists."},
+      "gold_miners": {"position": "flat", "why": "NEM +34.8% in 20 days is priced in and no Fed, dollar or NEM headline explains it."},
+      "chips": {"position": "flat", "why": "NVDA earnings on Aug. 26 has no one-sided setup and no export-rule headline appeared."},
+      "pharma": {"position": "flat", "why": "No LLY trial, regulator or pricing headline."},
+      "copper_uranium": {"position": "flat", "why": "No copper supply, China data or FCX headline; FCX near its high is not a catalyst."}
+    },
+    "open_storylines": [
+      {"name": "NVDA earnings Aug 26", "status": "open", "note": "Scheduled event inside the next window. Watch for a pre-announcement, guidance or export-rule headline; semis ETF is down 4.5% in 5 days.", "first_seen": "2026-08-18"},
+      {"name": "Gold rally", "status": "open", "note": "Gold +12.9% and NEM +34.8% in 20 days. Watch the Fed, the August jobs report and the 10-year yield at 4.70%.", "first_seen": "2026-08-13"},
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -6.5% over 60 days but +8.1% in 5 days. Watch OPEC+ or supply headlines and XOM earnings.", "first_seen": "2026-08-18"},
+      {"name": "LLY near highs", "status": "open", "note": "LLY 2.8% below its high, +16.9% in 60 days, fell 2.8% on 08-20. Watch LLY trial, pricing or earnings news.", "first_seen": "2026-08-18"},
+      {"name": "Iran tensions", "status": "fading", "note": "No fresh headline on 08-21; relevant only if a harder oil or gold headline appears.", "first_seen": "2026-08-13"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-08-21: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

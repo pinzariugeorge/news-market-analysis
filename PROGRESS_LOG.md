@@ -137,4 +137,44 @@ Newest entry at the bottom. Each session: read STRATEGY.md and this file first; 
 
 - DONE (user: lower the bar): catalyst prompt (long at 0.52 only with a quoted catalyst), 22 post-cutoff decision days chained with headlines and handoff notes: 19 long calls (14 XOM on the Iran oil story, 4 LLY, 1 FCX), mean +2.55% vs +1.76% for held flat calls, correlation of confidence with outcome -0.01, portfolio 1,000 -> 1,065 USD (random same-structure median 1,096). No evidence of skill; sample is one regime. Fixed a portfolio bug in `score_family_run.py` (repeated long on a held ticker lost the cash). Results `results/FAMILY_POST2.md`. Pushed commit earlier covers everything before this run.
 
+- DONE (user: use Finnhub news for the backtest): `src/download_news_finnhub.py` (Company News endpoint; Market News has no date range) and a 22-day chained re-run on Finnhub news (`results/fam_post3`): 3 longs, all LLY, mean +0.79%; portfolio unchanged (LLY unaffordable); confidence uninformative. Comparison in `results/NEWS_SOURCE_COMPARISON.md`: company news lacks the macro/commodity stream (the Iran oil story) that drove the Google run's trades; use both plus 8-K filings for paper trading.
+
 **Next step:** let snapshots accumulate; after about 2 quarters of releases, join snapshots (revision just before each release) to actual surprises in `data/raw/consensus/` and test revision -> surprise and revision -> reaction.
+
+- DONE (user added MASSIVE_POLYGON_API_KEY): `src/download_news_massive.py` (Massive/Polygon news, dated, free plan 5 calls/min, prices only about 2 years so not used). 22-day chained re-run on it (`results/fam_post4`): 0 longs, all flat; see `results/NEWS_SOURCE_COMPARISON.md`.
+
+- DONE (user asked: Opus plain, Opus with learning): 22-day runs on Google News days: Opus (`results/fam_opus1`) +5.36% mean per long, portfolio 1,132 vs random median 1,213; Opus with learning (`results/fam_opus2`) +2.86%, portfolio 1,065 vs 1,258. No run beats random calls; learning did not help. Built `src/learn_prep.py`, optional `lessons` in `src/handoff.py`, `agent/FAMILY_AGENT_PROMPT_LEARN.md`. Table in `results/NEWS_SOURCE_COMPARISON.md`. Sonnet with learning not run yet. Usage cap reached 95% of the 5-hour limit.
+
+## 2026-11-09: European pivot, cleanup and re-plan
+- User decision: Europe only (no S&P 500, no US markets); same themes; build our own paper broker with live delayed prices; Saxo as reference broker; free data source acceptable.
+- Researched: Saxo (exchanges, commissions, FX, custody, KID rule, simulation API) from official and third-party pages: figures conflict, so they are marked OPEN in `PLAN_EU.md`. Free price feeds compared; Yahoo chart endpoint works for European stocks and ETCs (5-minute bars, 0-20 minutes delayed, daily history from 1988-2000). Twelve Data free has no European real time, EODHD free is 20 calls a day, Stooq CSV links are gone.
+- Built: `src/live_feed.py` (quotes, bars, snapshot, self-test) and `src/eu_probe.py` (daily history for 47 European candidates into `data/raw/eu/daily/`, liquidity and volatility into `universe/eu_candidates.csv`).
+- Cleanup: moved the US / S&P era into `archive/` (docs, early prompts, S&P handbook, about 35 scripts, all results and runs, US universe files, US raw data; nothing deleted). Kept in the working tree the harness stack to be ported (`familydata`, `build_universe`, `select_universe`, `family_prepare`, `score_family_run`, `learn_prep`, `costs`, `handoff`, `download_news`, `download_commodities`) and the commodity series. Imports and the handoff self-test still pass.
+- Wrote: `PLAN_EU.md`, `universe/EU_UNIVERSE.md`, `results/US_LESSONS.md`, `archive/README.md`; rewrote `ROADMAP.md`, `STRATEGY.md`, `TODO.md`, `README.md`, `CLAUDE.md`; old strategy and to-do are in `archive/docs_us/`.
+- Not committed. The scheduled task `snapshot-estimates-daily` now fails (its script is archived): user to decide.
+
+**Next step:** user answers the open decisions (account size, ETCs allowed, scheduled task); then port `select_universe.py` and `familydata.py` to the European daily files and start `src/paper_broker/` (ledger, fills, Saxo cost model, hours) with self-tests.
+
+## 2026-11-09 (later): user decisions
+- Account size 1,000 EUR; no ETFs (read as no ETCs either, commodities as drivers only); scheduled task `snapshot-estimates-daily` disabled.
+- Fit check: names above about 333 EUR a share cannot be bought with 3 positions (ASML, ASM International, Genmab, argenx, Lonza, Roche); chips leader falls to Infineon, STMicro, BESI; gold has Fresnillo and Endeavour only; fees at this size are about 1.2% to 1.8% a round trip (reported Saxo minimum). Recorded in `PLAN_EU.md`, `STRATEGY.md`, `universe/EU_UNIVERSE.md`, `TODO.md`.
+
+## 2026-11-09 (later): broker dashboard, price advice, broad screen
+- Built the broker-style dashboard (`src/dashboard_server.py`, `dashboard/index.html`): account, watchlist with delayed prices and trends, chart with fills, positions, orders, trades with the catalyst quoted, equity curve, agent notes; DEMO ledger clearly marked; checked in the browser (renders, tabs work, no console errors); account maths self-test passes.
+- Wrote the near-live price advice into `PLAN_EU.md`: stay on Yahoo (free, delayed), Saxo level 1 later (about 7 EUR a month per exchange, refunded with 4 trades a month, to confirm), EODHD as a cheap fallback, Twelve Data Pro too expensive.
+- Started `src/eu_screen.py`: about 400 European large and mid caps across sectors, filters fixed in advance (price at most 333 EUR, median value at least 20 million EUR, 5 years of history). Result goes to `universe/eu_screen.csv`.
+
+**Next step:** read the screen, write `universe/EU_SCREEN.md`, then port the universe rule and start `src/paper_broker/` so the dashboard shows real paper trades.
+
+## 2026-11-09 (later): daily plan
+- Wrote `DAILY_PLAN_EU.md`: roles, CET timetable from 07:30 collector to 18:00 reviewer, limits (3 positions, 35% each, stop -8%, daily loss cap 3%), cost model including UK stamp duty and French and Italian transaction taxes, two agent accounts plus three baseline bots, pre-registered pass bar, failure handling, scheduling needs (PC on 07:30-18:15), usage estimate, build order. Design only; nothing runs yet.
+
+**Next step:** user confirms roster, limits and themes; then build `src/paper_broker/` (ledger, order log, fills, costs, hours, reconcile) with self-tests.
+
+## 2026-11-09 (evening): paper trading started
+- Built and tested `src/paper_broker.py` (29 self-tests on a temp ledger), `src/eu_cycle.py`, `src/eu_daemon.py`, `src/eu_report.py`; wrote `PREREG_EU.md` before the first decision; wrote the three European prompts in `agent/`.
+- Started 13:33 CET (late start by design): daemon running (keep-awake request, heartbeat each minute), logon task `EuPaperDaemon` registered (allowed on battery, no time limit), collector ran, Opus researcher wrote the brief, Opus trader decided **no trade** (no name-specific catalyst clearing twice the entry cost), handoff stored, ledger live (1,000 EUR cash). Dashboard now shows the PAPER account.
+- Scheduled Claude tasks (local time, Bucharest = CET+1): researcher 09:00, trader 09:30, reviewer 19:00 on weekdays; the reviewer concludes the day, writes tomorrow's handoff and republishes the report to Claude cloud (https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6) for the phone.
+- Open: scheduled tasks start in the default permission mode and may pause for approvals on the first unattended run; the lid-close action is a Windows setting only the user can change; Saxo fees and purchase-tax rates are third-party figures.
+
+**Next step:** watch the 2026-11-10 morning run end to end, read the first reviewer report, then build the offline baselines.

@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-08-13",
+  "market_view": "Calm regime: VIX 14.6 and falling, 10-year yield 4.68%, dollar flat near 100. Q2 earnings season continues; a surprise inflation print is in the headlines.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the COP Q2 call (\"Record Permian output and $4.2B free cash flow\", Yahoo) is about COP, not the leader XOM", "reasoning": "No XOM-specific catalyst. WTI is up 10.7% in 5 days and XOM up 5.4%, so that is priced in. The XOM valuation article is commentary, not news."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the Headwater earn-in (Benzinga) is minor; NEM is up 24% in a month and the Yahoo piece cites lower production and rising costs", "reasoning": "NEM is up 13% in 5 days with no guidance news. Gold is 4467, below its 200-day average. The Barrick Q2 beat is already known."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: \"Nvidia and Broadcom Deepen AI Financing Push - But Wolfe Sees Long-Term Risks\" (Yahoo) cuts both ways", "reasoning": "NVDA is up 3% on the day and 5.5% over 20 days. The headlines are AI financing and the Cerebras miss, with nothing NVDA-specific or one-sided."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: the OPKO mazdutide royalty notes (Yahoo) are a financing for a third party, not an LLY catalyst", "reasoning": "LLY is up 21% in 60 days and sits 1% below its high. The ABBV upgrade does not carry over to LLY. No LLY filing or trial news."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none: \"FCX's Q2 Volumes Fall Y/Y on Lower Operating Rates\" (Yahoo): earnings beat but copper volumes fell 30%, so mixed", "reasoning": "Earnings are out and mixed; FCX is up 13.5% in 20 days with copper near its high. No guidance raise or Section 232 news."}
+  },
+  "would_change_my_mind": "A leader-specific one-sided event: an XOM or NEM guidance raise, an NVDA export-rule change or large order, an LLY filing or approval, or an FCX guidance raise or supply outage.",
+  "handoff": {
+    "run_id": "fp3-20260813-a",
+    "written_at": "2026-08-13T14:00:00Z",
+    "decision_day": "2026-08-13",
+    "data_cutoff": "2026-08-13",
+    "what_changed": "Oil rebounded: WTI 83.3, +10.7% in 5 days, XOM +5.4%. Gold is 4467 (+3.8% in 5 days) and NEM +13%. COP reported a record Permian quarter and FCX beat but with volumes down 30%. AI financing news is heavy (AMD $5B bond, Nvidia and Broadcom debt) and Cerebras plunged on earnings.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "No XOM-specific catalyst; the oil rebound is already priced."},
+      "gold_miners": {"position": "flat", "why": "NEM rallied 24% in a month and no guidance news is out."},
+      "chips": {"position": "flat", "why": "AI financing headlines are two-sided and NVDA has no specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY catalyst; the stock is near its high after a 21% 60-day gain."},
+      "copper_uranium": {"position": "flat", "why": "FCX earnings were mixed with volumes down 30%; no guidance raise."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "open", "note": "WTI 83.3 after +10.7% in 5 days; watch XOM news and the windfall-profit criticism", "first_seen": "2026-08-10"},
+      {"name": "Q2 earnings season", "status": "open", "note": "COP record Permian output, Barrick beat, FCX beat with volumes down; NEM, NVDA and others pending; a leader guidance raise is a catalyst", "first_seen": "2026-08-10"},
+      {"name": "AI financing and chip rally", "status": "escalating", "note": "AMD $5B bond, Nvidia and Broadcom debt, Brookfield $500B AI push, Wolfe warns of risks, Cerebras miss; watch NVDA-specific news", "first_seen": "2026-08-10"},
+      {"name": "Gold rebound and Nevada JV", "status": "open", "note": "Gold 4467, 16% below its high; NEM +24% in a month; watch NEM earnings and guidance", "first_seen": "2026-08-10"},
+      {"name": "Copper and uranium", "status": "open", "note": "Copper near its high; FCX volumes -30% y/y; watch FCX guidance and Section 232", "first_seen": "2026-08-10"},
+      {"name": "LLY after Q2 beat", "status": "fading", "note": "Near its high; watch a retatrutide filing or a China probe", "first_seen": "2026-08-10"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific catalysts (XOM news, NEM earnings and guidance, NVDA news, FCX guidance, LLY filings); stay flat otherwise."
+  }
+}

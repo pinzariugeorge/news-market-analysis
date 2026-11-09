@@ -1,0 +1,37 @@
+{
+  "decision_day": "2026-07-31",
+  "market_view": "VIX fell 17% to 17.1 after the chip and Nasdaq stress, with a sharp one-day rebound in semis and miners; oil is still volatile (WTI -9% over 5 days) and Q2 earnings are under way. No later knowledge used.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "XOM and CVX Q2 presentations are out, but the record holds only slide decks with no figures or guidance, and the oil move is a priced driver move. No XOM-specific surprise is visible."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "NEM jumped 4.8% on a gold bounce, which is already priced. Only analyst pieces and peer call transcripts; no NEM guidance or production headline. Gold is still 23% below its high with 10-year yields firm."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "The semi ETF rebounded 6.9% in a day after a 13% 20-day slide; that is a driver move and a rebound is not a catalyst. The Moonshot/Nvidia chips item is not a clear one-sided NVDA event."},
+    "pharma": {"call": "long", "horizon_days": 5, "confidence": 0.52, "catalyst": "Existing LLY long from 2026-07-23: retatrutide phase 3 wins ahead of an FDA filing (previous run), plus 'Lilly (LLY) Q2 Earnings on the Horizon' (Yahoo, 2026-07-31). The -4.5% drop on 07-30 has no LLY-specific bad news in the record; ABBV's guidance cut is a peer read-through, not an LLY fact.", "reasoning": "Thesis intact and no adverse LLY news. Keep the position to the original horizon (about 2026-08-06, 4-5 trading days left). Q2 earnings add variance, so confidence is only just at the bar; exit at the horizon."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Cameco headlines (EPS miss, guidance changes, Westinghouse IPO draft) concern CCJ, not the leader FCX. FCX rose 5.8% on a copper bounce, which is priced. No FCX-specific catalyst."}
+  },
+  "would_change_my_mind": "Adverse LLY news (safety, China probe, weak earnings) would close the long; an FCX guidance raise, an NVDA-specific shock or an XOM earnings surprise would open a long.",
+  "handoff": {
+    "run_id": "fp3-20260731-a",
+    "written_at": "2026-07-31T14:00:00Z",
+    "decision_day": "2026-07-31",
+    "data_cutoff": "2026-07-31",
+    "what_changed": "VIX fell 17% and semis rebounded 6.9% in a day; gold, copper and miners bounced. XOM and CVX posted Q2 decks (no figures in the record); Cameco missed Q2 EPS and changed guidance, and AbbVie cut its full-year outlook. LLY fell 4.5% on 07-30 with no LLY-specific news.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "XOM and CVX decks give no figures; the oil drop is a priced driver move and there is no XOM-specific catalyst."},
+      "gold_miners": {"position": "flat", "why": "NEM's 4.8% jump follows gold; no NEM guidance or production headline."},
+      "chips": {"position": "flat", "why": "A one-day semi rebound after a rout is not a catalyst; no NVDA-specific one-sided news."},
+      "pharma": {"position": "long LLY since 2026-07-23, 10 days", "why": "Retatrutide thesis intact with no adverse LLY news; exit at about 2026-08-06 with Q2 earnings as added variance."},
+      "copper_uranium": {"position": "flat", "why": "Cameco news is about CCJ, not FCX; FCX bounce with copper is priced."}
+    },
+    "open_storylines": [
+      {"name": "Iran war and oil", "status": "open", "note": "WTI 83.6, -9% over 5 days, +22% over 20 days; XOM and CVX Q2 results out July 31 (read figures when available); Middle East conflict may widen to Egypt.", "first_seen": "2026-07-28"},
+      {"name": "Q2 earnings season", "status": "open", "note": "SCCO beat, AEM, KGC, CCJ, AbbVie reported; XOM, CVX out July 31; NEM, LLY, big tech and chip reports to come; a guidance raise by a family leader is a catalyst.", "first_seen": "2026-07-28"},
+      {"name": "Chip selloff and China scare", "status": "fading", "note": "Semi ETF -13% in 20 days but +6.9% on 07-30; Bloomberg item on Moonshot using Nvidia chips via Alibaba; watch NVDA-specific news and TSMC monthly sales.", "first_seen": "2026-07-28"},
+      {"name": "LLY retatrutide and China trial probe", "status": "open", "note": "Long open to about 2026-08-06; LLY -4.5% on 07-30 without news; Q2 earnings upcoming; watch filing, safety, China probe; exit at horizon.", "first_seen": "2026-07-28"},
+      {"name": "Gold slump and rates", "status": "open", "note": "Gold 4100, 23% below high, 10y 4.66%; miners bounced; watch NEM earnings and guidance.", "first_seen": "2026-07-28"},
+      {"name": "Uranium and Cameco results", "status": "open", "note": "Cameco missed Q2 EPS, changed guidance, filed confidential draft S-1 for a Westinghouse IPO; uranium ETF -36% from its high; Section 232 decision pending; CCJ is not the leader.", "first_seen": "2026-07-28"},
+      {"name": "AbbVie guidance cut", "status": "open", "note": "ABBV cut full-year EPS outlook on the Apogee deal; peer read-through to pharma; ABBV is not the leader.", "first_seen": "2026-07-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; LLY long opened 2026-07-23 with a 10-day horizon (exit about 2026-08-06): check LLY news (Q2 earnings, filing, safety, China probe) and exit at horizon; look for named leader-specific catalysts (XOM earnings figures, NVDA news, NEM guidance, FCX guidance); stay flat otherwise."
+  }
+}

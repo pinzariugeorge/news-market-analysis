@@ -1,0 +1,17 @@
+# Handoff from the previous run (read first)
+Run fp4-20260826-a (decision day 2026-08-26, data cutoff 2026-08-26)
+What changed: Five days since the last note (08-21). WTI fell 3.1% to 82.36 on 08-25 and NEM rose to a new high (+47.7% in 20 days). FCX is +20.5% in 5 days at a high and MRK is +15.7% in 5 days. Headlines on 08-26 were again noise; the NVDA earnings (after close today) are confirmed.
+Holdings and reasons:
+- oil_gas: flat | WTI drop is a priced-in driver move and no XOM or OPEC+ headline exists.
+- gold_miners: flat | NEM at highs after +47.7% in 20 days is priced in and no Fed, dollar or NEM headline explains it.
+- chips: flat | NVDA earnings after today's close have no one-sided setup and no export-rule headline appeared.
+- pharma: flat | No LLY trial, regulator or pricing headline.
+- copper_uranium: flat | FCX at highs after +20.5% in 5 days has no copper supply, China data or FCX headline behind it.
+Open storylines:
+- [open] NVDA earnings Aug 26: Reports after the close on 08-26. Next run: read the reaction and any guidance headline; a post-event reaction with a clear cause could qualify.
+- [escalating] Gold rally: Gold +16% and NEM +47.7% in 20 days, 10-year yield 4.64%. Watch the Fed, PCE inflation today and the August jobs report.
+- [open] Copper and miners surge: FCX +20.5% in 5 days at a high, copper at a high. Watch for a supply outage or China data headline.
+- [open] Oil whipsaw: WTI -3.1% on 08-25, +3.9% over 20 days. Watch OPEC+ or supply headlines and XOM news.
+- [fading] LLY near highs: LLY 3.6% below its high, +11.6% in 60 days. Watch LLY trial, pricing or earnings news.
+Pending orders: none
+EXACT NEXT JOB: Run the next decision day after 2026-08-26: read the new record and headlines, check the NVDA earnings reaction, then decide each family under the catalyst rule.

@@ -1,0 +1,21 @@
+# Handoff from the previous run (read first)
+Run opus1-20260909-a (decision day 2026-09-09, data cutoff 2026-09-09)
+What changed: WTI rose to 93.0 (Brent 97.9) and headlines report crude above $100 as US and Iran launch new attacks; WSJ says Trump advisers see the war possibly lasting through end of term and Trump says oil prices won't fall until after the midterms. The 10-year yield is 4.81% with Fed hike talk (Warsh); regulators are investigating NVDA's Groq licensing deal; copper hit a 252-day high.
+Holdings and reasons:
+- oil_gas: long XOM since 2026-08-31, 10 days | Prolonged Iran war keeps crude above 90 and no exit trigger has appeared; XOM has lagged crude.
+- gold_miners: flat | Gold fell on the tanker strikes and yields are at a one-year high; no named catalyst.
+- chips: flat | Regulatory probe of the NVDA-Groq deal is an overhang and there is no guidance or export-rule catalyst.
+- pharma: flat | FDA approvals in the news are not LLY's; no LLY-specific catalyst.
+- copper_uranium: flat | Copper at a high but no named supply shock; uranium news is not one-sided.
+Open storylines:
+- [escalating] Iran war / Hormuz and oil: WTI 93, Brent 98, crude headlines above $100; US struck five Iranian tankers. Exit XOM on a ceasefire, Hormuz reopening or WTI below about 83.
+- [open] Trump vs oil prices: Trump says prices fall only after midterms (lower near-term SPR/windfall risk); still exit XOM on a windfall tax, export limit or SPR release.
+- [open] Venezuela oil opening: Chevron $7B plan to double Venezuela output; watch for XOM deal terms.
+- [escalating] Rates and Fed hike risk: 10-year 4.81%, one-year high; Warsh says 'work to do', September meeting hike debated. Weighs on gold and long-duration stocks.
+- [fading] Gold vs yields: Gold 4439, -1% in 5 days; re-enter NEM only on a named catalyst (e.g. a Fed pause or safe-haven spike).
+- [open] NVDA deals and regulators: Hugging Face $12.9B purchase; regulators investigating NVDA-Groq licensing deal (NYT 09-09). Long only on clear guidance or export-rule catalyst.
+- [fading] Unnamed FDA diabetes approval: Still unconfirmed as LLY's; LLY -8.8% in 20 days with no named cause.
+- [open] Copper at highs: Copper 6.74 at 252-day high, LME metals off records; re-enter FCX only on a named supply outage.
+- [open] US-Canada trade war and uranium: US banning Canadian motorcycle, dairy, alcohol imports; watch whether tariffs reach uranium (CCJ).
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Hold XOM (bought 2026-08-31, 10-day hold, exit about 2026-09-15) unless an Iran ceasefire or Hormuz reopening, a windfall tax, export limit or SPR release, or WTI below about 83 appears; then go flat. Past about 2026-09-15 re-decide XOM fresh on a catalyst. Keep the other four flat unless a named catalyst appears: LLY-specific approval, NVDA guidance or export-rule news, a copper supply outage, or a Fed pause for gold.

@@ -1,0 +1,780 @@
+{
+ "decision_day": "2026-07-23",
+ "weekday": "Thursday",
+ "information_cutoff": "closes dated before 2026-07-23; Massive news published before 2026-07-23 13:30 UTC",
+ "account": {
+  "capital_usd": 1000,
+  "max_long_positions": 3,
+  "round_trip_cost_pct_approx": 0.3,
+  "whole_shares": true
+ },
+ "macro": {
+  "^VIX": {
+   "last_date": "2026-07-22",
+   "last": 16.64,
+   "ret_1d_pct": -2.4,
+   "ret_5d_pct": 6.19,
+   "ret_20d_pct": -14.62,
+   "ret_60d_pct": -7.66,
+   "vol_20d_daily_pct": 6.0,
+   "above_200d_avg": false,
+   "from_252d_high_pct": -46.4
+  }
+ },
+ "families": {
+  "oil_gas": {
+   "label": "Oil and gas producers",
+   "drivers": {
+    "WTI crude oil": {
+     "last_date": "2026-07-22",
+     "last": 86.83,
+     "ret_1d_pct": 2.26,
+     "ret_5d_pct": 9.08,
+     "ret_20d_pct": 18.6,
+     "ret_60d_pct": -8.02,
+     "vol_20d_daily_pct": 3.01,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -23.1
+    },
+    "Brent crude oil": {
+     "last_date": "2026-07-22",
+     "last": 94.07,
+     "ret_1d_pct": 3.36,
+     "ret_5d_pct": 10.74,
+     "ret_20d_pct": 22.04,
+     "ret_60d_pct": -10.69,
+     "vol_20d_daily_pct": 3.17,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -20.5
+    },
+    "Natural gas": {
+     "last_date": "2026-07-22",
+     "last": 2.925,
+     "ret_1d_pct": 2.09,
+     "ret_5d_pct": 0.03,
+     "ret_20d_pct": -7.05,
+     "ret_60d_pct": 15.93,
+     "vol_20d_daily_pct": 2.37,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -60.8
+    }
+   },
+   "names": {
+    "XOM": {
+     "last_date": "2026-07-22",
+     "last": 154.45,
+     "ret_1d_pct": 1.81,
+     "ret_5d_pct": 6.88,
+     "ret_20d_pct": 10.53,
+     "ret_60d_pct": 3.72,
+     "vol_20d_daily_pct": 1.6,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.9,
+     "is_leader": true
+    },
+    "CVX": {
+     "last_date": "2026-07-22",
+     "last": 192.98,
+     "ret_1d_pct": 1.0,
+     "ret_5d_pct": 6.27,
+     "ret_20d_pct": 9.66,
+     "ret_60d_pct": 4.2,
+     "vol_20d_daily_pct": 1.56,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -8.6,
+     "is_leader": false
+    },
+    "COP": {
+     "last_date": "2026-07-22",
+     "last": 118.79,
+     "ret_1d_pct": 1.1,
+     "ret_5d_pct": 6.58,
+     "ret_20d_pct": 8.02,
+     "ret_60d_pct": -2.44,
+     "vol_20d_daily_pct": 1.82,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.2,
+     "is_leader": false
+    },
+    "OXY": {
+     "last_date": "2026-07-22",
+     "last": 57.5,
+     "ret_1d_pct": 1.77,
+     "ret_5d_pct": 6.94,
+     "ret_20d_pct": 10.09,
+     "ret_60d_pct": 0.67,
+     "vol_20d_daily_pct": 2.24,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -13.2,
+     "is_leader": false
+    }
+   },
+   "leader": "XOM"
+  },
+  "gold_miners": {
+   "label": "Gold miners",
+   "drivers": {
+    "Gold": {
+     "last_date": "2026-07-22",
+     "last": 4151.9,
+     "ret_1d_pct": 1.85,
+     "ret_5d_pct": 2.47,
+     "ret_20d_pct": 0.06,
+     "ret_60d_pct": -12.42,
+     "vol_20d_daily_pct": 1.46,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -21.9
+    },
+    "Silver": {
+     "last_date": "2026-07-22",
+     "last": 60.019,
+     "ret_1d_pct": 2.01,
+     "ret_5d_pct": 5.09,
+     "ret_20d_pct": -3.23,
+     "ret_60d_pct": -21.42,
+     "vol_20d_daily_pct": 2.69,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -47.8
+    },
+    "US 10-year yield": {
+     "last_date": "2026-07-22",
+     "last": 4.657,
+     "ret_1d_pct": 0.63,
+     "ret_5d_pct": 2.46,
+     "ret_20d_pct": 3.65,
+     "ret_60d_pct": 8.05,
+     "vol_20d_daily_pct": 0.84,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.2
+    },
+    "US dollar index": {
+     "last_date": "2026-07-22",
+     "last": 101.14,
+     "ret_1d_pct": -0.04,
+     "ret_5d_pct": 0.64,
+     "ret_20d_pct": -0.27,
+     "ret_60d_pct": 2.67,
+     "vol_20d_daily_pct": 0.23,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -0.5
+    },
+    "TIPS ETF (real rates)": {
+     "last_date": "2026-07-22",
+     "last": 107.77,
+     "ret_1d_pct": -0.1,
+     "ret_5d_pct": -0.28,
+     "ret_20d_pct": -1.04,
+     "ret_60d_pct": -3.6,
+     "vol_20d_daily_pct": 0.32,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -3.9
+    }
+   },
+   "names": {
+    "NEM": {
+     "last_date": "2026-07-22",
+     "last": 95.75,
+     "ret_1d_pct": 3.52,
+     "ret_5d_pct": 0.57,
+     "ret_20d_pct": -2.14,
+     "ret_60d_pct": -20.67,
+     "vol_20d_daily_pct": 2.39,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -27.4,
+     "is_leader": true
+    },
+    "AEM": {
+     "last_date": "2026-07-22",
+     "last": 147.05,
+     "ret_1d_pct": 3.83,
+     "ret_5d_pct": 3.39,
+     "ret_20d_pct": -8.19,
+     "ret_60d_pct": -26.56,
+     "vol_20d_daily_pct": 2.31,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -41.7,
+     "is_leader": false
+    },
+    "KGC": {
+     "last_date": "2026-07-22",
+     "last": 24.24,
+     "ret_1d_pct": 3.55,
+     "ret_5d_pct": 2.45,
+     "ret_20d_pct": -3.08,
+     "ret_60d_pct": -26.08,
+     "vol_20d_daily_pct": 2.85,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -36.3,
+     "is_leader": false
+    },
+    "WPM": {
+     "last_date": "2026-07-22",
+     "last": 111.36,
+     "ret_1d_pct": 1.27,
+     "ret_5d_pct": 2.61,
+     "ret_20d_pct": -4.38,
+     "ret_60d_pct": -20.14,
+     "vol_20d_daily_pct": 2.49,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -32.8,
+     "is_leader": false
+    }
+   },
+   "leader": "NEM"
+  },
+  "chips": {
+   "label": "Chips",
+   "drivers": {
+    "Semiconductor ETF": {
+     "last_date": "2026-07-22",
+     "last": 586.91,
+     "ret_1d_pct": 0.48,
+     "ret_5d_pct": -0.65,
+     "ret_20d_pct": -5.65,
+     "ret_60d_pct": 15.89,
+     "vol_20d_daily_pct": 3.1,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -12.3
+    }
+   },
+   "names": {
+    "NVDA": {
+     "last_date": "2026-07-22",
+     "last": 212.06,
+     "ret_1d_pct": 2.3,
+     "ret_5d_pct": -0.21,
+     "ret_20d_pct": 6.01,
+     "ret_60d_pct": 1.82,
+     "vol_20d_daily_pct": 2.18,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -10.0,
+     "is_leader": true
+    },
+    "AVGO": {
+     "last_date": "2026-07-22",
+     "last": 396.81,
+     "ret_1d_pct": 2.67,
+     "ret_5d_pct": 0.64,
+     "ret_20d_pct": 4.38,
+     "ret_60d_pct": -6.14,
+     "vol_20d_daily_pct": 2.64,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -17.6,
+     "is_leader": false
+    },
+    "AMD": {
+     "last_date": "2026-07-22",
+     "last": 552.33,
+     "ret_1d_pct": 1.45,
+     "ret_5d_pct": 4.38,
+     "ret_20d_pct": 6.25,
+     "ret_60d_pct": 58.8,
+     "vol_20d_daily_pct": 4.48,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.9,
+     "is_leader": false
+    },
+    "TSM": {
+     "last_date": "2026-07-22",
+     "last": 421.21,
+     "ret_1d_pct": -0.8,
+     "ret_5d_pct": 0.41,
+     "ret_20d_pct": -3.48,
+     "ret_60d_pct": 4.66,
+     "vol_20d_daily_pct": 3.15,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -11.8,
+     "is_leader": false
+    }
+   },
+   "leader": "NVDA"
+  },
+  "pharma": {
+   "label": "Pharma",
+   "drivers": {
+    "Health care ETF": {
+     "last_date": "2026-07-22",
+     "last": 159.43,
+     "ret_1d_pct": -0.51,
+     "ret_5d_pct": 0.72,
+     "ret_20d_pct": 4.76,
+     "ret_60d_pct": 10.58,
+     "vol_20d_daily_pct": 1.35,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.0
+    }
+   },
+   "names": {
+    "LLY": {
+     "last_date": "2026-07-22",
+     "last": 1163.01,
+     "ret_1d_pct": -1.05,
+     "ret_5d_pct": 0.55,
+     "ret_20d_pct": 5.05,
+     "ret_60d_pct": 31.57,
+     "vol_20d_daily_pct": 2.3,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -5.9,
+     "is_leader": true
+    },
+    "JNJ": {
+     "last_date": "2026-07-22",
+     "last": 255.63,
+     "ret_1d_pct": 2.0,
+     "ret_5d_pct": 3.49,
+     "ret_20d_pct": 6.92,
+     "ret_60d_pct": 12.36,
+     "vol_20d_daily_pct": 1.89,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -4.3,
+     "is_leader": false
+    },
+    "ABBV": {
+     "last_date": "2026-07-22",
+     "last": 253.3,
+     "ret_1d_pct": -1.09,
+     "ret_5d_pct": 3.76,
+     "ret_20d_pct": 7.9,
+     "ret_60d_pct": 27.47,
+     "vol_20d_daily_pct": 1.93,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.0,
+     "is_leader": false
+    },
+    "MRK": {
+     "last_date": "2026-07-22",
+     "last": 127.47,
+     "ret_1d_pct": 0.96,
+     "ret_5d_pct": 3.12,
+     "ret_20d_pct": 6.58,
+     "ret_60d_pct": 13.91,
+     "vol_20d_daily_pct": 2.07,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -1.6,
+     "is_leader": false
+    }
+   },
+   "leader": "LLY"
+  },
+  "copper_uranium": {
+   "label": "Copper and uranium",
+   "drivers": {
+    "Copper": {
+     "last_date": "2026-07-22",
+     "last": 6.451,
+     "ret_1d_pct": -0.92,
+     "ret_5d_pct": 2.5,
+     "ret_20d_pct": 5.05,
+     "ret_60d_pct": 7.1,
+     "vol_20d_daily_pct": 1.57,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -3.0
+    },
+    "Sprott uranium trust (CAD)": {
+     "last_date": "2026-07-22",
+     "last": 26.35,
+     "ret_1d_pct": 0.96,
+     "ret_5d_pct": -1.75,
+     "ret_20d_pct": -0.34,
+     "ret_60d_pct": -6.99,
+     "vol_20d_daily_pct": 1.86,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -18.7
+    },
+    "Uranium ETF": {
+     "last_date": "2026-07-22",
+     "last": 40.97,
+     "ret_1d_pct": 1.79,
+     "ret_5d_pct": 0.17,
+     "ret_20d_pct": -10.11,
+     "ret_60d_pct": -25.93,
+     "vol_20d_daily_pct": 2.34,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -33.7
+    }
+   },
+   "names": {
+    "FCX": {
+     "last_date": "2026-07-22",
+     "last": 65.0,
+     "ret_1d_pct": 3.9,
+     "ret_5d_pct": 6.61,
+     "ret_20d_pct": 0.93,
+     "ret_60d_pct": 6.47,
+     "vol_20d_daily_pct": 2.99,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.4,
+     "is_leader": true
+    },
+    "CCJ": {
+     "last_date": "2026-07-22",
+     "last": 90.37,
+     "ret_1d_pct": 1.91,
+     "ret_5d_pct": -0.67,
+     "ret_20d_pct": -17.01,
+     "ret_60d_pct": -26.02,
+     "vol_20d_daily_pct": 2.4,
+     "above_200d_avg": false,
+     "from_252d_high_pct": -32.6,
+     "is_leader": false
+    },
+    "TECK": {
+     "last_date": "2026-07-22",
+     "last": 57.21,
+     "ret_1d_pct": 0.67,
+     "ret_5d_pct": -1.28,
+     "ret_20d_pct": -4.04,
+     "ret_60d_pct": -4.92,
+     "vol_20d_daily_pct": 2.83,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -18.9,
+     "is_leader": false
+    },
+    "SCCO": {
+     "last_date": "2026-07-22",
+     "last": 191.25,
+     "ret_1d_pct": 3.97,
+     "ret_5d_pct": 7.68,
+     "ret_20d_pct": 9.47,
+     "ret_60d_pct": 9.42,
+     "vol_20d_daily_pct": 3.0,
+     "above_200d_avg": true,
+     "from_252d_high_pct": -9.8,
+     "is_leader": false
+    }
+   },
+   "leader": "FCX"
+  }
+ },
+ "calendar": {
+  "month": "July",
+  "earnings_season_window": true,
+  "known_weekly_events": [
+   "US crude inventories (Wednesday)",
+   "US natural gas storage (Thursday)"
+  ],
+  "first_friday_jobs_report_in_next_20_trading_days": true
+ },
+ "headlines": [
+  {
+   "title": "The Overlooked Infrastructure Play Quietly Winning the AI Boom",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 13:23",
+   "related": "TSM,NVDA,AMD,QCOM,AVGO",
+   "summary": "Taiwan Semiconductor Manufacturing (TSMC) is positioned as a major beneficiary of the AI infrastructure boom, with Q2 2026 revenue up 34% YoY and raised full-ye",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Want Exposure to the Fast-Growing Drone Market? Buy These 2 Stocks.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 13:05",
+   "related": "RCAT,KTOS,NOC",
+   "summary": "The global drone market is projected to double from $69 billion to $148 billion by 2036, driven by geopolitical conflicts and U.S. military investments. The Pen",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Tenable Joins Cisco\u2019s SolutionsPlus Program as an Exposure Management Partner for Vulnerability Management Customers",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "TENB,CSCO",
+   "summary": "Tenable has joined Cisco's SolutionsPlus program to provide exposure management capabilities to Cisco vulnerability management customers. The partnership enable",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "SINTX Technologies Engages Veteran MedTech Executive Chris Lyons and Southern Metrics to Establish Strategic Opportunity Management Program",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "SINT",
+   "summary": "SINTX Technologies has engaged Southern Metrics Consulting, led by veteran MedTech executive Chris Lyons (who serves on SINTX's Board since April 2025), to esta",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Multiverse Computing Unveils Breakthrough: All CompactifAI Models Now Run on Intel Xeon 6 Processors",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "INTC",
+   "summary": "Multiverse Computing announced its CompactifAI-compressed version of Llama 3.3 70B now runs on Intel Xeon 6 processors, delivering 93.6% improvement in output t",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "project44 Launches Conversational AI Analyst to Turn Real-time Supply Chain Data into Faster, More Confident Decisions",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "F,FpB,FpC,FpD",
+   "summary": "project44 announced Mo, a conversational AI supply chain analyst that reasons across customer data and business rules to provide faster, more accurate supply ch",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "Mariner Logistics Names Justin Turner Chief Executive Officer",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "UPS",
+   "summary": "Mariner Logistics, a Dallas-based asset-backed 4PL, appointed Justin Turner as CEO effective immediately. Turner brings nearly two decades of experience from co",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "GCM Grosvenor Raises $1.2 Billion Across Inaugural Credit Secondaries Fund and Related Strategies",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 13:00",
+   "related": "GCMG",
+   "summary": "GCM Grosvenor announced the successful final close of its inaugural Credit Secondaries Fund, raising $1.2 billion in commitments. The fund leverages the firm's ",
+   "theme": "oil_gas"
+  },
+  {
+   "title": "1 Brilliant Dividend ETF to Build Long-Term Passive Income",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 12:30",
+   "related": "FDVV,NVDA,AAPL,MSFT,KO,PG",
+   "summary": "The Fidelity High Dividend ETF (FDVV) is highlighted as an excellent choice for building passive income, offering a 2.6% dividend yield and 13.3% annualized ret",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Oracle's Stock Crash Has Cost Larry Ellison $213 Billion in 10 Months. Should Investors Buy the Dip?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 12:20",
+   "related": "ORCL,ORCLpD,AMZN,MSFT,GOOG,GOOGL",
+   "summary": "Oracle's stock has plummeted over 50% from its peak as investors question the company's aggressive AI data center spending strategy. Despite strong cloud infras",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Which Is the Better Healthcare ETF: First Trust's High-Conviction FBT or Vanguard's Low-Cost VHT?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 12:15",
+   "related": "FBT,VHT,LLY,JNJ,ABBV",
+   "summary": "First Trust NYSE Arca Biotechnology Index Fund (FBT) offers concentrated exposure to 30 biotech stocks with 51.6% 1-year returns but higher volatility and a 0.5",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "If You'd Invested $10,000 in QQQ 10 Years Ago, Here's How Much You'd Have Today",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 12:15",
+   "related": "QQQ,NVDA,AAPL,MSFT",
+   "summary": "The Invesco QQQ Trust ETF has delivered exceptional returns over the past decade, generating a 558% total return that turned a $10,000 investment into nearly $6",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Terra Innovatum Initiates NRC Preapplication Readiness Review to Support Solo\u2122 Construction Permit Application",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 12:00",
+   "related": "NKLR",
+   "summary": "Terra Innovatum has requested a voluntary preapplication readiness review from the U.S. Nuclear Regulatory Commission (NRC) for its SOLO\u2122 Micro-Modular Reactor ",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "Syntec Optics (Nasdaq: OPTX) Included in Russell 3000\u00ae Index",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 11:44",
+   "related": "OPTX,OPTXW",
+   "summary": "Syntec Optics Holdings, Inc. (NASDAQ: OPTX), a high-precision optics and photonics manufacturer based in Rochester, New York, has been included in the Russell 3",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "3D Systems Announces Date of Second Quarter 2026 Financial Results",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 11:40",
+   "related": "DDD",
+   "summary": "3D Systems (NYSE: DDD) announced it will release its second quarter 2026 financial results on August 3, 2026, followed by a conference call and webcast on Augus",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "VFH vs. EUFN: Should You Cash In on this 4%-Yielding European Financials ETF?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:34",
+   "related": "VFH,EUFN,AMJB,JPM,JPMpC,JPMpD",
+   "summary": "The Vanguard Financials ETF (VFH) offers a significantly lower expense ratio of 0.09% with broad U.S. financial exposure, while the iShares MSCI Europe Financia",
+   "theme": "gold_miners"
+  },
+  {
+   "title": "FREELANDER Confirms September Abu Dhabi Brand Launch at Goodwood Festival of Speed, Marking the Next Step in Global Expansion",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 11:34",
+   "related": "CRAUY",
+   "summary": "British premium brand FREELANDER announced the UAE as its first international market during the 2026 Goodwood Festival of Speed, with an International Brand Lau",
+   "theme": "chips"
+  },
+  {
+   "title": "OptimizeRx Appoints Veteran Point of Care Marketing Leader Sarah Bast as Chief Marketing Officer",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 11:30",
+   "related": "OPRX",
+   "summary": "OptimizeRx Corp. announced the appointment of Sarah Bast as Chief Marketing Officer. Bast brings over 20 years of pharmaceutical marketing experience from roles",
+   "theme": "chips"
+  },
+  {
+   "title": "In-Mold Electronics (IME) Market Size to Hit $3,235.5 Million by 2035 | SNS Insider",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 11:30",
+   "related": "DD,TEL",
+   "summary": "The global In-Mold Electronics (IME) market was valued at USD 285.0 million in 2025 and is projected to reach USD 3,235.5 million by 2035, growing at a CAGR of ",
+   "theme": "chips"
+  },
+  {
+   "title": "Is Apple Stock a Buy Right Now?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:30",
+   "related": "AAPL",
+   "summary": "Apple shares have climbed 22% in 2026 and hit record highs, driven by strong financial performance, robust iPhone 17 demand, and a measured approach to AI spend",
+   "theme": "chips"
+  },
+  {
+   "title": "You Can Do Better Than Coca-Cola Stock. Buy This High-Yield Dividend Stock Instead.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:25",
+   "related": "KO,O",
+   "summary": "While Coca-Cola is a reliable dividend stock with 64 consecutive annual dividend hikes, its current valuation of 25 times 2026 earnings is too expensive. Realty",
+   "theme": "chips"
+  },
+  {
+   "title": "Why Bloom Energy Stock Soared 248% in the First Half of 2026",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:18",
+   "related": "BE,ORCL,ORCLpD,BAM",
+   "summary": "Bloom Energy stock surged 248% in H1 2026, driven by major contracts with Oracle (2.8 GW partnership), a $25 billion expansion with Brookfield Asset Management,",
+   "theme": "chips"
+  },
+  {
+   "title": "Huge News for Taiwan Semiconductor Stock Investors",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:15",
+   "related": "TSM,NVDA,AVGO",
+   "summary": "Taiwan Semiconductor Manufacturing (TSMC) announced a $100 billion increase in its U.S. investment, signaling confidence in the AI semiconductor build-out and d",
+   "theme": "chips"
+  },
+  {
+   "title": "CrowdStrike Just Became Wall Street's Newest Stock-Split Stock, but Something More \"Magnificent\" May Be Next",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 11:06",
+   "related": "CRWD,META",
+   "summary": "CrowdStrike completed a 4-for-1 stock split in July 2026, driven by strong AI-powered cybersecurity performance and high customer retention. The article suggest",
+   "theme": "chips"
+  },
+  {
+   "title": "Bread Financial Provides Performance Update for June 2026",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:55",
+   "related": "BFH,BFHpA,BFHpB",
+   "summary": "Bread Financial Holdings, Inc. (NYSE: BFH) provided a performance update for Q2 2026, reporting a net principal loss rate of 6.98% for the three-month period an",
+   "theme": "pharma"
+  },
+  {
+   "title": "Roper Technologies announces second quarter financial results",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:55",
+   "related": "ROP",
+   "summary": "Roper Technologies reported Q2 2026 revenue of $2.11 billion with 9% total growth (5% organic) and adjusted DEPS of $5.38, up 10%. The company repurchased 9.0 m",
+   "theme": "pharma"
+  },
+  {
+   "title": "Bread Financial Reports Second Quarter 2026 Results",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:50",
+   "related": "BFH,BFHpA,BFHpB",
+   "summary": "Bread Financial Holdings, Inc. (NYSE: BFH) announced its second quarter 2026 financial results on July 23, 2026. The company's leadership will host a conference",
+   "theme": "pharma"
+  },
+  {
+   "title": "Pyridine & Pyridine Derivatives Market Size to Reach USD 1,255.74 Million by 2035 on Rising Agrochemical and Pharma Demand | SNS Insider",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:47",
+   "related": "LZAGY,MKKGY,TMO",
+   "summary": "The global Pyridine & Pyridine Derivatives Market is projected to grow from USD 812.04 million in 2025 to USD 1,255.74 million by 2035, at a CAGR of 4.97%. Grow",
+   "theme": "pharma"
+  },
+  {
+   "title": "SPX Technologies Announces Acquisition of Neptronic",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:45",
+   "related": "SPXC",
+   "summary": "SPX Technologies completed the acquisition of Neptronic Inc. for approximately US$430 million (CA$605 million). Neptronic, a Montreal-based HVAC solutions manuf",
+   "theme": "pharma"
+  },
+  {
+   "title": "Bread Financial Declares Dividends on Preferred and Common Stock",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:45",
+   "related": "BFH,BFHpA,BFHpB",
+   "summary": "Bread Financial Holdings, Inc. announced quarterly dividend declarations for Q3 2026 across its preferred stock Series A and B, and common stock. Series A prefe",
+   "theme": "pharma"
+  },
+  {
+   "title": "Form 8.5 (EPT/RI)-Gamma Communications Plc",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:40",
+   "related": "IVTJY",
+   "summary": "Investec Bank plc, acting as Joint Broker to Gamma Communications Plc, disclosed dealings in ordinary shares of Gamma Communications on 22nd July 2026. The exem",
+   "theme": "pharma"
+  },
+  {
+   "title": "Form 8.5 (EPT/RI)-Gooch & Housego plc",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:37",
+   "related": "IVTJY",
+   "summary": "Investec Bank plc, acting as Advisor and Broker to Gooch & Housego plc, disclosed dealings in ordinary shares on 22nd July 2026. The bank purchased 52,739 share",
+   "theme": "pharma"
+  },
+  {
+   "title": "Ducommun Incorporated Announces Second Quarter Conference Call",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:00",
+   "related": "DCO",
+   "summary": "Ducommun Incorporated announced it will release its 2026 second quarter financial results on August 6, 2026, followed by a conference call at 10:00 a.m. PT with",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Viomi Announces Receipt of Minimum Bid Price Notice from Nasdaq",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:00",
+   "related": "VIOT",
+   "summary": "Viomi Technology (NASDAQ: VIOT) announced it received a notification from Nasdaq on July 22, 2026, indicating that its American Depositary Shares have fallen be",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Teladoc Health introduces a virtual care practice built around the person, shaping a new era of connected care",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 10:00",
+   "related": "TDOC",
+   "summary": "Teladoc Health announced Teladoc One, a new virtual care model that addresses fragmented healthcare by delivering personalized, coordinated care across multiple",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Should You Invest in the S&P 500 Right Now or Wait? History Offers a Clear Answer.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 09:26",
+   "related": "VOO,SPY",
+   "summary": "Despite the S&P 500 trading at 20.4x expected earnings (above its 30-year average of 17.2x), history suggests investors should invest lump sums rather than wait",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Is IonQ Stock a No-Brainer Buy? Here's What History Says.",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 09:26",
+   "related": "IONQ,IONQ.WS,GOOG,GOOGL,GOOGM,GOOGN",
+   "summary": "IonQ's trapped-ion quantum computing technology offers competitive advantages, but the company faces significant challenges as a cash-burning startup competing ",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "How Much Could $5,000 Invested in SK Hynix Be Worth in 5 Years?",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 09:20",
+   "related": "SKHY,MU",
+   "summary": "SK Hynix, the market leader in high-bandwidth memory (HBM) with 58% market share, could see a $5,000 investment grow to $10,000+ over five years due to strong A",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Billionaire Ken Griffin of Citadel Dropped a Can't-Miss, 2-Word Reality Check on the AI Revolution",
+   "source": "The Motley Fool",
+   "published_utc": "2026-07-23 09:06",
+   "related": "NVDA,GOOG,GOOGL,GOOGM,GOOGN,MSFT",
+   "summary": "Citadel founder Ken Griffin called AI a 'hype' bubble, stating that $500 billion in AI investments are being driven by exaggeration rather than proven value. Wh",
+   "theme": "copper_uranium"
+  },
+  {
+   "title": "Independent Bank Corporation Reports 2026 Second Quarter Earnings of $0.90 per Diluted Share",
+   "source": "GlobeNewswire Inc.",
+   "published_utc": "2026-07-23 09:00",
+   "related": "IBCP",
+   "summary": "Independent Bank Corporation (NASDAQ: IBCP) reported second quarter 2026 net income of $18.8 million ($0.90 per diluted share), up from $16.9 million ($0.81 per",
+   "theme": "copper_uranium"
+  }
+ ]
+}

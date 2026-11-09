@@ -1,0 +1,41 @@
+{
+  "decision_day": "2026-08-05",
+  "market_view": "Calm regime: VIX 16.5, well below its 200-day average; S&P and Dow at records on a broad earnings beat. 10y yield 4.63% stays near its 52-week high; the dollar is slightly softer.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.45, "catalyst": "none; 'Oil prices mixed as investors ponder Strait of Hormuz reopening hopes' (Reuters) and 'Trump blasts Exxon, Chevron for making too much money, demands lower gasoline prices' (Reuters) both point down", "reasoning": "WTI fell 5.7% yesterday on Hormuz reopening hopes. That is de-escalation, the opposite of the supply-shock setup behind past wins. Political pressure on Exxon adds downside risk. No long."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold rose 1.5% and NEM 6.8% in five days, but those moves are already priced. There is no NEM headline, and yields remain near their highs. A jobs report on Friday adds variance, not direction."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none; 'Lisa Su brushes off Musk's Nvidia commitment as AMD stock sinks after earnings' (CNBC) is mixed and about AMD", "reasoning": "The semiconductor ETF jumped 5.6% yesterday, and AMD is sliding after earnings. NVDA has only product blog posts, which are not a checkable catalyst. I will not guess the direction after a rebound."},
+    "pharma": {"call": "long", "horizon_days": 10, "confidence": 0.55, "catalyst": "'Lilly reports second-quarter 2026 financial results, raises full-year guidance, and highlights continued growth and pipeline progress' (Eli Lilly, 2026-08-05 07:00 GMT). The release came before the US open, and the record's prices close on 2026-08-04, so the guidance raise is not in them.", "reasoning": "A guidance raise is a named catalyst. LLY fell 8.6% in five days, mostly in the sector-wide drop, with no LLY-specific bad news. The retatrutide Phase 3 wins still stand. This renews the long that ends around 2026-08-06."},
+    "copper_uranium": {"call": "long", "horizon_days": 10, "confidence": 0.53, "catalyst": "CNBC (2026-07-31): storms and a global supply squeeze are sending copper prices soaring. The squeeze is still active: copper is up 4.7% in five days and sits 0.5% below its 52-week high, and no headline says supply is easing.", "reasoning": "This continues the FCX long opened 2026-07-31. A supply squeeze tends to last weeks, not days. I hold until a resolution headline or a tariff or demand shock appears. FCX volatility is high (3.25%)."}
+  },
+  "would_change_my_mind": "A Lilly guidance raise that the market reads as already priced (a gap-down), or news that copper mine outages are resolved, would make me flat. A fresh Hormuz escalation or ship-attack headline would reopen oil.",
+  "handoff": {
+    "run_id": "opus2-20260805-r10",
+    "written_at": "2026-08-05T12:00:00Z",
+    "decision_day": "2026-08-05",
+    "data_cutoff": "2026-08-05",
+    "what_changed": "Lilly reported Q2 and raised full-year guidance before the open on 2026-08-05, so I renewed the LLY long. Crude fell 5.7% on Hormuz reopening hopes, and Trump blasted Exxon and Chevron for making too much money. Copper kept rising to near its 52-week high, and chips jumped 5.6% while AMD sank after earnings.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Hormuz reopening hopes (de-escalation) and political pressure on Exxon; no supply-shock headline."},
+      "gold_miners": {"position": "flat", "why": "No NEM catalyst; the bounce is already priced and yields are near their highs."},
+      "chips": {"position": "flat", "why": "A one-day rebound and AMD sliding after earnings; no NVDA-specific catalyst."},
+      "pharma": {"position": "long LLY since 2026-08-05, 10 days (renewed from 2026-07-23)", "why": "The Q2 report raised full-year guidance; the earlier drop was sector-wide."},
+      "copper_uranium": {"position": "long FCX since 2026-07-31, 10 days", "why": "The copper supply squeeze is continuing, with copper near its 52-week high and no headline that it is easing."}
+    },
+    "open_storylines": [
+      {"name": "Hormuz / Iran war", "status": "fading", "note": "Reopening hopes pushed WTI down 5.7%. Re-enter XOM only on a fresh named supply-shock headline.", "first_seen": "2026-07-07"},
+      {"name": "Oil price intervention", "status": "escalating", "note": "Trump says Exxon and Chevron are making too much money and demands lower gasoline prices; this is downside policy risk for oil names.", "first_seen": "2026-07-31"},
+      {"name": "Yields and inflation fear", "status": "open", "note": "The 10y yield is 4.63%, near its 52-week high. The jobs report is due Friday 2026-08-07.", "first_seen": "2026-07-31"},
+      {"name": "Tariffs and trade", "status": "open", "note": "Watch copper demand and pharma tariff policy.", "first_seen": "2026-07-31"},
+      {"name": "Chip rout and rebound", "status": "open", "note": "The semiconductor ETF rose 5.6% on 08-04 and AMD sank after earnings. Do not guess a rebound; wait for an NVDA-specific catalyst (NVDA earnings in late August).", "first_seen": "2026-07-30"},
+      {"name": "Lilly obesity pipeline", "status": "open", "note": "The Q2 report raised guidance. Watch the market reaction, pricing, compounding and sector-wide moves.", "first_seen": "2026-07-23"},
+      {"name": "Copper supply squeeze", "status": "escalating", "note": "Copper is 0.5% below its 52-week high. Watch for outages being resolved or a demand or tariff hit. The FCX long ends around 2026-08-14.", "first_seen": "2026-07-31"},
+      {"name": "Uranium / Cameco", "status": "open", "note": "Producers gave mid-year updates and the uranium ETF rose 9% in five days. This matters only if CCJ becomes the leader.", "first_seen": "2026-07-31"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, check the LLY long (renewed 2026-08-05, ends around 2026-08-19) for the market reaction to the guidance raise and for pricing or compounding news. Check the FCX long (ends around 2026-08-14) for headlines that the squeeze is easing or for tariff or demand shocks. Check oil for a renewed supply-shock headline and for policy action against oil companies. Then read the record for a named catalyst in each family.",
+    "lessons": [
+      {"rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline (sanctions, ship attacks, attacks deepening disruption, Iran threats) win over 10 days.", "cases": 4, "evidence": "XOM 2026-07-07 net +6.82% (basket +8.64%); XOM 2026-07-10 net +12.76% (basket +10.51%); XOM 2026-07-15 net +8.22% (basket +6.06%); XOM 2026-07-20 net +4.27% (basket +2.47%). All four trades come from one Iran episode, and with fewer than 5 cases the lesson does not change calls."}
+    ]
+  }
+}

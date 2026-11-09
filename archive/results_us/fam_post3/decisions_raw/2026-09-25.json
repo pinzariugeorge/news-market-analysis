@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-09-25",
+  "market_view": "Calm VIX near 15.7 but 10-year yield at a 252-day high (5.16%) and a hawkish Fed tone; AI/chip rally continues, oil is volatile, and gold, uranium and miners are weak. No clear one-sided catalyst in the news.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none (XOM/Vietnam BSR crude supply framework agreement, Yahoo, is routine commercial news; other headlines are CVX dividend and analyst pieces)", "reasoning": "WTI swings (+2.7% yesterday, -7% over 5 days) are priced in. The BSR framework agreement is small and not a supply shock. No XOM-specific one-sided event."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none (Newmont Q3 results call announcement is only a scheduling notice; Kinross guidance cut is a peer negative)", "reasoning": "Gold below its 200-day average, 10-year yield at a high, dollar firm, Fed hawkish. KGC lowered production guidance, a sector negative. NEM earnings date is not a one-sided setup."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (Elon Musk Makes Massive Nvidia Move at SpaceX, Yahoo, has no figures; Vertiv cooling supplier news is indirect)", "reasoning": "AI rally already in price: semis +7% in 5 days, AMD at a high. Headlines are vague or indirect for NVDA; no export or demand catalyst. Rate risk adds downside."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none (Novo long-acting obesity alliance and Nektar legal win versus Lilly, Yahoo, are not clear one-sided LLY events)", "reasoning": "LLY +2.7% yesterday. News is mixed: competitor Novo moves and a Nektar legal win over Lilly, details unknown. J&J trial data are not the leader. No LLY trial, approval or pricing event."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none (FCX pieces on copper tightness and growth projects, Yahoo, are generic analysis)", "reasoning": "Copper near highs but FCX -8.8% over 20 days with no guidance or supply headline. Uranium ETF weak. Generic FCX commentary is not a catalyst."}
+  },
+  "would_change_my_mind": "A one-sided leader-specific event: FCX guidance or Grasberg supply news, an NVDA export or demand shock, an LLY trial or approval, an XOM or oil supply shock, or NEM guidance on its Q3 results.",
+  "handoff": {
+    "run_id": "fp3-20260925-a",
+    "written_at": "2026-09-25T14:00:00Z",
+    "decision_day": "2026-09-25",
+    "data_cutoff": "2026-09-25",
+    "what_changed": "10-year yield rose to 5.16%, a high, with hawkish Fed signals pushing gold lower (NEM -1.8%, KGC -11.6% on lower production guidance). WTI rebounded 2.7% yesterday and Brent is 106.6. Chips extended gains (AMD at a high) while uranium weakened.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Oil moves are priced in; the XOM-BSR supply agreement is minor."},
+      "gold_miners": {"position": "flat", "why": "Gold below its 200-day average, yields at a high; no NEM-specific upside catalyst before its Q3 results."},
+      "chips": {"position": "flat", "why": "AI rally already in price; no NVDA-specific demand or export catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY trial, approval or pricing event; Nektar legal win and Novo alliance are unclear."},
+      "copper_uranium": {"position": "flat", "why": "No FCX guidance or supply news; generic copper commentary only."}
+    },
+    "open_storylines": [
+      {"name": "Iran war, Hormuz and oil", "status": "open", "note": "WTI 94.6, Brent 106.6, volatile (+2.7% yesterday, -7% over 5 days); watch XOM supply deals and any supply shock", "first_seen": "2026-09-22"},
+      {"name": "Rates risk", "status": "escalating", "note": "10-year 5.16% at a 252-day high; hawkish Fed signals; watch jobs report", "first_seen": "2026-09-22"},
+      {"name": "AI trade in chips", "status": "open", "note": "Semis +7% in 5 days, AMD at a high; Musk/SpaceX Nvidia buildout headline vague; watch NVDA demand or export news", "first_seen": "2026-09-22"},
+      {"name": "Gold miners and rates", "status": "open", "note": "Gold -7.6% in 20 days, below 200-day average; Kinross guidance cut; NEM Q3 results date announced, watch guidance", "first_seen": "2026-09-22"},
+      {"name": "Copper and uranium", "status": "open", "note": "Copper near highs; uranium ETF -15% in 20 days; watch FCX guidance or Grasberg supply news", "first_seen": "2026-09-22"},
+      {"name": "Pharma and Lilly GLP-1", "status": "open", "note": "Novo long-acting obesity alliance, Nektar legal win over Lilly (details unknown); watch trials, approvals and pricing", "first_seen": "2026-09-22"}
+    ],
+    "pending_orders": [],
+    "next_job": "Next decision day: read this handoff first, then the new record; all five families are flat; look for leader-specific one-sided catalysts (XOM or oil supply shock, NEM Q3 guidance, NVDA demand or export news, LLY trial, approval or pricing news, FCX guidance or supply news); stay flat otherwise."
+  }
+}

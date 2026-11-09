@@ -1,0 +1,40 @@
+{
+  "decision_day": "2026-07-28",
+  "market_view": "VIX 18.7 is moderate, not stress. Oil fell sharply on easing US-Iran tension (WTI -7.5%, Brent -8.7% on 07-27), a chip rout spread from Seoul, and the 10-year sits near its 1-year high at 4.64%, a headwind for gold and long-duration stocks.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.46, "catalyst": "none; the long's catalyst reversed: 'Oil Slides, European Gas Falls as US-Iran Tensions Ease' (dars.gov.et) and 'crude oil prices fall for the first time in a week' (AP News)", "reasoning": "Handoff exit rule triggered: the Iran supply shock is de-escalating and Brent fell 8.7% in a day. XOM long closed to flat. Q2 earnings in the window add variance only; no new one-sided catalyst."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold -10.6% over 60 days, 10-year yield near its 1-year high, dollar firm. NEM Q2 already reported. No headline gives a one-sided setup; the 5-day bounce is not a catalyst."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Headlines are negative ('SK Hynix Shares Tumble 10%', 'chip stocks get clobbered', CNBC); NVDA -5% on the day. No NVDA-specific catalyst; big tech earnings add variance. Do not guess a rebound."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Generic drug tariffs from 2028 do not hit LLY's branded franchise directly; LLY Q2 results in early August raise variance only. Retatrutide wins are priced after a 40% 60-day run."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none for FCX ('Cameco gets UBS upgrade', Yahoo Finance, concerns CCJ, not the leader)", "reasoning": "Copper steady near highs with no supply shock headline; tariff and EU-US deal effects unclear for copper. The uranium upgrade is indirect for FCX."}
+  },
+  "would_change_my_mind": "Renewed tanker attacks or Hormuz/Red Sea closure (oil); an LLY guidance raise at Q2; an export-control easing or strong NVDA-related capex guidance.",
+  "handoff": {
+    "run_id": "opus1-20260728-a",
+    "written_at": "2026-07-28T12:30:00Z",
+    "decision_day": "2026-07-28",
+    "data_cutoff": "2026-07-28",
+    "what_changed": "US-Iran tensions eased: WTI fell 7.5% to 82.6 and Brent 8.7% to 88.4 on 07-27, so the XOM exit rule fired and oil_gas is now flat. A chip rout spread from Seoul (SK Hynix -10%, NVDA -5%). New global tariffs drew criticism; generic drug tariffs planned from 2028; UBS upgraded Cameco.",
+    "families": {
+      "oil_gas": {"position": "flat (XOM long since 2026-07-07 closed 2026-07-28)", "why": "Iran supply shock de-escalating per 'US-Iran Tensions Ease' headline and an 8.7% Brent drop; catalyst gone."},
+      "gold_miners": {"position": "flat", "why": "Gold downtrend with yields near the 1-year high; NEM Q2 done; no catalyst."},
+      "chips": {"position": "flat", "why": "Sector rout with negative headlines and no NVDA-specific catalyst."},
+      "pharma": {"position": "flat", "why": "No LLY catalyst before Q2 results; 2028 generic tariffs not directly relevant."},
+      "copper_uranium": {"position": "flat", "why": "No FCX catalyst; Cameco upgrade is indirect for the leader."}
+    },
+    "open_storylines": [
+      {"name": "Iran war / Hormuz and Red Sea oil shock", "status": "fading", "note": "Tensions easing, oil down sharply 07-27. Re-enter XOM only on renewed tanker attacks or chokepoint closure with crude not yet repriced.", "first_seen": "2026-07-07"},
+      {"name": "Exxon Q2 earnings", "status": "open", "note": "Late July/early August; variance, not direction now that we are flat.", "first_seen": "2026-07-23"},
+      {"name": "Gold bear market and rising yields", "status": "open", "note": "10-year 4.64% near 1-year high; watch yields, dollar and the jobs report.", "first_seen": "2026-07-23"},
+      {"name": "Chip rout and AI competition", "status": "escalating", "note": "SK Hynix -10%, NVDA -5% on 07-27; AMD Helios competition. Watch NVDA news, export rules and big tech capex in earnings.", "first_seen": "2026-07-23"},
+      {"name": "US global tariffs", "status": "open", "note": "Trade partners reject forced-labor rationale; EU-US deal framed as stabilizing. Watch metals and energy carve-outs and retaliation.", "first_seen": "2026-07-23"},
+      {"name": "LLY retatrutide and Q2 earnings", "status": "open", "note": "Long only on a guidance raise or regulator filing news at Q2 results in early August.", "first_seen": "2026-07-23"},
+      {"name": "Generic drug tariffs from 2028", "status": "open", "note": "Two-year delay; little direct effect on LLY; watch for branded drug tariff news.", "first_seen": "2026-07-28"},
+      {"name": "Copper to aluminium substitution", "status": "open", "note": "FCX demand headwind if more automakers switch; no update.", "first_seen": "2026-07-23"},
+      {"name": "Uranium supply and policy", "status": "open", "note": "UBS upgraded Cameco on a strengthening uranium bull case; indirect for FCX.", "first_seen": "2026-07-23"},
+      {"name": "Inflation, Warsh Fed and Q2 earnings", "status": "open", "note": "Oil drop may ease inflation fear; earnings season raises variance, not a reason to be long.", "first_seen": "2026-07-23"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day, read this note; all five families are flat. Re-check each for a named catalyst: renewed Iran/Hormuz escalation for XOM, LLY Q2 guidance, NVDA or export-control news amid the chip rout, gold on yields and the jobs report, and any FCX supply or tariff news."
+  }
+}

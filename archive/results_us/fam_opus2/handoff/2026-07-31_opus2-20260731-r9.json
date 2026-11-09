@@ -1,0 +1,88 @@
+{
+ "run_id": "opus2-20260731-r9",
+ "written_at": "2026-07-31T12:30:00Z",
+ "decision_day": "2026-07-31",
+ "data_cutoff": "2026-07-31",
+ "what_changed": "Exxon and Chevron reported surging Q2 profits but Trump threatened price interventions, and crude kept falling (WTI -9.3% in 5 days). A CNBC headline reports storms and a global supply squeeze sending copper soaring, so FCX is a new long. The Fed held rates; chips rebounded sharply for one day; LLY fell 4.6% in a sector-wide pharma drop.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Earnings are backward-looking, price-intervention threat, no new supply-shock headline."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No NEM catalyst; yields near highs."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "One-day rebound, no NVDA-specific catalyst."
+  },
+  "pharma": {
+   "position": "long LLY since 2026-07-23, 10 days",
+   "why": "Retatrutide Phase 3 wins; July 30 drop was sector-wide with no LLY news."
+  },
+  "copper_uranium": {
+   "position": "long FCX since 2026-07-31, 10 days",
+   "why": "CNBC: storms and a global supply squeeze sending copper prices soaring (named supply shock)."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Hormuz / Iran war",
+   "status": "fading",
+   "note": "Oil keeps giving back gains; re-enter XOM only on a fresh named supply-shock headline.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Oil price intervention",
+   "status": "open",
+   "note": "Trump ire at Exxon/Chevron profits and threatened price interventions; a downside policy risk for oil names.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Yields and inflation fear",
+   "status": "open",
+   "note": "10y 4.66% near 52-week high; Fed held; jobs report first Friday of August; euro area inflation 2.9%.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Tariffs and trade",
+   "status": "open",
+   "note": "Global tariffs drawing rebukes; inflation risk; watch copper demand and pharma tariff policy.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Chip rout and rebound",
+   "status": "open",
+   "note": "Sharp July 30 rebound after the rout; Big Tech capex and NVDA news are the signals. No rebound guessing.",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "name": "Lilly obesity pipeline",
+   "status": "open",
+   "note": "Retatrutide wins; LLY Q2 earnings early August; watch pricing, compounding and the sector drop of July 30.",
+   "first_seen": "2026-07-23"
+  },
+  {
+   "name": "Copper supply squeeze",
+   "status": "escalating",
+   "note": "Storms and global supply squeeze; watch for resolution of outages or a demand/tariff hit. FCX long ends around 2026-08-14.",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "name": "Uranium / Cameco",
+   "status": "open",
+   "note": "Cameco Q2 results, record uranium prices, Westinghouse IPO plan; matters only if CCJ becomes leader.",
+   "first_seen": "2026-07-28"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, check the LLY long (opened 2026-07-23, ends around 2026-08-06) for Q2 earnings, pricing or compounding news; check the FCX long (opened 2026-07-31) for news that the copper supply squeeze is easing or tariff/demand shocks; check oil for a renewed supply-shock headline before any XOM re-entry; then read the new record for a named catalyst in each family.",
+ "lessons": [
+  {
+   "rule": "Hypothesis only: oil longs opened on a named supply-shock escalation headline (sanctions, ship attacks, attacks deepening disruption) win over 10 days.",
+   "cases": 3,
+   "evidence": "XOM 2026-07-07 net +6.82% (basket +8.64%); XOM 2026-07-10 net +12.76% (basket +10.51%); XOM 2026-07-15 net +8.22% (basket +6.06%). All in one Iran episode; below 5 cases, does not change calls."
+  }
+ ]
+}

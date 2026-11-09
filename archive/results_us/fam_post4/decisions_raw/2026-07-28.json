@@ -1,0 +1,34 @@
+{
+  "decision_day": "2026-07-28",
+  "market_view": "VIX 18.7, calm-to-moderate; 10-year yield 4.64% near its high and dollar firm. Oil dropped about 7.5% in one day and the semiconductor ETF and NVDA fell sharply, but the headlines give no cause for either.",
+  "families": {
+    "oil_gas": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "WTI fell 7.5% in a day after a 19% 20-day rally, but no OPEC+, supply or XOM headline explains it. A driver move that already happened is priced in; XOM earnings are inside the window and add variance only."},
+    "gold_miners": {"call": "flat", "horizon_days": 10, "confidence": 0.49, "catalyst": "none", "reasoning": "Gold +1.5% over 5 days, still 23% below its high, below its 200-day average; yield 4.64% and dollar near highs. No Fed, dollar or NEM headline."},
+    "chips": {"call": "flat", "horizon_days": 10, "confidence": 0.48, "catalyst": "none", "reasoning": "NVDA -5% and the sector ETF -2.3% in a day, but headlines are only opinion pieces (Alphabet vs Nvidia, Micron valuation, a data-center gas engine order). An oversold dip is not a catalyst."},
+    "pharma": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No LLY-specific news; only an ETF comparison article that mentions LLY. Small-cap biotech releases are not about the leader. LLY is up 41% in 60 days, near its high."},
+    "copper_uranium": {"call": "flat", "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Copper +0.3% and FCX +6.7% over 5 days with no supply, China or FCX headline. Headlines for this family are unrelated (Ethereum, Berkshire, SpaceX)."}
+  },
+  "would_change_my_mind": "A named FCX, XOM, NEM, NVDA or LLY headline (guidance raise, supply shock, export rule, trial or approval result) or an earnings surprise.",
+  "handoff": {
+    "run_id": "fp4-20260728-a",
+    "written_at": "2026-07-28T13:40:00Z",
+    "decision_day": "2026-07-28",
+    "data_cutoff": "2026-07-28",
+    "what_changed": "Five days since the last note (07-23). WTI fell 7.5% in one day to 82.6 (still +19% over 20 days), NVDA fell 5% and the semiconductor ETF 2.3%, gold rose 1.5% over 5 days, and VIX is 18.7. Headlines again held no leader-specific catalyst.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "One-day oil drop has no named cause and no XOM or OPEC+ headline."},
+      "gold_miners": {"position": "flat", "why": "Gold bounce lacks a Fed, dollar or NEM catalyst."},
+      "chips": {"position": "flat", "why": "NVDA and sector sell-off has no explaining headline, only opinion pieces."},
+      "pharma": {"position": "flat", "why": "No LLY news in the headlines."},
+      "copper_uranium": {"position": "flat", "why": "FCX rise has no supply or demand headline."}
+    },
+    "open_storylines": [
+      {"name": "Oil whipsaw", "status": "open", "note": "WTI -7.5% on the day, +19% over 20 days, -23% over 60 days. Watch OPEC+ or supply headlines and XOM earnings for the reason.", "first_seen": "2026-07-20"},
+      {"name": "Chip sell-off and AI-spending doubt", "status": "escalating", "note": "Semiconductor ETF -10.3% over 20 days, NVDA -5% on the day. Watch chip and cloud earnings, TSMC sales (about the 10th) and any export-rule news.", "first_seen": "2026-07-20"},
+      {"name": "Gold drawdown", "status": "open", "note": "Gold 23% below its high, 10-year yield 4.64%, dollar firm. Watch the Fed and the jobs report.", "first_seen": "2026-07-20"},
+      {"name": "Earnings week", "status": "open", "note": "Apple and Norwegian Cruise report July 30; SpaceX August 4. Watch for read-through to energy (fuel costs) and AI spending.", "first_seen": "2026-07-28"}
+    ],
+    "pending_orders": [],
+    "next_job": "Run the next decision day after 2026-07-28: read the new record and headlines, then decide each family under the catalyst rule."
+  }
+}

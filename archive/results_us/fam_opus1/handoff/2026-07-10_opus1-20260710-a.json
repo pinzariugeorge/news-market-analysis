@@ -1,0 +1,75 @@
+{
+ "run_id": "opus1-20260710-a",
+ "written_at": "2026-11-08T12:00:00Z",
+ "decision_day": "2026-07-10",
+ "data_cutoff": "2026-07-10",
+ "what_changed": "Crude kept most of its Iran bounce (WTI +5.1% over 5 days) but fell 2% on 07-09 and XOM fell 2.6%; no headline shows a blockade, strikes or de-escalation. A Fed report cites stepped-up inflation from tariffs, the Iran war and AI spending. Australia and India agreed a uranium export deal; no family has a new catalyst, so XOM is kept and the rest stay flat.",
+ "families": {
+  "oil_gas": {
+   "position": "long XOM since 2026-07-07, 10 days",
+   "why": "Iran/Hormuz supply-shock catalyst not reversed; confidence trimmed to 0.52 after the 07-09 crude pullback."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "Gold bear market with a firm dollar; only opinion pieces on NEM."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "No NVDA-specific catalyst; Micron fab news does not reach NVDA."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "LLY near highs with no trial, approval or pricing news."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Uranium deal news bears on CCJ, not leader FCX; copper bounce priced in."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Iran / Strait of Hormuz escalation",
+   "status": "open",
+   "note": "No new escalation or de-escalation in this record; exit XOM on clear de-escalation, waiver reinstatement or the 10-day horizon (about 07-21). Check WTI and Brent closes.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Crude slump",
+   "status": "fading",
+   "note": "WTI 72, down 18% in 20 days but +5% in 5 days; watch OPEC+ and record US output (EIA: US top producer in 2025).",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Exxon Q2 windfall signal",
+   "status": "open",
+   "note": "XOM Q2 earnings in late July fall near the end of the hold window and add variance.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Gold bear market",
+   "status": "open",
+   "note": "Watch the dollar, real rates, the jobs report and the NEM Q2 call; sell-side 'buy the dip' notes are not catalysts.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Uranium supply and policy",
+   "status": "open",
+   "note": "Cigar Lake suspension, Trump nuclear push and Australia-India export deal; leader is FCX so impact is indirect.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Copper to aluminium substitution",
+   "status": "open",
+   "note": "Watch for more automakers switching away from copper (demand headwind for FCX). No update in this record.",
+   "first_seen": "2026-07-07"
+  },
+  {
+   "name": "Inflation, Fed under Warsh and Q2 earnings",
+   "status": "open",
+   "note": "Fed report cites stepped-up inflation; jobs report and July-August earnings raise variance, not a reason to be long.",
+   "first_seen": "2026-07-07"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day, read this note, exit XOM to flat if the Iran/Hormuz storyline de-escalates or the 10-day horizon from 2026-07-07 has ended, otherwise re-check its catalyst; then re-check all five families for a named catalyst in the new headlines."
+}

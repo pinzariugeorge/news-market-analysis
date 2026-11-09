@@ -1,0 +1,21 @@
+# Handoff from the previous run (read first)
+Run opus1-20260805-a (decision day 2026-08-05, data cutoff 2026-08-05)
+What changed: Lilly reported Q2 and raised full-year guidance before the 08-05 open after a 5-day drop of 8.6%; opened a LLY long on that catalyst. Crude fell 5-6% on 08-04 on Hormuz reopening hopes, and Trump blasted Exxon and Chevron for making too much money. Copper kept rising to 6.62, near its 1-year high; FCX +9% in 5 days, so the long is held.
+Holdings and reasons:
+- oil_gas: flat | Hormuz reopening hopes and Trump's pressure on XOM/CVX profits are downside risks; no upside catalyst.
+- gold_miners: flat | Gold bounce on lower yields is priced; the 10-year is near its 1-year high and the jobs report is two-sided.
+- chips: flat | Sharp sector rally is priced; AMD sank after earnings; no NVDA-specific catalyst.
+- pharma: long LLY since 2026-08-05, 10 days | Q2 results with a full-year guidance raise after an 8.6% pre-earnings drop.
+- copper_uranium: long FCX since 2026-07-31, 20 days | Storm and global supply squeeze in copper persists; copper near its 1-year high.
+Open storylines:
+- [fading] Iran war / Hormuz oil shock: Reuters: Hormuz reopening hopes; WTI 75.8, -20% over 60 days. Re-enter XOM only on renewed closure or tanker attacks with crude not yet repriced.
+- [escalating] Trump vs oil majors' windfall: Trump says Exxon and Chevron are making too much money and demands lower gasoline prices; watch for a windfall tax, export limits or SPR actions (negative for XOM).
+- [open] Gold bear market and rising yields: Gold 4153, 22% below its high; the 10-year is 4.63%. Watch the jobs report, the dollar and NEM news.
+- [open] Chip rout and rebound: SOXX +8.7% over 5 days; AMD sank after earnings. Watch NVDA earnings in late August, export rules and big-tech capex.
+- [open] US global tariffs and inflation: No update today; watch carve-outs for metals and energy, and retaliation.
+- [open] LLY Q2 guidance raise: LLY long opened; check the stock's reaction on 08-05 and the size of the raise. Exit if LLY sells off on the print or on drug-pricing news.
+- [escalating] Copper supply squeeze: Copper 6.62, 0.5% off its 1-year high; FCX long. Exit on mine restarts, a dollar rebound or a copper reversal.
+- [open] Uranium: producer updates and Westinghouse IPO: Uranium ETF +9% over 5 days; Energy Fuels Q2 and producer mid-year updates. Indirect for FCX.
+- [open] Copper to aluminium substitution: FCX demand headwind if more automakers switch; no update.
+Pending orders: none
+EXACT NEXT JOB: On the next decision day, read this note. Confirm the LLY long filled and check the reaction to the Q2 guidance raise (exit on a sell-off or bad pricing news; the 10-day hold ends around 2026-08-19). Check the FCX supply story (exit on supply recovery or a dollar rebound; the hold ends around 2026-08-28). Re-check XOM (Hormuz, Trump actions), NEM (jobs report, yields) and NVDA (earnings date, export rules) for a named catalyst.
