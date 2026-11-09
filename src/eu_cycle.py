@@ -215,8 +215,10 @@ def prep(role, now=None):
     now = now or pb.utc_now()
     d = today(now)
     st = state_get(d)["steps"]
-    if "collect" not in st:
-        collect(now)
+    if "collect" not in st or not (PAPER.parent / "live" / d.isoformat() / "collected.json").exists():
+        # collected.json lives in data/live, which is not synced between machines: the step flag can say done
+        # (restored from the state branch) while the file only exists on the machine that collected.
+        collect(now, force=True)
         st = state_get(d)["steps"]
     col = json.loads((PAPER.parent / "live" / d.isoformat() / "collected.json").read_text(encoding="utf-8"))
     led = pb.load()
