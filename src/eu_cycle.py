@@ -14,6 +14,7 @@ Commands (python -I src/eu_cycle.py <command>):
   watch                  stops/exits from the risk manager, then fills (run every 30 minutes in session)
   close                  mark to market, custody, equity point, reconcile, day report
   evening                cloud mode after the close: replay stops/exits from the bars, fills, then close
+  summary                the phone notification line: dot, Balance, Bought, Sold, Ordered
   battery                battery drain from the daemon heartbeat log (percent per hour while on battery)
 Day state: data/paper/state/<YYYY-MM-DD>.json. Time is UTC inside; a day starts whenever the first command of the day runs.
 """
@@ -546,6 +547,26 @@ def close(now=None):
     print("close: equity {:.2f} day {:+.2f}% reconcile {}".format(eq, rep["day_pnl_pct"], "ok" if not bad else bad))
 
 
+def summary(now=None):
+    """The phone notification line (fixed template): <colored dot> Balance: X EUR | Bought: ... | Sold: ... | Ordered: ...
+    Dot: green when equity is above the last recorded close, red below, white when unchanged. Bought/Sold are today's fills, Ordered the accepted orders still waiting to fill."""
+    now = now or pb.utc_now()
+    d = today(now)
+    led = pb.load()
+    eq = pb.equity_now(led)
+    prev = pb.equity_on(led, d)
+    dot = "\U0001F7E2" if eq > prev + 0.005 else "\U0001F534" if eq < prev - 0.005 else "\u26AA"
+    fills = [x for x in led["fills"] if x["time"][:10] == d.isoformat()]
+
+    def fmt(side):
+        s = ", ".join("{} x {} @ {:.2f}".format(x["qty"], x["symbol"], x["price"]) for x in fills if x["side"] == side)
+        return s or "nothing"
+
+    pend = [o for o in led["orders"] if o["status"] == "ACCEPTED"]
+    ordered = ", ".join("{} {} x {}".format(o["side"], o["qty"], o["symbol"]) for o in pend) or "nothing"
+    return "{} Balance: {:.2f} EUR | Bought: {} | Sold: {} | Ordered: {}".format(dot, eq, fmt("BUY"), fmt("SELL"), ordered)
+
+
 def battery():
     import re
     rows = []
@@ -627,5 +648,8 @@ if __name__ == "__main__":
         evening()
     elif cmd == "battery":
         battery()
+    elif cmd == "summary":
+        sys.stdout.reconfigure(encoding="utf-8")
+        print(summary())
     else:
         print(__doc__)

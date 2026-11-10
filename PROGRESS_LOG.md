@@ -214,3 +214,6 @@ otify.py "test"`.
 - Protocol change logged in `PREREG_EU.md` (period 2 starts 2026-11-10 11:50 CET).
 
 **Next step:** read the first intraday runs; check the IFX buy filled in the 10:37 UTC run.
+
+## 2026-11-10 (14:00 CET): phone notification template
+- The cloud morning run had invented a line (colored dot, Balance, Bought, Sold, Ordered). Made it a fixed template in `src/eu_cycle.py summary` (dot: green above the last close, red below, white unchanged) and set all three cloud tasks to push exactly that line as `<routine_summary>...</routine_summary>`.
