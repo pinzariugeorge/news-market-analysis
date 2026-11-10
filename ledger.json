@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 1000.0,
- "cash": 692.13,
+ "cash": 692.129,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -67,6 +67,10 @@
   {
    "date": "2026-11-09",
    "equity": 1000.0
+  },
+  {
+   "date": "2026-11-10",
+   "equity": 986.43
   }
  ],
  "notes": [
@@ -114,8 +118,14 @@
    "time": "2026-11-10T15:38:16Z",
    "agent": "intraday",
    "text": "0 orders. No action. The Bayer asundexian FDA approval was already known this morning and judged at 0.50, and the stock is up only 0.8%; the AstraZeneca Omniose deal is a small bolt-on with a 2.28% entry cost; the gold-miner falls are explained by the hot US CPI; IFX.DE has filled at 50.90 and its guidance catalyst is intact, so hold."
+  },
+  {
+   "time": "2026-11-10T16:52:48Z",
+   "agent": "reviewer",
+   "text": "Day one with money in play, and it started red. Infineon reported a record fourth quarter. It guided above 20 percent revenue growth for 2027, above forecasts. The trader bought 6 Infineon shares at the open. The fill was 50.90 euros at 09:15 Frankfurt time. Commission was 2.50 euros, with no FX or tax. The trade is a 10-day bet on that guidance. The stock closed at 49.05, about 3.6 percent below entry. The paper loss is 11.07 euros, plus the 2.50 fee. Equity is 986.43 euros, down 1.36 percent o"
   }
  ],
- "custody_paid": 0.0,
- "started": "2026-11-09T12:35:15Z"
+ "custody_paid": 0.001,
+ "started": "2026-11-09T12:35:15Z",
+ "custody_day": "2026-11-10"
 }
