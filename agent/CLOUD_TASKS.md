@@ -4,6 +4,8 @@ Two Claude Code cloud tasks replace the laptop daemon and the three local tasks.
 
 > Third task (added 2026-11-10): `eu-paper-intraday`, cron `37 8-15 * * 1-5` UTC, model Sonnet for the checking session, Opus subagent only when `eu_cycle.py intraday` prints wake true (prompt: `agent/EU_INTRADAY_PROMPT.md`). Routine https://claude.ai/code/routines/trig_01UJMy3cPH9qWSRVwcT54gtt . Its text is stored in the routine; steps: pull, intraday, (Opus decision, apply intraday), push.
 
+> Fourth task (added 2026-11-10): `eu-paper-lab`, cron `17 10 * * 1-5` UTC, Sonnet session plus an Opus subagent (WebSearch allowed, 4 searches), routine https://claude.ai/code/routines/trig_01BnbZvJn7RDvvnNATR4pe8t . Separate paper account: every command runs with `LAB=1 PAPER_DIR=$PWD/data/paper_lab PAPER_STATE_BRANCH=claude/lab-state`; steps: pull, due lab, prep lab, Opus (prompt `agent/EU_LAB_PROMPT.md`), apply lab, push. It never touches the main account; the broker refuses mixed use. The morning trader now also writes `shadow` calls (scored in the evening run). DST: shift this cron with the others on 2027-03-28.
+
 ## Task 1: eu-paper-morning (weekdays 09:07 local)
 ```
 Project: this repository (European stock paper trading, paper money, research and simulation only, not financial advice). This is a cloud run: do exactly the steps below with python3 from the repository root, change no tracked file, push only through state_sync, never print secrets. If any python command fails, stop, say which and why, and still run the final push step.
