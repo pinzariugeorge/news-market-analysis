@@ -39,6 +39,15 @@ CACHE, LOCK = {}, threading.Lock()
 VIEW = ROOT / "data" / "paper_view"
 CLOUD = False
 SYNC = {"at": None, "err": None}
+HOSTS = ("127.0.0.1:8765", "localhost:8765")  # the only Host values served (DNS rebinding guard)
+ORIGINS = tuple("http://" + h for h in HOSTS)  # the only Origin values accepted when a browser sends one
+
+
+def request_allowed(host, origin):
+    """DNS rebinding guard: the Host header must be exactly 127.0.0.1:8765 or localhost:8765 (port required, case-insensitive), and an Origin header, if present, must be the http origin of one of them. A page on a rebound attacker domain sends its own name in Host/Origin and is refused."""
+    if (host or "").strip().lower() not in HOSTS:
+        return False
+    return origin is None or origin.strip().lower() in ORIGINS
 
 
 def do_sync():
@@ -191,6 +200,9 @@ def selftest():
     assert abs(acc["positions"][0]["value_eur"] - 132.0) < 1e-9 and abs(acc["positions"][0]["pnl_eur"] - 12.0) < 1e-9, acc  # 10 x 1100p = 110 GBP x 1.2
     assert abs(acc["equity"] - (500 + 132 + 220)) < 1e-9 and abs(acc["total_pnl"] - (-148.0)) < 1e-9, acc
     assert fee_eur(100) == 2.5 and fee_eur(10000) == 8.0
+    assert request_allowed("127.0.0.1:8765", None) and request_allowed("LocalHost:8765", "http://localhost:8765") and request_allowed("127.0.0.1:8765", "http://127.0.0.1:8765")
+    assert not any(request_allowed(h, o) for h, o in ((None, None), ("", None), ("127.0.0.1", None), ("localhost", None), ("evil.example:8765", None), ("evil.example", "http://evil.example"), ("127.0.0.1:8765.evil.example", None), ("127.0.0.1:8766", None),
+                                                     ("127.0.0.1:8765", "http://evil.example:8765"), ("127.0.0.1:8765", "null"), ("127.0.0.1:8765", ""), ("127.0.0.1:8765", "https://127.0.0.1:8765"), ("127.0.0.1:8765", "http://127.0.0.1:8765.evil.example")))
     print("selftest ok")
 
 
@@ -208,6 +220,9 @@ class H(BaseHTTPRequestHandler):
         self.wfile.write(b)
 
     def do_GET(self):
+        if not request_allowed(self.headers.get("Host"), self.headers.get("Origin")):
+            self.send("forbidden", "text/plain", 403)
+            return
         u = urlparse(self.path)
         try:
             if u.path == "/":

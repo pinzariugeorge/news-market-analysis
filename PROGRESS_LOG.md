@@ -220,3 +220,5 @@ otify.py "test"`.
 
 ## 2026-11-10 (14:15 CET): account snapshot page
 - Added `python -I src/eu_report.py --snapshot` (tiny page: balance, today, total, positions with P&L, waiting orders, today's fills, the notification line). Published to Claude cloud and refreshed after every scheduled run (morning, hourly, evening) as a light replacement for the live dashboard.
+
+- 2026-11-10: Claude Security scan (1 LOW finding F1: dashboard accepted any Host/Origin, DNS-rebinding risk). Applied verified patch: src/dashboard_server.py now only serves 127.0.0.1:8765 / localhost:8765, others get 403. Selftest ok, dashboard restarted.
