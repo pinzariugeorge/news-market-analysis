@@ -6,6 +6,8 @@ Two Claude Code cloud tasks replace the laptop daemon and the three local tasks.
 
 > Fourth task (added 2026-11-10): `eu-paper-lab`, cron `17 10 * * 1-5` UTC, Sonnet session plus an Opus subagent (WebSearch allowed, 4 searches), routine https://claude.ai/code/routines/trig_01BnbZvJn7RDvvnNATR4pe8t . Separate paper account: every command runs with `LAB=1 PAPER_DIR=$PWD/data/paper_lab PAPER_STATE_BRANCH=claude/lab-state`; steps: pull, due lab, prep lab, Opus (prompt `agent/EU_LAB_PROMPT.md`), apply lab, push. It never touches the main account; the broker refuses mixed use. The morning trader now also writes `shadow` calls (scored in the evening run). DST: shift this cron with the others on 2027-03-28.
 
+> Evening task moved (2026-11-10): cron `50 16 * * 1-5` UTC (was `7 17`), 20 minutes after the 16:30 UTC close, because quotes are delayed up to 20 minutes and the last bars must exist. Shift to `50 15` on 2027-03-28 with the other crons.
+
 ## Task 1: eu-paper-morning (weekdays 09:07 local)
 ```
 Project: this repository (European stock paper trading, paper money, research and simulation only, not financial advice). This is a cloud run: do exactly the steps below with python3 from the repository root, change no tracked file, push only through state_sync, never print secrets. If any python command fails, stop, say which and why, and still run the final push step.
