@@ -2,28 +2,12 @@
   "decision_day": "2026-11-10",
   "ideas": [
     {
-      "id": "high-momentum-20d",
-      "hypothesis": "Stocks trading at their recent high after a strong run keep drifting up because investors anchor on the high and under-react to the good news behind the run.",
-      "rule": "Entry: below_3m_high >= -1.0% AND d20 >= +10% AND entry cost <= 1.5%. If more than 2 names qualify on a day, buy only the 2 with the largest d20. Size: max whole shares under the 25% cap. Horizon 20 trading days; exit at horizon or the -8% stop. No re-entry in a name already held.",
-      "source": "George & Hwang (2004), The 52-Week High and Momentum Investing, Journal of Finance; adapted to the 3-month high available in the features",
-      "status": "testing",
-      "note": "New. First signal day: AZN, BAYN, GSK, NOVN, SAN.PA all qualify on price; AZN fails the cost filter (2.26%); BAYN and SAN.PA have the largest d20. All signals are pharma, so the results are exposed to one sector."
-    },
-    {
       "id": "guidance-drift-10d",
       "hypothesis": "After a company raises its forecast or reports results above expectations, the price keeps drifting in the direction of the news for days because investors under-react to earnings information.",
       "rule": "Entry: a headline on the decision day that names the company and says it raised its forecast/guidance/outlook or beat results expectations, AND d1 >= +2% (the market confirms the news as positive), AND entry cost <= 1.5%. Horizon 10 trading days; exit at horizon or the -8% stop. Analyst rating/target changes and regulatory approvals do not count.",
       "source": "Bernard & Thomas (1989), Post-Earnings-Announcement Drift; Chan, Jegadeesh & Lakonishok (1996), Momentum Strategies",
       "status": "testing",
-      "note": "New. First signal: IFX.DE raised its data-centre revenue forecast to nearly 4 bn EUR, d1 +2.59%."
-    },
-    {
-      "id": "no-news-drop-reversal-3d",
-      "hypothesis": "A large one-day drop without company-specific news is often liquidity or flow driven and partly reverses within days, while drops with news do not.",
-      "rule": "Entry: d1 <= -3.0% AND no headline on the decision day naming the company (theme-wide commodity headlines are allowed) AND the stock's main driver (oil for oil_gas, gold for gold_miners, copper for copper_uranium, ^STOXX50E otherwise) moved less than half as much as the stock, AND entry cost <= 1.5%. Horizon 3 trading days; exit at horizon or the -8% stop.",
-      "source": "Jegadeesh (1990), Evidence of Predictable Behavior of Security Returns; Lehmann (1990); Chan (2003), Stock price reaction to news and no-news",
-      "status": "testing",
-      "note": "New. No signal today: the largest drop is REP.MC -2.83%, and it is fully explained by Brent -2.73%."
+      "note": "IFX.DE forecast-raise headline is present, but d1 in the features at 13:53 UTC is +1.68% (below the +2% confirmation), so no entry by rule; 0 closed trades."
     }
   ],
   "orders": [
@@ -34,7 +18,7 @@
       "qty": 4,
       "horizon": 20,
       "confidence": 0.5,
-      "rationale": "BAYN.DE is at its 3-month high (0.00% below) with d20 +29.88%, the largest d20 of the qualifiers, and entry cost 0.92%."
+      "rationale": "BAYN.DE is at its 3-month high (below_3m_high 0.00) with d20 +29.33%, the largest d20 among qualifiers, and entry cost 0.93% <= 1.5%."
     },
     {
       "idea": "high-momentum-20d",
@@ -43,17 +27,8 @@
       "qty": 2,
       "horizon": 20,
       "confidence": 0.5,
-      "rationale": "SAN.PA is at its 3-month high (0.00% below) with d20 +21.71%, the second-largest d20 of the qualifiers, and entry cost 1.42%."
-    },
-    {
-      "idea": "guidance-drift-10d",
-      "symbol": "IFX.DE",
-      "side": "BUY",
-      "qty": 5,
-      "horizon": 10,
-      "confidence": 0.5,
-      "rationale": "Infineon raised its data-centre revenue forecast to nearly 4 bn EUR today and the stock confirmed the news with d1 +2.59%; entry cost 0.86%."
+      "rationale": "SAN.PA is at its 3-month high (below_3m_high 0.00) with d20 +21.85%, second-largest d20 among qualifiers (AZN and GSK fail the cost filter), entry cost 1.41%."
     }
   ],
-  "lab_notes": "First lab run: three mechanical ideas from different families are registered (high-momentum, post-guidance drift, no-news reversal); today's momentum signals all sit in pharma, so that idea is exposed to one sector for now. Next I will check whether the momentum signals spread beyond pharma and whether the reversal rule fires often enough to reach 20 trades."
+  "lab_notes": "Only high-momentum-20d fires today (BAYN.DE, SAN.PA, both pharma, so sector concentration remains); IFX.DE missed the guidance-drift +2% confirmation and REP.MC's -3.30% drop is explained by Brent -3.52%. Next I will watch whether the pharma momentum names hold their highs and whether a no-news drop appears outside the oil names; the fourth slot stays empty on purpose to limit the number of ideas tried."
 }

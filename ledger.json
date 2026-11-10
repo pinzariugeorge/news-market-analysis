@@ -61,6 +61,40 @@
    "confidence": 0.5,
    "horizon": 10,
    "agent": "lab:guidance-drift-10d"
+  },
+  {
+   "id": "20261110-BAYN.DE-BUY-retry1",
+   "time": "2026-11-10T13:54:35Z",
+   "symbol": "BAYN.DE",
+   "side": "BUY",
+   "qty": 4,
+   "type": "MARKET",
+   "limit": null,
+   "status": "ACCEPTED",
+   "reasons": [],
+   "source": "agent",
+   "theme": "pharma",
+   "catalyst": "lab idea high-momentum-20d: BAYN.DE is at its 3-month high (below_3m_high 0.00) with d20 +29.33%, the largest d20 among qualifiers, and entry cost 0",
+   "confidence": 0.5,
+   "horizon": 20,
+   "agent": "lab:high-momentum-20d"
+  },
+  {
+   "id": "20261110-SAN.PA-BUY-retry1",
+   "time": "2026-11-10T13:54:35Z",
+   "symbol": "SAN.PA",
+   "side": "BUY",
+   "qty": 2,
+   "type": "MARKET",
+   "limit": null,
+   "status": "ACCEPTED",
+   "reasons": [],
+   "source": "agent",
+   "theme": "pharma",
+   "catalyst": "lab idea high-momentum-20d: SAN.PA is at its 3-month high (below_3m_high 0.00) with d20 +21.85%, second-largest d20 among qualifiers (AZN and GSK fa",
+   "confidence": 0.5,
+   "horizon": 20,
+   "agent": "lab:high-momentum-20d"
   }
  ],
  "fills": [],
@@ -75,6 +109,11 @@
    "time": "2026-11-10T13:43:06Z",
    "agent": "lab",
    "text": "First lab run: three mechanical ideas from different families are registered (high-momentum, post-guidance drift, no-news reversal); today's momentum signals all sit in pharma, so that idea is exposed to one sector for now. Next I will check whether the momentum signals spread beyond pharma and whether the reversal rule fires often enough to reach 20 trades."
+  },
+  {
+   "time": "2026-11-10T13:54:38Z",
+   "agent": "lab",
+   "text": "Only high-momentum-20d fires today (BAYN.DE, SAN.PA, both pharma, so sector concentration remains); IFX.DE missed the guidance-drift +2% confirmation and REP.MC's -3.30% drop is explained by Brent -3.52%. Next I will watch whether the pharma momentum names hold their highs and whether a no-news drop appears outside the oil names; the fourth slot stays empty on purpose to limit the number of ideas tried."
   }
  ],
  "custody_paid": 0.0,

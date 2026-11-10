@@ -15,7 +15,7 @@
   "source": "Bernard & Thomas (1989), Post-Earnings-Announcement Drift; Chan, Jegadeesh & Lakonishok (1996), Momentum Strategies",
   "status": "testing",
   "created": "2026-11-10",
-  "note": "New. First signal: IFX.DE raised its data-centre revenue forecast to nearly 4 bn EUR, d1 +2.59%."
+  "note": "IFX.DE forecast-raise headline is present, but d1 in the features at 13:53 UTC is +1.68% (below the +2% confirmation), so no entry by rule; 0 closed trades."
  },
  {
   "id": "no-news-drop-reversal-3d",
