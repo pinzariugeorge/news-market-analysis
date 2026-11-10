@@ -48,6 +48,7 @@ Then `PLAN_EU.md` for the design and `TODO.md` for open items.
 ## Agent design (`agent/`)
 | File | Status | What it holds |
 |---|---|---|
+| `agent/EU_INTRADAY_PROMPT.md` | ACTIVE | Intraday trader prompt: woken by new information only; default no action; sells only when a catalyst breaks; at most 1 new buy per run; output with orders and a note, no handoff |
 | `agent/CLOUD_TASKS.md` | ACTIVE | The two cloud task prompts (morning, evening) as created, with the schedule and the state-branch steps |
 | `agent/EU_TRADER_PROMPT.md` | ACTIVE | Live trader prompt (Opus with learning): universe, rules, costs, learning rules, exact JSON and handoff shape |
 | `agent/EU_RESEARCHER_PROMPT.md` | ACTIVE | Researcher prompt: morning brief per theme from the collected headlines, no recommendations |
@@ -117,6 +118,7 @@ US / S&P 500 era, moved 2026-11-09, nothing deleted. Start at `archive/README.md
 - `D:\Projects\Marketing\news-market-analysis\context\` (Romanian), `README.md`, `requirements.txt`: notes from an earlier GDELT news-vs-S&P framing. Not authoritative; `STRATEGY.md` wins.
 - Scheduled task `snapshot-estimates-daily` (`C:\Users\pinza\.claude\scheduled-tasks\`): DISABLED 2026-11-09 (it snapshotted US analyst estimates; its script is archived in `archive/src_us/snapshot_estimates.py`). Re-enable only after repointing it.
 - **Since 2026-11-09 15:10 CET the account runs in the cloud:** Claude Code cloud tasks `eu-paper-morning` (cron `7 7 * * 1-5` UTC) and `eu-paper-evening` (`7 17 * * 1-5` UTC) in environment `eu-paper` (network allowlist Yahoo, Google News, ntfy; Opus), routine pages https://claude.ai/code/routines/trig_01Qj8UKGLJvYWAFrSCyYseVk and https://claude.ai/code/routines/trig_014a3C7vhbEKKEU82jtBjvbD; state in git branch `claude/paper-state` (`claude/paper-state-test` is a test copy). The laptop daemon, the Windows task `EuPaperDaemon` and the three local Claude tasks are DISABLED (kept for fallback). To look at the dashboard locally run `python -I src\state_sync.py pull` first.
+- Cloud task `eu-paper-intraday` (cron `37 8-15 * * 1-5` UTC; routine https://claude.ai/code/routines/trig_01UJMy3cPH9qWSRVwcT54gtt): hourly check during the session, wakes the Opus trader only on triggers (`src/eu_cycle.py intraday`, `find_triggers`, 7 self-tests: `python -I src\eu_cycle.py selftest`).
 - Windows task `EuPaperDaemon` (disabled) (Task Scheduler, at logon, allowed on battery, no time limit, restart on failure) runs `src/eu_daemon.py`. Claude scheduled tasks `eu-paper-researcher` (cron 09:00 local = 08:00 CET), `eu-paper-trader` (09:30 local), `eu-paper-reviewer` (19:00 local, publishes the report) in `C:\Users\pinza\.claude\scheduled-tasks\`; the machine is on Bucharest time, one hour ahead of CET. Published day report: https://claude.ai/artifact/7TxjomynSos5DdRG3zaox6 (private).
 - Claude tooling set up on the way: TradingKit MCP in `C:\Users\pinza\.claude.json` (unavailable, membership check failed); click hook scripts in `C:\Users\pinza\.claude\scripts\` (`click_at.py`, `click_tray.py`) unrelated to the project.
 

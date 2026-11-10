@@ -2,6 +2,8 @@
 
 Two Claude Code cloud tasks replace the laptop daemon and the three local tasks. State is read at the start and written at the end through the git branch `claude/paper-state` (`src/state_sync.py`). Times are your local time (Bucharest, one hour ahead of CET, daylight saving moves together with CET): the morning task is 08:07 CET and the evening task 18:07 CET, weekdays only. Cloud runs may start a few minutes late. Research and simulation only.
 
+> Third task (added 2026-11-10): `eu-paper-intraday`, cron `37 8-15 * * 1-5` UTC, model Sonnet for the checking session, Opus subagent only when `eu_cycle.py intraday` prints wake true (prompt: `agent/EU_INTRADAY_PROMPT.md`). Routine https://claude.ai/code/routines/trig_01UJMy3cPH9qWSRVwcT54gtt . Its text is stored in the routine; steps: pull, intraday, (Opus decision, apply intraday), push.
+
 ## Task 1: eu-paper-morning (weekdays 09:07 local)
 ```
 Project: this repository (European stock paper trading, paper money, research and simulation only, not financial advice). This is a cloud run: do exactly the steps below with python3 from the repository root, change no tracked file, push only through state_sync, never print secrets. If any python command fails, stop, say which and why, and still run the final push step.

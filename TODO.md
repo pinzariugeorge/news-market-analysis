@@ -16,6 +16,11 @@ Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_er
 - [ ] Verify Yahoo volume on Swiss and Nordic venues (Roche looks under-reported).
 - [ ] Decide what replaces uranium (nothing, or an ETC if found).
 
+## 1a-intraday. Hourly intraday check (added 2026-11-10)
+- [ ] Read the first intraday runs (list_runs / get_run_log on routine trig_01UJMy3cPH9qWSRVwcT54gtt): how often it wakes the trader, token cost per run, any wrong trigger.
+- [ ] Tune the triggers after a week (event words, 3% / 2% moves) using the day's `state/<date>_intraday.json` logs.
+- [ ] DST: the intraday cron is UTC too (`37 7-14` in summer time).
+
 ## 1a-cloud. In the cloud since 2026-11-09 15:10 CET
 - [x] Cloud environment `eu-paper`, probe passed (Yahoo, Google News, ntfy all 200), dry run on a test state branch passed, tasks created, local daemon and tasks disabled, real state pushed to `claude/paper-state`.
 - [ ] First real cloud runs: evening 2026-11-09 17:07 UTC, morning 2026-11-10 07:07 UTC. Check each with `RemoteTrigger list_runs` / `get_run_log` (or the routine pages), and `git ls-remote --heads origin`.

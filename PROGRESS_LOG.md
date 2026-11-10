@@ -207,3 +207,10 @@ otify.py "test"`.
 - The first cloud evening run failed: `eu_cycle.py prep` trusted the synced `collect` step flag, but `data/live/<date>/collected.json` is not in the state branch, so a cloud run after a local collect crashed with FileNotFoundError. `prep` now re-collects (force) when the file is missing. Checked in a cloud checkout with the real state pulled: `prep reviewer` and `eu_report.py` pass.
 
 **Next step:** merge the fix to `main` (cloud tasks clone it), fire `eu-paper-evening` once and read its result.
+
+## 2026-11-10 (11:50 CET): hourly intraday check
+- User asked for more runs so the agent can react to news (sell to avoid losses, and buy new ideas). Built `intraday` in `src/eu_cycle.py`: hourly cloud check that always replays stops/exits, fills, collects fresh news and quotes, and wakes an Opus trader only on new information (`find_triggers`: traded name plus an event word in a new headline, or a 3% move, 2% if held; 7 self-tests; whole-word matching after the 'fine' inside 'Infineon' bug). New prompt `agent/EU_INTRADAY_PROMPT.md`, `apply intraday`, and the routine `eu-paper-intraday` (08:37-15:37 UTC weekdays, Sonnet session, Opus only on a trigger).
+- This morning's cloud run (07:07 UTC) worked: Opus researcher and trader, order BUY 6 IFX.DE accepted (about 90,000 subagent tokens). Yesterday's first evening run failed once on a missing news file; a cloud session fixed it (PR #1 merged).
+- Protocol change logged in `PREREG_EU.md` (period 2 starts 2026-11-10 11:50 CET).
+
+**Next step:** read the first intraday runs; check the IFX buy filled in the 10:37 UTC run.
