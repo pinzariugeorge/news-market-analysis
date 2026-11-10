@@ -2,7 +2,7 @@
  "date": "2026-11-10",
  "steps": {
   "collect": {
-   "at": "2026-11-10T07:08:04Z",
+   "at": "2026-11-10T10:37:45Z",
    "ok": true,
    "note": "60 headlines, 10 drivers, 22 quotes"
   },
@@ -15,6 +15,16 @@
    "at": "2026-11-10T07:09:26Z",
    "ok": true,
    "note": "1 orders: ACCEPTED"
+  },
+  "fills": {
+   "at": "2026-11-10T10:37:29Z",
+   "ok": true,
+   "note": "FILLED BUY 6 IFX.DE @ 50.8953 EUR (costs 2.5 EUR)"
+  },
+  "intraday1037": {
+   "at": "2026-11-10T10:37:58Z",
+   "ok": true,
+   "note": "0 orders"
   }
  },
  "warnings": []
