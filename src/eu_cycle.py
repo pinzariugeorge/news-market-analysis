@@ -7,6 +7,9 @@ Commands (python -I src/eu_cycle.py <command>):
   prep <role>            writes the agent's input file under data/paper/run/<date>/ and prints its path (collects first if needed)
   apply trader <json>    validates the decision, stores the handoff note, submits orders through the risk manager (paper_broker.submit)
   apply researcher|reviewer <file>   marks the step done (reviewer file: JSON with "report" and "handoff")
+  intraday               cloud hourly check: replay stops/exits, fill, collect, wake the trader only on new information (prints one JSON line)
+  apply intraday <json>  submit the intraday decision's orders through the risk manager
+  selftest               trigger-detection tests
   fills                  fills pending orders at the first eligible bar
   watch                  stops/exits from the risk manager, then fills (run every 30 minutes in session)
   close                  mark to market, custody, equity point, reconcile, day report
@@ -17,6 +20,7 @@ Day state: data/paper/state/<YYYY-MM-DD>.json. Time is UTC inside; a day starts 
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -141,10 +145,17 @@ def drv(sym):
 
 def quote_row(sym):
     q = pb.get_quote(sym)
+    if q:
+        q = dict(q)
+        try:
+            c = [x[4] for x in lf.bars(sym, "5d", "1d") if x[4] is not None]
+            q["chg_pct"] = round((c[-1] / c[-2] - 1) * 100, 2) if len(c) >= 2 else None
+        except Exception:  # noqa: BLE001
+            q["chg_pct"] = None
     return sym, q
 
 
-def collect(now=None, force=False):
+def collect(now=None, force=False, mark_seen=True):
     now = now or pb.utc_now()
     d = today(now)
     out = PAPER.parent / "live" / d.isoformat()
@@ -172,7 +183,7 @@ def collect(now=None, force=False):
     for s, q in quotes.items():
         pe = pb.to_eur(q["price"], q["currency"], fx)
         if pe:
-            table[s] = {"theme": pb.ALLOWED[s], "price": q["price"], "currency": q["currency"], "price_eur": round(pe, 2), "age_min": q["age_minutes"], "entry_cost_pct": pb.entry_cost_pct(s, pe, q["currency"]),
+            table[s] = {"theme": pb.ALLOWED[s], "price": q["price"], "currency": q["currency"], "price_eur": round(pe, 2), "age_min": q["age_minutes"], "chg_pct": q.get("chg_pct"), "entry_cost_pct": pb.entry_cost_pct(s, pe, q["currency"]),
                         "max_shares_35pct": int(0.35 * pb.LIM["start_cash"] // pe)}
     out.mkdir(parents=True, exist_ok=True)
     f.write_text(json.dumps({"collected_at": pb.iso(now), "news": news, "drivers": drivers, "table": table}, indent=1), encoding="utf-8")
@@ -180,9 +191,172 @@ def collect(now=None, force=False):
         lf.snapshot(sorted(pb.ALLOWED), out / "snapshot.jsonl") if False else None
     except Exception:  # noqa: BLE001
         pass
+    if mark_seen:
+        seen_add(d, [i["title"] for v in news.values() for i in v])
     state_set(d, "collect", True, "{} headlines, {} drivers, {} quotes".format(sum(len(v) for v in news.values()), len(drivers), len(table)))
     print("collected:", f, "|", sum(len(v) for v in news.values()), "headlines,", len(drivers), "drivers,", len(table), "quotes")
     return f
+
+
+# ------------------------------------------------------------------ intraday (cloud: hourly check, wakes the trader only on new information)
+ALIASES = {"SHEL.L": ["shell"], "TTE.PA": ["totalenergies"], "BP.L": [" bp ", "bp plc"], "ENI.MI": [" eni "], "EQNR.OL": ["equinor"], "REP.MC": ["repsol"], "FRES.L": ["fresnillo"],
+           "EDV.L": ["endeavour mining"], "IFX.DE": ["infineon"], "STMPA.PA": ["stmicro"], "BESI.AS": ["besi", "be semiconductor"], "AZN.L": ["astrazeneca"], "NOVN.SW": ["novartis"],
+           "NOVO-B.CO": ["novo nordisk"], "SAN.PA": ["sanofi"], "GSK.L": [" gsk "], "BAYN.DE": ["bayer"], "GLEN.L": ["glencore"], "RIO.L": ["rio tinto"], "ANTO.L": ["antofagasta"],
+           "BOL.ST": ["boliden"], "KGH.WA": ["kghm"]}
+EVENT_WORDS = ["results", "guidance", "profit warning", "outlook", "fda", "ema ", "approval", "approves", "takeover", "bid", "merger", "acquisition", "probe", "lawsuit", "recall", "strike",
+               "outage", "explosion", "sanction", "ban ", "downgrade", "upgrade", "cuts", "raises", "plunge", "surge", "halt", "suspend", "investigation", "fine", "dividend", "buyback"]
+MOVE_PCT, HELD_MOVE_PCT, MAX_TRIGGERS = 3.0, 2.0, 12
+EVENT_RE = re.compile(r"\b(" + "|".join(re.escape(w.strip()) for w in EVENT_WORDS) + r")\b")   # whole words only: 'fine' must not match inside 'Infineon'
+
+
+def seen_file(d):
+    return PAPER / "state" / (d.isoformat() + "_seen.json")
+
+
+def seen_get(d):
+    f = seen_file(d)
+    return set(json.loads(f.read_text(encoding="utf-8"))) if f.exists() else set()
+
+
+def seen_add(d, titles):
+    s = seen_get(d) | {t.lower()[:80] for t in titles}
+    f = seen_file(d)
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(sorted(s)), encoding="utf-8")
+
+
+def find_triggers(news, table, held, seen):
+    """Pure function: which new headlines and price moves deserve waking the trader. news: {theme: [item]}, table: {sym: {chg_pct, ...}}, held: set of symbols, seen: set of title keys.
+    Returns (triggers, new_items). Triggers: a traded name plus an event word in a new headline (kind held when we own it; plain news flow about a held name does not wake the trader); price move of 3% (2% on a held name)."""
+    out, new_items = [], []
+    for theme, items in news.items():
+        for it in items:
+            k = it["title"].lower()[:80]
+            if k in seen:
+                continue
+            new_items.append(dict(it, theme=theme))
+            low = " " + it["title"].lower() + " "
+            for sym, al in ALIASES.items():
+                if any(a in low for a in al) and EVENT_RE.search(low):
+                    out.append({"kind": "held" if sym in held else "event", "symbol": sym, "text": it["title"], "published": it["published_utc"]})
+    for sym, row in table.items():
+        ch = row.get("chg_pct")
+        if ch is not None and abs(ch) >= (HELD_MOVE_PCT if sym in held else MOVE_PCT):
+            out.append({"kind": "move", "symbol": sym, "text": "{:+.2f}% versus the previous close".format(ch), "published": ""})
+    uniq, seen_t = [], set()
+    for t in out:
+        key = (t["kind"], t["symbol"], t["text"][:60])
+        if key not in seen_t:
+            seen_t.add(key)
+            uniq.append(t)
+    return uniq[:MAX_TRIGGERS], new_items
+
+
+def intraday(now=None):
+    """Hourly cloud check. Always: replay stops and exits, fill pending orders, collect fresh news and quotes. Wakes the trader only if find_triggers says so; prints one JSON line."""
+    now = now or pb.utc_now()
+    d = today(now)
+    if not pb.is_trading_day(d):
+        print(json.dumps({"wake": False, "reason": "not a trading day"}))
+        return
+    o, c = main_session(now)
+    if not (o <= now <= c):
+        print(json.dumps({"wake": False, "reason": "outside the session"}))
+        return
+    for r in pb.replay_exits(now):
+        print("replayed exit:", r["id"], r["status"], r.get("reasons", ""))
+    do_fills(now)
+    f = collect(now, force=True, mark_seen=False)
+    col = json.loads(Path(f).read_text(encoding="utf-8"))
+    led = pb.load()
+    held = {p["symbol"] for p in led["positions"]}
+    seen = seen_get(d)
+    if not seen_file(d).exists():      # no baseline yet today (the morning run did not mark its headlines): treat what is on the page now as already seen, so only price moves can wake the trader
+        seen = {i["title"].lower()[:80] for v in col["news"].values() for i in v}
+    trig, new_items = find_triggers(col["news"], col["table"], held, seen)
+    seen_add(d, [i["title"] for v in col["news"].values() for i in v])
+    log = PAPER / "state" / (d.isoformat() + "_intraday.json")
+    runs = json.loads(log.read_text(encoding="utf-8")) if log.exists() else []
+    cutoff = c - dt.timedelta(minutes=pb.LIM["cutoff_min"])
+    wake = bool(trig) and now <= c - dt.timedelta(minutes=10)
+    runs.append({"at": pb.iso(now), "wake": wake, "triggers": len(trig), "new_headlines": len(new_items), "can_buy": now <= cutoff})
+    log.write_text(json.dumps(runs, indent=1), encoding="utf-8")
+    if not wake:
+        print(json.dumps({"wake": False, "reason": "no trigger ({} new headlines, {} open positions)".format(len(new_items), len(held))}))
+        return
+    rd = run_dir(d)
+    hhmm = now.strftime("%H%M")
+    ho, hw = handoff.latest(handoff.DIR, d)
+    dec = rd / "trader_decision.json"
+    morning = ""
+    if dec.exists():
+        try:
+            m = json.loads(dec.read_text(encoding="utf-8"))
+            morning = "Morning view: {} Orders this morning: {}".format(m.get("market_view", ""), json.dumps(m.get("orders", [])))
+        except Exception:  # noqa: BLE001
+            pass
+    L = ["# Intraday input, decision day {} (now {} UTC; buys {})".format(d, now.strftime("%H:%M"), "allowed" if now <= cutoff else "NOT allowed any more (last 30 minutes), sells only"),
+         "Output file to write: " + str(rd / "intraday_{}_decision.json".format(hhmm)), "", morning, "", "## What triggered this run (new information only)"]
+    L += ["- [{}] {}: {} {}".format(t["kind"], t["symbol"], t["text"], ("(" + t["published"] + ")") if t["published"] else "") for t in trig]
+    L += ["", handoff.render(ho, hw), "", pb.outcomes_block(), "", account_text(led), "", "## New headlines since the last check (not seen before)"]
+    L += ["- [{}] [{}] {} ({})".format(i["theme"], i["published_utc"], i["title"], i["source"]) for i in new_items[:40]] or ["- (none; the trigger is a price move)"]
+    L += ["", "## Traded names: price EUR, change today %, quote age min, entry cost %, max whole shares under the 35% cap"]
+    L += ["- {} [{}] {} EUR, {} %, age {} min, entry cost {}%, max {} shares".format(k, v["theme"], v["price_eur"], v.get("chg_pct"), v["age_min"], v["entry_cost_pct"], v["max_shares_35pct"]) for k, v in col["table"].items()]
+    L += ["", "Limits: " + json.dumps({k: v for k, v in pb.LIM.items()})]
+    p = rd / "intraday_{}_input.md".format(hhmm)
+    p.write_text("\n".join(L), encoding="utf-8")
+    print(json.dumps({"wake": True, "reason": "{} triggers".format(len(trig)), "input": str(p)}))
+
+
+def apply_intraday(path, now=None):
+    now = now or pb.utc_now()
+    d = today(now)
+    try:
+        dec = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        print("NO ACTION: decision file unreadable ({})".format(str(e)[:80]))
+        return 1
+    themes, results = dec.get("themes", {}), []
+    for o in dec.get("orders", []):
+        sym = o.get("symbol")
+        th = pb.ALLOWED.get(sym)
+        t = themes.get(th, {}) if th else {}
+        req = {"symbol": sym, "side": str(o.get("side", "")).upper(), "qty": o.get("qty", 0), "type": "MARKET", "confidence": t.get("confidence", o.get("confidence", 0)),
+               "catalyst": t.get("catalyst", o.get("catalyst", "")), "horizon": t.get("horizon_days", o.get("horizon", 0)), "agent": "A-opus-intraday", "tag": "intra" + now.strftime("%H")}
+        r = pb.submit(req, "agent", now)
+        results.append(r)
+        print("{} {} {} x{}: {} {}".format(r["id"], r["side"], r["symbol"], r["qty"], r["status"], "; ".join(r.get("reasons", []))))
+    if not results:
+        print("no action (valid decision)")
+    pb.add_note("intraday", "{} orders. {}".format(len(results), dec.get("note", ""))[:500])
+    state_set(d, "intraday" + now.strftime("%H%M"), True, "{} orders".format(len(results)))
+    return 0
+
+
+def selftest():
+    news = {"pharma": [{"title": "Bayer wins FDA approval for new drug", "source": "x", "published_utc": "2026-11-10 10:00"}, {"title": "Bayer old story", "source": "x", "published_utc": "2026-11-10 06:00"}],
+            "oil_gas": [{"title": "Shell chair says nothing", "source": "x", "published_utc": "2026-11-10 10:05"}, {"title": "Equinor halts Troll field after outage", "source": "x", "published_utc": "2026-11-10 10:06"}],
+            "chips": [{"title": "Infineon CEO keynote tomorrow", "source": "x", "published_utc": "2026-11-10 10:07"}, {"title": "Infineon issues profit warning", "source": "x", "published_utc": "2026-11-10 10:09"}]}
+    table = {"SHEL.L": {"chg_pct": 0.4}, "BP.L": {"chg_pct": -3.4}, "IFX.DE": {"chg_pct": 2.3}, "ENI.MI": {"chg_pct": 2.4}}
+    seen = {"bayer old story"}
+    trig, new = find_triggers(news, table, {"IFX.DE"}, seen)
+    kinds = {(t["kind"], t["symbol"]) for t in trig}
+    ok = True
+
+    def check(name, cond):
+        nonlocal ok
+        print(("PASS " if cond else "FAIL ") + name)
+        ok &= bool(cond)
+
+    check("event word plus traded name triggers (Bayer FDA)", ("event", "BAYN.DE") in kinds)
+    check("outage headline triggers for Equinor", ("event", "EQNR.OL") in kinds)
+    check("a seen headline does not trigger", len(new) == 5 and not any("old story" in t["text"] for t in trig))
+    check("a traded name without an event word does not trigger (Shell)", ("event", "SHEL.L") not in kinds)
+    check("held name with an event word triggers; without one it does not", ("held", "IFX.DE") in kinds and not any(t["text"] == "Infineon CEO keynote tomorrow" for t in trig))
+    check("3% move triggers (BP), 2.4% on an unheld name does not, 2.3% on a held name does", ("move", "BP.L") in kinds and ("move", "ENI.MI") not in kinds and ("move", "IFX.DE") in kinds)
+    check("no news, no moves means no trigger", find_triggers({}, {"SHEL.L": {"chg_pct": 0.5}}, set(), set())[0] == [])
+    print("ALL PASS" if ok else "SOME FAILED")
+    return 0 if ok else 1
 
 
 # ------------------------------------------------------------------ prep
@@ -431,12 +605,20 @@ if __name__ == "__main__":
         collect(force="--force" in a)
     elif cmd == "prep":
         prep(a[1])
+    elif cmd == "apply" and a[1] == "intraday":
+        sys.exit(apply_intraday(a[2]))
     elif cmd == "apply" and a[1] == "trader":
         sys.exit(apply_trader(a[2]))
     elif cmd == "apply":
         sys.exit(apply_simple(a[1], a[2] if len(a) > 2 else ""))
     elif cmd == "fills":
         do_fills()
+    elif cmd == "intraday":
+        intraday()
+    elif cmd == "selftest":
+        sys.exit(selftest())
+    elif cmd == "apply" and a[1] == "intraday":
+        sys.exit(apply_intraday(a[2]))
     elif cmd == "watch":
         watch()
     elif cmd == "close":
