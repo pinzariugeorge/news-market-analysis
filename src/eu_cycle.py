@@ -539,6 +539,9 @@ def apply_lab(path, now=None):
             continue
         req = {"symbol": o.get("symbol"), "side": str(o.get("side", "")).upper(), "qty": o.get("qty", 0), "type": "MARKET", "confidence": o.get("confidence", 0.5),
                "catalyst": "lab idea {}: {}".format(iid, str(o.get("rationale", ""))[:120]), "horizon": o.get("horizon", 0), "agent": "lab:" + iid}
+        prev = next((x for x in pb.load()["orders"] if x["id"] == pb.order_id(now.date(), req["symbol"], req["side"])), None)
+        if prev and prev["status"] == "REJECTED":
+            req["tag"] = "retry{}".format(sum(1 for x in pb.load()["orders"] if x["id"].startswith(prev["id"])))   # a rejected order does not block a corrected one
         r = pb.submit(req, "agent", now)
         results.append(r)
         print("{} {} {} x{}: {} {}".format(r["id"], r["side"], r["symbol"], r["qty"], r["status"], "; ".join(r.get("reasons", []))))
