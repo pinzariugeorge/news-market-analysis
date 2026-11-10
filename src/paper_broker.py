@@ -44,7 +44,7 @@ if LAB and (not os.environ.get("PAPER_DIR") or PAPER.resolve() == (ROOT / "data"
 if not LAB and PAPER.name == "paper_lab":
     raise SystemExit("lab isolation: the lab directory needs LAB=1")
 if LAB:
-    LIM.update(max_positions=5, max_pos_pct=0.25, min_conf=0.0, horizons=(1, 2, 3, 5, 10, 20), max_new_buys_day=5)
+    LIM.update(max_positions=5, max_pos_pct=0.25, min_conf=0.0, horizons=(1, 2, 3, 5, 10, 20), max_new_buys_day=5, max_fee_pct=1.5)
 TAX_BUY = {".L": 0.005, ".PA": 0.004, ".MI": 0.001, ".MC": 0.002}   # UK stamp duty, French FTT, Italian and Spanish taxes: approximate, to verify
 FX_COST, CUSTODY_YEAR = 0.0025, 0.0012
 HOLIDAYS = {"2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01", "2027-03-26", "2027-03-29", "2027-05-03"}   # approximate common closures; extend yearly; a symbol with no bars is also treated as closed
