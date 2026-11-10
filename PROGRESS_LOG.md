@@ -217,3 +217,6 @@ otify.py "test"`.
 
 ## 2026-11-10 (14:00 CET): phone notification template
 - The cloud morning run had invented a line (colored dot, Balance, Bought, Sold, Ordered). Made it a fixed template in `src/eu_cycle.py summary` (dot: green above the last close, red below, white unchanged) and set all three cloud tasks to push exactly that line as `<routine_summary>...</routine_summary>`.
+
+## 2026-11-10 (14:15 CET): account snapshot page
+- Added `python -I src/eu_report.py --snapshot` (tiny page: balance, today, total, positions with P&L, waiting orders, today's fills, the notification line). Published to Claude cloud and refreshed after every scheduled run (morning, hourly, evening) as a light replacement for the live dashboard.

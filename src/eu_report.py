@@ -1,6 +1,7 @@
 """Builds the end-of-day report as ONE self-contained, phone-friendly HTML page (no network, no scripts), for upload to Claude cloud and for reading or discussing on a phone.
 
-Usage: python -I src/eu_report.py [YYYY-MM-DD]   -> data/paper/reports/<date>.html and data/paper/reports/latest.html (same content)
+Usage: python -I src/eu_report.py --snapshot      writes data/paper/reports/snapshot.html (small always-current account page for Claude cloud)
+       python -I src/eu_report.py [YYYY-MM-DD]   -> data/paper/reports/<date>.html and data/paper/reports/latest.html (same content)
 Inputs (all optional; a missing one becomes a short "not available" line, never an error): ledger, day report JSON from `eu_cycle.py close`, reviewer output JSON (report, questions),
 trader decision JSON, researcher brief, day state and warnings. Paper money, research only, not advice.
 """
@@ -114,8 +115,62 @@ def page(d, artifact=False):
     return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper Trading Day</title><style>{}</style></head><body>{}</body></html>'.format(css, body)
 
 
+SNAP_CSS = (":root{--bg:#f6f7f9;--card:#fff;--ink:#16181d;--mute:#667085;--line:#e4e7ec;--up:#0a7f4f;--down:#c42b2b}"
+            "@media (prefers-color-scheme:dark){:root:not([data-theme=\"light\"]){--bg:#0f1115;--card:#171a21;--ink:#e8eaee;--mute:#8b93a1;--line:#272c36;--up:#3fb97f;--down:#ef6b6b;color-scheme:dark}}"
+            ":root[data-theme=\"dark\"]{--bg:#0f1115;--card:#171a21;--ink:#e8eaee;--mute:#8b93a1;--line:#272c36;--up:#3fb97f;--down:#ef6b6b;color-scheme:dark}"
+            "*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}"
+            "main{max-width:560px;margin:0 auto}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;min-width:0}"
+            ".big{font-size:36px;font-weight:700;font-variant-numeric:tabular-nums}.row{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}.mute{color:var(--mute);font-size:13px}.up{color:var(--up)}.down{color:var(--down)}"
+            "h2{font-size:14px;margin:0 0 6px;color:var(--mute);font-weight:600}.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line)}")
+
+
+def snapshot(now=None):
+    """Tiny always-current account page (balance, today, positions, pending orders, today's fills), published to Claude cloud after every scheduled run. Prices are the delayed quotes of the run."""
+    import eu_cycle
+    now = now or pb.utc_now()
+    d = now.date()
+    led = pb.load()
+    fx = pb.get_fx()
+    eq = pb.equity_now(led, fx)
+    prev = pb.equity_on(led, d)
+    day_eur, day_pct = eq - prev, (eq / prev - 1) * 100
+    tot_pct = (eq / led["start_cash"] - 1) * 100
+    cls = lambda v: "up" if v > 0.004 else "down" if v < -0.004 else ""  # noqa: E731
+    try:
+        line = eu_cycle.summary(now)
+    except Exception:  # noqa: BLE001
+        line = ""
+    rows = ""
+    for p in led["positions"]:
+        q = pb.get_quote(p["symbol"])
+        last = pb.to_eur(q["price"], p["currency"], fx) if q else None
+        cost = pb.to_eur(p["avg_price"], p["currency"], fx)
+        pnl = (last - cost) * p["qty"] if last else None
+        rows += "<tr><td>{}</td><td>{}</td><td>{:.2f}</td><td>{}</td><td class=\"{}\">{}</td></tr>".format(
+            e(p["symbol"]), p["qty"], cost, "{:.2f}".format(last) if last else "-", cls(pnl or 0), "{:+.2f}".format(pnl) if pnl is not None else "-")
+    pend = [o for o in led["orders"] if o["status"] == "ACCEPTED"]
+    fills = [x for x in led["fills"] if x["time"][:10] == d.isoformat()]
+    body = ('<main><div class="card"><div class="mute">Paper account, EUR - updated {} UTC</div><div class="big">{:,.2f}</div>'
+            '<div class="row"><span class="{}">Today {:+.2f} ({:+.2f}%)</span><span class="{}">Total {:+.2f}%</span></div><div class="mute">Cash {:,.2f}</div></div>').format(
+        now.strftime("%H:%M"), eq, cls(day_eur), day_eur, day_pct, cls(tot_pct), tot_pct, led["cash"])
+    body += ('<div class="card"><h2>Positions</h2>{}</div>'.format('<div class="tw"><table><tr><th>Name</th><th>Qty</th><th>Entry EUR</th><th>Now EUR</th><th>P&amp;L EUR</th></tr>' + rows + "</table></div>") if rows else '<div class="card"><h2>Positions</h2>None, all cash.</div>')
+    body += '<div class="card"><h2>Orders waiting</h2>{}</div>'.format(e(", ".join("{} {} x {}".format(o["side"], o["qty"], o["symbol"]) for o in pend)) or "None")
+    body += '<div class="card"><h2>Today\'s fills</h2>{}</div>'.format(e("; ".join("{} {} x {} @ {:.2f}".format(x["side"], x["qty"], x["symbol"], x["price"]) for x in fills)) or "None")
+    if line:
+        body += '<div class="card mute">{}</div>'.format(e(line))
+    body += '<div class="mute">Prices delayed about 15 minutes. Paper money, research only.</div></main>'
+    return '<title>Account Snapshot</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<style>{}</style>\n{}'.format(SNAP_CSS, body)
+
+
 def main():
-    d = dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else pb.utc_now().date()
+    if "--snapshot" in sys.argv:
+        out = PAPER / "reports"
+        out.mkdir(parents=True, exist_ok=True)
+        s = snapshot()
+        (out / "snapshot.html").write_text(s, encoding="utf-8")
+        print(out / "snapshot.html", len(s), "bytes")
+        return
+    d = dt.date.fromisoformat([a for a in sys.argv[1:] if not a.startswith("--")][0]) if [a for a in sys.argv[1:] if not a.startswith("--")] else pb.utc_now().date()
     out = PAPER / "reports"
     out.mkdir(parents=True, exist_ok=True)
     h = page(d)
