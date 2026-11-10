@@ -1,0 +1,29 @@
+[
+ {
+  "id": "high-momentum-20d",
+  "hypothesis": "Stocks trading at their recent high after a strong run keep drifting up because investors anchor on the high and under-react to the good news behind the run.",
+  "rule": "Entry: below_3m_high >= -1.0% AND d20 >= +10% AND entry cost <= 1.5%. If more than 2 names qualify on a day, buy only the 2 with the largest d20. Size: max whole shares under the 25% cap. Horizon 20 trading days; exit at horizon or the -8% stop. No re-entry in a name already held.",
+  "source": "George & Hwang (2004), The 52-Week High and Momentum Investing, Journal of Finance; adapted to the 3-month high available in the features",
+  "status": "testing",
+  "created": "2026-11-10",
+  "note": "New. First signal day: AZN, BAYN, GSK, NOVN, SAN.PA all qualify on price; AZN fails the cost filter (2.26%); BAYN and SAN.PA have the largest d20. All signals are pharma, so the results are exposed to one sector."
+ },
+ {
+  "id": "guidance-drift-10d",
+  "hypothesis": "After a company raises its forecast or reports results above expectations, the price keeps drifting in the direction of the news for days because investors under-react to earnings information.",
+  "rule": "Entry: a headline on the decision day that names the company and says it raised its forecast/guidance/outlook or beat results expectations, AND d1 >= +2% (the market confirms the news as positive), AND entry cost <= 1.5%. Horizon 10 trading days; exit at horizon or the -8% stop. Analyst rating/target changes and regulatory approvals do not count.",
+  "source": "Bernard & Thomas (1989), Post-Earnings-Announcement Drift; Chan, Jegadeesh & Lakonishok (1996), Momentum Strategies",
+  "status": "testing",
+  "created": "2026-11-10",
+  "note": "New. First signal: IFX.DE raised its data-centre revenue forecast to nearly 4 bn EUR, d1 +2.59%."
+ },
+ {
+  "id": "no-news-drop-reversal-3d",
+  "hypothesis": "A large one-day drop without company-specific news is often liquidity or flow driven and partly reverses within days, while drops with news do not.",
+  "rule": "Entry: d1 <= -3.0% AND no headline on the decision day naming the company (theme-wide commodity headlines are allowed) AND the stock's main driver (oil for oil_gas, gold for gold_miners, copper for copper_uranium, ^STOXX50E otherwise) moved less than half as much as the stock, AND entry cost <= 1.5%. Horizon 3 trading days; exit at horizon or the -8% stop.",
+  "source": "Jegadeesh (1990), Evidence of Predictable Behavior of Security Returns; Lehmann (1990); Chan (2003), Stock price reaction to news and no-news",
+  "status": "testing",
+  "created": "2026-11-10",
+  "note": "New. No signal today: the largest drop is REP.MC -2.83%, and it is fully explained by Brent -2.73%."
+ }
+]
