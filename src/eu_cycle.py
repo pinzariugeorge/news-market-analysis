@@ -36,6 +36,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import live_feed as lf  # noqa: E402
 import paper_broker as pb  # noqa: E402
 import notify  # noqa: E402
+import shadow  # noqa: E402
 
 PAPER = pb.PAPER
 os.environ.setdefault("HANDOFF_DIR", str(PAPER / "handoff"))
@@ -106,6 +107,12 @@ def due(role, now=None):
             return {"run": False, "reason": "{} already ran today at {}".format(role, st[role]["at"])}
         late = "started late: market already open since {} UTC".format(o.strftime("%H:%M")) if now > o else ""
         return {"run": True, "reason": late or "on time"}
+    if role == "lab":
+        if now > c - dt.timedelta(minutes=pb.LIM["cutoff_min"]):
+            return {"run": False, "reason": "past the buy cutoff; the next lab run is the next trading day"}
+        if "lab" in st and st["lab"]["ok"]:
+            return {"run": False, "reason": "lab already ran today at {}".format(st["lab"]["at"])}
+        return {"run": True, "reason": "on time"}
     if role == "reviewer":
         if "reviewer" in st and st["reviewer"]["ok"]:
             return {"run": False, "reason": "reviewer already ran today"}
@@ -413,7 +420,7 @@ def prep(role, now=None):
             warn(d, "no researcher brief today (researcher did not run); the trader works from the raw headlines")
         ho, hw = handoff.latest(handoff.DIR, today(now))
         L = ["# Trader input, decision day {} (now {} UTC; {} warnings from the day state: {})".format(d, now.strftime("%H:%M"), len(state_get(d)["warnings"]), "; ".join(state_get(d)["warnings"]) or "none"),
-             "Output file to write: " + str(rd / "trader_decision.json"), "", handoff.render(ho, hw), "", pb.outcomes_block(), "", account_text(led), "", "## Researcher brief"]
+             "Output file to write: " + str(rd / "trader_decision.json"), "", handoff.render(ho, hw), "", pb.outcomes_block(), "", shadow.block(), "", account_text(led), "", "## Researcher brief"]
         L += [br.read_text(encoding="utf-8")] if br.exists() else ["(no brief today; use the headlines below)"]
         if not br.exists():
             for th, items in col["news"].items():
@@ -423,12 +430,34 @@ def prep(role, now=None):
         L += ["- {} [{}] {} EUR, age {} min, entry cost {}%, max {} shares".format(k, v["theme"], v["price_eur"], v["age_min"], v["entry_cost_pct"], v["max_shares_35pct"]) for k, v in col["table"].items()]
         L += ["", "Limits: " + json.dumps({k: v for k, v in pb.LIM.items()})]
         p = rd / "trader_input.md"
+    elif role == "lab":
+        import lab
+        lab.require_lab()
+        for r in pb.replay_exits(now):
+            print("replayed exit:", r["id"], r["status"], r.get("reasons", ""))
+        do_fills(now)
+        pb.accrue_custody(now)
+        pb.mark_to_market(now)
+        lab.sync_status(d)
+        led = pb.load()
+        L = ["# Lab input, decision day {} (now {} UTC)".format(d, now.strftime("%H:%M")), "Output file to write: " + str(rd / "lab_output.json"), "",
+             "## Registered ideas (registry)"] + (["- [{}] {}: {} | rule: {} | source: {} | note: {}".format(i["status"], i["id"], i["hypothesis"], i["rule"], i["source"], i["note"]) for i in lab.load_ideas()] or ["(none yet: propose your first ideas)"])
+        L += ["", lab.results_block(led), "", account_text(led), "", "## Per-name features (daily closes up to now; last, 1/5/20-day move %, % below the 3-month high)"]
+        L += ["- {}: last {} d1 {:+.2f} d5 {:+.2f} d20 {:+.2f} below_3m_high {:+.2f}".format(k, v["last"], v["d1"], v["d5"], v["d20"], v["below_3m_high"]) for k, v in lab.features().items()]
+        L += ["", "## Headlines per theme (newest first)"]
+        for th, items in col["news"].items():
+            L += ["### " + th] + ["- [{}] {} ({})".format(i["published_utc"], i["title"], i["source"]) for i in items[:6]]
+        L += ["", "## Drivers"] + ["- {}: {:+.2f}%".format(k, v["chg_pct"]) for k, v in col["drivers"].items()]
+        L += ["", "## Traded names: price EUR, quote age min, entry cost % (commission, FX, tax, slippage), max whole shares under the 25% lab cap"]
+        L += ["- {} [{}] {} EUR, age {} min, entry cost {}%, max {} shares".format(k, v["theme"], v["price_eur"], v["age_min"], v["entry_cost_pct"], int(0.25 * pb.LIM["start_cash"] // v["price_eur"])) for k, v in col["table"].items()]
+        L += ["", "Lab limits: " + json.dumps({k: v for k, v in pb.LIM.items()})]
+        p = rd / "lab_input.md"
     elif role == "reviewer":
         if "close" not in st:
             close(now)
         rep = PAPER / "reports" / (d.isoformat() + ".json")
         ho, hw = handoff.latest(handoff.DIR, today(now))
-        L = ["# Reviewer input, day {}".format(d), "Output file to write: " + str(rd / "reviewer_output.json"), "", handoff.render(ho, hw), "", pb.outcomes_block(), "", account_text(led), "",
+        L = ["# Reviewer input, day {}".format(d), "Output file to write: " + str(rd / "reviewer_output.json"), "", handoff.render(ho, hw), "", pb.outcomes_block(), "", shadow.block(), "", account_text(led), "",
              "## Day report (from the close job)", rep.read_text(encoding="utf-8") if rep.exists() else "(no report)", "",
              "## Orders and fills today"] + [json.dumps(o) for o in led["orders"] if o["time"][:10] == d.isoformat()] + [json.dumps(x) for x in led["fills"] if x["time"][:10] == d.isoformat()]
         p = rd / "reviewer_input.md"
@@ -459,6 +488,14 @@ def apply_trader(path, now=None):
             print("handoff stored:", handoff.store(ho))
     else:
         warn(d, "decision has no handoff note")
+    try:
+        tbl = json.loads((PAPER.parent / "live" / d.isoformat() / "collected.json").read_text(encoding="utf-8"))["table"]
+        n, sp = shadow.record(dec.get("shadow", []), tbl, d)
+        print("shadow calls stored: {}".format(n))
+        for p in sp:
+            warn(d, "shadow: " + p)
+    except Exception as e:  # noqa: BLE001
+        warn(d, "shadow calls not stored: " + str(e)[:60])
     results = []
     themes = dec.get("themes", {})
     for o in dec.get("orders", []):
@@ -476,6 +513,37 @@ def apply_trader(path, now=None):
     pb.add_note("trader", "{} orders. {}".format(len(results), mv)[:500])
     state_set(d, "trader", True, "{} orders: {}".format(len(results), ", ".join(r["status"] for r in results)))
     notify.send(("Trader: " + "; ".join("{} {} x{} {}".format(r["side"], r["symbol"], r["qty"], r["status"]) for r in results)) if results else "Trader: no trade today.", "Paper trading decision", 3 if not results else 4)
+    return 0
+
+
+def apply_lab(path, now=None):
+    """Lab run: update the idea registry, then send the lab orders (each tagged with its idea). Only ever touches the lab directory (the broker enforces LAB=1)."""
+    import lab
+    lab.require_lab()
+    now = now or pb.utc_now()
+    d = today(now)
+    try:
+        dec = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        state_set(d, "lab", False, "malformed output: " + str(e)[:80])
+        print("LAB: output unreadable ({})".format(str(e)[:80]))
+        return 1
+    for p in lab.merge_ideas(dec.get("ideas", []), d):
+        warn(d, p)
+    known = {i["id"]: i for i in lab.load_ideas()}
+    results = []
+    for o in dec.get("orders", []):
+        iid = str(o.get("idea", ""))
+        if iid not in known or known[iid]["status"] not in ("testing", "proposed"):
+            print("lab order skipped: idea '{}' is not registered as testing".format(iid))
+            continue
+        req = {"symbol": o.get("symbol"), "side": str(o.get("side", "")).upper(), "qty": o.get("qty", 0), "type": "MARKET", "confidence": o.get("confidence", 0.5),
+               "catalyst": "lab idea {}: {}".format(iid, str(o.get("rationale", ""))[:120]), "horizon": o.get("horizon", 0), "agent": "lab:" + iid}
+        r = pb.submit(req, "agent", now)
+        results.append(r)
+        print("{} {} {} x{}: {} {}".format(r["id"], r["side"], r["symbol"], r["qty"], r["status"], "; ".join(r.get("reasons", []))))
+    pb.add_note("lab", str(dec.get("lab_notes", ""))[:500])
+    state_set(d, "lab", True, "{} orders".format(len(results)))
     return 0
 
 
@@ -601,6 +669,10 @@ def evening(now=None):
         print("replayed exit:", r["id"], r["status"], r.get("reasons", ""))
     do_fills(now)
     close(now)
+    try:
+        print("shadow calls scored: {}".format(shadow.score(now)))
+    except Exception as e:  # noqa: BLE001
+        warn(d, "shadow scoring failed: " + str(e)[:60])
 
 
 def status():
@@ -630,6 +702,8 @@ if __name__ == "__main__":
         sys.exit(apply_intraday(a[2]))
     elif cmd == "apply" and a[1] == "trader":
         sys.exit(apply_trader(a[2]))
+    elif cmd == "apply" and a[1] == "lab":
+        sys.exit(apply_lab(a[2]))
     elif cmd == "apply":
         sys.exit(apply_simple(a[1], a[2] if len(a) > 2 else ""))
     elif cmd == "fills":

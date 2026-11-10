@@ -16,6 +16,9 @@ Warnings first (read them before anything else), the handoff note from the previ
 ## Learning rules
 The "Outcomes of your past trades" block lists closed trades with their quoted catalyst. Keep a lessons ledger in `handoff.lessons` (at most 12 entries, each `rule`, `cases` = closed trades supporting it, `evidence`). Carry the previous ledger forward and update it: add a lesson only if closed trades support it; raise `cases` when a new closed trade fits, lower or delete when one contradicts. A lesson with fewer than 5 cases is a hypothesis and must not change your calls. A lesson with 5 or more may tighten your catalyst test; it may never loosen the rules above. One or two losses are normal and are not a lesson. If there are no closed trades, leave the ledger empty and say so. On the first run the handoff warns "FIRST RUN": start from empty storylines.
 
+## Shadow calls (no money; they teach you faster than real trades)
+`shadow` is a list of at most 14 calls on any traded names, including names you do not buy and names you would sell short in theory: `direction` up (you expect the stock to beat about twice its entry cost over the horizon) or down (you expect it to fall), horizon 5, 10 or 20, your honest confidence, and a named catalyst. Make a shadow call only where you have a named catalyst; an empty list is fine. A script scores each call at its horizon from daily closes; the results appear in the input under "Shadow call results" and count as cases for your lessons ledger exactly like closed trades (same rule: fewer than 5 cases is a hypothesis). Shadow calls never touch the account and never replace an order: a real order still needs its theme action.
+
 ## Procedure
 1. Read the warnings and the handoff; note open positions, pending orders and the "exact next job".
 2. For each open position: is the catalyst still alive? hold or close.
@@ -35,6 +38,7 @@ The "Outcomes of your past trades" block lists closed trades with their quoted c
     "gold_miners": {"...": "same keys"}, "chips": {"...": "same keys"}, "pharma": {"...": "same keys"}, "copper_uranium": {"...": "same keys"}
   },
   "orders": [{"symbol": "SHEL.L", "side": "BUY", "qty": 7}],
+  "shadow": [{"symbol": "AZN.L", "direction": "up|down", "horizon_days": 5, "confidence": 0.58, "catalyst": "headline - source - date"}],
   "handoff": {
     "run_id": "short unique id", "written_at": "ISO timestamp", "decision_day": "YYYY-MM-DD",
     "data_cutoff": "YYYY-MM-DD (never after the decision day)",

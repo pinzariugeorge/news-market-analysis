@@ -222,3 +222,7 @@ otify.py "test"`.
 - Added `python -I src/eu_report.py --snapshot` (tiny page: balance, today, total, positions with P&L, waiting orders, today's fills, the notification line). Published to Claude cloud and refreshed after every scheduled run (morning, hourly, evening) as a light replacement for the live dashboard.
 
 - 2026-11-10: Claude Security scan (1 LOW finding F1: dashboard accepted any Host/Origin, DNS-rebinding risk). Applied verified patch: src/dashboard_server.py now only serves 127.0.0.1:8765 / localhost:8765, others get 403. Selftest ok, dashboard restarted.
+
+## 2026-11-10 (14:45 CET): shadow predictions and idea lab built
+- `src/shadow.py` (shadow calls + scoring, 7 self-tests), `src/lab.py` (idea registry, per-idea results against the luck benchmark, 7 self-tests; run with `LAB=1 PAPER_DIR=<temp dir>`), `paper_broker.py` lab limits and isolation guard, `eu_cycle.py` roles `lab` (due, prep, apply) and shadow hooks (record at trader apply, score in evening, blocks in trader and reviewer input), `agent/EU_LAB_PROMPT.md`, trader and reviewer prompts updated.
+- Next: create cloud task `eu-paper-lab` (weekdays 10:17 UTC, env LAB=1 PAPER_DIR=data/paper_lab PAPER_STATE_BRANCH=claude/lab-state), check its first run, measure the extra tokens.
