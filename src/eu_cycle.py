@@ -620,14 +620,15 @@ def close(now=None):
 
 def summary(now=None):
     """The phone notification line (fixed template): <colored dot> Balance: X EUR | Bought: ... | Sold: ... | Ordered: ...
-    Dot: green when equity is above the last recorded close, red below, white when unchanged. Bought/Sold are today's fills, Ordered the accepted orders still waiting to fill."""
+    Dot: green when equity is above the last recorded close, red below, white when unchanged. Bought/Sold are only the fills booked in this run (last 50 minutes), Ordered the accepted orders still waiting to fill."""
     now = now or pb.utc_now()
     d = today(now)
     led = pb.load()
     eq = pb.equity_now(led)
     prev = pb.equity_on(led, d)
     dot = "\U0001F7E2" if eq > prev + 0.005 else "\U0001F534" if eq < prev - 0.005 else "\u26AA"
-    fills = [x for x in led["fills"] if x["time"][:10] == d.isoformat()]
+    # Only fills booked in THIS run (recorded within the last 50 minutes) count as news; an earlier fill is not repeated in every later notification.
+    fills = [x for x in led["fills"] if x.get("recorded_at") and (now - pb.parse_utc(x["recorded_at"])).total_seconds() <= 50 * 60]
 
     def fmt(side):
         s = ", ".join("{} x {} @ {:.2f}".format(x["qty"], x["symbol"], x["price"]) for x in fills if x["side"] == side)

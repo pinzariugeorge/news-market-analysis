@@ -398,7 +398,7 @@ def process_fills(now=None):
                     led["positions"].remove(p)
             o["status"] = "FILLED"
             fill = {"id": len(led["fills"]) + 1, "order_id": o["id"], "time": pick[0], "symbol": sym, "side": side, "qty": o["qty"], "price": round(px, 4), "currency": cur, "fee_eur": c["total"],
-                    "gross_eur": round(gross, 2), "costs": c, "realized_eur": realized, "catalyst": o.get("catalyst", ""), "agent": o["agent"], "source": o["source"], "theme": o["theme"]}
+                    "gross_eur": round(gross, 2), "recorded_at": iso(now), "costs": c, "realized_eur": realized, "catalyst": o.get("catalyst", ""), "agent": o["agent"], "source": o["source"], "theme": o["theme"]}
             led["fills"].append(fill)
             log_event(dict(fill, event="filled"))
             msgs.append("FILLED {} {} {} @ {:.4f} {} (costs {} EUR)".format(side, o["qty"], sym, px, cur, c["total"]))
