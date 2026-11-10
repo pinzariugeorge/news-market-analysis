@@ -1,0 +1,95 @@
+{
+ "run_id": "eu-rev-2026-11-10-01",
+ "written_at": "2026-11-10T07:08:00Z",
+ "decision_day": "2026-11-10",
+ "data_cutoff": "2026-11-10",
+ "what_changed": "Infineon reported a record Q4 and guided FY2027 revenue growth above 20% with higher profitability, above forecasts; I sent a buy of 6 IFX.DE for a 10-day horizon. Trump said the Iran war is 'effectively over' and crude fell again; Bayer won FDA approval for asundexian and the FDA ordered a blindness warning on GLP-1 drugs. US CPI is due today; the BofA chip downgrade names were still not confirmed by any item in today's brief.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Iran de-escalation keeps pushing crude down; buybacks are routine."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No name-specific catalyst and high UK costs ahead of CPI."
+  },
+  "chips": {
+   "position": "long IFX.DE since 2026-11-10, 10 days (order sent, fill not yet seen)",
+   "why": "Record Q4 and FY2027 guidance above forecasts at the lowest-cost name."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Bayer approval likely expected and was 0.50, just below the bar; the Novo warning is negative."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Flat copper, weak China spot demand, no name-specific catalyst."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Infineon FY2026 Q4 beat and FY2027 guidance",
+   "status": "open",
+   "note": "Watch the opening gap and fill price, the earnings-call tone on cash flow, and any read-across to STMPA.PA; close if the guidance is walked back.",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "name": "US CPI release",
+   "status": "open",
+   "note": "Due 2026-11-10; check the reaction in chips, gold and copper before any new metals entry and for risk to IFX.DE.",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "name": "Iran risk premium in crude",
+   "status": "fading",
+   "note": "Trump says the war is 'effectively over' and Hormuz LNG traffic is at a high; watch for a rhetoric reversal or Brent stabilising near 90.",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "name": "BofA downgrade of 3 European chip stocks on memory exposure",
+   "status": "open",
+   "note": "Names still unconfirmed from a primary source; check whether IFX.DE was among them.",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "name": "Bayer asundexian FDA approval",
+   "status": "open",
+   "note": "Watch the BAYN.DE price reaction and analyst sales estimates; a launch-focused upgrade could be a catalyst on a later run.",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "name": "FDA blindness warning on weight-loss drugs",
+   "status": "open",
+   "note": "Negative for NOVO-B.CO; watch for prescription data or further regulatory action.",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "name": "FDA probe of Novartis gene therapy",
+   "status": "open",
+   "note": "No update today; watch for any regulatory action on NOVN.SW products.",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "name": "US-China trade truce extension and metals rally",
+   "status": "fading",
+   "note": "Copper flat today with weak China spot demand; need name-specific production or guidance news.",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "name": "Nvidia board probe of CEO",
+   "status": "open",
+   "note": "No update today; escalation would hurt chips sentiment and IFX.DE.",
+   "first_seen": "2026-11-09"
+  }
+ ],
+ "pending_orders": [
+  {
+   "symbol": "IFX.DE",
+   "side": "BUY",
+   "qty": 6,
+   "status": "sent, no fill seen"
+  }
+ ],
+ "next_job": "Next run: confirm the IFX.DE fill (price and cost) and hold it unless the guidance catalyst is gone; read the US CPI reaction; confirm the BofA chip downgrade names from a primary source. Then re-check the other four themes for a primary-source, name-specific catalyst whose expected move is well above twice the entry cost (watch BAYN.DE follow-through on asundexian). If flat, state per theme what catalyst would have been enough.",
+ "lessons": []
+}
