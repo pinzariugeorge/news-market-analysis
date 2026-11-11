@@ -1,0 +1,29 @@
+[
+ {
+  "id": "news-drift",
+  "hypothesis": "Prices underreact to firm-specific news about results, guidance or analyst rating/target changes, so a name that moves up clearly more than its theme on such news keeps drifting for days to weeks.",
+  "rule": "Entry: a headline in the input names the stock (or its company) and is about results, guidance/outlook, or an analyst rating or target-price change, AND the stock's d1 >= +2.0% AND d1 is at least 1.0 point above the average d1 of its theme (theme from the traded-names table). Buy max shares, horizon 10 trading days; exit at horizon or the -8% stop. One entry per name per 10 days.",
+  "source": "Bernard & Thomas 1989 (post-earnings-announcement drift); Womack 1996 and Brav & Lehavy 2003 (drift after analyst recommendation / target price revisions)",
+  "status": "testing",
+  "created": "2026-11-11",
+  "note": "New today; first trigger EQNR.OL (Jefferies target raise, d1 +3.30% vs oil_gas theme average +2.22%)."
+ },
+ {
+  "id": "theme-catchup",
+  "hypothesis": "Information diffuses slowly across firms in the same industry, so a theme member that has not followed a strong theme move catches up over the next days.",
+  "rule": "Entry: within one theme, the top name has d1 >= +3.0% and the theme average d1 >= +1.5%; buy the theme name with the lowest d1 if its d1 is at least 2.0 points below the theme average and it has no own headline in the input. Buy max shares, horizon 5 trading days; exit at horizon or the -8% stop.",
+  "source": "Hou 2007 (industry information diffusion and lead-lag); Moskowitz & Grinblatt 1999 (industry momentum)",
+  "status": "testing",
+  "created": "2026-11-11",
+  "note": "New today; no trigger (chips moved together +4.3 to +6.1%, oil_gas laggard TTE only 0.75 pt below theme average)."
+ },
+ {
+  "id": "driver-lag",
+  "hypothesis": "Commodity producers' shares underreact to same-day moves in their main commodity and catch up over the following days.",
+  "rule": "Entry: driver d1 >= +1.5% (BZ=F for oil_gas, GC=F for gold_miners, HG=F for copper_uranium) AND the stock's d1 is at least 2.0 points below the driver move AND d5 of the stock is not below -8%. Buy max shares, horizon 3 trading days; exit at horizon or the -8% stop. At most 2 names per driver per day (largest lag first).",
+  "source": "Hong, Torous & Valkanov 2007 (industries lead stock markets / gradual information diffusion); own hypothesis for the commodity-stock lag form",
+  "status": "testing",
+  "created": "2026-11-11",
+  "note": "New today; no trigger (BZ=F +1.33%, GC=F +0.20%, HG=F +1.00%, all below the 1.5% threshold)."
+ }
+]

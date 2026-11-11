@@ -1,0 +1,42 @@
+{
+ "mode": "PAPER",
+ "currency": "EUR",
+ "start_cash": 1000.0,
+ "cash": 1000.0,
+ "positions": [],
+ "orders": [
+  {
+   "id": "20261111-EQNR.OL-BUY",
+   "time": "2026-11-11T14:18:52Z",
+   "symbol": "EQNR.OL",
+   "side": "BUY",
+   "qty": 6,
+   "type": "MARKET",
+   "limit": null,
+   "status": "ACCEPTED",
+   "reasons": [],
+   "source": "agent",
+   "theme": "oil_gas",
+   "catalyst": "lab idea news-drift: Headline 'Jefferies raises target price for Equinor' with EQNR d1 +3.30%, 1.08 points above the oil_gas theme average d1",
+   "confidence": 0.5,
+   "horizon": 10,
+   "agent": "lab:news-drift"
+  }
+ ],
+ "fills": [],
+ "equity_history": [
+  {
+   "date": "2026-11-11",
+   "equity": 1000.0
+  }
+ ],
+ "notes": [
+  {
+   "time": "2026-11-11T14:18:55Z",
+   "agent": "lab",
+   "text": "First lab run: registered three distinct news-family ideas (own-news drift, theme catch-up, commodity-driver lag) and only news-drift triggered today, on Equinor after a broker target raise in an oil rebound. Next I will watch whether the EQNR excess over the universe holds over 10 days and check daily for theme catch-up and driver-lag triggers; one testing slot stays free on purpose."
+  }
+ ],
+ "custody_paid": 0.0,
+ "started": "2026-11-11T14:18:09Z"
+}
