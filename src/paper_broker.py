@@ -41,10 +41,12 @@ LAB = os.environ.get("LAB") == "1"
 # Isolation guard: the lab limits run only against a separate directory (data/paper_lab), and the main account never runs with the lab flag or against the lab directory.
 if LAB and (not os.environ.get("PAPER_DIR") or PAPER.resolve() == (ROOT / "data" / "paper").resolve()):
     raise SystemExit("lab isolation: LAB=1 needs PAPER_DIR=<a separate lab directory>, never data/paper")
-if not LAB and PAPER.name == "paper_lab":
+if not LAB and PAPER.name.startswith("paper_lab"):
     raise SystemExit("lab isolation: the lab directory needs LAB=1")
 if LAB:
     LIM.update(max_positions=5, max_pos_pct=0.25, min_conf=0.0, horizons=(1, 2, 3, 5, 10, 20), max_new_buys_day=5, max_fee_pct=1.5)
+    if os.environ.get("LAB_HORIZONS"):          # a lab may be restricted to some horizons, e.g. LAB_HORIZONS=1,2,3
+        LIM["horizons"] = tuple(int(x) for x in os.environ["LAB_HORIZONS"].split(","))
 TAX_BUY = {".L": 0.005, ".PA": 0.004, ".MI": 0.001, ".MC": 0.002}   # UK stamp duty, French FTT, Italian and Spanish taxes: approximate, to verify
 FX_COST, CUSTODY_YEAR = 0.0025, 0.0012
 HOLIDAYS = {"2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01", "2027-03-26", "2027-03-29", "2027-05-03"}   # approximate common closures; extend yearly; a symbol with no bars is also treated as closed

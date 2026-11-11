@@ -441,6 +441,7 @@ def prep(role, now=None):
         lab.sync_status(d)
         led = pb.load()
         L = ["# Lab input, decision day {} (now {} UTC)".format(d, now.strftime("%H:%M")), "Output file to write: " + str(rd / "lab_output.json"), "",
+             "## This lab: {} | focus: {} | allowed horizons: {}".format(os.environ.get("LAB_NAME", "lab"), os.environ.get("LAB_FOCUS", "any idea family"), list(pb.LIM["horizons"])), "",
              "## Registered ideas (registry)"] + (["- [{}] {}: {} | rule: {} | source: {} | note: {}".format(i["status"], i["id"], i["hypothesis"], i["rule"], i["source"], i["note"]) for i in lab.load_ideas()] or ["(none yet: propose your first ideas)"])
         L += ["", lab.results_block(led), "", account_text(led), "", "## Per-name features (daily closes up to now; last, 1/5/20-day move %, % below the 3-month high)"]
         L += ["- {}: last {} d1 {:+.2f} d5 {:+.2f} d20 {:+.2f} below_3m_high {:+.2f}".format(k, v["last"], v["d1"], v["d5"], v["d20"], v["below_3m_high"]) for k, v in lab.features().items()]
@@ -636,7 +637,8 @@ def summary(now=None):
 
     pend = [o for o in led["orders"] if o["status"] == "ACCEPTED"]
     ordered = ", ".join("{} {} x {}".format(o["side"], o["qty"], o["symbol"]) for o in pend) or "nothing"
-    return "{} Balance: {:.2f} EUR | Bought: {} | Sold: {} | Ordered: {}".format(dot, eq, fmt("BUY"), fmt("SELL"), ordered)
+    tag = "🧪 LAB {} | ".format(os.environ.get("LAB_NAME", "lab")) if pb.LAB else ""     # a lab notification always carries the lab tag
+    return "{}{} Balance: {:.2f} EUR | Bought: {} | Sold: {} | Ordered: {}".format(tag, dot, eq, fmt("BUY"), fmt("SELL"), ordered)
 
 
 def battery():
