@@ -1,0 +1,41 @@
+{
+  "decision_day": "2026-11-11",
+  "ideas": [
+    {
+      "id": "nonews-dip-reversal",
+      "hypothesis": "Large one-day drops without company-specific news tend to be liquidity or overreaction moves that partly reverse over the next few days, while drops with news do not.",
+      "rule": "BUY at the table's max shares when a name has d1 <= -4.0% and no headline in its theme today names the company; skip if entry cost > 1.3%. Horizon 3 trading days; exit at horizon or the -8% stop.",
+      "source": "Lehmann 1990 (QJE) and Jegadeesh 1990 (JF) short-term reversal; Chan 2003 (JFE) 'Stock price reaction to news and no-news'",
+      "status": "testing",
+      "note": "First run; no trigger today (no name down 4% or more)."
+    },
+    {
+      "id": "news-day-drift",
+      "hypothesis": "Large one-day gains that come with company-specific results or guidance news are under-reacted to and keep drifting for a few days, unlike no-news moves.",
+      "rule": "BUY at the table's max shares when a name has d1 >= +4.0% and at least one headline today names the company and reports its results, guidance, forecast or outlook; skip if entry cost > 1.3%. Horizon 3 trading days; exit at horizon or the -8% stop.",
+      "source": "Chan 2003 (JFE) news vs no-news; Savor 2012 (JFE) 'Stock returns after major price shocks: the role of information'",
+      "status": "testing",
+      "note": "First run; IFX.DE triggers today."
+    },
+    {
+      "id": "theme-laggard-catchup",
+      "hypothesis": "When one name in a theme jumps on its own news, peers in the same theme that have not yet moved catch up over the next one to two days because information diffuses slowly across related stocks.",
+      "rule": "If a name has d1 >= +5.0% with a same-day headline naming it, BUY at max shares any other name in the same theme with d1 <= +1.0% and no headline naming it today; skip if entry cost > 1.3%. Horizon 2 trading days; exit at horizon or the -8% stop.",
+      "source": "Hou 2007 (RFS) 'Industry information diffusion and the lead-lag effect in stock returns'",
+      "status": "testing",
+      "note": "First run; chips leader IFX.DE +7.34% but peers BESI.AS +5.50% and STMPA.PA +4.75% already moved, so no laggard today."
+    }
+  ],
+  "orders": [
+    {
+      "idea": "news-day-drift",
+      "symbol": "IFX.DE",
+      "side": "BUY",
+      "qty": 4,
+      "horizon": 3,
+      "confidence": 0.5,
+      "rationale": "IFX.DE is up 7.34% today with a company outlook headline ('Infineon expects more than 20% growth as data centre power nears 4 billion EUR') and entry cost 0.82%, meeting the d1 >= +4% with guidance-news trigger."
+    }
+  ],
+  "lab_notes": "First lab run: registered three distinct short-horizon ideas (no-news dip reversal, news-day drift, theme laggard catch-up); only news-day drift fired, on IFX.DE, though the same-day BofA target cut makes the news mixed. Next: watch whether the IFX.DE drift holds over 3 days and wait for a no-news drop of 4% or more to test the reversal idea."
+}

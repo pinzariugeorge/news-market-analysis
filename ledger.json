@@ -1,0 +1,42 @@
+{
+ "mode": "PAPER",
+ "currency": "EUR",
+ "start_cash": 1000.0,
+ "cash": 1000.0,
+ "positions": [],
+ "orders": [
+  {
+   "id": "20261111-IFX.DE-BUY",
+   "time": "2026-11-11T12:19:00Z",
+   "symbol": "IFX.DE",
+   "side": "BUY",
+   "qty": 4,
+   "type": "MARKET",
+   "limit": null,
+   "status": "ACCEPTED",
+   "reasons": [],
+   "source": "agent",
+   "theme": "chips",
+   "catalyst": "lab idea news-day-drift: IFX.DE is up 7.34% today with a company outlook headline ('Infineon expects more than 20% growth as data centre power ne",
+   "confidence": 0.5,
+   "horizon": 3,
+   "agent": "lab:news-day-drift"
+  }
+ ],
+ "fills": [],
+ "equity_history": [
+  {
+   "date": "2026-11-11",
+   "equity": 1000.0
+  }
+ ],
+ "notes": [
+  {
+   "time": "2026-11-11T12:19:02Z",
+   "agent": "lab",
+   "text": "First lab run: registered three distinct short-horizon ideas (no-news dip reversal, news-day drift, theme laggard catch-up); only news-day drift fired, on IFX.DE, though the same-day BofA target cut makes the news mixed. Next: watch whether the IFX.DE drift holds over 3 days and wait for a no-news drop of 4% or more to test the reversal idea."
+  }
+ ],
+ "custody_paid": 0.0,
+ "started": "2026-11-11T12:18:21Z"
+}
