@@ -1,0 +1,50 @@
+{
+  "decision_day": "2026-11-11",
+  "decided_at": "2026-11-11T07:09:00Z",
+  "market_view": "European shares sit near records on lower oil while a hotter US inflation print lifted rate-hike bets and the USD, which caps gold and weighs on US chips after the Nvidia slide. Overnight driver moves (oil +0.8%, gold +1.0%, copper +1.8%) are macro continuations without name-specific catalysts large enough to clear UK-heavy entry costs.",
+  "would_change_my_mind": "A walk-back of Infineon's FY2027 guidance or a primary source naming IFX.DE in the BofA memory-exposure downgrade would make me close; a name-specific production, guidance or regulatory event with an expected move well above twice entry cost would justify a new long.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.47, "catalyst": "BP acquires 60% interest in Eco Atlantic's Namibian offshore licences - Africa Business Communities - 2026-11-11", "reasoning": "The BP deal is exploration-stage and small relative to BP, and crude direction is contested (Iran truce vs Hormuz attacks); expected move does not clear about 3% round-trip cost on BP.L."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.46, "catalyst": "Gold extends gains beyond $4,050; upside seems capped as Fed hike bets support USD - FXStreet - 2026-11-11", "reasoning": "Gold-price continuation only, no Endeavour or Fresnillo news, and the headline itself flags capped upside; UK costs near 1.6-1.7% each way."},
+    "chips": {"action": "hold", "symbol": "IFX.DE", "horizon_days": 10, "confidence": 0.53, "catalyst": "Infineon Technologies AG : Receives a Buy rating from JP Morgan - marketscreener.com - 2026-11-11", "reasoning": "The original catalyst (record Q4, FY2027 revenue growth guidance above 20%) stands and JP Morgan's Buy rating adds support; the day-one -3.6% is not a reason to exit while guidance holds. No evidence yet that IFX.DE was among the BofA downgrade names."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.48, "catalyst": "Nine of ten AstraZeneca analyst houses raised their targets after Q3 - Biostock - 2026-11-11", "reasoning": "Post-results target raises are usually priced in and AZN.L costs about 1.5% each way; no new Bayer asundexian follow-through in today's input."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.47, "catalyst": "Meet the final bidders vying for Rio Tinto's $7b infrastructure assets - AFR - 2026-11-11", "reasoning": "The Rio sale is a stage in a known process with no price or timing; copper +1.8% is contradicted by weak-spot-demand reports and nothing is specific to ANTO.L, GLEN.L, KGH.WA or BOL.ST."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "IFX.DE", "direction": "up", "horizon_days": 10, "confidence": 0.53, "catalyst": "Infineon Technologies AG : Receives a Buy rating from JP Morgan - marketscreener.com - 2026-11-11"},
+    {"symbol": "BP.L", "direction": "up", "horizon_days": 5, "confidence": 0.47, "catalyst": "BP acquires 60% interest in Eco Atlantic's Namibian offshore licences - Africa Business Communities - 2026-11-11"},
+    {"symbol": "AZN.L", "direction": "up", "horizon_days": 10, "confidence": 0.48, "catalyst": "Nine of ten AstraZeneca analyst houses raised their targets after Q3 - Biostock - 2026-11-11"},
+    {"symbol": "RIO.L", "direction": "up", "horizon_days": 20, "confidence": 0.48, "catalyst": "Meet the final bidders vying for Rio Tinto's $7b infrastructure assets - AFR - 2026-11-11"}
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-11-01",
+    "written_at": "2026-11-11T07:09:00Z",
+    "decision_day": "2026-11-11",
+    "data_cutoff": "2026-11-11",
+    "what_changed": "No new orders: holding IFX.DE (6 @ 50.8953, last 49.05, exit by 2026-11-24) as JP Morgan issued a Buy rating and the FY2027 guidance stands. US CPI came in hot enough to raise rate-hike bets and firm the USD; US stocks fell on an Nvidia slide while European indices rose. Overnight oil +0.8%, gold +1.0%, copper +1.8% but none came with a name-specific catalyst that clears costs; four low-confidence shadow calls logged.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "BP Namibia stake is small and exploration-stage; crude direction contested; would need e.g. a production/guidance surprise or sustained Brent move at a low-cost name (ENI.MI, REP.MC)."},
+      "gold_miners": {"position": "flat", "why": "Only gold-price continuation with Fed-hike headwind; would need Endeavour or Fresnillo production/guidance news."},
+      "chips": {"position": "long IFX.DE since 2026-11-10, 10 days (exit by 2026-11-24)", "why": "Record Q4 and FY2027 >20% growth guidance plus JP Morgan Buy rating; close only if guidance is walked back or a primary source adds a new negative."},
+      "pharma": {"position": "flat", "why": "AZN target raises likely priced; would need a regulatory decision, trial readout or guidance change at a low-cost name such as BAYN.DE or NOVO-B.CO."},
+      "copper_uranium": {"position": "flat", "why": "Rio asset sale has no price/timing and copper signal is contradicted; would need name-specific production, guidance or a sale price for RIO.L."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Held 6 IFX.DE at 50.90, last 49.05 (-3.6%); JP Morgan Buy rating 2026-11-11, digitimes AI-power-chip piece. Watch follow-through, FCF/execution concerns (ad-hoc-news), read-across to STMPA.PA; close if guidance is walked back.", "first_seen": "2026-11-10"},
+      {"name": "US CPI and rate-hike bets", "status": "escalating", "note": "Hot print raised hike expectations and firmed USD (EURUSD -0.55%); headwind for gold and US chips. Watch Fed speakers and USD.", "first_seen": "2026-11-10"},
+      {"name": "Iran risk premium in crude", "status": "open", "note": "Oil bounced +0.8% from a two-month low as peace optimism faded and Hormuz shipping attacks offset truce hopes; direction contested.", "first_seen": "2026-11-09"},
+      {"name": "BofA downgrade of 3 European chip stocks on memory exposure", "status": "open", "note": "Names still unconfirmed from a primary source; check whether IFX.DE was included.", "first_seen": "2026-11-10"},
+      {"name": "Bayer asundexian FDA approval", "status": "fading", "note": "No follow-through in today's input (only CIIE PR); watch BAYN.DE reaction and analyst sales estimates.", "first_seen": "2026-11-10"},
+      {"name": "FDA blindness warning on weight-loss drugs", "status": "open", "note": "Negative for NOVO-B.CO; no update today; watch prescription data or further regulatory action.", "first_seen": "2026-11-10"},
+      {"name": "FDA probe of Novartis gene therapy", "status": "open", "note": "No update today; watch for regulatory action on NOVN.SW products.", "first_seen": "2026-11-10"},
+      {"name": "Copper rally vs weak China demand", "status": "open", "note": "Copper +1.8% but spot demand reported weak and Chinese steel softening; need name-specific news.", "first_seen": "2026-11-09"},
+      {"name": "Rio Tinto $7b infrastructure asset sale", "status": "open", "note": "Final bidders named (AFR); watch for a winning bid and price, a possible RIO.L catalyst.", "first_seen": "2026-11-11"},
+      {"name": "BP Namibia offshore stake", "status": "open", "note": "BP takes 60% of Eco Atlantic licences; small for BP; watch drilling plans.", "first_seen": "2026-11-11"},
+      {"name": "Nvidia slide and board probe of CEO", "status": "open", "note": "US stocks fell on Nvidia slide 2026-11-10; escalation would hurt chips sentiment and IFX.DE.", "first_seen": "2026-11-09"}
+    ],
+    "pending_orders": [],
+    "next_job": "Hold IFX.DE (6 @ 50.8953, exit by 2026-11-24) unless the FY2027 guidance is walked back or a primary source shows a new negative (incl. BofA downgrade naming IFX.DE); check its price reaction to the JP Morgan Buy rating. Then re-check the other four themes for a primary-source, name-specific catalyst whose expected move is well above twice entry cost (watch the Rio asset-sale winning bid, BAYN.DE, and USD/rate-hike pressure on gold). If flat, state per theme what catalyst would have been enough.",
+    "lessons": []
+  }
+}
