@@ -1,0 +1,25 @@
+{
+  "decision_day": "2026-11-11",
+  "ideas": [
+    {
+      "id": "guidance-drift-10d",
+      "hypothesis": "After a company raises its forecast or reports results above expectations, the price keeps drifting in the direction of the news for days because investors under-react to earnings information.",
+      "rule": "Entry: a headline on the decision day that names the company and says it raised its forecast/guidance/outlook or beat results expectations, AND d1 >= +2% (the market confirms the news as positive), AND entry cost <= 1.5%. Horizon 10 trading days; exit at horizon or the -8% stop. Analyst rating/target changes and regulatory approvals do not count.",
+      "source": "Bernard & Thomas (1989), Post-Earnings-Announcement Drift; Chan, Jegadeesh & Lakonishok (1996), Momentum Strategies",
+      "status": "testing",
+      "note": "First signal 2026-11-11: IFX.DE headline 'Chip Maker Infineon Lifts AI Sales Goal' (WSJ, 09:53) with d1 +6.71% and entry cost 0.83%, so the rule fires; 0 closed trades."
+    }
+  ],
+  "orders": [
+    {
+      "idea": "guidance-drift-10d",
+      "symbol": "IFX.DE",
+      "side": "BUY",
+      "qty": 4,
+      "horizon": 10,
+      "confidence": 0.5,
+      "rationale": "Decision-day headline says Infineon lifted its AI sales goal and expects more than 20% growth, d1 is +6.71% (above the +2% confirmation) and entry cost 0.83% is under the 1.5% limit."
+    }
+  ],
+  "lab_notes": "high-momentum-20d has no new candidates (BAYN.DE and SAN.PA are already held, AZN.L fails below_3m_high at -1.46%, GSK/NOVN fail d20 >= 10%) and no-news-drop-reversal-3d has no name with d1 <= -3%, while guidance-drift-10d fires for the first time on IFX.DE. Next: watch whether the IFX.DE move holds beyond the announcement day, and keep the fourth slot empty until an idea is clearly different from the three under test."
+}

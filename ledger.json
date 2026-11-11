@@ -2,8 +2,37 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 1000.0,
- "cash": 1000.0,
- "positions": [],
+ "cash": 594.1687,
+ "positions": [
+  {
+   "symbol": "BAYN.DE",
+   "name": "Bayer",
+   "qty": 4,
+   "avg_price": 56.94845816802978,
+   "currency": "EUR",
+   "opened": "2026-11-10",
+   "exit_by": "2026-12-08",
+   "catalyst": "lab idea high-momentum-20d: BAYN.DE is at its 3-month high (below_3m_high 0.00) with d20 +29.33%, the largest d20 among qualifiers, and entry cost 0",
+   "confidence": 0.5,
+   "horizon": 20,
+   "agent": "lab:high-momentum-20d",
+   "theme": "pharma"
+  },
+  {
+   "symbol": "SAN.PA",
+   "name": "Sanofi",
+   "qty": 2,
+   "avg_price": 86.17306225204467,
+   "currency": "EUR",
+   "opened": "2026-11-10",
+   "exit_by": "2026-12-08",
+   "catalyst": "lab idea high-momentum-20d: SAN.PA is at its 3-month high (below_3m_high 0.00) with d20 +21.85%, second-largest d20 among qualifiers (AZN and GSK fa",
+   "confidence": 0.5,
+   "horizon": 20,
+   "agent": "lab:high-momentum-20d",
+   "theme": "pharma"
+  }
+ ],
  "orders": [
   {
    "id": "20261110-BAYN.DE-BUY",
@@ -70,7 +99,7 @@
    "qty": 4,
    "type": "MARKET",
    "limit": null,
-   "status": "ACCEPTED",
+   "status": "FILLED",
    "reasons": [],
    "source": "agent",
    "theme": "pharma",
@@ -87,7 +116,7 @@
    "qty": 2,
    "type": "MARKET",
    "limit": null,
-   "status": "ACCEPTED",
+   "status": "FILLED",
    "reasons": [],
    "source": "agent",
    "theme": "pharma",
@@ -95,13 +124,83 @@
    "confidence": 0.5,
    "horizon": 20,
    "agent": "lab:high-momentum-20d"
+  },
+  {
+   "id": "20261111-IFX.DE-BUY",
+   "time": "2026-11-11T10:18:08Z",
+   "symbol": "IFX.DE",
+   "side": "BUY",
+   "qty": 4,
+   "type": "MARKET",
+   "limit": null,
+   "status": "ACCEPTED",
+   "reasons": [],
+   "source": "agent",
+   "theme": "chips",
+   "catalyst": "lab idea guidance-drift-10d: Decision-day headline says Infineon lifted its AI sales goal and expects more than 20% growth, d1 is +6.71% (above the +",
+   "confidence": 0.5,
+   "horizon": 10,
+   "agent": "lab:guidance-drift-10d"
   }
  ],
- "fills": [],
+ "fills": [
+  {
+   "id": 1,
+   "order_id": "20261110-BAYN.DE-BUY-retry1",
+   "time": "2026-11-10T13:55:00Z",
+   "symbol": "BAYN.DE",
+   "side": "BUY",
+   "qty": 4,
+   "price": 56.9485,
+   "currency": "EUR",
+   "fee_eur": 2.5,
+   "gross_eur": 227.79,
+   "recorded_at": "2026-11-11T10:17:25Z",
+   "costs": {
+    "commission": 2.5,
+    "fx": 0.0,
+    "tax": 0.0,
+    "total": 2.5
+   },
+   "realized_eur": null,
+   "catalyst": "lab idea high-momentum-20d: BAYN.DE is at its 3-month high (below_3m_high 0.00) with d20 +29.33%, the largest d20 among qualifiers, and entry cost 0",
+   "agent": "lab:high-momentum-20d",
+   "source": "agent",
+   "theme": "pharma"
+  },
+  {
+   "id": 2,
+   "order_id": "20261110-SAN.PA-BUY-retry1",
+   "time": "2026-11-10T13:55:00Z",
+   "symbol": "SAN.PA",
+   "side": "BUY",
+   "qty": 2,
+   "price": 86.1731,
+   "currency": "EUR",
+   "fee_eur": 3.19,
+   "gross_eur": 172.35,
+   "recorded_at": "2026-11-11T10:17:25Z",
+   "costs": {
+    "commission": 2.5,
+    "fx": 0.0,
+    "tax": 0.69,
+    "total": 3.19
+   },
+   "realized_eur": null,
+   "catalyst": "lab idea high-momentum-20d: SAN.PA is at its 3-month high (below_3m_high 0.00) with d20 +21.85%, second-largest d20 among qualifiers (AZN and GSK fa",
+   "agent": "lab:high-momentum-20d",
+   "source": "agent",
+   "theme": "pharma"
+  }
+ ],
  "equity_history": [
   {
    "date": "2026-11-10",
    "equity": 1000.0
+  },
+  {
+   "date": "2026-11-11",
+   "equity": 993.79
   }
  ],
  "notes": [
@@ -114,8 +213,14 @@
    "time": "2026-11-10T13:54:38Z",
    "agent": "lab",
    "text": "Only high-momentum-20d fires today (BAYN.DE, SAN.PA, both pharma, so sector concentration remains); IFX.DE missed the guidance-drift +2% confirmation and REP.MC's -3.30% drop is explained by Brent -3.52%. Next I will watch whether the pharma momentum names hold their highs and whether a no-news drop appears outside the oil names; the fourth slot stays empty on purpose to limit the number of ideas tried."
+  },
+  {
+   "time": "2026-11-11T10:18:10Z",
+   "agent": "lab",
+   "text": "high-momentum-20d has no new candidates (BAYN.DE and SAN.PA are already held, AZN.L fails below_3m_high at -1.46%, GSK/NOVN fail d20 >= 10%) and no-news-drop-reversal-3d has no name with d1 <= -3%, while guidance-drift-10d fires for the first time on IFX.DE. Next: watch whether the IFX.DE move holds beyond the announcement day, and keep the fourth slot empty until an idea is clearly different from the three under test."
   }
  ],
- "custody_paid": 0.0,
- "started": "2026-11-10T13:42:23Z"
+ "custody_paid": 0.0013,
+ "started": "2026-11-10T13:42:23Z",
+ "custody_day": "2026-11-11"
 }
