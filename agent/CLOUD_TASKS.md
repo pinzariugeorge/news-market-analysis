@@ -8,6 +8,8 @@ Two Claude Code cloud tasks replace the laptop daemon and the three local tasks.
 
 > Evening task moved (2026-11-10): cron `50 16 * * 1-5` UTC (was `7 17`), 20 minutes after the 16:30 UTC close, because quotes are delayed up to 20 minutes and the last bars must exist. Shift to `50 15` on 2027-03-28 with the other crons.
 
+> Lab family (2026-11-11): three isolated lab accounts, each one cloud task, each ends with a phone notification tagged `🧪 LAB <name>`. `eu-paper-lab` (core, any idea family; data/paper_lab; branch claude/lab-state; 12:17 Bucharest = 10:17 UTC), `eu-paper-lab-short` (data/paper_lab_short; claude/lab-short-state; LAB_HORIZONS=1,2,3; 14:17 Bucharest; routine trig_01KTMcuzV8VQnEJ6ADCN8JKd), `eu-paper-lab-news` (data/paper_lab_news; claude/lab-news-state; 16:17 Bucharest; routine trig_01AQTV2DJj7oqJGF6bZDYYFu). Lab and evening crons use `CRON_TZ=Europe/Bucharest`, so they follow daylight saving by themselves (evening 18:50 Bucharest = 16:50 UTC in winter). The morning (`7 7` UTC) and intraday (`37 8-15` UTC) crons are still plain UTC: shift them on 2027-03-28 (or convert them to CRON_TZ=Europe/Bucharest the same way: 09:07 and 10:37-17:37).
+
 ## Task 1: eu-paper-morning (weekdays 09:07 local)
 ```
 Project: this repository (European stock paper trading, paper money, research and simulation only, not financial advice). This is a cloud run: do exactly the steps below with python3 from the repository root, change no tracked file, push only through state_sync, never print secrets. If any python command fails, stop, say which and why, and still run the final push step.
