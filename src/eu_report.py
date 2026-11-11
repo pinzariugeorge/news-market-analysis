@@ -166,7 +166,12 @@ def main():
     if "--snapshot" in sys.argv:
         out = PAPER / "reports"
         out.mkdir(parents=True, exist_ok=True)
-        s = snapshot()
+        try:
+            import eu_overview    # all accounts on one page (main + labs); falls back to the main-only page if the other branches cannot be read
+            s = eu_overview.build()
+        except Exception as ex:  # noqa: BLE001
+            print("overview failed, writing the main-only snapshot:", str(ex)[:80])
+            s = snapshot()
         (out / "snapshot.html").write_text(s, encoding="utf-8")
         print(out / "snapshot.html", len(s), "bytes")
         return
