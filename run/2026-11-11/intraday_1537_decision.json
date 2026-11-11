@@ -1,0 +1,8 @@
+{
+  "decided_at": "2026-11-11T15:37:00Z",
+  "note": "No action. The chip moves (IFX.DE +5.4%, BESI.AS, STMPA.PA) are a sector rally led by CoreWeave results, with no name-specific news; the EQNR.OL move fits the oil rebound, and Saudi/OPEC output news works against it. IFX.DE is held because its catalyst is intact and the price is now above entry. The GSK UPC injunction is too uncertain in size to clear GSK.L's 1.59% entry cost.",
+  "themes": {
+    "chips": {"action": "hold", "symbol": "IFX.DE", "horizon_days": 10, "confidence": 0.53, "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent (held since 2026-11-10)", "reasoning": "Sector rally confirms the thesis; FY2027 guidance unchanged and no new negative."}
+  },
+  "orders": []
+}
