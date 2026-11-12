@@ -202,6 +202,11 @@
    "time": "2026-11-12T11:38:40Z",
    "agent": "intraday",
    "text": "0 orders. No action. The Endeavour Mana output warning (London South East, 10:56) is negative news for a name we do not hold, and the system only goes long, so it gives no buy case; the -6.2% move already reflects it. The IFX.DE capacity-hurdle article (ad-hoc-news.de) is third-party commentary and does not walk back FY2027 guidance, so we keep holding."
+  },
+  {
+   "time": "2026-11-12T12:38:12Z",
+   "agent": "intraday",
+   "text": "0 orders. No action. EDV.L -6.35% is explained by 'Endeavour Mining Flags Lower Production Despite Record Cash' (AskTraders.com, 11:54), a negative production update with no long case and we hold none; the Novo FDA vision-warning piece is a third-party rehash of a known storyline (NOVO-B.CO is +2%), and the Nvidia-driven chip dip does not break the IFX.DE guidance catalyst, so hold IFX.DE."
   }
  ],
  "custody_paid": 0.002,
