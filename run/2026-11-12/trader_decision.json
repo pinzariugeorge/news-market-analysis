@@ -1,0 +1,49 @@
+{
+  "decision_day": "2026-11-12",
+  "decided_at": "2026-11-12T07:08:00Z",
+  "market_view": "European equities are risk-on after a record Stoxx 600 close, while a firm dollar and Fed rate-hike bets push gold and copper lower and peace hopes cap crude. No theme has a fresh, primary-source, name-specific catalyst today whose expected move clears about twice entry cost, so I hold IFX.DE and stay flat elsewhere.",
+  "would_change_my_mind": "A primary-source walk-back of Infineon FY2027 guidance or a confirmed BofA downgrade naming IFX.DE would make me close; a confirmed new approval or guidance change at a low-cost name (BAYN.DE, ENI.MI, REP.MC) would make me consider a long.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds - OilPrice.com - 2026-11-12", "reasoning": "Crude direction is contested (Brent -0.10%, EIA raised forecasts, talks can stall) and nothing is specific to one name; no expected move clears roughly 2-3% round-trip costs."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.4, "catalyst": "Gold slips below $4,000 as strong dollar, rate-hike bets weigh - Anadolu Ajansi - 2026-11-12", "reasoning": "Macro headwind for gold, no Fresnillo or Endeavour company news; a long has no catalyst and costs are about 1.6% each way."},
+    "chips": {"action": "hold", "symbol": "IFX.DE", "horizon_days": 10, "confidence": 0.55, "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent - Infineon - 2026-11-10", "reasoning": "Catalyst alive: FY2027 guidance stands, no walk-back and no primary source naming IFX.DE in the BofA downgrade; hold to exit 2026-11-24, system stop at -8% = about 46.82 EUR."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "New Type of Blood Thinner Approved to Prevent Repeat Strokes - WSJ - 2026-11-12", "reasoning": "The headline names no company and the Bayer asundexian approval storyline was already known and fading; unverified attribution is not a catalyst."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.4, "catalyst": "none", "reasoning": "Copper -0.80% on the stronger dollar; Rio Tinto items are immaterial and the asset-sale winning bid and price are not out."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "FRES.L", "direction": "down", "horizon_days": 5, "confidence": 0.5, "catalyst": "Gold slips below $4,000 as strong dollar, rate-hike bets weigh - Anadolu Ajansi - 2026-11-12"},
+    {"symbol": "STMPA.PA", "direction": "up", "horizon_days": 5, "confidence": 0.5, "catalyst": "STMicroelectronics to host investor call on STM32 pioneering the convergence era (call 2026-11-18) - GlobeNewswire - 2026-11-12"}
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-12-01",
+    "written_at": "2026-11-12T07:08:00Z",
+    "decision_day": "2026-11-12",
+    "data_cutoff": "2026-11-12",
+    "what_changed": "No new orders. Holding IFX.DE (6 @ 50.8953, last 52.12, +2.4%); equity 1004.85 EUR, cash 692.13 EUR. Overnight gold fell below $4,000 and copper -0.80% on a strong dollar, Brent -0.10% on peace hopes; Stoxx 600 closed at a record; quotes in the input were previous-close, not overnight-adjusted.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Crude direction contested and no name-specific news; enough would have been a production/guidance surprise at ENI.MI or REP.MC or a sustained Brent move of several percent."},
+      "gold_miners": {"position": "flat", "why": "Gold falling on dollar and hike bets with no company news; enough would have been Endeavour or Fresnillo production/guidance news."},
+      "chips": {"position": "long IFX.DE since 2026-11-10, 10 days", "why": "Record Q4 and FY2027 >20% growth guidance plus JP Morgan Buy still stand; exit by 2026-11-24, system stop -8% = about 46.82 EUR."},
+      "pharma": {"position": "flat", "why": "WSJ blood-thinner approval names no company; enough would have been a primary source confirming a new approval, readout or guidance change at BAYN.DE or NOVO-B.CO."},
+      "copper_uranium": {"position": "flat", "why": "Copper down with the dollar and Rio items immaterial; enough would have been a winning bid with price in the Rio asset sale or name-specific production/guidance news."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Held 6 IFX.DE @ 50.90, last 52.12; Vertiv supply-deal commentary is third-party only. Close if guidance is walked back; stop about 46.82.", "first_seen": "2026-11-10"},
+      {"name": "US CPI, rate-hike bets and firm USD", "status": "escalating", "note": "EURUSD -0.79%, gold below $4,000, copper -0.80%. Watch Fed speakers and USD.", "first_seen": "2026-11-11"},
+      {"name": "Iran/Ukraine peace talks and crude", "status": "open", "note": "Oil fell overnight then mostly retraced; OPEC+ output up 2.04 mb/d in Oct; EIA raised forecasts. Direction contested.", "first_seen": "2026-11-10"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-11"},
+      {"name": "STMicro STM32 investor call and Morgan Stanley conference", "status": "open", "note": "Call on 2026-11-18, CEO at conference 2026-11-19; watch for figures or guidance.", "first_seen": "2026-11-12"},
+      {"name": "Factor XIa blood thinner approval (Bayer asundexian?)", "status": "fading", "note": "WSJ headline names no company; check a primary source and BAYN.DE reaction.", "first_seen": "2026-11-11"},
+      {"name": "FDA blindness warning on weight-loss drugs", "status": "open", "note": "Negative for NOVO-B.CO; no update.", "first_seen": "2026-11-11"},
+      {"name": "FDA probe of Novartis gene therapy", "status": "open", "note": "No update; watch regulatory action on NOVN.SW.", "first_seen": "2026-11-11"},
+      {"name": "Copper vs weak China demand", "status": "fading", "note": "Copper -0.80% on the dollar after +1.8% the day before; need name-specific news.", "first_seen": "2026-11-11"},
+      {"name": "Rio Tinto $7b infrastructure asset sale", "status": "open", "note": "Watch for a winning bid and price as a possible RIO.L catalyst.", "first_seen": "2026-11-11"},
+      {"name": "BP Namibia offshore stake", "status": "fading", "note": "Small for BP; watch drilling plans.", "first_seen": "2026-11-11"},
+      {"name": "Nvidia slide and board probe of CEO", "status": "open", "note": "Escalation would hurt chips sentiment and IFX.DE; Europe rose anyway.", "first_seen": "2026-11-11"}
+    ],
+    "pending_orders": [],
+    "next_job": "Hold IFX.DE (6 @ 50.8953, exit by 2026-11-24, stop -8% = about 46.82 EUR) unless FY2027 guidance is walked back or a primary source names IFX.DE in the BofA downgrade. Then re-check the other four themes for a primary-source, name-specific catalyst whose expected move is well above twice entry cost (identity of the WSJ-reported blood-thinner approval, Rio asset-sale winning bid, ENI.MI/REP.MC guidance), and record the six shadow calls when they score.",
+    "lessons": []
+  }
+}
