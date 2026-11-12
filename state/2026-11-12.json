@@ -2,7 +2,7 @@
  "date": "2026-11-12",
  "steps": {
   "collect": {
-   "at": "2026-11-12T15:37:41Z",
+   "at": "2026-11-12T16:51:03Z",
    "ok": true,
    "note": "60 headlines, 10 drivers, 22 quotes"
   },
@@ -55,6 +55,16 @@
    "at": "2026-11-12T15:37:55Z",
    "ok": true,
    "note": "0 orders"
+  },
+  "close": {
+   "at": "2026-11-12T16:50:44Z",
+   "ok": true,
+   "note": "equity 1004.79, reconcile ok"
+  },
+  "reviewer": {
+   "at": "2026-11-12T16:51:40Z",
+   "ok": true,
+   "note": ""
   }
  },
  "warnings": []

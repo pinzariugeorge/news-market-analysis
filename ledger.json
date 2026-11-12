@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 1000.0,
- "cash": 692.128,
+ "cash": 692.127,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -75,6 +75,10 @@
   {
    "date": "2026-11-11",
    "equity": 1004.85
+  },
+  {
+   "date": "2026-11-12",
+   "equity": 1004.79
   }
  ],
  "notes": [
@@ -222,9 +226,14 @@
    "time": "2026-11-12T15:37:55Z",
    "agent": "intraday",
    "text": "0 orders. No action. The Repsol EUR 400M hydrogen plant is small next to Repsol's size and is not a guidance change. The EDV/FRES/ANTO falls follow gold and copper dropping (gold -3%) with no new company-specific risk. Nvidia's CEO change hurts chips sentiment but does not break the Infineon FY2027 guidance catalyst, and IFX.DE is still above entry and far from the stop, so I hold it."
+  },
+  {
+   "time": "2026-11-12T16:51:40Z",
+   "agent": "reviewer",
+   "text": "Quiet day for us. No orders, no fills, no costs. The trader held one position: 6 Infineon shares, IFX.DE, bought at 50.90 euro on 10 November. They closed at 52.11, up about 2.4 percent, a paper gain of about 7.30 euro. The exit date is 24 November, eight trading days away. The stop is about 46.82, roughly 10 percent below today's price. The account ended at 1004.79 euro, down 6 cents on the day, all of it price moves and a tiny custody fee. Total result is plus 0.48 percent since the start. Cas"
   }
  ],
- "custody_paid": 0.002,
+ "custody_paid": 0.003,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-11"
+ "custody_day": "2026-11-12"
 }
