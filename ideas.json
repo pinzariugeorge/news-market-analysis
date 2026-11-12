@@ -6,7 +6,7 @@
   "source": "Lehmann 1990 (QJE) and Jegadeesh 1990 (JF) short-term reversal; Chan 2003 (JFE) 'Stock price reaction to news and no-news'",
   "status": "testing",
   "created": "2026-11-11",
-  "note": "First run; no trigger today (no name down 4% or more)."
+  "note": "0 closed. 2026-11-12: EDV.L d1 -6.03% but two gold_miners headlines name Endeavour (Mana output warning), so it is a news drop and is excluded; its 1.6% entry cost would also fail the 1.3% cap. No trigger."
  },
  {
   "id": "news-day-drift",
@@ -15,7 +15,7 @@
   "source": "Chan 2003 (JFE) news vs no-news; Savor 2012 (JFE) 'Stock returns after major price shocks: the role of information'",
   "status": "testing",
   "created": "2026-11-11",
-  "note": "First run; IFX.DE triggers today."
+  "note": "0 closed; one open (IFX.DE x4 from 2026-11-11, now -2.2% vs entry, exit by 2026-11-16). 2026-11-12: no name with d1 >= +4%, no trigger."
  },
  {
   "id": "theme-laggard-catchup",
