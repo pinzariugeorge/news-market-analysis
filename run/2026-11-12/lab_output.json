@@ -1,0 +1,6 @@
+{
+  "decision_day": "2026-11-12",
+  "ideas": [],
+  "orders": [],
+  "lab_notes": "No idea triggered today: no name has d1 >= +2.0% with a results/guidance/analyst headline (news-drift), no theme has a top name >= +3.0% with theme average >= +1.5% (theme-catchup; best is oil_gas top EQNR +1.85%), and no driver rose 1.5% or more (BZ=F +0.50%, GC=F -2.65%, HG=F -1.43%), so driver-lag is idle; EQNR.OL (news-drift, entry 37.20, now 37.99) runs to its 2026-11-25 horizon. I keep the fourth slot free on purpose to limit multiple testing, and next I will watch for the first closed trades and whether the driver-lag threshold fires often enough to reach 20 trades."
+}

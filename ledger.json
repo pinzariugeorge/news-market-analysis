@@ -2,8 +2,23 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 1000.0,
- "cash": 1000.0,
- "positions": [],
+ "cash": 773.7393,
+ "positions": [
+  {
+   "symbol": "EQNR.OL",
+   "name": "Equinor",
+   "qty": 6,
+   "avg_price": 394.197,
+   "currency": "NOK",
+   "opened": "2026-11-11",
+   "exit_by": "2026-11-25",
+   "catalyst": "lab idea news-drift: Headline 'Jefferies raises target price for Equinor' with EQNR d1 +3.30%, 1.08 points above the oil_gas theme average d1",
+   "confidence": 0.5,
+   "horizon": 10,
+   "agent": "lab:news-drift",
+   "theme": "oil_gas"
+  }
+ ],
  "orders": [
   {
    "id": "20261111-EQNR.OL-BUY",
@@ -13,7 +28,7 @@
    "qty": 6,
    "type": "MARKET",
    "limit": null,
-   "status": "ACCEPTED",
+   "status": "FILLED",
    "reasons": [],
    "source": "agent",
    "theme": "oil_gas",
@@ -23,11 +38,40 @@
    "agent": "lab:news-drift"
   }
  ],
- "fills": [],
+ "fills": [
+  {
+   "id": 1,
+   "order_id": "20261111-EQNR.OL-BUY",
+   "time": "2026-11-11T14:20:00Z",
+   "symbol": "EQNR.OL",
+   "side": "BUY",
+   "qty": 6,
+   "price": 394.197,
+   "currency": "NOK",
+   "fee_eur": 3.06,
+   "gross_eur": 223.2,
+   "recorded_at": "2026-11-12T14:18:12Z",
+   "costs": {
+    "commission": 2.5,
+    "fx": 0.56,
+    "tax": 0.0,
+    "total": 3.06
+   },
+   "realized_eur": null,
+   "catalyst": "lab idea news-drift: Headline 'Jefferies raises target price for Equinor' with EQNR d1 +3.30%, 1.08 points above the oil_gas theme average d1",
+   "agent": "lab:news-drift",
+   "source": "agent",
+   "theme": "oil_gas"
+  }
+ ],
  "equity_history": [
   {
    "date": "2026-11-11",
    "equity": 1000.0
+  },
+  {
+   "date": "2026-11-12",
+   "equity": 1001.7
   }
  ],
  "notes": [
@@ -35,8 +79,14 @@
    "time": "2026-11-11T14:18:55Z",
    "agent": "lab",
    "text": "First lab run: registered three distinct news-family ideas (own-news drift, theme catch-up, commodity-driver lag) and only news-drift triggered today, on Equinor after a broker target raise in an oil rebound. Next I will watch whether the EQNR excess over the universe holds over 10 days and check daily for theme catch-up and driver-lag triggers; one testing slot stays free on purpose."
+  },
+  {
+   "time": "2026-11-12T14:18:57Z",
+   "agent": "lab",
+   "text": "No idea triggered today: no name has d1 >= +2.0% with a results/guidance/analyst headline (news-drift), no theme has a top name >= +3.0% with theme average >= +1.5% (theme-catchup; best is oil_gas top EQNR +1.85%), and no driver rose 1.5% or more (BZ=F +0.50%, GC=F -2.65%, HG=F -1.43%), so driver-lag is idle; EQNR.OL (news-drift, entry 37.20, now 37.99) runs to its 2026-11-25 horizon. I keep the fourth slot free on purpose to limit multiple testing, and next I will watch for the first closed tra"
   }
  ],
- "custody_paid": 0.0,
- "started": "2026-11-11T14:18:09Z"
+ "custody_paid": 0.0007,
+ "started": "2026-11-11T14:18:09Z",
+ "custody_day": "2026-11-12"
 }
