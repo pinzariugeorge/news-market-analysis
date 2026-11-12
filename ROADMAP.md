@@ -85,7 +85,7 @@ Run with `python -I src\<script>.py` on Windows.
 | `eu_probe.py` | ACTIVE | Downloads true daily history for the European candidates into `data/raw/eu/daily/` and writes `universe/eu_candidates.csv` (liquidity, volatility) |
 | `eu_overview.py` | ACTIVE | One phone page with all four paper accounts (main + 3 labs) read from their state branches; used by `eu_report.py --snapshot`, so every job that publishes the snapshot page now publishes this overview; 3 self-tests |
 | `shadow.py` | ACTIVE | Shadow calls from the main trader (no money): record, score at the horizon from daily closes, block for the prompts; 7 self-tests |
-| `lab.py` | ACTIVE | Idea lab: registry `ideas.json`, closed trades per idea vs the luck benchmark, features, status sync; runs only with `LAB=1 PAPER_DIR=data/paper_lab` (broker enforces it); 7 self-tests |
+| `lab.py` | ACTIVE | Idea lab: registry `ideas.json`, closed trades per idea vs the luck benchmark, features, status sync; runs only with `LAB=1 PAPER_DIR=data/paper_lab` (broker enforces it); 7 self-tests; wild labs set LAB_START_CASH etc. in the routine env |
 | `handoff.py` | ACTIVE | Handoff note validator, reader, writer, overlap lock, optional `lessons` ledger; 13 self-tests (`python -I src\handoff.py selftest`) |
 | `learn_prep.py` | PORT | Builds the agent input for a learning run: handoff text plus outcomes of closed past calls (point-in-time) |
 | `score_family_run.py` | PORT | Scores family calls (counterfactual for flat) and a whole-share portfolio vs random-call and basket benchmarks |

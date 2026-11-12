@@ -17,7 +17,8 @@ sys.path.insert(0, str(ROOT / "src"))
 import paper_broker as pb  # noqa: E402
 import state_sync  # noqa: E402
 
-ACCOUNTS = [("MAIN", "claude/paper-state", False), ("LAB core", "claude/lab-state", True), ("LAB short", "claude/lab-short-state", True), ("LAB news", "claude/lab-news-state", True)]
+ACCOUNTS = [("MAIN", "claude/paper-state", False), ("LAB core", "claude/lab-state", True), ("LAB short", "claude/lab-short-state", True), ("LAB news", "claude/lab-news-state", True),
+            ("LAB wild", "claude/wild-state", True)]
 
 
 def e(x):

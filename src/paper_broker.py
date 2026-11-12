@@ -47,6 +47,13 @@ if LAB:
     LIM.update(max_positions=5, max_pos_pct=0.25, min_conf=0.0, horizons=(1, 2, 3, 5, 10, 20), max_new_buys_day=5, max_fee_pct=1.5)
     if os.environ.get("LAB_HORIZONS"):          # a lab may be restricted to some horizons, e.g. LAB_HORIZONS=1,2,3
         LIM["horizons"] = tuple(int(x) for x in os.environ["LAB_HORIZONS"].split(","))
+    # A lab may also have a bigger account and looser limits (the "wild" labs): LAB_START_CASH, LAB_MAX_POSITIONS, LAB_MAX_POS_PCT, LAB_MAX_BUYS, LAB_STOP_PCT, LAB_DAILY_LOSS_PCT, LAB_WEEKLY_LOSS_PCT.
+    for _env, _key, _cast in (("LAB_START_CASH", "start_cash", float), ("LAB_MAX_POSITIONS", "max_positions", int), ("LAB_MAX_POS_PCT", "max_pos_pct", float), ("LAB_MAX_BUYS", "max_new_buys_day", int),
+                              ("LAB_STOP_PCT", "stop_pct", float), ("LAB_DAILY_LOSS_PCT", "daily_loss_pct", float), ("LAB_WEEKLY_LOSS_PCT", "weekly_loss_pct", float)):
+        if os.environ.get(_env):
+            LIM[_key] = _cast(os.environ[_env])
+    if not (0 < LIM["max_pos_pct"] <= 0.5 and 0 < LIM["max_positions"] <= 12 and 1000 <= LIM["start_cash"] <= 50000 and -20 <= LIM["stop_pct"] < 0):
+        raise SystemExit("lab limits out of range: {}".format(LIM))
 TAX_BUY = {".L": 0.005, ".PA": 0.004, ".MI": 0.001, ".MC": 0.002}   # UK stamp duty, French FTT, Italian and Spanish taxes: approximate, to verify
 FX_COST, CUSTODY_YEAR = 0.0025, 0.0012
 HOLIDAYS = {"2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01", "2027-03-26", "2027-03-29", "2027-05-03"}   # approximate common closures; extend yearly; a symbol with no bars is also treated as closed

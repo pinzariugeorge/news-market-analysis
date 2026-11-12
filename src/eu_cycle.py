@@ -449,8 +449,8 @@ def prep(role, now=None):
         for th, items in col["news"].items():
             L += ["### " + th] + ["- [{}] {} ({})".format(i["published_utc"], i["title"], i["source"]) for i in items[:6]]
         L += ["", "## Drivers"] + ["- {}: {:+.2f}%".format(k, v["chg_pct"]) for k, v in col["drivers"].items()]
-        L += ["", "## Traded names: price EUR, quote age min, entry cost % (commission, FX, tax, slippage), max whole shares under the 25% lab cap"]
-        L += ["- {} [{}] {} EUR, age {} min, entry cost {}%, max {} shares".format(k, v["theme"], v["price_eur"], v["age_min"], v["entry_cost_pct"], int(0.25 * pb.LIM["start_cash"] // v["price_eur"])) for k, v in col["table"].items()]
+        L += ["", "## Traded names: price EUR, quote age min, entry cost % (commission, FX, tax, slippage), max whole shares under the {:.0f}% lab cap".format(100 * pb.LIM["max_pos_pct"])]
+        L += ["- {} [{}] {} EUR, age {} min, entry cost {}%, max {} shares".format(k, v["theme"], v["price_eur"], v["age_min"], v["entry_cost_pct"], int(pb.LIM["max_pos_pct"] * pb.LIM["start_cash"] // v["price_eur"])) for k, v in col["table"].items()]
         L += ["", "Lab limits: " + json.dumps({k: v for k, v in pb.LIM.items()})]
         p = rd / "lab_input.md"
     elif role == "reviewer":
