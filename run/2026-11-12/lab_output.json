@@ -1,0 +1,6 @@
+{
+  "decision_day": "2026-11-12",
+  "ideas": [],
+  "orders": [],
+  "lab_notes": "No rule fires today: high-momentum-20d only finds AZN.L (below_3m_high -0.41, d20 +10.32) which fails the cost filter at 2.27% while BAYN.DE and SAN.PA are already held; guidance-drift-10d has the Infineon guidance headline but d1 is -0.98% and IFX.DE is already held; no-news-drop-reversal-3d has EDV.L at d1 -6.86% but it has a company headline ('Why is Endeavour Mining stock sliding today?') and a 1.61% entry cost. I keep the fourth slot free on purpose to limit the number of ideas tested, and next I will watch whether the open pharma momentum and Infineon positions track the universe or beat it."
+}
