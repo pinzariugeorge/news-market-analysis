@@ -22,6 +22,7 @@ Then `PLAN_EU.md` for the design and `TODO.md` for open items.
 | `STRATEGY.md` | ACTIVE | Goal, decisions, rules (European era; the old file is `archive/docs_us/STRATEGY_sp500_era.md`) |
 | `PLAN_EU.md` | ACTIVE | Plan: decisions of 2026-11-09, free price feed, Saxo facts, paper broker design, daily cycle, phases and gates |
 | `DAILY_PLAN_EU.md` | ACTIVE | A trading day end to end: roles (collector, researcher, trader, risk manager, broker, reviewer, baseline bots), timetable in CET, risk limits, cost model, accounts and pass bar, failure handling, scheduling, build order. Design only |
+| `PREREG_SCREEN.md` | ACTIVE | Pre-registration (2026-11-12) of 3 mechanical screens on 35 years of European daily data, cost, periods, pass bar, power calculation |
 | `PREREG_EU.md` | ACTIVE | Pre-registration written before the first live decision: setup, limits (defaults), baselines, pass bar, what may not change during the test |
 | `PROGRESS_LOG.md` | ACTIVE | Dated session entries (whole history), each ends with "Next step" |
 | `TODO.md` | ACTIVE | Open items (the US-era list is `archive/docs_us/TODO_us_era.md`) |
@@ -34,6 +35,8 @@ Then `PLAN_EU.md` for the design and `TODO.md` for open items.
 ## Results (`results/`)
 | File | Status | What it holds |
 |---|---|---|
+| `results/EU_SCREEN_TEST.md` | ACTIVE | Output of `src/run_eu_screen_test.py`: screens S1-S3 vs baselines and random entries, build and validation, power table. Test period 2022+ not opened |
+| `results/EU_SCREEN_TEST_cost0.3.md` | ACTIVE | Same test at 0.3% cost, test period opened |
 | `results/US_LESSONS.md` | ACTIVE | Condensed lessons from the whole US era: what was tested, that nothing beat random or a basket, rules that carry over. Read this instead of the archived results |
 
 ## Universe (`universe/`)
@@ -81,9 +84,11 @@ Run with `python -I src\<script>.py` on Windows.
 | `notify.py` | ACTIVE | Phone notifications via ntfy.sh (topic in `.env` as NTFY_TOPIC, never printed; silent if missing): alive each morning, fills, errors, close result, low battery, trader decision, report ready with a link to the cloud report |
 | `eu_report.py` | ACTIVE | Builds the end-of-day report page (`data/paper/reports/artifact.html`, published by the evening task) and, with `--snapshot`, the small always-current Account Snapshot page (`data/paper/reports/snapshot.html`, published after every scheduled run) |
 | `dashboard_server.py` | ACTIVE | Local server for the dashboard (`python -I src\dashboard_server.py --cloud`, port 8765): with `--cloud` it pulls the ledger from the cloud state branch into `data/paper_view/` once at start and when you press the Sync button (no timer) (read-only, never touches `data/paper/`) and shows live delayed prices; without it, reads `data/paper/ledger.json`, or a DEMO ledger with `--demo`, live delayed quotes, FX to EUR; `--selftest` checks the account maths |
+| `run_eu_screen_test.py` | ACTIVE | Backtest of the pre-registered mechanical screens (trend + volume shock / oversold / shock reversal) on `data/raw/eu/daily/`, cost 1.5%, month-clustered t, random-entry baseline, power table; stdlib only; `--test` opens 2022+ |
 | `eu_screen.py` | ACTIVE | Screens about 400 European large and mid caps across sectors: price at most 333 EUR, liquidity, volatility, returns, trend; writes `universe/eu_screen.csv` |
 | `eu_probe.py` | ACTIVE | Downloads true daily history for the European candidates into `data/raw/eu/daily/` and writes `universe/eu_candidates.csv` (liquidity, volatility) |
 | `eu_overview.py` | ACTIVE | One phone page with all four paper accounts (main + 3 labs) read from their state branches; used by `eu_report.py --snapshot`, so every job that publishes the snapshot page now publishes this overview; 3 self-tests |
+| `screen_log.py` | ACTIVE | Forward log of screens S1-S3 on the traded names (no tokens, no orders): called by `eu_cycle.py evening` (main account only), appends to `data/paper/screen_log.jsonl`, scores at 10 and 20 days to `screen_scores.json` against the traded-names basket; `report` prints net-of-cost means; 9 self-tests |
 | `shadow.py` | ACTIVE | Shadow calls from the main trader (no money): record, score at the horizon from daily closes, block for the prompts; 7 self-tests |
 | `lab.py` | ACTIVE | Idea lab: registry `ideas.json`, closed trades per idea vs the luck benchmark, features, status sync; runs only with `LAB=1 PAPER_DIR=data/paper_lab` (broker enforces it); 7 self-tests; wild labs set LAB_START_CASH etc. in the routine env |
 | `handoff.py` | ACTIVE | Handoff note validator, reader, writer, overlap lock, optional `lessons` ledger; 13 self-tests (`python -I src\handoff.py selftest`) |

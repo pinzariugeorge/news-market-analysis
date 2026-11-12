@@ -68,3 +68,12 @@ Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_er
 - [ ] User: put `NTFY_TOPIC=<your long random topic>` in `D:\Projects\Marketing
 ews-market-analysis\.env`, subscribe to the same topic in the ntfy app, then test with `python -I src
 otify.py "test"`.
+
+## 6. Screen first, news second (added 2026-11-12, user)
+- [x] Pre-register and backtest 3 mechanical screens on European daily data (`PREREG_SCREEN.md`, `results/EU_SCREEN_TEST.md`): all fail at 1.5% cost; gross edge is positive but smaller than cost.
+- [x] Forward log of screen triggers S1-S3 built (`src/screen_log.py`, runs inside the evening cloud step). [ ] Needs commit + push to main to go live; then read `report` after ~20 trading days.
+- [ ] Decide: daily direction call for every candidate name in shadow scoring (today `shadow.py` scores only calls the trader chooses, max 14 a day).
+- [ ] News ablation on screen candidates: same candidates with and without the news step; judged on the shadow score (no fees).
+- [ ] Decide: fewer intraday runs and drop labs without a worthwhile idea (cost and noise).
+- [ ] Stock-only trend-filtered basket baseline on Europe, with costs.
+- [x] Re-run at 0.3% cost done: S1 survives build, validation and test; S2, S3 do not (`results/EU_SCREEN_TEST_cost0.3.md`).

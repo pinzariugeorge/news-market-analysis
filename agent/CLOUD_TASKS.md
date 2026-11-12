@@ -42,3 +42,5 @@ Set PAPER_STATE_BRANCH=claude/paper-state for every command (export it first).
 ```
 
 > Wild lab (2026-11-12): `eu-paper-lab-wild`, routine trig_016md7fQdB65sxRA2fKWemCH, `CRON_TZ=Europe/Bucharest 17 13 * * 1-5` (13:17 Bucharest). 2,000 EUR, 6 positions, 25% cap, 6 buys/day, stop -10%, halts -5% day / -10% week, any horizon; data/paper_lab_wild, branch claude/wild-state. Env LAB_START_CASH etc. are read by paper_broker (needs main to contain commit e2fd914 or later).
+
+> Screen log (2026-11-12): no routine change. `eu_cycle.py evening` (step 2 of the evening task) now also runs `src/screen_log.py` (needs main to contain it): logs S1-S3 triggers for the traded names and scores older ones; files in `data/paper/` travel with the state branch. Read it with `python3 -I src/screen_log.py report` after `state_sync.py pull`.

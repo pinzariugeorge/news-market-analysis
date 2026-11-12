@@ -37,6 +37,7 @@ import live_feed as lf  # noqa: E402
 import paper_broker as pb  # noqa: E402
 import notify  # noqa: E402
 import shadow  # noqa: E402
+import screen_log  # noqa: E402
 
 PAPER = pb.PAPER
 os.environ.setdefault("HANDOFF_DIR", str(PAPER / "handoff"))
@@ -679,6 +680,12 @@ def evening(now=None):
         print("shadow calls scored: {}".format(shadow.score(now)))
     except Exception as e:  # noqa: BLE001
         warn(d, "shadow scoring failed: " + str(e)[:60])
+    if not os.environ.get("LAB"):
+        try:
+            rec = screen_log.run(now)
+            print("screen log: {} | scored {}".format("{} names, triggers {}".format(rec["evaluated"], [(t["symbol"], t["screens"]) for t in rec["triggers"]]) if rec else "nothing new", screen_log.score(now)))
+        except Exception as e:  # noqa: BLE001
+            warn(d, "screen log failed: " + str(e)[:60])
 
 
 def status():

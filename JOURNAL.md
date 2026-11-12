@@ -18,3 +18,8 @@ Plain-language notes: surprises, doubts, ideas, open questions.
 - Decided: 1,000 EUR account, no ETFs. At that size the minimum fee dominates (about 1.2% to 1.8% a round trip) and six first-choice names cost more than one position can hold. The honest test is whether any agent beats random calls after that drag.
 - Started paper trading with a late start at 13:33 CET. The first Opus trader chose no trade: with entry costs of about 1.6% to 2.3% per name (commission minimum, FX, stamp duty and French tax, slippage) and a round trip about twice that, only a very strong name-specific catalyst can pay. Expect many no-trade days; the test is whether trades, when they happen, beat random calls.
 - Machine runs on Bucharest time (CET+1): scheduled-task cron is local time, everything inside Python is UTC.
+
+## 2026-11-12: mechanical screens
+Surprise: the screens have a small positive gross excess (about 1% to 2% over 20 days, above random entries), yet net of a 1.5% round trip nothing survives, and validation is worse than build. So at 1,000 EUR the cost, not the signal, decides. Open question: does the same screen pay at a larger account (cost about 0.3%)? Not a reason to trust it yet: survivor bias (current names only) flatters every row.
+
+At 0.3% cost the picture flips: S1 (uptrend + volume spike + up day) is positive in build, validation and the untouched 2022+ test (about +1.75% net over 20 days, t 2.0), S2 faded in the test, S3 too thin. Caveats: cost level chosen after the first result, survivor bias, 12 configs tried, local-currency returns. Roughly a 1% edge a trade at 20 days is what S1 shows; at 1,000 EUR the 1.5% cost still eats it.
