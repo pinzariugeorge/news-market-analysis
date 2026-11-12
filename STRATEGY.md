@@ -14,7 +14,8 @@ Find out, honestly, whether a news-driven agent (or any simple rule) can make mo
 - **Live prices for the agents (user):** agents analyse with live (delayed about 15 minutes) prices; free Yahoo feed in `src/live_feed.py`. Spending on data needs the user's approval.
 - **Reference broker:** Saxo Bank, for tradability and costs (fees, FX and custody figures are still unverified).
 - **Agent setup carried over:** long or flat per theme family; long only with a named catalyst and confidence >= 0.52; up to 3 positions; holds of 5, 10 or 20 trading days (cap 20); whole shares; stateless runs with a handoff note (`agent/HANDOFF.md`); a lessons ledger where a lesson needs >= 5 supporting closed trades before it may change a call.
-- **Models:** Sonnet and Opus subagents inside Claude Code on the Pro subscription; no Anthropic API. The 5-hour usage limit is tracked; the user sets the cap per task.
+- **Models:** Sonnet and Opus subagents inside Claude Code on the Pro subscription; no Anthropic API. The 5-hour usage limit is tracked; the user sets the cap per task. 2026-11-12: no switch of the hourly check to Haiku for now (user: leave the topic).
+- **Labs (2026-11-12, user):** stocks only also for gold and oil (ETCs asked again, declined). One "wild" lab at 2,000 EUR with looser limits, not several at 10k: too few trades per idea, more ideas means more lucky winners, and at 10k the fixed commission (~0.1%) is far below the real 1-2k account (~0.8%) and would flatter results. A lab winner is a hypothesis only; re-test on fresh days at a realistic size before it gets near real money. Real money plan: 1-2k EUR eventually.
 
 ## Core rules
 1. **Closed loop:** an agent sees only information available at its decision time; outcomes are used only for scoring.
