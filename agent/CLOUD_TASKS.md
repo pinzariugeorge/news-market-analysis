@@ -40,3 +40,5 @@ Set PAPER_STATE_BRANCH=claude/paper-state for every command (export it first).
 8. python3 -I src/state_sync.py push
 9. Reply with one line: done plus the day result, or the error.
 ```
+
+> Wild lab (2026-11-12): `eu-paper-lab-wild`, routine trig_016md7fQdB65sxRA2fKWemCH, `CRON_TZ=Europe/Bucharest 17 13 * * 1-5` (13:17 Bucharest). 2,000 EUR, 6 positions, 25% cap, 6 buys/day, stop -10%, halts -5% day / -10% week, any horizon; data/paper_lab_wild, branch claude/wild-state. Env LAB_START_CASH etc. are read by paper_broker (needs main to contain commit e2fd914 or later).
