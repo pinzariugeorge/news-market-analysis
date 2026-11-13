@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 1000.0,
- "cash": 382.088,
+ "cash": 382.086,
  "positions": [
   {
    "symbol": "BAYN.DE",
@@ -243,6 +243,10 @@
   {
    "date": "2026-11-12",
    "equity": 994.85
+  },
+  {
+   "date": "2026-11-13",
+   "equity": 991.71
   }
  ],
  "notes": [
@@ -265,9 +269,14 @@
    "time": "2026-11-12T10:18:46Z",
    "agent": "lab",
    "text": "No rule fires today: high-momentum-20d only finds AZN.L (below_3m_high -0.41, d20 +10.32) which fails the cost filter at 2.27% while BAYN.DE and SAN.PA are already held; guidance-drift-10d has the Infineon guidance headline but d1 is -0.98% and IFX.DE is already held; no-news-drop-reversal-3d has EDV.L at d1 -6.86% but it has a company headline ('Why is Endeavour Mining stock sliding today?') and a 1.61% entry cost. I keep the fourth slot free on purpose to limit the number of ideas tested, and "
+  },
+  {
+   "time": "2026-11-13T10:26:50Z",
+   "agent": "lab",
+   "text": "No rule fires today: high-momentum-20d qualifiers are already held (BAYN, SAN.PA) or fail cost (AZN 2.28%), the Bayer 'outlook' item is a third-party commentary with d1 +0.50% so guidance-drift does not fire, and no name fell 3% for no-news-drop-reversal. Next I will watch whether the pharma momentum holds and whether any trend names pull back enough to trigger the new uptrend-pullback rule."
   }
  ],
- "custody_paid": 0.0033,
+ "custody_paid": 0.0053,
  "started": "2026-11-10T13:42:23Z",
- "custody_day": "2026-11-12"
+ "custody_day": "2026-11-13"
 }
