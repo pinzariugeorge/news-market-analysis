@@ -6,7 +6,7 @@
   "source": "Lehmann 1990 (QJE) and Jegadeesh 1990 (JF) short-term reversal; Chan 2003 (JFE) 'Stock price reaction to news and no-news'",
   "status": "testing",
   "created": "2026-11-11",
-  "note": "0 closed. 2026-11-12: EDV.L d1 -6.03% but two gold_miners headlines name Endeavour (Mana output warning), so it is a news drop and is excluded; its 1.6% entry cost would also fail the 1.3% cap. No trigger."
+  "note": "0 closed. 2026-11-13: largest drop is KGH.WA d1 -0.81%, far from -4%; no trigger."
  },
  {
   "id": "news-day-drift",
@@ -15,7 +15,7 @@
   "source": "Chan 2003 (JFE) news vs no-news; Savor 2012 (JFE) 'Stock returns after major price shocks: the role of information'",
   "status": "testing",
   "created": "2026-11-11",
-  "note": "0 closed; one open (IFX.DE x4 from 2026-11-11, now -2.2% vs entry, exit by 2026-11-16). 2026-11-12: no name with d1 >= +4%, no trigger."
+  "note": "0 closed; one open (IFX.DE x4 entry 52.76, now 51.94, -1.6%, exit by 2026-11-16). 2026-11-13: top d1 is STMPA.PA +1.95%; no trigger."
  },
  {
   "id": "theme-laggard-catchup",
@@ -24,6 +24,6 @@
   "source": "Hou 2007 (RFS) 'Industry information diffusion and the lead-lag effect in stock returns'",
   "status": "testing",
   "created": "2026-11-11",
-  "note": "First run; chips leader IFX.DE +7.34% but peers BESI.AS +5.50% and STMPA.PA +4.75% already moved, so no laggard today."
+  "note": "0 closed. 2026-11-13: no name with d1 >= +5%, so no leader and no trigger."
  }
 ]

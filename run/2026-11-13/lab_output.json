@@ -1,0 +1,31 @@
+{
+  "decision_day": "2026-11-13",
+  "ideas": [
+    {
+      "id": "nonews-dip-reversal",
+      "hypothesis": "Large one-day drops without company-specific news tend to be liquidity or overreaction moves that partly reverse over the next few days, while drops with news do not.",
+      "rule": "BUY at the table's max shares when a name has d1 <= -4.0% and no headline in its theme today names the company; skip if entry cost > 1.3%. Horizon 3 trading days; exit at horizon or the -8% stop.",
+      "source": "Lehmann 1990 (QJE) and Jegadeesh 1990 (JF) short-term reversal; Chan 2003 (JFE) 'Stock price reaction to news and no-news'",
+      "status": "testing",
+      "note": "0 closed. 2026-11-13: largest drop is KGH.WA d1 -0.81%, far from -4%; no trigger."
+    },
+    {
+      "id": "news-day-drift",
+      "hypothesis": "Large one-day gains that come with company-specific results or guidance news are under-reacted to and keep drifting for a few days, unlike no-news moves.",
+      "rule": "BUY at the table's max shares when a name has d1 >= +4.0% and at least one headline today names the company and reports its results, guidance, forecast or outlook; skip if entry cost > 1.3%. Horizon 3 trading days; exit at horizon or the -8% stop.",
+      "source": "Chan 2003 (JFE) news vs no-news; Savor 2012 (JFE) 'Stock returns after major price shocks: the role of information'",
+      "status": "testing",
+      "note": "0 closed; one open (IFX.DE x4 entry 52.76, now 51.94, -1.6%, exit by 2026-11-16). 2026-11-13: top d1 is STMPA.PA +1.95%; no trigger."
+    },
+    {
+      "id": "theme-laggard-catchup",
+      "hypothesis": "When one name in a theme jumps on its own news, peers in the same theme that have not yet moved catch up over the next one to two days because information diffuses slowly across related stocks.",
+      "rule": "If a name has d1 >= +5.0% with a same-day headline naming it, BUY at max shares any other name in the same theme with d1 <= +1.0% and no headline naming it today; skip if entry cost > 1.3%. Horizon 2 trading days; exit at horizon or the -8% stop.",
+      "source": "Hou 2007 (RFS) 'Industry information diffusion and the lead-lag effect in stock returns'",
+      "status": "testing",
+      "note": "0 closed. 2026-11-13: no name with d1 >= +5%, so no leader and no trigger."
+    }
+  ],
+  "orders": [],
+  "lab_notes": "A quiet day (all |d1| under 2%, STOXX 50 flat) gives no trigger for any of the three short-horizon rules, so no orders; the open IFX.DE drift trade runs to 2026-11-16. Next I will check whether a fourth, genuinely different idea (e.g. a fade of multi-day runs like STMPA.PA/IFX.DE d5 > +13%) is worth registering, weighing it against the cost of adding more ideas."
+}
