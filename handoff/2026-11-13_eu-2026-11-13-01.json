@@ -1,0 +1,112 @@
+{
+ "run_id": "eu-2026-11-13-01",
+ "written_at": "2026-11-13T07:08:00Z",
+ "decision_day": "2026-11-13",
+ "data_cutoff": "2026-11-13",
+ "what_changed": "No orders. Holding IFX.DE 6 @ 50.8953 (stale close 52.11, premarket about 51.35 after a chip selloff on the Nvidia CEO exit); equity 1004.79 EUR, cash 692.13 EUR. New items: GSK 36-country injunction/settlement vs Pfizer-BioNTech, Novo Wegovy pill priced up to $395/month, Lilly oral GLP-1 approved in China, BP-Petrobras Bumerangue talks, Oddo raises its Equinor target (neutral); two new shadow calls (GSK.L up 5d, NOVO-B.CO down 10d).",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Only the BP-Petrobras talks without terms and an Oddo target change with a neutral rating; Brent is heading for a second weekly loss."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No EDV.L or FRES.L company news; gold is capped by the USD and hike bets."
+  },
+  "chips": {
+   "position": "long IFX.DE since 2026-11-10, 10 days",
+   "why": "Record Q4, FY2027 >20% growth guidance and the EUR 450m buyback stand; the selloff is sector-wide; exit by 2026-11-24, stop about 46.82 EUR."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "The GSK litigation win has no disclosed financial terms after a big run; Novo pill pricing is offset by Lilly China competition."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Goldman's forecast-risk note is ambiguous, China demand is weak, and there is no name-specific news."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Infineon FY2026 Q4 beat and FY2027 guidance",
+   "status": "open",
+   "note": "Held 6 IFX.DE @ 50.90; premarket about 51.35. Close if guidance is walked back; stop about 46.82; exit by 2026-11-24.",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "name": "Nvidia CEO exit and chip selloff",
+   "status": "escalating",
+   "note": "Jensen Huang exit hit chips on 2026-11-12, VIX +6.92%; watch whether the selloff deepens in IFX.DE, STMPA.PA, BESI.AS.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "US CPI/PPI, rate-hike bets and firm USD",
+   "status": "escalating",
+   "note": "PPI due 2026-11-13; EURUSD -0.20%; gold about 3,900, copper soft. Watch PPI and Fed speakers.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Iran blockade, peace talks and crude",
+   "status": "open",
+   "note": "'Trump says no Iran deal needed', blockade stays; Brent 96.52 but heading for a second weekly loss; IMF sees $86 by 2027.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "BofA downgrade of 3 European chip stocks",
+   "status": "open",
+   "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "STMicro STM32 investor call and Morgan Stanley conference",
+   "status": "open",
+   "note": "Call on 2026-11-18, CEO at the conference on 2026-11-19; watch for figures or guidance.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "GSK vaccine patent injunction vs Pfizer-BioNTech",
+   "status": "open",
+   "note": "36-country injunction and settlement; watch for disclosed financial terms (shadow GSK.L up 5d).",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "name": "GLP-1 pricing and competition (Novo vs Lilly)",
+   "status": "open",
+   "note": "Wegovy pill up to $395/month; Lilly oral GLP-1 approved in China; FDA blindness warning still open (shadow NOVO-B.CO down 10d).",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Factor XIa blood thinner approval (Bayer asundexian?)",
+   "status": "fading",
+   "note": "No company has been named yet; check a primary source and the BAYN.DE reaction.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "FDA probe of Novartis gene therapy",
+   "status": "open",
+   "note": "No update; watch regulatory action on NOVN.SW.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Rio Tinto $7b infrastructure asset sale",
+   "status": "open",
+   "note": "Watch for a winning bid and price as a possible RIO.L catalyst.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Copper vs weak China demand",
+   "status": "fading",
+   "note": "Copper -0.13%; Goldman flags risks to its $15,400/t 2027 forecast; need name-specific news.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "BP upstream deals (Namibia stake, Petrobras Bumerangue talks)",
+   "status": "open",
+   "note": "Watch for agreed terms in the Petrobras Bumerangue talks; Namibia is small for BP.",
+   "first_seen": "2026-11-12"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day: hold IFX.DE (6 @ 50.8953, exit by 2026-11-24, stop -8% = about 46.82 EUR) unless FY2027 guidance is walked back or a primary source names IFX.DE in the BofA downgrade. Then re-check the other four themes for a primary-source, name-specific catalyst whose expected move is well above twice entry cost (GSK settlement terms, BP-Petrobras deal terms, Rio asset-sale winning bid, identity of the blood-thinner approval), and record the eight pending shadow calls as they score. Only one review per decision day.",
+ "lessons": []
+}
