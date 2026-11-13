@@ -1,0 +1,41 @@
+{
+  "report": "Friday, 13 November. A quiet day for orders, a weak day for our one holding. The trader placed no orders and nothing filled, so there were no costs today. The only position is Infineon, six shares bought at 50.90 euros on 10 November. It closed at 49.88, down about 4 percent from yesterday's close of 52.11. That fits the chip selloff after the Nvidia CEO exit, which hit the whole sector, not just Infineon. Infineon is now about 2 percent below our entry and about 6 percent above the stop near 46.82. The exit date is 24 November, seven trading days away. The day result is minus 13.41 euros, or minus 0.67 percent. Total result is minus 0.43 percent. One odd thing: yesterday's note showed equity of about 1,005 euros and cash of 692. Today the account shows a 2,000 euro start and cash of 1,692. That looks like a 1,000 euro top-up or a reset of the start value. The day's loss matches the price move, and reconcile says consistent, but we should confirm what changed. The input also had no fresh news or index data, so I cannot say more about the market. One down day says nothing about skill. No trade has closed and no shadow call has scored yet.",
+  "questions": [
+    "The account start moved from about 1,000 to 2,000 euros and cash rose by exactly 1,000. Was this a deliberate top-up or reset, and should the trader size new positions from the new equity?",
+    "Our stop is a fixed 8 percent below entry. When a sector-wide shock like the Nvidia CEO exit moves all chips together, should the stop still apply the same way, or should the rule depend on whether the drop is company-specific?",
+    "Today's reviewer input had no market or news data, only the account. Should the close job always pass index, sector and theme prices so the review can separate luck from reasoning?"
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-13-01",
+    "written_at": "2026-11-13T18:00:00+01:00",
+    "decision_day": "2026-11-13",
+    "data_cutoff": "2026-11-13",
+    "what_changed": "No orders, no fills, no costs. IFX.DE closed 49.88 (from 52.11), about -2.0% vs entry 50.8953 and about 6.1% above the stop near 46.82; day P&L -13.41 EUR (-0.67%), total -0.43%. Account now shows start 2000.00 EUR, equity 1991.38, cash 1692.13 (previous note: equity 1004.79, cash 692.13): an apparent 1000 EUR top-up or start reset, to be confirmed. Reconcile consistent, no warnings. No news or market data was in today's reviewer input.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Only the BP-Petrobras talks without terms and an Oddo target change with a neutral rating; Brent heading for a second weekly loss. No new facts today."},
+      "gold_miners": {"position": "flat", "why": "No EDV.L or FRES.L company news; gold capped by the USD and hike bets. No new facts today."},
+      "chips": {"position": "long IFX.DE 6 @ 50.8953 since 2026-11-10; close 49.88 on 2026-11-13", "why": "Record Q4, FY2027 >20% growth guidance and the EUR 450m buyback stand; the drop follows the sector-wide selloff after the Nvidia CEO exit. Exit by 2026-11-24 (7 trading days left), stop about 46.82 EUR (about 6.1% below the close)."},
+      "pharma": {"position": "flat", "why": "GSK litigation win has no disclosed financial terms after a big run; Novo pill pricing offset by Lilly China competition. No new facts today."},
+      "copper_uranium": {"position": "flat", "why": "Goldman's forecast-risk note is ambiguous, China demand is weak, no name-specific news."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Held 6 IFX.DE @ 50.90; closed 49.88 on 2026-11-13 (-4.3% on the day). Close if guidance is walked back; stop about 46.82; exit by 2026-11-24.", "first_seen": "2026-11-10"},
+      {"name": "Nvidia CEO exit and chip selloff", "status": "escalating", "note": "Selloff continued into 2026-11-13: IFX.DE fell from 52.11 to 49.88. Watch whether it deepens in IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-12"},
+      {"name": "US CPI/PPI, rate-hike bets and firm USD", "status": "escalating", "note": "PPI was due 2026-11-13; the result was not in today's input. Check PPI outcome and Fed speakers.", "first_seen": "2026-11-12"},
+      {"name": "Iran blockade, peace talks and crude", "status": "open", "note": "'Trump says no Iran deal needed', blockade stays; Brent 96.52 but heading for a second weekly loss; IMF sees $86 by 2027.", "first_seen": "2026-11-12"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-12"},
+      {"name": "STMicro STM32 investor call and Morgan Stanley conference", "status": "open", "note": "Call on 2026-11-18, CEO at the conference on 2026-11-19; watch for figures or guidance.", "first_seen": "2026-11-12"},
+      {"name": "GSK vaccine patent injunction vs Pfizer-BioNTech", "status": "open", "note": "36-country injunction and settlement; watch for disclosed financial terms (shadow GSK.L up 5d).", "first_seen": "2026-11-13"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "Wegovy pill up to $395/month; Lilly oral GLP-1 approved in China; FDA blindness warning still open (shadow NOVO-B.CO down 10d).", "first_seen": "2026-11-13"},
+      {"name": "Factor XIa blood thinner approval (Bayer asundexian?)", "status": "fading", "note": "No company named yet; check a primary source and the BAYN.DE reaction.", "first_seen": "2026-11-12"},
+      {"name": "FDA probe of Novartis gene therapy", "status": "open", "note": "No update; watch regulatory action on NOVN.SW.", "first_seen": "2026-11-12"},
+      {"name": "Rio Tinto $7b infrastructure asset sale", "status": "open", "note": "Watch for a winning bid and price as a possible RIO.L catalyst.", "first_seen": "2026-11-12"},
+      {"name": "Copper vs weak China demand", "status": "fading", "note": "Copper -0.13%; Goldman flags risks to its $15,400/t 2027 forecast; need name-specific news.", "first_seen": "2026-11-12"},
+      {"name": "BP upstream deals (Namibia stake, Petrobras Bumerangue talks)", "status": "open", "note": "Watch for agreed terms in the Petrobras Bumerangue talks; Namibia is small for BP.", "first_seen": "2026-11-12"},
+      {"name": "Account start and cash change", "status": "open", "note": "Start shows 2000.00 EUR and cash rose by exactly 1000 EUR vs the previous note; confirm whether this was a deliberate top-up or reset before sizing new trades.", "first_seen": "2026-11-13"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next decision day (2026-11-16): first confirm the account change (start 2000 EUR, cash 1692.13) and size any new trade from current equity. Hold IFX.DE (6 @ 50.8953, close 49.88, exit by 2026-11-24, stop about 46.82 EUR) unless FY2027 guidance is walked back, a primary source names IFX.DE in the BofA downgrade, or the stop is hit. Check the US PPI result and whether the chip selloff deepened. Then re-check the other four themes for a primary-source, name-specific catalyst whose expected move is well above twice entry cost (GSK settlement terms, BP-Petrobras deal terms, Rio asset-sale winning bid, identity of the blood-thinner approval), and record the eight pending shadow calls as they score.",
+    "lessons": []
+  }
+}

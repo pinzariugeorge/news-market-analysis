@@ -1,8 +1,8 @@
 {
  "mode": "PAPER",
  "currency": "EUR",
- "start_cash": 1000.0,
- "cash": 692.127,
+ "start_cash": 2000.0,
+ "cash": 1692.1254,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -66,19 +66,23 @@
  "equity_history": [
   {
    "date": "2026-11-09",
-   "equity": 1000.0
+   "equity": 2000.0
   },
   {
    "date": "2026-11-10",
-   "equity": 986.43
+   "equity": 1986.43
   },
   {
    "date": "2026-11-11",
-   "equity": 1004.85
+   "equity": 2004.85
   },
   {
    "date": "2026-11-12",
-   "equity": 1004.79
+   "equity": 2004.79
+  },
+  {
+   "date": "2026-11-13",
+   "equity": 1991.38
   }
  ],
  "notes": [
@@ -261,9 +265,24 @@
    "time": "2026-11-13T12:38:40Z",
    "agent": "intraday",
    "text": "0 orders. No action. The CHMP positive opinion for AstraZeneca's Baxfendy (hypertension) is an expected regulatory step for a mega-cap whose shares barely moved (+0.07%), so the expected move cannot clear twice AZN.L's 2.28% entry cost; nothing new breaks the IFX.DE catalyst, so hold."
+  },
+  {
+   "time": "2026-11-13T16:50:49Z",
+   "text": "Paper deposit 1000.00 EUR: account raised to 2000 EUR (user decision 2026-11-13)"
+  },
+  {
+   "time": "2026-11-13T16:52:03Z",
+   "agent": "reviewer",
+   "text": "Friday, 13 November. A quiet day for orders, a weak day for our one holding. The trader placed no orders and nothing filled, so there were no costs today. The only position is Infineon, six shares bought at 50.90 euros on 10 November. It closed at 49.88, down about 4 percent from yesterday's close of 52.11. That fits the chip selloff after the Nvidia CEO exit, which hit the whole sector, not just Infineon. Infineon is now about 2 percent below our entry and about 6 percent above the stop near 46"
   }
  ],
- "custody_paid": 0.003,
+ "custody_paid": 0.0046,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-12"
+ "custody_day": "2026-11-13",
+ "deposits": [
+  {
+   "date": "2026-11-13",
+   "amount_eur": 1000.0
+  }
+ ]
 }
