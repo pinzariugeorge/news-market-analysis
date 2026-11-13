@@ -2,7 +2,7 @@
  "date": "2026-11-13",
  "steps": {
   "collect": {
-   "at": "2026-11-13T07:08:21Z",
+   "at": "2026-11-13T08:38:32Z",
    "ok": true,
    "note": "60 headlines, 10 drivers, 22 quotes"
   },
@@ -15,6 +15,11 @@
    "at": "2026-11-13T07:09:41Z",
    "ok": true,
    "note": "0 orders: "
+  },
+  "intraday0838": {
+   "at": "2026-11-13T08:38:45Z",
+   "ok": true,
+   "note": "0 orders"
   }
  },
  "warnings": []
