@@ -30,12 +30,31 @@ THEMES = {
     "chips": ["IFX.DE", "STMPA.PA", "BESI.AS"],
     "pharma": ["AZN.L", "NOVN.SW", "NOVO-B.CO", "SAN.PA", "GSK.L", "BAYN.DE"],
     "copper_uranium": ["GLEN.L", "RIO.L", "ANTO.L", "BOL.ST", "KGH.WA"],
+    # 2026-11-13 (user): ETFs/ETCs allowed, EUR-listed on Xetra where possible (no FX charge); no purchase tax on these
+    "gold_etp": ["4GLD.DE", "G2X.DE"],
+    "sector_etf": ["EXH1.DE", "VVSM.DE", "EXV4.DE", "EXV6.DE"],
+    "uranium_etf": ["URNU.DE"],
+    "broad_index": ["EUNL.DE", "EXW1.DE", "EXS1.DE"],
 }
+ETPS = {"4GLD.DE", "G2X.DE", "EXH1.DE", "VVSM.DE", "EXV4.DE", "EXV6.DE", "URNU.DE", "EUNL.DE", "EXW1.DE", "EXS1.DE"}
+# Open universe (user, 2026-11-13): the agent may also trade any other cash instrument listed on these European venues if it has a live quote; theme "open".
+# Cash only: no CFDs, futures, options, FX, leveraged or inverse products (core rule 6); unknown names get conservative slippage and are charged purchase tax as stocks.
+EU_SUFFIXES = {".L", ".PA", ".AS", ".DE", ".F", ".MI", ".MC", ".SW", ".CO", ".OL", ".ST", ".WA", ".BR", ".LS", ".HE", ".VI", ".IR"}
 ALLOWED = {s: t for t, l in THEMES.items() for s in l}
+
+
+def theme_of(sym):
+    """Watchlist theme, 'open' for another European-listed symbol, None if not tradable here."""
+    if sym in ALLOWED:
+        return ALLOWED[sym]
+    return "open" if isinstance(sym, str) and "." in sym and ("." + sym.rsplit(".", 1)[1]) in EU_SUFFIXES else None
 NAMES = {"SHEL.L": "Shell", "TTE.PA": "TotalEnergies", "BP.L": "BP", "ENI.MI": "Eni", "EQNR.OL": "Equinor", "REP.MC": "Repsol", "FRES.L": "Fresnillo", "EDV.L": "Endeavour Mining",
          "IFX.DE": "Infineon", "STMPA.PA": "STMicroelectronics", "BESI.AS": "BE Semiconductor", "AZN.L": "AstraZeneca", "NOVN.SW": "Novartis", "NOVO-B.CO": "Novo Nordisk",
-         "SAN.PA": "Sanofi", "GSK.L": "GSK", "BAYN.DE": "Bayer", "GLEN.L": "Glencore", "RIO.L": "Rio Tinto", "ANTO.L": "Antofagasta", "BOL.ST": "Boliden", "KGH.WA": "KGHM"}
-LIM = dict(start_cash=1000.0, max_positions=3, max_pos_pct=0.35, min_conf=0.52, horizons=(5, 10, 20), max_new_buys_day=3, stop_pct=-8.0, daily_loss_pct=-3.0, weekly_loss_pct=-6.0,
+         "SAN.PA": "Sanofi", "GSK.L": "GSK", "BAYN.DE": "Bayer", "GLEN.L": "Glencore", "RIO.L": "Rio Tinto", "ANTO.L": "Antofagasta", "BOL.ST": "Boliden", "KGH.WA": "KGHM",
+         "4GLD.DE": "Xetra-Gold ETC", "G2X.DE": "VanEck Gold Miners ETF", "EXH1.DE": "iShares STOXX Europe 600 Oil & Gas", "VVSM.DE": "VanEck Semiconductor ETF",
+         "EXV4.DE": "iShares STOXX Europe 600 Health Care", "EXV6.DE": "iShares STOXX Europe 600 Basic Resources", "URNU.DE": "Global X Uranium ETF", "EUNL.DE": "iShares Core MSCI World",
+         "EXW1.DE": "iShares Core EURO STOXX 50", "EXS1.DE": "iShares Core DAX"}
+LIM = dict(start_cash=2000.0, max_positions=3, max_pos_pct=0.35, min_conf=0.52, horizons=(5, 10, 20), max_new_buys_day=3, stop_pct=-8.0, daily_loss_pct=-3.0, weekly_loss_pct=-6.0,
            max_fee_pct=1.0, cutoff_min=30, open_delay_min=15)
 LAB = os.environ.get("LAB") == "1"
 # Isolation guard: the lab limits run only against a separate directory (data/paper_lab), and the main account never runs with the lab flag or against the lab directory.
@@ -55,7 +74,7 @@ if LAB:
     if not (0 < LIM["max_pos_pct"] <= 0.5 and 0 < LIM["max_positions"] <= 12 and 1000 <= LIM["start_cash"] <= 50000 and -20 <= LIM["stop_pct"] < 0):
         raise SystemExit("lab limits out of range: {}".format(LIM))
 TAX_BUY = {".L": 0.005, ".PA": 0.004, ".MI": 0.001, ".MC": 0.002}   # UK stamp duty, French FTT, Italian and Spanish taxes: approximate, to verify
-FX_COST, CUSTODY_YEAR = 0.0025, 0.0012
+FX_COST, CUSTODY_YEAR = 0.0025, 0.0019   # Saxo page 2026-11-13: FX 0.25%; custody Classic 0.15%/yr + 25% Danish VAT for EU residents (0% with securities lending)
 HOLIDAYS = {"2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01", "2027-03-26", "2027-03-29", "2027-05-03"}   # approximate common closures; extend yearly; a symbol with no bars is also treated as closed
 FXSYM = {"GBp": "GBPEUR=X", "CHF": "CHFEUR=X", "DKK": "DKKEUR=X", "NOK": "NOKEUR=X", "SEK": "SEKEUR=X", "PLN": "PLNEUR=X", "USD": "USDEUR=X"}
 LIQ = {}
@@ -127,7 +146,7 @@ def liq_value(sym):
             pass
         for k, v in (("SHEL.L", 342), ("TTE.PA", 271), ("BP.L", 237), ("ENI.MI", 193)):
             LIQ.setdefault(k, v)
-    return LIQ.get(sym, 20.0)
+    return LIQ.get(sym, 20.0 if sym in ALLOWED else 5.0)
 
 
 def slippage(sym):
@@ -144,13 +163,13 @@ def to_eur(price, cur, fx):
 
 def costs(sym, side, value_eur, cur):
     c = {"commission": round(max(2.5, 0.0008 * value_eur), 2), "fx": round(FX_COST * value_eur, 2) if cur != "EUR" else 0.0,
-         "tax": round(TAX_BUY.get(suffix(sym), 0.0) * value_eur, 2) if side == "BUY" else 0.0}
+         "tax": round(TAX_BUY.get(suffix(sym), 0.0) * value_eur, 2) if side == "BUY" and sym not in ETPS else 0.0}
     c["total"] = round(c["commission"] + c["fx"] + c["tax"], 2)
     return c
 
 
 def entry_cost_pct(sym, price_eur, cur):
-    q = max(1, int(333 // price_eur)) if price_eur else 1
+    q = max(1, int(LIM["max_pos_pct"] * LIM["start_cash"] // price_eur)) if price_eur else 1
     v = price_eur * q
     return round(costs(sym, "BUY", v, cur)["total"] / v * 100 + slippage(sym) * 100, 2)
 
@@ -185,7 +204,24 @@ class Lock:
 
 def load():
     f = PAPER / "ledger.json"
-    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else new_ledger()
+    if not f.exists():
+        return new_ledger()
+    led = json.loads(f.read_text(encoding="utf-8"))
+    if not LAB and led.get("start_cash", 0) < LIM["start_cash"]:
+        top_up(led, LIM["start_cash"] - led["start_cash"])
+    return led
+
+
+def top_up(led, amount, day=None):
+    """Paper deposit (user, 2026-11-13: account 1,000 -> 2,000 EUR). Raises cash and start_cash by the same amount, so P&L and reconcile stay exact; past equity points are
+    raised too so day and week loss checks do not see a jump."""
+    amount = round(float(amount), 2)
+    led["cash"] = round(led["cash"] + amount, 4)
+    led["start_cash"] = round(led["start_cash"] + amount, 2)
+    for h in led.get("equity_history", []):
+        h["equity"] = round(h["equity"] + amount, 2)
+    led.setdefault("deposits", []).append({"date": day or utc_now().date().isoformat(), "amount_eur": amount})
+    led.setdefault("notes", []).append({"time": iso(utc_now()), "text": "Paper deposit {:.2f} EUR: account raised to {:.0f} EUR (user decision 2026-11-13)".format(amount, led["start_cash"])})
 
 
 def save(led):
@@ -265,8 +301,8 @@ def risk_check(led, req, now, fx, quote):
     """Return (ok, reasons, qty). Buys get the full check; sells only need a holding. May shrink the quantity to fit the position cap."""
     sym, side, qty = req["symbol"], req["side"], int(req.get("qty", 0))
     why = []
-    if sym not in ALLOWED:
-        return False, ["symbol not in the traded universe"], 0
+    if theme_of(sym) is None:
+        return False, ["symbol not on a European venue (open universe: SYMBOL.<exchange suffix>)"], 0
     if qty < 1:
         return False, ["quantity below one share"], 0
     held = next((p for p in led["positions"] if p["symbol"] == sym), None)
@@ -300,9 +336,9 @@ def risk_check(led, req, now, fx, quote):
         return False, ["no fx rate"], 0
     eq = equity_now(led, fx)
     if not held and len(led["positions"]) >= LIM["max_positions"]:
-        why.append("already 3 open positions")
+        why.append("already {} open positions".format(LIM["max_positions"]))
     if sum(1 for x in led["orders"] if x["side"] == "BUY" and x["status"] in ("ACCEPTED", "FILLED") and x["time"][:10] == d.isoformat()) >= LIM["max_new_buys_day"]:
-        why.append("3 new buys already today")
+        why.append("{} new buys already today".format(LIM["max_new_buys_day"]))
     day_pnl = (eq / equity_on(led, d) - 1) * 100
     if day_pnl <= LIM["daily_loss_pct"]:
         why.append("daily loss cap reached")
@@ -336,7 +372,7 @@ def submit(req, source="agent", now=None, quote=None):
         q = quote if quote is not None else get_quote(req["symbol"])
         ok, reasons, qty = risk_check(led, req, now, fx, q)
         o = {"id": oid, "time": iso(now), "symbol": req["symbol"], "side": req["side"], "qty": qty if ok else int(req.get("qty", 0)), "type": req.get("type", "MARKET"), "limit": req.get("limit"),
-             "status": "ACCEPTED" if ok else "REJECTED", "reasons": reasons, "source": source, "theme": ALLOWED.get(req["symbol"]), "catalyst": req.get("catalyst", ""),
+             "status": "ACCEPTED" if ok else "REJECTED", "reasons": reasons, "source": source, "theme": theme_of(req["symbol"]), "catalyst": req.get("catalyst", ""),
              "confidence": req.get("confidence"), "horizon": req.get("horizon"), "agent": req.get("agent", source)}
         log_event(dict(o, event="request"))
         led["orders"].append(o)
@@ -585,9 +621,14 @@ def selftest():
     get_bars = lambda s: BARS.get(s, [])      # noqa: E731
     try:
         o1 = submit({"symbol": "SAN.PA", "side": "BUY", "qty": 4, "confidence": 0.6, "catalyst": "x", "horizon": 10}, "agent", day, Q["SAN.PA"])
-        check("buy accepted (4 x 86 = 344 EUR fits the 350 cap)", o1["status"] == "ACCEPTED" and o1["qty"] == 4)
-        big = risk_check(new_ledger(), {"symbol": "SAN.PA", "side": "BUY", "qty": 6, "confidence": 0.6, "catalyst": "x", "horizon": 10}, day, FX, Q["SAN.PA"])
-        check("oversized quantity is shrunk to the cap", big[0] and big[2] == 4 and big[1])
+        check("buy accepted (4 x 86 = 344 EUR fits the cap)", o1["status"] == "ACCEPTED" and o1["qty"] == 4)
+        big = risk_check(new_ledger(), {"symbol": "SAN.PA", "side": "BUY", "qty": 50, "confidence": 0.6, "catalyst": "x", "horizon": 10}, day, FX, Q["SAN.PA"])
+        check("oversized quantity is shrunk to the cap", big[0] and big[2] == int(LIM["max_pos_pct"] * LIM["start_cash"] // 86.0) and big[1])
+        check("open universe: European symbol outside the watchlist gets theme open", theme_of("ADYEN.AS") == "open" and theme_of("AAPL") is None and theme_of("SAN.PA") == "pharma")
+        check("ETF pays no purchase tax, a stock on the same venue does", costs("EXW1.DE", "BUY", 600.0, "EUR")["tax"] == 0 and costs("SAN.PA", "BUY", 600.0, "EUR")["tax"] > 0)
+        dl = new_ledger(); dl["start_cash"], dl["cash"], dl["equity_history"] = 1000.0, 400.0, [{"date": "2026-11-12", "equity": 1001.0}]
+        top_up(dl, 1000.0, "2026-11-13")
+        check("top-up raises cash, start and history by the deposit", dl["start_cash"] == 2000.0 and dl["cash"] == 1400.0 and dl["equity_history"][0]["equity"] == 2001.0)
         o1b = submit({"symbol": "SAN.PA", "side": "BUY", "qty": 4, "confidence": 0.6, "catalyst": "x", "horizon": 10}, "agent", day, Q["SAN.PA"])
         check("same order twice is idempotent", o1b.get("duplicate") is True)
         lowc = submit({"symbol": "IFX.DE", "side": "BUY", "qty": 5, "confidence": 0.4, "catalyst": "x", "horizon": 10}, "agent", day, Q["IFX.DE"])
@@ -607,7 +648,7 @@ def selftest():
         led = load()
         check("fill uses a bar at or after the order time", any("FILLED" in m for m in msgs) and led["fills"][0]["time"] >= o1["time"])
         check("fill price is above the bar open (adverse slippage)", led["fills"][0]["price"] > 86.0)
-        check("cash fell by gross + costs", abs(led["cash"] - (1000 - led["fills"][0]["gross_eur"] - led["fills"][0]["fee_eur"])) < 0.01)
+        check("cash fell by gross + costs", abs(led["cash"] - (LIM["start_cash"] - led["fills"][0]["gross_eur"] - led["fills"][0]["fee_eur"])) < 0.01)
         check("reconcile is clean after a buy", reconcile() == [])
         # exits
         p = led["positions"][0]
@@ -635,13 +676,13 @@ def selftest():
         process_fills(day.replace(hour=16, minute=20))
         check("replayed stop fills at the next bar after the trigger", load()["fills"][-1]["symbol"] == "BAYN.DE" and load()["fills"][-1]["time"] == iso(day.replace(hour=15, minute=25)) and not any(x["symbol"] == "BAYN.DE" for x in load()["positions"]))
         led1 = load()
-        led1["cash"], led1["fills"] = 1000.0, []
+        led1["cash"], led1["fills"] = LIM["start_cash"], []
         led1["positions"], led1["orders"] = [], []
         save(led1)
         led1["equity_history"] = []
         # loss cap
-        led["equity_history"] = [{"date": "2026-11-06", "equity": 1000.0}]
-        led["cash"] = 960.0
+        led["equity_history"] = [{"date": "2026-11-06", "equity": LIM["start_cash"]}]
+        led["cash"] = LIM["start_cash"] * 0.96
         save(led)
         Q["RIO.L"] = {"symbol": "RIO.L", "price": 5000.0, "currency": "GBp", "age_minutes": 3}
         cap = submit({"symbol": "RIO.L", "side": "BUY", "qty": 5, "confidence": 0.6, "catalyst": "x", "horizon": 10}, "agent", day, Q["RIO.L"])

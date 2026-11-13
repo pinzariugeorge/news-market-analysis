@@ -49,6 +49,8 @@ QUERIES = {
     "chips": ["semiconductor OR chip stocks Europe", "Infineon OR STMicroelectronics OR BESI OR ASML"],
     "pharma": ["pharma FDA OR EMA approval", "AstraZeneca OR Novartis OR \"Novo Nordisk\" OR Sanofi OR GSK OR Bayer"],
     "copper_uranium": ["copper price", "Glencore OR \"Rio Tinto\" OR Antofagasta OR Boliden OR KGHM"],
+    "uranium": ["uranium price OR Cameco OR Kazatomprom"],
+    "open": ["European shares biggest movers OR profit warning OR upgrade", "Stoxx 600 stocks results guidance"],
     "macro": ["European stocks ECB OR inflation OR tariffs", "markets Iran OR Ukraine OR OPEC OR sanctions"],
 }
 DRIVERS = ["BZ=F", "CL=F", "GC=F", "HG=F", "NG=F", "EURUSD=X", "^STOXX50E", "^GDAXI", "^FTSE", "^VIX"]
@@ -328,7 +330,7 @@ def apply_intraday(path, now=None):
     themes, results = dec.get("themes", {}), []
     for o in dec.get("orders", []):
         sym = o.get("symbol")
-        th = pb.ALLOWED.get(sym)
+        th = pb.theme_of(sym)
         t = themes.get(th, {}) if th else {}
         req = {"symbol": sym, "side": str(o.get("side", "")).upper(), "qty": o.get("qty", 0), "type": "MARKET", "confidence": t.get("confidence", o.get("confidence", 0)),
                "catalyst": t.get("catalyst", o.get("catalyst", "")), "horizon": t.get("horizon_days", o.get("horizon", 0)), "agent": "A-opus-intraday", "tag": "intra" + now.strftime("%H")}
@@ -502,7 +504,7 @@ def apply_trader(path, now=None):
     themes = dec.get("themes", {})
     for o in dec.get("orders", []):
         sym = o.get("symbol")
-        th = pb.ALLOWED.get(sym)
+        th = pb.theme_of(sym)
         t = themes.get(th, {}) if th else {}
         req = {"symbol": sym, "side": str(o.get("side", "")).upper(), "qty": o.get("qty", 0), "type": "MARKET", "confidence": t.get("confidence", o.get("confidence", 0)),
                "catalyst": t.get("catalyst", o.get("catalyst", "")), "horizon": t.get("horizon_days", o.get("horizon", 0)), "agent": "A-opus-learning"}

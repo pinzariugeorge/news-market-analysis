@@ -3,11 +3,20 @@
 Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_era.md`.
 
 ## Decisions needed from the user
+- [x] 2026-11-13: account 2,000 EUR, ETFs/ETCs allowed, no 333 EUR cap, open universe of European cash instruments; intraday run and labs paused.
+- [ ] Price a ~600 EUR order for one Xetra stock and one Xetra ETF (e.g. EXW1) in the Saxo platform trade ticket and report the commission; confirm the 10 watchlist funds are searchable (a new-instrument request costs USD 200). Decide on securities lending (custody 0% vs 0.19%).
+- [ ] Position count and per-position cap at 2,000 EUR (kept at 3 x 35% for now).
 - [x] Account size: 1,000 EUR (2026-11-09).
 - [x] ETFs: no; read as no ETCs either, commodities are drivers only (2026-11-09). Tell me if ETCs should be allowed after all.
 - [x] Scheduled task `snapshot-estimates-daily` disabled (2026-11-09); its US data in `data/raw/estimates/` is no longer updated.
 - [ ] Open a Saxo account (or get access to its instrument search) to verify which European names and ETCs are tradable for a Romanian retail client, and the real commission, FX and custody figures. Never paste credentials in chat.
 - [ ] Approve or refuse any paid data source if the free Yahoo feed proves unreliable.
+
+## 0. Next (2026-11-13 review)
+- [ ] All-name daily direction calls in shadow scoring (primary pass bar, `PREREG_EU.md` period 3).
+- [ ] News ablation on S1 candidates (with vs without news).
+- [ ] Baselines: random calls on the watchlist, equal-weight basket, trend-filtered basket, EUNL.DE buy-and-hold (incl. ETF trend baseline).
+- [ ] Rebuild the screen backtest on a point-in-time universe (survivor bias).
 
 ## 1. European data and universe
 - [x] Free daily history and live delayed quotes tested; 47 candidates probed (`universe/EU_UNIVERSE.md`, `src/eu_probe.py`, `src/live_feed.py`).
@@ -16,7 +25,7 @@ Last updated: 2026-11-09. The US-era list is kept in `archive/docs_us/TODO_us_er
 - [ ] Verify Yahoo volume on Swiss and Nordic venues (Roche looks under-reported).
 - [ ] Decide what replaces uranium (nothing, or an ETC if found).
 
-## 1a-intraday. Hourly intraday check (added 2026-11-10)
+## 1a-intraday. Hourly intraday check (added 2026-11-10; PAUSED 2026-11-13)
 - [ ] Read the first intraday runs (list_runs / get_run_log on routine trig_01UJMy3cPH9qWSRVwcT54gtt): how often it wakes the trader, token cost per run, any wrong trigger.
 - [ ] Tune the triggers after a week (event words, 3% / 2% moves) using the day's `state/<date>_intraday.json` logs.
 - [ ] DST: the intraday cron is UTC too (`37 7-14` in summer time).

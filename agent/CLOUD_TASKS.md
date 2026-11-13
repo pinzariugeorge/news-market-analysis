@@ -1,3 +1,5 @@
+> **2026-11-13: intraday and all four labs (core, short, news, wild) are PAUSED (routines disabled, not deleted). Only morning and evening run.**
+
 # Cloud scheduled tasks for the European paper account (environment `eu-paper`, repo pinzariugeorge/news-market-analysis, Opus)
 
 Two Claude Code cloud tasks replace the laptop daemon and the three local tasks. State is read at the start and written at the end through the git branch `claude/paper-state` (`src/state_sync.py`). Times are your local time (Bucharest, one hour ahead of CET, daylight saving moves together with CET): the morning task is 08:07 CET and the evening task 18:07 CET, weekdays only. Cloud runs may start a few minutes late. Research and simulation only.

@@ -104,7 +104,7 @@ def build(d):
     js = ("<script>document.getElementById('cp').onclick=function(){var t=document.getElementById('sm').value,m=document.getElementById('cpm');"
           "function ok(){m.textContent='Copied. Paste it into a Claude chat, then start voice.'}function no(){m.textContent='Could not copy: select the text below instead.';var a=document.getElementById('sm');a.hidden=false;a.select()}"
           "try{navigator.clipboard.writeText(t).then(ok,no)}catch(x){no()}}</script>")
-    body = "<main><h1>Paper trading day {}</h1><div class=\"mute\">European stocks, 1,000 EUR paper account, Opus with learning. Research only, not advice.</div>{}</main>{}".format(e(ds), "".join(P), js)
+    body = "<main><h1>Paper trading day {}</h1><div class=\"mute\">European stocks and ETFs, 2,000 EUR paper account, Opus with learning. Research only, not advice.</div>{}</main>{}".format(e(ds), "".join(P), js)
     return css, body
 
 

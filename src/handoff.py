@@ -47,8 +47,8 @@ def validate(note):
             p.append(k + " must be YYYY-MM-DD")
     if not p and note["data_cutoff"] > note["decision_day"]:
         p.append("data_cutoff is after decision_day (future information)")
-    if not isinstance(note["families"], dict) or set(note["families"]) != set(FAMILIES):
-        p.append("families must contain exactly: " + ", ".join(FAMILIES))
+    if not isinstance(note["families"], dict) or not set(FAMILIES) <= set(note["families"]):
+        p.append("families must contain at least: " + ", ".join(FAMILIES))
     else:
         for f, v in note["families"].items():
             if not isinstance(v, dict) or not str(v.get("position", "")).strip() or not str(v.get("why", "")).strip():
