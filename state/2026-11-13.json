@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-13",
+ "steps": {
+  "collect": {
+   "at": "2026-11-13T11:18:33Z",
+   "ok": true,
+   "note": "60 headlines, 10 drivers, 22 quotes"
+  },
+  "lab": {
+   "at": "2026-11-13T11:19:13Z",
+   "ok": true,
+   "note": "4 orders"
+  }
+ },
+ "warnings": []
+}

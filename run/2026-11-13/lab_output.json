@@ -1,0 +1,36 @@
+{
+  "decision_day": "2026-11-13",
+  "ideas": [
+    {
+      "id": "pead-strong-reaction",
+      "hypothesis": "Prices underreact to earnings news, so a name whose results produced a strong positive multi-day reaction keeps drifting in the same direction for weeks.",
+      "rule": "Entry: a headline from the last 24h names the company together with results, earnings, record quarter or guidance, AND its d5 move is >= +8%. Buy max shares, horizon 10 trading days, exit at horizon or the -10% stop. At most 1 entry per name per results season.",
+      "source": "Bernard & Thomas 1989 (post-earnings-announcement drift); Chan, Jegadeesh & Lakonishok 1996",
+      "status": "testing",
+      "note": "New today; first trigger IFX.DE (record-quarter headline, d5 +13.21%)."
+    },
+    {
+      "id": "near-high-momentum",
+      "hypothesis": "Investors anchor on recent highs, so stocks at their 3-month high after a strong month underreact to good news and keep rising.",
+      "rule": "Entry: below_3m_high >= -1.0% AND d20 >= +10%. Buy max shares of at most the 2 qualifying names with the largest d20, horizon 20 trading days, exit at horizon or the -10% stop.",
+      "source": "George & Hwang 2004 (52-week high and momentum), adapted to the 3-month high",
+      "status": "testing",
+      "note": "New today; qualifiers BAYN.DE (d20 +27.85%), SAN.PA (d20 +22.46%), AZN.L (d20 +12.50%); top 2 bought."
+    },
+    {
+      "id": "no-news-5d-reversal",
+      "hypothesis": "Large weekly drops without company-specific news are often liquidity or flow driven and partly reverse within a week.",
+      "rule": "Entry: d5 <= -7% AND no headline in the input names the company. Buy max shares, horizon 5 trading days, exit at horizon or the -10% stop.",
+      "source": "Jegadeesh 1990; Lehmann 1990 (short-term reversal); Chan 2003 (news vs no-news drift/reversal)",
+      "status": "testing",
+      "note": "New today; first trigger EDV.L (d5 -8.55%, no Endeavour headline)."
+    }
+  ],
+  "orders": [
+    {"idea": "pead-strong-reaction", "symbol": "IFX.DE", "side": "BUY", "qty": 9, "horizon": 10, "confidence": 0.55, "rationale": "Headline 'Infineon stock eyes 20% FY27 growth after record quarter' with d5 +13.21% meets the results plus >= +8% reaction trigger; entry cost 0.83%."},
+    {"idea": "near-high-momentum", "symbol": "BAYN.DE", "side": "BUY", "qty": 8, "horizon": 20, "confidence": 0.5, "rationale": "BAYN.DE is 0.42% below its 3-month high with d20 +27.85%, the largest d20 of the qualifiers; entry cost 0.93%."},
+    {"idea": "near-high-momentum", "symbol": "SAN.PA", "side": "BUY", "qty": 5, "horizon": 20, "confidence": 0.5, "rationale": "SAN.PA is at its 3-month high (0.00%) with d20 +22.46%, the second largest d20 of the qualifiers; entry cost 1.4%."},
+    {"idea": "no-news-5d-reversal", "symbol": "EDV.L", "side": "BUY", "qty": 11, "horizon": 5, "confidence": 0.5, "rationale": "EDV.L d5 -8.55% with no headline naming Endeavour meets the no-news reversal trigger; entry cost 1.63%."}
+  ],
+  "lab_notes": "First lab day: registered three distinct mechanical ideas (earnings drift, near-high momentum, no-news reversal) and took every trigger at max size, leaving one testing slot free. Next I will check fills and stops, keep applying the rules unchanged, and consider a cross-asset idea (miner lagging its metal driver) for the free slot."
+}
