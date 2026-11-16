@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 2000.0,
- "cash": 1692.1254,
+ "cash": 1692.1239,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -83,6 +83,10 @@
   {
    "date": "2026-11-13",
    "equity": 1991.38
+  },
+  {
+   "date": "2026-11-16",
+   "equity": 1987.56
   }
  ],
  "notes": [
@@ -279,11 +283,16 @@
    "time": "2026-11-16T07:10:03Z",
    "agent": "trader",
    "text": "0 orders. Risk is soft before the open: Nasdaq futures are down about 1% as the AI and chip selloff resumes ahead of Nvidia results, gold and copper are weak on Fed hike bets, and Brent is only modestly higher on a single-source report of an Iranian strike on a US base. No headline gives a name-specific, new catalyst whose expected move clears twice the entry cost, so I hold IFX.DE and add nothing."
+  },
+  {
+   "time": "2026-11-16T16:51:37Z",
+   "agent": "reviewer",
+   "text": "Monday, 16 November. The facts here come from the earlier review today. The chip selloff resumed before Nvidia results this week. Nasdaq futures were down about one percent. Copper sat at a four-month low. A reported Iranian strike on a US base in Bahrain had only one source, and Brent rose only about half a percent. The trader placed no orders today. It kept Infineon, because the record quarter and the guidance of more than 20 percent growth still stand. It did not buy oil, Bayer or anything el"
   }
  ],
- "custody_paid": 0.0046,
+ "custody_paid": 0.0061,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-13",
+ "custody_day": "2026-11-16",
  "deposits": [
   {
    "date": "2026-11-13",
