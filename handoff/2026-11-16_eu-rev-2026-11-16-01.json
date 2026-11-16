@@ -1,0 +1,124 @@
+{
+ "run_id": "eu-rev-2026-11-16-01",
+ "written_at": "2026-11-16T07:09:00Z",
+ "decision_day": "2026-11-16",
+ "data_cutoff": "2026-11-16",
+ "what_changed": "Account start 2000 EUR matches the prompt rule (user, 2026-11-13), so the top-up is treated as deliberate; equity 1991.38, cash 1692.13. No orders today: IFX.DE held (Friday close 49.88, quotes ~62 h old) while the chip selloff resumes before Nvidia results; Iran strike on a US base in Bahrain reported by one source, Bayer FDA stroke-drug approval reported by an aggregator without a date. Five new shadow calls added (EXH1.DE up, BAYN.DE up, G2X.DE down, ANTO.L down, STMPA.PA down).",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Iran strike on a US base is single-source and Brent moved only +0.56%; IEA surplus and deal talk cut the other way."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No company news; gold near a one-year low on hike bets before the Warsh speech."
+  },
+  "chips": {
+   "position": "long IFX.DE since 2026-11-10, 10 days",
+   "why": "Record Q4 and >20% FY2027 guidance stand despite target cuts and the resumed AI selloff; exit by 2026-11-24, stop about 46.82."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Bayer FDA approval has no date and is likely priced; Roche Gazyva label extension is modest."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper at a four-month low with no name-specific news."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Infineon FY2026 Q4 beat and FY2027 guidance",
+   "status": "open",
+   "note": "Held 6 IFX.DE @ 50.90, Friday close 49.88; round of analyst target cuts but buy case intact. Close only if guidance is walked back; stop about 46.82; exit by 2026-11-24.",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "name": "AI/chip selloff and Nvidia results",
+   "status": "escalating",
+   "note": "Nasdaq futures -1% on 2026-11-16 as Taiwan chip rout deepens; Nvidia results scheduled this week. Watch IFX.DE vs stop, STMPA.PA, BESI.AS.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "US CPI/PPI, Fed hike bets and Warsh speech",
+   "status": "escalating",
+   "note": "Markets price a hike, EURUSD 1.102; Warsh speech ahead. PPI result from 2026-11-13 still not in input. Watch gold and miners.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Iran war and crude",
+   "status": "escalating",
+   "note": "Reported Iranian strike on a US base in Bahrain (FinanceFeeds only) vs IEA first surplus since the war and US-Iran deal uncertainty. Need a second source and Brent above $98 before an oil long.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "BofA downgrade of 3 European chip stocks",
+   "status": "open",
+   "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "STMicro STM32 investor call and Morgan Stanley conference",
+   "status": "open",
+   "note": "Call on 2026-11-18, CEO at the conference on 2026-11-19; watch for figures or guidance.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Bayer factor XIa stroke drug FDA approval",
+   "status": "open",
+   "note": "Now named as Bayer (ad-hoc-news.de, DB target EUR 65), but no approval date; check a primary source and whether BAYN.DE already moved before Friday's close (shadow BAYN.DE up 10d).",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Roche Gazyva third renal indication",
+   "status": "open",
+   "note": "FDA approval for primary membranous nephropathy (36.1% vs 5.7% remission); modest label extension for ROG.SW, open universe.",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "name": "GSK vaccine patent injunction vs Pfizer-BioNTech",
+   "status": "open",
+   "note": "Watch for disclosed settlement terms (shadow GSK.L up 5d pending).",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "GLP-1 pricing and competition (Novo vs Lilly)",
+   "status": "open",
+   "note": "Wegovy pill pricing, Lilly oral GLP-1 in China, FDA warning open (shadow NOVO-B.CO down 10d pending).",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "FDA probe of Novartis gene therapy",
+   "status": "open",
+   "note": "No update; watch regulatory action on NOVN.SW.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Rio Tinto $7b infrastructure asset sale",
+   "status": "open",
+   "note": "Watch for a winning bid and price as a possible RIO.L catalyst.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Copper vs weak China demand and tech selloff",
+   "status": "escalating",
+   "note": "Copper at a four-month low on 2026-11-16 (shadow ANTO.L down 5d); a strong Nvidia print could reverse it.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "BP upstream deals (Namibia, Petrobras Bumerangue, Caspian rig)",
+   "status": "open",
+   "note": "Eighth Caspian rig is small; watch for agreed Petrobras terms.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Account start and cash change",
+   "status": "closed",
+   "note": "Start 2000 EUR matches the prompt's account rule (user, 2026-11-13); size from current equity 1991.38.",
+   "first_seen": "2026-11-13"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "On the next decision day (2026-11-17): hold IFX.DE (6 @ 50.8953, exit by 2026-11-24, stop about 46.82) unless FY2027 guidance is walked back, a primary source names IFX.DE in the BofA downgrade, or the stop is hit; check Nvidia results timing and the chip reaction. Confirm or refute the Iran strike on the US base in Bahrain with a second source and Brent level; find the Bayer FDA approval date and BAYN.DE reaction; check the Warsh speech and PPI outcome for gold. Only buy where a primary-source, name-specific catalyst gives an expected move well above twice entry cost, and record the 13 pending shadow calls as they score.",
+ "lessons": []
+}
