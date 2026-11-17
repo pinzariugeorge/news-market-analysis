@@ -1,0 +1,42 @@
+{
+  "report": "Tuesday was a quiet day for the account. The trader placed no orders, so there were no fills and no trading costs. The reason: no fresh primary-source catalyst for any of our five themes. The Monday chip selloff on new US restrictions on China was the main backdrop. Novartis had mixed news, an FDA approval for Cosentyx alongside a failed Lp(a) trial, and the trader judged it a wash. Our one position is still six Infineon shares, bought at about 50.90 euros. They closed at 48.69, down from 49.24 yesterday. That is about 4.3 percent below entry, or roughly 13 euros on paper. The stop is near 46.82, about 3.8 percent below today's close. The exit date is 24 November, five trading days away. The day lost 3.33 euros, minus 0.17 percent. Equity is 1984.23 euros, down 0.79 percent since the start. Most of that is the Infineon drawdown. The books reconcile and there were no warnings or rejected orders. The input does not include the retail sales, PPI or Nvidia outcomes, so we cannot say what drove today's move. One day of a small slide says nothing about skill. No trade has closed yet and no shadow calls have scored.",
+  "questions": [
+    "The Infineon thesis rests on company guidance, but the losses so far come from a sector-wide move on US China restrictions. Should a sector-wide shock count as a reason to exit early, or only name-specific news as the rule says now?",
+    "With the stop about 3.8 percent below the close and five trading days left, is a fixed exit date plus stop the right pair, or should the stop tighten as the exit date approaches?",
+    "The reviewer input lacked today's retail sales, PPI and Nvidia outcomes. Should the close job pull a short list of macro results into the input so the review can explain the day's moves?"
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-17-01",
+    "written_at": "2026-11-17T18:30:00+01:00",
+    "decision_day": "2026-11-17",
+    "data_cutoff": "2026-11-17",
+    "what_changed": "No orders and no fills on 2026-11-17; no new primary-source catalyst. IFX.DE fell from 49.24 to 48.69 (about 4.3% below entry 50.8953, about 3.8% above the stop of about 46.82). Day P&L -3.33 EUR (-0.17%); equity 1984.23 EUR, cash 1692.12 EUR, total -0.79%. Reconcile consistent, no warnings. Retail sales, PPI, Warsh and Nvidia outcomes were not in the input.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "No oil headlines; Brent last seen at 91.8, below the $98 bar; Bahrain strike still single-source."},
+      "gold_miners": {"position": "flat", "why": "No miner news; gold near a one-year low on hike bets; retail sales and PPI outcome not yet in input."},
+      "chips": {"position": "long IFX.DE since 2026-11-10: 6 @ 50.8953, close 48.69 on 2026-11-17", "why": "Record Q4 and >20% FY2027 revenue growth guidance not walked back; exit by 2026-11-24 (5 trading days), stop about 46.82 (about 3.8% below close)."},
+      "pharma": {"position": "flat", "why": "Novartis Cosentyx approval offset by the Lp(a) failure; Bayer SUNHARBO approval likely already priced and lacks a primary release date."},
+      "copper_uranium": {"position": "flat", "why": "No copper or uranium news; copper near a four-month low."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Hold 6 IFX.DE @ 50.8953; close 48.69 on 2026-11-17, stop about 46.82, exit by 2026-11-24. Close early only if guidance is walked back or a primary source shows Infineon hit by the China restrictions.", "first_seen": "2026-11-10"},
+      {"name": "AI/chip selloff, US China chip restrictions and Nvidia results", "status": "escalating", "note": "IFX.DE slid a further 1.1% on 2026-11-17 after Monday's ASML -5.9% and STM -4.7%. Nvidia results this week; reaction not yet in input. Watch IFX.DE vs stop, STMPA.PA, BESI.AS.", "first_seen": "2026-11-16"},
+      {"name": "US CPI/PPI, Fed hike bets, retail sales and Warsh speech", "status": "escalating", "note": "Gold near a one-year low, $3,832-3,841 support. Retail sales (2026-11-17), PPI and Warsh outcomes still not in input.", "first_seen": "2026-11-13"},
+      {"name": "Iran war and crude", "status": "fading", "note": "No new oil headlines; Brent last 91.8. Need a second source on the Bahrain strike and Brent above $98 before an oil long.", "first_seen": "2026-11-10"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-14"},
+      {"name": "STMicro STM32 investor call and Morgan Stanley conference", "status": "open", "note": "Call on 2026-11-18, CEO at the conference on 2026-11-19; watch for figures or guidance (shadow STMPA.PA down 5d).", "first_seen": "2026-11-14"},
+      {"name": "Novartis Cosentyx PMR approval and Lp(a) trial failure", "status": "open", "note": "FDA approval vs Lp(a) failure; watch NOVN.SW reaction (shadow up 5d at 0.48). Merck KGaA dropped its Lp(a) drug; probably immaterial for MRK.DE.", "first_seen": "2026-11-17"},
+      {"name": "Bayer factor XIa / SUNHARBO FDA approval", "status": "open", "note": "Secondary recap only; likely priced. Need a primary release date before any BAYN.DE trade.", "first_seen": "2026-11-17"},
+      {"name": "Roche Gazyva third renal indication", "status": "fading", "note": "Modest label extension for ROG.SW (open universe); no follow-up.", "first_seen": "2026-11-13"},
+      {"name": "GSK vaccine patent injunction vs Pfizer-BioNTech", "status": "open", "note": "Watch for disclosed settlement terms (shadow GSK.L up 5d pending).", "first_seen": "2026-11-13"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "Wegovy pill pricing, Lilly oral GLP-1 in China, FDA warning open (shadow NOVO-B.CO down 10d pending).", "first_seen": "2026-11-11"},
+      {"name": "FDA probe of Novartis gene therapy", "status": "open", "note": "No update; watch for regulatory action on NOVN.SW.", "first_seen": "2026-11-12"},
+      {"name": "Rio Tinto $7b infrastructure asset sale", "status": "open", "note": "Watch for a winning bid and price as a possible RIO.L catalyst.", "first_seen": "2026-11-12"},
+      {"name": "Copper vs weak China demand and tech selloff", "status": "escalating", "note": "HG=F near a four-month low at 5.97 (shadow ANTO.L down 5d pending); a strong Nvidia print could reverse it.", "first_seen": "2026-11-13"},
+      {"name": "BP upstream deals (Namibia, Petrobras Bumerangue, Caspian rig)", "status": "open", "note": "Watch for agreed Petrobras terms.", "first_seen": "2026-11-12"}
+    ],
+    "pending_orders": [],
+    "next_job": "On 2026-11-18: hold IFX.DE (6 @ 50.8953, close 48.69, stop about 46.82, exit by 2026-11-24) unless the stop is hit, FY2027 guidance is walked back, or a primary source names IFX.DE in the BofA downgrade or as hit by the US China chip restrictions. Check the STMicro STM32 call (2026-11-18), the Nvidia results date and reaction, the retail sales, PPI and Warsh outcomes for gold, and the NOVN.SW reaction. Check quote freshness, buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost, and record the 16 pending shadow calls as they score.",
+    "lessons": []
+  }
+}

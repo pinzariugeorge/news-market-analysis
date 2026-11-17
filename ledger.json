@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 2000.0,
- "cash": 1692.1239,
+ "cash": 1692.1224,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -87,6 +87,10 @@
   {
    "date": "2026-11-16",
    "equity": 1987.56
+  },
+  {
+   "date": "2026-11-17",
+   "equity": 1984.23
   }
  ],
  "notes": [
@@ -293,11 +297,16 @@
    "time": "2026-11-17T07:10:10Z",
    "agent": "trader",
    "text": "0 orders. Europe is risk-off (VIX +18.7% to 22.91, DAX -0.57%) with chips hit by new US chip restrictions on China and Nvidia results still to come, while gold sits near a one-year low on Fed hike bets and crude drifts lower. The overnight news holds no name-specific catalyst whose expected move clears twice the entry cost, so I hold IFX.DE and add nothing."
+  },
+  {
+   "time": "2026-11-17T16:52:03Z",
+   "agent": "reviewer",
+   "text": "Tuesday was a quiet day for the account. The trader placed no orders, so there were no fills and no trading costs. The reason: no fresh primary-source catalyst for any of our five themes. The Monday chip selloff on new US restrictions on China was the main backdrop. Novartis had mixed news, an FDA approval for Cosentyx alongside a failed Lp(a) trial, and the trader judged it a wash. Our one position is still six Infineon shares, bought at about 50.90 euros. They closed at 48.69, down from 49.24 "
   }
  ],
- "custody_paid": 0.0061,
+ "custody_paid": 0.0076,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-16",
+ "custody_day": "2026-11-17",
  "deposits": [
   {
    "date": "2026-11-13",
