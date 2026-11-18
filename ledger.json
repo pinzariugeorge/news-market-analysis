@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 2000.0,
- "cash": 1692.1224,
+ "cash": 1692.1209,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -91,6 +91,10 @@
   {
    "date": "2026-11-17",
    "equity": 1984.23
+  },
+  {
+   "date": "2026-11-18",
+   "equity": 1987.35
   }
  ],
  "notes": [
@@ -307,11 +311,16 @@
    "time": "2026-11-18T07:09:55Z",
    "agent": "trader",
    "text": "0 orders. Broad risk-off on 2026-11-17 (STOXX 50 -2.15%, VIX 25.46) with gold, copper and crude all lower, so beta is driving prices more than company news. The only new name-specific items (GSK Nelkarmi approval, Cosentyx PMR label, Equinor cyberattack) look small or already expected relative to entry costs, so no new long clears the bar today."
+  },
+  {
+   "time": "2026-11-18T16:52:34Z",
+   "agent": "reviewer",
+   "text": "A quiet day for our book. No orders were sent and nothing filled, so there were no trading costs today. The trader held its one position: 6 Infineon shares bought at 50.90 euros on 10 November. Infineon closed at 49.21, up from 48.69, a day gain of 3.12 euros, or 0.16 percent. The position is still about 10 euros under water. The stop is about 46.82, roughly 2.40 euros or 5 percent below today's price. The exit date is 24 November, four trading days away. The reason to hold is unchanged: a recor"
   }
  ],
- "custody_paid": 0.0076,
+ "custody_paid": 0.0091,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-17",
+ "custody_day": "2026-11-18",
  "deposits": [
   {
    "date": "2026-11-13",

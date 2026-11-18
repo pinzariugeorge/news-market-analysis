@@ -1,0 +1,19 @@
+{
+ "date": "2026-11-18",
+ "equity": 1987.35,
+ "day_pnl_eur": 3.12,
+ "day_pnl_pct": 0.16,
+ "total_pnl_pct": -0.63,
+ "cash": 1692.1209,
+ "custody_today": 0.0015,
+ "positions": [
+  {
+   "symbol": "IFX.DE",
+   "qty": 6,
+   "exit_by": "2026-11-24"
+  }
+ ],
+ "fills_today": [],
+ "reconcile": "consistent",
+ "warnings": []
+}
