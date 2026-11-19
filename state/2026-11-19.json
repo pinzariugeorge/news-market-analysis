@@ -1,0 +1,21 @@
+{
+ "date": "2026-11-19",
+ "steps": {
+  "collect": {
+   "at": "2026-11-19T07:08:48Z",
+   "ok": true,
+   "note": "80 headlines, 10 drivers, 32 quotes"
+  },
+  "researcher": {
+   "at": "2026-11-19T07:09:40Z",
+   "ok": true,
+   "note": ""
+  },
+  "trader": {
+   "at": "2026-11-19T07:10:30Z",
+   "ok": true,
+   "note": "0 orders: "
+  }
+ },
+ "warnings": []
+}

@@ -1,0 +1,51 @@
+{
+  "decision_day": "2026-11-19",
+  "decided_at": "2026-11-19T07:09:00Z",
+  "market_view": "Europe fell for a third day led by miners, with hawkish Fed minutes and a strong dollar pressing gold and metals, while crude stabilises near $90 after a sharp drop. Overnight news is mostly continuation; the only fresh name-specific item (Novartis mid-term guidance) is ambiguous in tone, so nothing clears the bar for a new long.",
+  "would_change_my_mind": "A primary-source, name-specific event with a clear direction (for example Novartis guidance clearly read as an upgrade by the market, or Brent back above $98 on a confirmed supply disruption) with an expected move well above twice entry cost.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Repsol targets 2028 return to chemicals profit as overhaul pays off - marketscreener.com - 2026-11-19", "reasoning": "Repsol target is long-dated and segment-level; Brent fell 2.65% to 89.51 on supply glut fears, below the $98 bar for an oil long."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Gold edges up from 14-month low as markets assess Fed rate outlook - Reuters - 2026-11-19", "reasoning": "Macro bounce from a low, not a miner-specific event; dollar strength and hawkish Fed minutes argue against."},
+    "chips": {"action": "hold", "symbol": "IFX.DE", "horizon_days": 10, "confidence": 0.53, "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent - 2026-11-10", "reasoning": "Record Q4 and >20% FY2027 guidance are not walked back and no primary source names IFX.DE in the BofA downgrade or China restrictions; stop about 46.82 not hit, exit by 2026-11-24."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Novartis narrows mid-term annual sales growth target to 5% through 2031 - marketscreener.com - 2026-11-19", "reasoning": "Headlines conflict ('narrows' vs 'raises') and 5% through 2031 may read as a slowdown; direction unclear, so no long at 0.72% entry cost."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Rio Tinto Group (LSE:RIO) Commits $250 Million To Panguna Mine Remediation - Yahoo Finance - 2026-11-19", "reasoning": "Small cost item amid sector-wide metal selling; no positive name-specific catalyst and the BHP/Rio China meeting outcome is still missing."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Gold edges up from 14-month low as markets assess Fed rate outlook - Reuters - 2026-11-19", "reasoning": "A bounce from a low under a hawkish Fed and strong dollar is not a trend."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "No sector-level event beyond continuation of known macro stories."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "'Uranium sells itself': Kazatomprom's Chief Strategy Officer on industry outlook - CNBC - 2026-11-19", "reasoning": "Commentary, not an event; URNM below key moving averages."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "none", "reasoning": "Vague macro mood is not a catalyst; Europe in a three-day decline."}
+  },
+  "orders": [],
+  "shadow": [],
+  "handoff": {
+    "run_id": "eu-2026-11-19-01",
+    "written_at": "2026-11-19T07:09:00Z",
+    "decision_day": "2026-11-19",
+    "data_cutoff": "2026-11-19",
+    "what_changed": "No orders. Quotes are stale (about 879 min, yesterday's close): IFX.DE 49.21 vs entry 50.8953, with a low-quality premarket report of 50.36 (+2.36%). Novartis issued updated mid-term guidance (5% annual sales growth through 2031, three peak-sales targets raised) with conflicting headline tone; Brent fell to 89.51, gold near a 14-month low at 3730, Europe down a third day led by miners.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 89.51, below the $98 bar; Repsol chemicals target is long-dated."},
+      "gold_miners": {"position": "flat", "why": "Gold near a 14-month low under a hawkish Fed and strong dollar; no miner-specific event."},
+      "chips": {"position": "long IFX.DE since 2026-11-10, 10 days", "why": "Record Q4 and >20% FY2027 guidance stand; stop about 46.82, exit by 2026-11-24."},
+      "pharma": {"position": "flat", "why": "Novartis mid-term guidance is ambiguous ('narrows' vs 'raises'); no clear direction."},
+      "copper_uranium": {"position": "flat", "why": "Sector-wide metal selling; BHP/Rio China meeting outcome still pending."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Hold 6 IFX.DE @ 50.8953; close 49.21 on 2026-11-18, premarket report 50.36 (ad-hoc-news.de, low quality). Stop about 46.82, exit by 2026-11-24. Close early only if guidance is walked back or a primary source shows IFX.DE hit by China restrictions or in the BofA downgrade.", "first_seen": "2026-11-10"},
+      {"name": "AI/chip selloff, US China chip restrictions and Nvidia results", "status": "open", "note": "Nvidia results reportedly supported tech (Yahoo Finance UK 2026-11-18); VIX 24.56. Dutch opposition to the proposed MATCH Act (NeoTeo); still only proposed. Watch IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-17"},
+      {"name": "Fed hawkishness, dollar strength and gold", "status": "escalating", "note": "Hawkish Fed minutes; gold 3730 near a 14-month low, edging up. Retail sales, PPI and Warsh outcomes still not in input.", "first_seen": "2026-11-17"},
+      {"name": "Iran war, Hormuz and crude", "status": "open", "note": "Brent 89.51 (-2.65%) on supply glut fears, but US-Iran hostilities and Hormuz tanker threats reported. Need a second source on actual supply disruption and Brent above $98 before an oil long.", "first_seen": "2026-11-10"},
+      {"name": "Equinor cyberattack", "status": "fading", "note": "No operational impact reported in this input (shadow EQNR.OL down 5d pending).", "first_seen": "2026-11-18"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-18"},
+      {"name": "STMicro STM32 targets and Morgan Stanley conference", "status": "open", "note": "Digitimes: STM targets 25-30% MCU share and doubling STM32 revenue by 2028 (single trade-press source, long-dated). CEO at Morgan Stanley conference 2026-11-19; watch for near-term guidance (shadow STMPA.PA down 5d pending).", "first_seen": "2026-11-18"},
+      {"name": "Novartis mid-term guidance through 2031", "status": "open", "note": "Updated guidance 2026-11-19: 5% annual sales growth through 2031, three peak-sales targets raised; tone conflicting. Watch the NOVN.SW reaction and analyst reads before any trade (shadow NOVN.SW up 5d pending from Cosentyx PMR).", "first_seen": "2026-11-19"},
+      {"name": "GSK Nelkarmi approval and patent injunction vs Pfizer-BioNTech", "status": "open", "note": "Shadow GSK.L up 5d pending; watch for disclosed settlement terms.", "first_seen": "2026-11-18"},
+      {"name": "Bayer factor XIa / SUNHARBO FDA approval", "status": "open", "note": "Secondary recap only, likely priced; need a primary release date before any BAYN.DE trade.", "first_seen": "2026-11-18"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "No new item today (shadow NOVO-B.CO down 10d pending); ignore promotional items.", "first_seen": "2026-11-17"},
+      {"name": "Copper vs weak China demand, BHP/Rio China meeting and Rio asset sale", "status": "escalating", "note": "Copper 5.67, European miners fell 4.7% on 2026-11-18; Rio commits $250m to Panguna remediation (small). BHP/Rio China meeting outcome pending (shadow ANTO.L down 5d pending).", "first_seen": "2026-11-17"},
+      {"name": "BP upstream deals (Namibia, Petrobras Bumerangue, Caspian rig)", "status": "open", "note": "Watch for agreed Petrobras terms.", "first_seen": "2026-11-17"}
+    ],
+    "pending_orders": [],
+    "next_job": "On 2026-11-20: hold IFX.DE (6 @ 50.8953, stop about 46.82, exit by 2026-11-24) unless the stop is hit, FY2027 guidance is walked back, or a primary source names IFX.DE in the BofA downgrade or as hit by China restrictions. Check quote age first. Check the NOVN.SW reaction and analyst reads of the 2031 guidance, STMicro Morgan Stanley conference remarks, retail sales/PPI/Warsh outcomes for gold, Brent vs $98 with Hormuz supply news, and the BHP/Rio China meeting outcome. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost, and record the 20 pending shadow calls as they score.",
+    "lessons": []
+  }
+}
