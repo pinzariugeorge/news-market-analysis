@@ -2,7 +2,7 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 2000.0,
- "cash": 1692.1209,
+ "cash": 1692.1194,
  "positions": [
   {
    "symbol": "IFX.DE",
@@ -95,6 +95,10 @@
   {
    "date": "2026-11-18",
    "equity": 1987.35
+  },
+  {
+   "date": "2026-11-19",
+   "equity": 1988.19
   }
  ],
  "notes": [
@@ -321,11 +325,16 @@
    "time": "2026-11-19T07:10:30Z",
    "agent": "trader",
    "text": "0 orders. Europe fell for a third day led by miners, with hawkish Fed minutes and a strong dollar pressing gold and metals, while crude stabilises near $90 after a sharp drop. Overnight news is mostly continuation; the only fresh name-specific item (Novartis mid-term guidance) is ambiguous in tone, so nothing clears the bar for a new long."
+  },
+  {
+   "time": "2026-11-19T16:52:13Z",
+   "agent": "reviewer",
+   "text": "Thursday 19 November. A quiet day for us. The trader placed no orders, so there were no fills and no costs, apart from a custody fee of a fraction of a cent. The morning note explains why. Quotes were stale at the start, about 879 minutes old, so they showed yesterday's close. Brent fell to 89.51 dollars, well below our 98 dollar bar for an oil trade. Gold sat near a 14-month low, around 3730, under a hawkish Fed and a strong dollar. European markets fell for a third day, led by miners. Novartis"
   }
  ],
- "custody_paid": 0.0091,
+ "custody_paid": 0.0106,
  "started": "2026-11-09T12:35:15Z",
- "custody_day": "2026-11-18",
+ "custody_day": "2026-11-19",
  "deposits": [
   {
    "date": "2026-11-13",

@@ -1,0 +1,40 @@
+{
+  "report": "Thursday 19 November. A quiet day for us. The trader placed no orders, so there were no fills and no costs, apart from a custody fee of a fraction of a cent. The morning note explains why. Quotes were stale at the start, about 879 minutes old, so they showed yesterday's close. Brent fell to 89.51 dollars, well below our 98 dollar bar for an oil trade. Gold sat near a 14-month low, around 3730, under a hawkish Fed and a strong dollar. European markets fell for a third day, led by miners. Novartis gave new guidance out to 2031, but headlines read it both ways, so there was no pharma trade. We still hold one position: 6 Infineon shares bought at 50.90 euros. They closed at 49.35, a paper loss of about 9.27 euros. The stop is about 46.82, roughly 5 percent below today's price. The exit date is Tuesday 24 November, three trading days away. The account gained 0.84 euros today and stands at 1988.19 euros, down 0.59 percent overall. Reconcile is consistent, with no warnings and no rejected orders. The first shadow call has scored: BP up over 5 days was wrong, down 0.18 percent. One call and one quiet day show nothing about skill. Staying flat on unclear news is a choice, not proof of good judgment.",
+  "questions": [
+    "The trader started with quotes about 879 minutes old, effectively yesterday's close. Should the rules forbid new entries until a fresh quote is available, or move the decision run later in the morning?",
+    "Infineon is about 3 percent below entry with a fixed exit on 24 November. Should the time-based exit stay strict, or may it be extended when the catalyst still stands, and how would we keep that from becoming an excuse to hold losers?",
+    "The BP shadow call was scored wrong on a move of only -0.18 percent, with confidence 0.47. Should shadow calls need a move larger than round-trip costs to count as right or wrong, and should calls under 0.5 confidence be recorded at all?"
+  ],
+  "handoff": {
+    "run_id": "eu-2026-11-19-rev",
+    "written_at": "2026-11-19T18:00:00+01:00",
+    "decision_day": "2026-11-19",
+    "data_cutoff": "2026-11-19",
+    "what_changed": "No orders and no fills on 2026-11-19. Decision ran on stale quotes (about 879 min). IFX.DE closed 49.35 (entry 50.8953, unrealized about -9.27 EUR). Day P&L +0.84 EUR (+0.04%), equity 1988.19 EUR, cash 1692.12 EUR, total -0.59%. Reconcile consistent, no warnings, custody 0.0015 EUR. First shadow call scored: BP.L up 5d wrong (-0.18%); 19 shadow calls still waiting. Morning context: Brent 89.51, gold near 14-month low at 3730, Europe down a third day led by miners, Novartis 2031 guidance with conflicting tone.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 89.51, below the $98 bar; supply disruption from Hormuz not confirmed by a second source."},
+      "gold_miners": {"position": "flat", "why": "Gold near a 14-month low under a hawkish Fed and strong dollar; no miner-specific event."},
+      "chips": {"position": "long 6 IFX.DE @ 50.8953 since 2026-11-10", "why": "Record Q4 and >20% FY2027 guidance stand; close 49.35 on 2026-11-19, stop about 46.82 (about 5% below), exit by 2026-11-24 (3 trading days)."},
+      "pharma": {"position": "flat", "why": "Novartis 2031 guidance ambiguous ('narrows' vs 'raises'); NOVN.SW reaction not yet in input."},
+      "copper_uranium": {"position": "flat", "why": "Sector-wide metal selling; BHP/Rio China meeting outcome still pending."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat and FY2027 guidance", "status": "open", "note": "Hold 6 IFX.DE @ 50.8953; close 49.35 on 2026-11-19. Stop about 46.82, exit by 2026-11-24. Close early only if guidance is walked back or a primary source shows IFX.DE hit by China restrictions or in the BofA downgrade.", "first_seen": "2026-11-10"},
+      {"name": "AI/chip selloff, US China chip restrictions and Nvidia results", "status": "open", "note": "Nvidia results reportedly supported tech; VIX 24.56. MATCH Act still only proposed, Dutch opposition reported. Watch IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-18"},
+      {"name": "Fed hawkishness, dollar strength and gold", "status": "escalating", "note": "Hawkish Fed minutes; gold about 3730 near a 14-month low. Retail sales, PPI and Warsh outcomes still not in input.", "first_seen": "2026-11-18"},
+      {"name": "Iran war, Hormuz and crude", "status": "open", "note": "Brent 89.51 (-2.65%) on supply glut fears despite reported US-Iran hostilities and Hormuz tanker threats. Need a second source on actual supply disruption and Brent above $98 before an oil long.", "first_seen": "2026-11-18"},
+      {"name": "Equinor cyberattack", "status": "fading", "note": "No operational impact reported (shadow EQNR.OL down 5d pending).", "first_seen": "2026-11-18"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-18"},
+      {"name": "STMicro STM32 targets and Morgan Stanley conference", "status": "open", "note": "Single trade-press source on 2028 targets. CEO spoke at Morgan Stanley conference 2026-11-19; remarks not yet in input (shadow STMPA.PA down 5d pending).", "first_seen": "2026-11-18"},
+      {"name": "Novartis mid-term guidance through 2031", "status": "open", "note": "5% annual sales growth through 2031, three peak-sales targets raised; tone conflicting. Watch NOVN.SW reaction and analyst reads (shadow NOVN.SW up 5d pending from Cosentyx PMR).", "first_seen": "2026-11-19"},
+      {"name": "GSK Nelkarmi approval and patent injunction vs Pfizer-BioNTech", "status": "open", "note": "Shadow GSK.L up 5d pending; watch for disclosed settlement terms.", "first_seen": "2026-11-18"},
+      {"name": "Bayer factor XIa / SUNHARBO FDA approval", "status": "open", "note": "Secondary recap only, likely priced; need a primary release date before any BAYN.DE trade.", "first_seen": "2026-11-18"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "No new item (shadow NOVO-B.CO down 10d pending); ignore promotional items.", "first_seen": "2026-11-18"},
+      {"name": "Copper vs weak China demand, BHP/Rio China meeting and Rio asset sale", "status": "escalating", "note": "Copper 5.67; European miners fell 4.7% on 2026-11-18 and led a third down day on 2026-11-19. BHP/Rio China meeting outcome pending (shadow ANTO.L down 5d pending).", "first_seen": "2026-11-18"},
+      {"name": "BP upstream deals (Namibia, Petrobras Bumerangue, Caspian rig)", "status": "open", "note": "Shadow BP.L up 5d on Namibia deal scored wrong (-0.18% by 2026-11-18). Watch for agreed Petrobras terms.", "first_seen": "2026-11-11"}
+    ],
+    "pending_orders": [],
+    "next_job": "On 2026-11-20: check quote age first. Hold IFX.DE (6 @ 50.8953, close 49.35, stop about 46.82, exit by 2026-11-24) unless the stop is hit, FY2027 guidance is walked back, or a primary source names IFX.DE in the BofA downgrade or as hit by China restrictions. Check the NOVN.SW reaction to the 2031 guidance, STMicro Morgan Stanley conference remarks, retail sales/PPI/Warsh outcomes for gold, Brent vs $98 with Hormuz supply news, and the BHP/Rio China meeting outcome. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost. Record the 19 pending shadow calls as they score.",
+    "lessons": []
+  }
+}

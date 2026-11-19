@@ -2,3 +2,4 @@
 {"day": "2026-11-16", "evaluated": 32, "triggers": []}
 {"day": "2026-11-17", "evaluated": 32, "triggers": []}
 {"day": "2026-11-18", "evaluated": 32, "triggers": [{"symbol": "REP.MC", "screens": ["S2"]}]}
+{"day": "2026-11-19", "evaluated": 32, "triggers": [{"symbol": "NOVN.SW", "screens": ["S2"]}, {"symbol": "REP.MC", "screens": ["S2"]}, {"symbol": "SAN.PA", "screens": ["S2"]}]}
