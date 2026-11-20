@@ -2,23 +2,8 @@
  "mode": "PAPER",
  "currency": "EUR",
  "start_cash": 2000.0,
- "cash": 1692.1194,
- "positions": [
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "qty": 6,
-   "avg_price": 50.89526506843567,
-   "currency": "EUR",
-   "opened": "2026-11-10",
-   "exit_by": "2026-11-24",
-   "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent and a 5-percentage-point increase in profitability for FY 2027 - marketscreener (corroborated by Bloomberg and WSJ 'Lifts AI Sales Goal') - 2026-11-10",
-   "confidence": 0.54,
-   "horizon": 10,
-   "agent": "A-opus-learning",
-   "theme": "chips"
-  }
- ],
+ "cash": 1969.83,
+ "positions": [],
  "orders": [
   {
    "id": "20261110-IFX.DE-BUY",
@@ -36,6 +21,23 @@
    "confidence": 0.54,
    "horizon": 10,
    "agent": "A-opus-learning"
+  },
+  {
+   "id": "20261120-IFX.DE-SELL-stop",
+   "time": "2026-11-20T09:05:00Z",
+   "symbol": "IFX.DE",
+   "side": "SELL",
+   "qty": 6,
+   "type": "MARKET",
+   "limit": null,
+   "status": "FILLED",
+   "reasons": [],
+   "source": "system:stop",
+   "theme": "chips",
+   "catalyst": "",
+   "confidence": null,
+   "horizon": null,
+   "agent": "system:stop"
   }
  ],
  "fills": [
@@ -60,6 +62,30 @@
    "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent and a 5-percentage-point increase in profitability for FY 2027 - marketscreener (corroborated by Bloomberg and WSJ 'Lifts AI Sales Goal') - 2026-11-10",
    "agent": "A-opus-learning",
    "source": "agent",
+   "theme": "chips"
+  },
+  {
+   "id": 2,
+   "order_id": "20261120-IFX.DE-SELL-stop",
+   "time": "2026-11-20T09:05:00Z",
+   "symbol": "IFX.DE",
+   "side": "SELL",
+   "qty": 6,
+   "price": 46.701,
+   "currency": "EUR",
+   "fee_eur": 2.5,
+   "gross_eur": 280.21,
+   "recorded_at": "2026-11-20T16:50:47Z",
+   "costs": {
+    "commission": 2.5,
+    "fx": 0.0,
+    "tax": 0.0,
+    "total": 2.5
+   },
+   "realized_eur": -27.67,
+   "catalyst": "",
+   "agent": "system:stop",
+   "source": "system:stop",
    "theme": "chips"
   }
  ],
@@ -99,6 +125,10 @@
   {
    "date": "2026-11-19",
    "equity": 1988.19
+  },
+  {
+   "date": "2026-11-20",
+   "equity": 1969.83
   }
  ],
  "notes": [
@@ -335,6 +365,11 @@
    "time": "2026-11-20T07:10:01Z",
    "agent": "trader",
    "text": "0 orders. European equities are on a fourth down session with VIX up 15.8% to 28.44, gold down 3.34% below $3,600 on Fed hike bets, and copper heading for a sixth weekly loss. The new name-specific items (Vertiv-Infineon supply deal, Sanofi Gaucher approval, Eni Ithaca dividend, Roth STMicro initiation) are small next to the sector-wide selling, so nothing clears twice the entry cost with honest confidence."
+  },
+  {
+   "time": "2026-11-20T16:51:58Z",
+   "agent": "reviewer",
+   "text": "Today the only trade closed us out. Infineon opened weak after a premarket quote of 47.00, down almost five percent, as the AI chip selloff spread from Asia. Our stop was at about 46.82. The system sold all 6 shares at 09:05 UTC at 46.701, a little below the stop level, so the market gapped through it. Commission was 2.50 euros. The trader made no new decisions and placed no orders. The trade lost 30.16 euros net, minus 9.88 percent, against a planned stop of about minus 8 percent. Entry was 50."
   }
  ],
  "custody_paid": 0.0106,

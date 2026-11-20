@@ -1,0 +1,40 @@
+{
+ "date": "2026-11-20",
+ "equity": 1969.83,
+ "day_pnl_eur": -18.36,
+ "day_pnl_pct": -0.92,
+ "total_pnl_pct": -1.51,
+ "cash": 1969.83,
+ "custody_today": 0.0,
+ "positions": [],
+ "fills_today": [
+  {
+   "id": 2,
+   "order_id": "20261120-IFX.DE-SELL-stop",
+   "time": "2026-11-20T09:05:00Z",
+   "symbol": "IFX.DE",
+   "side": "SELL",
+   "qty": 6,
+   "price": 46.701,
+   "currency": "EUR",
+   "fee_eur": 2.5,
+   "gross_eur": 280.21,
+   "recorded_at": "2026-11-20T16:50:47Z",
+   "costs": {
+    "commission": 2.5,
+    "fx": 0.0,
+    "tax": 0.0,
+    "total": 2.5
+   },
+   "realized_eur": -27.67,
+   "catalyst": "",
+   "agent": "system:stop",
+   "source": "system:stop",
+   "theme": "chips"
+  }
+ ],
+ "reconcile": "consistent",
+ "warnings": [
+  "shadow: rejected call WLN.PA down 5"
+ ]
+}

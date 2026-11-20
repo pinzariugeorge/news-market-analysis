@@ -2,9 +2,9 @@
  "date": "2026-11-20",
  "steps": {
   "collect": {
-   "at": "2026-11-20T07:08:13Z",
+   "at": "2026-11-20T16:51:15Z",
    "ok": true,
-   "note": "70 headlines, 10 drivers, 32 quotes"
+   "note": "80 headlines, 10 drivers, 32 quotes"
   },
   "researcher": {
    "at": "2026-11-20T07:09:05Z",
@@ -15,6 +15,21 @@
    "at": "2026-11-20T07:10:01Z",
    "ok": true,
    "note": "0 orders: "
+  },
+  "fills": {
+   "at": "2026-11-20T16:50:48Z",
+   "ok": true,
+   "note": "FILLED SELL 6 IFX.DE @ 46.7010 EUR (costs 2.5 EUR)"
+  },
+  "close": {
+   "at": "2026-11-20T16:50:48Z",
+   "ok": true,
+   "note": "equity 1969.83, reconcile ok"
+  },
+  "reviewer": {
+   "at": "2026-11-20T16:51:58Z",
+   "ok": true,
+   "note": ""
   }
  },
  "warnings": [
