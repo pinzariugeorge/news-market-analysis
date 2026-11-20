@@ -1,0 +1,61 @@
+{
+  "decision_day": "2026-11-20",
+  "decided_at": "2026-11-20T07:09:00Z",
+  "market_view": "European equities are on a fourth down session with VIX up 15.8% to 28.44, gold down 3.34% below $3,600 on Fed hike bets, and copper heading for a sixth weekly loss. The new name-specific items (Vertiv-Infineon supply deal, Sanofi Gaucher approval, Eni Ithaca dividend, Roth STMicro initiation) are small next to the sector-wide selling, so nothing clears twice the entry cost with honest confidence.",
+  "would_change_my_mind": "A primary-source, name-specific event with a clearly large move expected (for example Brent above $98 with confirmed supply disruption, or a material guidance raise), arriving while the market stops falling.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Oil prices gain as Houthi attacks on Riyadh raise supply concerns - Investify - 2026-11-20", "reasoning": "Brent driver is still -2.26% at 89.9, below the $98 bar, and the Houthi item is geopolitical, not company-specific; the Eni-Ithaca dividend is too small for Eni."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.40, "catalyst": "Gold Heads For Worst Week In 8 Months As Dollar Strengthens, Fed Rate Hike Bets Rise - Forbes Middle East - 2026-11-20", "reasoning": "Gold fell 3.34% and miner quotes are stale and do not show it yet; no long case."},
+    "chips": {"action": "hold", "symbol": "IFX.DE", "horizon_days": 10, "confidence": 0.50, "catalyst": "Infineon closes FY 2026 with record quarter; expects revenue growth of more than 20 percent - (as quoted at entry) - 2026-11-10", "reasoning": "Record Q4 and FY2027 guidance are not walked back and the Vertiv three-year supply deal (Electronics For You, 2026-11-20) adds support; premarket 47.00 is near the 46.82 stop, which the system handles, exit by 2026-11-24."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.48, "catalyst": "Sanofi wins U.S. approval for first oral therapy targeting Gaucher type 3 neurological - 더파마뉴스 - 2026-11-19", "reasoning": "Rare-disease niche, small for Sanofi revenue, and defensives were hit hardest; expected move does not clear about 1.6% round-trip cost."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.40, "catalyst": "Copper slides; London prices head for sixth straight weekly decline - TradingView - 2026-11-20", "reasoning": "Sector-wide metal selling continues; Codelco premium cut is a bearish pricing signal; no long case."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.40, "catalyst": "Gold Heads For Worst Week In 8 Months As Dollar Strengthens, Fed Rate Hike Bets Rise - Forbes Middle East - 2026-11-20", "reasoning": "Metal in a downtrend under hawkish Fed; no buy case."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.42, "catalyst": "none", "reasoning": "No sector-level positive catalyst in a falling market."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.40, "catalyst": "none", "reasoning": "No uranium headlines."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.40, "catalyst": "none", "reasoning": "Mood and macro only, not a named catalyst; VIX rising."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "FRES.L", "direction": "down", "horizon_days": 5, "confidence": 0.55, "catalyst": "Gold Heads For Worst Week In 8 Months As Dollar Strengthens, Fed Rate Hike Bets Rise - Forbes Middle East - 2026-11-20"},
+    {"symbol": "IFX.DE", "direction": "up", "horizon_days": 5, "confidence": 0.47, "catalyst": "Vertiv Signs Three-Year Agreement With Infineon to Secure Power Semiconductor Supply - Electronics For You BUSINESS - 2026-11-20"},
+    {"symbol": "STMPA.PA", "direction": "up", "horizon_days": 5, "confidence": 0.46, "catalyst": "Roth/MKM initiates STMicroelectronics stock with buy on AI growth - Investing.com UK - 2026-11-20"},
+    {"symbol": "SAN.PA", "direction": "up", "horizon_days": 5, "confidence": 0.48, "catalyst": "Sanofi wins U.S. approval for first oral therapy targeting Gaucher type 3 neurological - 더파마뉴스 - 2026-11-19"},
+    {"symbol": "ANTO.L", "direction": "down", "horizon_days": 10, "confidence": 0.50, "catalyst": "Codelco lowers China copper premium for 2027 in bid to boost sales, sources say - Mining.com - 2026-11-20"},
+    {"symbol": "ENI.MI", "direction": "up", "horizon_days": 5, "confidence": 0.45, "catalyst": "Eni to receive richer dividend from UK investee Ithaca - marketscreener.com - 2026-11-20"},
+    {"symbol": "WLN.PA", "direction": "down", "horizon_days": 5, "confidence": 0.53, "catalyst": "Worldline bolstered cash flow through delayed payments and early receipts - Financial Times - 2026-11-20"}
+  ],
+  "handoff": {
+    "run_id": "eu-2026-11-20-a",
+    "written_at": "2026-11-20T07:09:00Z",
+    "decision_day": "2026-11-20",
+    "data_cutoff": "2026-11-20",
+    "what_changed": "No orders. Quotes are stale (878-948 min); IFX.DE quoted 47.00 premarket (-4.74%, ad-hoc-news.de) against stop about 46.82, despite a new Vertiv three-year supply deal. Gold -3.34% to 3562, copper -1.77%, Brent -2.26% to 89.9, VIX 28.44, Stoxx 600 at a four-week low after four down sessions.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 89.9, below the $98 bar; Houthi attacks on Riyadh are geopolitical and not yet a confirmed supply disruption."},
+      "gold_miners": {"position": "flat", "why": "Gold -3.34% below $3,600 on Fed hike bets; worst week in 8 months."},
+      "chips": {"position": "long 6 IFX.DE since 2026-11-10, 10 days", "why": "Record Q4 and FY2027 guidance stand plus Vertiv supply deal; premarket 47.00 near stop 46.82; exit by 2026-11-24."},
+      "pharma": {"position": "flat", "why": "Sanofi Gaucher approval and GSK second Nuvalnet approval are too small or partly priced versus costs."},
+      "copper_uranium": {"position": "flat", "why": "Sixth weekly copper decline, Codelco cutting China premium; physical-tightness items conflict."}
+    },
+    "open_storylines": [
+      {"name": "Infineon FY2026 Q4 beat, FY2027 guidance and Vertiv supply deal", "status": "open", "note": "Hold 6 IFX.DE @ 50.8953; premarket 47.00 on 2026-11-20, stop about 46.82, exit by 2026-11-24. Check whether the stop fired. Close early only if guidance is walked back or a primary source names IFX.DE in the BofA downgrade or China restrictions.", "first_seen": "2026-11-10"},
+      {"name": "AI chip selloff and Anthropic IPO test of the AI trade", "status": "escalating", "note": "Asia AI chip selloff continued 2026-11-20; VIX 28.44. MATCH Act still only proposed. Watch IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-12"},
+      {"name": "Fed hawkishness, dollar strength and gold", "status": "escalating", "note": "Gold 3562 (-3.34%), worst week in 8 months; EURUSD +0.15% conflicts with dollar framing. Shadow FRES.L down 5d. Retail sales, PPI and Warsh outcomes still not in input.", "first_seen": "2026-11-12"},
+      {"name": "Iran war, Hormuz, Houthi attacks and crude", "status": "open", "note": "Brent 89.9 (-2.26%); Houthi attacks on Riyadh reported. Need a second source on actual supply disruption and Brent above $98 before an oil long.", "first_seen": "2026-11-12"},
+      {"name": "Equinor cyberattack", "status": "fading", "note": "No operational impact reported; NOK 3.7448 dividend paid Nov 25 (shadow EQNR.OL down 5d pending).", "first_seen": "2026-11-14"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source; check whether IFX.DE is included.", "first_seen": "2026-11-17"},
+      {"name": "STMicro STM32 targets, Morgan Stanley conference and Roth/MKM buy initiation", "status": "open", "note": "Roth/MKM initiated with buy 2026-11-20 (shadow STMPA.PA up 5d); CEO Morgan Stanley remarks still not in input; earlier shadow STMPA.PA down 5d pending.", "first_seen": "2026-11-17"},
+      {"name": "Novartis mid-term guidance through 2031", "status": "open", "note": "NOVN.SW reaction still not in input; shadow NOVN.SW up 5d pending.", "first_seen": "2026-11-19"},
+      {"name": "GSK Nelkarmi/Nuvalnet approvals and patent injunction vs Pfizer-BioNTech", "status": "open", "note": "Second FDA approval for Nuvalnet buyout 2026-11-19, likely partly priced; shadow GSK.L up 5d pending.", "first_seen": "2026-11-17"},
+      {"name": "Sanofi Gaucher type 3 oral therapy approval", "status": "open", "note": "Published near Paris close 2026-11-19; niche; shadow SAN.PA up 5d.", "first_seen": "2026-11-20"},
+      {"name": "Bayer factor XIa / SUNHARBO FDA approval", "status": "open", "note": "Secondary recap only, likely priced; need a primary release date before any BAYN.DE trade.", "first_seen": "2026-11-18"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "No new item (shadow NOVO-B.CO down 10d pending).", "first_seen": "2026-11-12"},
+      {"name": "Copper vs weak China demand, Codelco premium cut and BHP/Rio China meeting", "status": "escalating", "note": "Copper -1.77%, sixth weekly decline; Codelco cut 2027 China premium (shadow ANTO.L down 10d); conflicting physical-tightness reports. BHP/Rio China meeting outcome pending.", "first_seen": "2026-11-13"},
+      {"name": "BP upstream deals (Namibia, Petrobras Bumerangue, Caspian rig)", "status": "open", "note": "Shadow BP.L up 5d scored wrong (-0.18%). Watch for agreed Petrobras terms.", "first_seen": "2026-11-11"},
+      {"name": "Worldline cash-flow quality (FT)", "status": "open", "note": "FT reports cash flow bolstered by delayed payments and early receipts; shadow WLN.PA down 5d; open universe, no long.", "first_seen": "2026-11-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "On 2026-11-21: check quote age first, then whether the IFX.DE -8% stop (about 46.82) fired on 2026-11-20 after the 47.00 premarket quote; if still open, hold to exit 2026-11-24 unless FY2027 guidance is walked back or a primary source names IFX.DE in the BofA downgrade or China restrictions. Check gold after the -3.34% day (retail sales, PPI, Warsh), Brent vs $98 with Houthi/Hormuz supply confirmation, BHP/Rio China meeting outcome, NOVN.SW reaction and STMicro conference remarks. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost. Record the 26 pending shadow calls as they score.",
+    "lessons": []
+  }
+}

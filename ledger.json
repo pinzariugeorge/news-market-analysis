@@ -330,6 +330,11 @@
    "time": "2026-11-19T16:52:13Z",
    "agent": "reviewer",
    "text": "Thursday 19 November. A quiet day for us. The trader placed no orders, so there were no fills and no costs, apart from a custody fee of a fraction of a cent. The morning note explains why. Quotes were stale at the start, about 879 minutes old, so they showed yesterday's close. Brent fell to 89.51 dollars, well below our 98 dollar bar for an oil trade. Gold sat near a 14-month low, around 3730, under a hawkish Fed and a strong dollar. European markets fell for a third day, led by miners. Novartis"
+  },
+  {
+   "time": "2026-11-20T07:10:01Z",
+   "agent": "trader",
+   "text": "0 orders. European equities are on a fourth down session with VIX up 15.8% to 28.44, gold down 3.34% below $3,600 on Fed hike bets, and copper heading for a sixth weekly loss. The new name-specific items (Vertiv-Infineon supply deal, Sanofi Gaucher approval, Eni Ithaca dividend, Roth STMicro initiation) are small next to the sector-wide selling, so nothing clears twice the entry cost with honest confidence."
   }
  ],
  "custody_paid": 0.0106,
