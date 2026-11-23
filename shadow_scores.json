@@ -46,5 +46,21 @@
   "exit_price": 41.16999816894531,
   "ret_pct": -2.38,
   "correct": false
+ },
+ "2026-11-13-GSK.L-5": {
+  "id": "2026-11-13-GSK.L-5",
+  "day": "2026-11-13",
+  "symbol": "GSK.L",
+  "direction": "up",
+  "horizon_days": 5,
+  "confidence": 0.52,
+  "catalyst": "GSK lands 36-country injunction in Pfizer-BioNTech vaccine litigation - Life Sciences IP Review - 2026-11-13",
+  "entry_price": 1901.0,
+  "currency": "GBp",
+  "entry_cost_pct": 1.59,
+  "exit_date": "2026-11-20",
+  "exit_price": 1842.5,
+  "ret_pct": -3.08,
+  "correct": false
  }
 }

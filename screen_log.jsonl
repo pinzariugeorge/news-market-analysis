@@ -4,3 +4,4 @@
 {"day": "2026-11-18", "evaluated": 32, "triggers": [{"symbol": "REP.MC", "screens": ["S2"]}]}
 {"day": "2026-11-19", "evaluated": 32, "triggers": [{"symbol": "NOVN.SW", "screens": ["S2"]}, {"symbol": "REP.MC", "screens": ["S2"]}, {"symbol": "SAN.PA", "screens": ["S2"]}]}
 {"day": "2026-11-20", "evaluated": 32, "triggers": [{"symbol": "ENI.MI", "screens": ["S2"]}, {"symbol": "REP.MC", "screens": ["S2"]}]}
+{"day": "2026-11-23", "evaluated": 32, "triggers": [{"symbol": "BAYN.DE", "screens": ["S2"]}]}

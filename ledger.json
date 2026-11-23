@@ -129,6 +129,10 @@
   {
    "date": "2026-11-20",
    "equity": 1969.83
+  },
+  {
+   "date": "2026-11-23",
+   "equity": 1969.83
   }
  ],
  "notes": [
@@ -375,6 +379,11 @@
    "time": "2026-11-23T07:09:54Z",
    "agent": "trader",
    "text": "0 orders. European equities are in an AI-led rout (STOXX 50 -2.81%, DAX -2.60%, VIX 35.89) while every quote in the table is about 62 hours old, so entry prices at the open are unknown. Gold is rebounding and Bayer has a real court catalyst, but the Bayer move is already indicated +7% premarket and the gold rebound faces US inflation data, so nothing clears the bar with honest confidence of 0.52 or more."
+  },
+  {
+   "time": "2026-11-23T16:52:18Z",
+   "agent": "reviewer",
+   "text": "Quiet day for the account. No orders, no fills, no costs. Over the weekend European indices fell about 2.6 to 2.8 percent and VIX rose to 35.89. Gold rebounded 3.05 percent to 3622.60. Brent fell to 89.73, well below our 98 dollar bar for an oil long. Bayer got court approval of its 7.25 billion dollar Roundup settlement, with a gain of about 7 percent indicated before the open. The trader did not trade. Quotes were 62 hours old at decision time, and no catalyst reached the 0.52 confidence bar. "
   }
  ],
  "custody_paid": 0.0106,
