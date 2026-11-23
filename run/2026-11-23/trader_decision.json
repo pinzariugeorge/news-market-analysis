@@ -1,0 +1,61 @@
+{
+  "decision_day": "2026-11-23",
+  "decided_at": "2026-11-23T07:09:00Z",
+  "market_view": "European equities are in an AI-led rout (STOXX 50 -2.81%, DAX -2.60%, VIX 35.89) while every quote in the table is about 62 hours old, so entry prices at the open are unknown. Gold is rebounding and Bayer has a real court catalyst, but the Bayer move is already indicated +7% premarket and the gold rebound faces US inflation data, so nothing clears the bar with honest confidence of 0.52 or more.",
+  "would_change_my_mind": "A calm open (VIX back below 25) with BAYN.DE trading well below the +7% indication, or a soft US inflation print confirming the gold rebound, would make a fresh long worth considering.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Why oil prices are falling: Brent's third weekly drop as Gulf barrels return despite Hormuz attacks - Oil & Gas Middle East - 2026-11-23", "reasoning": "Brent 89.73 (-3.07%) stays well below the $98 bar; attack headlines are a continuing story with no confirmed supply loss, and Gulf barrels are returning."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.49, "catalyst": "Gold rebounds over 2% above $3,600 as investors reassess Fed rate hikes - Anadolu Ajansi - 2026-11-23", "reasoning": "A rebound from a 14-month low is not name-specific, UK miners cost 1.2% each way, and a broad sell-off can drag miners even with gold up."},
+    "chips": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.40, "catalyst": "China stocks hit 16-month low as tech selloff deepens, US chip curbs weigh - The Economic Times - 2026-11-23", "reasoning": "IFX.DE was stopped out on 2026-11-20; there is no new company event and the AI sell-off continues, so no long."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.50, "catalyst": "Bayer shares seen up 7% after Missouri judge approves Roundup settlement - Reuters - 2026-11-23", "reasoning": "The catalyst is specific and primary, but the +7% is likely priced at the open against a 62-hour-old quote, and a further gain beyond about 0.8% round-trip cost is a coin flip in a VIX-35 market; the Novartis Leqvio item is a single minor source on an expected result."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Copper sinks below $12,000 as jitters over AI, rate hikes eclipse tight supply - Investify - 2026-11-23", "reasoning": "Copper had its worst week in 19 months, and this morning's +1.00% bounce conflicts with that; there is no name-specific catalyst and UK costs are high."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.50, "catalyst": "Gold rises from 14-month low as markets await US inflation data - Investify - 2026-11-23", "reasoning": "4GLD.DE is cheap to enter (0.48%), but the rebound depends on unscheduled-date US inflation data that could revive hike fears; my confidence is below 0.52."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "No sector-specific catalyst points to EXH1, VVSM, EXV4 or EXV6 beyond the broad mood."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.40, "catalyst": "none", "reasoning": "Only Australian small-cap uranium items; nothing for URNU.DE."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "none", "reasoning": "A broad rout with VIX 35.89 is mood, not a named catalyst; US futures rebound headlines are not enough."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "BAYN.DE", "direction": "up", "horizon_days": 5, "confidence": 0.50, "catalyst": "Bayer shares seen up 7% after Missouri judge approves Roundup settlement - Reuters - 2026-11-23"},
+    {"symbol": "NOVN.SW", "direction": "up", "horizon_days": 5, "confidence": 0.48, "catalyst": "Novartis Leqvio Meets Phase III Cardiovascular Outcomes Goal - Securities.io - 2026-11-23"},
+    {"symbol": "4GLD.DE", "direction": "up", "horizon_days": 5, "confidence": 0.50, "catalyst": "Gold rebounds over 2% above $3,600 as investors reassess Fed rate hikes - Anadolu Ajansi - 2026-11-23"},
+    {"symbol": "EXH1.DE", "direction": "down", "horizon_days": 5, "confidence": 0.50, "catalyst": "Why oil prices are falling: Brent's third weekly drop as Gulf barrels return despite Hormuz attacks - Oil & Gas Middle East - 2026-11-23"},
+    {"symbol": "IFX.DE", "direction": "down", "horizon_days": 5, "confidence": 0.47, "catalyst": "China stocks hit 16-month low as tech selloff deepens, US chip curbs weigh - The Economic Times - 2026-11-23"}
+  ],
+  "handoff": {
+    "run_id": "eu-2026-11-23-a",
+    "written_at": "2026-11-23T07:09:00Z",
+    "decision_day": "2026-11-23",
+    "data_cutoff": "2026-11-23",
+    "what_changed": "The IFX.DE stop fired on 2026-11-20 (net -30.16 EUR, -9.88%); the account is flat at 1969.83 EUR cash. Over the weekend European indices fell 2.6-2.8% and VIX rose to 35.89, while gold rebounded +3.05% to 3622.60 and Brent fell to 89.73. Bayer got court approval of the Roundup settlement (Reuters, +7% indicated premarket). No orders were placed because quotes are 62 hours old and no catalyst cleared 0.52.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 89.73, below the $98 bar; third weekly drop as Gulf barrels return."},
+      "gold_miners": {"position": "flat", "why": "Gold is rebounding from a 14-month low, but there is no name-specific catalyst and UK costs are high."},
+      "chips": {"position": "flat", "why": "IFX.DE was stopped out 2026-11-20; AI sell-off continues with no new company event."},
+      "pharma": {"position": "flat", "why": "Bayer Roundup approval is likely priced at the open (+7% indicated); Leqvio is a single minor source."},
+      "copper_uranium": {"position": "flat", "why": "Worst copper week in 19 months; small bounce today conflicts; no name catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Bayer Roundup settlement court approval", "status": "open", "note": "Missouri judge approved the $7.25bn settlement (Reuters 2026-11-23), +7% indicated premarket; shadow BAYN.DE up 5d. Watch whether the gain holds after the open and for appeals or opt-out numbers.", "first_seen": "2026-11-23"},
+      {"name": "AI chip selloff and Anthropic IPO test of the AI trade", "status": "escalating", "note": "IFX.DE 48% off its high, China tech at 16-month low on US chip curbs, VIX 35.89; US futures rebounding. Shadow IFX.DE down 5d. Watch IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-12"},
+      {"name": "Fed hawkishness, dollar and gold", "status": "open", "note": "Gold +3.05% to 3622.60 from a 14-month low; US inflation data awaited (date not given), ECB minutes this week. Shadow 4GLD.DE up 5d; FRES.L down 5d scored right.", "first_seen": "2026-11-12"},
+      {"name": "Iran war, Hormuz, Houthi attacks and crude", "status": "fading", "note": "Brent 89.73 (-3.07%), third weekly drop as Gulf barrels return; IRGC challenges US blockade; OPEC+ meeting date not given. Need confirmed supply loss and Brent above $98 before an oil long. Shadow EXH1.DE down 5d.", "first_seen": "2026-11-11"},
+      {"name": "Novartis Leqvio outcomes and mid-term guidance", "status": "open", "note": "Leqvio phase III CV outcomes met (Securities.io only); need a primary source and effect size. Shadow NOVN.SW up 5d (two pending).", "first_seen": "2026-11-19"},
+      {"name": "Copper vs weak China demand and AI capex cooling", "status": "escalating", "note": "Copper fell almost 10% in its worst week in 19 months; HG +1.00% this morning; BHP/Rio China meeting outcome still pending. Shadow ANTO.L down 10d pending.", "first_seen": "2026-11-18"},
+      {"name": "BofA downgrade of 3 European chip stocks", "status": "open", "note": "Names still unconfirmed by a primary source.", "first_seen": "2026-11-19"},
+      {"name": "STMicro STM32, Morgan Stanley conference and Roth/MKM buy initiation", "status": "open", "note": "Shadow STMPA.PA up 5d from 2026-11-12 scored wrong (-2.38%); later shadows pending; CEO remarks still not in input.", "first_seen": "2026-11-12"},
+      {"name": "GSK Nuvalnet approvals and Sanofi Gaucher approval", "status": "fading", "note": "No new items; shadows GSK.L up 5d and SAN.PA up 5d pending.", "first_seen": "2026-11-19"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "No new item; shadow NOVO-B.CO down 10d pending.", "first_seen": "2026-11-12"},
+      {"name": "Equinor cyberattack and dividend", "status": "fading", "note": "No operational impact; natgas +4.63% may support EQNR.OL; shadow EQNR.OL down 5d pending.", "first_seen": "2026-11-18"},
+      {"name": "BP upstream deals", "status": "fading", "note": "Shadow BP.L up 5d scored wrong (-0.18%); watch for agreed Petrobras terms.", "first_seen": "2026-11-11"},
+      {"name": "UniCredit vs Commerzbank takeover", "status": "open", "note": "Weekend minor-outlet item on US approval; conflicting truce headline; open universe, no trade without a primary source.", "first_seen": "2026-11-22"},
+      {"name": "Worldline cash-flow quality (FT)", "status": "open", "note": "Shadow WLN.PA down 5d pending; open universe, no long.", "first_seen": "2026-11-19"}
+    ],
+    "pending_orders": [],
+    "next_job": "On the next run: check quote age first. Check whether BAYN.DE held its Roundup gain after the open, whether gold held above $3,600 after the US inflation data, Brent vs $98 with confirmed supply loss, copper after the worst week in 19 months (BHP/Rio China outcome), and a primary source with effect size for Novartis Leqvio. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost and with honest confidence of 0.52 or more. Record the 28 pending shadow calls as they score and update the lessons ledger.",
+    "lessons": [
+      {"rule": "Hypothesis (3 cases, does not change calls): up calls whose catalyst is an already-published or secondary-source company event, made into a falling market, have lost money.", "cases": 3, "evidence": "IFX.DE long stopped out -9.88% (record quarter, guidance); shadow BP.L up 5d -0.18% wrong; shadow STMPA.PA up 5d -2.38% wrong."},
+      {"rule": "Hypothesis (1 case, does not change calls): down calls on gold miners when gold breaks lower on rate-hike bets have worked.", "cases": 1, "evidence": "Shadow FRES.L down 5d -11.19% right."}
+    ]
+  }
+}
