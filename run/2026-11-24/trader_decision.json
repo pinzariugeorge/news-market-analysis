@@ -1,0 +1,58 @@
+{
+  "decision_day": "2026-11-24",
+  "decided_at": "2026-11-24T07:08:00Z",
+  "market_view": "Risk-on into today's open (STOXX50 +2.23%, VIX 35.89 to 26.62 on Huang's return to Nvidia) while commodities slide: Brent -3.03% to 86.66 on US-Iran diplomacy, copper -1.87%, gold -0.71%. The only large new company event is Sanofi's $41bn cash purchase of Insmed, which more often weighs on the acquirer than lifts it, so nothing gives a long that clears twice the entry cost at 0.52 confidence.",
+  "would_change_my_mind": "A primary-source, name-specific event with a quantified effect (for example the Equinor/VNG deal value, Insmed premium and financing details showing accretion, or Brent back above $98 on confirmed supply loss) would reopen a long.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.48, "catalyst": "Norway's Equinor signs 18-year gas supply deal with Germany's VNG - Reuters - 2026-11-24", "reasoning": "Long-term supply deal with no value given is rarely a big mover; Brent falling to 86.66, far below the $98 bar, works against the sector."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "No name-specific catalyst; gold -0.71% and risk-on with a firmer dollar; UK entry cost 1.2%."},
+    "chips": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.48, "catalyst": "STMicroelectronics introduces VL53LB, its smallest Time-of-Flight ranging sensor - GlobeNewswire - 2026-11-24", "reasoning": "Routine product launch and a partnership extension (Vertiv/Infineon, no financials) are too small; sector driven by Nvidia sentiment and MATCH Act headlines."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "Sanofi pays $41bn for US biopharma Insmed - Financial Times - 2026-11-24", "reasoning": "Large cash acquisition is new and specific but tends to weigh on the acquirer; recorded as a shadow down call instead of a long. Bayer Roundup gain after the 2026-11-23 open is not in the input."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Deutsche Bank lowers price target for Boliden to SEK 590 (640), reiterates hold - marketscreener - 2026-11-24", "reasoning": "PT cut with unchanged rating and a repeated Congo cobalt halt are weak; copper -1.87% and commodity liquidation theme work against miners."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.47, "catalyst": "none", "reasoning": "Gold holding near 3,600 is a continuation, not a catalyst; risk-on and firmer dollar argue against."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "none", "reasoning": "No sector-wide named catalyst that clears twice the entry cost; oil and basic resources face falling commodities."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.48, "catalyst": "KHNP Seeks 13.2mlb Uranium in Largest Tender This Decade - Wisevoter - 2026-11-24", "reasoning": "Single minor source and a tender, not a price move; not enough for a long."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.47, "catalyst": "none", "reasoning": "Index rally on Nvidia sentiment is mood, not a named catalyst; it is likely priced at the open."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "SAN.PA", "direction": "down", "horizon_days": 5, "confidence": 0.55, "catalyst": "Sanofi pays $41bn for US biopharma Insmed - Financial Times - 2026-11-24"},
+    {"symbol": "CPI.L", "direction": "down", "horizon_days": 5, "confidence": 0.58, "catalyst": "Capita Plans £190 Million Equity Raise After Profit Warning and CEO Exit - MarketBeat - 2026-11-23"},
+    {"symbol": "EQNR.OL", "direction": "up", "horizon_days": 5, "confidence": 0.50, "catalyst": "Norway's Equinor signs 18-year gas supply deal with Germany's VNG - Reuters - 2026-11-24"}
+  ],
+  "handoff": {
+    "run_id": "eu-2026-11-24-a",
+    "written_at": "2026-11-24T07:08:00Z",
+    "decision_day": "2026-11-24",
+    "data_cutoff": "2026-11-24",
+    "what_changed": "No orders; account flat at 1969.83 EUR cash (total -1.51%), quotes about 15 hours old (previous close). Risk-on (STOXX50 +2.23%, VIX 26.62) while Brent fell to 86.66, copper -1.87%, gold -0.71%; Sanofi agreed to buy Insmed for $41bn cash (FT, Reuters, WSJ). New shadows: SAN.PA down 5d, CPI.L down 5d, EQNR.OL up 5d; no new shadow results scored, 30 now pending.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 86.66 and falling on US-Iran diplomacy; Equinor/VNG deal has no value given."},
+      "gold_miners": {"position": "flat", "why": "No name-specific catalyst; gold soft near 3,600 with risk-on and firmer dollar."},
+      "chips": {"position": "flat", "why": "Only routine product launch and partnership news; sector driven by Nvidia sentiment and MATCH Act."},
+      "pharma": {"position": "flat", "why": "Sanofi/Insmed is an acquirer-negative setup, shadowed down; Bayer post-open move not in input."},
+      "copper_uranium": {"position": "flat", "why": "Copper weak, Boliden PT cut with hold, cobalt halt repeated; no long catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Sanofi acquires Insmed for $41bn cash", "status": "open", "note": "Watch SAN.PA reaction at the open, premium, financing and accretion guidance; shadow SAN.PA down 5d pending.", "first_seen": "2026-11-24"},
+      {"name": "Bayer Roundup settlement court approval", "status": "open", "note": "Whether the +7% indicated gain held after the 2026-11-23 open is still not in input; watch appeals and opt-outs; shadow BAYN.DE up 5d pending.", "first_seen": "2026-11-23"},
+      {"name": "AI chip selloff, Nvidia leadership and MATCH Act", "status": "open", "note": "Risk-on after Huang returns to Nvidia, VIX 26.62; ASML warns on US MATCH Act; shadow IFX.DE down 5d pending; watch IFX.DE, STMPA.PA, BESI.AS.", "first_seen": "2026-11-20"},
+      {"name": "Fed, dollar and gold", "status": "open", "note": "Gold 3625 (-0.71%), EURUSD -0.64%; US inflation data date not given; shadow 4GLD.DE up 5d pending.", "first_seen": "2026-11-12"},
+      {"name": "Iran war, Hormuz and crude", "status": "fading", "note": "Brent 86.66 on US-Iran diplomacy and Libya restart; IEA says Hormuz risk persists; need confirmed supply loss and Brent above $98; shadow EXH1.DE down 5d pending.", "first_seen": "2026-11-10"},
+      {"name": "Equinor gas supply deal with VNG", "status": "open", "note": "Need deal value; NG=F +11.09% may support EQNR.OL; shadows EQNR.OL down 5d (earlier) and up 5d (today) pending.", "first_seen": "2026-11-24"},
+      {"name": "Copper vs weak China demand and commodity liquidation", "status": "escalating", "note": "Copper -1.87% to 5.522; BHP/Rio China outcome still pending; Boliden PT cut; Congo cobalt halt again; shadow ANTO.L down 10d pending.", "first_seen": "2026-11-20"},
+      {"name": "Capita profit warning, equity raise, CEO exit", "status": "open", "note": "Open universe; raise pricing and discount unknown; shadow CPI.L down 5d pending; no long.", "first_seen": "2026-11-24"},
+      {"name": "Novartis Leqvio outcomes", "status": "open", "note": "Still only Securities.io; need primary source and effect size; shadow NOVN.SW up 5d pending (two).", "first_seen": "2026-11-18"},
+      {"name": "STMicro STM32 and product launches", "status": "open", "note": "VL53LB ToF sensor launch 2026-11-24 is routine; later STMPA.PA shadows pending.", "first_seen": "2026-11-12"},
+      {"name": "GLP-1 pricing and competition (Novo vs Lilly)", "status": "open", "note": "No new item; shadow NOVO-B.CO down 10d pending.", "first_seen": "2026-11-14"},
+      {"name": "KHNP uranium tender", "status": "open", "note": "Single minor source (Wisevoter); watch for confirmation and uranium price reaction for URNU.DE.", "first_seen": "2026-11-24"},
+      {"name": "Worldline cash-flow quality (FT)", "status": "open", "note": "Shadow WLN.PA down 5d pending; open universe, no long.", "first_seen": "2026-11-20"}
+    ],
+    "pending_orders": [],
+    "next_job": "Check quote age first. Record scored shadow calls (30 pending) and update the ledger. Check SAN.PA reaction to the Insmed deal and its financing/accretion details, whether BAYN.DE held its Roundup gain, Equinor/VNG deal value, Brent vs $98 with confirmed supply loss, copper and the BHP/Rio China outcome, and a primary source for Novartis Leqvio. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost with honest confidence of 0.52 or more.",
+    "lessons": [
+      {"rule": "Hypothesis (3 cases, does not change calls): up calls whose catalyst is an already-published or secondary-source company event, made into a falling market, have lost money.", "cases": 3, "evidence": "IFX.DE long stopped out -9.88% (record quarter, guidance); shadow BP.L up 5d -0.18% wrong; shadow STMPA.PA up 5d -2.38% wrong. Shadow GSK.L up 5d -3.08% wrong is a related up-call loss but its catalyst was a primary litigation event, so not counted."},
+      {"rule": "Hypothesis (1 case, does not change calls): down calls on gold miners when gold breaks lower on rate-hike bets have worked.", "cases": 1, "evidence": "Shadow FRES.L down 5d -11.19% right."}
+    ]
+  }
+}
