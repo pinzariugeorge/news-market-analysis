@@ -1,0 +1,123 @@
+{
+ "run_id": "eu-2026-11-24-rev",
+ "written_at": "2026-11-24T18:30:00+01:00",
+ "decision_day": "2026-11-24",
+ "data_cutoff": "2026-11-24",
+ "what_changed": "No orders, no fills; account flat at 1969.83 EUR cash (total -1.51%), reconcile consistent. Quotes about 15 hours old at decision time. Risk-on (STOXX50 +2.23%, VIX 26.62); Brent 86.66, copper -1.87%, gold -0.71%. Sanofi to buy Insmed for $41bn cash. New shadows SAN.PA down 5d, EQNR.OL up 5d; close job warns 'shadow: rejected call CPI.L down 5' although the trader handoff listed it as new. Input says 25 shadow calls still waiting, trader handoff said 30: needs reconciling. Scored shadows to date: up 0/4 right, down 4/4 right. No trade closed, ledger unchanged.",
+ "families": {
+  "oil_gas": {
+   "position": "flat",
+   "why": "Brent 86.66 and falling on US-Iran diplomacy; Equinor/VNG deal has no value given."
+  },
+  "gold_miners": {
+   "position": "flat",
+   "why": "No name-specific catalyst; gold soft near 3,600 with risk-on and firmer dollar."
+  },
+  "chips": {
+   "position": "flat",
+   "why": "Only routine product launch and partnership news; sector driven by Nvidia sentiment and MATCH Act."
+  },
+  "pharma": {
+   "position": "flat",
+   "why": "Sanofi/Insmed is an acquirer-negative setup, shadowed down; Bayer post-open move still not in input."
+  },
+  "copper_uranium": {
+   "position": "flat",
+   "why": "Copper weak, Boliden PT cut with hold, cobalt halt repeated; no long catalyst."
+  }
+ },
+ "open_storylines": [
+  {
+   "name": "Sanofi acquires Insmed for $41bn cash",
+   "status": "open",
+   "note": "Watch SAN.PA reaction, premium, financing and accretion guidance; shadow SAN.PA down 5d pending.",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "name": "Bayer Roundup settlement court approval",
+   "status": "open",
+   "note": "Whether the +7% indicated gain held after the 2026-11-23 open is still not in input; watch appeals and opt-outs; shadow BAYN.DE up 5d pending.",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "name": "AI chip selloff, Nvidia leadership and MATCH Act",
+   "status": "open",
+   "note": "Risk-on after Huang returns to Nvidia, VIX 26.62; ASML warns on US MATCH Act; shadow IFX.DE down 5d pending; earlier STMPA.PA down 5d scored right (-4.61%).",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "name": "Fed, dollar and gold",
+   "status": "open",
+   "note": "Gold 3625 (-0.71%), EURUSD -0.64%; US inflation data date not given; shadow 4GLD.DE up 5d pending; earlier G2X.DE and FRES.L down calls scored right.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "Iran war, Hormuz and crude",
+   "status": "fading",
+   "note": "Brent 86.66 on US-Iran diplomacy and Libya restart; IEA says Hormuz risk persists; need confirmed supply loss and Brent above $98; EXH1.DE up 5d scored wrong (-5.55%); shadow EXH1.DE down 5d pending.",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "name": "Equinor gas supply deal with VNG",
+   "status": "open",
+   "note": "Need deal value; NG=F +11.09% may support EQNR.OL; shadows EQNR.OL down 5d (earlier) and up 5d (today) pending.",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "name": "Copper vs weak China demand and commodity liquidation",
+   "status": "escalating",
+   "note": "Copper -1.87% to 5.522; BHP/Rio China outcome still pending; Boliden PT cut; Congo cobalt halt again; ANTO.L down 5d scored right (-11.96%); shadow ANTO.L down 10d pending.",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "name": "Capita profit warning, equity raise, CEO exit",
+   "status": "open",
+   "note": "Open universe; raise pricing and discount unknown; close job reports shadow CPI.L down 5d was rejected, check why; no long.",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "name": "Novartis Leqvio outcomes",
+   "status": "open",
+   "note": "Still only Securities.io; need primary source and effect size; shadow NOVN.SW up 5d pending (two).",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "name": "STMicro STM32 and product launches",
+   "status": "open",
+   "note": "VL53LB ToF sensor launch 2026-11-24 is routine; STMPA.PA up 5d on investor call scored wrong (-2.38%); later STMPA.PA shadows pending.",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "name": "GLP-1 pricing and competition (Novo vs Lilly)",
+   "status": "open",
+   "note": "No new item; shadow NOVO-B.CO down 10d pending.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "name": "KHNP uranium tender",
+   "status": "open",
+   "note": "Single minor source (Wisevoter); watch for confirmation and uranium price reaction for URNU.DE.",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "name": "Worldline cash-flow quality (FT)",
+   "status": "open",
+   "note": "Shadow WLN.PA down 5d pending; open universe, no long.",
+   "first_seen": "2026-11-20"
+  }
+ ],
+ "pending_orders": [],
+ "next_job": "Check quote age first and do not enter on stale quotes. Reconcile the shadow list: was CPI.L down 5d recorded or rejected (and why), and is the pending count 25 or 30. Record newly scored shadow calls. Then check SAN.PA reaction to the Insmed deal and its financing/accretion details, whether BAYN.DE held its Roundup gain, Equinor/VNG deal value, Brent vs $98 with confirmed supply loss, copper and the BHP/Rio China outcome, and a primary source for Novartis Leqvio. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost with honest confidence of 0.52 or more.",
+ "lessons": [
+  {
+   "rule": "Hypothesis (3 cases, does not change calls): up calls whose catalyst is an already-published or secondary-source company event, made into a falling market, have lost money.",
+   "cases": 3,
+   "evidence": "IFX.DE long stopped out -9.88% (record quarter, guidance); shadow BP.L up 5d -0.18% wrong; shadow STMPA.PA up 5d -2.38% wrong. Shadow GSK.L up 5d -3.08% wrong is a related up-call loss but its catalyst was a primary litigation event, so not counted."
+  },
+  {
+   "rule": "Hypothesis (1 case, does not change calls): down calls on gold miners when gold breaks lower on rate-hike bets have worked.",
+   "cases": 1,
+   "evidence": "Shadow FRES.L down 5d -11.19% right."
+  }
+ ]
+}
