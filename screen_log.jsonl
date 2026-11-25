@@ -6,3 +6,4 @@
 {"day": "2026-11-20", "evaluated": 32, "triggers": [{"symbol": "ENI.MI", "screens": ["S2"]}, {"symbol": "REP.MC", "screens": ["S2"]}]}
 {"day": "2026-11-23", "evaluated": 32, "triggers": [{"symbol": "BAYN.DE", "screens": ["S2"]}]}
 {"day": "2026-11-24", "evaluated": 32, "triggers": [{"symbol": "SAN.PA", "screens": ["S1"]}]}
+{"day": "2026-11-25", "evaluated": 32, "triggers": [{"symbol": "BAYN.DE", "screens": ["S2"]}, {"symbol": "SAN.PA", "screens": ["S1"]}]}

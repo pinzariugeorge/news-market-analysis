@@ -126,5 +126,53 @@
   "exit_price": 40.0099983215332,
   "ret_pct": -4.61,
   "correct": true
+ },
+ "2026-11-17-NOVN.SW-5": {
+  "id": "2026-11-17-NOVN.SW-5",
+  "day": "2026-11-17",
+  "symbol": "NOVN.SW",
+  "direction": "up",
+  "horizon_days": 5,
+  "confidence": 0.48,
+  "catalyst": "Novartis wins FDA approval for Cosentyx in polymyalgia rheumatica - Investing.com / GlobeNewswire - 2026-11-17",
+  "entry_price": 135.75999450683594,
+  "currency": "CHF",
+  "entry_cost_pct": 0.71,
+  "exit_date": "2026-11-24",
+  "exit_price": 128.60000610351562,
+  "ret_pct": -5.27,
+  "correct": false
+ },
+ "2026-11-17-STMPA.PA-5": {
+  "id": "2026-11-17-STMPA.PA-5",
+  "day": "2026-11-17",
+  "symbol": "STMPA.PA",
+  "direction": "down",
+  "horizon_days": 5,
+  "confidence": 0.5,
+  "catalyst": "AMD, MU, SKHY, AVGO: Chip Stocks Ease Overnight After Selloff On New US Chip Restrictions Targeting China - Yahoo Finance - 2026-11-17",
+  "entry_price": 41.06999969482422,
+  "currency": "EUR",
+  "entry_cost_pct": 0.81,
+  "exit_date": "2026-11-24",
+  "exit_price": 35.91999816894531,
+  "ret_pct": -12.54,
+  "correct": true
+ },
+ "2026-11-17-IFX.DE-5": {
+  "id": "2026-11-17-IFX.DE-5",
+  "day": "2026-11-17",
+  "symbol": "IFX.DE",
+  "direction": "up",
+  "horizon_days": 5,
+  "confidence": 0.47,
+  "catalyst": "Infineon's Record Quarter Gets a Cool Reception as Brokers Reprice the Sector - ad-hoc-news.de - 2026-11-17",
+  "entry_price": 49.2400016784668,
+  "currency": "EUR",
+  "entry_cost_pct": 0.39,
+  "exit_date": "2026-11-24",
+  "exit_price": 43.73500061035156,
+  "ret_pct": -11.18,
+  "correct": false
  }
 }
