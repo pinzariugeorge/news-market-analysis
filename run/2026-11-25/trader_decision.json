@@ -1,0 +1,61 @@
+{
+  "decision_day": "2026-11-25",
+  "decided_at": "2026-11-25T07:09:00Z",
+  "market_view": "Risk-off pre-open: Brent -4.45% below $90, gold -1.41% ahead of US PCE, STOXX50 -1.16% with new US tariffs on China and Europe expected and VIX 26.4. All traded-name quotes are about 878 minutes old (last close), and no theme has a primary-source, name-specific long catalyst that clears twice entry cost.",
+  "would_change_my_mind": "A soft US PCE print that reverses gold and rates, or a confirmed crude supply loss with Brent back above $98, seen on fresh quotes.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "TotalEnergies Expands US Natural Gas Portfolio Through New Agreement with Continental Resources - Machine Maker - 2026-11-25", "reasoning": "The TTE.PA gas deal is too small to move the stock, and Brent -4.45% works against oil names. NG +9.48% helps gas-heavy names but it continues a known story."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.4, "catalyst": "Gold drops to $3,521 ahead of US PCE data - Investify - 2026-11-25", "reasoning": "Gold selling continues and there is no stock-specific news, so there is no long case."},
+    "chips": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.42, "catalyst": "Netherlands opposes US bill threatening ASML's business in China - IDNFinancials - 2026-11-25", "reasoning": "The export-curb story is negative for the sector and new tariffs are expected. The SOLUM/Infineon collaboration is small."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.42, "catalyst": "Moody's Changes Sanofi Outlook to Negative on Concerns Over Revenue, EBITDA - marketscreener.com - 2026-11-25", "reasoning": "The Sanofi news is negative, which suits a shadow down call, not a long. No other pharma name has a fresh primary catalyst."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.4, "catalyst": "Copper Falls as a Stronger Dollar and Hawkish Fed Signals Fuel Rate-Hike Bets - Investing.com India - 2026-11-25", "reasoning": "Copper is at a 7-month low, JPMorgan sees further deflation and ANTO.L fell 8% for no stated cause. There is no long catalyst."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "Gold weakens further as tariff worries and rate bets pressure bullion - Anadolu - 2026-11-25", "reasoning": "The PCE outcome could cut either way, so there is no edge before the print."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.42, "catalyst": "Brent -4.45% below $90 (driver) - input drivers - 2026-11-25", "reasoning": "No sector ETF has a clear upward catalyst in a risk-off tape with tariffs pending."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.5, "catalyst": "Kazakhstan's uranium reserve plan could deepen looming supply deficit - Mining.com.au - 2026-11-25", "reasoning": "The policy angle is new but the source is secondary and it continues a known story. Confidence is below 0.52, so this goes in as a shadow call only."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.4, "catalyst": "Trump administration set to unveil new tariffs targeting China, Europe - Ticker News - 2026-11-25", "reasoning": "The tariffs and PCE event risk make index exposure unattractive, and mood is not a catalyst."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "SAN.PA", "direction": "down", "horizon_days": 10, "confidence": 0.53, "catalyst": "Moody's Changes Sanofi Outlook to Negative on Concerns Over Revenue, EBITDA - marketscreener.com - 2026-11-25"},
+    {"symbol": "BESI.AS", "direction": "down", "horizon_days": 5, "confidence": 0.51, "catalyst": "Netherlands opposes US bill threatening ASML's business in China - IDNFinancials - 2026-11-25"},
+    {"symbol": "BP.L", "direction": "down", "horizon_days": 5, "confidence": 0.51, "catalyst": "Brent -4.45% to 87.33 below $90 on supply-surplus fears; Iraq rejects OPEC+ capacity finding - researcher brief drivers - 2026-11-25"},
+    {"symbol": "G2X.DE", "direction": "down", "horizon_days": 5, "confidence": 0.5, "catalyst": "Gold weakens further as tariff worries and rate bets pressure bullion - Anadolu - 2026-11-25"},
+    {"symbol": "URNU.DE", "direction": "up", "horizon_days": 10, "confidence": 0.5, "catalyst": "Kazakhstan's uranium reserve plan could deepen looming supply deficit - Mining.com.au - 2026-11-25"},
+    {"symbol": "TTE.PA", "direction": "up", "horizon_days": 5, "confidence": 0.47, "catalyst": "TotalEnergies Expands US Natural Gas Portfolio Through New Agreement with Continental Resources - Machine Maker - 2026-11-25"}
+  ],
+  "handoff": {
+    "run_id": "eu-2026-11-25-a",
+    "written_at": "2026-11-25T07:09:00Z",
+    "decision_day": "2026-11-25",
+    "data_cutoff": "2026-11-25",
+    "what_changed": "Risk-off pre-open: Brent -4.45% (87.33), gold -1.41% (3511.6) ahead of US PCE today, STOXX50 -1.16%, new US tariffs on China and the EU expected, and Moody's cut Sanofi's outlook to negative. Quotes were about 878 minutes old, no long catalyst cleared the bar, and no orders were sent; the account is flat at 1969.83 EUR. No new trades or shadows were scored (25 still waiting per the input, which I take as the authoritative count). CPI.L was most likely rejected because it is not in the traded-names table, so I made no open-universe shadows.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent fell below $90; the TTE.PA/Continental gas deal is too small to move the stock."},
+      "gold_miners": {"position": "flat", "why": "Gold selling continues ahead of PCE and there is no name-specific news."},
+      "chips": {"position": "flat", "why": "The US bill threatening ASML's China business and the expected tariffs are negative; the Infineon/SOLUM news is small."},
+      "pharma": {"position": "flat", "why": "Moody's negative outlook on Sanofi after the Insmed deal is a down setup; there is no long catalyst."},
+      "copper_uranium": {"position": "flat", "why": "Copper is at a 7-month low with JPMorgan calling for more deflation; ANTO.L fell 8% for no stated cause."}
+    },
+    "open_storylines": [
+      {"name": "Sanofi acquires Insmed for $41bn cash", "status": "escalating", "note": "SAN.PA gained on 11-24, but Moody's moved its outlook to negative on 11-25; shadows SAN.PA down 5d and down 10d pending.", "first_seen": "2026-11-24"},
+      {"name": "Bayer Roundup settlement court approval", "status": "fading", "note": "Only an op-ed today; the post-open hold is still not in input; shadow BAYN.DE up 5d pending.", "first_seen": "2026-11-21"},
+      {"name": "AI chips, MATCH Act and ASML China curbs", "status": "escalating", "note": "Dutch lawmakers oppose the US bill; watch the bill's progress and the tariff announcement; shadows IFX.DE down 5d and BESI.AS down 5d pending.", "first_seen": "2026-11-16"},
+      {"name": "Fed, dollar, PCE and gold", "status": "open", "note": "US PCE is due 2026-11-25; gold is at 3511.6, -1.41%; shadows 4GLD.DE up 5d and G2X.DE down 5d pending.", "first_seen": "2026-11-12"},
+      {"name": "Iran, Hormuz, OPEC+ and crude", "status": "fading", "note": "Brent fell to 87.33 on surplus fears and Iraq rejects the OPEC+ capacity finding; need a confirmed supply loss and Brent above $98; shadows EXH1.DE down 5d and BP.L down 5d pending.", "first_seen": "2026-11-16"},
+      {"name": "US natgas surge and gas-heavy names", "status": "open", "note": "NG +9.48%, Goldman sees data-center demand, TTE.PA/Continental deal; Equinor/VNG deal value still unknown; EQNR.OL and TTE.PA up shadows pending.", "first_seen": "2026-11-24"},
+      {"name": "Copper vs weak China demand", "status": "escalating", "note": "7-month low, JPMorgan sees further deflation, ANTO.L -8.05% on 11-24 for no stated cause; BHP/Rio China outcome pending; shadow ANTO.L down 10d pending.", "first_seen": "2026-11-16"},
+      {"name": "Kazakhstan uranium reserve plan and KHNP tender", "status": "open", "note": "Secondary sources only; watch the uranium spot price; shadow URNU.DE up 10d pending.", "first_seen": "2026-11-24"},
+      {"name": "US tariffs on China and Europe", "status": "open", "note": "Announcement expected; negative for European exporters, chips and indices.", "first_seen": "2026-11-25"},
+      {"name": "UK profit warnings (Capita, AO World)", "status": "open", "note": "These are open-universe names not in the traded table, so shadows on them seem to be rejected (CPI.L); no long.", "first_seen": "2026-11-24"},
+      {"name": "Novartis Leqvio outcomes", "status": "fading", "note": "Still no primary source; shadows NOVN.SW up 5d pending.", "first_seen": "2026-11-20"},
+      {"name": "GLP-1 pricing (Novo vs Lilly)", "status": "fading", "note": "No new item; shadow NOVO-B.CO down 10d pending.", "first_seen": "2026-11-18"},
+      {"name": "Worldline cash-flow quality (FT)", "status": "open", "note": "Shadow WLN.PA down 5d pending; open universe, no long.", "first_seen": "2026-11-23"}
+    ],
+    "pending_orders": [],
+    "next_job": "Check quote age first and do not enter on stale quotes. Record newly scored shadow calls (25 waiting) and update the ledger. Check the US PCE result and the gold reaction, the US tariff announcement and its effect on chips and indices, the SAN.PA reaction to Moody's, Brent vs $98 with confirmed supply loss, copper and the BHP/Rio China outcome, and the Equinor/VNG deal value. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice entry cost, with honest confidence of 0.52 or more.",
+    "lessons": [
+      {"rule": "Hypothesis (3 cases, does not change calls): up calls whose catalyst is an already-published or secondary-source company event, made into a falling market, have lost money.", "cases": 3, "evidence": "IFX.DE long stopped out -9.88% (record quarter, guidance); shadow BP.L up 5d -0.18% wrong; shadow STMPA.PA up 5d -2.38% wrong. Shadow GSK.L up 5d -3.08% wrong is related but had a primary litigation catalyst, so it is not counted."},
+      {"rule": "Hypothesis (2 cases, does not change calls): down calls on gold miners when gold breaks lower on rate-hike bets have worked.", "cases": 2, "evidence": "Shadow FRES.L down 5d -11.19% right (gold below $4,000 on rate-hike bets); shadow G2X.DE down 5d -9.49% right (gold below $3,851 ahead of the Warsh speech), now counted."}
+    ]
+  }
+}
