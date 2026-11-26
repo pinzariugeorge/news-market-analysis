@@ -1,0 +1,23 @@
+{
+ "date": "2026-11-26",
+ "steps": {
+  "collect": {
+   "at": "2026-11-26T07:08:53Z",
+   "ok": true,
+   "note": "80 headlines, 10 drivers, 32 quotes"
+  },
+  "researcher": {
+   "at": "2026-11-26T07:09:40Z",
+   "ok": true,
+   "note": ""
+  },
+  "trader": {
+   "at": "2026-11-26T07:10:44Z",
+   "ok": true,
+   "note": "0 orders: "
+  }
+ },
+ "warnings": [
+  "handoff rejected: note larger than 6000 bytes (keep it short; drop closed storylines)"
+ ]
+}

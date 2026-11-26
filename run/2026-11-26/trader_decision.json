@@ -1,0 +1,62 @@
+{
+  "decision_day": "2026-11-26",
+  "decided_at": "2026-11-26T07:09:00Z",
+  "market_view": "Risk-off continues: hot US PCE keeps Fed hike bets alive, Euro Stoxx 50 -1.82% and VIX 28.29, while new US tariffs were seen in Asia as less dire than feared. All quotes are about 879-949 minutes old and the drivers contradict several headlines (gold, Brent), so there is no clean entry today.",
+  "would_change_my_mind": "Fresh quotes after the open showing a firm tape together with a primary-source, name-specific new catalyst (for example a confirmed Sanofi reaction or a confirmed oil supply loss with Brent above $98) whose expected move is well above twice entry cost.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.47, "catalyst": "Equinor cuts 2026 growth guidance to 3% after Bacalhau, Visund shut-ins - World Oil - 2026-11-26", "reasoning": "The only specific new item is negative for EQNR.OL; Brent -4.07% looks like a contract roll and the Repsol/Eni item gives no terms. No long catalyst."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "Gold price falls to a one-year low after US inflation data - Informat.ro - 2026-11-26", "reasoning": "Gold headlines and the +1.71% driver conflict, and there is no name-specific news for FRES.L or EDV.L."},
+    "chips": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.46, "catalyst": "Netherlands seeks to block US bill restricting ASML exports to China - IDNFinancials - 2026-11-26", "reasoning": "A foreign government effort does not stop a US bill; MATCH Act and tariffs remain negative and the IFX.DE/SOLUM item is noise."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.48, "catalyst": "Bayer AG : Raised to Buy by Berenberg - marketscreener.com - 2026-11-26", "reasoning": "Bayer upgrade and Hansoh licence are offset by the Kerendia pull in Germany; Sanofi's $41bn cash deal with a Moody's negative outlook is a down setup, not a long."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.44, "catalyst": "Copper heads for worst monthly drop since 2015: Prices slide 16% to 11-month low - Financial Express - 2026-11-26", "reasoning": "The +2.50% copper bounce is technical inside a sharp monthly downtrend; no long catalyst."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.48, "catalyst": "Gold prices recover in Dubai as US announces new tariffs on China, India - Khaleej Times - 2026-11-26", "reasoning": "Conflicting gold signals (one-year low on PCE vs tariff bounce); no edge over cost."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "ASML Sinks 6% - TIKR.com - 2026-11-26", "reasoning": "Sector news is negative (chips) or contradictory (oil, health care); no sector ETF long clears the bar."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.47, "catalyst": "Kazatomprom operations chief detained in bribery probe - Mining.com - 2026-11-25", "reasoning": "The detention concerns one person, not output; no confirmed supply effect."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.44, "catalyst": "New US tariffs on China, Europe and India - Reuters - 2026-11-26", "reasoning": "Tariffs, Fed hike bets and VIX 28 argue against an index long."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "EQNR.OL", "direction": "down", "horizon_days": 5, "confidence": 0.52, "catalyst": "Equinor cuts 2026 growth guidance to 3% after Bacalhau, Visund shut-ins - World Oil - 2026-11-26"},
+    {"symbol": "KGH.WA", "direction": "down", "horizon_days": 10, "confidence": 0.52, "catalyst": "Copper heads for worst monthly drop since 2015: Prices slide 16% to 11-month low - Financial Express - 2026-11-26"},
+    {"symbol": "VVSM.DE", "direction": "down", "horizon_days": 5, "confidence": 0.52, "catalyst": "ASML Sinks 6% (MATCH Act chip export bill) - TIKR.com - 2026-11-26"},
+    {"symbol": "FRES.L", "direction": "down", "horizon_days": 5, "confidence": 0.50, "catalyst": "Gold price falls to a one-year low after US inflation data / Investors anticipate further interest rate hikes - Informat.ro - 2026-11-26"},
+    {"symbol": "BAYN.DE", "direction": "up", "horizon_days": 10, "confidence": 0.48, "catalyst": "Bayer AG : Raised to Buy by Berenberg - marketscreener.com - 2026-11-26"},
+    {"symbol": "SAN.PA", "direction": "down", "horizon_days": 20, "confidence": 0.52, "catalyst": "Sanofi to Acquire Insmed for $41B - Respiratory Therapy - 2026-11-25"}
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-26-a",
+    "written_at": "2026-11-26T07:09:00Z",
+    "decision_day": "2026-11-26",
+    "data_cutoff": "2026-11-26",
+    "what_changed": "No trade: quotes were about 879-949 minutes old again and no long catalyst cleared the bar. Hot US PCE pushed gold to a one-year low before a tariff bounce (GC=F +1.71%), US tariffs on China/EU/India announced, Euro Stoxx 50 -1.82%, VIX 28.29; Sanofi/Insmed $41bn and Bayer Hansoh licence plus Berenberg upgrade are the new pharma items; Equinor cut 2026 growth guidance. No new shadows were scored since the last run (still 11 scored: up 0/6, down 5/5); account flat at 1969.83 EUR.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Equinor guidance cut is negative, Brent -4.07% likely a roll, Repsol/Eni item has no terms."},
+      "gold_miners": {"position": "flat", "why": "Gold headlines and driver conflict; no name-specific news."},
+      "chips": {"position": "flat", "why": "MATCH Act and tariffs negative; Dutch opposition unlikely to stop a US bill."},
+      "pharma": {"position": "flat", "why": "Bayer positives offset by Kerendia pull; Sanofi large cash deal is a down setup."},
+      "copper_uranium": {"position": "flat", "why": "Copper bounce is technical inside the worst monthly drop since 2015."}
+    },
+    "open_storylines": [
+      {"name": "Sanofi acquires Insmed for $41bn cash", "status": "escalating", "note": "Watch the SAN.PA Paris reaction on 11-26 (IBD 'Sanofi Rallies' likely the ADR); shadows SAN.PA down 5d, 10d, 20d pending.", "first_seen": "2026-11-24"},
+      {"name": "Bayer Hansoh licence, Berenberg upgrade, Kerendia pull", "status": "open", "note": "Watch BAYN.DE reaction to the $3.25B Hansoh licence and Berenberg Buy vs Kerendia withdrawal in Germany; shadow BAYN.DE up 10d pending; Roundup settlement approval still not in input.", "first_seen": "2026-11-25"},
+      {"name": "AI chips, MATCH Act and ASML China curbs", "status": "escalating", "note": "ASML sank 6%; Netherlands seeks to block the bill; shadows IFX.DE, BESI.AS, VVSM.DE down 5d pending.", "first_seen": "2026-11-16"},
+      {"name": "Fed, dollar, PCE and gold", "status": "open", "note": "Hot PCE pushed gold to a one-year low, then tariffs lifted it (GC=F 3596.2); shadows 4GLD.DE up, G2X.DE down, FRES.L down pending.", "first_seen": "2026-11-12"},
+      {"name": "Iran, Hormuz, OPEC+ and crude", "status": "open", "note": "Iran claims mine strikes on ships; US eased Russia oil sanctions; Brent/WTI split likely the January roll. Need confirmed supply loss and Brent above $98; shadows EXH1.DE and BP.L down pending.", "first_seen": "2026-11-16"},
+      {"name": "Equinor guidance cut and gas", "status": "open", "note": "Equinor cut 2026 growth to 3% after Bacalhau, Visund shut-ins; NG +9.88%; shadow EQNR.OL down 5d pending alongside older EQNR.OL/TTE.PA up shadows; VNG deal value still unknown.", "first_seen": "2026-11-24"},
+      {"name": "Copper vs weak China demand", "status": "escalating", "note": "Worst monthly drop since 2015 (-16%), technical bounce +2.50%; shadows ANTO.L down 10d and KGH.WA down 10d pending; BHP/Rio China outcome still not in input.", "first_seen": "2026-11-16"},
+      {"name": "Kazatomprom and uranium supply", "status": "open", "note": "Operations chief detained in bribery probe; watch for any production effect; shadow URNU.DE up 10d pending.", "first_seen": "2026-11-24"},
+      {"name": "US tariffs on China, Europe and India", "status": "open", "note": "Announced; Asia saw them as not as dire as feared; watch STOXX50 and exporters.", "first_seen": "2026-11-25"},
+      {"name": "GLP-1 pricing (Novo vs Lilly)", "status": "fading", "note": "No new item; shadow NOVO-B.CO down 10d pending.", "first_seen": "2026-11-17"},
+      {"name": "Novartis Leqvio outcomes", "status": "fading", "note": "No primary source; shadow NOVN.SW up 5d pending.", "first_seen": "2026-11-17"},
+      {"name": "Worldline cash-flow quality (FT)", "status": "open", "note": "Shadow WLN.PA down 5d pending; open universe, no long.", "first_seen": "2026-11-24"}
+    ],
+    "pending_orders": [],
+    "next_job": "Check quote age first and do not enter on stale quotes (today's were about 879-949 minutes old). Read the SAN.PA and BAYN.DE reactions, EQNR.OL after the guidance cut, the chips/ASML reaction to the MATCH Act and Dutch opposition, gold after PCE and tariffs, Brent vs $98 with confirmed supply loss, and copper after the monthly drop. Record newly scored shadows (34 waiting) and update the ledger. Buy only on a primary-source, name-specific new catalyst whose expected move is well above twice entry cost, with honest confidence of 0.52 or more, and not into a falling index.",
+    "lessons": [
+      {"rule": "Up calls made into the current falling market have all lost (7 cases): require a primary-source, name-specific, new catalyst and do not buy pre-open while the index driver is falling. This only tightens the catalyst test.", "cases": 7, "evidence": "IFX.DE long stopped out -9.88%; shadows up wrong: BP.L -0.18%, STMPA.PA -2.38%, GSK.L -3.08%, EXH1.DE -5.55%, NOVN.SW -5.27%, IFX.DE -11.18%. Up tally 0/6, mean -4.61%. All from one sell-off regime (2026-11-10 to 11-24)."},
+      {"rule": "Hypothesis (3 cases, does not change calls beyond the lesson above): up calls whose catalyst is an already-published or secondary-source company event lose money in a falling market.", "cases": 3, "evidence": "IFX.DE long -9.88% (record quarter, guidance); shadow BP.L up 5d -0.18%; shadow STMPA.PA up 5d -2.38%."},
+      {"rule": "Down calls with a named sector or commodity catalyst in the current risk-off tape have worked (5 cases); this informs shadows only and never loosens rules (no shorts).", "cases": 5, "evidence": "Shadows down right: FRES.L -11.19%, G2X.DE -9.49%, ANTO.L -11.96%, STMPA.PA -4.61%, STMPA.PA -12.54%; down tally 5/5, mean -9.96%."},
+      {"rule": "Hypothesis (2 cases, does not change calls): down calls on gold miners when gold breaks lower on rate-hike bets have worked.", "cases": 2, "evidence": "Shadow FRES.L down 5d -11.19% (gold below $4,000 on rate-hike bets); shadow G2X.DE down 5d -9.49% (gold below $3,851 ahead of the Warsh speech)."}
+    ]
+  }
+}
