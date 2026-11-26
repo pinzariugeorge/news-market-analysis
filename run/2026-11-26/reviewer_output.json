@@ -1,0 +1,41 @@
+{
+  "report": "Quiet day for the account. The trader placed no orders and nothing filled. Today's input has no market news and no trader reasoning, so I cannot say what moved our themes or why it stayed out. The PCE result, the tariff announcement and the Sanofi reaction are still missing. The account is flat at 1969.83 euros. That is zero for the day and minus 1.51 percent since the start. There are no open positions and no pending orders, so there are no exit dates or stops to watch. The broker reconcile is consistent. One warning: a handoff note was rejected for being over 6000 bytes. Tomorrow's note has to stay short. Six more shadow calls were scored. Up calls are now 1 right out of 10, with an average move of minus 4.9 percent. Down calls are 7 out of 7, with an average of minus 9.9 percent. New this time: the Infineon down call was right at minus 16 percent and BESI up was wrong at minus 8. The Equinor down call after the cyberattack was right. GSK up on its US approval was right, at plus 2.7 percent. Be careful with this split. It mostly shows that the market fell, not that the calls were skilful. Only one real trade has closed, the Infineon loss, so it is far too early to judge the trader.",
+  "questions": [
+    "Down shadow calls are 7 of 7 right and up calls 1 of 10. That looks like a falling market more than skill. Should we compare each call to the STOXX50 or its sector, not to zero?",
+    "Today's input had no news and no reasoning from the trader. Was the trader run skipped, or did its handoff fail the 6000-byte limit? Should a missing decision record count as a warning in its own right?",
+    "The trader stays flat because the quotes are stale and the entry bar is high. Should it be allowed to buy defensive or short-style ETFs when the shadows keep pointing down, or does that break the rule of buying only on a name-specific catalyst?"
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-26-a",
+    "written_at": "2026-11-26T18:30:00+01:00",
+    "decision_day": "2026-11-26",
+    "data_cutoff": "2026-11-26",
+    "what_changed": "No orders, no fills. Account flat at 1969.83 EUR (-1.51% total). Reconcile consistent. Warning: handoff rejected for being over 6000 bytes, so keep this note short. Input had no market news and no trader reasoning; PCE, tariffs and the SAN.PA reaction are still unknown. 6 new shadows scored: up now 1/10 right (mean -4.94%), down 7/7 right (mean -9.93%). New: IFX.DE down 5d right -16.00%, IFX.DE up 10d wrong -16.63%, BESI.AS up 5d wrong -8.14%, EQNR.OL down 5d right -3.73%, GSK.L up 5d right +2.70%, AZN.L up 10d wrong +0.30%.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent last 87.33, below $98, no confirmed supply loss; EQNR.OL fell 3.73% after the cyberattack."},
+      "gold_miners": {"position": "flat", "why": "Gold last 3511.6; PCE result not yet in input."},
+      "chips": {"position": "flat", "why": "IFX.DE -16% and BESI.AS -8% over 5d; US China curbs and tariffs weigh on the sector."},
+      "pharma": {"position": "flat", "why": "Sanofi outlook cut to negative; GSK +2.7% on its US approval is the only up shadow that came right."},
+      "copper_uranium": {"position": "flat", "why": "Copper at a 7-month low; no new primary catalyst."}
+    },
+    "open_storylines": [
+      {"name": "Sanofi buys Insmed, Moody's negative outlook", "status": "escalating", "note": "SAN.PA reaction not yet in input; SAN.PA down 5d/10d shadows pending.", "first_seen": "2026-11-24"},
+      {"name": "AI chips, US China curbs on ASML", "status": "escalating", "note": "IFX.DE down 5d right -16.00%; IFX.DE up 10d wrong -16.63%; BESI.AS up 5d wrong -8.14%.", "first_seen": "2026-11-17"},
+      {"name": "US tariffs on China and Europe", "status": "open", "note": "Announcement expected; outcome not in input.", "first_seen": "2026-11-25"},
+      {"name": "Fed, PCE and gold", "status": "open", "note": "PCE result not in input; 4GLD.DE up and G2X.DE down shadows pending.", "first_seen": "2026-11-12"},
+      {"name": "Copper vs weak China demand", "status": "escalating", "note": "ANTO.L down 5d right -11.96%; BHP/Rio China outcome and ANTO.L down 10d pending.", "first_seen": "2026-11-16"},
+      {"name": "Iran, OPEC+ and crude", "status": "fading", "note": "Brent 87.33; need confirmed supply loss and Brent above $98; EXH1.DE and BP.L down shadows pending.", "first_seen": "2026-11-16"},
+      {"name": "Natgas and gas-heavy names", "status": "open", "note": "Equinor/VNG deal value unknown; EQNR.OL down 5d (cyberattack) right -3.73%; EQNR.OL and TTE.PA up shadows pending.", "first_seen": "2026-11-18"},
+      {"name": "Kazakhstan uranium and KHNP tender", "status": "open", "note": "Secondary sources only; URNU.DE up 10d pending.", "first_seen": "2026-11-20"},
+      {"name": "Bayer Roundup settlement", "status": "fading", "note": "Only an op-ed so far; BAYN.DE up 5d pending.", "first_seen": "2026-11-20"},
+      {"name": "Novartis and GLP-1 pricing", "status": "fading", "note": "No primary source; NOVN.SW up 5d and NOVO-B.CO down 10d pending.", "first_seen": "2026-11-17"},
+      {"name": "Worldline and UK profit warnings", "status": "open", "note": "Open-universe names only; WLN.PA down 5d pending; no long.", "first_seen": "2026-11-24"}
+    ],
+    "pending_orders": [],
+    "next_job": "Keep the handoff under 6000 bytes. Check quote age first and do not enter on stale quotes. Read the PCE result and gold reaction, the US tariff outcome for chips and STOXX50, the SAN.PA reaction, Brent vs $98, and copper/BHP/Rio China. Record newly scored shadows. Buy only on a primary-source, name-specific catalyst whose expected move is well above twice the entry cost, with honest confidence of 0.52 or more.",
+    "lessons": [
+      {"rule": "Hypothesis (3 cases, does not change calls): up calls on an already-published or secondary-source company event, made into a falling market, have lost money.", "cases": 3, "evidence": "IFX.DE long stopped out -9.88%; shadow BP.L up 5d -0.18% wrong; shadow STMPA.PA up 5d -2.38% wrong. GSK.L up 5d -3.08% wrong had a primary catalyst, so it is not counted."},
+      {"rule": "Hypothesis (2 cases, does not change calls): down calls on gold miners have worked when gold breaks lower on rate-hike bets.", "cases": 2, "evidence": "Shadow FRES.L down 5d -11.19% right; shadow G2X.DE down 5d -9.49% right."}
+    ]
+  }
+}

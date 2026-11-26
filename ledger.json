@@ -141,6 +141,10 @@
   {
    "date": "2026-11-25",
    "equity": 1969.83
+  },
+  {
+   "date": "2026-11-26",
+   "equity": 1969.83
   }
  ],
  "notes": [
@@ -417,6 +421,11 @@
    "time": "2026-11-26T07:10:44Z",
    "agent": "trader",
    "text": "0 orders. Risk-off continues: hot US PCE keeps Fed hike bets alive, Euro Stoxx 50 -1.82% and VIX 28.29, while new US tariffs were seen in Asia as less dire than feared. All quotes are about 879-949 minutes old and the drivers contradict several headlines (gold, Brent), so there is no clean entry today."
+  },
+  {
+   "time": "2026-11-26T16:51:53Z",
+   "agent": "reviewer",
+   "text": "Quiet day for the account. The trader placed no orders and nothing filled. Today's input has no market news and no trader reasoning, so I cannot say what moved our themes or why it stayed out. The PCE result, the tariff announcement and the Sanofi reaction are still missing. The account is flat at 1969.83 euros. That is zero for the day and minus 1.51 percent since the start. There are no open positions and no pending orders, so there are no exit dates or stops to watch. The broker reconcile is "
   }
  ],
  "custody_paid": 0.0106,
