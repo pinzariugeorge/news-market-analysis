@@ -1,0 +1,57 @@
+{
+  "decision_day": "2026-11-27",
+  "decided_at": "2026-11-27T07:10:00Z",
+  "market_view": "European indices bounced about 2% as tariff fears eased, with gold and copper rebounding sharply, but the US is on a thin post-Thanksgiving half-day and some driver moves may span two days. All traded-name quotes are last night's close (879-949 min old), and none of today's headlines is a primary-source, name-specific new event strong enough to clear twice the entry cost.",
+  "would_change_my_mind": "A primary-source, name-specific new event (for example a concrete OPEC+ output decision with Brent back above $98, or a confirmed US ruling on ASML curbs) seen on fresh quotes during the session.",
+  "themes": {
+    "oil_gas": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "Oil is rising again before OPEC+ meets - can Saudi attacks overpower surplus fears? - Mitrade - 2026-11-27", "reasoning": "OPEC+ outcome is unknown, Brent fell 2.36% to 92.38, still below $98, with no confirmed supply loss; UK names cost 1.14% each way."},
+    "gold_miners": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.46, "catalyst": "Gold rebounds above $3,600 as easing market jitters support prices - Anadolu Ajansi - 2026-11-27", "reasoning": "A whipsaw rebound after a 3% fall, not a name-specific catalyst; FRES.L/EDV.L cost 1.2% per side."},
+    "chips": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "Netherlands seeks to block US plans for further curbs on ASML sales to China - Lianhe Zaobao - 2026-11-27", "reasoning": "Continuation of a known story from a secondary source; the curbs are still only proposed, and up calls into this falling sector have lost repeatedly."},
+    "pharma": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "Bayer plans 1-billion-euro China investment by 2030 - China Daily - 2026-11-27", "reasoning": "Small multi-year spending plan; the Sanofi items are commentary on a known deal. The theme is thin."},
+    "copper_uranium": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.46, "catalyst": "Copper Rebounds as Tech Selloff Eases - Vocal - 2026-11-27", "reasoning": "A sentiment-driven rebound of uncertain size (HG=F +6.69% may span two days), not a supply catalyst."},
+    "gold_etp": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.47, "catalyst": "Gold rebounds above $3,600 as easing market jitters support prices - Anadolu Ajansi - 2026-11-27", "reasoning": "Price-swing continuation with an unconfirmed reversal; PCE result still not in the input."},
+    "sector_etf": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "none name-specific", "reasoning": "No sector ETF has a catalyst beyond general mood."},
+    "uranium_etf": {"action": "flat", "symbol": null, "horizon_days": 10, "confidence": 0.45, "catalyst": "none new", "reasoning": "Kazatomprom and Kazakhstan items continue known stories; URNU.DE up 10d shadow is still pending."},
+    "broad_index": {"action": "flat", "symbol": null, "horizon_days": 5, "confidence": 0.45, "catalyst": "none name-specific", "reasoning": "A tariff-relief rally is mood, not a named catalyst, and VIX is still high at 26.8."}
+  },
+  "orders": [],
+  "shadow": [
+    {"symbol": "STLAP.PA", "direction": "down", "horizon_days": 5, "confidence": 0.50, "catalyst": "Stellantis Plans More Factory Shutdowns as Sales Fall - TipRanks - 2026-11-26"},
+    {"symbol": "4GLD.DE", "direction": "up", "horizon_days": 5, "confidence": 0.47, "catalyst": "Gold rebounds above $3,600 as easing market jitters support prices - Anadolu Ajansi - 2026-11-27"},
+    {"symbol": "ASML.AS", "direction": "up", "horizon_days": 5, "confidence": 0.45, "catalyst": "Netherlands seeks to block US plans for further curbs on ASML sales to China - Lianhe Zaobao - 2026-11-27"},
+    {"symbol": "BAYN.DE", "direction": "up", "horizon_days": 10, "confidence": 0.45, "catalyst": "Bayer plans 1-billion-euro China investment by 2030 - China Daily - 2026-11-27"}
+  ],
+  "handoff": {
+    "run_id": "eu-rev-2026-11-27-a",
+    "written_at": "2026-11-27T07:10:00Z",
+    "decision_day": "2026-11-27",
+    "data_cutoff": "2026-11-27",
+    "what_changed": "No orders: quotes are last night's close (879-949 min old) and no catalyst is primary-source and name-specific. Account flat at 1969.83 EUR (-1.51%). No new shadows scored (up 1/10, down 7/7); 4 new shadows sent; up-call lesson recounted to 6 cases.",
+    "families": {
+      "oil_gas": {"position": "flat", "why": "Brent 92.38, below $98; OPEC+ meeting outcome unknown."},
+      "gold_miners": {"position": "flat", "why": "Gold whipsaw rebound to 3681.9; no name-specific catalyst; PCE still not in input."},
+      "chips": {"position": "flat", "why": "ASML curbs story is continuation from secondary sources; up calls into this sector keep failing."},
+      "pharma": {"position": "flat", "why": "Sanofi items are commentary; Bayer China plan is small and multi-year."},
+      "copper_uranium": {"position": "flat", "why": "Copper rebound is sentiment-driven, not supply."}
+    },
+    "open_storylines": [
+      {"name": "Sanofi/Insmed, Moody's negative outlook", "status": "open", "note": "SAN.PA down shadows pending; reaction still unclear.", "first_seen": "2026-11-24"},
+      {"name": "US curbs on ASML, Dutch pushback", "status": "escalating", "note": "Watch for a US decision; ASML.AS up 5d shadow sent.", "first_seen": "2026-11-17"},
+      {"name": "US tariffs on China and Europe", "status": "fading", "note": "Tariff fears eased, STOXX50 +2%; confirm outcome.", "first_seen": "2026-11-24"},
+      {"name": "Fed, PCE and gold", "status": "open", "note": "Gold rebounded to 3681.9; PCE result still missing; 4GLD.DE up 5d sent.", "first_seen": "2026-11-12"},
+      {"name": "Copper vs China demand", "status": "open", "note": "HG=F +6.69% rebound, verify previous close; ANTO.L down 10d pending.", "first_seen": "2026-11-16"},
+      {"name": "OPEC+ meeting, Iran blockade", "status": "open", "note": "OPEC+ outcome; need confirmed supply loss and Brent above $98.", "first_seen": "2026-11-16"},
+      {"name": "Natgas and Equinor", "status": "open", "note": "NG=F +9.91%; EQNR.OL and TTE.PA up shadows pending.", "first_seen": "2026-11-18"},
+      {"name": "Kazakhstan uranium", "status": "fading", "note": "Secondary sources only; URNU.DE up 10d pending.", "first_seen": "2026-11-20"},
+      {"name": "Bayer China and Roundup", "status": "open", "note": "BAYN.DE up 5d and 10d shadows pending.", "first_seen": "2026-11-20"},
+      {"name": "Stellantis shutdowns", "status": "open", "note": "Open-universe only; STLAP.PA down 5d shadow sent; no position.", "first_seen": "2026-11-27"}
+    ],
+    "pending_orders": [],
+    "next_job": "Keep the handoff under 6000 bytes. Check quote age first; do not enter on stale quotes. Read the OPEC+ outcome vs Brent $98, PCE and gold, the US ASML decision, SAN.PA reaction and the copper move. Record newly scored shadows and update the ledger. Buy only on a primary-source, name-specific new event with expected move well above twice entry cost and honest confidence of 0.52 or more.",
+    "lessons": [
+      {"rule": "Up calls on an already-published or secondary-source company event, made into a falling sector, lose money; such a call needs a primary-source new event (5+ cases, tightens the catalyst test).", "cases": 6, "evidence": "IFX.DE long -9.88%; shadows BP.L up -0.18%, STMPA.PA up -2.38%, IFX.DE up 5d -11.18%, IFX.DE up 10d -16.63%, BESI.AS up 5d -8.14%, all wrong. GSK.L up +2.70% right had a primary catalyst."},
+      {"rule": "Hypothesis: down calls on gold miners work when gold breaks lower on rate-hike bets.", "cases": 2, "evidence": "Shadows FRES.L down 5d -11.19% and G2X.DE down 5d -9.49%, both right."},
+      {"rule": "Hypothesis: down calls on European chips work while US export curbs escalate.", "cases": 3, "evidence": "Shadows STMPA.PA down 5d -4.61% and -12.54%, IFX.DE down 5d -16.00%, all right."}
+    ]
+  }
+}

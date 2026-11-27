@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-27",
+ "steps": {
+  "collect": {
+   "at": "2026-11-27T07:09:05Z",
+   "ok": true,
+   "note": "80 headlines, 10 drivers, 32 quotes"
+  },
+  "researcher": {
+   "at": "2026-11-27T07:10:03Z",
+   "ok": true,
+   "note": ""
+  },
+  "trader": {
+   "at": "2026-11-27T07:10:57Z",
+   "ok": true,
+   "note": "0 orders: "
+  }
+ },
+ "warnings": [
+  "shadow: rejected call STLAP.PA down 5",
+  "shadow: rejected call ASML.AS up 5"
+ ]
+}
