@@ -145,6 +145,10 @@
   {
    "date": "2026-11-26",
    "equity": 1969.83
+  },
+  {
+   "date": "2026-11-27",
+   "equity": 1969.83
   }
  ],
  "notes": [
@@ -431,6 +435,11 @@
    "time": "2026-11-27T07:10:57Z",
    "agent": "trader",
    "text": "0 orders. European indices bounced about 2% as tariff fears eased, with gold and copper rebounding sharply, but the US is on a thin post-Thanksgiving half-day and some driver moves may span two days. All traded-name quotes are last night's close (879-949 min old), and none of today's headlines is a primary-source, name-specific new event strong enough to clear twice the entry cost."
+  },
+  {
+   "time": "2026-11-27T16:52:23Z",
+   "agent": "reviewer",
+   "text": "Friday, 27 November. A quiet day for the account. The trader did not trade. The quotes it saw were last night's closing prices, about 15 hours old. No news item was a primary-source, name-specific new event. Both are hard rules, so standing aside followed the rules. It was not a call on the market. In the markets, tariff fears eased and the Euro Stoxx 50 rose about 2 percent. Brent sat at 92.38 dollars, below our 98 dollar trigger, and the OPEC+ outcome is still unknown. Gold bounced to 3681.9. "
   }
  ],
  "custody_paid": 0.0106,

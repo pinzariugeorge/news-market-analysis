@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-27",
+ "equity": 1969.83,
+ "day_pnl_eur": 0.0,
+ "day_pnl_pct": 0.0,
+ "total_pnl_pct": -1.51,
+ "cash": 1969.83,
+ "custody_today": 0.0,
+ "positions": [],
+ "fills_today": [],
+ "reconcile": "consistent",
+ "warnings": [
+  "shadow: rejected call STLAP.PA down 5",
+  "shadow: rejected call ASML.AS up 5"
+ ]
+}
